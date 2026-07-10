@@ -32,13 +32,13 @@ P3 릴리스는 다음을 제공합니다.
 - 직접 선수 추천 `directRequires`, 다단계 파생 관계 `indirectRequires`, 파생 역관계 `unlocks`를 구분합니다. 직접 관계는 모든 학습자에게 적용되는 보편 법칙이나 전이 속성이 아닙니다.
 - `hard`/`soft`는 원값을 보존하면서 모델 내부의 `required`/`recommended` 추천 강도로 정규화합니다.
 - 선수 관계와 성취기준-주제 정렬은 각각 `PrerequisiteAssertion`, `StandardTopicAlignment`로 강도·이유·근거·출처·정렬 역할·신뢰도 같은 한정자를 보존합니다.
-- 11개 교육과정, 620개 성취기준, 1,956개 주제, 1,894개 선수 주장, 1,956개 성취기준 정렬, 153개 클러스터, 43개 커버리지 갭을 포함해 총 20,446개 인스턴스 리소스를 내보냅니다.
+- 11개 교육과정, 620개 성취기준, 1,956개 주제, 1,894개 선수 주장, 1,956개 성취기준 정렬, 153개 클러스터, 43개 커버리지 갭을 포함해 총 20,446개 인스턴스 리소스와 검증된 249,461개 RDF 트리플을 내보냅니다.
 - `unlocks` 1,894개는 `directRequires`의 정확한 역관계로 물질화하고, `indirectRequires` 53,656개는 길이 2 이상의 비직접 경로로만 물질화합니다.
 - OWL/Turtle TBox, 로컬 JSON-LD 컨텍스트, SHACL Advanced 제약, SPARQL 역량 질문 15개, 양성 fixture와 적대 fixture 9개를 제공합니다.
 - 결정적으로 생성한 JSON-LD·Turtle ABox와 코어 개수·관계 해시는 [`dist/ontology/manifest.json`](dist/ontology/manifest.json)에 기록합니다.
 - 전체 공개 온톨로지 파일의 바이트 수·SHA-256, 자동 검토 상태, 외부 검토 상태, 권리 상태는 [`dist/ontology/release-manifest.json`](dist/ontology/release-manifest.json)에 분리해 기록합니다.
 - 표준 RDF 파서, SHACL Advanced SPARQL 제약, bounded OWL-RL 확인, SPARQL 역량 질문, 적대 fixture 결과를 [`dist/ontology/validation-report.json`](dist/ontology/validation-report.json)에 결정적으로 기록합니다.
-- [`ontology/governance.md`](ontology/governance.md)와 [`ontology/CHANGELOG.md`](ontology/CHANGELOG.md)는 버전·폐기·대체 정책과 변경 이력을 정의하며, [`docs/ontology-reference.md`](docs/ontology-reference.md)는 통제 어휘에서 자동 생성됩니다.
+- [`ontology/governance.md`](ontology/governance.md), [`ontology/deprecation-policy.md`](ontology/deprecation-policy.md), [`ontology/replacements.json`](ontology/replacements.json), [`ontology/CHANGELOG.md`](ontology/CHANGELOG.md)는 버전·폐기·대체 정책과 변경 이력을 정의하며, [`docs/ontology-reference.md`](docs/ontology-reference.md)는 통제 어휘에서 자동 생성됩니다.
 - 43개 데이터 커버리지 갭, P3 형식/자동 검토 상태, 진행 중인 외부 검토, 공식 출처 권리 `HOLD`를 서로 다른 메타데이터 축으로 유지합니다.
 
 이 저장소는 공개 SPARQL 엔드포인트를 제공하지 않습니다. [`ontology/queries/`](ontology/queries/)의 질의는 로컬 검증 게이트에서 실행되는 역량 질문이며, 선수 관계는 이 릴리스 모델의 추천 구조이지 보편적인 학습 순서 주장이 아닙니다.
@@ -148,6 +148,7 @@ KR 별칭(`build:kr`, `test:kr`, `validate:kr`, `check:kr:content`, `check:kr:li
 
 - `official-source-checked`는 성취기준 **코드와 출처 위치**를 검토했다는 뜻입니다. 공식 문구를 수록했다거나 수업 내용이 전문가 승인을 받았다는 뜻이 아닙니다.
 - 공식 성취기준 원문은 대량 재수록하지 않습니다. 데이터에는 코드, 출처 위치, 저장소 작성 요약·주제·증거·평가 질문이 들어 있습니다.
+- 생성된 RDF 런타임 산출물에는 공식 성취기준 원문과 공개 공식 출처 URL을 넣지 않습니다.
 - 현재 데이터는 통합 workstream 후보입니다. 교과 전문가·교실 현장 검토가 더 필요합니다.
 - 이 저장소는 교육부 또는 NCIC의 승인·후원·공식 지위를 주장하지 않으며, 개별 학습자의 수준·장애·치료 필요 등을 진단하지 않습니다.
 

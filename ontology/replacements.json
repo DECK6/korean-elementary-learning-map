@@ -1,0 +1,9 @@
+{
+  "formatVersion": 1,
+  "ontologyVersion": "0.3.0-p3",
+  "priorOntologyVersion": "0.2.0-p2",
+  "stableOntologyIri": "https://dexa.art/learnmap/ontology",
+  "policyDocument": "ontology/deprecation-policy.md",
+  "status": "active",
+  "entries": []
+}

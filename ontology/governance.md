@@ -19,12 +19,13 @@ Automated review, external domain review, source-data coverage, and source right
 Released term IRIs are never silently reassigned. A term that should no longer be used follows this sequence:
 
 1. Add an entry to `ontology/term-status.json` with `status: deprecated`, the first `deprecatedIn` version, and a `replacement` IRI or term.
-2. Keep the original term in the TBox and generated reference. Mark it with `owl:deprecated true` and `dcterms:isReplacedBy` in RDF.
-3. Add migration guidance and the compatibility impact to `ontology/CHANGELOG.md`.
-4. Keep reading the deprecated term for at least one minor release. Generated exports write the replacement only unless a documented compatibility profile says otherwise.
-5. Never reuse the old IRI for a different meaning. Removal from the active vocabulary requires a breaking release, while the old IRI remains a tombstone in release history.
+2. Add the migration record to `ontology/replacements.json` with the old IRI, replacement IRI, rationale, compatibility impact, and review status.
+3. Keep the original term in the TBox and generated reference. Mark it with `owl:deprecated true` and `dcterms:isReplacedBy` in RDF.
+4. Add migration guidance and the compatibility impact to `ontology/CHANGELOG.md`.
+5. Keep reading the deprecated term for at least one minor release. Generated exports write the replacement only unless a documented compatibility profile says otherwise.
+6. Never reuse the old IRI for a different meaning. Removal from the active vocabulary requires a breaking release, while the old IRI remains a tombstone in release history.
 
-P3 has no deprecated terms. `term-status.json` therefore uses `active` as the default and an empty `deprecatedTerms` list.
+The normative policy is `ontology/deprecation-policy.md`. P3 has no deprecated terms. `term-status.json` therefore uses `active` as the default and an empty `deprecatedTerms` list, and `replacements.json` has an empty `entries` list.
 
 ## Change and review workflow
 

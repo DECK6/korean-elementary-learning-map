@@ -7,6 +7,8 @@
 - Stable ontology IRI: `https://dexa.art/learnmap/ontology`
 - Terms: 16 classes, 24 object properties, 57 datatype properties, 7 concept schemes, 32 concepts
 - Lifecycle default: `active`; explicitly deprecated terms: 0
+- Deprecation policy: `ontology/deprecation-policy.md`
+- Replacement registry: `ontology/replacements.json`; active replacement entries: 0
 
 Definitions describe this repository model. They do not assert an official MOE/NCIC ontology or diagnose an individual learner.
 

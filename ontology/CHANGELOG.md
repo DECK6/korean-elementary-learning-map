@@ -8,7 +8,7 @@ This changelog covers the ontology contract independently from the dataset/packa
 
 - Formal **Korean Elementary Curriculum Learning Ontology** release label after seven automated gates.
 - Stable-series `owl:versionIRI` / `owl:priorVersion` semantics linking P3 to `0.2.0-p2`.
-- Governance, deprecation, replacement, and term-status policy.
+- Governance, deprecation policy, replacement registry, and term-status policy.
 - Generated term reference and a deterministic release manifest covering release artifacts, validation evidence, byte sizes, and SHA-256 hashes.
 - Explicit automated-review, ongoing external-domain-review, non-official, no-learner-diagnosis, and rights `HOLD` metadata.
 - GitHub Actions coverage for canonical Node gates and pinned Python RDF/SHACL/OWL/SPARQL validation in a temporary virtual environment.
@@ -18,6 +18,7 @@ This changelog covers the ontology contract independently from the dataset/packa
 - No P2 class, property, concept, or instance IRI was removed or reassigned.
 - The dataset release remains `kr-full-depth-v0.4`; graph resource and relation counts are unchanged.
 - No terms are deprecated in this release.
+- `ontology/replacements.json` is intentionally empty for P3 and is checked by the release generator.
 
 ## [0.2.0-p2] — 2026-07-10
 

@@ -6,6 +6,9 @@ import { ONTOLOGY_VERSION, PRIOR_ONTOLOGY_VERSION } from './build-ontology.mjs';
 
 const REFERENCE_PATH = 'docs/ontology-reference.md';
 const RELEASE_MANIFEST_PATH = 'dist/ontology/release-manifest.json';
+const DEPRECATION_POLICY_PATH = 'ontology/deprecation-policy.md';
+const REPLACEMENTS_PATH = 'ontology/replacements.json';
+const TERM_STATUS_PATH = 'ontology/term-status.json';
 const ONTOLOGY_SERIES_IRI = 'https://dexa.art/learnmap/ontology';
 const DATASET_RELEASE = 'kr-full-depth-v0.4';
 
@@ -41,6 +44,26 @@ function lifecycleKey(kind, term) {
   return `${kind}:${term}`;
 }
 
+function knownVocabularyTerms(vocabulary) {
+  const known = new Set();
+  for (const section of ['classes', 'objectProperties', 'datatypeProperties']) {
+    const kind =
+      section === 'classes'
+        ? 'class'
+        : section === 'objectProperties'
+          ? 'objectProperty'
+          : 'datatypeProperty';
+    for (const entry of vocabulary[section]) known.add(lifecycleKey(kind, entry.term));
+  }
+  for (const scheme of vocabulary.conceptSchemes) {
+    known.add(lifecycleKey('conceptScheme', scheme.term));
+    for (const concept of scheme.concepts) {
+      known.add(lifecycleKey(`concept:${scheme.term}`, concept.term));
+    }
+  }
+  return known;
+}
+
 function lifecycleFor(termStatus, kind, term) {
   return (
     termStatus.deprecatedTerms.find(
@@ -59,7 +82,7 @@ function termRows(entries, kind, termStatus, columns) {
     .join('\n');
 }
 
-function validateTermStatus(vocabulary, termStatus) {
+function validateTermStatus(vocabulary, termStatus, replacementRegistry) {
   if (termStatus.ontologyVersion !== ONTOLOGY_VERSION) {
     throw new Error(
       `ontology/term-status.json ontologyVersion must be ${ONTOLOGY_VERSION}`,
@@ -69,18 +92,7 @@ function validateTermStatus(vocabulary, termStatus) {
     throw new Error('ontology/term-status.json must define active defaultStatus and deprecatedTerms');
   }
 
-  const known = new Set();
-  for (const section of ['classes', 'objectProperties', 'datatypeProperties']) {
-    const kind = section === 'classes' ? 'class' : section === 'objectProperties' ? 'objectProperty' : 'datatypeProperty';
-    for (const entry of vocabulary[section]) known.add(lifecycleKey(kind, entry.term));
-  }
-  for (const scheme of vocabulary.conceptSchemes) {
-    known.add(lifecycleKey('conceptScheme', scheme.term));
-    for (const concept of scheme.concepts) {
-      known.add(lifecycleKey(`concept:${scheme.term}`, concept.term));
-    }
-  }
-
+  const known = knownVocabularyTerms(vocabulary);
   const seen = new Set();
   for (const entry of termStatus.deprecatedTerms) {
     const key = lifecycleKey(entry.kind, entry.term);
@@ -91,14 +103,66 @@ function validateTermStatus(vocabulary, termStatus) {
       throw new Error(`deprecated term ${key} requires status, deprecatedIn, and replacement`);
     }
   }
+
+  const replacementKeys = new Set(
+    replacementRegistry.entries.map((entry) => lifecycleKey(entry.kind, entry.term)),
+  );
+  for (const key of seen) {
+    if (!replacementKeys.has(key)) {
+      throw new Error(`deprecated term ${key} is missing from ontology/replacements.json`);
+    }
+  }
+}
+
+function validateReplacementRegistry(vocabulary, replacementRegistry) {
+  if (
+    replacementRegistry.formatVersion !== 1 ||
+    replacementRegistry.ontologyVersion !== ONTOLOGY_VERSION ||
+    replacementRegistry.priorOntologyVersion !== PRIOR_ONTOLOGY_VERSION ||
+    replacementRegistry.stableOntologyIri !== ONTOLOGY_SERIES_IRI ||
+    replacementRegistry.policyDocument !== DEPRECATION_POLICY_PATH ||
+    replacementRegistry.status !== 'active' ||
+    !Array.isArray(replacementRegistry.entries)
+  ) {
+    throw new Error('ontology/replacements.json must identify the P3 active replacement registry');
+  }
+
+  const known = knownVocabularyTerms(vocabulary);
+  const seen = new Set();
+  for (const [index, entry] of replacementRegistry.entries.entries()) {
+    const path = `ontology/replacements.json entries[${index}]`;
+    const key = lifecycleKey(entry.kind, entry.term);
+    if (!known.has(key)) throw new Error(`${path} references unknown term ${key}`);
+    if (seen.has(key)) throw new Error(`${path} duplicates ${key}`);
+    seen.add(key);
+    for (const field of [
+      'status',
+      'deprecatedIn',
+      'iri',
+      'replacement',
+      'replacementIri',
+      'rationale',
+      'compatibilityImpact',
+      'reviewStatus',
+    ]) {
+      if (typeof entry[field] !== 'string' || entry[field].trim().length === 0) {
+        throw new Error(`${path} missing ${field}`);
+      }
+    }
+    if (!['deprecated', 'tombstone'].includes(entry.status)) {
+      throw new Error(`${path} status must be deprecated or tombstone`);
+    }
+  }
 }
 
 export async function buildOntologyReference({ rootDir }) {
-  const [vocabulary, termStatus] = await Promise.all([
+  const [vocabulary, termStatus, replacementRegistry] = await Promise.all([
     readJson(rootDir, 'ontology/controlled-vocabulary.json'),
-    readJson(rootDir, 'ontology/term-status.json'),
+    readJson(rootDir, TERM_STATUS_PATH),
+    readJson(rootDir, REPLACEMENTS_PATH),
   ]);
-  validateTermStatus(vocabulary, termStatus);
+  validateReplacementRegistry(vocabulary, replacementRegistry);
+  validateTermStatus(vocabulary, termStatus, replacementRegistry);
 
   const conceptCount = vocabulary.conceptSchemes.reduce(
     (count, scheme) => count + scheme.concepts.length,
@@ -114,6 +178,8 @@ export async function buildOntologyReference({ rootDir }) {
     `- Stable ontology IRI: \`${ONTOLOGY_SERIES_IRI}\``,
     `- Terms: ${vocabulary.classes.length} classes, ${vocabulary.objectProperties.length} object properties, ${vocabulary.datatypeProperties.length} datatype properties, ${vocabulary.conceptSchemes.length} concept schemes, ${conceptCount} concepts`,
     `- Lifecycle default: \`${termStatus.defaultStatus}\`; explicitly deprecated terms: ${termStatus.deprecatedTerms.length}`,
+    `- Deprecation policy: \`${DEPRECATION_POLICY_PATH}\``,
+    `- Replacement registry: \`${REPLACEMENTS_PATH}\`; active replacement entries: ${replacementRegistry.entries.length}`,
     '',
     'Definitions describe this repository model. They do not assert an official MOE/NCIC ontology or diagnose an individual learner.',
     '',
@@ -190,11 +256,14 @@ function mediaType(relativePath) {
 
 export async function buildOntologyReleaseArtifacts({ rootDir }) {
   const referenceText = await buildOntologyReference({ rootDir });
-  const [ontologyFiles, distFiles, coreManifest] = await Promise.all([
-    listFiles(rootDir, 'ontology'),
-    listFiles(rootDir, 'dist/ontology'),
-    readJson(rootDir, 'dist/ontology/manifest.json'),
-  ]);
+  const [ontologyFiles, distFiles, coreManifest, validationReport, replacementRegistry] =
+    await Promise.all([
+      listFiles(rootDir, 'ontology'),
+      listFiles(rootDir, 'dist/ontology'),
+      readJson(rootDir, 'dist/ontology/manifest.json'),
+      readJson(rootDir, 'dist/ontology/validation-report.json'),
+      readJson(rootDir, REPLACEMENTS_PATH),
+    ]);
   const releaseFiles = [
     ...ontologyFiles,
     ...distFiles.filter((path) => path !== RELEASE_MANIFEST_PATH),
@@ -213,6 +282,18 @@ export async function buildOntologyReleaseArtifacts({ rootDir }) {
     });
   }
 
+  const graphEquivalence = validationReport.graphs?.generatedEquivalence;
+  if (
+    graphEquivalence?.pass !== true ||
+    graphEquivalence.jsonldTripleCount !== graphEquivalence.turtleTripleCount
+  ) {
+    throw new Error('dist/ontology/validation-report.json must verify isomorphic generated RDF');
+  }
+  const totalGraphResources = Object.values(coreManifest.graphResources).reduce(
+    (count, value) => count + value,
+    0,
+  );
+
   const manifest = {
     formatVersion: 1,
     title: 'Korean Elementary Curriculum Learning Ontology',
@@ -225,6 +306,28 @@ export async function buildOntologyReleaseArtifacts({ rootDir }) {
     releaseDate: '2026-07-10',
     releaseStatus: 'formal',
     generator: 'scripts/build-ontology-release.mjs',
+    status: {
+      coverage: {
+        status: 'known-gaps-retained',
+        category: 'source-data-coverage',
+        coverageGapCount: coreManifest.sourceRecords.coverageGaps,
+      },
+      ontologyFormat: {
+        status: 'p3-formal-release',
+        machineReadableOntology: true,
+        executableShacl: true,
+        reasonerGate: validationReport.checks?.reasoner === true,
+      },
+      automatedReview: {
+        status: validationReport.overallPass === true ? 'passed-local-seven-gate' : 'not-passed',
+        localVerification: true,
+        githubActionsStatus: 'configured-not-run-in-this-manifest',
+      },
+      externalDomainReview: 'ongoing',
+      sourceRights: 'HOLD',
+      officialStatus: 'independent-non-official',
+      learnerDiagnosisSupported: false,
+    },
     review: {
       formalGateCount: 7,
       automatedGateStatus: 'passed',
@@ -238,8 +341,21 @@ export async function buildOntologyReleaseArtifacts({ rootDir }) {
       officialTextIncluded: false,
       permissionGranted: false,
     },
+    governance: {
+      changelog: 'ontology/CHANGELOG.md',
+      deprecationPolicy: DEPRECATION_POLICY_PATH,
+      replacementRegistry: REPLACEMENTS_PATH,
+      termStatus: TERM_STATUS_PATH,
+      deprecatedTermCount: replacementRegistry.entries.length,
+    },
     officialStatus: 'independent-non-official',
     counts: {
+      totalGraphResources,
+      rdfTriples: {
+        generatedABox: graphEquivalence.turtleTripleCount,
+        jsonld: graphEquivalence.jsonldTripleCount,
+        turtle: graphEquivalence.turtleTripleCount,
+      },
       sourceRecords: coreManifest.sourceRecords,
       graphResources: coreManifest.graphResources,
       relations: coreManifest.relations,

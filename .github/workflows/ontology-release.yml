@@ -3,6 +3,7 @@ name: Ontology release gates
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -29,8 +30,16 @@ jobs:
         run: npm run validate:ontology
       - name: G6 — deterministic ontology release artifacts
         run: |
+          npm run build:ontology
           npm run check:ontology:artifacts
+          npm run build:ontology:release
           npm run check:ontology:release
+      - name: Package audit
+        run: npm audit
+      - name: Generated artifact diff cleanliness
+        run: |
+          git diff --check
+          git diff --exit-code
 
   pinned-python-standards-gate:
     runs-on: ubuntu-latest
@@ -42,7 +51,7 @@ jobs:
           cache: npm
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12.10'
+          python-version: '3.14.3'
           cache: pip
       - run: npm ci
       - name: G7 — pinned RDF, SHACL, OWL-RL, SPARQL validation
@@ -53,4 +62,5 @@ jobs:
           "$RUNNER_TEMP/ontology-venv/bin/python" scripts/validate-ontology.py
           "$RUNNER_TEMP/ontology-venv/bin/python" -m unittest discover tests -p 'test_ontology_p2.py'
           npm run check:ontology:release
-          git diff --exit-code -- dist/ontology/validation-report.json
+          git diff --check
+          git diff --exit-code -- dist/ontology/validation-report.json dist/ontology/release-manifest.json

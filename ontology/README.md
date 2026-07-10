@@ -19,7 +19,7 @@ P3 incorporates the P2 standards gate and adds:
 - a reproducible validation report covering parser equivalence, full-data SHACL, bounded OWL-RL, custom graph invariants, competency queries, and adversarial fixtures;
 - a deterministic manifest containing byte counts, SHA-256 checksums, source-record counts, and graph-resource counts.
 - stable-series `owl:versionIRI` and `owl:priorVersion` semantics;
-- an ontology-specific changelog, deprecation/replacement governance, and machine-readable term lifecycle status;
+- an ontology-specific changelog, deprecation policy, replacement registry, and machine-readable term lifecycle status;
 - generated reference documentation and a release-wide deterministic SHA-256 manifest;
 - explicit automated-review, ongoing external-domain-review, non-official, no-diagnosis, and rights `HOLD` metadata;
 - GitHub Actions for six canonical Node gates and a seventh pinned Python standards gate in a temporary virtual environment.
@@ -32,7 +32,7 @@ P3 incorporates the P2 standards gate and adds:
 | [`context.jsonld`](context.jsonld) | Local JSON-LD 1.1 context with IRI coercion |
 | [`shapes.ttl`](shapes.ttl) | SHACL shapes executed by the pinned standards validator, including advanced SPARQL constraints |
 | [`metadata.ttl`](metadata.ttl) | Version, format, provenance, and rights metadata |
-| [`governance.md`](governance.md), [`CHANGELOG.md`](CHANGELOG.md), [`term-status.json`](term-status.json) | Version, review, deprecation/replacement, and lifecycle contract |
+| [`governance.md`](governance.md), [`CHANGELOG.md`](CHANGELOG.md), [`deprecation-policy.md`](deprecation-policy.md), [`replacements.json`](replacements.json), [`term-status.json`](term-status.json) | Version, review, deprecation/replacement, and lifecycle contract |
 | [`controlled-vocabulary.json`](controlled-vocabulary.json) | P0 machine-checkable term registry retained as the semantic source contract |
 | [`conceptual-model.md`](conceptual-model.md), [`vocabulary.md`](vocabulary.md), [`competency-questions.md`](competency-questions.md), [`uri-policy.md`](uri-policy.md) | P0 design documents preserved as the semantic foundation |
 | [`queries/`](queries/) | Local competency-question SPARQL files with deterministic expected-result assertions |
@@ -98,3 +98,5 @@ These remain separate release dimensions:
 | source rights | `HOLD` | Work-level KOGL or commercial-reuse permission is unresolved for cited Korean curriculum PDFs |
 
 Official achievement-standard wording remains excluded. P1 preserves the repository's summaries, code anchors, provenance limits, and warnings in [`../PROVENANCE.md`](../PROVENANCE.md), [`../NOTICE.md`](../NOTICE.md), and [`../README.md`](../README.md).
+
+Generated RDF runtime artifacts also omit public official-source URLs; source evidence is represented with repository-local source identifiers, locators, hashes, rights status, and verification records.
