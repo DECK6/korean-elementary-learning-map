@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Korean Elementary Learning Map ontology P0 controlled vocabulary",
-  "version": "0.1.0-p0",
-  "status": "ontology-oriented-knowledge-graph",
+  "title": "Korean Elementary Curriculum Learning Ontology controlled vocabulary",
+  "version": "0.3.0-p3",
+  "priorVersion": "0.2.0-p2",
+  "status": "formal-release",
   "namespaces": {
     "ontology": "https://dexa.art/learnmap/ontology#",
     "instance": "https://dexa.art/learnmap/#/",
@@ -10,15 +11,19 @@
     "reservedInstancePath": "https://dexa.art/learnmap/id/"
   },
   "releaseMetadata": {
-    "formalOntologyAvailable": false,
-    "rdfConversionStatus": "not-started",
+    "formalOntologyAvailable": true,
+    "rdfConversionStatus": "complete",
     "coverageGapCount": 43,
     "coverageGapCategory": "source-data-coverage",
-    "ontologyFormatStatus": "p0-model-only",
+    "ontologyFormatStatus": "p3-formal-release",
+    "ontologyReviewStatus": "seven-automated-gates-passed",
+    "externalDomainReviewStatus": "ongoing",
     "sourceRightsStatus": "HOLD",
     "sourceRightsCategory": "rights-and-redistribution",
     "sourceRightsBasis": "work-level-rights-unresolved",
-    "officialTextIncluded": false
+    "officialTextIncluded": false,
+    "officialStatus": "independent-non-official",
+    "learnerDiagnosisSupported": false
   },
   "classes": [
     {

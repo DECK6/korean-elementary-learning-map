@@ -8,7 +8,8 @@ const VOCABULARY_NAMESPACE = 'https://dexa.art/learnmap/vocab/#/';
 const ONTOLOGY_NAMESPACE = 'https://dexa.art/learnmap/ontology#';
 const ALIGNMENT_CONFIDENCE_DEFAULT = '0.5';
 const ALIGNMENT_CONFIDENCE_DEFAULT_POLICY = 'alignment-confidence-default-v1';
-const ONTOLOGY_VERSION = '0.2.0-p2';
+export const ONTOLOGY_VERSION = '0.3.0-p3';
+export const PRIOR_ONTOLOGY_VERSION = '0.2.0-p2';
 
 const STATIC_ONTOLOGY_FILES = [
   'ontology/learning-map.ttl',
@@ -1061,9 +1062,10 @@ export async function buildOntologyArtifacts({ rootDir }) {
     'dist/ontology/learning-map.ttl': turtleText,
   };
   const manifest = {
-    formatVersion: 2,
-    phase: 'P2',
+    formatVersion: 3,
+    phase: 'P3',
     ontologyVersion: ONTOLOGY_VERSION,
+    priorOntologyVersion: PRIOR_ONTOLOGY_VERSION,
     datasetRelease: data.standards.taxonomyVersion,
     generator: 'scripts/build-ontology.mjs',
     sourceRecords: counts.sourceRecords,
@@ -1145,7 +1147,7 @@ function printArtifactSummary(artifacts, action) {
     (sum, count) => sum + count,
     0,
   );
-  console.log(`Ontology P2 artifacts ${action} (${graphResourceCount} graph resources):`);
+  console.log(`Ontology P3 artifacts ${action} (${graphResourceCount} graph resources):`);
   for (const relativePath of GENERATED_ONTOLOGY_FILES) {
     const contents = artifacts.files[relativePath];
     console.log(

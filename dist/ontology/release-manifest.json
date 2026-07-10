@@ -1,0 +1,352 @@
+{
+  "counts": {
+    "graphResources": {
+      "AchievementStandard": 620,
+      "AssessmentPrompt": 1956,
+      "CoverageGap": 43,
+      "Curriculum": 11,
+      "DatasetRelease": 1,
+      "EvidenceCriterion": 4056,
+      "GradeBand": 5,
+      "LearningCluster": 153,
+      "LearningDomain": 79,
+      "LearningTopic": 1956,
+      "PrerequisiteAssertion": 1894,
+      "SourceDocument": 17,
+      "SourceLocator": 1232,
+      "StandardTopicAlignment": 1956,
+      "Subject": 12,
+      "VerificationRecord": 6455
+    },
+    "relations": {
+      "alignedToStandard": {
+        "count": 1956,
+        "sha256": "bb750c1580454f5b16edb010b29689cedc2f03f5e71d279299da3b9cbc0fcedf"
+      },
+      "directRequires": {
+        "count": 1894,
+        "sha256": "16cfe6dc70f5eebcd675aeb548354a725adbd75c36c8a9619d2f44666be3c132"
+      },
+      "indirectRequires": {
+        "count": 53656,
+        "sha256": "e455382f0d617bf815b856783a12f8c5fb52f0b8edb9ea2441b53b2a6c75f8db"
+      },
+      "unlocks": {
+        "count": 1894,
+        "sha256": "7695eecf55e2fd8c7f04a08a2b926a04f0cd3e4fed47777981f6c6691c75ece1"
+      }
+    },
+    "sourceRecords": {
+      "clusters": 153,
+      "coverageGaps": 43,
+      "curricula": 11,
+      "dependencies": 1894,
+      "standardMappings": 1956,
+      "standards": 620,
+      "topics": 1956
+    }
+  },
+  "datasetRelease": "kr-full-depth-v0.4",
+  "files": [
+    {
+      "bytes": 31221550,
+      "mediaType": "application/ld+json",
+      "path": "dist/ontology/learning-map.jsonld",
+      "sha256": "d6152367e6635caae96c198a186034dd186b7547806914603dc463be72917580"
+    },
+    {
+      "bytes": 22739260,
+      "mediaType": "text/turtle",
+      "path": "dist/ontology/learning-map.ttl",
+      "sha256": "aec25621de747e995509ad425038a09f7753117cd9aeddb083476ac2fdf7136d"
+    },
+    {
+      "bytes": 1848,
+      "mediaType": "application/json",
+      "path": "dist/ontology/manifest.json",
+      "sha256": "c3da29d40d411f3e9f6b56854c8363951a5c9f717a3c9aa48aaeddebfe343bce"
+    },
+    {
+      "bytes": 15304,
+      "mediaType": "application/json",
+      "path": "dist/ontology/validation-report.json",
+      "sha256": "ec0d7fe6ad3886c1e0a24c22223cbd7932bd0f9c29f890c1a9d4c52c15a25748"
+    },
+    {
+      "bytes": 25908,
+      "mediaType": "text/markdown",
+      "path": "docs/ontology-reference.md",
+      "sha256": "1202e120c4c2094bb21d28a9a07c472c65e35045ebc46e57179b3da6964b3b79"
+    },
+    {
+      "bytes": 3907,
+      "mediaType": "text/markdown",
+      "path": "docs/ontology-release-report.md",
+      "sha256": "762e0477a4dc197554d546828747840fe4732fdd9cc84e68f8023b6d1835d7e2"
+    },
+    {
+      "bytes": 1690,
+      "mediaType": "text/markdown",
+      "path": "ontology/CHANGELOG.md",
+      "sha256": "eb678d1113e7840ec59cbcb16ebb69df964148d1fd17aad7eafb1571b51ab6b3"
+    },
+    {
+      "bytes": 8738,
+      "mediaType": "text/markdown",
+      "path": "ontology/README.md",
+      "sha256": "f7a9e93253f2874b60f7acbed97a455158b78be9c275f421e688c7d19718e14b"
+    },
+    {
+      "bytes": 4926,
+      "mediaType": "text/markdown",
+      "path": "ontology/competency-questions.md",
+      "sha256": "69ad72d15cfb79d52f4a5c66040d8fddcd3a22d0ad76b4db147fbd2047bc324f"
+    },
+    {
+      "bytes": 8527,
+      "mediaType": "text/markdown",
+      "path": "ontology/conceptual-model.md",
+      "sha256": "b91b37bf282ea3698413aaf45af1f972981fe20d352582b9dd2effdd60d8be42"
+    },
+    {
+      "bytes": 6714,
+      "mediaType": "application/ld+json",
+      "path": "ontology/context.jsonld",
+      "sha256": "d84acaa8647188651a90b2b03c298ea9d29af9cc9b42a86999d7bf2fdb77bd44"
+    },
+    {
+      "bytes": 38973,
+      "mediaType": "application/json",
+      "path": "ontology/controlled-vocabulary.json",
+      "sha256": "27193f4724342b3605a9700c7cb224f8d9d98847b52a8139bc00841210150435"
+    },
+    {
+      "bytes": 1402,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/direct-cycle.ttl",
+      "sha256": "1994e576381ec5282e2b9fec73911ec8416fa0114c88cd0ccd2d35f3838b460c"
+    },
+    {
+      "bytes": 1954,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/direct-self-loop.ttl",
+      "sha256": "588b3bd50a334b632f967a5ccacbcdfb3294d98dd4cfdbbf4f9b8c6efdd193c3"
+    },
+    {
+      "bytes": 1333,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/duplicate-prerequisite-assertion.ttl",
+      "sha256": "9996fb85eed6d228f8397beaaf79721b6f4b48e553ccf0fbeb1fce04ffca6408"
+    },
+    {
+      "bytes": 1249,
+      "mediaType": "application/json",
+      "path": "ontology/fixtures/adversarial/expected.json",
+      "sha256": "123dfd826fe65f22bf58270380b13e1f59333bd2a98005d40b67fab46b56f227"
+    },
+    {
+      "bytes": 165,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/invalid-grade-band.ttl",
+      "sha256": "d2df44d3efc853ffb4afaa3a916872c556ede3af05d266623782a1d505aa9cd5"
+    },
+    {
+      "bytes": 738,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/missing-inverse.ttl",
+      "sha256": "b1cf867ff38080366e7a8c21218c16096b758897059b973e4e54d0bab1d94351"
+    },
+    {
+      "bytes": 726,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/missing-qualifier.ttl",
+      "sha256": "992ce9b0e8af99110c5c5ab07c424a13d677e0fa4920b6c1ec832c8fffb8b56c"
+    },
+    {
+      "bytes": 176,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/missing-required-cardinality.ttl",
+      "sha256": "75f42a373ef38b92d8b4b6ec084eab0ca5e8c3e9462ae478adfe896888cdb138"
+    },
+    {
+      "bytes": 1394,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/qualifier-edge-mismatch.ttl",
+      "sha256": "f04042f069d3231c0e5f6721b167cd631cb23f4e47064a6a1b22b5067177c6f1"
+    },
+    {
+      "bytes": 589,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/adversarial/source-status-incoherence.ttl",
+      "sha256": "3dbcfbd67db136472ad43454107817c6e811539e50daefb7162a5b269c18ffb5"
+    },
+    {
+      "bytes": 12196,
+      "mediaType": "text/turtle",
+      "path": "ontology/fixtures/canonical-positive.ttl",
+      "sha256": "53d01197e9a1f00350ea8a8cd408be979cc2ab785f00b273a84e792a76a3cd5c"
+    },
+    {
+      "bytes": 3244,
+      "mediaType": "text/markdown",
+      "path": "ontology/governance.md",
+      "sha256": "9e10f042f72e3b6899810458833b5c18da12939ef3b9bd11ae4d8972fb82a9c5"
+    },
+    {
+      "bytes": 27655,
+      "mediaType": "text/turtle",
+      "path": "ontology/learning-map.ttl",
+      "sha256": "6fb21cf92194de4a61c256c80bfc5863660f3f107d3d1299bf7c0703a523e111"
+    },
+    {
+      "bytes": 3820,
+      "mediaType": "text/turtle",
+      "path": "ontology/metadata.ttl",
+      "sha256": "d9712e90cd63fe41cacca279782d9a24552a793bbcceaf045415b1376a8caee4"
+    },
+    {
+      "bytes": 434,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-01-curriculum-standards.rq",
+      "sha256": "63513e20e84ccc2c2dcde7d0cb96cb834abaedfdd70a1e55eee06dd10089314a"
+    },
+    {
+      "bytes": 338,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-02-alignment-roles.rq",
+      "sha256": "acf2aa6f6b25eb76f0902cdf6624b1830731078fecc566269e852a70ea06924e"
+    },
+    {
+      "bytes": 348,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-03-evidence-prompts.rq",
+      "sha256": "8e771c2858bf9460c64a84047164736fbca145568131d2841486199ce84dbc6a"
+    },
+    {
+      "bytes": 566,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-04-direct-prerequisites.rq",
+      "sha256": "8009d63916917cb57de95b205114626ea152e446328948addd38f9c5553f8543"
+    },
+    {
+      "bytes": 308,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-05-indirect-prerequisites.rq",
+      "sha256": "863e4646865745f59007f5f4264d98712871e3d75c82bd85addf4093dfa43b0f"
+    },
+    {
+      "bytes": 213,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-06-unlocks.rq",
+      "sha256": "54bf25a727e27d58b5f3ec08dec8fa8e648c455a2656d261d7f0b35241503434"
+    },
+    {
+      "bytes": 336,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-07-requirement-levels.rq",
+      "sha256": "26f1672fb25d9b4c4bf9d6e07776e4a4f10e60664ca9f0e017348ceaedd8a52a"
+    },
+    {
+      "bytes": 247,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-08-cluster-membership.rq",
+      "sha256": "8d2d78c6330dd50b7a5170f5ac1d3e3ae047e0004b10fb7a522815662c06230c"
+    },
+    {
+      "bytes": 306,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-09-source-locators.rq",
+      "sha256": "1ff73f4148e6714a99e6a5c7c27561f402404f47881325ffdb8dd22268e748bd"
+    },
+    {
+      "bytes": 352,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-10-verification-limits.rq",
+      "sha256": "12cb5bb11cca6c8eef1a38097910a81c52dfd351a393222e3470137ab3befc96"
+    },
+    {
+      "bytes": 295,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-11-coverage-gaps.rq",
+      "sha256": "7b7d47d0d451531a80ebbcf59cedf506d3d9102a1af19ebe9ca6b9565515a3b0"
+    },
+    {
+      "bytes": 251,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-12-rights-hold.rq",
+      "sha256": "167ba122d991a7cf44d1974d79ab3986c4b59e57af5fe03b5e0f9a266c0c9504"
+    },
+    {
+      "bytes": 205,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-13-topic-types.rq",
+      "sha256": "67ef3955d7fa9ae35750e14e26748c5b867fbfd71bf528822cc2d71551b286dc"
+    },
+    {
+      "bytes": 1016,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-14-alignment-round-trip.rq",
+      "sha256": "e300e07c365ce8e9f6c55342adffd8f0c48bd945a7066851a500351aecf109e0"
+    },
+    {
+      "bytes": 495,
+      "mediaType": "application/sparql-query",
+      "path": "ontology/queries/cq-15-prerequisite-round-trip.rq",
+      "sha256": "64380b7dc3c4ddddec888ddc8dc13d5cb6d9c44fb74c4eabc754e5cc9b6333d6"
+    },
+    {
+      "bytes": 4350,
+      "mediaType": "application/json",
+      "path": "ontology/queries/expected.json",
+      "sha256": "30d10091d3d9927ba439f1e7dd39c34bf73000a391ac93fb55e4c45684ffa02f"
+    },
+    {
+      "bytes": 19873,
+      "mediaType": "text/turtle",
+      "path": "ontology/shapes.ttl",
+      "sha256": "c869fc1b4f7fee0afb47226299de2424926010343d070b63fb7a51f71b81fa60"
+    },
+    {
+      "bytes": 112,
+      "mediaType": "application/json",
+      "path": "ontology/term-status.json",
+      "sha256": "428e97eab5e86a0837946de5377ea7cde766a1ae8ae1ded8ed9aa9104ec57517"
+    },
+    {
+      "bytes": 7438,
+      "mediaType": "text/markdown",
+      "path": "ontology/uri-policy.md",
+      "sha256": "db614e7a90260ce6fe26dd0ae17c91060ac4b729f208193b50684414cfe4926b"
+    },
+    {
+      "bytes": 15369,
+      "mediaType": "text/markdown",
+      "path": "ontology/vocabulary.md",
+      "sha256": "1db5c5b180cef956fc8533a1102b04c2b7ea73bc4ced5d3a1c180449db68686e"
+    }
+  ],
+  "formatVersion": 1,
+  "generator": "scripts/build-ontology-release.mjs",
+  "officialStatus": "independent-non-official",
+  "ontologySeriesIri": "https://dexa.art/learnmap/ontology",
+  "ontologyVersion": "0.3.0-p3",
+  "ontologyVersionIri": "https://dexa.art/learnmap/ontology/0.3.0-p3",
+  "priorOntologyVersion": "0.2.0-p2",
+  "priorOntologyVersionIri": "https://dexa.art/learnmap/ontology/0.2.0-p2",
+  "releaseDate": "2026-07-10",
+  "releaseStatus": "formal",
+  "review": {
+    "automatedGateStatus": "passed",
+    "externalDomainReviewStatus": "ongoing",
+    "formalGateCount": 7,
+    "learnerDiagnosisSupported": false,
+    "standardsValidation": "passed-with-pinned-tools"
+  },
+  "rights": {
+    "basis": "work-level-rights-unresolved",
+    "officialTextIncluded": false,
+    "permissionGranted": false,
+    "status": "HOLD"
+  },
+  "title": "Korean Elementary Curriculum Learning Ontology"
+}

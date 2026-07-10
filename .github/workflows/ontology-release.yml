@@ -1,0 +1,56 @@
+name: Ontology release gates
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  canonical-node-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.11.1
+          cache: npm
+      - run: npm ci
+      - name: G1 — canonical build
+        run: npm run build
+      - name: G2 — Node test suite
+        run: npm test
+      - name: G3 — canonical dataset validation
+        run: npm run validate
+      - name: G4 — content-quality validation
+        run: npm run check:content
+      - name: G5 — ontology vocabulary contract
+        run: npm run validate:ontology
+      - name: G6 — deterministic ontology release artifacts
+        run: |
+          npm run check:ontology:artifacts
+          npm run check:ontology:release
+
+  pinned-python-standards-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.11.1
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+          cache: pip
+      - run: npm ci
+      - name: G7 — pinned RDF, SHACL, OWL-RL, SPARQL validation
+        shell: bash
+        run: |
+          python -m venv "$RUNNER_TEMP/ontology-venv"
+          "$RUNNER_TEMP/ontology-venv/bin/python" -m pip install --disable-pip-version-check -r requirements-ontology.txt
+          "$RUNNER_TEMP/ontology-venv/bin/python" scripts/validate-ontology.py
+          "$RUNNER_TEMP/ontology-venv/bin/python" -m unittest discover tests -p 'test_ontology_p2.py'
+          npm run check:ontology:release
+          git diff --exit-code -- dist/ontology/validation-report.json

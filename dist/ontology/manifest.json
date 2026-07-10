@@ -14,7 +14,7 @@
       "sha256": "aec25621de747e995509ad425038a09f7753117cd9aeddb083476ac2fdf7136d"
     }
   ],
-  "formatVersion": 2,
+  "formatVersion": 3,
   "generator": "scripts/build-ontology.mjs",
   "graphResources": {
     "AchievementStandard": 620,
@@ -34,8 +34,9 @@
     "Subject": 12,
     "VerificationRecord": 6455
   },
-  "ontologyVersion": "0.2.0-p2",
-  "phase": "P2",
+  "ontologyVersion": "0.3.0-p3",
+  "phase": "P3",
+  "priorOntologyVersion": "0.2.0-p2",
   "relations": {
     "alignedToStandard": {
       "count": 1956,

@@ -1,4 +1,4 @@
-# P2 standards-engine gate. Keep exact pins so local and CI reasoning are reproducible.
+# P3 retains the P2 standards engine. Keep exact pins for reproducible local and temporary-CI validation.
 rdflib==7.1.4
 pyshacl==0.30.1
 owlrl==7.1.4

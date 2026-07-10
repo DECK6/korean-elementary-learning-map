@@ -8,12 +8,13 @@
 
 <https://dexa.art/learnmap/ontology>
   a owl:Ontology ;
-  dcterms:title "Korean Elementary Learning Map ontology"@en ;
-  dcterms:description "P2 validated and reasoned semantic contract for the Korean elementary learning map."@en ;
+  dcterms:title "Korean Elementary Curriculum Learning Ontology"@en ;
+  dcterms:description "P3 formal, governed semantic contract for the independently built Korean elementary curriculum learning map."@en ;
   dcterms:created "2026-07-10"^^xsd:date ;
   dcterms:source <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> ;
-  owl:versionIRI <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
-  owl:versionInfo "0.2.0-p2" ;
+  owl:versionIRI <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
+  owl:priorVersion <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
+  owl:versionInfo "0.3.0-p3" ;
   rdfs:seeAlso
     <https://dexa.art/learnmap/ontology/context.jsonld>,
     <https://dexa.art/learnmap/ontology/metadata.ttl>,

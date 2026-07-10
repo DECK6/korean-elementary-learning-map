@@ -76,7 +76,7 @@ test('ontology P0 preserves prerequisite and topic-type semantic guardrails', ()
   });
 });
 
-test('ontology P0 contract remains available within the P1 machine-readable release', () => {
+test('ontology P0 contract remains available within the P3 formal release', () => {
   for (const filename of [
     'README.md',
     'competency-questions.md',
@@ -89,6 +89,6 @@ test('ontology P0 contract remains available within the P1 machine-readable rele
   }
 
   const rootReadme = readFileSync(resolve(ROOT, 'README.md'), 'utf8');
-  assert.match(rootReadme, /P2 \/ validated ontology gate/);
+  assert.match(rootReadme, /P3 \/ Korean Elementary Curriculum Learning Ontology/);
   assert.match(rootReadme, /공개 SPARQL 엔드포인트를 제공하지 않습니다/);
 });

@@ -266,8 +266,8 @@
     "parsedTripleCounts": {
       "dist/ontology/learning-map.jsonld": 249461,
       "dist/ontology/learning-map.ttl": 249461,
-      "ontology/learning-map.ttl": 668,
-      "ontology/metadata.ttl": 40,
+      "ontology/learning-map.ttl": 669,
+      "ontology/metadata.ttl": 58,
       "ontology/shapes.ttl": 571
     }
   },
@@ -287,8 +287,8 @@
     "ontology/fixtures/adversarial/qualifier-edge-mismatch.ttl": "f04042f069d3231c0e5f6721b167cd631cb23f4e47064a6a1b22b5067177c6f1",
     "ontology/fixtures/adversarial/source-status-incoherence.ttl": "3dbcfbd67db136472ad43454107817c6e811539e50daefb7162a5b269c18ffb5",
     "ontology/fixtures/canonical-positive.ttl": "53d01197e9a1f00350ea8a8cd408be979cc2ab785f00b273a84e792a76a3cd5c",
-    "ontology/learning-map.ttl": "2439ffaafbc4f11514fba28aff51d0bb9e25c222bc07344c264fbc4b9f65ae8c",
-    "ontology/metadata.ttl": "98b8f3eb6c314250a60ea017d158fd1e008c1cb034378978cd45fa0e86484c9e",
+    "ontology/learning-map.ttl": "6fb21cf92194de4a61c256c80bfc5863660f3f107d3d1299bf7c0703a523e111",
+    "ontology/metadata.ttl": "d9712e90cd63fe41cacca279782d9a24552a793bbcceaf045415b1376a8caee4",
     "ontology/queries/cq-01-curriculum-standards.rq": "63513e20e84ccc2c2dcde7d0cb96cb834abaedfdd70a1e55eee06dd10089314a",
     "ontology/queries/cq-02-alignment-roles.rq": "acf2aa6f6b25eb76f0902cdf6624b1830731078fecc566269e852a70ea06924e",
     "ontology/queries/cq-03-evidence-prompts.rq": "8e771c2858bf9460c64a84047164736fbca145568131d2841486199ce84dbc6a",
@@ -381,11 +381,11 @@
   },
   "overallPass": true,
   "reasoner": {
-    "closureTripleCount": 2908,
+    "closureTripleCount": 2910,
     "errors": [],
     "explicitContradictionCount": 0,
-    "inferredTripleCount": 1983,
-    "inputTripleCount": 925,
+    "inferredTripleCount": 1984,
+    "inputTripleCount": 926,
     "pass": true,
     "profile": "OWL-RL bounded TBox plus canonical-positive fixture",
     "unsatisfiableNamedClassCount": 0
@@ -399,7 +399,7 @@
   "toolVersions": {
     "owlrl": "7.1.4",
     "pyshacl": "0.30.1",
-    "python": "3.14.3",
+    "python": "3.12.10",
     "rdflib": "7.1.4"
   }
 }

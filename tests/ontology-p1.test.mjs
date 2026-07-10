@@ -104,7 +104,8 @@ test('P1 static TBox covers the P0 registry and preserves semantic guardrails', 
   for (const prefix of ['lm', 'dcterms', 'owl', 'rdf', 'rdfs', 'skos', 'xsd']) {
     assert.match(tbox, new RegExp(`@prefix ${prefix}:`), `missing ${prefix} prefix`);
   }
-  assert.match(tbox, /owl:versionIRI <https:\/\/dexa\.art\/learnmap\/ontology\/0\.2\.0-p2>/);
+  assert.match(tbox, /owl:versionIRI <https:\/\/dexa\.art\/learnmap\/ontology\/0\.3\.0-p3>/);
+  assert.match(tbox, /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.2\.0-p2>/);
 
   for (const section of ['classes', 'objectProperties', 'datatypeProperties']) {
     for (const { term } of registry[section]) {
@@ -189,7 +190,8 @@ test('P1 metadata keeps format, provenance, version, and rights HOLD independent
   }
   assert.match(metadata, /lm:rightsStatus <https:\/\/dexa\.art\/learnmap\/vocab\/#\/RightsStatus\/hold>/);
   assert.match(metadata, /dcterms:rights "HOLD/);
-  assert.match(metadata, /dcterms:hasVersion "0\.2\.0-p2"/);
+  assert.match(metadata, /dcterms:hasVersion "0\.3\.0-p3"/);
+  assert.match(metadata, /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.2\.0-p2>/);
   assert.match(metadata, /dcterms:format "text\/turtle", "application\/ld\+json"/);
   assert.match(metadata, /prov:wasDerivedFrom/);
   assert.match(metadata, /lm:officialTextIncluded false/);
@@ -384,9 +386,10 @@ test('P1 generated JSON-LD, Turtle, and manifest are byte-identical across build
   assert.match(ttl, /<https:\/\/dexa\.art\/learnmap\/#\/release\/kr-full-depth-v0\.4>/);
 
   const manifest = JSON.parse(first.files['dist/ontology/manifest.json']);
-  assert.equal(manifest.formatVersion, 2);
-  assert.equal(manifest.phase, 'P2');
-  assert.equal(manifest.ontologyVersion, '0.2.0-p2');
+  assert.equal(manifest.formatVersion, 3);
+  assert.equal(manifest.phase, 'P3');
+  assert.equal(manifest.ontologyVersion, '0.3.0-p3');
+  assert.equal(manifest.priorOntologyVersion, '0.2.0-p2');
   assert.equal(manifest.datasetRelease, 'kr-full-depth-v0.4');
   assert.equal(manifest.generator, 'scripts/build-ontology.mjs');
   assert.deepEqual(manifest.sourceRecords, EXPECTED_SOURCE_COUNTS);

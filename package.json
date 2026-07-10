@@ -16,6 +16,7 @@
   "scripts": {
     "build": "npm run build:kr",
     "build:ontology": "node scripts/build-ontology.mjs",
+    "build:ontology:release": "node scripts/build-ontology-release.mjs",
     "build:kr:workstreams": "node scripts/generate-korean-workstream.mjs && node scripts/build-english-efl-workstream.mjs && node scripts/build-integrated-workstream.mjs && node scripts/build-social-arts-pe-workstreams.mjs && node scripts/repair-kr-workstreams.mjs",
     "build:kr": "npm run build:kr:workstreams && node scripts/build-kr-full-depth.mjs",
     "test": "node --test tests/*.test.mjs",
@@ -27,10 +28,14 @@
     "validate:ontology:p2": ".venv-ontology/bin/python scripts/validate-ontology.py",
     "test:ontology:p2": ".venv-ontology/bin/python -m unittest discover tests",
     "check:ontology:artifacts": "node scripts/build-ontology.mjs --check",
+    "check:ontology:release": "node scripts/build-ontology-release.mjs --check",
     "check:content": "node scripts/check-kr-content-quality.mjs",
     "check:kr:content": "npm run check:content",
     "check:links": "node scripts/check-kr-source-links.mjs",
-    "check:kr:links": "npm run check:links"
+    "check:kr:links": "npm run check:links",
+    "verify:formal:node": "npm run build && npm test && npm run validate && npm run check:content && npm run validate:ontology && npm run check:ontology:artifacts && npm run check:ontology:release",
+    "verify:formal:python": "npm run validate:ontology:p2 && npm run test:ontology:p2",
+    "verify:formal": "npm run verify:formal:node && npm run verify:formal:python && npm run check:ontology:release"
   },
   "devDependencies": {
     "ajv": "^8.20.0"

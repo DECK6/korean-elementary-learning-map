@@ -7,25 +7,31 @@
 <https://dexa.art/learnmap/#/release/kr-full-depth-v0.4>
   a lm:DatasetRelease, prov:Entity ;
   lm:identifier "kr-full-depth-v0.4" ;
+  lm:status "formal-ontology-release" ;
   lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ;
   lm:officialTextIncluded false ;
-  dcterms:title "Korean Elementary Learning Map — kr-full-depth-v0.4"@en ;
+  lm:hasVerificationRecord <https://dexa.art/learnmap/#/verification/ontology-p3-formal-gates> ;
+  dcterms:title "Korean Elementary Curriculum Learning Ontology — kr-full-depth-v0.4"@en ;
   dcterms:hasVersion "kr-full-depth-v0.4" ;
   dcterms:issued "2026-07-10"^^xsd:date ;
   dcterms:format "text/turtle", "application/ld+json" ;
   dcterms:conformsTo
-    <https://dexa.art/learnmap/ontology/0.2.0-p2>,
+    <https://dexa.art/learnmap/ontology/0.3.0-p3>,
     <https://dexa.art/learnmap/ontology/shapes.ttl> ;
   dcterms:rights "HOLD — work-level reuse and redistribution terms remain unresolved; ontology conversion does not clear source rights."@en ;
   prov:wasDerivedFrom
     <https://dexa.art/learnmap/data/kr/manifest.json>,
     <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> .
 
-<https://dexa.art/learnmap/ontology/0.2.0-p2>
+<https://dexa.art/learnmap/ontology>
   a owl:Ontology, prov:Entity ;
-  dcterms:title "Korean Elementary Learning Map static ontology contract"@en ;
-  dcterms:hasVersion "0.2.0-p2" ;
-  owl:versionInfo "0.2.0-p2" ;
+  dcterms:title "Korean Elementary Curriculum Learning Ontology"@en ;
+  dcterms:description "Independent, non-official curriculum learning ontology; it does not provide learner diagnosis."@en ;
+  dcterms:hasVersion "0.3.0-p3" ;
+  dcterms:replaces <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
+  owl:versionIRI <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
+  owl:priorVersion <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
+  owl:versionInfo "0.3.0-p3" ;
   dcterms:issued "2026-07-10"^^xsd:date ;
   dcterms:format "text/turtle" ;
   dcterms:source <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> ;
@@ -35,6 +41,20 @@
     <https://dexa.art/learnmap/ontology/shapes.ttl>,
     <https://dexa.art/learnmap/ontology/metadata.ttl> ;
   prov:wasDerivedFrom <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> .
+
+<https://dexa.art/learnmap/ontology/0.3.0-p3>
+  a owl:Ontology, prov:Entity ;
+  dcterms:isVersionOf <https://dexa.art/learnmap/ontology> ;
+  dcterms:hasVersion "0.3.0-p3" ;
+  dcterms:replaces <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
+  owl:priorVersion <https://dexa.art/learnmap/ontology/0.2.0-p2> .
+
+<https://dexa.art/learnmap/#/verification/ontology-p3-formal-gates>
+  a lm:VerificationRecord, prov:Entity ;
+  lm:identifier "ontology-p3-formal-gates" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/workstream-reviewed> ;
+  lm:summary "Seven automated release gates passed with deterministic artifacts and pinned RDF tooling."@en ;
+  lm:note "External curriculum, subject, pedagogy, and classroom review remains ongoing; this status is not official approval, rights clearance, or learner diagnosis."@en .
 
 <https://dexa.art/learnmap/ontology/learning-map.ttl>
   a prov:Entity ;

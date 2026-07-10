@@ -3,3 +3,5 @@ coverage/
 .DS_Store
 npm-debug.log*
 .venv-ontology/
+__pycache__/
+*.pyc

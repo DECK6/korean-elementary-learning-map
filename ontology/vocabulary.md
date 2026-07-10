@@ -1,6 +1,6 @@
 # Ontology P0 vocabulary
 
-This document is the human-readable P0 vocabulary contract. The machine-readable registry is [`controlled-vocabulary.json`](controlled-vocabulary.json), and the current JSON dataset remains the authoritative ABox input. Terms below describe an ontology-oriented knowledge graph; they are not an OWL or SHACL release.
+This document preserves the human-readable P0 vocabulary foundation. The machine-readable registry is [`controlled-vocabulary.json`](controlled-vocabulary.json), the current JSON dataset remains the authoritative ABox input, and the executable P3 OWL/SHACL release is defined by [`learning-map.ttl`](learning-map.ttl), [`shapes.ttl`](shapes.ttl), and [`metadata.ttl`](metadata.ttl).
 
 ## Reading the contract
 
@@ -66,7 +66,7 @@ This document is the human-readable P0 vocabulary contract. The machine-readable
 - `A directRequires B` and `B directRequires C` do not permit publishing `A directRequires C`; the derived relation is `A indirectRequires C` with rule/path provenance.
 - `alignedToStandard` alone is not a complete export of alignment semantics. Follow `hasStandardTopicAlignment` for role, confidence, note, basis, and source.
 - `documentedBy` and `hasVerificationRecord` do not grant copyright permission, certify official wording, or imply Ministry/NCIC approval.
-- `reportsCoverageGap` must not be used for `p0-model-only` format status or the independent source-rights `HOLD`.
+- `reportsCoverageGap` must not be used for the independent `p3-formal-release` format status or source-rights `HOLD`.
 
 ## Datatype properties
 
@@ -136,7 +136,7 @@ The source value must remain recoverable after normalization.
 - `VerificationStatus`: `official-source-checked`, `public-doc-derived`, `workstream-reviewed`, `verification-review-needed`, `not-checked`. A source `review-needed` value normalizes to `verification-review-needed` to keep term identifiers globally unique.
 - `RightsStatus`: `hold`, `cleared`, `unknown`. Current source-level `HOLD` and `work-level-rights-unresolved` normalize to `hold` without erasing the source value.
 
-Coverage, format phase, and rights remain separate axes: the release has 43 retained coverage gaps, ontology format status `p0-model-only`, and source rights status `HOLD`.
+Coverage, format phase, and rights remain separate axes: the release has 43 retained coverage gaps, ontology format status `p3-formal-release`, and source rights status `HOLD`.
 
 ## Qualifier-preserving release rule
 

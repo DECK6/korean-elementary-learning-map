@@ -228,11 +228,27 @@ export function validateControlledVocabulary(vocabulary) {
   }
 
   const release = vocabulary.releaseMetadata;
+  if (
+    vocabulary.version !== '0.3.0-p3' ||
+    vocabulary.priorVersion !== '0.2.0-p2' ||
+    release?.formalOntologyAvailable !== true ||
+    release?.rdfConversionStatus !== 'complete' ||
+    release?.ontologyFormatStatus !== 'p3-formal-release'
+  ) {
+    errors.push('release metadata must identify the governed P3 formal ontology and prior P2 version');
+  }
   if (release?.coverageGapCount !== 43) {
     errors.push('releaseMetadata.coverageGapCount must preserve the 43 source-data gaps');
   }
   if (release?.sourceRightsStatus !== 'HOLD') {
     errors.push('releaseMetadata.sourceRightsStatus must preserve HOLD');
+  }
+  if (
+    release?.externalDomainReviewStatus !== 'ongoing' ||
+    release?.officialStatus !== 'independent-non-official' ||
+    release?.learnerDiagnosisSupported !== false
+  ) {
+    errors.push('release review, official-status, and learner-diagnosis limits must remain explicit');
   }
   if (release?.coverageGapCategory === release?.sourceRightsCategory) {
     errors.push('coverage gaps and source-rights metadata must use distinct categories');
