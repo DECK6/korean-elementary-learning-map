@@ -21,6 +21,19 @@
 
 대상 교과·영역은 국어, 수학, 과학, 사회, 영어(EFL), 도덕, 실과(기술·가정)/정보, 통합교과, 미술, 음악, 체육입니다. 선수 관계 그래프는 DAG이며, 현재 정책상 교과 간 합성 연결을 만들지 않습니다.
 
+## 온톨로지 상태
+
+현재 상태는 **P0 / ontology-oriented knowledge graph(온톨로지 지향 지식 그래프)**입니다. [`ontology/`](ontology/)에 개념 모델, 역량 질문, 어휘·제어 어휘, URI 정책을 정의했지만, 아직 정식 RDF/OWL 온톨로지, SHACL 제약, JSON→RDF 변환기 또는 SPARQL 엔드포인트를 배포한 단계는 아닙니다.
+
+P0는 다음 의미 경계를 고정합니다.
+
+- 직접 선수 추천 `directRequires`, 다단계 파생 관계 `indirectRequires`, 파생 역관계 `unlocks`를 구분합니다. 직접 관계는 모든 학습자에게 적용되는 보편 법칙이나 전이 속성이 아닙니다.
+- `hard`/`soft`는 원값을 보존하면서 모델 내부의 `required`/`recommended` 추천 강도로 정규화합니다.
+- 선수 관계와 성취기준-주제 정렬은 각각 `PrerequisiteAssertion`, `StandardTopicAlignment`로 강도·이유·근거·출처·정렬 역할·신뢰도 같은 한정자를 보존합니다.
+- 43개 데이터 커버리지 갭, `p0-model-only` 온톨로지 형식 상태, 공식 출처 권리 `HOLD`를 서로 다른 메타데이터 축으로 유지합니다.
+
+시작점은 [`ontology/README.md`](ontology/README.md)이며, P0 제어 어휘는 `npm run validate:ontology`로 검증합니다.
+
 ## 데이터 파일
 
 모든 데이터는 UTF-8 JSON이며, 한국 데이터 경로인 `data/kr/`을 유지합니다.
@@ -64,6 +77,7 @@ npm ci
 npm run build
 npm test
 npm run validate
+npm run validate:ontology
 npm run check:content
 ```
 

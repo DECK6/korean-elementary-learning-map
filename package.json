@@ -21,6 +21,7 @@
     "test:kr": "npm test",
     "validate": "node scripts/validate-kr.mjs",
     "validate:kr": "npm run validate",
+    "validate:ontology": "node scripts/validate-ontology-p0.mjs",
     "check:content": "node scripts/check-kr-content-quality.mjs",
     "check:kr:content": "npm run check:content",
     "check:links": "node scripts/check-kr-source-links.mjs",
