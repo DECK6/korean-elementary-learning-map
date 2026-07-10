@@ -1,0 +1,149 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lm:DatasetReleaseShape a sh:NodeShape ;
+  sh:targetClass lm:DatasetRelease ;
+  sh:closed false ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
+  sh:property [ sh:path lm:hasCurriculum ; sh:minCount 1 ; sh:class lm:Curriculum ] ;
+  sh:property [ sh:path lm:containsTopic ; sh:minCount 1 ; sh:class lm:LearningTopic ] .
+
+lm:CurriculumShape a sh:NodeShape ;
+  sh:targetClass lm:Curriculum ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:hasSubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:Subject ] ;
+  sh:property [ sh:path lm:hasGradeBand ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:GradeBand ] ;
+  sh:property [ sh:path lm:hasAchievementStandard ; sh:minCount 1 ; sh:class lm:AchievementStandard ] .
+
+lm:AchievementStandardShape a sh:NodeShape ;
+  sh:targetClass lm:AchievementStandard ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:hasSubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:Subject ] ;
+  sh:property [ sh:path lm:hasGradeBand ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:GradeBand ] ;
+  sh:property [ sh:path lm:hasLearningDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:LearningDomain ] ;
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] .
+
+lm:LearningTopicShape a sh:NodeShape ;
+  sh:targetClass lm:LearningTopic ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:preferredLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
+  sh:property [ sh:path lm:hasSubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:Subject ] ;
+  sh:property [ sh:path lm:hasGradeBand ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:GradeBand ] ;
+  sh:property [ sh:path lm:hasLearningDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:LearningDomain ] ;
+  sh:property [
+    sh:path lm:topicType ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/LearningTopicType/conceptual>
+      <https://dexa.art/learnmap/vocab/#/LearningTopicType/language>
+      <https://dexa.art/learnmap/vocab/#/LearningTopicType/meta>
+      <https://dexa.art/learnmap/vocab/#/LearningTopicType/procedural>
+      <https://dexa.art/learnmap/vocab/#/LearningTopicType/representational>
+    )
+  ] ;
+  sh:property [ sh:path lm:hasEvidenceCriterion ; sh:minCount 1 ; sh:class lm:EvidenceCriterion ] ;
+  sh:property [ sh:path lm:hasAssessmentPrompt ; sh:minCount 1 ; sh:class lm:AssessmentPrompt ] ;
+  sh:property [ sh:path lm:hasStandardTopicAlignment ; sh:minCount 1 ; sh:class lm:StandardTopicAlignment ] ;
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] .
+
+lm:LearningClusterShape a sh:NodeShape ;
+  sh:targetClass lm:LearningCluster ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:hasClusterMember ; sh:minCount 1 ; sh:class lm:LearningTopic ] .
+
+lm:EvidenceCriterionShape a sh:NodeShape ;
+  sh:targetClass lm:EvidenceCriterion ;
+  sh:property [ sh:path lm:criterionText ; sh:minCount 1 ; sh:uniqueLang true ] .
+
+lm:AssessmentPromptShape a sh:NodeShape ;
+  sh:targetClass lm:AssessmentPrompt ;
+  sh:property [ sh:path lm:promptText ; sh:minCount 1 ; sh:uniqueLang true ] .
+
+lm:PrerequisiteAssertionShape a sh:NodeShape ;
+  sh:targetClass lm:PrerequisiteAssertion ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:dependentTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:LearningTopic ] ;
+  sh:property [ sh:path lm:prerequisiteTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:LearningTopic ] ;
+  sh:property [
+    sh:path lm:prerequisiteStrength ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/required>
+      <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended>
+    )
+  ] ;
+  sh:property [ sh:path lm:prerequisiteReason ; sh:minCount 1 ; sh:uniqueLang true ] ;
+  sh:property [ sh:path lm:assertionBasis ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:assertionSource ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+  sh:sparql [
+    sh:message "A prerequisite assertion must be linked from its dependent topic, and its binary directRequires edge must agree with the authoritative assertion."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        $this lm:dependentTopic ?dependent ; lm:prerequisiteTopic ?prerequisite .
+        FILTER NOT EXISTS {
+          ?dependent lm:hasPrerequisiteAssertion $this ; lm:directRequires ?prerequisite .
+        }
+      }
+    """
+  ] .
+
+lm:StandardTopicAlignmentShape a sh:NodeShape ;
+  sh:targetClass lm:StandardTopicAlignment ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:alignmentTopic ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:LearningTopic ] ;
+  sh:property [ sh:path lm:alignmentStandard ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:AchievementStandard ] ;
+  sh:property [
+    sh:path lm:alignmentKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/AlignmentKind/introduces>
+      <https://dexa.art/learnmap/vocab/#/AlignmentKind/supports>
+      <https://dexa.art/learnmap/vocab/#/AlignmentKind/extends>
+      <https://dexa.art/learnmap/vocab/#/AlignmentKind/assesses>
+    )
+  ] ;
+  sh:property [ sh:path lm:confidence ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ; sh:maxInclusive 1 ] ;
+  sh:property [ sh:path lm:assertionBasis ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:assertionSource ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+  sh:sparql [
+    sh:message "A standard alignment must be linked from its topic, and its binary alignedToStandard edge must agree with the authoritative assertion."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        $this lm:alignmentTopic ?topic ; lm:alignmentStandard ?standard .
+        FILTER NOT EXISTS {
+          ?topic lm:hasStandardTopicAlignment $this ; lm:alignedToStandard ?standard .
+        }
+      }
+    """
+  ] .
+
+lm:SourceDocumentShape a sh:NodeShape ;
+  sh:targetClass lm:SourceDocument ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] .
+
+lm:SourceLocatorShape a sh:NodeShape ;
+  sh:targetClass lm:SourceLocator ;
+  sh:property [ sh:path lm:locatorValue ; sh:minCount 1 ; sh:datatype xsd:string ] .
+
+lm:VerificationRecordShape a sh:NodeShape ;
+  sh:targetClass lm:VerificationRecord ;
+  sh:property [ sh:path lm:verificationStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] .
+
+lm:CoverageGapShape a sh:NodeShape ;
+  sh:targetClass lm:CoverageGap ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:gapCategory ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path lm:gapSeverity ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path lm:gapDescription ; sh:minCount 1 ; sh:uniqueLang true ] .
