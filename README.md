@@ -23,16 +23,18 @@
 
 ## 온톨로지 상태
 
-현재 상태는 **P0 / ontology-oriented knowledge graph(온톨로지 지향 지식 그래프)**입니다. [`ontology/`](ontology/)에 개념 모델, 역량 질문, 어휘·제어 어휘, URI 정책을 정의했지만, 아직 정식 RDF/OWL 온톨로지, SHACL 제약, JSON→RDF 변환기 또는 SPARQL 엔드포인트를 배포한 단계는 아닙니다.
+현재 상태는 **P1 / machine-readable ontology(기계 판독형 온톨로지)**입니다. [`ontology/`](ontology/)에 OWL/Turtle TBox, JSON-LD 컨텍스트, SHACL 제약 계약, 릴리스 메타데이터를 두고, 정규 한국어 JSON 데이터에서 결정적으로 생성한 JSON-LD·Turtle ABox를 [`dist/ontology/`](dist/ontology/)에 추적합니다.
 
-P0는 다음 의미 경계를 고정합니다.
+P1은 다음을 제공합니다.
 
 - 직접 선수 추천 `directRequires`, 다단계 파생 관계 `indirectRequires`, 파생 역관계 `unlocks`를 구분합니다. 직접 관계는 모든 학습자에게 적용되는 보편 법칙이나 전이 속성이 아닙니다.
 - `hard`/`soft`는 원값을 보존하면서 모델 내부의 `required`/`recommended` 추천 강도로 정규화합니다.
 - 선수 관계와 성취기준-주제 정렬은 각각 `PrerequisiteAssertion`, `StandardTopicAlignment`로 강도·이유·근거·출처·정렬 역할·신뢰도 같은 한정자를 보존합니다.
-- 43개 데이터 커버리지 갭, `p0-model-only` 온톨로지 형식 상태, 공식 출처 권리 `HOLD`를 서로 다른 메타데이터 축으로 유지합니다.
+- 11개 교육과정, 620개 성취기준, 1,956개 주제, 1,894개 선수 주장, 1,956개 성취기준 정렬, 153개 클러스터, 43개 커버리지 갭을 포함해 총 20,444개 인스턴스 리소스를 내보냅니다.
+- 생성 산출물의 바이트 수·SHA-256·레코드/리소스 개수를 [`dist/ontology/manifest.json`](dist/ontology/manifest.json)에 고정하고, 재생성 결과와 추적 파일의 바이트 일치를 검사합니다.
+- 43개 데이터 커버리지 갭, P1 형식 상태, 공식 출처 권리 `HOLD`를 서로 다른 메타데이터 축으로 유지합니다.
 
-시작점은 [`ontology/README.md`](ontology/README.md)이며, P0 제어 어휘는 `npm run validate:ontology`로 검증합니다.
+P2 추론·질의 게이트는 아직 포함하지 않습니다. 현재 SHACL 파일은 제약 계약이며, 표준 RDF 파서·SHACL 엔진·OWL 추론기·SPARQL 역량 질문 실행과 `unlocks`/`indirectRequires` 물질화는 다음 단계입니다. 시작점과 정확한 P1/P2 경계는 [`ontology/README.md`](ontology/README.md)를 참고하세요.
 
 ## 데이터 파일
 
@@ -75,9 +77,11 @@ Node.js와 npm이 필요합니다.
 ```bash
 npm ci
 npm run build
+npm run build:ontology
 npm test
 npm run validate
 npm run validate:ontology
+npm run check:ontology:artifacts
 npm run check:content
 ```
 

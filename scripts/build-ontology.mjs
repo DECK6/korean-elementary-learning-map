@@ -16,6 +16,22 @@ const STATIC_ONTOLOGY_FILES = [
   'ontology/metadata.ttl',
 ];
 
+const GENERATED_ONTOLOGY_PAYLOADS = [
+  {
+    path: 'dist/ontology/learning-map.jsonld',
+    mediaType: 'application/ld+json',
+  },
+  {
+    path: 'dist/ontology/learning-map.ttl',
+    mediaType: 'text/turtle',
+  },
+];
+
+export const GENERATED_ONTOLOGY_FILES = [
+  ...GENERATED_ONTOLOGY_PAYLOADS.map(({ path }) => path),
+  'dist/ontology/manifest.json',
+];
+
 const INSTANCE_KINDS = new Set([
   'release',
   'curriculum',
@@ -55,6 +71,10 @@ function canonicalize(value) {
     );
   }
   return value;
+}
+
+function sha256(contents) {
+  return createHash('sha256').update(contents).digest('hex');
 }
 
 export function stableRecordId(family, identity) {
@@ -907,26 +927,47 @@ export async function buildOntologyArtifacts({ rootDir }) {
   };
   const jsonldText = `${JSON.stringify(canonicalize(jsonld), null, 2)}\n`;
   const turtleText = serializeGraphToTurtle(graph);
-  return {
-    counts: {
-      sourceRecords: {
-        curricula: data.standards.curricula.length,
-        standards: data.standards.curricula.reduce(
-          (count, curriculum) => count + curriculum.standards.length,
-          0,
-        ),
-        topics: data.topics.topics.length,
-        dependencies: data.dependencies.dependencies.length,
-        clusters: data.clusters.clusters.length,
-        standardMappings: data.standards.standardMappings.length,
-        coverageGaps: data.standards.coverageGaps.length,
-      },
-      graphResources: graphResourceCounts(graph),
+  const counts = {
+    sourceRecords: {
+      curricula: data.standards.curricula.length,
+      standards: data.standards.curricula.reduce(
+        (count, curriculum) => count + curriculum.standards.length,
+        0,
+      ),
+      topics: data.topics.topics.length,
+      dependencies: data.dependencies.dependencies.length,
+      clusters: data.clusters.clusters.length,
+      standardMappings: data.standards.standardMappings.length,
+      coverageGaps: data.standards.coverageGaps.length,
     },
+    graphResources: graphResourceCounts(graph),
+  };
+  const generatedPayloads = {
+    'dist/ontology/learning-map.jsonld': jsonldText,
+    'dist/ontology/learning-map.ttl': turtleText,
+  };
+  const manifest = {
+    formatVersion: 1,
+    phase: 'P1',
+    ontologyVersion: '0.1.0-p1',
+    datasetRelease: data.standards.taxonomyVersion,
+    generator: 'scripts/build-ontology.mjs',
+    sourceRecords: counts.sourceRecords,
+    graphResources: counts.graphResources,
+    files: GENERATED_ONTOLOGY_PAYLOADS.map(({ path, mediaType }) => ({
+      path,
+      mediaType,
+      bytes: Buffer.byteLength(generatedPayloads[path], 'utf8'),
+      sha256: sha256(generatedPayloads[path]),
+    })),
+  };
+  const manifestText = `${JSON.stringify(canonicalize(manifest), null, 2)}\n`;
+  return {
+    counts,
     files: {
       ...staticFiles,
-      'dist/ontology/learning-map.jsonld': jsonldText,
-      'dist/ontology/learning-map.ttl': turtleText,
+      ...generatedPayloads,
+      'dist/ontology/manifest.json': manifestText,
     },
   };
 }
@@ -942,16 +983,67 @@ export async function writeOntologyArtifacts({ rootDir }) {
   const artifacts = await buildOntologyArtifacts({ rootDir });
   const distDir = resolve(rootDir, 'dist', 'ontology');
   await mkdir(distDir, { recursive: true });
-  for (const relativePath of [
-    'dist/ontology/learning-map.jsonld',
-    'dist/ontology/learning-map.ttl',
-  ]) {
+  for (const relativePath of GENERATED_ONTOLOGY_FILES) {
     await writeFileAtomically(resolve(rootDir, relativePath), artifacts.files[relativePath]);
   }
   return artifacts;
 }
 
+export async function checkOntologyArtifacts({ rootDir }) {
+  const artifacts = await buildOntologyArtifacts({ rootDir });
+  const mismatches = [];
+
+  for (const relativePath of GENERATED_ONTOLOGY_FILES) {
+    const expected = artifacts.files[relativePath];
+    let actual;
+    try {
+      actual = await readFile(resolve(rootDir, relativePath), 'utf8');
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        mismatches.push(`${relativePath}: missing`);
+        continue;
+      }
+      throw error;
+    }
+
+    if (actual !== expected) {
+      mismatches.push(
+        `${relativePath}: expected ${sha256(expected)} (${Buffer.byteLength(expected, 'utf8')} bytes), ` +
+          `found ${sha256(actual)} (${Buffer.byteLength(actual, 'utf8')} bytes)`,
+      );
+    }
+  }
+
+  if (mismatches.length > 0) {
+    throw new Error(
+      `generated ontology artifacts are missing or stale; run npm run build:ontology\n${mismatches
+        .map((mismatch) => `- ${mismatch}`)
+        .join('\n')}`,
+    );
+  }
+
+  return artifacts;
+}
+
+function printArtifactSummary(artifacts, action) {
+  const graphResourceCount = Object.values(artifacts.counts.graphResources).reduce(
+    (sum, count) => sum + count,
+    0,
+  );
+  console.log(`Ontology P1 artifacts ${action} (${graphResourceCount} graph resources):`);
+  for (const relativePath of GENERATED_ONTOLOGY_FILES) {
+    const contents = artifacts.files[relativePath];
+    console.log(
+      `- ${relativePath}: ${Buffer.byteLength(contents, 'utf8')} bytes, sha256 ${sha256(contents)}`,
+    );
+  }
+}
+
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-  await writeOntologyArtifacts({ rootDir });
+  const checkOnly = process.argv.includes('--check');
+  const artifacts = checkOnly
+    ? await checkOntologyArtifacts({ rootDir })
+    : await writeOntologyArtifacts({ rootDir });
+  printArtifactSummary(artifacts, checkOnly ? 'are current' : 'built');
 }

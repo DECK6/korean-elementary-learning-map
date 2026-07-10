@@ -25,6 +25,7 @@ const STATIC_FILES = [
 const GENERATED_FILES = [
   'dist/ontology/learning-map.jsonld',
   'dist/ontology/learning-map.ttl',
+  'dist/ontology/manifest.json',
 ];
 const EXPECTED_SOURCE_COUNTS = {
   curricula: 11,
@@ -365,7 +366,7 @@ test('P1 ABox exports the complete source profile with rights and provenance int
   );
 });
 
-test('P1 generated JSON-LD and Turtle are present and byte-identical across builds', async () => {
+test('P1 generated JSON-LD, Turtle, and manifest are byte-identical across builds', async () => {
   const first = await buildOntologyArtifacts({ rootDir: ROOT });
   const second = await buildOntologyArtifacts({ rootDir: ROOT });
 
@@ -381,6 +382,23 @@ test('P1 generated JSON-LD and Turtle are present and byte-identical across buil
   }
   assert.doesNotMatch(ttl, /\bundefined\b|\[object Object\]/);
   assert.match(ttl, /<https:\/\/dexa\.art\/learnmap\/#\/release\/kr-full-depth-v0\.4>/);
+
+  const manifest = JSON.parse(first.files['dist/ontology/manifest.json']);
+  assert.equal(manifest.formatVersion, 1);
+  assert.equal(manifest.phase, 'P1');
+  assert.equal(manifest.ontologyVersion, '0.1.0-p1');
+  assert.equal(manifest.datasetRelease, 'kr-full-depth-v0.4');
+  assert.equal(manifest.generator, 'scripts/build-ontology.mjs');
+  assert.deepEqual(manifest.sourceRecords, EXPECTED_SOURCE_COUNTS);
+  assert.deepEqual(manifest.graphResources, EXPECTED_GRAPH_COUNTS);
+  assert.deepEqual(
+    manifest.files.map(({ path }) => path),
+    ['dist/ontology/learning-map.jsonld', 'dist/ontology/learning-map.ttl'],
+  );
+  for (const file of manifest.files) {
+    assert.equal(file.bytes, Buffer.byteLength(first.files[file.path], 'utf8'), file.path);
+    assert.equal(file.sha256, sha256(first.files[file.path]), file.path);
+  }
 });
 
 test('P1 ABox has unique resources, no dangling instance IRIs, and no forbidden public URLs', async () => {
@@ -481,7 +499,7 @@ test('P1 graph preserves HOLD rights and excludes official achievement-standard 
   );
 });
 
-test('P1 CLI writes deterministic JSON-LD and Turtle artifacts', async () => {
+test('P1 CLI writes deterministic JSON-LD, Turtle, and manifest artifacts', async () => {
   await execFileAsync(process.execPath, ['scripts/build-ontology.mjs'], { cwd: ROOT });
   const first = Object.fromEntries(
     await Promise.all(

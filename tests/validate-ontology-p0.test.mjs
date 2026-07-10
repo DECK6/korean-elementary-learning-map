@@ -76,7 +76,7 @@ test('ontology P0 preserves prerequisite and topic-type semantic guardrails', ()
   });
 });
 
-test('ontology P0 documentation release is complete and labeled as model-only', () => {
+test('ontology P0 contract remains available within the P1 machine-readable release', () => {
   for (const filename of [
     'README.md',
     'competency-questions.md',
@@ -89,6 +89,6 @@ test('ontology P0 documentation release is complete and labeled as model-only', 
   }
 
   const rootReadme = readFileSync(resolve(ROOT, 'README.md'), 'utf8');
-  assert.match(rootReadme, /P0 \/ ontology-oriented knowledge graph/);
-  assert.match(rootReadme, /아직 정식 RDF\/OWL 온톨로지/);
+  assert.match(rootReadme, /P1 \/ machine-readable ontology/);
+  assert.match(rootReadme, /P2 추론·질의 게이트는 아직 포함하지 않습니다/);
 });

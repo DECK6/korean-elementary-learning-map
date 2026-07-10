@@ -1,0 +1,48 @@
+{
+  "datasetRelease": "kr-full-depth-v0.4",
+  "files": [
+    {
+      "bytes": 23340790,
+      "mediaType": "application/ld+json",
+      "path": "dist/ontology/learning-map.jsonld",
+      "sha256": "bbf6f5e77465f0f7637a002e54a2fedfc081451c55c735352b84f3efc161d096"
+    },
+    {
+      "bytes": 17004879,
+      "mediaType": "text/turtle",
+      "path": "dist/ontology/learning-map.ttl",
+      "sha256": "9f4cf2267ed2ba9f0333dbd03425487988cff56f467519fdafa003a5debff4bd"
+    }
+  ],
+  "formatVersion": 1,
+  "generator": "scripts/build-ontology.mjs",
+  "graphResources": {
+    "AchievementStandard": 620,
+    "AssessmentPrompt": 1956,
+    "CoverageGap": 43,
+    "Curriculum": 11,
+    "DatasetRelease": 1,
+    "EvidenceCriterion": 4056,
+    "GradeBand": 5,
+    "LearningCluster": 153,
+    "LearningDomain": 77,
+    "LearningTopic": 1956,
+    "PrerequisiteAssertion": 1894,
+    "SourceDocument": 17,
+    "SourceLocator": 1232,
+    "StandardTopicAlignment": 1956,
+    "Subject": 12,
+    "VerificationRecord": 6455
+  },
+  "ontologyVersion": "0.1.0-p1",
+  "phase": "P1",
+  "sourceRecords": {
+    "clusters": 153,
+    "coverageGaps": 43,
+    "curricula": 11,
+    "dependencies": 1894,
+    "standardMappings": 1956,
+    "standards": 620,
+    "topics": 1956
+  }
+}

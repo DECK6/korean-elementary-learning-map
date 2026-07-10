@@ -15,6 +15,7 @@
   },
   "scripts": {
     "build": "npm run build:kr",
+    "build:ontology": "node scripts/build-ontology.mjs",
     "build:kr:workstreams": "node scripts/generate-korean-workstream.mjs && node scripts/build-english-efl-workstream.mjs && node scripts/build-integrated-workstream.mjs && node scripts/build-social-arts-pe-workstreams.mjs && node scripts/repair-kr-workstreams.mjs",
     "build:kr": "npm run build:kr:workstreams && node scripts/build-kr-full-depth.mjs",
     "test": "node --test tests/*.test.mjs",
@@ -22,6 +23,7 @@
     "validate": "node scripts/validate-kr.mjs",
     "validate:kr": "npm run validate",
     "validate:ontology": "node scripts/validate-ontology-p0.mjs",
+    "check:ontology:artifacts": "node scripts/build-ontology.mjs --check",
     "check:content": "node scripts/check-kr-content-quality.mjs",
     "check:kr:content": "npm run check:content",
     "check:links": "node scripts/check-kr-source-links.mjs",
