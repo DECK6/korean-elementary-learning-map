@@ -2,7 +2,7 @@
 
 ## Summary
 
-This note explains why the Korean seed is a redesign rather than a translation. The original Marble taxonomy is useful as a graph-data pattern, but the Korean subject model must follow Korean schooling, public curriculum documents, and local cultural assumptions.
+This note records how Marble's learning-graph approach inspired the design discussion while the Korean seed and subject model were independently built around Korean schooling, public curriculum documents, and local cultural assumptions. The result is not a translation or an official derivative of Marble.
 
 ## 국어
 

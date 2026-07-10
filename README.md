@@ -3,7 +3,7 @@
 **Korean Elementary Learning Map**은 대한민국 **2022 개정 초등 교육과정**에 맞춰 구성한 한국어 학습 그래프 데이터셋입니다. 성취기준 코드, 세부 학습 주제, 선수 관계, 영역별 클러스터를 연결해 수업·학습 설계와 탐색에 활용할 수 있도록 합니다.
 
 > [!IMPORTANT]
-> 이 프로젝트는 [`withmarbleapp/os-taxonomy`](https://github.com/withmarbleapp/os-taxonomy)의 **Marble Skill Taxonomy**를 기반으로 하되, 대한민국 2022 개정 국가교육과정에 맞춘 **한국 우선(Korea-first) 그래프**로 다시 구축했습니다. 교육부·국가교육과정정보센터(NCIC)의 공식 간행물이 아니며, 기존 영문 분류체계를 단순 번역한 포크도 아닙니다.
+> 이 프로젝트는 [`withmarbleapp/os-taxonomy`](https://github.com/withmarbleapp/os-taxonomy)의 **Marble Skill Taxonomy**가 보여 준 학습 그래프 접근에서 영감을 받았습니다. 한국 교육과정 레코드, 교과 모델, 620개 성취기준 매핑, 1,956개 주제, 1,894개 간선, 생성기, 검증기와 감사 기록은 독립적으로 구축했습니다. Marble의 번역본이나 공식 파생 프로젝트가 아니며, 교육부·국가교육위원회·국가교육과정정보센터(NCIC)의 공식 간행물도 아닙니다.
 
 저장소: https://github.com/DECK6/korean-elementary-learning-map
 
@@ -84,11 +84,11 @@ KR 별칭(`build:kr`, `test:kr`, `validate:kr`, `check:kr:content`, `check:kr:li
 
 ## 출처와 라이선스
 
-이 저장소는 파생 데이터베이스에 해당하며 다음 의무를 보존합니다.
+한국 데이터셋은 독립적으로 구축했습니다. Marble에서 재사용하거나 개작한 구조 요소가 있는 범위에 한해 다음 업스트림 표시와 라이선스 의무를 보존합니다.
 
-- 데이터베이스의 구성·구조·식별자·관계: [`LICENSE`](LICENSE)의 **ODbL 1.0**(표시 및 동일조건변경허락 포함)
-- 업스트림에서 이어지는 저작 텍스트 및 그 개작물: [`LICENSE-CONTENT`](LICENSE-CONTENT)의 **CC BY-SA 4.0**(표시 및 동일조건변경허락 포함)
-- 업스트림 표시와 파생 프로젝트 고지: [`NOTICE.md`](NOTICE.md)
+- 재사용·개작한 데이터베이스 구조 요소: [`LICENSE`](LICENSE)의 **ODbL 1.0**(표시 및 동일조건변경허락 포함)
+- 재사용한 업스트림 저작 콘텐츠와 그 개작물: [`LICENSE-CONTENT`](LICENSE-CONTENT)의 **CC BY-SA 4.0**(표시 및 동일조건변경허락 포함)
+- 업스트림 표시와 프로젝트 관계 고지: [`NOTICE.md`](NOTICE.md)
 - 세부 출처와 권리 상태: [`PROVENANCE.md`](PROVENANCE.md)
 
 ### 한국 공식 자료 재사용 HOLD

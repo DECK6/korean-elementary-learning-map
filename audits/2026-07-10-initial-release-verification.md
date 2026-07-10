@@ -9,18 +9,18 @@
 - Dataset version: `kr-full-depth-v0.4`
 - Git posture at verification: fresh local repository on `main`, no imported commits, no remotes
 
-This project is based on `withmarbleapp/os-taxonomy` / **Marble Skill Taxonomy**, rebuilt as a Korea-first graph aligned to the Korean 2022 Revised National Curriculum. It is not an official MOE, National Education Commission, or NCIC publication and is not a translation-only fork.
+This project was independently built for the Korean 2022 Revised National Curriculum and was inspired by the learning-graph approach demonstrated by `withmarbleapp/os-taxonomy` / **Marble Skill Taxonomy**. Marble did not author the Korean curriculum records, subject model, 620-standard mapping, 1,956 topics, 1,894 edges, generators, validators, or audits. This project is not a translation, an official derivative of Marble, or an official MOE, National Education Commission, or NCIC publication.
 
 ## Source safety check
 
-The extraction source was checked before copying:
+The historical local development source was checked before the independently built Korean implementation was copied into this fresh repository:
 
 - Path: `/Volumes/data/Dev/os-taxonomy`
 - Branch: `kr-full-depth-v0.4-improved`
 - HEAD: `6e3455c7bb90e4424cd4da61c7b8e9a65f7bd4fe`
 - Working tree: clean
 
-The source repository was copied from only; it was not modified, deleted, reset, or given a new remote.
+That historical source repository was copied from only; it was not modified, deleted, reset, or given a new remote. Its path records the development location and does not identify Marble as the author of the Korean dataset.
 
 ## Extraction scope
 
@@ -70,16 +70,16 @@ Defect searches after the build found:
 
 Remaining `Marble Skill Taxonomy` / `withmarbleapp/os-taxonomy` / `os-taxonomy` text is intentional and limited to:
 
-- `README.md`, `NOTICE.md`, `PROVENANCE.md`, `CITATION.cff`: upstream attribution/provenance
-- `CHANGELOG.md`: extraction history
-- `docs/kr-localization-plan.md`: clearly marked upstream design history
+- `README.md`, `NOTICE.md`, `PROVENANCE.md`, `CITATION.cff`: inspiration, attribution, and limited license provenance
+- `CHANGELOG.md`: independent-build release history and attribution
+- `docs/kr-localization-plan.md`, `docs/kr-subject-redesign-notes.md`: clearly marked design inspiration/history
 - `audits/2026-07-10-initial-release-verification.md`: source-safety and verification history
 
 No old-brand reference remains in `data/`, `schema/`, `scripts/`, `tests/`, `package.json`, or `package-lock.json`.
 
 ## Licensing and release blockers
 
-- ODbL 1.0 and CC BY-SA 4.0 files and upstream attribution are preserved.
+- ODbL 1.0 and CC BY-SA 4.0 files and upstream attribution are preserved for any reused or adapted upstream structural elements and content.
 - The exact upstream README attribution notice is retained in `NOTICE.md`.
 - Korean official PDF work-level KOGL/commercial-reuse evidence is unresolved and remains explicit **HOLD** in README, PROVENANCE, NOTICE, generated data, and the manifest.
 - No software/build/test blocker was found.
