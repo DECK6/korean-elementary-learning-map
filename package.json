@@ -1,0 +1,32 @@
+{
+  "name": "korean-elementary-learning-map",
+  "version": "0.4.0",
+  "description": "한국 2022 개정 초등 교육과정에 맞춘 한국어 학습 그래프 데이터셋",
+  "private": true,
+  "type": "module",
+  "license": "(ODbL-1.0 AND CC-BY-SA-4.0)",
+  "homepage": "https://github.com/DECK6/korean-elementary-learning-map#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DECK6/korean-elementary-learning-map.git"
+  },
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "build": "npm run build:kr",
+    "build:kr:workstreams": "node scripts/generate-korean-workstream.mjs && node scripts/build-english-efl-workstream.mjs && node scripts/build-integrated-workstream.mjs && node scripts/build-social-arts-pe-workstreams.mjs && node scripts/repair-kr-workstreams.mjs",
+    "build:kr": "npm run build:kr:workstreams && node scripts/build-kr-full-depth.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:kr": "npm test",
+    "validate": "node scripts/validate-kr.mjs",
+    "validate:kr": "npm run validate",
+    "check:content": "node scripts/check-kr-content-quality.mjs",
+    "check:kr:content": "npm run check:content",
+    "check:links": "node scripts/check-kr-source-links.mjs",
+    "check:kr:links": "npm run check:links"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0"
+  }
+}

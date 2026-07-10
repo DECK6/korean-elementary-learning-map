@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "이 데이터셋을 사용하면 아래 정보를 인용해 주세요."
+title: "Korean Elementary Learning Map"
+abstract: >-
+  A Korea-first graph of elementary learning aligned to the Korean 2022
+  Revised National Curriculum, containing 11 curricula, 620 achievement-standard
+  anchors, 1,956 micro-topics, 1,894 prerequisite dependencies, and 153 clusters.
+type: dataset
+version: "0.4.0"
+date-released: "2026-07-10"
+url: "https://github.com/DECK6/korean-elementary-learning-map"
+repository-code: "https://github.com/DECK6/korean-elementary-learning-map"
+license: ODbL-1.0
+license-url: "https://opendatacommons.org/licenses/odbl/1-0/"
+authors:
+  - name: "Korean Elementary Learning Map contributors"
+references:
+  - type: dataset
+    title: "Marble Skill Taxonomy"
+    repository-code: "https://github.com/withmarbleapp/os-taxonomy"
+    url: "https://withmarble.com"
+    authors:
+      - name: "Generative Spark, Inc. (Marble)"
+    notes: "Upstream database and content base, licensed under ODbL 1.0 and CC BY-SA 4.0."

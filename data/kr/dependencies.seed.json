@@ -1,0 +1,3006 @@
+{
+  "version": "kr-full-depth-v0.3",
+  "edgeCount": 500,
+  "dependencies": [
+    {
+      "topicId": "kr.mt.korean.listening-speaking.1-2.002",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.1-2.001",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.1-2.003",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.1-2.002",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.1-2.004",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.1-2.003",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.1-2.005",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.1-2.004",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.1-2.007",
+      "prerequisiteId": "kr.mt.korean.reading.1-2.006",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.1-2.008",
+      "prerequisiteId": "kr.mt.korean.reading.1-2.007",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.1-2.009",
+      "prerequisiteId": "kr.mt.korean.reading.1-2.008",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.1-2.010",
+      "prerequisiteId": "kr.mt.korean.reading.1-2.009",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.1-2.012",
+      "prerequisiteId": "kr.mt.korean.writing.1-2.011",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.1-2.013",
+      "prerequisiteId": "kr.mt.korean.writing.1-2.012",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.1-2.014",
+      "prerequisiteId": "kr.mt.korean.writing.1-2.013",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.1-2.015",
+      "prerequisiteId": "kr.mt.korean.writing.1-2.014",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.1-2.017",
+      "prerequisiteId": "kr.mt.korean.grammar.1-2.016",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.1-2.018",
+      "prerequisiteId": "kr.mt.korean.grammar.1-2.017",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.1-2.019",
+      "prerequisiteId": "kr.mt.korean.grammar.1-2.018",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.1-2.020",
+      "prerequisiteId": "kr.mt.korean.grammar.1-2.019",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.1-2.022",
+      "prerequisiteId": "kr.mt.korean.literature.1-2.021",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.1-2.023",
+      "prerequisiteId": "kr.mt.korean.literature.1-2.022",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.1-2.024",
+      "prerequisiteId": "kr.mt.korean.literature.1-2.023",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.1-2.025",
+      "prerequisiteId": "kr.mt.korean.literature.1-2.024",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.1-2.027",
+      "prerequisiteId": "kr.mt.korean.media.1-2.026",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.1-2.028",
+      "prerequisiteId": "kr.mt.korean.media.1-2.027",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.1-2.029",
+      "prerequisiteId": "kr.mt.korean.media.1-2.028",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.1-2.030",
+      "prerequisiteId": "kr.mt.korean.media.1-2.029",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.3-4.032",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.3-4.031",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.3-4.033",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.3-4.032",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.3-4.034",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.3-4.033",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.3-4.036",
+      "prerequisiteId": "kr.mt.korean.reading.3-4.035",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.3-4.037",
+      "prerequisiteId": "kr.mt.korean.reading.3-4.036",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.3-4.038",
+      "prerequisiteId": "kr.mt.korean.reading.3-4.037",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.3-4.040",
+      "prerequisiteId": "kr.mt.korean.writing.3-4.039",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.3-4.041",
+      "prerequisiteId": "kr.mt.korean.writing.3-4.040",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.3-4.042",
+      "prerequisiteId": "kr.mt.korean.writing.3-4.041",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.3-4.044",
+      "prerequisiteId": "kr.mt.korean.grammar.3-4.043",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.3-4.045",
+      "prerequisiteId": "kr.mt.korean.grammar.3-4.044",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.3-4.046",
+      "prerequisiteId": "kr.mt.korean.grammar.3-4.045",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.3-4.048",
+      "prerequisiteId": "kr.mt.korean.literature.3-4.047",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.3-4.049",
+      "prerequisiteId": "kr.mt.korean.literature.3-4.048",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.3-4.050",
+      "prerequisiteId": "kr.mt.korean.literature.3-4.049",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.3-4.052",
+      "prerequisiteId": "kr.mt.korean.media.3-4.051",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.3-4.053",
+      "prerequisiteId": "kr.mt.korean.media.3-4.052",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.3-4.054",
+      "prerequisiteId": "kr.mt.korean.media.3-4.053",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.5-6.056",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.5-6.055",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.5-6.057",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.5-6.056",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.listening-speaking.5-6.058",
+      "prerequisiteId": "kr.mt.korean.listening-speaking.5-6.057",
+      "strength": "soft",
+      "reason": "듣기·말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.5-6.060",
+      "prerequisiteId": "kr.mt.korean.reading.5-6.059",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.5-6.061",
+      "prerequisiteId": "kr.mt.korean.reading.5-6.060",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.reading.5-6.062",
+      "prerequisiteId": "kr.mt.korean.reading.5-6.061",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.5-6.064",
+      "prerequisiteId": "kr.mt.korean.writing.5-6.063",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.5-6.065",
+      "prerequisiteId": "kr.mt.korean.writing.5-6.064",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.writing.5-6.066",
+      "prerequisiteId": "kr.mt.korean.writing.5-6.065",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.5-6.068",
+      "prerequisiteId": "kr.mt.korean.grammar.5-6.067",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.5-6.069",
+      "prerequisiteId": "kr.mt.korean.grammar.5-6.068",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.grammar.5-6.070",
+      "prerequisiteId": "kr.mt.korean.grammar.5-6.069",
+      "strength": "soft",
+      "reason": "문법 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.5-6.072",
+      "prerequisiteId": "kr.mt.korean.literature.5-6.071",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.5-6.073",
+      "prerequisiteId": "kr.mt.korean.literature.5-6.072",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.literature.5-6.074",
+      "prerequisiteId": "kr.mt.korean.literature.5-6.073",
+      "strength": "soft",
+      "reason": "문학 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.5-6.076",
+      "prerequisiteId": "kr.mt.korean.media.5-6.075",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.5-6.077",
+      "prerequisiteId": "kr.mt.korean.media.5-6.076",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.korean.media.5-6.078",
+      "prerequisiteId": "kr.mt.korean.media.5-6.077",
+      "strength": "soft",
+      "reason": "매체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.1-2.002",
+      "prerequisiteId": "kr.mt.math.number-operations.1-2.001",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.1-2.003",
+      "prerequisiteId": "kr.mt.math.number-operations.1-2.002",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.1-2.004",
+      "prerequisiteId": "kr.mt.math.number-operations.1-2.003",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.1-2.005",
+      "prerequisiteId": "kr.mt.math.number-operations.1-2.004",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.1-2.006",
+      "prerequisiteId": "kr.mt.math.number-operations.1-2.005",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.1-2.008",
+      "prerequisiteId": "kr.mt.math.change-relationships.1-2.007",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.1-2.009",
+      "prerequisiteId": "kr.mt.math.change-relationships.1-2.008",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.1-2.010",
+      "prerequisiteId": "kr.mt.math.change-relationships.1-2.009",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.1-2.011",
+      "prerequisiteId": "kr.mt.math.change-relationships.1-2.010",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.1-2.012",
+      "prerequisiteId": "kr.mt.math.change-relationships.1-2.011",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.1-2.014",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.1-2.013",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.1-2.015",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.1-2.014",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.1-2.016",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.1-2.015",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.1-2.017",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.1-2.016",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.1-2.018",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.1-2.017",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.1-2.020",
+      "prerequisiteId": "kr.mt.math.data-probability.1-2.019",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.1-2.021",
+      "prerequisiteId": "kr.mt.math.data-probability.1-2.020",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.1-2.022",
+      "prerequisiteId": "kr.mt.math.data-probability.1-2.021",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.1-2.023",
+      "prerequisiteId": "kr.mt.math.data-probability.1-2.022",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.1-2.024",
+      "prerequisiteId": "kr.mt.math.data-probability.1-2.023",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.3-4.026",
+      "prerequisiteId": "kr.mt.math.number-operations.3-4.025",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.3-4.027",
+      "prerequisiteId": "kr.mt.math.number-operations.3-4.026",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.3-4.028",
+      "prerequisiteId": "kr.mt.math.number-operations.3-4.027",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.3-4.029",
+      "prerequisiteId": "kr.mt.math.number-operations.3-4.028",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.3-4.030",
+      "prerequisiteId": "kr.mt.math.number-operations.3-4.029",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.3-4.032",
+      "prerequisiteId": "kr.mt.math.change-relationships.3-4.031",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.3-4.033",
+      "prerequisiteId": "kr.mt.math.change-relationships.3-4.032",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.3-4.034",
+      "prerequisiteId": "kr.mt.math.change-relationships.3-4.033",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.3-4.035",
+      "prerequisiteId": "kr.mt.math.change-relationships.3-4.034",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.3-4.036",
+      "prerequisiteId": "kr.mt.math.change-relationships.3-4.035",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.3-4.038",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.3-4.037",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.3-4.039",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.3-4.038",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.3-4.040",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.3-4.039",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.3-4.041",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.3-4.040",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.3-4.042",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.3-4.041",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.3-4.044",
+      "prerequisiteId": "kr.mt.math.data-probability.3-4.043",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.3-4.045",
+      "prerequisiteId": "kr.mt.math.data-probability.3-4.044",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.3-4.046",
+      "prerequisiteId": "kr.mt.math.data-probability.3-4.045",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.3-4.047",
+      "prerequisiteId": "kr.mt.math.data-probability.3-4.046",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.3-4.048",
+      "prerequisiteId": "kr.mt.math.data-probability.3-4.047",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.5-6.050",
+      "prerequisiteId": "kr.mt.math.number-operations.5-6.049",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.5-6.051",
+      "prerequisiteId": "kr.mt.math.number-operations.5-6.050",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.5-6.052",
+      "prerequisiteId": "kr.mt.math.number-operations.5-6.051",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.5-6.053",
+      "prerequisiteId": "kr.mt.math.number-operations.5-6.052",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.number-operations.5-6.054",
+      "prerequisiteId": "kr.mt.math.number-operations.5-6.053",
+      "strength": "soft",
+      "reason": "수와 연산 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.5-6.056",
+      "prerequisiteId": "kr.mt.math.change-relationships.5-6.055",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.5-6.057",
+      "prerequisiteId": "kr.mt.math.change-relationships.5-6.056",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.5-6.058",
+      "prerequisiteId": "kr.mt.math.change-relationships.5-6.057",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.5-6.059",
+      "prerequisiteId": "kr.mt.math.change-relationships.5-6.058",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.change-relationships.5-6.060",
+      "prerequisiteId": "kr.mt.math.change-relationships.5-6.059",
+      "strength": "soft",
+      "reason": "변화와 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.5-6.062",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.5-6.061",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.5-6.063",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.5-6.062",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.5-6.064",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.5-6.063",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.5-6.065",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.5-6.064",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.geometry-measurement.5-6.066",
+      "prerequisiteId": "kr.mt.math.geometry-measurement.5-6.065",
+      "strength": "soft",
+      "reason": "도형과 측정 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.5-6.068",
+      "prerequisiteId": "kr.mt.math.data-probability.5-6.067",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.5-6.069",
+      "prerequisiteId": "kr.mt.math.data-probability.5-6.068",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.5-6.070",
+      "prerequisiteId": "kr.mt.math.data-probability.5-6.069",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.5-6.071",
+      "prerequisiteId": "kr.mt.math.data-probability.5-6.070",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.math.data-probability.5-6.072",
+      "prerequisiteId": "kr.mt.math.data-probability.5-6.071",
+      "strength": "soft",
+      "reason": "자료와 가능성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.3-4.002",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.3-4.001",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.3-4.003",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.3-4.002",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.3-4.004",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.3-4.003",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.3-4.005",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.3-4.004",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.3-4.006",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.3-4.005",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.3-4.007",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.3-4.006",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.3-4.008",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.3-4.007",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.3-4.010",
+      "prerequisiteId": "kr.mt.science.motion-energy.3-4.009",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.3-4.011",
+      "prerequisiteId": "kr.mt.science.motion-energy.3-4.010",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.3-4.012",
+      "prerequisiteId": "kr.mt.science.motion-energy.3-4.011",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.3-4.013",
+      "prerequisiteId": "kr.mt.science.motion-energy.3-4.012",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.3-4.014",
+      "prerequisiteId": "kr.mt.science.motion-energy.3-4.013",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.3-4.015",
+      "prerequisiteId": "kr.mt.science.motion-energy.3-4.014",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.3-4.016",
+      "prerequisiteId": "kr.mt.science.motion-energy.3-4.015",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.3-4.018",
+      "prerequisiteId": "kr.mt.science.matter.3-4.017",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.3-4.019",
+      "prerequisiteId": "kr.mt.science.matter.3-4.018",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.3-4.020",
+      "prerequisiteId": "kr.mt.science.matter.3-4.019",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.3-4.021",
+      "prerequisiteId": "kr.mt.science.matter.3-4.020",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.3-4.022",
+      "prerequisiteId": "kr.mt.science.matter.3-4.021",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.3-4.023",
+      "prerequisiteId": "kr.mt.science.matter.3-4.022",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.3-4.025",
+      "prerequisiteId": "kr.mt.science.life.3-4.024",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.3-4.026",
+      "prerequisiteId": "kr.mt.science.life.3-4.025",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.3-4.027",
+      "prerequisiteId": "kr.mt.science.life.3-4.026",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.3-4.028",
+      "prerequisiteId": "kr.mt.science.life.3-4.027",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.3-4.029",
+      "prerequisiteId": "kr.mt.science.life.3-4.028",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.3-4.030",
+      "prerequisiteId": "kr.mt.science.life.3-4.029",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.3-4.032",
+      "prerequisiteId": "kr.mt.science.earth-space.3-4.031",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.3-4.033",
+      "prerequisiteId": "kr.mt.science.earth-space.3-4.032",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.3-4.034",
+      "prerequisiteId": "kr.mt.science.earth-space.3-4.033",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.3-4.035",
+      "prerequisiteId": "kr.mt.science.earth-space.3-4.034",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.3-4.036",
+      "prerequisiteId": "kr.mt.science.earth-space.3-4.035",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.3-4.037",
+      "prerequisiteId": "kr.mt.science.earth-space.3-4.036",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.5-6.039",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.5-6.038",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.5-6.040",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.5-6.039",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.5-6.041",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.5-6.040",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.5-6.042",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.5-6.041",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.5-6.043",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.5-6.042",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.scientific-inquiry.5-6.044",
+      "prerequisiteId": "kr.mt.science.scientific-inquiry.5-6.043",
+      "strength": "soft",
+      "reason": "과학 탐구 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.5-6.046",
+      "prerequisiteId": "kr.mt.science.motion-energy.5-6.045",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.5-6.047",
+      "prerequisiteId": "kr.mt.science.motion-energy.5-6.046",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.5-6.048",
+      "prerequisiteId": "kr.mt.science.motion-energy.5-6.047",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.5-6.049",
+      "prerequisiteId": "kr.mt.science.motion-energy.5-6.048",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.5-6.050",
+      "prerequisiteId": "kr.mt.science.motion-energy.5-6.049",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.motion-energy.5-6.051",
+      "prerequisiteId": "kr.mt.science.motion-energy.5-6.050",
+      "strength": "soft",
+      "reason": "운동과 에너지 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.5-6.053",
+      "prerequisiteId": "kr.mt.science.matter.5-6.052",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.5-6.054",
+      "prerequisiteId": "kr.mt.science.matter.5-6.053",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.5-6.055",
+      "prerequisiteId": "kr.mt.science.matter.5-6.054",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.5-6.056",
+      "prerequisiteId": "kr.mt.science.matter.5-6.055",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.5-6.057",
+      "prerequisiteId": "kr.mt.science.matter.5-6.056",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.matter.5-6.058",
+      "prerequisiteId": "kr.mt.science.matter.5-6.057",
+      "strength": "soft",
+      "reason": "물질 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.5-6.060",
+      "prerequisiteId": "kr.mt.science.life.5-6.059",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.5-6.061",
+      "prerequisiteId": "kr.mt.science.life.5-6.060",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.5-6.062",
+      "prerequisiteId": "kr.mt.science.life.5-6.061",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.5-6.063",
+      "prerequisiteId": "kr.mt.science.life.5-6.062",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.5-6.064",
+      "prerequisiteId": "kr.mt.science.life.5-6.063",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.life.5-6.065",
+      "prerequisiteId": "kr.mt.science.life.5-6.064",
+      "strength": "soft",
+      "reason": "생명 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.5-6.067",
+      "prerequisiteId": "kr.mt.science.earth-space.5-6.066",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.5-6.068",
+      "prerequisiteId": "kr.mt.science.earth-space.5-6.067",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.5-6.069",
+      "prerequisiteId": "kr.mt.science.earth-space.5-6.068",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.5-6.070",
+      "prerequisiteId": "kr.mt.science.earth-space.5-6.069",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.5-6.071",
+      "prerequisiteId": "kr.mt.science.earth-space.5-6.070",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.science.earth-space.5-6.072",
+      "prerequisiteId": "kr.mt.science.earth-space.5-6.071",
+      "strength": "soft",
+      "reason": "지구와 우주 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.3-4.002",
+      "prerequisiteId": "kr.mt.social.local-geography.3-4.001",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.3-4.003",
+      "prerequisiteId": "kr.mt.social.local-geography.3-4.002",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.3-4.004",
+      "prerequisiteId": "kr.mt.social.local-geography.3-4.003",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.3-4.005",
+      "prerequisiteId": "kr.mt.social.local-geography.3-4.004",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.3-4.006",
+      "prerequisiteId": "kr.mt.social.local-geography.3-4.005",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.3-4.008",
+      "prerequisiteId": "kr.mt.social.korean-geography.3-4.007",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.3-4.009",
+      "prerequisiteId": "kr.mt.social.korean-geography.3-4.008",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.3-4.010",
+      "prerequisiteId": "kr.mt.social.korean-geography.3-4.009",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.3-4.011",
+      "prerequisiteId": "kr.mt.social.korean-geography.3-4.010",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.3-4.012",
+      "prerequisiteId": "kr.mt.social.korean-geography.3-4.011",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.3-4.014",
+      "prerequisiteId": "kr.mt.social.local-history.3-4.013",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.3-4.015",
+      "prerequisiteId": "kr.mt.social.local-history.3-4.014",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.3-4.016",
+      "prerequisiteId": "kr.mt.social.local-history.3-4.015",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.3-4.017",
+      "prerequisiteId": "kr.mt.social.local-history.3-4.016",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.3-4.018",
+      "prerequisiteId": "kr.mt.social.local-history.3-4.017",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.3-4.020",
+      "prerequisiteId": "kr.mt.social.korean-history.3-4.019",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.3-4.021",
+      "prerequisiteId": "kr.mt.social.korean-history.3-4.020",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.3-4.022",
+      "prerequisiteId": "kr.mt.social.korean-history.3-4.021",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.3-4.023",
+      "prerequisiteId": "kr.mt.social.korean-history.3-4.022",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.3-4.024",
+      "prerequisiteId": "kr.mt.social.korean-history.3-4.023",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.3-4.026",
+      "prerequisiteId": "kr.mt.social.civics.3-4.025",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.3-4.027",
+      "prerequisiteId": "kr.mt.social.civics.3-4.026",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.3-4.028",
+      "prerequisiteId": "kr.mt.social.civics.3-4.027",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.3-4.029",
+      "prerequisiteId": "kr.mt.social.civics.3-4.028",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.3-4.030",
+      "prerequisiteId": "kr.mt.social.civics.3-4.029",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.3-4.032",
+      "prerequisiteId": "kr.mt.social.economy-culture.3-4.031",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.3-4.033",
+      "prerequisiteId": "kr.mt.social.economy-culture.3-4.032",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.3-4.034",
+      "prerequisiteId": "kr.mt.social.economy-culture.3-4.033",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.3-4.035",
+      "prerequisiteId": "kr.mt.social.economy-culture.3-4.034",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.3-4.036",
+      "prerequisiteId": "kr.mt.social.economy-culture.3-4.035",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.5-6.038",
+      "prerequisiteId": "kr.mt.social.local-geography.5-6.037",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.5-6.039",
+      "prerequisiteId": "kr.mt.social.local-geography.5-6.038",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.5-6.040",
+      "prerequisiteId": "kr.mt.social.local-geography.5-6.039",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.5-6.041",
+      "prerequisiteId": "kr.mt.social.local-geography.5-6.040",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-geography.5-6.042",
+      "prerequisiteId": "kr.mt.social.local-geography.5-6.041",
+      "strength": "soft",
+      "reason": "지역 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.5-6.044",
+      "prerequisiteId": "kr.mt.social.korean-geography.5-6.043",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.5-6.045",
+      "prerequisiteId": "kr.mt.social.korean-geography.5-6.044",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.5-6.046",
+      "prerequisiteId": "kr.mt.social.korean-geography.5-6.045",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.5-6.047",
+      "prerequisiteId": "kr.mt.social.korean-geography.5-6.046",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-geography.5-6.048",
+      "prerequisiteId": "kr.mt.social.korean-geography.5-6.047",
+      "strength": "soft",
+      "reason": "한국 지리 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.5-6.050",
+      "prerequisiteId": "kr.mt.social.local-history.5-6.049",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.5-6.051",
+      "prerequisiteId": "kr.mt.social.local-history.5-6.050",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.5-6.052",
+      "prerequisiteId": "kr.mt.social.local-history.5-6.051",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.5-6.053",
+      "prerequisiteId": "kr.mt.social.local-history.5-6.052",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.local-history.5-6.054",
+      "prerequisiteId": "kr.mt.social.local-history.5-6.053",
+      "strength": "soft",
+      "reason": "지역사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.5-6.056",
+      "prerequisiteId": "kr.mt.social.korean-history.5-6.055",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.5-6.057",
+      "prerequisiteId": "kr.mt.social.korean-history.5-6.056",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.5-6.058",
+      "prerequisiteId": "kr.mt.social.korean-history.5-6.057",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.5-6.059",
+      "prerequisiteId": "kr.mt.social.korean-history.5-6.058",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.korean-history.5-6.060",
+      "prerequisiteId": "kr.mt.social.korean-history.5-6.059",
+      "strength": "soft",
+      "reason": "한국사 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.5-6.062",
+      "prerequisiteId": "kr.mt.social.civics.5-6.061",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.5-6.063",
+      "prerequisiteId": "kr.mt.social.civics.5-6.062",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.5-6.064",
+      "prerequisiteId": "kr.mt.social.civics.5-6.063",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.5-6.065",
+      "prerequisiteId": "kr.mt.social.civics.5-6.064",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.civics.5-6.066",
+      "prerequisiteId": "kr.mt.social.civics.5-6.065",
+      "strength": "soft",
+      "reason": "민주시민 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.5-6.068",
+      "prerequisiteId": "kr.mt.social.economy-culture.5-6.067",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.5-6.069",
+      "prerequisiteId": "kr.mt.social.economy-culture.5-6.068",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.5-6.070",
+      "prerequisiteId": "kr.mt.social.economy-culture.5-6.069",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.5-6.071",
+      "prerequisiteId": "kr.mt.social.economy-culture.5-6.070",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.social.economy-culture.5-6.072",
+      "prerequisiteId": "kr.mt.social.economy-culture.5-6.071",
+      "strength": "soft",
+      "reason": "경제·문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.3-4.002",
+      "prerequisiteId": "kr.mt.english-efl.listening.3-4.001",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.3-4.003",
+      "prerequisiteId": "kr.mt.english-efl.listening.3-4.002",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.3-4.004",
+      "prerequisiteId": "kr.mt.english-efl.listening.3-4.003",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.3-4.005",
+      "prerequisiteId": "kr.mt.english-efl.listening.3-4.004",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.3-4.006",
+      "prerequisiteId": "kr.mt.english-efl.listening.3-4.005",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.3-4.008",
+      "prerequisiteId": "kr.mt.english-efl.speaking.3-4.007",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.3-4.009",
+      "prerequisiteId": "kr.mt.english-efl.speaking.3-4.008",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.3-4.010",
+      "prerequisiteId": "kr.mt.english-efl.speaking.3-4.009",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.3-4.011",
+      "prerequisiteId": "kr.mt.english-efl.speaking.3-4.010",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.3-4.012",
+      "prerequisiteId": "kr.mt.english-efl.speaking.3-4.011",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.3-4.014",
+      "prerequisiteId": "kr.mt.english-efl.reading.3-4.013",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.3-4.015",
+      "prerequisiteId": "kr.mt.english-efl.reading.3-4.014",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.3-4.016",
+      "prerequisiteId": "kr.mt.english-efl.reading.3-4.015",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.3-4.017",
+      "prerequisiteId": "kr.mt.english-efl.reading.3-4.016",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.3-4.018",
+      "prerequisiteId": "kr.mt.english-efl.reading.3-4.017",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.3-4.020",
+      "prerequisiteId": "kr.mt.english-efl.writing.3-4.019",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.3-4.021",
+      "prerequisiteId": "kr.mt.english-efl.writing.3-4.020",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.3-4.022",
+      "prerequisiteId": "kr.mt.english-efl.writing.3-4.021",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.3-4.023",
+      "prerequisiteId": "kr.mt.english-efl.writing.3-4.022",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.3-4.024",
+      "prerequisiteId": "kr.mt.english-efl.writing.3-4.023",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.3-4.026",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.3-4.025",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.3-4.027",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.3-4.026",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.3-4.028",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.3-4.027",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.3-4.029",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.3-4.028",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.3-4.030",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.3-4.029",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.3-4.032",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.3-4.031",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.3-4.033",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.3-4.032",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.3-4.034",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.3-4.033",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.3-4.035",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.3-4.034",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.3-4.036",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.3-4.035",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.5-6.038",
+      "prerequisiteId": "kr.mt.english-efl.listening.5-6.037",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.5-6.039",
+      "prerequisiteId": "kr.mt.english-efl.listening.5-6.038",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.5-6.040",
+      "prerequisiteId": "kr.mt.english-efl.listening.5-6.039",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.listening.5-6.041",
+      "prerequisiteId": "kr.mt.english-efl.listening.5-6.040",
+      "strength": "soft",
+      "reason": "듣기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.5-6.043",
+      "prerequisiteId": "kr.mt.english-efl.speaking.5-6.042",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.5-6.044",
+      "prerequisiteId": "kr.mt.english-efl.speaking.5-6.043",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.5-6.045",
+      "prerequisiteId": "kr.mt.english-efl.speaking.5-6.044",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.speaking.5-6.046",
+      "prerequisiteId": "kr.mt.english-efl.speaking.5-6.045",
+      "strength": "soft",
+      "reason": "말하기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.5-6.048",
+      "prerequisiteId": "kr.mt.english-efl.reading.5-6.047",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.5-6.049",
+      "prerequisiteId": "kr.mt.english-efl.reading.5-6.048",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.5-6.050",
+      "prerequisiteId": "kr.mt.english-efl.reading.5-6.049",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.reading.5-6.051",
+      "prerequisiteId": "kr.mt.english-efl.reading.5-6.050",
+      "strength": "soft",
+      "reason": "읽기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.5-6.053",
+      "prerequisiteId": "kr.mt.english-efl.writing.5-6.052",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.5-6.054",
+      "prerequisiteId": "kr.mt.english-efl.writing.5-6.053",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.5-6.055",
+      "prerequisiteId": "kr.mt.english-efl.writing.5-6.054",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.writing.5-6.056",
+      "prerequisiteId": "kr.mt.english-efl.writing.5-6.055",
+      "strength": "soft",
+      "reason": "쓰기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.5-6.058",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.5-6.057",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.5-6.059",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.5-6.058",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.5-6.060",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.5-6.059",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.vocabulary-expressions.5-6.061",
+      "prerequisiteId": "kr.mt.english-efl.vocabulary-expressions.5-6.060",
+      "strength": "soft",
+      "reason": "어휘·표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.5-6.063",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.5-6.062",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.5-6.064",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.5-6.063",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.5-6.065",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.5-6.064",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.english-efl.intercultural-communication.5-6.066",
+      "prerequisiteId": "kr.mt.english-efl.intercultural-communication.5-6.065",
+      "strength": "soft",
+      "reason": "문화·상호문화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.3-4.002",
+      "prerequisiteId": "kr.mt.moral.self-agency.3-4.001",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.3-4.003",
+      "prerequisiteId": "kr.mt.moral.self-agency.3-4.002",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.3-4.004",
+      "prerequisiteId": "kr.mt.moral.self-agency.3-4.003",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.3-4.005",
+      "prerequisiteId": "kr.mt.moral.self-agency.3-4.004",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.3-4.006",
+      "prerequisiteId": "kr.mt.moral.self-agency.3-4.005",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.3-4.008",
+      "prerequisiteId": "kr.mt.moral.relationships.3-4.007",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.3-4.009",
+      "prerequisiteId": "kr.mt.moral.relationships.3-4.008",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.3-4.010",
+      "prerequisiteId": "kr.mt.moral.relationships.3-4.009",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.3-4.011",
+      "prerequisiteId": "kr.mt.moral.relationships.3-4.010",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.3-4.012",
+      "prerequisiteId": "kr.mt.moral.relationships.3-4.011",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.3-4.014",
+      "prerequisiteId": "kr.mt.moral.community.3-4.013",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.3-4.015",
+      "prerequisiteId": "kr.mt.moral.community.3-4.014",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.3-4.016",
+      "prerequisiteId": "kr.mt.moral.community.3-4.015",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.3-4.017",
+      "prerequisiteId": "kr.mt.moral.community.3-4.016",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.3-4.018",
+      "prerequisiteId": "kr.mt.moral.community.3-4.017",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.3-4.020",
+      "prerequisiteId": "kr.mt.moral.coexistence.3-4.019",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.3-4.021",
+      "prerequisiteId": "kr.mt.moral.coexistence.3-4.020",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.3-4.022",
+      "prerequisiteId": "kr.mt.moral.coexistence.3-4.021",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.3-4.023",
+      "prerequisiteId": "kr.mt.moral.coexistence.3-4.022",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.3-4.024",
+      "prerequisiteId": "kr.mt.moral.coexistence.3-4.023",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.5-6.026",
+      "prerequisiteId": "kr.mt.moral.self-agency.5-6.025",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.5-6.027",
+      "prerequisiteId": "kr.mt.moral.self-agency.5-6.026",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.5-6.028",
+      "prerequisiteId": "kr.mt.moral.self-agency.5-6.027",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.5-6.029",
+      "prerequisiteId": "kr.mt.moral.self-agency.5-6.028",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.self-agency.5-6.030",
+      "prerequisiteId": "kr.mt.moral.self-agency.5-6.029",
+      "strength": "soft",
+      "reason": "자신과 도덕적 주체성 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.5-6.032",
+      "prerequisiteId": "kr.mt.moral.relationships.5-6.031",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.5-6.033",
+      "prerequisiteId": "kr.mt.moral.relationships.5-6.032",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.5-6.034",
+      "prerequisiteId": "kr.mt.moral.relationships.5-6.033",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.5-6.035",
+      "prerequisiteId": "kr.mt.moral.relationships.5-6.034",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.relationships.5-6.036",
+      "prerequisiteId": "kr.mt.moral.relationships.5-6.035",
+      "strength": "soft",
+      "reason": "타인과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.5-6.038",
+      "prerequisiteId": "kr.mt.moral.community.5-6.037",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.5-6.039",
+      "prerequisiteId": "kr.mt.moral.community.5-6.038",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.5-6.040",
+      "prerequisiteId": "kr.mt.moral.community.5-6.039",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.5-6.041",
+      "prerequisiteId": "kr.mt.moral.community.5-6.040",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.community.5-6.042",
+      "prerequisiteId": "kr.mt.moral.community.5-6.041",
+      "strength": "soft",
+      "reason": "사회·공동체 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.5-6.044",
+      "prerequisiteId": "kr.mt.moral.coexistence.5-6.043",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.5-6.045",
+      "prerequisiteId": "kr.mt.moral.coexistence.5-6.044",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.5-6.046",
+      "prerequisiteId": "kr.mt.moral.coexistence.5-6.045",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.5-6.047",
+      "prerequisiteId": "kr.mt.moral.coexistence.5-6.046",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.moral.coexistence.5-6.048",
+      "prerequisiteId": "kr.mt.moral.coexistence.5-6.047",
+      "strength": "soft",
+      "reason": "자연·초월과의 관계 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.002",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.001",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.003",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.002",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.004",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.003",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.005",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.004",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.006",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.005",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.007",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.006",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.008",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.007",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.009",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.008",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.010",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.009",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.human-development-family.5-6.011",
+      "prerequisiteId": "kr.mt.practical.human-development-family.5-6.010",
+      "strength": "soft",
+      "reason": "인간 발달과 가족 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.013",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.012",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.014",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.013",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.015",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.014",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.016",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.015",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.017",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.016",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.018",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.017",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.019",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.018",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.020",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.019",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.021",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.020",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.home-life-safety.5-6.022",
+      "prerequisiteId": "kr.mt.practical.home-life-safety.5-6.021",
+      "strength": "soft",
+      "reason": "가정생활과 안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.024",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.023",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.025",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.024",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.026",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.025",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.027",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.026",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.028",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.027",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.029",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.028",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.030",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.029",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.031",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.030",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.technology-making.5-6.032",
+      "prerequisiteId": "kr.mt.practical.technology-making.5-6.031",
+      "strength": "soft",
+      "reason": "기술과 만들기 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.034",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.033",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.035",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.034",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.036",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.035",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.037",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.036",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.038",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.037",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.039",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.038",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.040",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.039",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.041",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.040",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.practical.information-digital-problem-solving.5-6.042",
+      "prerequisiteId": "kr.mt.practical.information-digital-problem-solving.5-6.041",
+      "strength": "soft",
+      "reason": "정보와 디지털 문제 해결 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.002",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.001",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.003",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.002",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.004",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.003",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.005",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.004",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.006",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.005",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.007",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.006",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.008",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.007",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.009",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.008",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.010",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.009",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.011",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.010",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.012",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.011",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.013",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.012",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.014",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.013",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.015",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.014",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.016",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.015",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.017",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.016",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.right-life.1-2.018",
+      "prerequisiteId": "kr.mt.integrated.right-life.1-2.017",
+      "strength": "soft",
+      "reason": "바른 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.020",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.019",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.021",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.020",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.022",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.021",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.023",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.022",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.024",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.023",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.025",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.024",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.026",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.025",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.027",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.026",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.028",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.027",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.029",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.028",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.030",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.029",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.031",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.030",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.032",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.031",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.033",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.032",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.034",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.033",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.035",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.034",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.wise-life.1-2.036",
+      "prerequisiteId": "kr.mt.integrated.wise-life.1-2.035",
+      "strength": "soft",
+      "reason": "슬기로운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.038",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.037",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.039",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.038",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.040",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.039",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.041",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.040",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.042",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.041",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.043",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.042",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.044",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.043",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.045",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.044",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.046",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.045",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.047",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.046",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.048",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.047",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.049",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.048",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.050",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.049",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.051",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.050",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.052",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.051",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.053",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.052",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.integrated.joyful-life.1-2.054",
+      "prerequisiteId": "kr.mt.integrated.joyful-life.1-2.053",
+      "strength": "soft",
+      "reason": "즐거운 생활 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.1-2.002",
+      "prerequisiteId": "kr.mt.art.experience.1-2.001",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.1-2.003",
+      "prerequisiteId": "kr.mt.art.experience.1-2.002",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.1-2.004",
+      "prerequisiteId": "kr.mt.art.experience.1-2.003",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.1-2.006",
+      "prerequisiteId": "kr.mt.art.expression.1-2.005",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.1-2.007",
+      "prerequisiteId": "kr.mt.art.expression.1-2.006",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.1-2.008",
+      "prerequisiteId": "kr.mt.art.expression.1-2.007",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.1-2.010",
+      "prerequisiteId": "kr.mt.art.appreciation.1-2.009",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.1-2.011",
+      "prerequisiteId": "kr.mt.art.appreciation.1-2.010",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.1-2.012",
+      "prerequisiteId": "kr.mt.art.appreciation.1-2.011",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.3-4.014",
+      "prerequisiteId": "kr.mt.art.experience.3-4.013",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.3-4.015",
+      "prerequisiteId": "kr.mt.art.experience.3-4.014",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.3-4.016",
+      "prerequisiteId": "kr.mt.art.experience.3-4.015",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.3-4.018",
+      "prerequisiteId": "kr.mt.art.expression.3-4.017",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.3-4.019",
+      "prerequisiteId": "kr.mt.art.expression.3-4.018",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.3-4.020",
+      "prerequisiteId": "kr.mt.art.expression.3-4.019",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.3-4.022",
+      "prerequisiteId": "kr.mt.art.appreciation.3-4.021",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.3-4.023",
+      "prerequisiteId": "kr.mt.art.appreciation.3-4.022",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.3-4.024",
+      "prerequisiteId": "kr.mt.art.appreciation.3-4.023",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.5-6.026",
+      "prerequisiteId": "kr.mt.art.experience.5-6.025",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.5-6.027",
+      "prerequisiteId": "kr.mt.art.experience.5-6.026",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.experience.5-6.028",
+      "prerequisiteId": "kr.mt.art.experience.5-6.027",
+      "strength": "soft",
+      "reason": "체험 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.5-6.030",
+      "prerequisiteId": "kr.mt.art.expression.5-6.029",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.5-6.031",
+      "prerequisiteId": "kr.mt.art.expression.5-6.030",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.expression.5-6.032",
+      "prerequisiteId": "kr.mt.art.expression.5-6.031",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.5-6.034",
+      "prerequisiteId": "kr.mt.art.appreciation.5-6.033",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.5-6.035",
+      "prerequisiteId": "kr.mt.art.appreciation.5-6.034",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.art.appreciation.5-6.036",
+      "prerequisiteId": "kr.mt.art.appreciation.5-6.035",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.1-2.002",
+      "prerequisiteId": "kr.mt.music.expression.1-2.001",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.1-2.003",
+      "prerequisiteId": "kr.mt.music.expression.1-2.002",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.1-2.004",
+      "prerequisiteId": "kr.mt.music.expression.1-2.003",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.1-2.006",
+      "prerequisiteId": "kr.mt.music.appreciation.1-2.005",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.1-2.007",
+      "prerequisiteId": "kr.mt.music.appreciation.1-2.006",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.1-2.008",
+      "prerequisiteId": "kr.mt.music.appreciation.1-2.007",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.1-2.010",
+      "prerequisiteId": "kr.mt.music.life-culture.1-2.009",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.1-2.011",
+      "prerequisiteId": "kr.mt.music.life-culture.1-2.010",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.1-2.012",
+      "prerequisiteId": "kr.mt.music.life-culture.1-2.011",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.3-4.014",
+      "prerequisiteId": "kr.mt.music.expression.3-4.013",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.3-4.015",
+      "prerequisiteId": "kr.mt.music.expression.3-4.014",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.3-4.016",
+      "prerequisiteId": "kr.mt.music.expression.3-4.015",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.3-4.018",
+      "prerequisiteId": "kr.mt.music.appreciation.3-4.017",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.3-4.019",
+      "prerequisiteId": "kr.mt.music.appreciation.3-4.018",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.3-4.020",
+      "prerequisiteId": "kr.mt.music.appreciation.3-4.019",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.3-4.022",
+      "prerequisiteId": "kr.mt.music.life-culture.3-4.021",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.3-4.023",
+      "prerequisiteId": "kr.mt.music.life-culture.3-4.022",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.3-4.024",
+      "prerequisiteId": "kr.mt.music.life-culture.3-4.023",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.5-6.026",
+      "prerequisiteId": "kr.mt.music.expression.5-6.025",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.5-6.027",
+      "prerequisiteId": "kr.mt.music.expression.5-6.026",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.expression.5-6.028",
+      "prerequisiteId": "kr.mt.music.expression.5-6.027",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.5-6.030",
+      "prerequisiteId": "kr.mt.music.appreciation.5-6.029",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.5-6.031",
+      "prerequisiteId": "kr.mt.music.appreciation.5-6.030",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.appreciation.5-6.032",
+      "prerequisiteId": "kr.mt.music.appreciation.5-6.031",
+      "strength": "soft",
+      "reason": "감상 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.5-6.034",
+      "prerequisiteId": "kr.mt.music.life-culture.5-6.033",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.5-6.035",
+      "prerequisiteId": "kr.mt.music.life-culture.5-6.034",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.music.life-culture.5-6.036",
+      "prerequisiteId": "kr.mt.music.life-culture.5-6.035",
+      "strength": "soft",
+      "reason": "생활화 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.health.1-2.002",
+      "prerequisiteId": "kr.mt.pe.health.1-2.001",
+      "strength": "soft",
+      "reason": "건강 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.health.1-2.003",
+      "prerequisiteId": "kr.mt.pe.health.1-2.002",
+      "strength": "soft",
+      "reason": "건강 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.challenge.1-2.005",
+      "prerequisiteId": "kr.mt.pe.challenge.1-2.004",
+      "strength": "soft",
+      "reason": "도전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.challenge.1-2.006",
+      "prerequisiteId": "kr.mt.pe.challenge.1-2.005",
+      "strength": "soft",
+      "reason": "도전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.competition.1-2.008",
+      "prerequisiteId": "kr.mt.pe.competition.1-2.007",
+      "strength": "soft",
+      "reason": "경쟁 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.competition.1-2.009",
+      "prerequisiteId": "kr.mt.pe.competition.1-2.008",
+      "strength": "soft",
+      "reason": "경쟁 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.expression.1-2.011",
+      "prerequisiteId": "kr.mt.pe.expression.1-2.010",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.expression.1-2.012",
+      "prerequisiteId": "kr.mt.pe.expression.1-2.011",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.safety.1-2.014",
+      "prerequisiteId": "kr.mt.pe.safety.1-2.013",
+      "strength": "soft",
+      "reason": "안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.safety.1-2.015",
+      "prerequisiteId": "kr.mt.pe.safety.1-2.014",
+      "strength": "soft",
+      "reason": "안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.health.3-4.017",
+      "prerequisiteId": "kr.mt.pe.health.3-4.016",
+      "strength": "soft",
+      "reason": "건강 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.health.3-4.018",
+      "prerequisiteId": "kr.mt.pe.health.3-4.017",
+      "strength": "soft",
+      "reason": "건강 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.challenge.3-4.020",
+      "prerequisiteId": "kr.mt.pe.challenge.3-4.019",
+      "strength": "soft",
+      "reason": "도전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.competition.3-4.022",
+      "prerequisiteId": "kr.mt.pe.competition.3-4.021",
+      "strength": "soft",
+      "reason": "경쟁 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.expression.3-4.024",
+      "prerequisiteId": "kr.mt.pe.expression.3-4.023",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.safety.3-4.026",
+      "prerequisiteId": "kr.mt.pe.safety.3-4.025",
+      "strength": "soft",
+      "reason": "안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.health.5-6.028",
+      "prerequisiteId": "kr.mt.pe.health.5-6.027",
+      "strength": "soft",
+      "reason": "건강 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.challenge.5-6.030",
+      "prerequisiteId": "kr.mt.pe.challenge.5-6.029",
+      "strength": "soft",
+      "reason": "도전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.competition.5-6.032",
+      "prerequisiteId": "kr.mt.pe.competition.5-6.031",
+      "strength": "soft",
+      "reason": "경쟁 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.expression.5-6.034",
+      "prerequisiteId": "kr.mt.pe.expression.5-6.033",
+      "strength": "soft",
+      "reason": "표현 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    },
+    {
+      "topicId": "kr.mt.pe.safety.5-6.036",
+      "prerequisiteId": "kr.mt.pe.safety.5-6.035",
+      "strength": "soft",
+      "reason": "안전 후보 순차 학습 단위 간의 약한 선행 관계입니다."
+    }
+  ]
+}

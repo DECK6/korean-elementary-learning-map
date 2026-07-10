@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/DECK6/korean-elementary-learning-map/main/schema/kr-clusters.schema.json",
+  "title": "Korean Elementary Learning Map — full-depth clusters",
+  "type": "object",
+  "required": ["version", "clusterCount", "coveragePolicy", "clusters"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string" },
+    "taxonomyVersion": { "type": "string" },
+    "locale": { "const": "ko-KR" },
+    "country": { "const": "KR" },
+    "clusterCount": { "type": "integer", "minimum": 1 },
+    "coveragePolicy": {
+      "type": "object",
+      "required": ["membership", "minimumMembership", "allowMultiple"],
+      "properties": {
+        "membership": { "const": "at-least-one" },
+        "minimumMembership": { "const": 1 },
+        "allowMultiple": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+    "clusters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "subject", "subjectKorean", "topicCount", "topics", "summary", "parentSummary"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^kr\\.cluster\\." },
+          "name": { "type": ["string", "null"] },
+          "title": { "type": ["string", "null"] },
+          "subject": { "type": "string" },
+          "subjectKorean": { "type": "string" },
+          "domain": { "type": ["string", "null"] },
+          "domainKorean": { "type": ["string", "null"] },
+          "gradeBand": { "type": ["string", "null"] },
+          "summary": { "type": "string", "minLength": 1 },
+          "parentSummary": { "type": "string", "minLength": 1 },
+          "topicCount": { "type": "integer", "minimum": 1 },
+          "topics": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+          "workstreamFile": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/DECK6/korean-elementary-learning-map/main/schema/kr-dependencies.schema.json",
+  "title": "Korean Elementary Learning Map — full-depth dependencies",
+  "type": "object",
+  "required": ["version", "edgeCount", "graphPolicy", "dependencies"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string" },
+    "taxonomyVersion": { "type": "string" },
+    "locale": { "const": "ko-KR" },
+    "country": { "const": "KR" },
+    "edgeCount": { "type": "integer", "minimum": 1 },
+    "graphPolicy": {
+      "type": "object",
+      "required": ["relation", "acyclic", "edgeSelection", "crossSubjectEdges"],
+      "properties": {
+        "relation": { "const": "prerequisite" },
+        "acyclic": { "const": true },
+        "edgeSelection": { "const": "workstream-reviewed-only" },
+        "crossSubjectEdges": { "const": "none" }
+      },
+      "additionalProperties": false
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["topicId", "prerequisiteId", "strength", "reason", "basis", "source"],
+        "properties": {
+          "topicId": { "type": "string", "pattern": "^kr\\.mt\\." },
+          "prerequisiteId": { "type": "string", "pattern": "^kr\\.mt\\." },
+          "strength": { "enum": ["hard", "soft"] },
+          "reason": { "type": "string", "minLength": 8 },
+          "basis": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

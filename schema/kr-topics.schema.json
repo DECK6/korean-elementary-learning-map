@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/DECK6/korean-elementary-learning-map/main/schema/kr-topics.schema.json",
+  "title": "Korean Elementary Learning Map — full-depth topics",
+  "type": "object",
+  "required": ["version", "topicCount", "topics"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string" },
+    "taxonomyVersion": { "type": "string" },
+    "locale": { "const": "ko-KR" },
+    "country": { "const": "KR" },
+    "topicCount": { "type": "integer", "minimum": 1500 },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "subject", "subjectKorean", "name", "description", "ageRangeStart", "ageRangeEnd", "evidence", "assessmentPrompt", "standards", "sourceRefs", "verificationStatus", "generationBasis", "sourceTextIncluded"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^kr\\.mt\\." },
+          "type": { "enum": ["CONCEPTUAL", "PROCEDURAL", "REPRESENTATIONAL", "LANGUAGE", "META"] },
+          "subject": { "type": "string" },
+          "subjectKorean": { "type": "string" },
+          "domain": { "type": ["string", "null"] },
+          "domainKorean": { "type": ["string", "null"] },
+          "gradeBand": { "type": ["string", "null"] },
+          "name": { "type": "string", "minLength": 1 },
+          "title": { "type": ["string", "null"] },
+          "titleKorean": { "type": ["string", "null"] },
+          "titleEnglish": { "type": ["string", "null"] },
+          "summary": { "type": ["string", "null"] },
+          "description": { "type": "string", "minLength": 8 },
+          "ageRangeStart": { "type": "integer", "minimum": 0 },
+          "ageRangeEnd": { "type": "integer", "minimum": 0 },
+          "centrality": { "type": ["number", "null"] },
+          "evidence": {
+            "type": "array",
+            "minItems": 2,
+            "items": { "type": "string", "minLength": 8 }
+          },
+          "provenanceEvidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "oneOf": [
+                { "type": "string", "minLength": 8 },
+                { "type": "object", "minProperties": 1 }
+              ]
+            }
+          },
+          "assessmentPrompt": { "type": "string", "minLength": 8 },
+          "standards": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+          "sourceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+          "verificationStatus": {
+            "enum": ["official-source-checked", "public-doc-derived", "needs-official-code-check"]
+          },
+          "generationBasis": { "type": "string", "minLength": 8 },
+          "sourceTextIncluded": { "const": false },
+          "workstreamFile": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}

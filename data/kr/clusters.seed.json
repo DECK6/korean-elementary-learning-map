@@ -1,0 +1,1962 @@
+{
+  "version": "kr-full-depth-v0.3",
+  "clusterCount": 112,
+  "clusters": [
+    {
+      "id": "kr.cluster.korean.listening-speaking.1-2",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Listening & Speaking",
+      "domainKorean": "듣기·말하기",
+      "gradeBand": "1-2",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.korean.listening-speaking.1-2.001",
+        "kr.mt.korean.listening-speaking.1-2.002",
+        "kr.mt.korean.listening-speaking.1-2.003",
+        "kr.mt.korean.listening-speaking.1-2.004",
+        "kr.mt.korean.listening-speaking.1-2.005"
+      ],
+      "summary": "국어 1-2 듣기·말하기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.reading.1-2",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Reading",
+      "domainKorean": "읽기",
+      "gradeBand": "1-2",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.korean.reading.1-2.006",
+        "kr.mt.korean.reading.1-2.007",
+        "kr.mt.korean.reading.1-2.008",
+        "kr.mt.korean.reading.1-2.009",
+        "kr.mt.korean.reading.1-2.010"
+      ],
+      "summary": "국어 1-2 읽기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.writing.1-2",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Writing",
+      "domainKorean": "쓰기",
+      "gradeBand": "1-2",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.korean.writing.1-2.011",
+        "kr.mt.korean.writing.1-2.012",
+        "kr.mt.korean.writing.1-2.013",
+        "kr.mt.korean.writing.1-2.014",
+        "kr.mt.korean.writing.1-2.015"
+      ],
+      "summary": "국어 1-2 쓰기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.grammar.1-2",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Grammar",
+      "domainKorean": "문법",
+      "gradeBand": "1-2",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.korean.grammar.1-2.016",
+        "kr.mt.korean.grammar.1-2.017",
+        "kr.mt.korean.grammar.1-2.018",
+        "kr.mt.korean.grammar.1-2.019",
+        "kr.mt.korean.grammar.1-2.020"
+      ],
+      "summary": "국어 1-2 문법 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.literature.1-2",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Literature",
+      "domainKorean": "문학",
+      "gradeBand": "1-2",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.korean.literature.1-2.021",
+        "kr.mt.korean.literature.1-2.022",
+        "kr.mt.korean.literature.1-2.023",
+        "kr.mt.korean.literature.1-2.024",
+        "kr.mt.korean.literature.1-2.025"
+      ],
+      "summary": "국어 1-2 문학 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.media.1-2",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Media",
+      "domainKorean": "매체",
+      "gradeBand": "1-2",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.korean.media.1-2.026",
+        "kr.mt.korean.media.1-2.027",
+        "kr.mt.korean.media.1-2.028",
+        "kr.mt.korean.media.1-2.029",
+        "kr.mt.korean.media.1-2.030"
+      ],
+      "summary": "국어 1-2 매체 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.listening-speaking.3-4",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Listening & Speaking",
+      "domainKorean": "듣기·말하기",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.listening-speaking.3-4.031",
+        "kr.mt.korean.listening-speaking.3-4.032",
+        "kr.mt.korean.listening-speaking.3-4.033",
+        "kr.mt.korean.listening-speaking.3-4.034"
+      ],
+      "summary": "국어 3-4 듣기·말하기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.reading.3-4",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Reading",
+      "domainKorean": "읽기",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.reading.3-4.035",
+        "kr.mt.korean.reading.3-4.036",
+        "kr.mt.korean.reading.3-4.037",
+        "kr.mt.korean.reading.3-4.038"
+      ],
+      "summary": "국어 3-4 읽기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.writing.3-4",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Writing",
+      "domainKorean": "쓰기",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.writing.3-4.039",
+        "kr.mt.korean.writing.3-4.040",
+        "kr.mt.korean.writing.3-4.041",
+        "kr.mt.korean.writing.3-4.042"
+      ],
+      "summary": "국어 3-4 쓰기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.grammar.3-4",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Grammar",
+      "domainKorean": "문법",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.grammar.3-4.043",
+        "kr.mt.korean.grammar.3-4.044",
+        "kr.mt.korean.grammar.3-4.045",
+        "kr.mt.korean.grammar.3-4.046"
+      ],
+      "summary": "국어 3-4 문법 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.literature.3-4",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Literature",
+      "domainKorean": "문학",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.literature.3-4.047",
+        "kr.mt.korean.literature.3-4.048",
+        "kr.mt.korean.literature.3-4.049",
+        "kr.mt.korean.literature.3-4.050"
+      ],
+      "summary": "국어 3-4 문학 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.media.3-4",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Media",
+      "domainKorean": "매체",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.media.3-4.051",
+        "kr.mt.korean.media.3-4.052",
+        "kr.mt.korean.media.3-4.053",
+        "kr.mt.korean.media.3-4.054"
+      ],
+      "summary": "국어 3-4 매체 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.listening-speaking.5-6",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Listening & Speaking",
+      "domainKorean": "듣기·말하기",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.listening-speaking.5-6.055",
+        "kr.mt.korean.listening-speaking.5-6.056",
+        "kr.mt.korean.listening-speaking.5-6.057",
+        "kr.mt.korean.listening-speaking.5-6.058"
+      ],
+      "summary": "국어 5-6 듣기·말하기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.reading.5-6",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Reading",
+      "domainKorean": "읽기",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.reading.5-6.059",
+        "kr.mt.korean.reading.5-6.060",
+        "kr.mt.korean.reading.5-6.061",
+        "kr.mt.korean.reading.5-6.062"
+      ],
+      "summary": "국어 5-6 읽기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.writing.5-6",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Writing",
+      "domainKorean": "쓰기",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.writing.5-6.063",
+        "kr.mt.korean.writing.5-6.064",
+        "kr.mt.korean.writing.5-6.065",
+        "kr.mt.korean.writing.5-6.066"
+      ],
+      "summary": "국어 5-6 쓰기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.grammar.5-6",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Grammar",
+      "domainKorean": "문법",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.grammar.5-6.067",
+        "kr.mt.korean.grammar.5-6.068",
+        "kr.mt.korean.grammar.5-6.069",
+        "kr.mt.korean.grammar.5-6.070"
+      ],
+      "summary": "국어 5-6 문법 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.literature.5-6",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Literature",
+      "domainKorean": "문학",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.literature.5-6.071",
+        "kr.mt.korean.literature.5-6.072",
+        "kr.mt.korean.literature.5-6.073",
+        "kr.mt.korean.literature.5-6.074"
+      ],
+      "summary": "국어 5-6 문학 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.korean.media.5-6",
+      "subject": "Korean Language",
+      "subjectKorean": "국어",
+      "domain": "Media",
+      "domainKorean": "매체",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.korean.media.5-6.075",
+        "kr.mt.korean.media.5-6.076",
+        "kr.mt.korean.media.5-6.077",
+        "kr.mt.korean.media.5-6.078"
+      ],
+      "summary": "국어 5-6 매체 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.number-operations.1-2",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Number & Operations",
+      "domainKorean": "수와 연산",
+      "gradeBand": "1-2",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.number-operations.1-2.001",
+        "kr.mt.math.number-operations.1-2.002",
+        "kr.mt.math.number-operations.1-2.003",
+        "kr.mt.math.number-operations.1-2.004",
+        "kr.mt.math.number-operations.1-2.005",
+        "kr.mt.math.number-operations.1-2.006"
+      ],
+      "summary": "수학 1-2 수와 연산 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.change-relationships.1-2",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Change & Relationships",
+      "domainKorean": "변화와 관계",
+      "gradeBand": "1-2",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.change-relationships.1-2.007",
+        "kr.mt.math.change-relationships.1-2.008",
+        "kr.mt.math.change-relationships.1-2.009",
+        "kr.mt.math.change-relationships.1-2.010",
+        "kr.mt.math.change-relationships.1-2.011",
+        "kr.mt.math.change-relationships.1-2.012"
+      ],
+      "summary": "수학 1-2 변화와 관계 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.geometry-measurement.1-2",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Geometry & Measurement",
+      "domainKorean": "도형과 측정",
+      "gradeBand": "1-2",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.geometry-measurement.1-2.013",
+        "kr.mt.math.geometry-measurement.1-2.014",
+        "kr.mt.math.geometry-measurement.1-2.015",
+        "kr.mt.math.geometry-measurement.1-2.016",
+        "kr.mt.math.geometry-measurement.1-2.017",
+        "kr.mt.math.geometry-measurement.1-2.018"
+      ],
+      "summary": "수학 1-2 도형과 측정 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.data-probability.1-2",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Data & Probability",
+      "domainKorean": "자료와 가능성",
+      "gradeBand": "1-2",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.data-probability.1-2.019",
+        "kr.mt.math.data-probability.1-2.020",
+        "kr.mt.math.data-probability.1-2.021",
+        "kr.mt.math.data-probability.1-2.022",
+        "kr.mt.math.data-probability.1-2.023",
+        "kr.mt.math.data-probability.1-2.024"
+      ],
+      "summary": "수학 1-2 자료와 가능성 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.number-operations.3-4",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Number & Operations",
+      "domainKorean": "수와 연산",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.number-operations.3-4.025",
+        "kr.mt.math.number-operations.3-4.026",
+        "kr.mt.math.number-operations.3-4.027",
+        "kr.mt.math.number-operations.3-4.028",
+        "kr.mt.math.number-operations.3-4.029",
+        "kr.mt.math.number-operations.3-4.030"
+      ],
+      "summary": "수학 3-4 수와 연산 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.change-relationships.3-4",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Change & Relationships",
+      "domainKorean": "변화와 관계",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.change-relationships.3-4.031",
+        "kr.mt.math.change-relationships.3-4.032",
+        "kr.mt.math.change-relationships.3-4.033",
+        "kr.mt.math.change-relationships.3-4.034",
+        "kr.mt.math.change-relationships.3-4.035",
+        "kr.mt.math.change-relationships.3-4.036"
+      ],
+      "summary": "수학 3-4 변화와 관계 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.geometry-measurement.3-4",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Geometry & Measurement",
+      "domainKorean": "도형과 측정",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.geometry-measurement.3-4.037",
+        "kr.mt.math.geometry-measurement.3-4.038",
+        "kr.mt.math.geometry-measurement.3-4.039",
+        "kr.mt.math.geometry-measurement.3-4.040",
+        "kr.mt.math.geometry-measurement.3-4.041",
+        "kr.mt.math.geometry-measurement.3-4.042"
+      ],
+      "summary": "수학 3-4 도형과 측정 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.data-probability.3-4",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Data & Probability",
+      "domainKorean": "자료와 가능성",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.data-probability.3-4.043",
+        "kr.mt.math.data-probability.3-4.044",
+        "kr.mt.math.data-probability.3-4.045",
+        "kr.mt.math.data-probability.3-4.046",
+        "kr.mt.math.data-probability.3-4.047",
+        "kr.mt.math.data-probability.3-4.048"
+      ],
+      "summary": "수학 3-4 자료와 가능성 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.number-operations.5-6",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Number & Operations",
+      "domainKorean": "수와 연산",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.number-operations.5-6.049",
+        "kr.mt.math.number-operations.5-6.050",
+        "kr.mt.math.number-operations.5-6.051",
+        "kr.mt.math.number-operations.5-6.052",
+        "kr.mt.math.number-operations.5-6.053",
+        "kr.mt.math.number-operations.5-6.054"
+      ],
+      "summary": "수학 5-6 수와 연산 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.change-relationships.5-6",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Change & Relationships",
+      "domainKorean": "변화와 관계",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.change-relationships.5-6.055",
+        "kr.mt.math.change-relationships.5-6.056",
+        "kr.mt.math.change-relationships.5-6.057",
+        "kr.mt.math.change-relationships.5-6.058",
+        "kr.mt.math.change-relationships.5-6.059",
+        "kr.mt.math.change-relationships.5-6.060"
+      ],
+      "summary": "수학 5-6 변화와 관계 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.geometry-measurement.5-6",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Geometry & Measurement",
+      "domainKorean": "도형과 측정",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.geometry-measurement.5-6.061",
+        "kr.mt.math.geometry-measurement.5-6.062",
+        "kr.mt.math.geometry-measurement.5-6.063",
+        "kr.mt.math.geometry-measurement.5-6.064",
+        "kr.mt.math.geometry-measurement.5-6.065",
+        "kr.mt.math.geometry-measurement.5-6.066"
+      ],
+      "summary": "수학 5-6 도형과 측정 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.math.data-probability.5-6",
+      "subject": "Mathematics",
+      "subjectKorean": "수학",
+      "domain": "Data & Probability",
+      "domainKorean": "자료와 가능성",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.math.data-probability.5-6.067",
+        "kr.mt.math.data-probability.5-6.068",
+        "kr.mt.math.data-probability.5-6.069",
+        "kr.mt.math.data-probability.5-6.070",
+        "kr.mt.math.data-probability.5-6.071",
+        "kr.mt.math.data-probability.5-6.072"
+      ],
+      "summary": "수학 5-6 자료와 가능성 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.scientific-inquiry.3-4",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Scientific Inquiry",
+      "domainKorean": "과학 탐구",
+      "gradeBand": "3-4",
+      "topicCount": 8,
+      "topics": [
+        "kr.mt.science.scientific-inquiry.3-4.001",
+        "kr.mt.science.scientific-inquiry.3-4.002",
+        "kr.mt.science.scientific-inquiry.3-4.003",
+        "kr.mt.science.scientific-inquiry.3-4.004",
+        "kr.mt.science.scientific-inquiry.3-4.005",
+        "kr.mt.science.scientific-inquiry.3-4.006",
+        "kr.mt.science.scientific-inquiry.3-4.007",
+        "kr.mt.science.scientific-inquiry.3-4.008"
+      ],
+      "summary": "과학 3-4 과학 탐구 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.motion-energy.3-4",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Motion & Energy",
+      "domainKorean": "운동과 에너지",
+      "gradeBand": "3-4",
+      "topicCount": 8,
+      "topics": [
+        "kr.mt.science.motion-energy.3-4.009",
+        "kr.mt.science.motion-energy.3-4.010",
+        "kr.mt.science.motion-energy.3-4.011",
+        "kr.mt.science.motion-energy.3-4.012",
+        "kr.mt.science.motion-energy.3-4.013",
+        "kr.mt.science.motion-energy.3-4.014",
+        "kr.mt.science.motion-energy.3-4.015",
+        "kr.mt.science.motion-energy.3-4.016"
+      ],
+      "summary": "과학 3-4 운동과 에너지 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.matter.3-4",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Matter",
+      "domainKorean": "물질",
+      "gradeBand": "3-4",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.matter.3-4.017",
+        "kr.mt.science.matter.3-4.018",
+        "kr.mt.science.matter.3-4.019",
+        "kr.mt.science.matter.3-4.020",
+        "kr.mt.science.matter.3-4.021",
+        "kr.mt.science.matter.3-4.022",
+        "kr.mt.science.matter.3-4.023"
+      ],
+      "summary": "과학 3-4 물질 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.life.3-4",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Life",
+      "domainKorean": "생명",
+      "gradeBand": "3-4",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.life.3-4.024",
+        "kr.mt.science.life.3-4.025",
+        "kr.mt.science.life.3-4.026",
+        "kr.mt.science.life.3-4.027",
+        "kr.mt.science.life.3-4.028",
+        "kr.mt.science.life.3-4.029",
+        "kr.mt.science.life.3-4.030"
+      ],
+      "summary": "과학 3-4 생명 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.earth-space.3-4",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Earth & Space",
+      "domainKorean": "지구와 우주",
+      "gradeBand": "3-4",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.earth-space.3-4.031",
+        "kr.mt.science.earth-space.3-4.032",
+        "kr.mt.science.earth-space.3-4.033",
+        "kr.mt.science.earth-space.3-4.034",
+        "kr.mt.science.earth-space.3-4.035",
+        "kr.mt.science.earth-space.3-4.036",
+        "kr.mt.science.earth-space.3-4.037"
+      ],
+      "summary": "과학 3-4 지구와 우주 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.scientific-inquiry.5-6",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Scientific Inquiry",
+      "domainKorean": "과학 탐구",
+      "gradeBand": "5-6",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.scientific-inquiry.5-6.038",
+        "kr.mt.science.scientific-inquiry.5-6.039",
+        "kr.mt.science.scientific-inquiry.5-6.040",
+        "kr.mt.science.scientific-inquiry.5-6.041",
+        "kr.mt.science.scientific-inquiry.5-6.042",
+        "kr.mt.science.scientific-inquiry.5-6.043",
+        "kr.mt.science.scientific-inquiry.5-6.044"
+      ],
+      "summary": "과학 5-6 과학 탐구 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.motion-energy.5-6",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Motion & Energy",
+      "domainKorean": "운동과 에너지",
+      "gradeBand": "5-6",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.motion-energy.5-6.045",
+        "kr.mt.science.motion-energy.5-6.046",
+        "kr.mt.science.motion-energy.5-6.047",
+        "kr.mt.science.motion-energy.5-6.048",
+        "kr.mt.science.motion-energy.5-6.049",
+        "kr.mt.science.motion-energy.5-6.050",
+        "kr.mt.science.motion-energy.5-6.051"
+      ],
+      "summary": "과학 5-6 운동과 에너지 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.matter.5-6",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Matter",
+      "domainKorean": "물질",
+      "gradeBand": "5-6",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.matter.5-6.052",
+        "kr.mt.science.matter.5-6.053",
+        "kr.mt.science.matter.5-6.054",
+        "kr.mt.science.matter.5-6.055",
+        "kr.mt.science.matter.5-6.056",
+        "kr.mt.science.matter.5-6.057",
+        "kr.mt.science.matter.5-6.058"
+      ],
+      "summary": "과학 5-6 물질 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.life.5-6",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Life",
+      "domainKorean": "생명",
+      "gradeBand": "5-6",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.life.5-6.059",
+        "kr.mt.science.life.5-6.060",
+        "kr.mt.science.life.5-6.061",
+        "kr.mt.science.life.5-6.062",
+        "kr.mt.science.life.5-6.063",
+        "kr.mt.science.life.5-6.064",
+        "kr.mt.science.life.5-6.065"
+      ],
+      "summary": "과학 5-6 생명 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.science.earth-space.5-6",
+      "subject": "Science",
+      "subjectKorean": "과학",
+      "domain": "Earth & Space",
+      "domainKorean": "지구와 우주",
+      "gradeBand": "5-6",
+      "topicCount": 7,
+      "topics": [
+        "kr.mt.science.earth-space.5-6.066",
+        "kr.mt.science.earth-space.5-6.067",
+        "kr.mt.science.earth-space.5-6.068",
+        "kr.mt.science.earth-space.5-6.069",
+        "kr.mt.science.earth-space.5-6.070",
+        "kr.mt.science.earth-space.5-6.071",
+        "kr.mt.science.earth-space.5-6.072"
+      ],
+      "summary": "과학 5-6 지구와 우주 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.local-geography.3-4",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Local Geography",
+      "domainKorean": "지역 지리",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.local-geography.3-4.001",
+        "kr.mt.social.local-geography.3-4.002",
+        "kr.mt.social.local-geography.3-4.003",
+        "kr.mt.social.local-geography.3-4.004",
+        "kr.mt.social.local-geography.3-4.005",
+        "kr.mt.social.local-geography.3-4.006"
+      ],
+      "summary": "사회 3-4 지역 지리 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.korean-geography.3-4",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Korean Geography",
+      "domainKorean": "한국 지리",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.korean-geography.3-4.007",
+        "kr.mt.social.korean-geography.3-4.008",
+        "kr.mt.social.korean-geography.3-4.009",
+        "kr.mt.social.korean-geography.3-4.010",
+        "kr.mt.social.korean-geography.3-4.011",
+        "kr.mt.social.korean-geography.3-4.012"
+      ],
+      "summary": "사회 3-4 한국 지리 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.local-history.3-4",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Local History",
+      "domainKorean": "지역사",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.local-history.3-4.013",
+        "kr.mt.social.local-history.3-4.014",
+        "kr.mt.social.local-history.3-4.015",
+        "kr.mt.social.local-history.3-4.016",
+        "kr.mt.social.local-history.3-4.017",
+        "kr.mt.social.local-history.3-4.018"
+      ],
+      "summary": "사회 3-4 지역사 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.korean-history.3-4",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Korean History",
+      "domainKorean": "한국사",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.korean-history.3-4.019",
+        "kr.mt.social.korean-history.3-4.020",
+        "kr.mt.social.korean-history.3-4.021",
+        "kr.mt.social.korean-history.3-4.022",
+        "kr.mt.social.korean-history.3-4.023",
+        "kr.mt.social.korean-history.3-4.024"
+      ],
+      "summary": "사회 3-4 한국사 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.civics.3-4",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Civics",
+      "domainKorean": "민주시민",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.civics.3-4.025",
+        "kr.mt.social.civics.3-4.026",
+        "kr.mt.social.civics.3-4.027",
+        "kr.mt.social.civics.3-4.028",
+        "kr.mt.social.civics.3-4.029",
+        "kr.mt.social.civics.3-4.030"
+      ],
+      "summary": "사회 3-4 민주시민 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.economy-culture.3-4",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Economy & Culture",
+      "domainKorean": "경제·문화",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.economy-culture.3-4.031",
+        "kr.mt.social.economy-culture.3-4.032",
+        "kr.mt.social.economy-culture.3-4.033",
+        "kr.mt.social.economy-culture.3-4.034",
+        "kr.mt.social.economy-culture.3-4.035",
+        "kr.mt.social.economy-culture.3-4.036"
+      ],
+      "summary": "사회 3-4 경제·문화 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.local-geography.5-6",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Local Geography",
+      "domainKorean": "지역 지리",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.local-geography.5-6.037",
+        "kr.mt.social.local-geography.5-6.038",
+        "kr.mt.social.local-geography.5-6.039",
+        "kr.mt.social.local-geography.5-6.040",
+        "kr.mt.social.local-geography.5-6.041",
+        "kr.mt.social.local-geography.5-6.042"
+      ],
+      "summary": "사회 5-6 지역 지리 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.korean-geography.5-6",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Korean Geography",
+      "domainKorean": "한국 지리",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.korean-geography.5-6.043",
+        "kr.mt.social.korean-geography.5-6.044",
+        "kr.mt.social.korean-geography.5-6.045",
+        "kr.mt.social.korean-geography.5-6.046",
+        "kr.mt.social.korean-geography.5-6.047",
+        "kr.mt.social.korean-geography.5-6.048"
+      ],
+      "summary": "사회 5-6 한국 지리 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.local-history.5-6",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Local History",
+      "domainKorean": "지역사",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.local-history.5-6.049",
+        "kr.mt.social.local-history.5-6.050",
+        "kr.mt.social.local-history.5-6.051",
+        "kr.mt.social.local-history.5-6.052",
+        "kr.mt.social.local-history.5-6.053",
+        "kr.mt.social.local-history.5-6.054"
+      ],
+      "summary": "사회 5-6 지역사 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.korean-history.5-6",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Korean History",
+      "domainKorean": "한국사",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.korean-history.5-6.055",
+        "kr.mt.social.korean-history.5-6.056",
+        "kr.mt.social.korean-history.5-6.057",
+        "kr.mt.social.korean-history.5-6.058",
+        "kr.mt.social.korean-history.5-6.059",
+        "kr.mt.social.korean-history.5-6.060"
+      ],
+      "summary": "사회 5-6 한국사 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.civics.5-6",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Civics",
+      "domainKorean": "민주시민",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.civics.5-6.061",
+        "kr.mt.social.civics.5-6.062",
+        "kr.mt.social.civics.5-6.063",
+        "kr.mt.social.civics.5-6.064",
+        "kr.mt.social.civics.5-6.065",
+        "kr.mt.social.civics.5-6.066"
+      ],
+      "summary": "사회 5-6 민주시민 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.social.economy-culture.5-6",
+      "subject": "Social Studies",
+      "subjectKorean": "사회",
+      "domain": "Economy & Culture",
+      "domainKorean": "경제·문화",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.social.economy-culture.5-6.067",
+        "kr.mt.social.economy-culture.5-6.068",
+        "kr.mt.social.economy-culture.5-6.069",
+        "kr.mt.social.economy-culture.5-6.070",
+        "kr.mt.social.economy-culture.5-6.071",
+        "kr.mt.social.economy-culture.5-6.072"
+      ],
+      "summary": "사회 5-6 경제·문화 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.listening.3-4",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Listening",
+      "domainKorean": "듣기",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.english-efl.listening.3-4.001",
+        "kr.mt.english-efl.listening.3-4.002",
+        "kr.mt.english-efl.listening.3-4.003",
+        "kr.mt.english-efl.listening.3-4.004",
+        "kr.mt.english-efl.listening.3-4.005",
+        "kr.mt.english-efl.listening.3-4.006"
+      ],
+      "summary": "영어 3-4 듣기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.speaking.3-4",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Speaking",
+      "domainKorean": "말하기",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.english-efl.speaking.3-4.007",
+        "kr.mt.english-efl.speaking.3-4.008",
+        "kr.mt.english-efl.speaking.3-4.009",
+        "kr.mt.english-efl.speaking.3-4.010",
+        "kr.mt.english-efl.speaking.3-4.011",
+        "kr.mt.english-efl.speaking.3-4.012"
+      ],
+      "summary": "영어 3-4 말하기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.reading.3-4",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Reading",
+      "domainKorean": "읽기",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.english-efl.reading.3-4.013",
+        "kr.mt.english-efl.reading.3-4.014",
+        "kr.mt.english-efl.reading.3-4.015",
+        "kr.mt.english-efl.reading.3-4.016",
+        "kr.mt.english-efl.reading.3-4.017",
+        "kr.mt.english-efl.reading.3-4.018"
+      ],
+      "summary": "영어 3-4 읽기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.writing.3-4",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Writing",
+      "domainKorean": "쓰기",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.english-efl.writing.3-4.019",
+        "kr.mt.english-efl.writing.3-4.020",
+        "kr.mt.english-efl.writing.3-4.021",
+        "kr.mt.english-efl.writing.3-4.022",
+        "kr.mt.english-efl.writing.3-4.023",
+        "kr.mt.english-efl.writing.3-4.024"
+      ],
+      "summary": "영어 3-4 쓰기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.vocabulary-expressions.3-4",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Vocabulary & Expressions",
+      "domainKorean": "어휘·표현",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.english-efl.vocabulary-expressions.3-4.025",
+        "kr.mt.english-efl.vocabulary-expressions.3-4.026",
+        "kr.mt.english-efl.vocabulary-expressions.3-4.027",
+        "kr.mt.english-efl.vocabulary-expressions.3-4.028",
+        "kr.mt.english-efl.vocabulary-expressions.3-4.029",
+        "kr.mt.english-efl.vocabulary-expressions.3-4.030"
+      ],
+      "summary": "영어 3-4 어휘·표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.intercultural-communication.3-4",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Intercultural Communication",
+      "domainKorean": "문화·상호문화",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.english-efl.intercultural-communication.3-4.031",
+        "kr.mt.english-efl.intercultural-communication.3-4.032",
+        "kr.mt.english-efl.intercultural-communication.3-4.033",
+        "kr.mt.english-efl.intercultural-communication.3-4.034",
+        "kr.mt.english-efl.intercultural-communication.3-4.035",
+        "kr.mt.english-efl.intercultural-communication.3-4.036"
+      ],
+      "summary": "영어 3-4 문화·상호문화 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.listening.5-6",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Listening",
+      "domainKorean": "듣기",
+      "gradeBand": "5-6",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.english-efl.listening.5-6.037",
+        "kr.mt.english-efl.listening.5-6.038",
+        "kr.mt.english-efl.listening.5-6.039",
+        "kr.mt.english-efl.listening.5-6.040",
+        "kr.mt.english-efl.listening.5-6.041"
+      ],
+      "summary": "영어 5-6 듣기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.speaking.5-6",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Speaking",
+      "domainKorean": "말하기",
+      "gradeBand": "5-6",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.english-efl.speaking.5-6.042",
+        "kr.mt.english-efl.speaking.5-6.043",
+        "kr.mt.english-efl.speaking.5-6.044",
+        "kr.mt.english-efl.speaking.5-6.045",
+        "kr.mt.english-efl.speaking.5-6.046"
+      ],
+      "summary": "영어 5-6 말하기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.reading.5-6",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Reading",
+      "domainKorean": "읽기",
+      "gradeBand": "5-6",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.english-efl.reading.5-6.047",
+        "kr.mt.english-efl.reading.5-6.048",
+        "kr.mt.english-efl.reading.5-6.049",
+        "kr.mt.english-efl.reading.5-6.050",
+        "kr.mt.english-efl.reading.5-6.051"
+      ],
+      "summary": "영어 5-6 읽기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.writing.5-6",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Writing",
+      "domainKorean": "쓰기",
+      "gradeBand": "5-6",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.english-efl.writing.5-6.052",
+        "kr.mt.english-efl.writing.5-6.053",
+        "kr.mt.english-efl.writing.5-6.054",
+        "kr.mt.english-efl.writing.5-6.055",
+        "kr.mt.english-efl.writing.5-6.056"
+      ],
+      "summary": "영어 5-6 쓰기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.vocabulary-expressions.5-6",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Vocabulary & Expressions",
+      "domainKorean": "어휘·표현",
+      "gradeBand": "5-6",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.english-efl.vocabulary-expressions.5-6.057",
+        "kr.mt.english-efl.vocabulary-expressions.5-6.058",
+        "kr.mt.english-efl.vocabulary-expressions.5-6.059",
+        "kr.mt.english-efl.vocabulary-expressions.5-6.060",
+        "kr.mt.english-efl.vocabulary-expressions.5-6.061"
+      ],
+      "summary": "영어 5-6 어휘·표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.english-efl.intercultural-communication.5-6",
+      "subject": "English as a Foreign Language",
+      "subjectKorean": "영어",
+      "domain": "Intercultural Communication",
+      "domainKorean": "문화·상호문화",
+      "gradeBand": "5-6",
+      "topicCount": 5,
+      "topics": [
+        "kr.mt.english-efl.intercultural-communication.5-6.062",
+        "kr.mt.english-efl.intercultural-communication.5-6.063",
+        "kr.mt.english-efl.intercultural-communication.5-6.064",
+        "kr.mt.english-efl.intercultural-communication.5-6.065",
+        "kr.mt.english-efl.intercultural-communication.5-6.066"
+      ],
+      "summary": "영어 5-6 문화·상호문화 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.self-agency.3-4",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Self & Agency",
+      "domainKorean": "자신과 도덕적 주체성",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.self-agency.3-4.001",
+        "kr.mt.moral.self-agency.3-4.002",
+        "kr.mt.moral.self-agency.3-4.003",
+        "kr.mt.moral.self-agency.3-4.004",
+        "kr.mt.moral.self-agency.3-4.005",
+        "kr.mt.moral.self-agency.3-4.006"
+      ],
+      "summary": "도덕 3-4 자신과 도덕적 주체성 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.relationships.3-4",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Relationships",
+      "domainKorean": "타인과의 관계",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.relationships.3-4.007",
+        "kr.mt.moral.relationships.3-4.008",
+        "kr.mt.moral.relationships.3-4.009",
+        "kr.mt.moral.relationships.3-4.010",
+        "kr.mt.moral.relationships.3-4.011",
+        "kr.mt.moral.relationships.3-4.012"
+      ],
+      "summary": "도덕 3-4 타인과의 관계 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.community.3-4",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Community",
+      "domainKorean": "사회·공동체",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.community.3-4.013",
+        "kr.mt.moral.community.3-4.014",
+        "kr.mt.moral.community.3-4.015",
+        "kr.mt.moral.community.3-4.016",
+        "kr.mt.moral.community.3-4.017",
+        "kr.mt.moral.community.3-4.018"
+      ],
+      "summary": "도덕 3-4 사회·공동체 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.coexistence.3-4",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Coexistence",
+      "domainKorean": "자연·초월과의 관계",
+      "gradeBand": "3-4",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.coexistence.3-4.019",
+        "kr.mt.moral.coexistence.3-4.020",
+        "kr.mt.moral.coexistence.3-4.021",
+        "kr.mt.moral.coexistence.3-4.022",
+        "kr.mt.moral.coexistence.3-4.023",
+        "kr.mt.moral.coexistence.3-4.024"
+      ],
+      "summary": "도덕 3-4 자연·초월과의 관계 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.self-agency.5-6",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Self & Agency",
+      "domainKorean": "자신과 도덕적 주체성",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.self-agency.5-6.025",
+        "kr.mt.moral.self-agency.5-6.026",
+        "kr.mt.moral.self-agency.5-6.027",
+        "kr.mt.moral.self-agency.5-6.028",
+        "kr.mt.moral.self-agency.5-6.029",
+        "kr.mt.moral.self-agency.5-6.030"
+      ],
+      "summary": "도덕 5-6 자신과 도덕적 주체성 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.relationships.5-6",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Relationships",
+      "domainKorean": "타인과의 관계",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.relationships.5-6.031",
+        "kr.mt.moral.relationships.5-6.032",
+        "kr.mt.moral.relationships.5-6.033",
+        "kr.mt.moral.relationships.5-6.034",
+        "kr.mt.moral.relationships.5-6.035",
+        "kr.mt.moral.relationships.5-6.036"
+      ],
+      "summary": "도덕 5-6 타인과의 관계 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.community.5-6",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Community",
+      "domainKorean": "사회·공동체",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.community.5-6.037",
+        "kr.mt.moral.community.5-6.038",
+        "kr.mt.moral.community.5-6.039",
+        "kr.mt.moral.community.5-6.040",
+        "kr.mt.moral.community.5-6.041",
+        "kr.mt.moral.community.5-6.042"
+      ],
+      "summary": "도덕 5-6 사회·공동체 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.moral.coexistence.5-6",
+      "subject": "Moral Education",
+      "subjectKorean": "도덕",
+      "domain": "Coexistence",
+      "domainKorean": "자연·초월과의 관계",
+      "gradeBand": "5-6",
+      "topicCount": 6,
+      "topics": [
+        "kr.mt.moral.coexistence.5-6.043",
+        "kr.mt.moral.coexistence.5-6.044",
+        "kr.mt.moral.coexistence.5-6.045",
+        "kr.mt.moral.coexistence.5-6.046",
+        "kr.mt.moral.coexistence.5-6.047",
+        "kr.mt.moral.coexistence.5-6.048"
+      ],
+      "summary": "도덕 5-6 자연·초월과의 관계 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.practical.human-development-family.5-6",
+      "subject": "Practical Arts",
+      "subjectKorean": "실과",
+      "domain": "Human Development & Family",
+      "domainKorean": "인간 발달과 가족",
+      "gradeBand": "5-6",
+      "topicCount": 11,
+      "topics": [
+        "kr.mt.practical.human-development-family.5-6.001",
+        "kr.mt.practical.human-development-family.5-6.002",
+        "kr.mt.practical.human-development-family.5-6.003",
+        "kr.mt.practical.human-development-family.5-6.004",
+        "kr.mt.practical.human-development-family.5-6.005",
+        "kr.mt.practical.human-development-family.5-6.006",
+        "kr.mt.practical.human-development-family.5-6.007",
+        "kr.mt.practical.human-development-family.5-6.008",
+        "kr.mt.practical.human-development-family.5-6.009",
+        "kr.mt.practical.human-development-family.5-6.010",
+        "kr.mt.practical.human-development-family.5-6.011"
+      ],
+      "summary": "실과 5-6 인간 발달과 가족 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.practical.home-life-safety.5-6",
+      "subject": "Practical Arts",
+      "subjectKorean": "실과",
+      "domain": "Home Life & Safety",
+      "domainKorean": "가정생활과 안전",
+      "gradeBand": "5-6",
+      "topicCount": 11,
+      "topics": [
+        "kr.mt.practical.home-life-safety.5-6.012",
+        "kr.mt.practical.home-life-safety.5-6.013",
+        "kr.mt.practical.home-life-safety.5-6.014",
+        "kr.mt.practical.home-life-safety.5-6.015",
+        "kr.mt.practical.home-life-safety.5-6.016",
+        "kr.mt.practical.home-life-safety.5-6.017",
+        "kr.mt.practical.home-life-safety.5-6.018",
+        "kr.mt.practical.home-life-safety.5-6.019",
+        "kr.mt.practical.home-life-safety.5-6.020",
+        "kr.mt.practical.home-life-safety.5-6.021",
+        "kr.mt.practical.home-life-safety.5-6.022"
+      ],
+      "summary": "실과 5-6 가정생활과 안전 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.practical.technology-making.5-6",
+      "subject": "Practical Arts",
+      "subjectKorean": "실과",
+      "domain": "Technology & Making",
+      "domainKorean": "기술과 만들기",
+      "gradeBand": "5-6",
+      "topicCount": 10,
+      "topics": [
+        "kr.mt.practical.technology-making.5-6.023",
+        "kr.mt.practical.technology-making.5-6.024",
+        "kr.mt.practical.technology-making.5-6.025",
+        "kr.mt.practical.technology-making.5-6.026",
+        "kr.mt.practical.technology-making.5-6.027",
+        "kr.mt.practical.technology-making.5-6.028",
+        "kr.mt.practical.technology-making.5-6.029",
+        "kr.mt.practical.technology-making.5-6.030",
+        "kr.mt.practical.technology-making.5-6.031",
+        "kr.mt.practical.technology-making.5-6.032"
+      ],
+      "summary": "실과 5-6 기술과 만들기 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.practical.information-digital-problem-solving.5-6",
+      "subject": "Practical Arts",
+      "subjectKorean": "실과",
+      "domain": "Information & Digital Problem Solving",
+      "domainKorean": "정보와 디지털 문제 해결",
+      "gradeBand": "5-6",
+      "topicCount": 10,
+      "topics": [
+        "kr.mt.practical.information-digital-problem-solving.5-6.033",
+        "kr.mt.practical.information-digital-problem-solving.5-6.034",
+        "kr.mt.practical.information-digital-problem-solving.5-6.035",
+        "kr.mt.practical.information-digital-problem-solving.5-6.036",
+        "kr.mt.practical.information-digital-problem-solving.5-6.037",
+        "kr.mt.practical.information-digital-problem-solving.5-6.038",
+        "kr.mt.practical.information-digital-problem-solving.5-6.039",
+        "kr.mt.practical.information-digital-problem-solving.5-6.040",
+        "kr.mt.practical.information-digital-problem-solving.5-6.041",
+        "kr.mt.practical.information-digital-problem-solving.5-6.042"
+      ],
+      "summary": "실과 5-6 정보와 디지털 문제 해결 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.integrated.right-life.1-2",
+      "subject": "Integrated Subjects",
+      "subjectKorean": "통합교과",
+      "domain": "Right Life",
+      "domainKorean": "바른 생활",
+      "gradeBand": "1-2",
+      "topicCount": 18,
+      "topics": [
+        "kr.mt.integrated.right-life.1-2.001",
+        "kr.mt.integrated.right-life.1-2.002",
+        "kr.mt.integrated.right-life.1-2.003",
+        "kr.mt.integrated.right-life.1-2.004",
+        "kr.mt.integrated.right-life.1-2.005",
+        "kr.mt.integrated.right-life.1-2.006",
+        "kr.mt.integrated.right-life.1-2.007",
+        "kr.mt.integrated.right-life.1-2.008",
+        "kr.mt.integrated.right-life.1-2.009",
+        "kr.mt.integrated.right-life.1-2.010",
+        "kr.mt.integrated.right-life.1-2.011",
+        "kr.mt.integrated.right-life.1-2.012",
+        "kr.mt.integrated.right-life.1-2.013",
+        "kr.mt.integrated.right-life.1-2.014",
+        "kr.mt.integrated.right-life.1-2.015",
+        "kr.mt.integrated.right-life.1-2.016",
+        "kr.mt.integrated.right-life.1-2.017",
+        "kr.mt.integrated.right-life.1-2.018"
+      ],
+      "summary": "통합교과 1-2 바른 생활 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.integrated.wise-life.1-2",
+      "subject": "Integrated Subjects",
+      "subjectKorean": "통합교과",
+      "domain": "Wise Life",
+      "domainKorean": "슬기로운 생활",
+      "gradeBand": "1-2",
+      "topicCount": 18,
+      "topics": [
+        "kr.mt.integrated.wise-life.1-2.019",
+        "kr.mt.integrated.wise-life.1-2.020",
+        "kr.mt.integrated.wise-life.1-2.021",
+        "kr.mt.integrated.wise-life.1-2.022",
+        "kr.mt.integrated.wise-life.1-2.023",
+        "kr.mt.integrated.wise-life.1-2.024",
+        "kr.mt.integrated.wise-life.1-2.025",
+        "kr.mt.integrated.wise-life.1-2.026",
+        "kr.mt.integrated.wise-life.1-2.027",
+        "kr.mt.integrated.wise-life.1-2.028",
+        "kr.mt.integrated.wise-life.1-2.029",
+        "kr.mt.integrated.wise-life.1-2.030",
+        "kr.mt.integrated.wise-life.1-2.031",
+        "kr.mt.integrated.wise-life.1-2.032",
+        "kr.mt.integrated.wise-life.1-2.033",
+        "kr.mt.integrated.wise-life.1-2.034",
+        "kr.mt.integrated.wise-life.1-2.035",
+        "kr.mt.integrated.wise-life.1-2.036"
+      ],
+      "summary": "통합교과 1-2 슬기로운 생활 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.integrated.joyful-life.1-2",
+      "subject": "Integrated Subjects",
+      "subjectKorean": "통합교과",
+      "domain": "Joyful Life",
+      "domainKorean": "즐거운 생활",
+      "gradeBand": "1-2",
+      "topicCount": 18,
+      "topics": [
+        "kr.mt.integrated.joyful-life.1-2.037",
+        "kr.mt.integrated.joyful-life.1-2.038",
+        "kr.mt.integrated.joyful-life.1-2.039",
+        "kr.mt.integrated.joyful-life.1-2.040",
+        "kr.mt.integrated.joyful-life.1-2.041",
+        "kr.mt.integrated.joyful-life.1-2.042",
+        "kr.mt.integrated.joyful-life.1-2.043",
+        "kr.mt.integrated.joyful-life.1-2.044",
+        "kr.mt.integrated.joyful-life.1-2.045",
+        "kr.mt.integrated.joyful-life.1-2.046",
+        "kr.mt.integrated.joyful-life.1-2.047",
+        "kr.mt.integrated.joyful-life.1-2.048",
+        "kr.mt.integrated.joyful-life.1-2.049",
+        "kr.mt.integrated.joyful-life.1-2.050",
+        "kr.mt.integrated.joyful-life.1-2.051",
+        "kr.mt.integrated.joyful-life.1-2.052",
+        "kr.mt.integrated.joyful-life.1-2.053",
+        "kr.mt.integrated.joyful-life.1-2.054"
+      ],
+      "summary": "통합교과 1-2 즐거운 생활 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.experience.1-2",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Experience",
+      "domainKorean": "체험",
+      "gradeBand": "1-2",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.experience.1-2.001",
+        "kr.mt.art.experience.1-2.002",
+        "kr.mt.art.experience.1-2.003",
+        "kr.mt.art.experience.1-2.004"
+      ],
+      "summary": "미술 1-2 체험 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.expression.1-2",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "1-2",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.expression.1-2.005",
+        "kr.mt.art.expression.1-2.006",
+        "kr.mt.art.expression.1-2.007",
+        "kr.mt.art.expression.1-2.008"
+      ],
+      "summary": "미술 1-2 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.appreciation.1-2",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Appreciation",
+      "domainKorean": "감상",
+      "gradeBand": "1-2",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.appreciation.1-2.009",
+        "kr.mt.art.appreciation.1-2.010",
+        "kr.mt.art.appreciation.1-2.011",
+        "kr.mt.art.appreciation.1-2.012"
+      ],
+      "summary": "미술 1-2 감상 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.experience.3-4",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Experience",
+      "domainKorean": "체험",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.experience.3-4.013",
+        "kr.mt.art.experience.3-4.014",
+        "kr.mt.art.experience.3-4.015",
+        "kr.mt.art.experience.3-4.016"
+      ],
+      "summary": "미술 3-4 체험 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.expression.3-4",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.expression.3-4.017",
+        "kr.mt.art.expression.3-4.018",
+        "kr.mt.art.expression.3-4.019",
+        "kr.mt.art.expression.3-4.020"
+      ],
+      "summary": "미술 3-4 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.appreciation.3-4",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Appreciation",
+      "domainKorean": "감상",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.appreciation.3-4.021",
+        "kr.mt.art.appreciation.3-4.022",
+        "kr.mt.art.appreciation.3-4.023",
+        "kr.mt.art.appreciation.3-4.024"
+      ],
+      "summary": "미술 3-4 감상 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.experience.5-6",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Experience",
+      "domainKorean": "체험",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.experience.5-6.025",
+        "kr.mt.art.experience.5-6.026",
+        "kr.mt.art.experience.5-6.027",
+        "kr.mt.art.experience.5-6.028"
+      ],
+      "summary": "미술 5-6 체험 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.expression.5-6",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.expression.5-6.029",
+        "kr.mt.art.expression.5-6.030",
+        "kr.mt.art.expression.5-6.031",
+        "kr.mt.art.expression.5-6.032"
+      ],
+      "summary": "미술 5-6 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.art.appreciation.5-6",
+      "subject": "Art",
+      "subjectKorean": "미술",
+      "domain": "Appreciation",
+      "domainKorean": "감상",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.art.appreciation.5-6.033",
+        "kr.mt.art.appreciation.5-6.034",
+        "kr.mt.art.appreciation.5-6.035",
+        "kr.mt.art.appreciation.5-6.036"
+      ],
+      "summary": "미술 5-6 감상 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.expression.1-2",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "1-2",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.expression.1-2.001",
+        "kr.mt.music.expression.1-2.002",
+        "kr.mt.music.expression.1-2.003",
+        "kr.mt.music.expression.1-2.004"
+      ],
+      "summary": "음악 1-2 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.appreciation.1-2",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Appreciation",
+      "domainKorean": "감상",
+      "gradeBand": "1-2",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.appreciation.1-2.005",
+        "kr.mt.music.appreciation.1-2.006",
+        "kr.mt.music.appreciation.1-2.007",
+        "kr.mt.music.appreciation.1-2.008"
+      ],
+      "summary": "음악 1-2 감상 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.life-culture.1-2",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Life & Culture",
+      "domainKorean": "생활화",
+      "gradeBand": "1-2",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.life-culture.1-2.009",
+        "kr.mt.music.life-culture.1-2.010",
+        "kr.mt.music.life-culture.1-2.011",
+        "kr.mt.music.life-culture.1-2.012"
+      ],
+      "summary": "음악 1-2 생활화 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.expression.3-4",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.expression.3-4.013",
+        "kr.mt.music.expression.3-4.014",
+        "kr.mt.music.expression.3-4.015",
+        "kr.mt.music.expression.3-4.016"
+      ],
+      "summary": "음악 3-4 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.appreciation.3-4",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Appreciation",
+      "domainKorean": "감상",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.appreciation.3-4.017",
+        "kr.mt.music.appreciation.3-4.018",
+        "kr.mt.music.appreciation.3-4.019",
+        "kr.mt.music.appreciation.3-4.020"
+      ],
+      "summary": "음악 3-4 감상 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.life-culture.3-4",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Life & Culture",
+      "domainKorean": "생활화",
+      "gradeBand": "3-4",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.life-culture.3-4.021",
+        "kr.mt.music.life-culture.3-4.022",
+        "kr.mt.music.life-culture.3-4.023",
+        "kr.mt.music.life-culture.3-4.024"
+      ],
+      "summary": "음악 3-4 생활화 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.expression.5-6",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.expression.5-6.025",
+        "kr.mt.music.expression.5-6.026",
+        "kr.mt.music.expression.5-6.027",
+        "kr.mt.music.expression.5-6.028"
+      ],
+      "summary": "음악 5-6 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.appreciation.5-6",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Appreciation",
+      "domainKorean": "감상",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.appreciation.5-6.029",
+        "kr.mt.music.appreciation.5-6.030",
+        "kr.mt.music.appreciation.5-6.031",
+        "kr.mt.music.appreciation.5-6.032"
+      ],
+      "summary": "음악 5-6 감상 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.music.life-culture.5-6",
+      "subject": "Music",
+      "subjectKorean": "음악",
+      "domain": "Life & Culture",
+      "domainKorean": "생활화",
+      "gradeBand": "5-6",
+      "topicCount": 4,
+      "topics": [
+        "kr.mt.music.life-culture.5-6.033",
+        "kr.mt.music.life-culture.5-6.034",
+        "kr.mt.music.life-culture.5-6.035",
+        "kr.mt.music.life-culture.5-6.036"
+      ],
+      "summary": "음악 5-6 생활화 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.health.1-2",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Health",
+      "domainKorean": "건강",
+      "gradeBand": "1-2",
+      "topicCount": 3,
+      "topics": [
+        "kr.mt.pe.health.1-2.001",
+        "kr.mt.pe.health.1-2.002",
+        "kr.mt.pe.health.1-2.003"
+      ],
+      "summary": "체육 1-2 건강 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.challenge.1-2",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Challenge",
+      "domainKorean": "도전",
+      "gradeBand": "1-2",
+      "topicCount": 3,
+      "topics": [
+        "kr.mt.pe.challenge.1-2.004",
+        "kr.mt.pe.challenge.1-2.005",
+        "kr.mt.pe.challenge.1-2.006"
+      ],
+      "summary": "체육 1-2 도전 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.competition.1-2",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Competition",
+      "domainKorean": "경쟁",
+      "gradeBand": "1-2",
+      "topicCount": 3,
+      "topics": [
+        "kr.mt.pe.competition.1-2.007",
+        "kr.mt.pe.competition.1-2.008",
+        "kr.mt.pe.competition.1-2.009"
+      ],
+      "summary": "체육 1-2 경쟁 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.expression.1-2",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "1-2",
+      "topicCount": 3,
+      "topics": [
+        "kr.mt.pe.expression.1-2.010",
+        "kr.mt.pe.expression.1-2.011",
+        "kr.mt.pe.expression.1-2.012"
+      ],
+      "summary": "체육 1-2 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.safety.1-2",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Safety",
+      "domainKorean": "안전",
+      "gradeBand": "1-2",
+      "topicCount": 3,
+      "topics": [
+        "kr.mt.pe.safety.1-2.013",
+        "kr.mt.pe.safety.1-2.014",
+        "kr.mt.pe.safety.1-2.015"
+      ],
+      "summary": "체육 1-2 안전 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.health.3-4",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Health",
+      "domainKorean": "건강",
+      "gradeBand": "3-4",
+      "topicCount": 3,
+      "topics": [
+        "kr.mt.pe.health.3-4.016",
+        "kr.mt.pe.health.3-4.017",
+        "kr.mt.pe.health.3-4.018"
+      ],
+      "summary": "체육 3-4 건강 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.challenge.3-4",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Challenge",
+      "domainKorean": "도전",
+      "gradeBand": "3-4",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.challenge.3-4.019",
+        "kr.mt.pe.challenge.3-4.020"
+      ],
+      "summary": "체육 3-4 도전 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.competition.3-4",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Competition",
+      "domainKorean": "경쟁",
+      "gradeBand": "3-4",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.competition.3-4.021",
+        "kr.mt.pe.competition.3-4.022"
+      ],
+      "summary": "체육 3-4 경쟁 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.expression.3-4",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "3-4",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.expression.3-4.023",
+        "kr.mt.pe.expression.3-4.024"
+      ],
+      "summary": "체육 3-4 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.safety.3-4",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Safety",
+      "domainKorean": "안전",
+      "gradeBand": "3-4",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.safety.3-4.025",
+        "kr.mt.pe.safety.3-4.026"
+      ],
+      "summary": "체육 3-4 안전 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.health.5-6",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Health",
+      "domainKorean": "건강",
+      "gradeBand": "5-6",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.health.5-6.027",
+        "kr.mt.pe.health.5-6.028"
+      ],
+      "summary": "체육 5-6 건강 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.challenge.5-6",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Challenge",
+      "domainKorean": "도전",
+      "gradeBand": "5-6",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.challenge.5-6.029",
+        "kr.mt.pe.challenge.5-6.030"
+      ],
+      "summary": "체육 5-6 도전 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.competition.5-6",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Competition",
+      "domainKorean": "경쟁",
+      "gradeBand": "5-6",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.competition.5-6.031",
+        "kr.mt.pe.competition.5-6.032"
+      ],
+      "summary": "체육 5-6 경쟁 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.expression.5-6",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Expression",
+      "domainKorean": "표현",
+      "gradeBand": "5-6",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.expression.5-6.033",
+        "kr.mt.pe.expression.5-6.034"
+      ],
+      "summary": "체육 5-6 표현 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    },
+    {
+      "id": "kr.cluster.pe.safety.5-6",
+      "subject": "Physical Education",
+      "subjectKorean": "체육",
+      "domain": "Safety",
+      "domainKorean": "안전",
+      "gradeBand": "5-6",
+      "topicCount": 2,
+      "topics": [
+        "kr.mt.pe.safety.5-6.035",
+        "kr.mt.pe.safety.5-6.036"
+      ],
+      "summary": "체육 5-6 안전 영역의 v0.3 후보 세부 주제 클러스터입니다."
+    }
+  ]
+}
