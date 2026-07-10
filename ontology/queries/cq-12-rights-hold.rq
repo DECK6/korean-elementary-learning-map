@@ -1,0 +1,8 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?resource ?resourceType ?rights
+WHERE {
+  VALUES ?resourceType { lm:DatasetRelease lm:SourceDocument }
+  ?resource a ?resourceType ; lm:rightsStatus ?rights .
+}
+ORDER BY ?resourceType ?resource

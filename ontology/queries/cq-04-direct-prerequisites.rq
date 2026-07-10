@@ -1,0 +1,15 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?dependent ?prerequisite ?assertion ?strength ?legacyStrength ?reason ?basis ?source
+WHERE {
+  ?dependent lm:hasPrerequisiteAssertion ?assertion ;
+    lm:directRequires ?prerequisite .
+  ?assertion lm:dependentTopic ?dependent ;
+    lm:prerequisiteTopic ?prerequisite ;
+    lm:prerequisiteStrength ?strength ;
+    lm:legacyPrerequisiteStrength ?legacyStrength ;
+    lm:prerequisiteReason ?reason ;
+    lm:assertionBasis ?basis ;
+    lm:assertionSource ?source .
+}
+ORDER BY ?dependent ?prerequisite ?assertion

@@ -1,0 +1,4 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+
+<urn:fixture:missing-cardinality-topic> a lm:LearningTopic ;
+  lm:preferredLabel "Missing required cardinality topic"@en .

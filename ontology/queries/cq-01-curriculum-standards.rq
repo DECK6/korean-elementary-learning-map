@@ -1,0 +1,12 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?curriculum ?subject ?curriculumBand ?standard ?standardBand ?domain
+WHERE {
+  ?curriculum a lm:Curriculum ;
+    lm:hasSubject ?subject ;
+    lm:hasGradeBand ?curriculumBand ;
+    lm:hasAchievementStandard ?standard .
+  ?standard lm:hasGradeBand ?standardBand ;
+    lm:hasLearningDomain ?domain .
+}
+ORDER BY ?curriculum ?standard ?subject ?curriculumBand ?standardBand ?domain

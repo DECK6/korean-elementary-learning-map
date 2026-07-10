@@ -1,0 +1,21 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?topic ?standard ?kind ?relationship ?confidence ?sourceConfidence ?confidenceDefaulted ?defaultingPolicy ?sourceVerificationStatus ?verificationStatusDefaulted ?note ?rationale ?basis ?source
+WHERE {
+  ?alignment a lm:StandardTopicAlignment ;
+    lm:alignmentTopic ?topic ;
+    lm:alignmentStandard ?standard ;
+    lm:alignmentKind ?kind ;
+    lm:sourceAlignmentRelationship ?relationship ;
+    lm:confidence ?confidence ;
+    lm:sourceConfidenceValue ?sourceConfidence ;
+    lm:confidenceDefaulted ?confidenceDefaulted ;
+    lm:verificationStatusDefaulted ?verificationStatusDefaulted ;
+    lm:assertionBasis ?basis ;
+    lm:assertionSource ?source .
+  OPTIONAL { ?alignment lm:defaultingPolicy ?defaultingPolicy . }
+  OPTIONAL { ?alignment lm:sourceVerificationStatus ?sourceVerificationStatus . }
+  OPTIONAL { ?alignment lm:sourceAlignmentNote ?note . }
+  OPTIONAL { ?alignment lm:sourceAlignmentRationale ?rationale . }
+}
+ORDER BY ?topic ?standard ?kind

@@ -1,0 +1,13 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+
+<urn:fixture:bad-source> a lm:SourceDocument ;
+  lm:identifier "bad-source" ;
+  lm:preferredLabel "Source"@en ;
+  lm:sourceType "official-pdf" ;
+  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ;
+  lm:officialTextIncluded true ;
+  lm:hasVerificationRecord <urn:fixture:bad-source-verification> .
+
+<urn:fixture:bad-source-verification> a lm:VerificationRecord ;
+  lm:identifier "bad-source-verification" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/official-source-checked> .

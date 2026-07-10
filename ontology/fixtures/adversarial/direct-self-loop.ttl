@@ -1,0 +1,44 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+
+<urn:fixture:topic> a lm:LearningTopic ;
+  lm:identifier "self-loop-topic" ;
+  lm:preferredLabel "Self loop topic"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:topicType <https://dexa.art/learnmap/vocab/#/LearningTopicType/conceptual> ;
+  lm:hasEvidenceCriterion <urn:fixture:evidence> ;
+  lm:hasAssessmentPrompt <urn:fixture:prompt> ;
+  lm:alignedToStandard <urn:fixture:standard> ;
+  lm:hasStandardTopicAlignment <urn:fixture:sta-self> ;
+  lm:directRequires <urn:fixture:topic> ;
+  lm:unlocks <urn:fixture:topic> ;
+  lm:hasPrerequisiteAssertion <urn:fixture:pa-self> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-topic> .
+
+<urn:fixture:sta-self> a lm:StandardTopicAlignment ;
+  lm:identifier "fixture-sta-self" ;
+  lm:alignmentTopic <urn:fixture:topic> ;
+  lm:alignmentStandard <urn:fixture:standard> ;
+  lm:alignmentKind <https://dexa.art/learnmap/vocab/#/AlignmentKind/supports> ;
+  lm:sourceAlignmentRelationship "supports" ;
+  lm:confidence "0.8"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+  lm:sourceConfidenceValue "0.8" ;
+  lm:confidenceDefaulted false ;
+  lm:sourceVerificationStatus "workstream-reviewed" ;
+  lm:verificationStatusDefaulted false ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-alignment> .
+
+<urn:fixture:pa-self> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-self" ;
+  lm:dependentTopic <urn:fixture:topic> ;
+  lm:prerequisiteTopic <urn:fixture:topic> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "Self loop fixture."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .

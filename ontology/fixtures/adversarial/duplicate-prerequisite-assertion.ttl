@@ -1,0 +1,31 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+
+<urn:fixture:topic-d>
+  lm:directRequires <urn:fixture:topic-e> ;
+  lm:hasPrerequisiteAssertion
+    <urn:fixture:pa-d-e-duplicate-a>,
+    <urn:fixture:pa-d-e-duplicate-b> .
+
+<urn:fixture:topic-e> lm:unlocks <urn:fixture:topic-d> .
+
+<urn:fixture:pa-d-e-duplicate-a> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-d-e-duplicate-a" ;
+  lm:dependentTopic <urn:fixture:topic-d> ;
+  lm:prerequisiteTopic <urn:fixture:topic-e> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "First duplicate assertion."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .
+
+<urn:fixture:pa-d-e-duplicate-b> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-d-e-duplicate-b" ;
+  lm:dependentTopic <urn:fixture:topic-d> ;
+  lm:prerequisiteTopic <urn:fixture:topic-e> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "Second duplicate assertion."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .

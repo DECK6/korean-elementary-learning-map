@@ -8,6 +8,7 @@ const VOCABULARY_NAMESPACE = 'https://dexa.art/learnmap/vocab/#/';
 const ONTOLOGY_NAMESPACE = 'https://dexa.art/learnmap/ontology#';
 const ALIGNMENT_CONFIDENCE_DEFAULT = '0.5';
 const ALIGNMENT_CONFIDENCE_DEFAULT_POLICY = 'alignment-confidence-default-v1';
+const ONTOLOGY_VERSION = '0.2.0-p2';
 
 const STATIC_ONTOLOGY_FILES = [
   'ontology/learning-map.ttl',
@@ -187,12 +188,46 @@ function gradeBandIri(gradeBand) {
   return mintInstanceIri('grade-band', gradeBand);
 }
 
+function curriculumGradeBand(curriculum) {
+  const grades = curriculum.standards.flatMap((standard) =>
+    String(standard.gradeBand)
+      .split('-')
+      .map((grade) => Number.parseInt(grade, 10)),
+  );
+  const minimum = Math.min(...grades);
+  const maximum = Math.max(...grades);
+  if (
+    grades.length === 0 ||
+    grades.some((grade) => !Number.isInteger(grade) || grade < 1 || grade > 6) ||
+    !Number.isInteger(minimum) ||
+    !Number.isInteger(maximum) ||
+    minimum > maximum
+  ) {
+    throw new Error(`cannot derive curriculum grade band: ${curriculum.id}`);
+  }
+  return `${minimum}-${maximum}`;
+}
+
+function domainValues(record) {
+  if (record.domain) {
+    return {
+      domain: record.domain,
+      domainKorean: record.domainKorean ?? null,
+    };
+  }
+  return {
+    domain: record.officialArea,
+    domainKorean: record.officialAreaKorean ?? null,
+  };
+}
+
 function domainId(record) {
+  const { domain, domainKorean } = domainValues(record);
   return stableRecordId('domain', {
     subject: record.subject,
     subjectKorean: record.subjectKorean,
-    domain: record.domain,
-    domainKorean: record.domainKorean ?? null,
+    domain,
+    domainKorean,
   });
 }
 
@@ -356,10 +391,13 @@ function createConceptNodes(data, nodes) {
       subjects.set(id, { id, record });
     }
     if (record.gradeBand) gradeBands.add(record.gradeBand);
-    if (record.subject && record.domain) {
+    if (record.subject && domainValues(record).domain) {
       const id = domainId(record);
       domains.set(id, { id, record });
     }
+  }
+  for (const curriculum of data.standards.curricula) {
+    gradeBands.add(curriculumGradeBand(curriculum));
   }
 
   for (const { id, record } of [...subjects.values()].sort((left, right) =>
@@ -387,14 +425,15 @@ function createConceptNodes(data, nodes) {
   for (const { id, record } of [...domains.values()].sort((left, right) =>
     left.id.localeCompare(right.id),
   )) {
+    const { domain, domainKorean } = domainValues(record);
     const node = pushNode(nodes, {
       '@id': mintInstanceIri('domain', id),
       '@type': 'lm:LearningDomain',
       'lm:identifier': id,
       'lm:hasSubject': iri(subjectIri(record)),
     });
-    setKoIfPresent(node, 'lm:preferredLabel', record.domainKorean ?? record.domain);
-    setEnIfPresent(node, 'lm:labelEnglish', record.domain);
+    setKoIfPresent(node, 'lm:preferredLabel', domainKorean ?? domain);
+    setEnIfPresent(node, 'lm:labelEnglish', domain);
   }
 }
 
@@ -445,6 +484,7 @@ function createCurriculaAndStandards(data, nodes, verificationNodes, locatorNode
       'lm:schoolLevel': curriculum.schoolLevel,
       'lm:officialTextIncluded': curriculum.textIncluded === false ? false : Boolean(curriculum.textIncluded),
       'lm:hasSubject': iri(subjectIri(curriculum)),
+      'lm:hasGradeBand': iri(gradeBandIri(curriculumGradeBand(curriculum))),
       'lm:hasAchievementStandard': curriculum.standards
         .map((standard) => iri(mintInstanceIri('standard', standard.key)))
         .sort(byJsonIdentity),
@@ -476,7 +516,9 @@ function createCurriculaAndStandards(data, nodes, verificationNodes, locatorNode
         'lm:hasSubject': iri(subjectIri(standard)),
         'lm:hasGradeBand': iri(gradeBandIri(standard.gradeBand)),
       });
-      if (standard.domain) standardNode['lm:hasLearningDomain'] = iri(domainIri(standard));
+      if (domainValues(standard).domain) {
+        standardNode['lm:hasLearningDomain'] = iri(domainIri(standard));
+      }
       setKoIfPresent(standardNode, 'lm:sourceSection', standard.sourceSection);
       setKoIfPresent(standardNode, 'lm:sourceBasis', standard.sourceBasis);
       setKoIfPresent(standardNode, 'lm:verificationNotes', standard.verificationNotes);
@@ -695,8 +737,8 @@ function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes
     node['lm:hasVerificationRecord'] = iri(verification['@id']);
 
     const topicNode = topicNodes.get(edge.topicId);
-    addIri(topicNode, 'lm:hasPrerequisiteAssertion', assertionIri);
-    addIri(topicNode, 'lm:directRequires', prerequisiteIri);
+    addUniqueIri(topicNode, 'lm:hasPrerequisiteAssertion', assertionIri);
+    addUniqueIri(topicNode, 'lm:directRequires', prerequisiteIri);
   }
 
   const alignmentIdentity = (mapping) => ({
@@ -727,7 +769,9 @@ function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes
       'lm:alignmentTopic': iri(topicIri),
       'lm:alignmentStandard': iri(standardIri),
       'lm:alignmentKind': iri(conceptIri('AlignmentKind', mapping.relationship)),
-      'lm:sourceConfidenceValue': mapping.confidence,
+      'lm:sourceAlignmentRelationship': mapping.relationship,
+      'lm:sourceConfidenceValue': String(mapping.confidence),
+      'lm:verificationStatusDefaulted': !mapping.verificationStatus,
       'lm:assertionBasis': mapping.workstreamFile,
       'lm:assertionSource': 'data/kr/curriculum-standards.json#standardMappings',
     };
@@ -741,6 +785,9 @@ function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes
     }
     const note = mapping.note ?? mapping.rationale;
     if (note) node['lm:note'] = ko(note);
+    setIfPresent(node, 'lm:sourceAlignmentNote', mapping.note);
+    setIfPresent(node, 'lm:sourceAlignmentRationale', mapping.rationale);
+    setIfPresent(node, 'lm:sourceVerificationStatus', mapping.verificationStatus);
     pushNode(nodes, node);
 
     const verification = createVerificationRecord({
@@ -753,8 +800,8 @@ function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes
     node['lm:hasVerificationRecord'] = iri(verification['@id']);
 
     const topicNode = topicNodes.get(mapping.microTopicId);
-    addIri(topicNode, 'lm:hasStandardTopicAlignment', alignmentIri);
-    addIri(topicNode, 'lm:alignedToStandard', standardIri);
+    addUniqueIri(topicNode, 'lm:hasStandardTopicAlignment', alignmentIri);
+    addUniqueIri(topicNode, 'lm:alignedToStandard', standardIri);
   }
 
   for (const node of topicNodes.values()) {
@@ -764,6 +811,47 @@ function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes
       'lm:hasStandardTopicAlignment',
       'lm:alignedToStandard',
     ]) {
+      node[property]?.sort((left, right) => left['@id'].localeCompare(right['@id']));
+    }
+  }
+
+  materializePrerequisiteViews(topicNodes);
+}
+
+function materializePrerequisiteViews(topicNodes) {
+  const byIri = new Map([...topicNodes.values()].map((node) => [node['@id'], node]));
+  const adjacency = new Map(
+    [...topicNodes.values()].map((node) => [
+      node['@id'],
+      new Set((node['lm:directRequires'] ?? []).map((value) => value['@id'])),
+    ]),
+  );
+
+  for (const [dependent, prerequisites] of adjacency) {
+    for (const prerequisite of prerequisites) {
+      addUniqueIri(byIri.get(prerequisite), 'lm:unlocks', dependent);
+    }
+  }
+
+  for (const [dependent, direct] of adjacency) {
+    const reachable = new Set();
+    const pending = [...direct];
+    while (pending.length > 0) {
+      const current = pending.pop();
+      if (reachable.has(current)) continue;
+      reachable.add(current);
+      for (const next of adjacency.get(current) ?? []) pending.push(next);
+    }
+    const node = byIri.get(dependent);
+    for (const prerequisite of [...reachable].sort()) {
+      if (prerequisite !== dependent && !direct.has(prerequisite)) {
+        addUniqueIri(node, 'lm:indirectRequires', prerequisite);
+      }
+    }
+  }
+
+  for (const node of topicNodes.values()) {
+    for (const property of ['lm:unlocks', 'lm:indirectRequires']) {
       node[property]?.sort((left, right) => left['@id'].localeCompare(right['@id']));
     }
   }
@@ -846,6 +934,31 @@ function graphResourceCounts(graph) {
     counts[type] = (counts[type] ?? 0) + 1;
   }
   return Object.fromEntries(Object.entries(counts).sort(([left], [right]) => left.localeCompare(right)));
+}
+
+function graphRelationMetrics(graph) {
+  const properties = [
+    'lm:alignedToStandard',
+    'lm:directRequires',
+    'lm:indirectRequires',
+    'lm:unlocks',
+  ];
+  return Object.fromEntries(
+    properties.map((property) => {
+      const pairs = graph
+        .flatMap((node) =>
+          (node[property] ?? []).map((target) => `${node['@id']}\t${target['@id']}`),
+        )
+        .sort();
+      return [
+        property.replace('lm:', ''),
+        {
+          count: pairs.length,
+          sha256: sha256(`${pairs.join('\n')}\n`),
+        },
+      ];
+    }),
+  );
 }
 
 function escapeTurtleString(value) {
@@ -941,19 +1054,21 @@ export async function buildOntologyArtifacts({ rootDir }) {
       coverageGaps: data.standards.coverageGaps.length,
     },
     graphResources: graphResourceCounts(graph),
+    relations: graphRelationMetrics(graph),
   };
   const generatedPayloads = {
     'dist/ontology/learning-map.jsonld': jsonldText,
     'dist/ontology/learning-map.ttl': turtleText,
   };
   const manifest = {
-    formatVersion: 1,
-    phase: 'P1',
-    ontologyVersion: '0.1.0-p1',
+    formatVersion: 2,
+    phase: 'P2',
+    ontologyVersion: ONTOLOGY_VERSION,
     datasetRelease: data.standards.taxonomyVersion,
     generator: 'scripts/build-ontology.mjs',
     sourceRecords: counts.sourceRecords,
     graphResources: counts.graphResources,
+    relations: counts.relations,
     files: GENERATED_ONTOLOGY_PAYLOADS.map(({ path, mediaType }) => ({
       path,
       mediaType,
@@ -1030,7 +1145,7 @@ function printArtifactSummary(artifacts, action) {
     (sum, count) => sum + count,
     0,
   );
-  console.log(`Ontology P1 artifacts ${action} (${graphResourceCount} graph resources):`);
+  console.log(`Ontology P2 artifacts ${action} (${graphResourceCount} graph resources):`);
   for (const relativePath of GENERATED_ONTOLOGY_FILES) {
     const contents = artifacts.files[relativePath];
     console.log(

@@ -1,0 +1,10 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?resource ?source ?locator ?locatorValue
+WHERE {
+  ?resource lm:documentedBy ?source ;
+    lm:hasSourceLocator ?locator .
+  ?source a lm:SourceDocument .
+  ?locator lm:locatorValue ?locatorValue .
+}
+ORDER BY ?resource ?source ?locator ?locatorValue

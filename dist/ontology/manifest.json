@@ -2,19 +2,19 @@
   "datasetRelease": "kr-full-depth-v0.4",
   "files": [
     {
-      "bytes": 23340790,
+      "bytes": 31221550,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "bbf6f5e77465f0f7637a002e54a2fedfc081451c55c735352b84f3efc161d096"
+      "sha256": "d6152367e6635caae96c198a186034dd186b7547806914603dc463be72917580"
     },
     {
-      "bytes": 17004879,
+      "bytes": 22739260,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "9f4cf2267ed2ba9f0333dbd03425487988cff56f467519fdafa003a5debff4bd"
+      "sha256": "aec25621de747e995509ad425038a09f7753117cd9aeddb083476ac2fdf7136d"
     }
   ],
-  "formatVersion": 1,
+  "formatVersion": 2,
   "generator": "scripts/build-ontology.mjs",
   "graphResources": {
     "AchievementStandard": 620,
@@ -25,7 +25,7 @@
     "EvidenceCriterion": 4056,
     "GradeBand": 5,
     "LearningCluster": 153,
-    "LearningDomain": 77,
+    "LearningDomain": 79,
     "LearningTopic": 1956,
     "PrerequisiteAssertion": 1894,
     "SourceDocument": 17,
@@ -34,8 +34,26 @@
     "Subject": 12,
     "VerificationRecord": 6455
   },
-  "ontologyVersion": "0.1.0-p1",
-  "phase": "P1",
+  "ontologyVersion": "0.2.0-p2",
+  "phase": "P2",
+  "relations": {
+    "alignedToStandard": {
+      "count": 1956,
+      "sha256": "bb750c1580454f5b16edb010b29689cedc2f03f5e71d279299da3b9cbc0fcedf"
+    },
+    "directRequires": {
+      "count": 1894,
+      "sha256": "16cfe6dc70f5eebcd675aeb548354a725adbd75c36c8a9619d2f44666be3c132"
+    },
+    "indirectRequires": {
+      "count": 53656,
+      "sha256": "e455382f0d617bf815b856783a12f8c5fb52f0b8edb9ea2441b53b2a6c75f8db"
+    },
+    "unlocks": {
+      "count": 1894,
+      "sha256": "7695eecf55e2fd8c7f04a08a2b926a04f0cd3e4fed47777981f6c6691c75ece1"
+    }
+  },
   "sourceRecords": {
     "clusters": 153,
     "coverageGaps": 43,

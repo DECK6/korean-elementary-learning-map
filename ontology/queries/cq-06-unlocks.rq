@@ -1,0 +1,8 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?prerequisite ?dependent
+WHERE {
+  ?dependent lm:directRequires ?prerequisite .
+  ?prerequisite lm:unlocks ?dependent .
+}
+ORDER BY ?prerequisite ?dependent

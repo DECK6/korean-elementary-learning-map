@@ -1,0 +1,10 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?strength ?legacyStrength (COUNT(?assertion) AS ?assertionCount)
+WHERE {
+  ?assertion a lm:PrerequisiteAssertion ;
+    lm:prerequisiteStrength ?strength ;
+    lm:legacyPrerequisiteStrength ?legacyStrength .
+}
+GROUP BY ?strength ?legacyStrength
+ORDER BY ?strength ?legacyStrength

@@ -1,0 +1,33 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+
+<urn:fixture:topic-d>
+  lm:directRequires <urn:fixture:topic-e> ;
+  lm:unlocks <urn:fixture:topic-e> ;
+  lm:hasPrerequisiteAssertion <urn:fixture:pa-d-e-cycle> .
+
+<urn:fixture:topic-e>
+  lm:directRequires <urn:fixture:topic-d> ;
+  lm:unlocks <urn:fixture:topic-d> ;
+  lm:hasPrerequisiteAssertion <urn:fixture:pa-e-d-cycle> .
+
+<urn:fixture:pa-d-e-cycle> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-d-e-cycle" ;
+  lm:dependentTopic <urn:fixture:topic-d> ;
+  lm:prerequisiteTopic <urn:fixture:topic-e> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "Cycle fixture edge D to E."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .
+
+<urn:fixture:pa-e-d-cycle> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-e-d-cycle" ;
+  lm:dependentTopic <urn:fixture:topic-e> ;
+  lm:prerequisiteTopic <urn:fixture:topic-d> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "Cycle fixture edge E to D."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .

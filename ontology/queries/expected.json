@@ -1,0 +1,204 @@
+{
+  "cq-01-curriculum-standards.rq": {
+    "nonNull": [
+      "curriculum",
+      "subject",
+      "curriculumBand",
+      "standard",
+      "standardBand",
+      "domain"
+    ],
+    "rowCount": 620
+  },
+  "cq-02-alignment-roles.rq": {
+    "nonNull": [
+      "topic",
+      "standard",
+      "alignment",
+      "kind"
+    ],
+    "rowCount": 1956
+  },
+  "cq-03-evidence-prompts.rq": {
+    "nonNull": [
+      "topic",
+      "criterion",
+      "criterionText",
+      "prompt",
+      "promptText"
+    ],
+    "rowCount": 4056
+  },
+  "cq-04-direct-prerequisites.rq": {
+    "nonNull": [
+      "dependent",
+      "prerequisite",
+      "assertion",
+      "strength",
+      "legacyStrength",
+      "reason",
+      "basis",
+      "source"
+    ],
+    "rowCount": 1894
+  },
+  "cq-05-indirect-prerequisites.rq": {
+    "nonNull": [
+      "dependent",
+      "prerequisite"
+    ],
+    "rowCount": 53656
+  },
+  "cq-06-unlocks.rq": {
+    "nonNull": [
+      "prerequisite",
+      "dependent"
+    ],
+    "rowCount": 1894
+  },
+  "cq-07-requirement-levels.rq": {
+    "groups": [
+      {
+        "count": 1100,
+        "countVariable": "assertionCount",
+        "match": {
+          "legacyStrength": "soft",
+          "strength": "https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended"
+        }
+      },
+      {
+        "count": 794,
+        "countVariable": "assertionCount",
+        "match": {
+          "legacyStrength": "hard",
+          "strength": "https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/required"
+        }
+      }
+    ],
+    "rowCount": 2,
+    "sum": {
+      "assertionCount": 1894
+    }
+  },
+  "cq-08-cluster-membership.rq": {
+    "nonNull": [
+      "topic",
+      "clusterCount"
+    ],
+    "rowCount": 1956,
+    "sum": {
+      "clusterCount": 2822
+    }
+  },
+  "cq-09-source-locators.rq": {
+    "nonNull": [
+      "resource",
+      "source",
+      "locator",
+      "locatorValue"
+    ],
+    "rowCount": 5707
+  },
+  "cq-10-verification-limits.rq": {
+    "nonNull": [
+      "resource",
+      "verification",
+      "status"
+    ],
+    "rowCount": 6455
+  },
+  "cq-11-coverage-gaps.rq": {
+    "rowCount": 19,
+    "sum": {
+      "gapCount": 43
+    }
+  },
+  "cq-12-rights-hold.rq": {
+    "allEqual": {
+      "rights": "https://dexa.art/learnmap/vocab/#/RightsStatus/hold"
+    },
+    "nonNull": [
+      "resource",
+      "resourceType",
+      "rights"
+    ],
+    "rowCount": 18
+  },
+  "cq-13-topic-types.rq": {
+    "groups": [
+      {
+        "count": 551,
+        "countVariable": "topicCount",
+        "match": {
+          "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/conceptual"
+        }
+      },
+      {
+        "count": 142,
+        "countVariable": "topicCount",
+        "match": {
+          "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/language"
+        }
+      },
+      {
+        "count": 286,
+        "countVariable": "topicCount",
+        "match": {
+          "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/meta"
+        }
+      },
+      {
+        "count": 628,
+        "countVariable": "topicCount",
+        "match": {
+          "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/procedural"
+        }
+      },
+      {
+        "count": 349,
+        "countVariable": "topicCount",
+        "match": {
+          "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/representational"
+        }
+      }
+    ],
+    "rowCount": 5,
+    "sum": {
+      "topicCount": 1956
+    }
+  },
+  "cq-14-alignment-round-trip.rq": {
+    "allEqual": {
+      "confidence": "\"0.5\"^^http://www.w3.org/2001/XMLSchema#decimal",
+      "confidenceDefaulted": "\"true\"^^http://www.w3.org/2001/XMLSchema#boolean",
+      "defaultingPolicy": "alignment-confidence-default-v1",
+      "source": "data/kr/curriculum-standards.json#standardMappings"
+    },
+    "nonNull": [
+      "topic",
+      "standard",
+      "kind",
+      "relationship",
+      "confidence",
+      "sourceConfidence",
+      "confidenceDefaulted",
+      "defaultingPolicy",
+      "verificationStatusDefaulted",
+      "basis",
+      "source"
+    ],
+    "rowCount": 1956
+  },
+  "cq-15-prerequisite-round-trip.rq": {
+    "nonNull": [
+      "dependent",
+      "prerequisite",
+      "strength",
+      "legacyStrength",
+      "reason",
+      "basis",
+      "source"
+    ],
+    "rowCount": 1894
+  }
+}

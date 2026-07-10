@@ -1,0 +1,5 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+
+<urn:fixture:grade-band> a lm:GradeBand ;
+  lm:identifier "2-5" ;
+  lm:preferredLabel "Invalid grade band"@en .

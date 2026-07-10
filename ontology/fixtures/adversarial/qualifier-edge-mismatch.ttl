@@ -1,0 +1,32 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:fixture:topic-d>
+  lm:directRequires <urn:fixture:topic-e> ;
+  lm:hasPrerequisiteAssertion
+    <urn:fixture:pa-d-e-valid>,
+    <urn:fixture:pa-d-a-mismatch> .
+
+<urn:fixture:topic-e> lm:unlocks <urn:fixture:topic-d> .
+
+<urn:fixture:pa-d-e-valid> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-d-e-valid" ;
+  lm:dependentTopic <urn:fixture:topic-d> ;
+  lm:prerequisiteTopic <urn:fixture:topic-e> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "Topic E supports Topic D."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .
+
+<urn:fixture:pa-d-a-mismatch> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-d-a-mismatch" ;
+  lm:dependentTopic <urn:fixture:topic-d> ;
+  lm:prerequisiteTopic <urn:fixture:topic-a> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "The assertion target intentionally disagrees with directRequires."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .

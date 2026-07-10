@@ -1,0 +1,9 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?category ?severity (COUNT(?gap) AS ?gapCount)
+WHERE {
+  ?release a lm:DatasetRelease ; lm:reportsCoverageGap ?gap .
+  ?gap lm:gapCategory ?category ; lm:gapSeverity ?severity .
+}
+GROUP BY ?category ?severity
+ORDER BY ?category ?severity

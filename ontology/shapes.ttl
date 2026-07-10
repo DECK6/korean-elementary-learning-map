@@ -1,4 +1,5 @@
 @prefix lm: <https://dexa.art/learnmap/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -6,17 +7,159 @@ lm:DatasetReleaseShape a sh:NodeShape ;
   sh:targetClass lm:DatasetRelease ;
   sh:closed false ;
   sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
-  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
+  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ] ;
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ] ;
   sh:property [ sh:path lm:hasCurriculum ; sh:minCount 1 ; sh:class lm:Curriculum ] ;
-  sh:property [ sh:path lm:containsTopic ; sh:minCount 1 ; sh:class lm:LearningTopic ] .
+  sh:property [ sh:path lm:containsTopic ; sh:minCount 1 ; sh:class lm:LearningTopic ] ;
+  sh:property [ sh:path lm:hasCluster ; sh:minCount 1 ; sh:class lm:LearningCluster ] ;
+  sh:property [ sh:path lm:reportsCoverageGap ; sh:minCount 1 ; sh:class lm:CoverageGap ] ;
+  sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] ;
+  sh:sparql [
+    sh:message "directRequires must not contain a self edge."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE { FILTER EXISTS { ?topic lm:directRequires ?topic . } }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "The asserted directRequires graph must be acyclic."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE { FILTER EXISTS { ?topic lm:directRequires+ ?topic . } }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "Every directRequires edge must have a materialized inverse unlocks edge."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        FILTER EXISTS {
+          ?dependent lm:directRequires ?prerequisite .
+          FILTER NOT EXISTS { ?prerequisite lm:unlocks ?dependent . }
+        }
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "indirectRequires must be a non-direct path of at least two directRequires edges."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        FILTER EXISTS {
+          ?dependent lm:indirectRequires ?prerequisite .
+          FILTER (
+            EXISTS { ?dependent lm:directRequires ?prerequisite } ||
+            NOT EXISTS { ?dependent lm:directRequires/lm:directRequires+ ?prerequisite }
+          )
+        }
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "Every non-direct path of at least two edges must be materialized as indirectRequires."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        FILTER EXISTS {
+          ?dependent lm:directRequires/lm:directRequires+ ?prerequisite .
+          FILTER NOT EXISTS { ?dependent lm:directRequires ?prerequisite . }
+          FILTER NOT EXISTS { ?dependent lm:indirectRequires ?prerequisite . }
+        }
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "Every directRequires edge must have one authoritative PrerequisiteAssertion."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        FILTER EXISTS {
+          ?dependent lm:directRequires ?prerequisite .
+          FILTER NOT EXISTS {
+            ?dependent lm:hasPrerequisiteAssertion ?assertion .
+            ?assertion a lm:PrerequisiteAssertion ;
+              lm:dependentTopic ?dependent ;
+              lm:prerequisiteTopic ?prerequisite .
+          }
+        }
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "Every alignedToStandard edge must have one authoritative StandardTopicAlignment."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        FILTER EXISTS {
+          ?topic lm:alignedToStandard ?standard .
+          FILTER NOT EXISTS {
+            ?topic lm:hasStandardTopicAlignment ?alignment .
+            ?alignment a lm:StandardTopicAlignment ;
+              lm:alignmentTopic ?topic ;
+              lm:alignmentStandard ?standard .
+          }
+        }
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "A direct prerequisite pair must not have duplicate PrerequisiteAssertion records."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        FILTER EXISTS {
+          ?left a lm:PrerequisiteAssertion ; lm:dependentTopic ?dependent ; lm:prerequisiteTopic ?prerequisite .
+          ?right a lm:PrerequisiteAssertion ; lm:dependentTopic ?dependent ; lm:prerequisiteTopic ?prerequisite .
+          FILTER (STR(?left) < STR(?right))
+        }
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "A topic-standard pair must not have duplicate StandardTopicAlignment records."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        FILTER EXISTS {
+          ?left a lm:StandardTopicAlignment ; lm:alignmentTopic ?topic ; lm:alignmentStandard ?standard .
+          ?right a lm:StandardTopicAlignment ; lm:alignmentTopic ?topic ; lm:alignmentStandard ?standard .
+          FILTER (STR(?left) < STR(?right))
+        }
+      }
+    """
+  ] .
 
 lm:CurriculumShape a sh:NodeShape ;
   sh:targetClass lm:Curriculum ;
   sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:hasSubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:Subject ] ;
   sh:property [ sh:path lm:hasGradeBand ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:GradeBand ] ;
-  sh:property [ sh:path lm:hasAchievementStandard ; sh:minCount 1 ; sh:class lm:AchievementStandard ] .
+  sh:property [ sh:path lm:hasAchievementStandard ; sh:minCount 1 ; sh:class lm:AchievementStandard ] ;
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ] ;
+  sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] .
+
+lm:GradeBandShape a sh:NodeShape ;
+  sh:targetClass lm:GradeBand ;
+  sh:property [
+    sh:path lm:identifier ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+    sh:in ( "1-2" "3-4" "5-6" "3-6" "1-6" ) ;
+    sh:message "GradeBand identifier must be one of 1-2, 3-4, 5-6, 3-6, or 1-6."@en
+  ] ;
+  sh:property [ sh:path lm:preferredLabel ; sh:minCount 1 ; sh:uniqueLang true ] .
+
+lm:SubjectShape a sh:NodeShape ;
+  sh:targetClass lm:Subject ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:preferredLabel ; sh:minCount 1 ; sh:uniqueLang true ] .
+
+lm:LearningDomainShape a sh:NodeShape ;
+  sh:targetClass lm:LearningDomain ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:preferredLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
+  sh:property [ sh:path lm:hasSubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:Subject ] .
 
 lm:AchievementStandardShape a sh:NodeShape ;
   sh:targetClass lm:AchievementStandard ;
@@ -24,7 +167,8 @@ lm:AchievementStandardShape a sh:NodeShape ;
   sh:property [ sh:path lm:hasSubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:Subject ] ;
   sh:property [ sh:path lm:hasGradeBand ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:GradeBand ] ;
   sh:property [ sh:path lm:hasLearningDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:LearningDomain ] ;
-  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] .
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ] ;
+  sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] .
 
 lm:LearningTopicShape a sh:NodeShape ;
   sh:targetClass lm:LearningTopic ;
@@ -49,19 +193,26 @@ lm:LearningTopicShape a sh:NodeShape ;
   sh:property [ sh:path lm:hasEvidenceCriterion ; sh:minCount 1 ; sh:class lm:EvidenceCriterion ] ;
   sh:property [ sh:path lm:hasAssessmentPrompt ; sh:minCount 1 ; sh:class lm:AssessmentPrompt ] ;
   sh:property [ sh:path lm:hasStandardTopicAlignment ; sh:minCount 1 ; sh:class lm:StandardTopicAlignment ] ;
-  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] .
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ] ;
+  sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] .
 
 lm:LearningClusterShape a sh:NodeShape ;
   sh:targetClass lm:LearningCluster ;
   sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:preferredLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
+  sh:property [ sh:path lm:hasSubject ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:Subject ] ;
+  sh:property [ sh:path lm:hasGradeBand ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:GradeBand ] ;
+  sh:property [ sh:path lm:hasLearningDomain ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:LearningDomain ] ;
   sh:property [ sh:path lm:hasClusterMember ; sh:minCount 1 ; sh:class lm:LearningTopic ] .
 
 lm:EvidenceCriterionShape a sh:NodeShape ;
   sh:targetClass lm:EvidenceCriterion ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:criterionText ; sh:minCount 1 ; sh:uniqueLang true ] .
 
 lm:AssessmentPromptShape a sh:NodeShape ;
   sh:targetClass lm:AssessmentPrompt ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:promptText ; sh:minCount 1 ; sh:uniqueLang true ] .
 
 lm:PrerequisiteAssertionShape a sh:NodeShape ;
@@ -80,8 +231,21 @@ lm:PrerequisiteAssertionShape a sh:NodeShape ;
     )
   ] ;
   sh:property [ sh:path lm:prerequisiteReason ; sh:minCount 1 ; sh:uniqueLang true ] ;
+  sh:property [ sh:path lm:legacyPrerequisiteStrength ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:in ( "hard" "soft" ) ] ;
   sh:property [ sh:path lm:assertionBasis ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-  sh:property [ sh:path lm:assertionSource ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:assertionSource ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] ;
+  sh:sparql [
+    sh:message "Legacy hard/soft strength must agree with normalized required/recommended strength."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        $this lm:legacyPrerequisiteStrength ?legacy ; lm:prerequisiteStrength ?normalized .
+        BIND(IF(?legacy = "hard", "required", "recommended") AS ?term)
+        FILTER (?normalized != IRI(CONCAT("https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/", ?term)))
+      }
+    """
+  ] ;
   sh:sparql [
     sh:message "A prerequisite assertion must be linked from its dependent topic, and its binary directRequires edge must agree with the authoritative assertion."@en ;
     sh:select """
@@ -113,8 +277,61 @@ lm:StandardTopicAlignmentShape a sh:NodeShape ;
     )
   ] ;
   sh:property [ sh:path lm:confidence ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ; sh:maxInclusive 1 ] ;
+  sh:property [ sh:path lm:sourceAlignmentRelationship ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:in ( "introduces" "supports" "extends" "assesses" ) ] ;
+  sh:property [ sh:path lm:sourceConfidenceValue ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:sourceAlignmentNote ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:sourceAlignmentRationale ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:note ; sh:maxCount 1 ; sh:datatype rdf:langString ] ;
+  sh:property [ sh:path lm:confidenceDefaulted ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
+  sh:property [ sh:path lm:defaultingPolicy ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:sourceVerificationStatus ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:verificationStatusDefaulted ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
   sh:property [ sh:path lm:assertionBasis ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-  sh:property [ sh:path lm:assertionSource ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:assertionSource ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] ;
+  sh:sparql [
+    sh:message "Source alignment relationship must agree with the normalized AlignmentKind IRI."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        $this lm:sourceAlignmentRelationship ?relationship ; lm:alignmentKind ?kind .
+        FILTER (?kind != IRI(CONCAT("https://dexa.art/learnmap/vocab/#/AlignmentKind/", ?relationship)))
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "Defaulted alignment confidence must name alignment-confidence-default-v1; source confidence must not."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        $this lm:confidenceDefaulted ?defaulted .
+        OPTIONAL { $this lm:defaultingPolicy ?policy . }
+        FILTER (
+          (?defaulted = true && (!BOUND(?policy) || ?policy != "alignment-confidence-default-v1")) ||
+          (?defaulted = false && BOUND(?policy))
+        )
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "Source verification status, its default marker, and the linked VerificationRecord must agree."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        $this lm:verificationStatusDefaulted ?defaulted ;
+          lm:hasVerificationRecord/lm:verificationStatus ?actualStatus .
+        OPTIONAL { $this lm:sourceVerificationStatus ?sourceStatus . }
+        BIND(IF(BOUND(?sourceStatus),
+          IRI(CONCAT("https://dexa.art/learnmap/vocab/#/VerificationStatus/", ?sourceStatus)),
+          <https://dexa.art/learnmap/vocab/#/VerificationStatus/workstream-reviewed>) AS ?expectedStatus)
+        FILTER (
+          ?actualStatus != ?expectedStatus ||
+          (?defaulted = true && BOUND(?sourceStatus)) ||
+          (?defaulted = false && !BOUND(?sourceStatus))
+        )
+      }
+    """
+  ] ;
   sh:sparql [
     sh:message "A standard alignment must be linked from its topic, and its binary alignedToStandard edge must agree with the authoritative assertion."@en ;
     sh:select """
@@ -131,19 +348,38 @@ lm:StandardTopicAlignmentShape a sh:NodeShape ;
 lm:SourceDocumentShape a sh:NodeShape ;
   sh:targetClass lm:SourceDocument ;
   sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] .
+  sh:property [ sh:path lm:preferredLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
+  sh:property [ sh:path lm:sourceType ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ; sh:message "SourceDocument rights status must remain HOLD."@en ] ;
+  sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ; sh:message "SourceDocument must not claim that official text is included."@en ] ;
+  sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] .
 
 lm:SourceLocatorShape a sh:NodeShape ;
   sh:targetClass lm:SourceLocator ;
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:locatorValue ; sh:minCount 1 ; sh:datatype xsd:string ] .
 
 lm:VerificationRecordShape a sh:NodeShape ;
   sh:targetClass lm:VerificationRecord ;
-  sh:property [ sh:path lm:verificationStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] .
+  sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [
+    sh:path lm:verificationStatus ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/VerificationStatus/not-checked>
+      <https://dexa.art/learnmap/vocab/#/VerificationStatus/official-source-checked>
+      <https://dexa.art/learnmap/vocab/#/VerificationStatus/public-doc-derived>
+      <https://dexa.art/learnmap/vocab/#/VerificationStatus/verification-review-needed>
+      <https://dexa.art/learnmap/vocab/#/VerificationStatus/workstream-reviewed>
+    )
+  ] .
 
 lm:CoverageGapShape a sh:NodeShape ;
   sh:targetClass lm:CoverageGap ;
   sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:gapCategory ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
-  sh:property [ sh:path lm:gapSeverity ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path lm:gapSeverity ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path lm:sourceGapSeverityPresent ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
   sh:property [ sh:path lm:gapDescription ; sh:minCount 1 ; sh:uniqueLang true ] .

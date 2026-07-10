@@ -1,0 +1,11 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?topic ?criterion ?criterionText ?prompt ?promptText
+WHERE {
+  ?topic a lm:LearningTopic ;
+    lm:hasEvidenceCriterion ?criterion ;
+    lm:hasAssessmentPrompt ?prompt .
+  ?criterion lm:criterionText ?criterionText .
+  ?prompt lm:promptText ?promptText .
+}
+ORDER BY ?topic ?criterion ?prompt

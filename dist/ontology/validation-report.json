@@ -1,0 +1,405 @@
+{
+  "checks": {
+    "competencyQueries": true,
+    "counts": true,
+    "fixtures": true,
+    "fullDataShacl": true,
+    "gradeBands": true,
+    "graphEquivalence": true,
+    "jsonldResources": true,
+    "profile": true,
+    "qualifiedRoundTrips": true,
+    "reasoner": true,
+    "relations": true,
+    "sourceRights": true
+  },
+  "competencyQueries": {
+    "errors": [],
+    "pass": true,
+    "queryCount": 15,
+    "results": {
+      "cq-01-curriculum-standards.rq": {
+        "pass": true,
+        "resultSha256": "04cbf30ece5e7842bef1a4bf61c0d7c13b1deac83d1912fc02b59f9cff1eb5a8",
+        "rowCount": 620
+      },
+      "cq-02-alignment-roles.rq": {
+        "pass": true,
+        "resultSha256": "3989a95b280ed1180638d8c28cb25e68b4b2bcaf57e2e6e70dbd7532268087b5",
+        "rowCount": 1956
+      },
+      "cq-03-evidence-prompts.rq": {
+        "pass": true,
+        "resultSha256": "414927fe65c1e4916d202f86a91610b15c0b851ee3eaec69a5eb63cbeff34687",
+        "rowCount": 4056
+      },
+      "cq-04-direct-prerequisites.rq": {
+        "pass": true,
+        "resultSha256": "4b046269269980a7af6cff4a33629b515891f6c210d78bf78ac334c0412f9d38",
+        "rowCount": 1894
+      },
+      "cq-05-indirect-prerequisites.rq": {
+        "pass": true,
+        "resultSha256": "275aa757fb2b15cf894250a21f11cd80bfd11b2f64af4db902123be6bb323aa8",
+        "rowCount": 53656
+      },
+      "cq-06-unlocks.rq": {
+        "pass": true,
+        "resultSha256": "9aaecbbd3a77a37d1e9e48371e85943ce86b0abe1de00a4f621f54fd3d5a88ad",
+        "rowCount": 1894
+      },
+      "cq-07-requirement-levels.rq": {
+        "pass": true,
+        "resultSha256": "eb2ac041abbe27665f603cb63847cf42452d49a57695a556b591a4e93c45d71d",
+        "rowCount": 2
+      },
+      "cq-08-cluster-membership.rq": {
+        "pass": true,
+        "resultSha256": "496f3075eb0875fcd2fe4f69be05d03099ee8e873596a185ae09a9ee33e90bbc",
+        "rowCount": 1956
+      },
+      "cq-09-source-locators.rq": {
+        "pass": true,
+        "resultSha256": "0758aa2542bc8ea5939b10c51b86d94854e4eb5b035ebd070a5a625496f8dd94",
+        "rowCount": 5707
+      },
+      "cq-10-verification-limits.rq": {
+        "pass": true,
+        "resultSha256": "f8345c7c65533a5cc5555b51f9f1bd4408baae81e368282e3216ff6c3c1b8cf5",
+        "rowCount": 6455
+      },
+      "cq-11-coverage-gaps.rq": {
+        "pass": true,
+        "resultSha256": "7c0b8a4f2c8c3a41dfae38faef7758a1ed7fc17c670bb0a23fe685e33ae3b0cd",
+        "rowCount": 19
+      },
+      "cq-12-rights-hold.rq": {
+        "pass": true,
+        "resultSha256": "d6d492fff6176e6a5362a3c992eed6a060f2bc3cf8befa9a376d2cb39cb6e07f",
+        "rowCount": 18
+      },
+      "cq-13-topic-types.rq": {
+        "pass": true,
+        "resultSha256": "1703c3145940029aaf3843eb838423ca19b06e436d9b63635c1195bb6d2e365c",
+        "rowCount": 5
+      },
+      "cq-14-alignment-round-trip.rq": {
+        "pass": true,
+        "resultSha256": "10121c8d9176d5ebba04c0ee15b905def53fa11844aed90c1dfb64ed1445bac5",
+        "rowCount": 1956
+      },
+      "cq-15-prerequisite-round-trip.rq": {
+        "pass": true,
+        "resultSha256": "14f8020792ed1aff7bdba7e336157708e89157f9d231b83094826f2d489b33aa",
+        "rowCount": 1894
+      }
+    }
+  },
+  "counts": {
+    "errors": [],
+    "graphResources": {
+      "AchievementStandard": 620,
+      "AssessmentPrompt": 1956,
+      "CoverageGap": 43,
+      "Curriculum": 11,
+      "DatasetRelease": 1,
+      "EvidenceCriterion": 4056,
+      "GradeBand": 5,
+      "LearningCluster": 153,
+      "LearningDomain": 79,
+      "LearningTopic": 1956,
+      "PrerequisiteAssertion": 1894,
+      "SourceDocument": 17,
+      "SourceLocator": 1232,
+      "StandardTopicAlignment": 1956,
+      "Subject": 12,
+      "VerificationRecord": 6455
+    },
+    "relations": {
+      "alignedToStandard": {
+        "count": 1956,
+        "sha256": "bb750c1580454f5b16edb010b29689cedc2f03f5e71d279299da3b9cbc0fcedf"
+      },
+      "directRequires": {
+        "count": 1894,
+        "sha256": "16cfe6dc70f5eebcd675aeb548354a725adbd75c36c8a9619d2f44666be3c132"
+      },
+      "indirectRequires": {
+        "count": 53656,
+        "sha256": "e455382f0d617bf815b856783a12f8c5fb52f0b8edb9ea2441b53b2a6c75f8db"
+      },
+      "unlocks": {
+        "count": 1894,
+        "sha256": "7695eecf55e2fd8c7f04a08a2b926a04f0cd3e4fed47777981f6c6691c75ece1"
+      }
+    },
+    "sourceRecords": {
+      "clusters": 153,
+      "coverageGaps": 43,
+      "curricula": 11,
+      "dependencies": 1894,
+      "standardMappings": 1956,
+      "standards": 620,
+      "topics": 1956
+    },
+    "totalGraphResources": 20446
+  },
+  "fixtures": {
+    "adversarial": {
+      "direct-cycle.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "The asserted directRequires graph must be acyclic."
+        ],
+        "fragmentHits": {
+          "The asserted directRequires graph must be acyclic.": true
+        },
+        "pass": true,
+        "violationCount": 2
+      },
+      "direct-self-loop.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "directRequires must not contain a self edge."
+        ],
+        "fragmentHits": {
+          "directRequires must not contain a self edge.": true
+        },
+        "pass": true,
+        "violationCount": 2
+      },
+      "duplicate-prerequisite-assertion.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "A direct prerequisite pair must not have duplicate PrerequisiteAssertion records."
+        ],
+        "fragmentHits": {
+          "A direct prerequisite pair must not have duplicate PrerequisiteAssertion records.": true
+        },
+        "pass": true,
+        "violationCount": 1
+      },
+      "invalid-grade-band.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "GradeBand identifier must be one of 1-2, 3-4, 5-6, 3-6, or 1-6."
+        ],
+        "fragmentHits": {
+          "GradeBand identifier must be one of 1-2, 3-4, 5-6, 3-6, or 1-6.": true
+        },
+        "pass": true,
+        "violationCount": 1
+      },
+      "missing-inverse.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "Every directRequires edge must have a materialized inverse unlocks edge."
+        ],
+        "fragmentHits": {
+          "Every directRequires edge must have a materialized inverse unlocks edge.": true
+        },
+        "pass": true,
+        "violationCount": 1
+      },
+      "missing-qualifier.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "prerequisiteReason"
+        ],
+        "fragmentHits": {
+          "prerequisiteReason": true
+        },
+        "pass": true,
+        "violationCount": 1
+      },
+      "missing-required-cardinality.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "identifier"
+        ],
+        "fragmentHits": {
+          "identifier": true
+        },
+        "pass": true,
+        "violationCount": 11
+      },
+      "qualifier-edge-mismatch.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "A prerequisite assertion must be linked from its dependent topic, and its binary directRequires edge must agree with the authoritative assertion."
+        ],
+        "fragmentHits": {
+          "A prerequisite assertion must be linked from its dependent topic, and its binary directRequires edge must agree with the authoritative assertion.": true
+        },
+        "pass": true,
+        "violationCount": 1
+      },
+      "source-status-incoherence.ttl": {
+        "conforms": false,
+        "expectedFragments": [
+          "SourceDocument rights status must remain HOLD."
+        ],
+        "fragmentHits": {
+          "SourceDocument rights status must remain HOLD.": true
+        },
+        "pass": true,
+        "violationCount": 2
+      }
+    },
+    "canonicalPositive": {
+      "conforms": true,
+      "tripleCount": 257,
+      "violationCount": 0
+    },
+    "errors": [],
+    "pass": true
+  },
+  "graphs": {
+    "generatedEquivalence": {
+      "isomorphic": true,
+      "jsonldCanonicalHash": "14460684208487429783551085362780825301296108592782679697608687316836128999707012827",
+      "jsonldTripleCount": 249461,
+      "pass": true,
+      "turtleCanonicalHash": "14460684208487429783551085362780825301296108592782679697608687316836128999707012827",
+      "turtleTripleCount": 249461
+    },
+    "parsedTripleCounts": {
+      "dist/ontology/learning-map.jsonld": 249461,
+      "dist/ontology/learning-map.ttl": 249461,
+      "ontology/learning-map.ttl": 668,
+      "ontology/metadata.ttl": 40,
+      "ontology/shapes.ttl": 571
+    }
+  },
+  "inputHashes": {
+    "data/kr/curriculum-standards.json": "6b4b0edb173f116832935bcb3bec2464d174f032cb5bdd2b3e80149630968f9e",
+    "data/kr/dependencies.json": "e09a6137bb70edf2a0b0928c05a4bd3f102c80845846ff13b10767ef4ceafe2c",
+    "dist/ontology/learning-map.jsonld": "d6152367e6635caae96c198a186034dd186b7547806914603dc463be72917580",
+    "dist/ontology/learning-map.ttl": "aec25621de747e995509ad425038a09f7753117cd9aeddb083476ac2fdf7136d",
+    "ontology/fixtures/adversarial/direct-cycle.ttl": "1994e576381ec5282e2b9fec73911ec8416fa0114c88cd0ccd2d35f3838b460c",
+    "ontology/fixtures/adversarial/direct-self-loop.ttl": "588b3bd50a334b632f967a5ccacbcdfb3294d98dd4cfdbbf4f9b8c6efdd193c3",
+    "ontology/fixtures/adversarial/duplicate-prerequisite-assertion.ttl": "9996fb85eed6d228f8397beaaf79721b6f4b48e553ccf0fbeb1fce04ffca6408",
+    "ontology/fixtures/adversarial/expected.json": "123dfd826fe65f22bf58270380b13e1f59333bd2a98005d40b67fab46b56f227",
+    "ontology/fixtures/adversarial/invalid-grade-band.ttl": "d2df44d3efc853ffb4afaa3a916872c556ede3af05d266623782a1d505aa9cd5",
+    "ontology/fixtures/adversarial/missing-inverse.ttl": "b1cf867ff38080366e7a8c21218c16096b758897059b973e4e54d0bab1d94351",
+    "ontology/fixtures/adversarial/missing-qualifier.ttl": "992ce9b0e8af99110c5c5ab07c424a13d677e0fa4920b6c1ec832c8fffb8b56c",
+    "ontology/fixtures/adversarial/missing-required-cardinality.ttl": "75f42a373ef38b92d8b4b6ec084eab0ca5e8c3e9462ae478adfe896888cdb138",
+    "ontology/fixtures/adversarial/qualifier-edge-mismatch.ttl": "f04042f069d3231c0e5f6721b167cd631cb23f4e47064a6a1b22b5067177c6f1",
+    "ontology/fixtures/adversarial/source-status-incoherence.ttl": "3dbcfbd67db136472ad43454107817c6e811539e50daefb7162a5b269c18ffb5",
+    "ontology/fixtures/canonical-positive.ttl": "53d01197e9a1f00350ea8a8cd408be979cc2ab785f00b273a84e792a76a3cd5c",
+    "ontology/learning-map.ttl": "2439ffaafbc4f11514fba28aff51d0bb9e25c222bc07344c264fbc4b9f65ae8c",
+    "ontology/metadata.ttl": "98b8f3eb6c314250a60ea017d158fd1e008c1cb034378978cd45fa0e86484c9e",
+    "ontology/queries/cq-01-curriculum-standards.rq": "63513e20e84ccc2c2dcde7d0cb96cb834abaedfdd70a1e55eee06dd10089314a",
+    "ontology/queries/cq-02-alignment-roles.rq": "acf2aa6f6b25eb76f0902cdf6624b1830731078fecc566269e852a70ea06924e",
+    "ontology/queries/cq-03-evidence-prompts.rq": "8e771c2858bf9460c64a84047164736fbca145568131d2841486199ce84dbc6a",
+    "ontology/queries/cq-04-direct-prerequisites.rq": "8009d63916917cb57de95b205114626ea152e446328948addd38f9c5553f8543",
+    "ontology/queries/cq-05-indirect-prerequisites.rq": "863e4646865745f59007f5f4264d98712871e3d75c82bd85addf4093dfa43b0f",
+    "ontology/queries/cq-06-unlocks.rq": "54bf25a727e27d58b5f3ec08dec8fa8e648c455a2656d261d7f0b35241503434",
+    "ontology/queries/cq-07-requirement-levels.rq": "26f1672fb25d9b4c4bf9d6e07776e4a4f10e60664ca9f0e017348ceaedd8a52a",
+    "ontology/queries/cq-08-cluster-membership.rq": "8d2d78c6330dd50b7a5170f5ac1d3e3ae047e0004b10fb7a522815662c06230c",
+    "ontology/queries/cq-09-source-locators.rq": "1ff73f4148e6714a99e6a5c7c27561f402404f47881325ffdb8dd22268e748bd",
+    "ontology/queries/cq-10-verification-limits.rq": "12cb5bb11cca6c8eef1a38097910a81c52dfd351a393222e3470137ab3befc96",
+    "ontology/queries/cq-11-coverage-gaps.rq": "7b7d47d0d451531a80ebbcf59cedf506d3d9102a1af19ebe9ca6b9565515a3b0",
+    "ontology/queries/cq-12-rights-hold.rq": "167ba122d991a7cf44d1974d79ab3986c4b59e57af5fe03b5e0f9a266c0c9504",
+    "ontology/queries/cq-13-topic-types.rq": "67ef3955d7fa9ae35750e14e26748c5b867fbfd71bf528822cc2d71551b286dc",
+    "ontology/queries/cq-14-alignment-round-trip.rq": "e300e07c365ce8e9f6c55342adffd8f0c48bd945a7066851a500351aecf109e0",
+    "ontology/queries/cq-15-prerequisite-round-trip.rq": "64380b7dc3c4ddddec888ddc8dc13d5cb6d9c44fb74c4eabc754e5cc9b6333d6",
+    "ontology/queries/expected.json": "30d10091d3d9927ba439f1e7dd39c34bf73000a391ac93fb55e4c45684ffa02f",
+    "ontology/shapes.ttl": "c869fc1b4f7fee0afb47226299de2424926010343d070b63fb7a51f71b81fa60"
+  },
+  "integrity": {
+    "gradeBands": {
+      "allowedIdentifiers": [
+        "1-2",
+        "1-6",
+        "3-4",
+        "3-6",
+        "5-6"
+      ],
+      "errors": [],
+      "gradeBandCount": 5,
+      "pass": true
+    },
+    "jsonldResources": {
+      "dangling": [],
+      "danglingInstanceReferenceCount": 0,
+      "duplicateResourceIriCount": 0,
+      "duplicates": [],
+      "forbiddenKeyCount": 0,
+      "forbiddenUrlLiteralCount": 0,
+      "pass": true,
+      "resourceCount": 20446
+    },
+    "profile": {
+      "errorCount": 0,
+      "errors": [],
+      "pass": true
+    },
+    "qualifiedRoundTrips": {
+      "alignedToStandardAgreement": true,
+      "alignmentQualifierRoundTrip": true,
+      "directRequiresAgreement": true,
+      "duplicateAlignmentPairs": 0,
+      "duplicatePrerequisitePairs": 0,
+      "errors": [],
+      "pass": true,
+      "prerequisiteAssertionCount": 1894,
+      "prerequisiteQualifierRoundTrip": true,
+      "standardTopicAlignmentCount": 1956
+    },
+    "relations": {
+      "counts": {
+        "alignedToStandard": 1956,
+        "directRequires": 1894,
+        "indirectRequires": 53656,
+        "unlocks": 1894
+      },
+      "cycleNodeCount": 0,
+      "directIndirectOverlapCount": 0,
+      "directRequiresDeclaredTransitive": false,
+      "duplicateDirectPairCount": 0,
+      "errors": [],
+      "hashes": {
+        "alignedToStandard": "bb750c1580454f5b16edb010b29689cedc2f03f5e71d279299da3b9cbc0fcedf",
+        "directRequires": "16cfe6dc70f5eebcd675aeb548354a725adbd75c36c8a9619d2f44666be3c132",
+        "indirectRequires": "e455382f0d617bf815b856783a12f8c5fb52f0b8edb9ea2441b53b2a6c75f8db",
+        "unlocks": "7695eecf55e2fd8c7f04a08a2b926a04f0cd3e4fed47777981f6c6691c75ece1"
+      },
+      "indirectExtraCount": 0,
+      "indirectMissingCount": 0,
+      "pass": true,
+      "selfEdgeCount": 0,
+      "unlockInverseExtraCount": 0,
+      "unlockInverseMissingCount": 0
+    },
+    "sourceRights": {
+      "errors": [],
+      "officialTextIncludedTrueCount": 0,
+      "pass": true,
+      "rightsHoldResources": 18
+    }
+  },
+  "overallPass": true,
+  "reasoner": {
+    "closureTripleCount": 2908,
+    "errors": [],
+    "explicitContradictionCount": 0,
+    "inferredTripleCount": 1983,
+    "inputTripleCount": 925,
+    "pass": true,
+    "profile": "OWL-RL bounded TBox plus canonical-positive fixture",
+    "unsatisfiableNamedClassCount": 0
+  },
+  "shacl": {
+    "conforms": true,
+    "reportTextSha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+    "results": [],
+    "violationCount": 0
+  },
+  "toolVersions": {
+    "owlrl": "7.1.4",
+    "pyshacl": "0.30.1",
+    "python": "3.14.3",
+    "rdflib": "7.1.4"
+  }
+}

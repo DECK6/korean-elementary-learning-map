@@ -89,6 +89,6 @@ test('ontology P0 contract remains available within the P1 machine-readable rele
   }
 
   const rootReadme = readFileSync(resolve(ROOT, 'README.md'), 'utf8');
-  assert.match(rootReadme, /P1 \/ machine-readable ontology/);
-  assert.match(rootReadme, /P2 추론·질의 게이트는 아직 포함하지 않습니다/);
+  assert.match(rootReadme, /P2 \/ validated ontology gate/);
+  assert.match(rootReadme, /공개 SPARQL 엔드포인트를 제공하지 않습니다/);
 });

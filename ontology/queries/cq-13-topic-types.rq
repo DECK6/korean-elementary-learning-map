@@ -1,0 +1,8 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?topicType (COUNT(?topic) AS ?topicCount)
+WHERE {
+  ?topic a lm:LearningTopic ; lm:topicType ?topicType .
+}
+GROUP BY ?topicType
+ORDER BY ?topicType

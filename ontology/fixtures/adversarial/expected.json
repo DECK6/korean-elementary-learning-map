@@ -1,0 +1,47 @@
+{
+  "direct-cycle.ttl": {
+    "expectedFragments": [
+      "The asserted directRequires graph must be acyclic."
+    ]
+  },
+  "direct-self-loop.ttl": {
+    "expectedFragments": [
+      "directRequires must not contain a self edge."
+    ]
+  },
+  "duplicate-prerequisite-assertion.ttl": {
+    "expectedFragments": [
+      "A direct prerequisite pair must not have duplicate PrerequisiteAssertion records."
+    ]
+  },
+  "invalid-grade-band.ttl": {
+    "expectedFragments": [
+      "GradeBand identifier must be one of 1-2, 3-4, 5-6, 3-6, or 1-6."
+    ]
+  },
+  "missing-inverse.ttl": {
+    "expectedFragments": [
+      "Every directRequires edge must have a materialized inverse unlocks edge."
+    ]
+  },
+  "missing-qualifier.ttl": {
+    "expectedFragments": [
+      "prerequisiteReason"
+    ]
+  },
+  "missing-required-cardinality.ttl": {
+    "expectedFragments": [
+      "identifier"
+    ]
+  },
+  "qualifier-edge-mismatch.ttl": {
+    "expectedFragments": [
+      "A prerequisite assertion must be linked from its dependent topic, and its binary directRequires edge must agree with the authoritative assertion."
+    ]
+  },
+  "source-status-incoherence.ttl": {
+    "expectedFragments": [
+      "SourceDocument rights status must remain HOLD."
+    ]
+  }
+}

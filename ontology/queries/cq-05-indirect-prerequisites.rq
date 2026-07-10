@@ -1,0 +1,9 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT DISTINCT ?dependent ?prerequisite
+WHERE {
+  ?dependent lm:indirectRequires ?prerequisite ;
+    lm:directRequires/lm:directRequires+ ?prerequisite .
+  FILTER NOT EXISTS { ?dependent lm:directRequires ?prerequisite }
+}
+ORDER BY ?dependent ?prerequisite

@@ -1,0 +1,11 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?topic ?standard ?alignment ?kind
+WHERE {
+  ?topic lm:hasStandardTopicAlignment ?alignment ;
+    lm:alignedToStandard ?standard .
+  ?alignment lm:alignmentTopic ?topic ;
+    lm:alignmentStandard ?standard ;
+    lm:alignmentKind ?kind .
+}
+ORDER BY ?topic ?standard ?alignment ?kind

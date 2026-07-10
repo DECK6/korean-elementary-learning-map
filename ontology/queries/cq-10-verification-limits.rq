@@ -1,0 +1,10 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?resource ?verification ?status ?summary ?note
+WHERE {
+  ?resource lm:hasVerificationRecord ?verification .
+  ?verification lm:verificationStatus ?status .
+  OPTIONAL { ?verification lm:summary ?summary . }
+  OPTIONAL { ?verification lm:note ?note . }
+}
+ORDER BY ?resource ?verification ?status

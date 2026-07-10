@@ -1,0 +1,4 @@
+# P2 standards-engine gate. Keep exact pins so local and CI reasoning are reproducible.
+rdflib==7.1.4
+pyshacl==0.30.1
+owlrl==7.1.4

@@ -1,0 +1,9 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?topic (COUNT(?cluster) AS ?clusterCount)
+WHERE {
+  ?topic a lm:LearningTopic .
+  OPTIONAL { ?cluster a lm:LearningCluster ; lm:hasClusterMember ?topic . }
+}
+GROUP BY ?topic
+ORDER BY ?topic

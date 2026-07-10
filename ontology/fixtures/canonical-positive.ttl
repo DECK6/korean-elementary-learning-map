@@ -1,0 +1,292 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:fixture:release> a lm:DatasetRelease ;
+  lm:identifier "fixture-release" ;
+  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ;
+  lm:officialTextIncluded false ;
+  lm:hasCurriculum <urn:fixture:curriculum> ;
+  lm:containsTopic
+    <urn:fixture:topic-a>,
+    <urn:fixture:topic-b>,
+    <urn:fixture:topic-c>,
+    <urn:fixture:topic-d>,
+    <urn:fixture:topic-e> ;
+  lm:hasCluster <urn:fixture:cluster> ;
+  lm:reportsCoverageGap <urn:fixture:coverage-gap> ;
+  lm:hasVerificationRecord <urn:fixture:vr-release> .
+
+<urn:fixture:curriculum> a lm:Curriculum ;
+  lm:identifier "fixture-curriculum" ;
+  lm:preferredLabel "Fixture curriculum"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasAchievementStandard <urn:fixture:standard> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-curriculum> .
+
+<urn:fixture:grade-1-2> a lm:GradeBand ;
+  lm:identifier "1-2" ;
+  lm:preferredLabel "Grades 1-2"@en .
+
+<urn:fixture:subject> a lm:Subject ;
+  lm:identifier "fixture-subject" ;
+  lm:preferredLabel "Fixture subject"@en .
+
+<urn:fixture:domain> a lm:LearningDomain ;
+  lm:identifier "fixture-domain" ;
+  lm:preferredLabel "Fixture domain"@en ;
+  lm:hasSubject <urn:fixture:subject> .
+
+<urn:fixture:standard> a lm:AchievementStandard ;
+  lm:identifier "fixture-standard" ;
+  lm:preferredLabel "Fixture standard"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-standard> .
+
+<urn:fixture:evidence> a lm:EvidenceCriterion ;
+  lm:identifier "fixture-evidence" ;
+  lm:criterionText "Evidence is observable."@en .
+
+<urn:fixture:prompt> a lm:AssessmentPrompt ;
+  lm:identifier "fixture-prompt" ;
+  lm:promptText "Demonstrate the fixture topic."@en .
+
+<urn:fixture:topic-a> a lm:LearningTopic ;
+  lm:identifier "fixture-topic-a" ;
+  lm:preferredLabel "Fixture topic A"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:topicType <https://dexa.art/learnmap/vocab/#/LearningTopicType/conceptual> ;
+  lm:hasEvidenceCriterion <urn:fixture:evidence> ;
+  lm:hasAssessmentPrompt <urn:fixture:prompt> ;
+  lm:alignedToStandard <urn:fixture:standard> ;
+  lm:hasStandardTopicAlignment <urn:fixture:sta-a> ;
+  lm:unlocks <urn:fixture:topic-b> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-topic> .
+
+<urn:fixture:topic-b> a lm:LearningTopic ;
+  lm:identifier "fixture-topic-b" ;
+  lm:preferredLabel "Fixture topic B"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:topicType <https://dexa.art/learnmap/vocab/#/LearningTopicType/procedural> ;
+  lm:hasEvidenceCriterion <urn:fixture:evidence> ;
+  lm:hasAssessmentPrompt <urn:fixture:prompt> ;
+  lm:alignedToStandard <urn:fixture:standard> ;
+  lm:hasStandardTopicAlignment <urn:fixture:sta-b> ;
+  lm:directRequires <urn:fixture:topic-a> ;
+  lm:hasPrerequisiteAssertion <urn:fixture:pa-b-a> ;
+  lm:unlocks <urn:fixture:topic-c> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-topic> .
+
+<urn:fixture:topic-c> a lm:LearningTopic ;
+  lm:identifier "fixture-topic-c" ;
+  lm:preferredLabel "Fixture topic C"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:topicType <https://dexa.art/learnmap/vocab/#/LearningTopicType/meta> ;
+  lm:hasEvidenceCriterion <urn:fixture:evidence> ;
+  lm:hasAssessmentPrompt <urn:fixture:prompt> ;
+  lm:alignedToStandard <urn:fixture:standard> ;
+  lm:hasStandardTopicAlignment <urn:fixture:sta-c> ;
+  lm:directRequires <urn:fixture:topic-b> ;
+  lm:indirectRequires <urn:fixture:topic-a> ;
+  lm:hasPrerequisiteAssertion <urn:fixture:pa-c-b> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-topic> .
+
+<urn:fixture:topic-d> a lm:LearningTopic ;
+  lm:identifier "fixture-topic-d" ;
+  lm:preferredLabel "Fixture topic D"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:topicType <https://dexa.art/learnmap/vocab/#/LearningTopicType/language> ;
+  lm:hasEvidenceCriterion <urn:fixture:evidence> ;
+  lm:hasAssessmentPrompt <urn:fixture:prompt> ;
+  lm:alignedToStandard <urn:fixture:standard> ;
+  lm:hasStandardTopicAlignment <urn:fixture:sta-d> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-topic> .
+
+<urn:fixture:topic-e> a lm:LearningTopic ;
+  lm:identifier "fixture-topic-e" ;
+  lm:preferredLabel "Fixture topic E"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:topicType <https://dexa.art/learnmap/vocab/#/LearningTopicType/representational> ;
+  lm:hasEvidenceCriterion <urn:fixture:evidence> ;
+  lm:hasAssessmentPrompt <urn:fixture:prompt> ;
+  lm:alignedToStandard <urn:fixture:standard> ;
+  lm:hasStandardTopicAlignment <urn:fixture:sta-e> ;
+  lm:officialTextIncluded false ;
+  lm:hasVerificationRecord <urn:fixture:vr-topic> .
+
+<urn:fixture:cluster> a lm:LearningCluster ;
+  lm:identifier "fixture-cluster" ;
+  lm:preferredLabel "Fixture cluster"@en ;
+  lm:hasSubject <urn:fixture:subject> ;
+  lm:hasGradeBand <urn:fixture:grade-1-2> ;
+  lm:hasLearningDomain <urn:fixture:domain> ;
+  lm:hasClusterMember
+    <urn:fixture:topic-a>,
+    <urn:fixture:topic-b>,
+    <urn:fixture:topic-c>,
+    <urn:fixture:topic-d>,
+    <urn:fixture:topic-e> .
+
+<urn:fixture:pa-b-a> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-b-a" ;
+  lm:dependentTopic <urn:fixture:topic-b> ;
+  lm:prerequisiteTopic <urn:fixture:topic-a> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/required> ;
+  lm:legacyPrerequisiteStrength "hard" ;
+  lm:prerequisiteReason "Topic A prepares Topic B."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .
+
+<urn:fixture:pa-c-b> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-c-b" ;
+  lm:dependentTopic <urn:fixture:topic-c> ;
+  lm:prerequisiteTopic <urn:fixture:topic-b> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:prerequisiteReason "Topic B supports Topic C."@en ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .
+
+<urn:fixture:sta-a> a lm:StandardTopicAlignment ;
+  lm:identifier "fixture-sta-a" ;
+  lm:alignmentTopic <urn:fixture:topic-a> ;
+  lm:alignmentStandard <urn:fixture:standard> ;
+  lm:alignmentKind <https://dexa.art/learnmap/vocab/#/AlignmentKind/introduces> ;
+  lm:sourceAlignmentRelationship "introduces" ;
+  lm:confidence "0.8"^^xsd:decimal ;
+  lm:sourceConfidenceValue "0.8" ;
+  lm:confidenceDefaulted false ;
+  lm:sourceVerificationStatus "workstream-reviewed" ;
+  lm:verificationStatusDefaulted false ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-alignment> .
+
+<urn:fixture:sta-b> a lm:StandardTopicAlignment ;
+  lm:identifier "fixture-sta-b" ;
+  lm:alignmentTopic <urn:fixture:topic-b> ;
+  lm:alignmentStandard <urn:fixture:standard> ;
+  lm:alignmentKind <https://dexa.art/learnmap/vocab/#/AlignmentKind/supports> ;
+  lm:sourceAlignmentRelationship "supports" ;
+  lm:confidence "0.8"^^xsd:decimal ;
+  lm:sourceConfidenceValue "0.8" ;
+  lm:confidenceDefaulted false ;
+  lm:sourceVerificationStatus "workstream-reviewed" ;
+  lm:verificationStatusDefaulted false ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-alignment> .
+
+<urn:fixture:sta-c> a lm:StandardTopicAlignment ;
+  lm:identifier "fixture-sta-c" ;
+  lm:alignmentTopic <urn:fixture:topic-c> ;
+  lm:alignmentStandard <urn:fixture:standard> ;
+  lm:alignmentKind <https://dexa.art/learnmap/vocab/#/AlignmentKind/extends> ;
+  lm:sourceAlignmentRelationship "extends" ;
+  lm:confidence "0.8"^^xsd:decimal ;
+  lm:sourceConfidenceValue "0.8" ;
+  lm:confidenceDefaulted false ;
+  lm:sourceVerificationStatus "workstream-reviewed" ;
+  lm:verificationStatusDefaulted false ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-alignment> .
+
+<urn:fixture:sta-d> a lm:StandardTopicAlignment ;
+  lm:identifier "fixture-sta-d" ;
+  lm:alignmentTopic <urn:fixture:topic-d> ;
+  lm:alignmentStandard <urn:fixture:standard> ;
+  lm:alignmentKind <https://dexa.art/learnmap/vocab/#/AlignmentKind/assesses> ;
+  lm:sourceAlignmentRelationship "assesses" ;
+  lm:confidence "0.8"^^xsd:decimal ;
+  lm:sourceConfidenceValue "0.8" ;
+  lm:confidenceDefaulted false ;
+  lm:sourceVerificationStatus "workstream-reviewed" ;
+  lm:verificationStatusDefaulted false ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-alignment> .
+
+<urn:fixture:sta-e> a lm:StandardTopicAlignment ;
+  lm:identifier "fixture-sta-e" ;
+  lm:alignmentTopic <urn:fixture:topic-e> ;
+  lm:alignmentStandard <urn:fixture:standard> ;
+  lm:alignmentKind <https://dexa.art/learnmap/vocab/#/AlignmentKind/supports> ;
+  lm:sourceAlignmentRelationship "supports" ;
+  lm:confidence "0.8"^^xsd:decimal ;
+  lm:sourceConfidenceValue "0.8" ;
+  lm:confidenceDefaulted false ;
+  lm:sourceVerificationStatus "workstream-reviewed" ;
+  lm:verificationStatusDefaulted false ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-alignment> .
+
+<urn:fixture:source> a lm:SourceDocument ;
+  lm:identifier "fixture-source" ;
+  lm:preferredLabel "Fixture source"@en ;
+  lm:sourceType "repository-fixture" ;
+  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ;
+  lm:officialTextIncluded false ;
+  lm:hasSourceLocator <urn:fixture:locator> ;
+  lm:hasVerificationRecord <urn:fixture:vr-source> .
+
+<urn:fixture:locator> a lm:SourceLocator ;
+  lm:identifier "fixture-locator" ;
+  lm:locatorValue "fixture section" ;
+  lm:documentedBy <urn:fixture:source> .
+
+<urn:fixture:coverage-gap> a lm:CoverageGap ;
+  lm:identifier "fixture-gap" ;
+  lm:gapCategory <https://dexa.art/learnmap/vocab/#/CoverageGapCategory/content-coverage> ;
+  lm:gapSeverity <https://dexa.art/learnmap/vocab/#/GapSeverity/review-needed> ;
+  lm:sourceGapSeverityPresent false ;
+  lm:gapDescription "Fixture gap is retained for validation."@en .
+
+<urn:fixture:vr-release> a lm:VerificationRecord ;
+  lm:identifier "fixture-vr-release" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/official-source-checked> .
+
+<urn:fixture:vr-curriculum> a lm:VerificationRecord ;
+  lm:identifier "fixture-vr-curriculum" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/official-source-checked> .
+
+<urn:fixture:vr-standard> a lm:VerificationRecord ;
+  lm:identifier "fixture-vr-standard" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/official-source-checked> .
+
+<urn:fixture:vr-topic> a lm:VerificationRecord ;
+  lm:identifier "fixture-vr-topic" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/workstream-reviewed> .
+
+<urn:fixture:vr-assertion> a lm:VerificationRecord ;
+  lm:identifier "fixture-vr-assertion" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/workstream-reviewed> .
+
+<urn:fixture:vr-alignment> a lm:VerificationRecord ;
+  lm:identifier "fixture-vr-alignment" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/workstream-reviewed> .
+
+<urn:fixture:vr-source> a lm:VerificationRecord ;
+  lm:identifier "fixture-vr-source" ;
+  lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/public-doc-derived> .

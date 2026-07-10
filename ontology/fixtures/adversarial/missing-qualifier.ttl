@@ -1,0 +1,17 @@
+@prefix lm: <https://dexa.art/learnmap/ontology#> .
+
+<urn:fixture:topic-d>
+  lm:directRequires <urn:fixture:topic-e> ;
+  lm:hasPrerequisiteAssertion <urn:fixture:pa-d-e-missing-qualifier> .
+
+<urn:fixture:topic-e> lm:unlocks <urn:fixture:topic-d> .
+
+<urn:fixture:pa-d-e-missing-qualifier> a lm:PrerequisiteAssertion ;
+  lm:identifier "fixture-pa-d-e-missing-qualifier" ;
+  lm:dependentTopic <urn:fixture:topic-d> ;
+  lm:prerequisiteTopic <urn:fixture:topic-e> ;
+  lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
+  lm:legacyPrerequisiteStrength "soft" ;
+  lm:assertionBasis "fixture" ;
+  lm:assertionSource "fixture" ;
+  lm:hasVerificationRecord <urn:fixture:vr-assertion> .

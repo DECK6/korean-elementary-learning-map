@@ -9,11 +9,11 @@
 <https://dexa.art/learnmap/ontology>
   a owl:Ontology ;
   dcterms:title "Korean Elementary Learning Map ontology"@en ;
-  dcterms:description "Static P1 semantic contract for the Korean elementary learning map."@en ;
+  dcterms:description "P2 validated and reasoned semantic contract for the Korean elementary learning map."@en ;
   dcterms:created "2026-07-10"^^xsd:date ;
   dcterms:source <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> ;
-  owl:versionIRI <https://dexa.art/learnmap/ontology/0.1.0-p1> ;
-  owl:versionInfo "0.1.0-p1" ;
+  owl:versionIRI <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
+  owl:versionInfo "0.2.0-p2" ;
   rdfs:seeAlso
     <https://dexa.art/learnmap/ontology/context.jsonld>,
     <https://dexa.art/learnmap/ontology/metadata.ttl>,
@@ -94,7 +94,7 @@ lm:hasCurriculum a owl:ObjectProperty ;
 
 lm:hasSubject a owl:ObjectProperty ;
   rdfs:label "has subject"@en ;
-  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:Curriculum lm:AchievementStandard lm:LearningTopic lm:LearningCluster ) ] ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:Curriculum lm:LearningDomain lm:AchievementStandard lm:LearningTopic lm:LearningCluster lm:CoverageGap ) ] ;
   rdfs:range lm:Subject .
 
 lm:hasGradeBand a owl:ObjectProperty ;
@@ -195,17 +195,17 @@ lm:prerequisiteTopic a owl:ObjectProperty ;
 
 lm:documentedBy a owl:ObjectProperty ;
   rdfs:label "documented by"@en ;
-  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:Curriculum lm:AchievementStandard lm:LearningTopic lm:PrerequisiteAssertion lm:StandardTopicAlignment ) ] ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:Curriculum lm:AchievementStandard lm:LearningTopic lm:SourceLocator lm:VerificationRecord lm:CoverageGap lm:PrerequisiteAssertion lm:StandardTopicAlignment ) ] ;
   rdfs:range lm:SourceDocument .
 
 lm:hasSourceLocator a owl:ObjectProperty ;
   rdfs:label "has source locator"@en ;
-  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:SourceDocument lm:AchievementStandard lm:LearningTopic ) ] ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:SourceDocument lm:AchievementStandard lm:LearningTopic lm:CoverageGap ) ] ;
   rdfs:range lm:SourceLocator .
 
 lm:hasVerificationRecord a owl:ObjectProperty ;
   rdfs:label "has verification record"@en ;
-  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:DatasetRelease lm:SourceDocument lm:AchievementStandard lm:LearningTopic lm:PrerequisiteAssertion lm:StandardTopicAlignment ) ] ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:DatasetRelease lm:Curriculum lm:SourceDocument lm:AchievementStandard lm:LearningTopic lm:PrerequisiteAssertion lm:StandardTopicAlignment ) ] ;
   rdfs:range lm:VerificationRecord .
 
 lm:reportsCoverageGap a owl:ObjectProperty ;
@@ -265,6 +265,120 @@ lm:summary a owl:DatatypeProperty ;
   rdfs:label "summary"@en ;
   rdfs:range rdf:langString .
 
+lm:accessDate a owl:DatatypeProperty ;
+  rdfs:label "access date"@en ;
+  rdfs:domain lm:SourceDocument ;
+  rdfs:range xsd:string .
+
+lm:attachmentNo a owl:DatatypeProperty ;
+  rdfs:label "source attachment number"@en ;
+  rdfs:domain lm:SourceDocument ;
+  rdfs:range xsd:string .
+
+lm:country a owl:DatatypeProperty ;
+  rdfs:label "country code"@en ;
+  rdfs:domain lm:DatasetRelease ;
+  rdfs:range xsd:string .
+
+lm:description a owl:DatatypeProperty ;
+  rdfs:label "description"@en ;
+  rdfs:domain lm:LearningTopic ;
+  rdfs:range rdf:langString .
+
+lm:generatedAt a owl:DatatypeProperty ;
+  rdfs:label "generated at"@en ;
+  rdfs:domain lm:DatasetRelease ;
+  rdfs:range xsd:string .
+
+lm:generationBasis a owl:DatatypeProperty ;
+  rdfs:label "generation basis"@en ;
+  rdfs:domain lm:LearningTopic ;
+  rdfs:range rdf:langString .
+
+lm:labelEnglish a owl:DatatypeProperty ;
+  rdfs:label "English label"@en ;
+  rdfs:range rdf:langString .
+
+lm:locale a owl:DatatypeProperty ;
+  rdfs:label "locale"@en ;
+  rdfs:domain lm:DatasetRelease ;
+  rdfs:range xsd:string .
+
+lm:parentSummary a owl:DatatypeProperty ;
+  rdfs:label "parent-facing summary"@en ;
+  rdfs:domain lm:LearningCluster ;
+  rdfs:range rdf:langString .
+
+lm:pdfPages a owl:DatatypeProperty ;
+  rdfs:label "PDF page count or page"@en ;
+  rdfs:domain lm:SourceDocument ;
+  rdfs:range xsd:integer .
+
+lm:publisher a owl:DatatypeProperty ;
+  rdfs:label "publisher"@en ;
+  rdfs:domain lm:SourceDocument ;
+  rdfs:range xsd:string .
+
+lm:schoolLevel a owl:DatatypeProperty ;
+  rdfs:label "school level"@en ;
+  rdfs:domain lm:Curriculum ;
+  rdfs:range xsd:string .
+
+lm:sourceBasis a owl:DatatypeProperty ;
+  rdfs:label "source basis"@en ;
+  rdfs:domain lm:AchievementStandard ;
+  rdfs:range rdf:langString .
+
+lm:sourceSection a owl:DatatypeProperty ;
+  rdfs:label "source section"@en ;
+  rdfs:domain lm:AchievementStandard ;
+  rdfs:range rdf:langString .
+
+lm:sourceStandardCode a owl:DatatypeProperty ;
+  rdfs:label "source standard code"@en ;
+  rdfs:domain lm:LearningTopic ;
+  rdfs:range xsd:string .
+
+lm:sourceType a owl:DatatypeProperty ;
+  rdfs:label "source type"@en ;
+  rdfs:domain lm:SourceDocument ;
+  rdfs:range xsd:string .
+
+lm:standardCode a owl:DatatypeProperty ;
+  rdfs:label "achievement standard code"@en ;
+  rdfs:domain lm:AchievementStandard ;
+  rdfs:range xsd:string .
+
+lm:status a owl:DatatypeProperty ;
+  rdfs:label "status"@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:DatasetRelease lm:CoverageGap ) ] ;
+  rdfs:range xsd:string .
+
+lm:subjectCode a owl:DatatypeProperty ;
+  rdfs:label "source subject code"@en ;
+  rdfs:domain lm:SourceDocument ;
+  rdfs:range xsd:string .
+
+lm:titleEnglish a owl:DatatypeProperty ;
+  rdfs:label "English title"@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:LearningTopic lm:LearningCluster ) ] ;
+  rdfs:range rdf:langString .
+
+lm:verificationNotes a owl:DatatypeProperty ;
+  rdfs:label "verification notes"@en ;
+  rdfs:domain lm:AchievementStandard ;
+  rdfs:range rdf:langString .
+
+lm:version a owl:DatatypeProperty ;
+  rdfs:label "version"@en ;
+  rdfs:domain lm:Curriculum ;
+  rdfs:range xsd:string .
+
+lm:workstream a owl:DatatypeProperty ;
+  rdfs:label "workstream"@en ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:AchievementStandard lm:LearningTopic lm:LearningCluster lm:CoverageGap ) ] ;
+  rdfs:range xsd:string .
+
 lm:ageRangeStart a owl:DatatypeProperty ;
   rdfs:label "age range start"@en ;
   rdfs:domain lm:LearningTopic ;
@@ -290,6 +404,12 @@ lm:prerequisiteReason a owl:DatatypeProperty ;
   rdfs:domain lm:PrerequisiteAssertion ;
   rdfs:range rdf:langString .
 
+lm:legacyPrerequisiteStrength a owl:DatatypeProperty ;
+  rdfs:label "legacy prerequisite strength"@en ;
+  rdfs:comment "The exact hard or soft source token retained for lossless round trips."@en ;
+  rdfs:domain lm:PrerequisiteAssertion ;
+  rdfs:range xsd:string .
+
 lm:assertionBasis a owl:DatatypeProperty ;
   rdfs:label "assertion basis"@en ;
   rdfs:domain [ a owl:Class ; owl:unionOf ( lm:PrerequisiteAssertion lm:StandardTopicAlignment ) ] ;
@@ -305,9 +425,56 @@ lm:confidence a owl:DatatypeProperty ;
   rdfs:domain lm:StandardTopicAlignment ;
   rdfs:range xsd:decimal .
 
+lm:sourceAlignmentRelationship a owl:DatatypeProperty ;
+  rdfs:label "source alignment relationship"@en ;
+  rdfs:comment "The exact relationship token retained from the canonical mapping record for lossless round trips."@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:string .
+
+lm:sourceConfidenceValue a owl:DatatypeProperty ;
+  rdfs:label "source confidence value"@en ;
+  rdfs:comment "The exact confidence token retained from the canonical mapping record; distinct from the numeric working confidence."@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:string .
+
+lm:sourceAlignmentNote a owl:DatatypeProperty ;
+  rdfs:label "source alignment note"@en ;
+  rdfs:comment "The exact optional note retained from the canonical mapping record."@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:string .
+
+lm:sourceAlignmentRationale a owl:DatatypeProperty ;
+  rdfs:label "source alignment rationale"@en ;
+  rdfs:comment "The exact optional legacy rationale retained separately from note."@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:string .
+
+lm:confidenceDefaulted a owl:DatatypeProperty ;
+  rdfs:label "confidence defaulted"@en ;
+  rdfs:comment "True when the numeric working confidence is a release-policy default rather than the source confidence token."@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:boolean .
+
+lm:defaultingPolicy a owl:DatatypeProperty ;
+  rdfs:label "defaulting policy"@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:string .
+
+lm:sourceVerificationStatus a owl:DatatypeProperty ;
+  rdfs:label "source verification status"@en ;
+  rdfs:comment "The exact optional verification-status token retained from the canonical alignment record."@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:string .
+
+lm:verificationStatusDefaulted a owl:DatatypeProperty ;
+  rdfs:label "verification status defaulted"@en ;
+  rdfs:comment "True when the alignment verification record uses the release default because the canonical mapping omitted a status."@en ;
+  rdfs:domain lm:StandardTopicAlignment ;
+  rdfs:range xsd:boolean .
+
 lm:note a owl:DatatypeProperty ;
   rdfs:label "note"@en ;
-  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:PrerequisiteAssertion lm:StandardTopicAlignment lm:VerificationRecord ) ] ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:PrerequisiteAssertion lm:StandardTopicAlignment lm:VerificationRecord lm:CoverageGap ) ] ;
   rdfs:range rdf:langString .
 
 lm:sourceUrl a owl:DatatypeProperty ;
@@ -327,7 +494,12 @@ lm:locatorValue a owl:DatatypeProperty ;
 
 lm:officialTextIncluded a owl:DatatypeProperty ;
   rdfs:label "official text included"@en ;
-  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:DatasetRelease lm:AchievementStandard lm:LearningTopic ) ] ;
+  rdfs:domain [ a owl:Class ; owl:unionOf ( lm:DatasetRelease lm:Curriculum lm:AchievementStandard lm:LearningTopic lm:SourceDocument ) ] ;
+  rdfs:range xsd:boolean .
+
+lm:sourceGapSeverityPresent a owl:DatatypeProperty ;
+  rdfs:label "source gap severity present"@en ;
+  rdfs:domain lm:CoverageGap ;
   rdfs:range xsd:boolean .
 
 lm:gapDescription a owl:DatatypeProperty ;

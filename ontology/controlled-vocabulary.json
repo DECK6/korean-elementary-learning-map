@@ -115,8 +115,8 @@
     {
       "term": "hasSubject",
       "definition": "Associates a curriculum or learning resource with its subject.",
-      "direction": "Curriculum|AchievementStandard|LearningTopic|LearningCluster -> Subject",
-      "domain": ["Curriculum", "AchievementStandard", "LearningTopic", "LearningCluster"],
+      "direction": "Curriculum|LearningDomain|AchievementStandard|LearningTopic|LearningCluster|CoverageGap -> Subject",
+      "domain": ["Curriculum", "LearningDomain", "AchievementStandard", "LearningTopic", "LearningCluster", "CoverageGap"],
       "range": ["Subject"],
       "cardinality": "resource 1; inverse 0..*",
       "assertionPolicy": "asserted"
@@ -294,7 +294,7 @@
       "term": "documentedBy",
       "definition": "Associates a curriculum resource or assertion with a source document that supports its identity, provenance, or basis.",
       "direction": "resource -> SourceDocument",
-      "domain": ["Curriculum", "AchievementStandard", "LearningTopic", "PrerequisiteAssertion", "StandardTopicAlignment"],
+      "domain": ["Curriculum", "AchievementStandard", "LearningTopic", "SourceLocator", "VerificationRecord", "CoverageGap", "PrerequisiteAssertion", "StandardTopicAlignment"],
       "range": ["SourceDocument"],
       "cardinality": "resource 1..*; SourceDocument 0..*",
       "assertionPolicy": "asserted"
@@ -303,7 +303,7 @@
       "term": "hasSourceLocator",
       "definition": "Associates a source-backed resource with a structured source locator.",
       "direction": "resource -> SourceLocator",
-      "domain": ["SourceDocument", "AchievementStandard", "LearningTopic"],
+      "domain": ["SourceDocument", "AchievementStandard", "LearningTopic", "CoverageGap"],
       "range": ["SourceLocator"],
       "cardinality": "resource 0..*; SourceLocator 1",
       "assertionPolicy": "asserted"
@@ -312,7 +312,7 @@
       "term": "hasVerificationRecord",
       "definition": "Associates a resource or qualified assertion with a record of its verification status and limitations.",
       "direction": "resource -> VerificationRecord",
-      "domain": ["DatasetRelease", "SourceDocument", "AchievementStandard", "LearningTopic", "PrerequisiteAssertion", "StandardTopicAlignment"],
+      "domain": ["DatasetRelease", "Curriculum", "SourceDocument", "AchievementStandard", "LearningTopic", "PrerequisiteAssertion", "StandardTopicAlignment"],
       "range": ["VerificationRecord"],
       "cardinality": "resource 0..*; VerificationRecord 1",
       "assertionPolicy": "asserted"
@@ -331,7 +331,7 @@
     {
       "term": "identifier",
       "definition": "The stable source or repository identifier for a resource.",
-      "domain": ["DatasetRelease", "Curriculum", "AchievementStandard", "LearningTopic", "LearningCluster", "SourceDocument", "CoverageGap", "PrerequisiteAssertion", "StandardTopicAlignment"],
+      "domain": ["DatasetRelease", "Curriculum", "GradeBand", "Subject", "LearningDomain", "AchievementStandard", "LearningTopic", "LearningCluster", "EvidenceCriterion", "AssessmentPrompt", "SourceDocument", "SourceLocator", "VerificationRecord", "CoverageGap", "PrerequisiteAssertion", "StandardTopicAlignment"],
       "datatype": "xsd:string",
       "cardinality": "resource exactly 1"
     },
@@ -345,9 +345,170 @@
     {
       "term": "summary",
       "definition": "A repository-authored concise description that does not reproduce official text unless explicitly licensed and marked.",
-      "domain": ["AchievementStandard", "LearningTopic", "LearningCluster"],
+      "domain": ["DatasetRelease", "Curriculum", "AchievementStandard", "LearningTopic", "LearningCluster", "SourceDocument", "VerificationRecord"],
       "datatype": "rdf:langString",
       "cardinality": "resource 0..* across languages"
+    },
+    {
+      "term": "accessDate",
+      "definition": "The recorded date on which a source document was accessed.",
+      "domain": ["SourceDocument"],
+      "datatype": "xsd:string",
+      "cardinality": "SourceDocument 0..1"
+    },
+    {
+      "term": "attachmentNo",
+      "definition": "The repository attachment number retained for a source document.",
+      "domain": ["SourceDocument"],
+      "datatype": "xsd:string",
+      "cardinality": "SourceDocument 0..1"
+    },
+    {
+      "term": "country",
+      "definition": "The country code for the dataset release.",
+      "domain": ["DatasetRelease"],
+      "datatype": "xsd:string",
+      "cardinality": "DatasetRelease exactly 1"
+    },
+    {
+      "term": "description",
+      "definition": "A repository-authored description of a learning topic.",
+      "domain": ["LearningTopic"],
+      "datatype": "rdf:langString",
+      "cardinality": "LearningTopic exactly 1"
+    },
+    {
+      "term": "generatedAt",
+      "definition": "The canonical source generation timestamp retained as source metadata.",
+      "domain": ["DatasetRelease"],
+      "datatype": "xsd:string",
+      "cardinality": "DatasetRelease exactly 1"
+    },
+    {
+      "term": "generationBasis",
+      "definition": "The documented workstream basis used to generate a learning topic.",
+      "domain": ["LearningTopic"],
+      "datatype": "rdf:langString",
+      "cardinality": "LearningTopic 0..1"
+    },
+    {
+      "term": "labelEnglish",
+      "definition": "An English-language label retained alongside the preferred Korean label.",
+      "domain": ["Curriculum", "GradeBand", "Subject", "LearningDomain"],
+      "datatype": "rdf:langString",
+      "cardinality": "resource 0..1"
+    },
+    {
+      "term": "locale",
+      "definition": "The locale identifier for the dataset release.",
+      "domain": ["DatasetRelease"],
+      "datatype": "xsd:string",
+      "cardinality": "DatasetRelease exactly 1"
+    },
+    {
+      "term": "parentSummary",
+      "definition": "A parent-facing summary for a learning cluster.",
+      "domain": ["LearningCluster"],
+      "datatype": "rdf:langString",
+      "cardinality": "LearningCluster 0..1"
+    },
+    {
+      "term": "pdfPages",
+      "definition": "A source-document PDF page count or page value retained by the canonical source record.",
+      "domain": ["SourceDocument"],
+      "datatype": "xsd:integer",
+      "cardinality": "SourceDocument 0..*"
+    },
+    {
+      "term": "publisher",
+      "definition": "The publisher named by a source document record.",
+      "domain": ["SourceDocument"],
+      "datatype": "xsd:string",
+      "cardinality": "SourceDocument 0..1"
+    },
+    {
+      "term": "schoolLevel",
+      "definition": "The school level governed by a curriculum.",
+      "domain": ["Curriculum"],
+      "datatype": "xsd:string",
+      "cardinality": "Curriculum exactly 1"
+    },
+    {
+      "term": "sourceBasis",
+      "definition": "The bounded source basis recorded for an achievement standard.",
+      "domain": ["AchievementStandard"],
+      "datatype": "rdf:langString",
+      "cardinality": "AchievementStandard 0..1"
+    },
+    {
+      "term": "sourceSection",
+      "definition": "A human-readable section label retained for an achievement standard.",
+      "domain": ["AchievementStandard"],
+      "datatype": "rdf:langString",
+      "cardinality": "AchievementStandard 0..1"
+    },
+    {
+      "term": "sourceStandardCode",
+      "definition": "The source achievement-standard code retained by a learning topic.",
+      "domain": ["LearningTopic"],
+      "datatype": "xsd:string",
+      "cardinality": "LearningTopic 0..1"
+    },
+    {
+      "term": "sourceType",
+      "definition": "The canonical source-document type token.",
+      "domain": ["SourceDocument"],
+      "datatype": "xsd:string",
+      "cardinality": "SourceDocument exactly 1"
+    },
+    {
+      "term": "standardCode",
+      "definition": "The official or repository-maintained achievement-standard code.",
+      "domain": ["AchievementStandard"],
+      "datatype": "xsd:string",
+      "cardinality": "AchievementStandard exactly 1"
+    },
+    {
+      "term": "status",
+      "definition": "A source status token retained for a dataset release or coverage gap.",
+      "domain": ["DatasetRelease", "CoverageGap"],
+      "datatype": "xsd:string",
+      "cardinality": "resource 0..1"
+    },
+    {
+      "term": "subjectCode",
+      "definition": "The external subject code retained by a source document.",
+      "domain": ["SourceDocument"],
+      "datatype": "xsd:string",
+      "cardinality": "SourceDocument 0..1"
+    },
+    {
+      "term": "titleEnglish",
+      "definition": "An English-language title for a topic or cluster.",
+      "domain": ["LearningTopic", "LearningCluster"],
+      "datatype": "rdf:langString",
+      "cardinality": "resource 0..1"
+    },
+    {
+      "term": "verificationNotes",
+      "definition": "The bounded verification limitations retained for an achievement standard.",
+      "domain": ["AchievementStandard"],
+      "datatype": "rdf:langString",
+      "cardinality": "AchievementStandard 0..1"
+    },
+    {
+      "term": "version",
+      "definition": "The curriculum version label.",
+      "domain": ["Curriculum"],
+      "datatype": "xsd:string",
+      "cardinality": "Curriculum exactly 1"
+    },
+    {
+      "term": "workstream",
+      "definition": "The repository workstream file associated with a generated resource.",
+      "domain": ["AchievementStandard", "LearningTopic", "LearningCluster", "CoverageGap"],
+      "datatype": "xsd:string",
+      "cardinality": "resource 0..1"
     },
     {
       "term": "topicType",
@@ -399,6 +560,13 @@
       "cardinality": "PrerequisiteAssertion 1..* across languages"
     },
     {
+      "term": "legacyPrerequisiteStrength",
+      "definition": "The exact hard or soft source token retained alongside its normalized prerequisite strength.",
+      "domain": ["PrerequisiteAssertion"],
+      "datatype": "xsd:string",
+      "cardinality": "PrerequisiteAssertion exactly 1"
+    },
+    {
       "term": "assertionBasis",
       "definition": "The method, workstream, or evidence basis used to create a qualified assertion.",
       "domain": ["PrerequisiteAssertion", "StandardTopicAlignment"],
@@ -427,9 +595,65 @@
       "cardinality": "StandardTopicAlignment exactly 1"
     },
     {
+      "term": "sourceAlignmentRelationship",
+      "definition": "The exact alignment relationship token retained from the canonical mapping record.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:string",
+      "cardinality": "StandardTopicAlignment exactly 1"
+    },
+    {
+      "term": "sourceConfidenceValue",
+      "definition": "The exact source confidence token retained separately from the numeric working confidence.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:string",
+      "cardinality": "StandardTopicAlignment exactly 1"
+    },
+    {
+      "term": "sourceAlignmentNote",
+      "definition": "The exact optional note retained from the canonical alignment record.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:string",
+      "cardinality": "StandardTopicAlignment 0..1"
+    },
+    {
+      "term": "sourceAlignmentRationale",
+      "definition": "The exact optional legacy rationale retained separately from an alignment note.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:string",
+      "cardinality": "StandardTopicAlignment 0..1"
+    },
+    {
+      "term": "confidenceDefaulted",
+      "definition": "Whether numeric confidence came from the release default rather than a numeric source token.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:boolean",
+      "cardinality": "StandardTopicAlignment exactly 1"
+    },
+    {
+      "term": "defaultingPolicy",
+      "definition": "The named release policy used when a numeric working value is defaulted.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:string",
+      "cardinality": "StandardTopicAlignment 0..1"
+    },
+    {
+      "term": "sourceVerificationStatus",
+      "definition": "The exact optional verification-status token retained from the canonical alignment record.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:string",
+      "cardinality": "StandardTopicAlignment 0..1"
+    },
+    {
+      "term": "verificationStatusDefaulted",
+      "definition": "Whether the alignment verification record uses the release default because the source omitted a status.",
+      "domain": ["StandardTopicAlignment"],
+      "datatype": "xsd:boolean",
+      "cardinality": "StandardTopicAlignment exactly 1"
+    },
+    {
       "term": "note",
       "definition": "An optional human-readable qualification or limitation on an assertion or verification record.",
-      "domain": ["PrerequisiteAssertion", "StandardTopicAlignment", "VerificationRecord"],
+      "domain": ["PrerequisiteAssertion", "StandardTopicAlignment", "VerificationRecord", "CoverageGap"],
       "datatype": "rdf:langString",
       "cardinality": "resource 0..* across languages"
     },
@@ -471,9 +695,16 @@
     {
       "term": "officialTextIncluded",
       "definition": "Whether official source wording is included in the described resource.",
-      "domain": ["DatasetRelease", "AchievementStandard", "LearningTopic"],
+      "domain": ["DatasetRelease", "Curriculum", "AchievementStandard", "LearningTopic", "SourceDocument"],
       "datatype": "xsd:boolean",
       "cardinality": "resource exactly 1"
+    },
+    {
+      "term": "sourceGapSeverityPresent",
+      "definition": "Whether the canonical coverage-gap record supplied an explicit severity before normalization.",
+      "domain": ["CoverageGap"],
+      "datatype": "xsd:boolean",
+      "cardinality": "CoverageGap exactly 1"
     },
     {
       "term": "gapCategory",

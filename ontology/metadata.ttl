@@ -14,18 +14,18 @@
   dcterms:issued "2026-07-10"^^xsd:date ;
   dcterms:format "text/turtle", "application/ld+json" ;
   dcterms:conformsTo
-    <https://dexa.art/learnmap/ontology/0.1.0-p1>,
+    <https://dexa.art/learnmap/ontology/0.2.0-p2>,
     <https://dexa.art/learnmap/ontology/shapes.ttl> ;
   dcterms:rights "HOLD — work-level reuse and redistribution terms remain unresolved; ontology conversion does not clear source rights."@en ;
   prov:wasDerivedFrom
     <https://dexa.art/learnmap/data/kr/manifest.json>,
     <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> .
 
-<https://dexa.art/learnmap/ontology/0.1.0-p1>
+<https://dexa.art/learnmap/ontology/0.2.0-p2>
   a owl:Ontology, prov:Entity ;
   dcterms:title "Korean Elementary Learning Map static ontology contract"@en ;
-  dcterms:hasVersion "0.1.0-p1" ;
-  owl:versionInfo "0.1.0-p1" ;
+  dcterms:hasVersion "0.2.0-p2" ;
+  owl:versionInfo "0.2.0-p2" ;
   dcterms:issued "2026-07-10"^^xsd:date ;
   dcterms:format "text/turtle" ;
   dcterms:source <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> ;
