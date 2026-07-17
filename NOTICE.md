@@ -1,15 +1,13 @@
 # NOTICE
 
-## Upstream attribution notice
+## Authorship and license
 
-The following attribution notice is preserved exactly from the upstream README:
+**Korean Elementary Learning Map (한국 초등 학습지도)** is an original work by DECK (github.com/DECK6), independently built from publicly available information about the Korean 2022 Revised National Curriculum. The repository — curriculum records, subject model, 620-standard mapping, 1,956 topics, 1,894 edges, generators, validators, ontology artifacts, and audits — is distributed under the [MIT License](LICENSE).
 
-> Marble Skill Taxonomy (v1) · © Generative Spark, Inc. (Marble) · https://withmarble.com · licensed under ODbL 1.0 (database) and CC BY-SA 4.0 (content).
+## Inspiration acknowledgment
 
-Upstream repository: https://github.com/withmarbleapp/os-taxonomy
+The learning-graph approach was inspired by `withmarbleapp/os-taxonomy` / **Marble Skill Taxonomy** (© Generative Spark, Inc., https://withmarble.com). No Marble database content or authored content is copied, translated, or adapted in this repository; the acknowledgment is for the approach only. This project is not a translation of, or an official derivative of, Marble.
 
-## Project relationship statement
+## Non-endorsement and official-source rights
 
-**Korean Elementary Learning Map (한국 초등 학습지도)** was independently built for the Korean 2022 Revised National Curriculum and was inspired by the learning-graph approach demonstrated by `withmarbleapp/os-taxonomy` / **Marble Skill Taxonomy**. Its Korean curriculum records, subject model, 620-standard mapping, 1,956 topics, 1,894 edges, generators, validators, and audits were not authored by Marble. It is not a translation, an official derivative of Marble, or an official Ministry of Education, National Education Commission, or NCIC publication.
-
-Any reused or adapted upstream database structural elements remain subject to ODbL 1.0, and any reused or adapted upstream-authored content remains subject to CC BY-SA 4.0. Korean official-source rights are separate and remain on the work-level KOGL/commercial-reuse HOLD described in `PROVENANCE.md`.
+This project is not an official Ministry of Education, National Education Commission, or NCIC publication, and it does not diagnose individual learners. The MIT License covers repository artifacts only; Korean official-source rights are separate and remain on the work-level KOGL/commercial-reuse HOLD described in `PROVENANCE.md`.
