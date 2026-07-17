@@ -4,7 +4,7 @@
 
 The repository maintainers govern the **Korean Elementary Curriculum Learning Ontology** series at `https://dexa.art/learnmap/ontology`. A formal release means the seven automated gates documented in `docs/ontology-release-report.md` passed for the tracked artifacts. It does not mean that the Ministry of Education (MOE), National Education Commission, or National Curriculum Information Center (NCIC) approved the model.
 
-Automated review, external domain review, source-data coverage, and source rights are independent states. The P3 automated gate is passed; curriculum, subject, pedagogy, and classroom review remains ongoing; 43 source-data coverage gaps remain explicit; and official-source reuse rights remain `HOLD`. The ontology models curriculum records and suggested relationships. It must not be used to diagnose an individual learner.
+Automated review, external domain review, source-data coverage, and source rights are independent states. The P3 automated gate is passed; curriculum, subject, pedagogy, and classroom review remains ongoing; 43 source-data coverage gaps remain explicit; and official-source reuse rights are `cleared` (state-published public government documents). The ontology models curriculum records and suggested relationships. It must not be used to diagnose an individual learner.
 
 ## Version semantics
 

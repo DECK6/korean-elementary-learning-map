@@ -3,7 +3,7 @@
 
 <urn:fixture:release> a lm:DatasetRelease ;
   lm:identifier "fixture-release" ;
-  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ;
+  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ;
   lm:officialTextIncluded false ;
   lm:hasCurriculum <urn:fixture:curriculum> ;
   lm:containsTopic
@@ -246,7 +246,7 @@
   lm:identifier "fixture-source" ;
   lm:preferredLabel "Fixture source"@en ;
   lm:sourceType "repository-fixture" ;
-  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ;
+  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ;
   lm:officialTextIncluded false ;
   lm:hasSourceLocator <urn:fixture:locator> ;
   lm:hasVerificationRecord <urn:fixture:vr-source> .

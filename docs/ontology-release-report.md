@@ -16,7 +16,7 @@ The tracked `0.3.0-p3` artifacts qualify for the formal label **Korean Elementar
 | External domain review | Ongoing |
 | Official status | Independent, non-official |
 | Learner diagnosis | Not supported |
-| Official-source rights | `HOLD`; no permission grant |
+| Official-source rights | `cleared`; state-published public government documents |
 | Official text | Excluded |
 
 ## Seven-gate evidence
@@ -45,6 +45,6 @@ The exact byte sizes and SHA-256 values for every ontology source, query, fixtur
 
 The learning-graph approach was inspired by `withmarbleapp/os-taxonomy` / Marble Skill Taxonomy. The Korean curriculum records, subject model, 620-standard mapping, 1,956 topics, 1,894 edges, ontology conversion, generators, validators, and audit evidence were built independently. The release is not a Marble translation or official derivative.
 
-Coverage, format validation, review, and rights are separate axes. Passing the formal gates does not clear the work-level official-source rights `HOLD`, imply official endorsement, convert suggested prerequisite relations into universal learning laws, or authorize learner diagnosis.
+Coverage, format validation, review, and rights are separate axes. Passing the formal gates does not by itself determine the official-source rights status, imply official endorsement, convert suggested prerequisite relations into universal learning laws, or authorize learner diagnosis.
 
 Generated RDF runtime artifacts exclude official source text and public official-source URLs. They retain repository-local source identifiers, source locators, hashes, rights status, and verification records.

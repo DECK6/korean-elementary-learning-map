@@ -7,7 +7,7 @@ lm:DatasetReleaseShape a sh:NodeShape ;
   sh:targetClass lm:DatasetRelease ;
   sh:closed false ;
   sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ] ;
+  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ] ;
   sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ] ;
   sh:property [ sh:path lm:hasCurriculum ; sh:minCount 1 ; sh:class lm:Curriculum ] ;
   sh:property [ sh:path lm:containsTopic ; sh:minCount 1 ; sh:class lm:LearningTopic ] ;
@@ -350,7 +350,7 @@ lm:SourceDocumentShape a sh:NodeShape ;
   sh:property [ sh:path lm:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:preferredLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
   sh:property [ sh:path lm:sourceType ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
-  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ; sh:message "SourceDocument rights status must remain HOLD."@en ] ;
+  sh:property [ sh:path lm:rightsStatus ; sh:minCount 1 ; sh:maxCount 1 ; sh:hasValue <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ; sh:message "SourceDocument rights status must remain cleared."@en ] ;
   sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ; sh:message "SourceDocument must not claim that official text is included."@en ] ;
   sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] .
 

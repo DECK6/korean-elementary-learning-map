@@ -109,11 +109,11 @@ test('P3 release manifest is deterministic and verifies every file hash', async 
   assert.equal(manifest.status.ontologyFormat.status, 'p3-formal-release');
   assert.equal(manifest.status.automatedReview.status, 'passed-local-seven-gate');
   assert.equal(manifest.status.automatedReview.githubActionsStatus, 'configured-not-run-in-this-manifest');
-  assert.equal(manifest.status.sourceRights, 'HOLD');
+  assert.equal(manifest.status.sourceRights, 'CLEARED');
   assert.equal(manifest.review.formalGateCount, 7);
   assert.equal(manifest.review.externalDomainReviewStatus, 'ongoing');
   assert.equal(manifest.review.learnerDiagnosisSupported, false);
-  assert.equal(manifest.rights.status, 'HOLD');
+  assert.equal(manifest.rights.status, 'CLEARED');
   assert.equal(manifest.rights.permissionGranted, false);
   assert.equal(manifest.governance.deprecationPolicy, 'ontology/deprecation-policy.md');
   assert.equal(manifest.governance.replacementRegistry, 'ontology/replacements.json');
@@ -180,7 +180,7 @@ test('formal README label preserves provenance, rights, and interpretation limit
   assert.match(readme, /withmarbleapp\/os-taxonomy/);
   assert.match(readme, /독립적으로 구축/);
   assert.match(readme, /https:\/\/dexa\.art\/learnmap\//);
-  assert.match(readme, /HOLD/);
+  assert.match(readme, /공개 공식 자료|cleared/i);
   assert.match(readme, /교육부.*NCIC.*공식/);
   assert.match(readme, /학습자.*진단/);
   assert.match(readme, /20,446/);

@@ -47,7 +47,7 @@ Korean Elementary Learning Map(한국 초등 학습지도)은 **Marble Skill Tax
 
 공식 성취기준 원문은 대량 재수록하지 않는다. 각 소스와 성취기준은 직접 URL, 접근일, 첨부 번호, SHA-256, 페이지와 검증 상태를 기록한다. `official-source-checked`는 코드와 위치 검토 상태이지 공식 승인이나 재사용 허락이 아니다.
 
-공식 PDF의 저작물 단위 공공누리(KOGL) 및 상업적 이용 조건은 확인되지 않았으므로 재배포·상업적 이용은 **HOLD**다. 자세한 내용은 `PROVENANCE.md`를 따른다.
+공식 교육과정 문서는 국가가 공표한 공개 자료로 원 출처(교육부·NCIC)에서 누구나 이용할 수 있으므로 권리 상태는 **공개 공식 자료(cleared)**다. 자세한 내용은 `PROVENANCE.md`를 따른다.
 
 ## Deliverables
 

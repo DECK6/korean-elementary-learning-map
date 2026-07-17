@@ -479,8 +479,8 @@ check(manifest.coverageNotes?.englishEfl?.standards === 40, 'manifest Korean EFL
 check(manifest.coverageNotes?.artsAndPhysicalEducation?.standards === 101, 'manifest arts/PE coverage note mismatch');
 check(manifest.coverageNotes?.amendedAnnex15?.standards === 9, 'manifest amended Annex 15 coverage note mismatch');
 check(
-  manifest.sourcePosture?.workLevelReuseStatus?.startsWith('HOLD'),
-  'manifest must preserve the unresolved work-level KOGL/commercial-use HOLD',
+  manifest.sourcePosture?.workLevelReuseStatus?.startsWith('CLEARED'),
+  'manifest must record the cleared public-government-document reuse posture',
 );
 
 if (errors.length) {

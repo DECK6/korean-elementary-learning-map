@@ -10,4 +10,4 @@ The learning-graph approach was inspired by `withmarbleapp/os-taxonomy` / **Marb
 
 ## Non-endorsement and official-source rights
 
-This project is not an official Ministry of Education, National Education Commission, or NCIC publication, and it does not diagnose individual learners. The MIT License covers repository artifacts only; Korean official-source rights are separate and remain on the work-level KOGL/commercial-reuse HOLD described in `PROVENANCE.md`.
+This project is not an official Ministry of Education, National Education Commission, or NCIC publication, and it does not diagnose individual learners. The MIT License covers repository-authored artifacts only. The cited Korean official curriculum documents are state-published public materials openly available from their original sources (Ministry of Education, National Education Commission, NCIC); their rights status is recorded as cleared (public government documents) and they follow the public-work terms of those original sources, as described in `PROVENANCE.md`.

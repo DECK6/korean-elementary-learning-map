@@ -37,7 +37,7 @@ The integration preserves record-level verification status:
 - `public-doc-derived`: record is derived from the public curriculum source posture but remains less direct than line-level official verification.
 - `needs-official-code-check`: candidate records are useful for graph depth but must be reconciled with exact official code/text before final canonical release.
 
-Official standard text is not reproduced. Records store codes, source references, repository-authored or source-derived paraphrases, evidence notes, and assessment prompts. Work-level KOGL and commercial-use permission remain unresolved; the KR layer is under the explicit reuse HOLD documented in `PROVENANCE.md`.
+Official standard text is not reproduced. Records store codes, source references, repository-authored or source-derived paraphrases, evidence notes, and assessment prompts. The cited Korean curriculum documents are state-published public materials openly available from their original sources; the KR layer records this cleared reuse status as documented in `PROVENANCE.md`.
 
 ## Subject Rules
 

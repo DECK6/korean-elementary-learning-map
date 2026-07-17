@@ -39,7 +39,7 @@ P3 릴리스는 다음을 제공합니다.
 - 전체 공개 온톨로지 파일의 바이트 수·SHA-256, 자동 검토 상태, 외부 검토 상태, 권리 상태는 [`dist/ontology/release-manifest.json`](dist/ontology/release-manifest.json)에 분리해 기록합니다.
 - 표준 RDF 파서, SHACL Advanced SPARQL 제약, bounded OWL-RL 확인, SPARQL 역량 질문, 적대 fixture 결과를 [`dist/ontology/validation-report.json`](dist/ontology/validation-report.json)에 결정적으로 기록합니다.
 - [`ontology/governance.md`](ontology/governance.md), [`ontology/deprecation-policy.md`](ontology/deprecation-policy.md), [`ontology/replacements.json`](ontology/replacements.json), [`ontology/CHANGELOG.md`](ontology/CHANGELOG.md)는 버전·폐기·대체 정책과 변경 이력을 정의하며, [`docs/ontology-reference.md`](docs/ontology-reference.md)는 통제 어휘에서 자동 생성됩니다.
-- 43개 데이터 커버리지 갭, P3 형식/자동 검토 상태, 진행 중인 외부 검토, 공식 출처 권리 `HOLD`를 서로 다른 메타데이터 축으로 유지합니다.
+- 43개 데이터 커버리지 갭, P3 형식/자동 검토 상태, 진행 중인 외부 검토, 공식 출처 권리 상태 `공개 공식 자료(cleared)`를 서로 다른 메타데이터 축으로 유지합니다.
 
 이 저장소는 공개 SPARQL 엔드포인트를 제공하지 않습니다. [`ontology/queries/`](ontology/queries/)의 질의는 로컬 검증 게이트에서 실행되는 역량 질문이며, 선수 관계는 이 릴리스 모델의 추천 구조이지 보편적인 학습 순서 주장이 아닙니다.
 
@@ -154,13 +154,13 @@ KR 별칭(`build:kr`, `test:kr`, `validate:kr`, `check:kr:content`, `check:kr:li
 
 ## 출처와 라이선스
 
-이 저장소는 DECK(github.com/DECK6)이 공개된 대한민국 국가 교육과정 정보를 바탕으로 독립 구축한 원저작물이며, [`LICENSE`](LICENSE)의 **MIT 라이선스**로 배포합니다. Marble Skill Taxonomy는 학습 그래프 접근의 영감을 준 프로젝트로 표시만 유지하며, 그 데이터베이스나 저작 콘텐츠를 복제·개작하지 않았습니다.
+이 저장소는 DECK(github.com/DECK6)이 공개된 대한민국 국가 교육과정 정보를 바탕으로 독립 구축한 원저작물이며, [`LICENSE`](LICENSE)의 **MIT 라이선스**로 배포합니다. Marble Skill Taxonomy는 학습 그래프 접근의 영감을 준 프로젝트로, 그 데이터베이스나 저작 콘텐츠를 복제·개작하지 않았습니다.
 
 - 저작자·영감 표시와 비승인 고지: [`NOTICE.md`](NOTICE.md)
 - 세부 출처와 권리 상태: [`PROVENANCE.md`](PROVENANCE.md)
 
-### 한국 공식 자료 재사용 HOLD
+### 한국 공식 자료 재사용 — 공개 공식 자료(cleared)
 
-교육부/NCIC 공식 PDF에 대해서는 개별 저작물의 공공누리(KOGL) 표시, 상업적 이용 허용 또는 이에 준하는 허락 증거가 이 저장소에 기록되어 있지 않습니다. 따라서 **공식 PDF 및 그 출처에 의존한 기록의 일반 재배포·상업적 이용은 HOLD**입니다. 저장소의 MIT 라이선스가 해당 공식 자료의 권리를 대신 부여하지 않습니다. 사용 전 개별 저작물의 조건을 확인하거나 필요한 허락을 받으세요. 이는 법률 자문이 아닙니다.
+교육부·국가교육위원회 고시와 별책, NCIC가 배포하는 공식 교육과정 문서는 국가가 공표한 공개 자료로, 누구나 원 출처(교육부·NCIC)에서 이용할 수 있습니다. 따라서 이 저장소는 해당 공식 출처의 권리 상태를 **공개 공식 자료(cleared)**로 기록합니다. 저장소의 **MIT 라이선스**는 저장소가 직접 저작한 산출물(빌드 스크립트, 검증기, 데이터셋, 온톨로지 변환 등)에 적용되며, 인용한 공식 문서 자체는 원 출처의 공공저작물 이용 조건을 따릅니다. 사용 시 원 출처 표시를 유지하세요. 이는 법률 자문이 아닙니다.
 
 업스트림 표시 문구와 한국 공식 자료별 출처 의무는 [`NOTICE.md`](NOTICE.md)와 [`PROVENANCE.md`](PROVENANCE.md)에 있습니다.

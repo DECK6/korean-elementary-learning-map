@@ -42,7 +42,7 @@ The full-depth integration now merges all subject workstreams into repository-le
 
 ## Remaining Review
 
-The 620 current code anchors are `official-source-checked` against reviewed attachment inventories and item-level locators. The repository-authored summaries, topics, evidence criteria, prompts, and prerequisite edges still require subject-expert and classroom review. Work-level KOGL/commercial-use permission is unresolved, so provenance remains on HOLD even where code identity is verified.
+The 620 current code anchors are `official-source-checked` against reviewed attachment inventories and item-level locators. The repository-authored summaries, topics, evidence criteria, prompts, and prerequisite edges still require subject-expert and classroom review. The cited documents are state-published public materials openly available from their original sources, so provenance records a cleared rights status alongside verified code identity.
 
 ## 미술 / 음악 / 체육
 

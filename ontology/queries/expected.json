@@ -115,7 +115,7 @@
   },
   "cq-12-rights-hold.rq": {
     "allEqual": {
-      "rights": "https://dexa.art/learnmap/vocab/#/RightsStatus/hold"
+      "rights": "https://dexa.art/learnmap/vocab/#/RightsStatus/cleared"
     },
     "nonNull": [
       "resource",

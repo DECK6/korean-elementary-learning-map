@@ -365,8 +365,8 @@ const curriculumStandards = {
   textPolicy: {
     standardTextIncluded: false,
     summaryPolicy: 'Original summaries, source-derived paraphrases, evidence notes, and assessment prompts only; no bulk verbatim curriculum text.',
-    licensingStatus: 'work-level-rights-unresolved',
-    licenseCaution: 'HOLD: no work-specific KOGL mark or commercial-use permission has been recorded for the cited Korean curriculum PDFs. See PROVENANCE.md before redistribution or commercial use.',
+    licensingStatus: 'public-government-document',
+    licenseCaution: 'CLEARED: the cited Korean curriculum documents are state-published public materials openly available from their original sources (Ministry of Education, National Education Commission, NCIC). Preserve attribution and see PROVENANCE.md.',
   },
   sourceCount: sources.length,
   sources,
@@ -489,7 +489,7 @@ writeJson(resolve(KR_DATA, 'manifest.json'), {
   sourcePosture: {
     recordSchema: 'All integrated source records use id, name, url, accessDate, usage, and sourceType; stale portal aliases and dead notice URLs are excluded.',
     verification: 'Official-inventory gates bind every curriculum to an exact standard count and direct official PDF source.',
-    workLevelReuseStatus: 'HOLD pending work-specific KOGL and commercial-use evidence; see PROVENANCE.md.',
+    workLevelReuseStatus: 'CLEARED: the cited Korean official curriculum documents are state-published public materials openly available from their original sources; see PROVENANCE.md.',
   },
 });
 

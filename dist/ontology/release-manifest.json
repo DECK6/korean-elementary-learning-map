@@ -55,28 +55,28 @@
   "datasetRelease": "kr-full-depth-v0.4",
   "files": [
     {
-      "bytes": 31221550,
+      "bytes": 31221604,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "d6152367e6635caae96c198a186034dd186b7547806914603dc463be72917580"
+      "sha256": "247803f846edb204d92beb9141a1366181aecb7044aac7ce889c1c13c18479f0"
     },
     {
-      "bytes": 22739260,
+      "bytes": 22739314,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "aec25621de747e995509ad425038a09f7753117cd9aeddb083476ac2fdf7136d"
+      "sha256": "c3e1ed8b2b71a4c8640132c01e8bf778f20a6e6b35f0781f2260d97ced4d912e"
     },
     {
       "bytes": 1848,
       "mediaType": "application/json",
       "path": "dist/ontology/manifest.json",
-      "sha256": "c3da29d40d411f3e9f6b56854c8363951a5c9f717a3c9aa48aaeddebfe343bce"
+      "sha256": "6b06f20ecd13af386909b5d095e9e99fecdaa8946dffb75ca6359f8a44c601d1"
     },
     {
-      "bytes": 15303,
+      "bytes": 15312,
       "mediaType": "application/json",
       "path": "dist/ontology/validation-report.json",
-      "sha256": "aa1ad2ed7d22dd6d244aa099590035a0e6d70713468652f789dfdb23af4649bc"
+      "sha256": "fd7e627255144a2f4510aa8ad6926dfd6e6a15c85b24007894ab95a68af2d001"
     },
     {
       "bytes": 26047,
@@ -85,10 +85,10 @@
       "sha256": "c1cc5ed16658c37f76672cbbdee7163836bbd8b146bc9892d86e6ee87f908b7a"
     },
     {
-      "bytes": 4515,
+      "bytes": 4545,
       "mediaType": "text/markdown",
       "path": "docs/ontology-release-report.md",
-      "sha256": "61d81f091eb34b6c30d5fd94b91df854466c7bd8858230555c4ea974427da3da"
+      "sha256": "33bfcfc788968444a8e7d7a7e37c6f12e7af4b1648418200b7ed1391e66e95a0"
     },
     {
       "bytes": 1808,
@@ -97,22 +97,22 @@
       "sha256": "b155dffb50bdf7cfa17cba034ee1407ceb1539a8d11901fbfe96684b4eef7744"
     },
     {
-      "bytes": 9040,
+      "bytes": 9068,
       "mediaType": "text/markdown",
       "path": "ontology/README.md",
-      "sha256": "4138dc0dc41e29f95b5c300314ec57968ec09e9245128088312d0da49901f29c"
+      "sha256": "f328cc8e79d2603d21818dd369aad009988d15d304a49334a7420b65ba6101c9"
     },
     {
-      "bytes": 4926,
+      "bytes": 4935,
       "mediaType": "text/markdown",
       "path": "ontology/competency-questions.md",
-      "sha256": "69ad72d15cfb79d52f4a5c66040d8fddcd3a22d0ad76b4db147fbd2047bc324f"
+      "sha256": "8da3c3a71857c14fa3f08e44c090b7e66fe7bf1fd492d928a2ea1976083909d1"
     },
     {
-      "bytes": 8527,
+      "bytes": 8622,
       "mediaType": "text/markdown",
       "path": "ontology/conceptual-model.md",
-      "sha256": "b91b37bf282ea3698413aaf45af1f972981fe20d352582b9dd2effdd60d8be42"
+      "sha256": "801a2bfbbd9540138099dff8815afb0ee04e8406b1a3beb7a881a675a71c8e3c"
     },
     {
       "bytes": 6714,
@@ -121,10 +121,10 @@
       "sha256": "d84acaa8647188651a90b2b03c298ea9d29af9cc9b42a86999d7bf2fdb77bd44"
     },
     {
-      "bytes": 38973,
+      "bytes": 38986,
       "mediaType": "application/json",
       "path": "ontology/controlled-vocabulary.json",
-      "sha256": "27193f4724342b3605a9700c7cb224f8d9d98847b52a8139bc00841210150435"
+      "sha256": "b9df93329ea4f137f44102f071f4cabf2fc358901e94da3f159e8ed27bf9526b"
     },
     {
       "bytes": 1674,
@@ -151,10 +151,10 @@
       "sha256": "9996fb85eed6d228f8397beaaf79721b6f4b48e553ccf0fbeb1fce04ffca6408"
     },
     {
-      "bytes": 1249,
+      "bytes": 1252,
       "mediaType": "application/json",
       "path": "ontology/fixtures/adversarial/expected.json",
-      "sha256": "123dfd826fe65f22bf58270380b13e1f59333bd2a98005d40b67fab46b56f227"
+      "sha256": "c0338edf40d8e65f7ae57b56f08c5465c625068ee3b180a0190a8b4574597b9a"
     },
     {
       "bytes": 165,
@@ -187,22 +187,22 @@
       "sha256": "f04042f069d3231c0e5f6721b167cd631cb23f4e47064a6a1b22b5067177c6f1"
     },
     {
-      "bytes": 589,
+      "bytes": 586,
       "mediaType": "text/turtle",
       "path": "ontology/fixtures/adversarial/source-status-incoherence.ttl",
-      "sha256": "3dbcfbd67db136472ad43454107817c6e811539e50daefb7162a5b269c18ffb5"
+      "sha256": "c7d1c22edbe06953f0cd72a1ff364af2f5e29d3860ba9563178f9c59b351c870"
     },
     {
-      "bytes": 12196,
+      "bytes": 12202,
       "mediaType": "text/turtle",
       "path": "ontology/fixtures/canonical-positive.ttl",
-      "sha256": "53d01197e9a1f00350ea8a8cd408be979cc2ab785f00b273a84e792a76a3cd5c"
+      "sha256": "e6cacbcba4f9c9efcd30d6fb268cfd9b45259e9e9bdbc89127f8eea3ac8a48b2"
     },
     {
-      "bytes": 3502,
+      "bytes": 3548,
       "mediaType": "text/markdown",
       "path": "ontology/governance.md",
-      "sha256": "8a366ca3d4bef02152cbcb6c6e89e0fa19eef467318877b106242f341fa619fe"
+      "sha256": "167f605aa1ddf94bd398ad881b86b57956c127903ec23fc90a3d05849473aca0"
     },
     {
       "bytes": 27655,
@@ -211,10 +211,10 @@
       "sha256": "6fb21cf92194de4a61c256c80bfc5863660f3f107d3d1299bf7c0703a523e111"
     },
     {
-      "bytes": 3820,
+      "bytes": 4018,
       "mediaType": "text/turtle",
       "path": "ontology/metadata.ttl",
-      "sha256": "d9712e90cd63fe41cacca279782d9a24552a793bbcceaf045415b1376a8caee4"
+      "sha256": "f5655fee16f1fcb9c995d8df9749da2efcc048bcd48b5c1d064b170e5d87a858"
     },
     {
       "bytes": 434,
@@ -307,10 +307,10 @@
       "sha256": "64380b7dc3c4ddddec888ddc8dc13d5cb6d9c44fb74c4eabc754e5cc9b6333d6"
     },
     {
-      "bytes": 4350,
+      "bytes": 4353,
       "mediaType": "application/json",
       "path": "ontology/queries/expected.json",
-      "sha256": "30d10091d3d9927ba439f1e7dd39c34bf73000a391ac93fb55e4c45684ffa02f"
+      "sha256": "8d9d59fabb7f3f5aa6b603ff2ec340940aef48523e0e42cb94c4d37981eb6b0a"
     },
     {
       "bytes": 250,
@@ -319,10 +319,10 @@
       "sha256": "49bdba6fa88ed84d672bef2b152f0e989bda7ab9951186386677bc51d4ef69a2"
     },
     {
-      "bytes": 19873,
+      "bytes": 19882,
       "mediaType": "text/turtle",
       "path": "ontology/shapes.ttl",
-      "sha256": "c869fc1b4f7fee0afb47226299de2424926010343d070b63fb7a51f71b81fa60"
+      "sha256": "08a5eb29f59dcb4ee1afa5d8dd6393612f97faf77ab8eb05e44f93392d39458c"
     },
     {
       "bytes": 112,
@@ -337,10 +337,10 @@
       "sha256": "db614e7a90260ce6fe26dd0ae17c91060ac4b729f208193b50684414cfe4926b"
     },
     {
-      "bytes": 15369,
+      "bytes": 15435,
       "mediaType": "text/markdown",
       "path": "ontology/vocabulary.md",
-      "sha256": "1db5c5b180cef956fc8533a1102b04c2b7ea73bc4ced5d3a1c180449db68686e"
+      "sha256": "98fea4193c8025dbefb70672297658d5fe5f23adfe953d6d5e9fc1d338d6cbdd"
     }
   ],
   "formatVersion": 1,
@@ -368,10 +368,10 @@
     "standardsValidation": "passed-with-pinned-tools"
   },
   "rights": {
-    "basis": "work-level-rights-unresolved",
+    "basis": "public-government-document",
     "officialTextIncluded": false,
     "permissionGranted": false,
-    "status": "HOLD"
+    "status": "CLEARED"
   },
   "status": {
     "automatedReview": {
@@ -393,7 +393,7 @@
       "reasonerGate": true,
       "status": "p3-formal-release"
     },
-    "sourceRights": "HOLD"
+    "sourceRights": "CLEARED"
   },
   "title": "Korean Elementary Curriculum Learning Ontology"
 }

@@ -96,7 +96,7 @@ EXPECTED_RELATIONS = {
 }
 
 ALLOWED_GRADE_BANDS = {"1-2", "3-4", "5-6", "3-6", "1-6"}
-RIGHTS_HOLD = URIRef(f"{VOCABULARY_NAMESPACE}RightsStatus/hold")
+RIGHTS_CLEARED = URIRef(f"{VOCABULARY_NAMESPACE}RightsStatus/cleared")
 
 
 CARDINALITY_PROFILE: dict[str, dict[URIRef, tuple[int, int | None]]] = {
@@ -662,13 +662,13 @@ def validate_grade_bands(graph: Graph) -> dict[str, Any]:
 def validate_source_rights(graph: Graph) -> dict[str, Any]:
     errors = []
     for subject in sorted(graph.subjects(RDF.type, LM.DatasetRelease), key=term_key):
-        if graph.value(subject, LM.rightsStatus) != RIGHTS_HOLD:
-            errors.append(f"{term_key(subject)} rightsStatus is not HOLD")
+        if graph.value(subject, LM.rightsStatus) != RIGHTS_CLEARED:
+            errors.append(f"{term_key(subject)} rightsStatus is not cleared")
         if graph.value(subject, LM.officialTextIncluded).toPython() is not False:
             errors.append(f"{term_key(subject)} officialTextIncluded is not false")
     for subject in sorted(graph.subjects(RDF.type, LM.SourceDocument), key=term_key):
-        if graph.value(subject, LM.rightsStatus) != RIGHTS_HOLD:
-            errors.append(f"{term_key(subject)} rightsStatus is not HOLD")
+        if graph.value(subject, LM.rightsStatus) != RIGHTS_CLEARED:
+            errors.append(f"{term_key(subject)} rightsStatus is not cleared")
         official = graph.value(subject, LM.officialTextIncluded)
         if official is None or official.toPython() is not False:
             errors.append(f"{term_key(subject)} officialTextIncluded is not false")
@@ -681,7 +681,7 @@ def validate_source_rights(graph: Graph) -> dict[str, Any]:
                 errors.append(f"{term_key(subject)} officialTextIncluded is not false")
     return {
         "pass": not errors,
-        "rightsHoldResources": len(set(graph.subjects(LM.rightsStatus, RIGHTS_HOLD))),
+        "rightsClearedResources": len(set(graph.subjects(LM.rightsStatus, RIGHTS_CLEARED))),
         "officialTextIncludedTrueCount": sum(
             1 for _ in graph.subjects(LM.officialTextIncluded, Literal(True, datatype=XSD.boolean))
         ),

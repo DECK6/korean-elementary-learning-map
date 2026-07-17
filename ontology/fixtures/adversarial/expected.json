@@ -41,7 +41,7 @@
   },
   "source-status-incoherence.ttl": {
     "expectedFragments": [
-      "SourceDocument rights status must remain HOLD."
+      "SourceDocument rights status must remain cleared."
     ]
   }
 }

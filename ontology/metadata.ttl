@@ -8,7 +8,7 @@
   a lm:DatasetRelease, prov:Entity ;
   lm:identifier "kr-full-depth-v0.4" ;
   lm:status "formal-ontology-release" ;
-  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ;
+  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ;
   lm:officialTextIncluded false ;
   lm:hasVerificationRecord <https://dexa.art/learnmap/#/verification/ontology-p3-formal-gates> ;
   dcterms:title "Korean Elementary Curriculum Learning Ontology — kr-full-depth-v0.4"@en ;
@@ -18,7 +18,7 @@
   dcterms:conformsTo
     <https://dexa.art/learnmap/ontology/0.3.0-p3>,
     <https://dexa.art/learnmap/ontology/shapes.ttl> ;
-  dcterms:rights "HOLD — work-level reuse and redistribution terms remain unresolved; ontology conversion does not clear source rights."@en ;
+  dcterms:rights "CLEARED — the cited Korean official curriculum documents (Ministry of Education and National Education Commission notices and appendices, distributed via NCIC) are state-published public materials openly available from their original sources; this ontology conversion neither adds nor removes those public terms."@en ;
   prov:wasDerivedFrom
     <https://dexa.art/learnmap/data/kr/manifest.json>,
     <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> .

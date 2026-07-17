@@ -4,7 +4,7 @@
   lm:identifier "bad-source" ;
   lm:preferredLabel "Source"@en ;
   lm:sourceType "official-pdf" ;
-  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ;
+  lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/hold> ;
   lm:officialTextIncluded true ;
   lm:hasVerificationRecord <urn:fixture:bad-source-verification> .
 

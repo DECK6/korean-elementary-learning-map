@@ -75,7 +75,7 @@
       },
       "cq-12-rights-hold.rq": {
         "pass": true,
-        "resultSha256": "d6d492fff6176e6a5362a3c992eed6a060f2bc3cf8befa9a376d2cb39cb6e07f",
+        "resultSha256": "109eaf248c2bcb71727e5aa366b41e3149ceb9ad0fb5b84b5110261fedcde47d",
         "rowCount": 18
       },
       "cq-13-topic-types.rq": {
@@ -237,10 +237,10 @@
       "source-status-incoherence.ttl": {
         "conforms": false,
         "expectedFragments": [
-          "SourceDocument rights status must remain HOLD."
+          "SourceDocument rights status must remain cleared."
         ],
         "fragmentHits": {
-          "SourceDocument rights status must remain HOLD.": true
+          "SourceDocument rights status must remain cleared.": true
         },
         "pass": true,
         "violationCount": 2
@@ -257,10 +257,10 @@
   "graphs": {
     "generatedEquivalence": {
       "isomorphic": true,
-      "jsonldCanonicalHash": "14460684208487429783551085362780825301296108592782679697608687316836128999707012827",
+      "jsonldCanonicalHash": "14460699274684865712714805222137068092716207752243585110818233027865163747193032691",
       "jsonldTripleCount": 249461,
       "pass": true,
-      "turtleCanonicalHash": "14460684208487429783551085362780825301296108592782679697608687316836128999707012827",
+      "turtleCanonicalHash": "14460699274684865712714805222137068092716207752243585110818233027865163747193032691",
       "turtleTripleCount": 249461
     },
     "parsedTripleCounts": {
@@ -272,23 +272,23 @@
     }
   },
   "inputHashes": {
-    "data/kr/curriculum-standards.json": "6b4b0edb173f116832935bcb3bec2464d174f032cb5bdd2b3e80149630968f9e",
+    "data/kr/curriculum-standards.json": "aaaebb939c17fcc11a808fef3ae8164823425f74bfe8092a4a66941cb8c33335",
     "data/kr/dependencies.json": "e09a6137bb70edf2a0b0928c05a4bd3f102c80845846ff13b10767ef4ceafe2c",
-    "dist/ontology/learning-map.jsonld": "d6152367e6635caae96c198a186034dd186b7547806914603dc463be72917580",
-    "dist/ontology/learning-map.ttl": "aec25621de747e995509ad425038a09f7753117cd9aeddb083476ac2fdf7136d",
+    "dist/ontology/learning-map.jsonld": "247803f846edb204d92beb9141a1366181aecb7044aac7ce889c1c13c18479f0",
+    "dist/ontology/learning-map.ttl": "c3e1ed8b2b71a4c8640132c01e8bf778f20a6e6b35f0781f2260d97ced4d912e",
     "ontology/fixtures/adversarial/direct-cycle.ttl": "1994e576381ec5282e2b9fec73911ec8416fa0114c88cd0ccd2d35f3838b460c",
     "ontology/fixtures/adversarial/direct-self-loop.ttl": "588b3bd50a334b632f967a5ccacbcdfb3294d98dd4cfdbbf4f9b8c6efdd193c3",
     "ontology/fixtures/adversarial/duplicate-prerequisite-assertion.ttl": "9996fb85eed6d228f8397beaaf79721b6f4b48e553ccf0fbeb1fce04ffca6408",
-    "ontology/fixtures/adversarial/expected.json": "123dfd826fe65f22bf58270380b13e1f59333bd2a98005d40b67fab46b56f227",
+    "ontology/fixtures/adversarial/expected.json": "c0338edf40d8e65f7ae57b56f08c5465c625068ee3b180a0190a8b4574597b9a",
     "ontology/fixtures/adversarial/invalid-grade-band.ttl": "d2df44d3efc853ffb4afaa3a916872c556ede3af05d266623782a1d505aa9cd5",
     "ontology/fixtures/adversarial/missing-inverse.ttl": "b1cf867ff38080366e7a8c21218c16096b758897059b973e4e54d0bab1d94351",
     "ontology/fixtures/adversarial/missing-qualifier.ttl": "992ce9b0e8af99110c5c5ab07c424a13d677e0fa4920b6c1ec832c8fffb8b56c",
     "ontology/fixtures/adversarial/missing-required-cardinality.ttl": "75f42a373ef38b92d8b4b6ec084eab0ca5e8c3e9462ae478adfe896888cdb138",
     "ontology/fixtures/adversarial/qualifier-edge-mismatch.ttl": "f04042f069d3231c0e5f6721b167cd631cb23f4e47064a6a1b22b5067177c6f1",
-    "ontology/fixtures/adversarial/source-status-incoherence.ttl": "3dbcfbd67db136472ad43454107817c6e811539e50daefb7162a5b269c18ffb5",
-    "ontology/fixtures/canonical-positive.ttl": "53d01197e9a1f00350ea8a8cd408be979cc2ab785f00b273a84e792a76a3cd5c",
+    "ontology/fixtures/adversarial/source-status-incoherence.ttl": "c7d1c22edbe06953f0cd72a1ff364af2f5e29d3860ba9563178f9c59b351c870",
+    "ontology/fixtures/canonical-positive.ttl": "e6cacbcba4f9c9efcd30d6fb268cfd9b45259e9e9bdbc89127f8eea3ac8a48b2",
     "ontology/learning-map.ttl": "6fb21cf92194de4a61c256c80bfc5863660f3f107d3d1299bf7c0703a523e111",
-    "ontology/metadata.ttl": "d9712e90cd63fe41cacca279782d9a24552a793bbcceaf045415b1376a8caee4",
+    "ontology/metadata.ttl": "f5655fee16f1fcb9c995d8df9749da2efcc048bcd48b5c1d064b170e5d87a858",
     "ontology/queries/cq-01-curriculum-standards.rq": "63513e20e84ccc2c2dcde7d0cb96cb834abaedfdd70a1e55eee06dd10089314a",
     "ontology/queries/cq-02-alignment-roles.rq": "acf2aa6f6b25eb76f0902cdf6624b1830731078fecc566269e852a70ea06924e",
     "ontology/queries/cq-03-evidence-prompts.rq": "8e771c2858bf9460c64a84047164736fbca145568131d2841486199ce84dbc6a",
@@ -304,8 +304,8 @@
     "ontology/queries/cq-13-topic-types.rq": "67ef3955d7fa9ae35750e14e26748c5b867fbfd71bf528822cc2d71551b286dc",
     "ontology/queries/cq-14-alignment-round-trip.rq": "e300e07c365ce8e9f6c55342adffd8f0c48bd945a7066851a500351aecf109e0",
     "ontology/queries/cq-15-prerequisite-round-trip.rq": "64380b7dc3c4ddddec888ddc8dc13d5cb6d9c44fb74c4eabc754e5cc9b6333d6",
-    "ontology/queries/expected.json": "30d10091d3d9927ba439f1e7dd39c34bf73000a391ac93fb55e4c45684ffa02f",
-    "ontology/shapes.ttl": "c869fc1b4f7fee0afb47226299de2424926010343d070b63fb7a51f71b81fa60"
+    "ontology/queries/expected.json": "8d9d59fabb7f3f5aa6b603ff2ec340940aef48523e0e42cb94c4d37981eb6b0a",
+    "ontology/shapes.ttl": "08a5eb29f59dcb4ee1afa5d8dd6393612f97faf77ab8eb05e44f93392d39458c"
   },
   "integrity": {
     "gradeBands": {
@@ -376,7 +376,7 @@
       "errors": [],
       "officialTextIncludedTrueCount": 0,
       "pass": true,
-      "rightsHoldResources": 18
+      "rightsClearedResources": 18
     }
   },
   "overallPass": true,

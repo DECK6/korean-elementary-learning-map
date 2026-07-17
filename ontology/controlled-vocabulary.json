@@ -18,9 +18,9 @@
     "ontologyFormatStatus": "p3-formal-release",
     "ontologyReviewStatus": "seven-automated-gates-passed",
     "externalDomainReviewStatus": "ongoing",
-    "sourceRightsStatus": "HOLD",
+    "sourceRightsStatus": "CLEARED",
     "sourceRightsCategory": "rights-and-redistribution",
-    "sourceRightsBasis": "work-level-rights-unresolved",
+    "sourceRightsBasis": "public-government-document",
     "officialTextIncluded": false,
     "officialStatus": "independent-non-official",
     "learnerDiagnosisSupported": false
@@ -94,7 +94,7 @@
     {
       "term": "CoverageGap",
       "definition": "An explicit source-data completeness, calibration, reconciliation, or review gap retained for release evaluation.",
-      "nonExamples": ["The absence of an RDF serialization in P0", "A source-document rights HOLD"]
+      "nonExamples": ["The absence of an RDF serialization in P0", "A source-document rights clearance"]
     },
     {
       "term": "PrerequisiteAssertion",
@@ -926,8 +926,8 @@
         }
       ],
       "sourceValueMap": {
-        "HOLD": "hold",
-        "work-level-rights-unresolved": "hold"
+        "CLEARED": "cleared",
+        "public-government-document": "cleared"
       }
     }
   ]

@@ -21,7 +21,7 @@ P3 incorporates the P2 standards gate and adds:
 - stable-series `owl:versionIRI` and `owl:priorVersion` semantics;
 - an ontology-specific changelog, deprecation policy, replacement registry, and machine-readable term lifecycle status;
 - generated reference documentation and a release-wide deterministic SHA-256 manifest;
-- explicit automated-review, ongoing external-domain-review, non-official, no-diagnosis, and rights `HOLD` metadata;
+- explicit automated-review, ongoing external-domain-review, non-official, no-diagnosis, and rights `cleared` metadata;
 - GitHub Actions for six canonical Node gates and a seventh pinned Python standards gate in a temporary virtual environment.
 
 ## Artifacts
@@ -95,7 +95,7 @@ These remain separate release dimensions:
 | ontology format | `0.3.0-p3` formal repository release | Governed TBox, context, shapes, metadata, deterministic ABox, derived relations, reference, manifests, CI, SHACL, bounded OWL-RL, queries, and fixtures exist |
 | automated review | seven gates passed | Six canonical Node gates and one pinned Python standards gate passed |
 | external domain review | ongoing | Formal repository status is not external curriculum, subject, pedagogy, or classroom approval |
-| source rights | `HOLD` | Work-level KOGL or commercial-reuse permission is unresolved for cited Korean curriculum PDFs |
+| source rights | `cleared` | Cited Korean curriculum documents are state-published public materials openly available from their original sources |
 
 Official achievement-standard wording remains excluded. P1 preserves the repository's summaries, code anchors, provenance limits, and warnings in [`../PROVENANCE.md`](../PROVENANCE.md), [`../NOTICE.md`](../NOTICE.md), and [`../README.md`](../README.md).
 

@@ -14,8 +14,8 @@
   "textPolicy": {
     "officialStandardTextIncluded": false,
     "rationale": "Use official public curriculum documents as source of truth while storing only codes and concise source-derived paraphrases in this workstream artifact.",
-    "licensingStatus": "work-level-rights-unresolved",
-    "licenseCaution": "HOLD: no work-specific KOGL mark or commercial-use permission is recorded for the cited Korean curriculum PDFs. Preserve attribution and consult PROVENANCE.md before redistribution or commercial use."
+    "licensingStatus": "public-government-document",
+    "licenseCaution": "CLEARED: the cited Korean curriculum documents are state-published public materials openly available from their original sources (Ministry of Education, National Education Commission, NCIC). Preserve attribution and consult PROVENANCE.md."
   },
   "sourceBasis": "Official source located through NCIC inventory API: 2022 개정 시기 > 초등학교(2022.12) > 국어, attachment [별책5] 국어과 교육과정.pdf.",
   "verificationSummary": {

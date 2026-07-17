@@ -183,13 +183,13 @@ test('P1 SHACL contract validates qualified assertions and controlled concept IR
   assert.match(shapes, /hasStandardTopicAlignment \$this ; lm:alignedToStandard \?standard/);
 });
 
-test('P1 metadata keeps format, provenance, version, and rights HOLD independent', async () => {
+test('P1 metadata keeps format, provenance, version, and rights cleared independent', async () => {
   const metadata = await readProjectFile('ontology/metadata.ttl');
   for (const prefix of ['lm', 'dcterms', 'owl', 'prov', 'xsd']) {
     assert.match(metadata, new RegExp(`@prefix ${prefix}:`), `missing ${prefix} prefix`);
   }
-  assert.match(metadata, /lm:rightsStatus <https:\/\/dexa\.art\/learnmap\/vocab\/#\/RightsStatus\/hold>/);
-  assert.match(metadata, /dcterms:rights "HOLD/);
+  assert.match(metadata, /lm:rightsStatus <https:\/\/dexa\.art\/learnmap\/vocab\/#\/RightsStatus\/cleared>/);
+  assert.match(metadata, /dcterms:rights "CLEARED/);
   assert.match(metadata, /dcterms:hasVersion "0\.3\.0-p3"/);
   assert.match(metadata, /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.2\.0-p2>/);
   assert.match(metadata, /dcterms:format "text\/turtle", "application\/ld\+json"/);
@@ -322,7 +322,7 @@ test('P1 ABox exports the complete source profile with rights and provenance int
 
   const release = byType('DatasetRelease')[0];
   assert.equal(release['lm:officialTextIncluded'], false);
-  assert.ok(release['lm:rightsStatus']['@id'].endsWith('/RightsStatus/hold'));
+  assert.ok(release['lm:rightsStatus']['@id'].endsWith('/RightsStatus/cleared'));
   assert.equal(release['lm:reportsCoverageGap'].length, 43);
   assert.equal(release['lm:containsTopic'].length, 1956);
   assert.equal(release['lm:hasCluster'].length, 153);
@@ -335,7 +335,7 @@ test('P1 ABox exports the complete source profile with rights and provenance int
   assert.ok(
     byType('SourceDocument')
       .filter((node) => node['lm:sourceType'] !== 'repository-document')
-      .every((node) => node['lm:rightsStatus']['@id'].endsWith('/RightsStatus/hold')),
+      .every((node) => node['lm:rightsStatus']['@id'].endsWith('/RightsStatus/cleared')),
   );
   assert.ok(
     byType('LearningTopic').every(
@@ -475,17 +475,17 @@ test('P1 qualified assertions exactly agree with simple navigation relations', a
   assert.deepEqual(directAlignments, qualifiedAlignments);
 });
 
-test('P1 graph preserves HOLD rights and excludes official achievement-standard text fields', async () => {
+test('P1 graph preserves cleared rights and excludes official achievement-standard text fields', async () => {
   const artifacts = await buildOntologyArtifacts({ rootDir: ROOT });
   const graph = parseGeneratedGraph(artifacts);
   const release = byType(graph, 'DatasetRelease')[0];
   assert.equal(release['lm:officialTextIncluded'], false);
-  assert.equal(release['lm:rightsStatus']['@id'], `${VOCABULARY_NAMESPACE}RightsStatus/hold`);
+  assert.equal(release['lm:rightsStatus']['@id'], `${VOCABULARY_NAMESPACE}RightsStatus/cleared`);
 
   assert.ok(
     byType(graph, 'SourceDocument').every(
       (node) =>
-        node['lm:rightsStatus']['@id'] === `${VOCABULARY_NAMESPACE}RightsStatus/hold` &&
+        node['lm:rightsStatus']['@id'] === `${VOCABULARY_NAMESPACE}RightsStatus/cleared` &&
         node['lm:officialTextIncluded'] === false &&
         !node['lm:sourceUrl'],
     ),

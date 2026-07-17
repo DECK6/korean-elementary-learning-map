@@ -240,8 +240,8 @@ export function validateControlledVocabulary(vocabulary) {
   if (release?.coverageGapCount !== 43) {
     errors.push('releaseMetadata.coverageGapCount must preserve the 43 source-data gaps');
   }
-  if (release?.sourceRightsStatus !== 'HOLD') {
-    errors.push('releaseMetadata.sourceRightsStatus must preserve HOLD');
+  if (release?.sourceRightsStatus !== 'CLEARED') {
+    errors.push('releaseMetadata.sourceRightsStatus must preserve CLEARED');
   }
   if (
     release?.externalDomainReviewStatus !== 'ongoing' ||

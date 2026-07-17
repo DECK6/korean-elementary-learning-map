@@ -2,16 +2,16 @@
   "datasetRelease": "kr-full-depth-v0.4",
   "files": [
     {
-      "bytes": 31221550,
+      "bytes": 31221604,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "d6152367e6635caae96c198a186034dd186b7547806914603dc463be72917580"
+      "sha256": "247803f846edb204d92beb9141a1366181aecb7044aac7ce889c1c13c18479f0"
     },
     {
-      "bytes": 22739260,
+      "bytes": 22739314,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "aec25621de747e995509ad425038a09f7753117cd9aeddb083476ac2fdf7136d"
+      "sha256": "c3e1ed8b2b71a4c8640132c01e8bf778f20a6e6b35f0781f2260d97ced4d912e"
     }
   ],
   "formatVersion": 3,

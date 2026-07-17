@@ -18,8 +18,8 @@
   "textPolicy": {
     "officialStandardTextIncluded": false,
     "summaryPolicy": "Repository-authored non-quoting summaries only.",
-    "licensingStatus": "work-level-rights-unresolved",
-    "licenseCaution": "HOLD: no work-specific KOGL mark or commercial-use permission is recorded for the cited Korean curriculum PDFs. Preserve attribution and consult PROVENANCE.md before redistribution or commercial use."
+    "licensingStatus": "public-government-document",
+    "licenseCaution": "CLEARED: the cited Korean curriculum documents are state-published public materials openly available from their original sources (Ministry of Education, National Education Commission, NCIC). Preserve attribution and consult PROVENANCE.md."
   },
   "sources": [
     {

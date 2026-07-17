@@ -115,7 +115,7 @@ Three metadata axes must remain independently queryable:
 
 1. **Coverage gaps:** the 43 current records describe content, calibration, locator, reconciliation, or expert-review work.
 2. **Ontology-format status:** P0 was `p0-model-only`; the current governed release is `p3-formal-release`. Format phase is never a source-data gap.
-3. **Rights status:** `HOLD` records unresolved work-level KOGL and commercial-reuse permissions. This is not a coverage gap and must not be cleared by an ontology conversion.
+3. **Rights status:** `cleared` records that the cited Korean official curriculum documents are state-published public materials openly available from their original sources. This is a separate axis from coverage and is not established by the ontology conversion itself.
 
 `official-source-checked` means the bounded source identity/code/locator check described by the associated verification record. It does not mean official text is present, an educational authority approved the dataset, or rights are cleared.
 

@@ -6,8 +6,8 @@
   "textPolicy": {
     "sourceTextIncluded": false,
     "summaryPolicy": "Official code and domain structure are verified from the public NCIC PDF; standard and topic descriptions are concise paraphrases/original decomposition text.",
-    "licenseCaution": "HOLD: no work-specific KOGL mark or commercial-use permission is recorded for the cited Korean curriculum PDFs. Preserve attribution and consult PROVENANCE.md before redistribution or commercial use.",
-    "licensingStatus": "work-level-rights-unresolved"
+    "licenseCaution": "CLEARED: the cited Korean curriculum documents are state-published public materials openly available from their original sources (Ministry of Education, National Education Commission, NCIC). Preserve attribution and consult PROVENANCE.md.",
+    "licensingStatus": "public-government-document"
   },
   "subject": {
     "id": "kr-2022-elem-practical-arts",

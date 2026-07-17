@@ -45,9 +45,9 @@ for (const file of files) {
     .filter((source, index, sources) => sources.findIndex((candidate) => candidate.id === source.id) === index)
     .sort((a, b) => a.id.localeCompare(b.id));
   repairedContent.textPolicy ||= {};
-  repairedContent.textPolicy.licensingStatus = 'work-level-rights-unresolved';
+  repairedContent.textPolicy.licensingStatus = 'public-government-document';
   repairedContent.textPolicy.licenseCaution =
-    'HOLD: no work-specific KOGL mark or commercial-use permission is recorded for the cited Korean curriculum PDFs. Preserve attribution and consult PROVENANCE.md before redistribution or commercial use.';
+    'CLEARED: the cited Korean curriculum documents are state-published public materials openly available from their original sources (Ministry of Education, National Education Commission, NCIC). Preserve attribution and consult PROVENANCE.md.';
   if (repairedContent.counts && typeof repairedContent.counts === 'object') {
     repairedContent.counts.sources = repairedContent.sources.length;
     repairedContent.counts.standards = repairedContent.standards?.length || 0;

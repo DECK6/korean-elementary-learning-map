@@ -27,7 +27,7 @@ This document preserves the human-readable P0 vocabulary foundation. The machine
 | `SourceDocument` | Document or repository artifact cited for curriculum identity, codes, mappings, or provenance. | An unsupported search result or an unrecorded permission. |
 | `SourceLocator` | Structured location inside or alongside a source, including page, section, attachment, hash, or code anchors. | A bare source URL with no item-level location. |
 | `VerificationRecord` | Dated or status-bearing record of what was checked, by which method, and with what limitations. | An unqualified claim of official approval. |
-| `CoverageGap` | Explicit source-data completeness, calibration, reconciliation, or review gap. | Missing RDF in P0 or a source-rights HOLD. |
+| `CoverageGap` | Explicit source-data completeness, calibration, reconciliation, or review gap. | Missing RDF in P0 or a source-rights clearance. |
 | `PrerequisiteAssertion` | N-ary record qualifying a model-relative direct prerequisite suggestion with strength, reason, basis, source, and review state. | A universal learning-order law or a derived multi-hop prerequisite. |
 | `StandardTopicAlignment` | N-ary record preserving how a topic relates to a standard: kind, confidence, note, basis, and source. | An unqualified identifier join. |
 
@@ -58,7 +58,7 @@ This document preserves the human-readable P0 vocabulary foundation. The machine
 | `documentedBy` | Associates a resource or assertion with a source supporting identity, provenance, or basis. | `Curriculum\|AchievementStandard\|LearningTopic\|PrerequisiteAssertion\|StandardTopicAlignment` → `SourceDocument` | resource `1..*`; source `0..*` | asserted; does not imply permission |
 | `hasSourceLocator` | Associates a source-backed resource with a structured locator. | `SourceDocument\|AchievementStandard\|LearningTopic` → `SourceLocator` | resource `0..*`; locator `1` owner | asserted |
 | `hasVerificationRecord` | Associates a resource or assertion with a bounded verification record. | `DatasetRelease\|SourceDocument\|AchievementStandard\|LearningTopic\|PrerequisiteAssertion\|StandardTopicAlignment` → `VerificationRecord` | resource `0..*`; record `1` owner | asserted; does not imply endorsement |
-| `reportsCoverageGap` | Reports a retained source-data gap for a release. | `DatasetRelease` → `CoverageGap` | release `0..*`; gap `1` release | asserted; excludes format status and rights HOLD |
+| `reportsCoverageGap` | Reports a retained source-data gap for a release. | `DatasetRelease` → `CoverageGap` | release `0..*`; gap `1` release | asserted; excludes format status and rights clearance |
 
 ### Object-property non-examples
 
@@ -66,7 +66,7 @@ This document preserves the human-readable P0 vocabulary foundation. The machine
 - `A directRequires B` and `B directRequires C` do not permit publishing `A directRequires C`; the derived relation is `A indirectRequires C` with rule/path provenance.
 - `alignedToStandard` alone is not a complete export of alignment semantics. Follow `hasStandardTopicAlignment` for role, confidence, note, basis, and source.
 - `documentedBy` and `hasVerificationRecord` do not grant copyright permission, certify official wording, or imply Ministry/NCIC approval.
-- `reportsCoverageGap` must not be used for the independent `p3-formal-release` format status or source-rights `HOLD`.
+- `reportsCoverageGap` must not be used for the independent `p3-formal-release` format status or source-rights clearance.
 
 ## Datatype properties
 
@@ -134,9 +134,9 @@ The source value must remain recoverable after normalization.
 - `CoverageGapCategory`: `source-text-policy`, `source-locator`, `content-coverage`, `expert-review`, `assessment-calibration`, `dependency-review`, `source-reconciliation`.
 - `GapSeverity`: `high`, `medium`, `low`, `review-needed`, `intentional`, `unspecified`.
 - `VerificationStatus`: `official-source-checked`, `public-doc-derived`, `workstream-reviewed`, `verification-review-needed`, `not-checked`. A source `review-needed` value normalizes to `verification-review-needed` to keep term identifiers globally unique.
-- `RightsStatus`: `hold`, `cleared`, `unknown`. Current source-level `HOLD` and `work-level-rights-unresolved` normalize to `hold` without erasing the source value.
+- `RightsStatus`: `hold`, `cleared`, `unknown`. Current source-level `CLEARED` and `public-government-document` normalize to `cleared` without erasing the source value.
 
-Coverage, format phase, and rights remain separate axes: the release has 43 retained coverage gaps, ontology format status `p3-formal-release`, and source rights status `HOLD`.
+Coverage, format phase, and rights remain separate axes: the release has 43 retained coverage gaps, ontology format status `p3-formal-release`, and source rights status `cleared` (state-published public government documents).
 
 ## Qualifier-preserving release rule
 

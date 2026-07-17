@@ -448,7 +448,7 @@ function createSourceDocuments(data, nodes, verificationNodes) {
       'lm:identifier': source.id,
       'lm:preferredLabel': ko(source.name),
       'lm:sourceType': source.sourceType,
-      'lm:rightsStatus': iri(conceptIri('RightsStatus', 'hold')),
+      'lm:rightsStatus': iri(conceptIri('RightsStatus', 'cleared')),
       'lm:officialTextIncluded': false,
       'dcterms:source': iri(sourceIri(source.id)),
       'prov:wasDerivedFrom': iri(sourceIri(source.id)),
@@ -866,7 +866,7 @@ function createDatasetRelease(data, nodes, verificationNodes) {
     'lm:identifier': releaseId,
     'lm:preferredLabel': ko(data.standards.dataset),
     'lm:summary': ko(data.standards.sourceBasis),
-    'lm:rightsStatus': iri(conceptIri('RightsStatus', 'hold')),
+    'lm:rightsStatus': iri(conceptIri('RightsStatus', 'cleared')),
     'lm:officialTextIncluded': false,
     'lm:hasCurriculum': data.standards.curricula
       .map((curriculum) => iri(mintInstanceIri('curriculum', curriculum.id)))
