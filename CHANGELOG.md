@@ -33,9 +33,12 @@
 ### 주제 콘텐츠 오버레이
 
 - **오버레이 인프라** — `evidence`·`assessmentPrompt`의 기계 템플릿을 공식 출처 근거 문장으로 바꾸는 빌드 입력 `data/kr/content/<subject>-<gradeBand>.json`을 신설했습니다. 파일 형식은 중등 저장소와 동형이고, 초등만 `assessmentPrompt`가 문자열 하나입니다(중등은 `assessmentPrompts` 배열). 스키마는 `schema/kr-content-overlay.schema.json`, 병합 지점은 `scripts/build-kr-full-depth.mjs`의 최종 주제 레코드 생성 직후입니다.
-- 주제 레코드에 `contentKind`(`mechanical-derivative` | `source-grounded-draft`), `misconceptions`, `contentSourceLocator`를 추가했습니다. `data/kr/manifest.json`은 오버레이 파일 수와 출처 기반 초안 주제 수를 `counts.contentOverlayFiles` 3 · `counts.sourceGroundedTopics` 363에 기록합니다.
+- 주제 레코드에 `contentKind`(`mechanical-derivative` | `source-grounded-draft`), `misconceptions`, `contentSourceLocator`를 추가했습니다. `data/kr/manifest.json`은 오버레이 파일 수와 출처 기반 초안 주제 수를 `counts.contentOverlayFiles` 8 · `counts.sourceGroundedTopics` 1,017에 기록합니다.
 - 작성자용 단일 파일 게이트 `scripts/dev/check-content-overlay.mjs`를 추가하고, `npm run check:content`가 출처 기반 초안 수·완전 중복 evidence/prompt 수·템플릿 비율을 함께 출력하도록 했습니다.
-- **초등 수학 오버레이 3개** — 1~2학년 87 / 3~4학년 141 / 5~6학년 135, 합계 **363주제**를 `contentKind: source-grounded-draft`로 집필했습니다. 근거는 [별책 8] 수학과 교육과정의 성취기준·성취기준 해설·성취기준 적용 시 고려 사항·평가의 방향이며, 그중 74건(20.4% — 학년군별 27.6% / 9.9% / 26.7%)은 성취기준 해설 문단을 직접 근거로 삼습니다. 별책 원문과의 16자 연속 일치는 0건입니다. 나머지 1,593개 주제는 `mechanical-derivative`로 남습니다.
+- **초등 수학 오버레이 3개** — 1~2학년 87 / 3~4학년 141 / 5~6학년 135, 합계 **363주제**를 `contentKind: source-grounded-draft`로 집필했습니다. 근거는 [별책 8] 수학과 교육과정의 성취기준·성취기준 해설·성취기준 적용 시 고려 사항·평가의 방향이며, 그중 74건(20.4% — 학년군별 27.6% / 9.9% / 26.7%)은 성취기준 해설 문단을 직접 근거로 삼습니다. 별책 원문과의 16자 연속 일치는 0건입니다.
+- **초등 국어 오버레이 3개** — 1~2학년 92 / 3~4학년 120 / 5~6학년 136, 합계 **348주제**. 근거는 [별책 5] 국어과 교육과정의 성취기준 해설·적용 시 고려 사항(해설 근거 56~65%)이며 facet은 concept·procedure·communication·reflection(매체 영역은 representation)입니다.
+- **초등 과학 오버레이 2개** — 3~4학년 153 / 5~6학년 153, 합계 **306주제**. 근거는 [별책 9] 과학과 교육과정(해설 근거 69~71%)이며 탐구 facet에는 안전 유의점을 명시했습니다.
+- 출처 기반 초안 주제는 합계 **1,017개**(52.0%)이고 나머지 939개 주제는 `mechanical-derivative`로 남습니다. 오버레이 8개 파일 사이의 완전 중복은 0건입니다.
 - **관찰 동사 검사 분리** — `scripts/lib/kr-content-quality.mjs`의 관찰 가능성 검사를 두 갈래로 나눴습니다. `isLearnerObservableEvidence`(strict)는 기계 생성 주제 수리용으로 원래 stem 목록을 그대로 쓰고, `isAuthoredObservableEvidence`(authored)는 집필 오버레이용으로 `-ㄴ다`/`-는다` 종결형을 종성으로 판정해 받아들이되 인지 동사(안다·이해한다·인식한다 등)는 제외합니다. 분리 후 기계 생성 주제 1,593건의 출력이 불변임을 확인했습니다.
 
 ### 성취기준 요약 교체

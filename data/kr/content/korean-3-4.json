@@ -1,0 +1,1984 @@
+{
+  "$schema": "../../../schema/kr-content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "국어",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-moe-2022-33-annex5-pdf"
+  ],
+  "note": "교육부 고시 제2022-33호 [별책 5] 국어과 교육과정의 초등학교 3∼4학년 성취기준·성취기준 해설·성취기준 적용 시 고려 사항(인쇄 p.20∼29)과 평가의 방향(인쇄 p.63∼66)을 근거로 새로 쓴 초안이다. 인쇄 쪽 = PDF 쪽 − 6이며 공식 문장은 재수록하지 않았다.",
+  "entries": {
+    "kr.mt.korean.listening-speaking.3-4.4guk0101.01": {
+      "evidence": [
+        "들은 내용에서 되풀이되는 말과 중심 화제를 구분해 말한다.",
+        "요약한 글과 들은 내용을 그대로 옮긴 글의 차이를 설명한다."
+      ],
+      "assessmentPrompt": "짧은 안내 방송을 들려주고 중심 내용과 곁가지 내용을 나누어 적게 한 뒤 그 기준을 설명하게 하라.",
+      "misconceptions": [
+        "처음에 나온 문장을 늘 주제로 삼고 뒤의 내용은 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-01]",
+        "code": "[4국01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0101.02": {
+      "evidence": [
+        "모둠 친구에게 들은 내용을 세 문장 안으로 간추려 전한다.",
+        "친구가 간추린 내용에서 빠진 부분을 짚어 보탠다."
+      ],
+      "assessmentPrompt": "같은 설명을 들은 뒤 짝에게 세 문장으로 간추려 전하게 하고, 짝은 빠진 내용을 보태게 하라.",
+      "misconceptions": [
+        "간추린다면서 들은 문장을 거의 그대로 옮겨 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-01]",
+        "code": "[4국01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0101.03": {
+      "evidence": [
+        "들으면서 중요한 낱말을 골라 메모지에 적는다.",
+        "적어 둔 낱말을 이어 붙여 한 문단으로 정리한다."
+      ],
+      "assessmentPrompt": "설명을 들으며 중요한 낱말을 다섯 개 적게 하고, 그 낱말을 이어 한 문단으로 요약하게 하라.",
+      "misconceptions": [
+        "들리는 말을 모두 받아 적어 중요한 낱말이 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-01]",
+        "code": "[4국01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0101.04": {
+      "evidence": [
+        "자기 요약을 다시 들으며 빠뜨린 내용을 확인한다.",
+        "요약이 어려웠던 까닭을 짚고 다음에 쓸 방법을 정한다."
+      ],
+      "assessmentPrompt": "요약한 내용을 다시 들려주며 빠뜨린 부분을 찾게 하고, 다음에 쓸 요약 방법을 정하게 하라.",
+      "misconceptions": [
+        "빠뜨린 내용을 찾고도 요약을 고치지 않고 그대로 낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0102.01": {
+      "evidence": [
+        "이야기에서 원인이 되는 일과 결과가 되는 일을 갈라 짚는다.",
+        "앞뒤 일이 원인과 결과로 이어지는지 판단해 말한다."
+      ],
+      "assessmentPrompt": "짧은 사건 이야기를 들려주고 원인과 결과를 짝지어 적게 한 뒤 그렇게 묶은 까닭을 말하게 하라.",
+      "misconceptions": [
+        "먼저 일어난 일이면 무엇이든 원인이라고 묶는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-02]",
+        "code": "[4국01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0102.02": {
+      "evidence": [
+        "다음에 일어날 일을 까닭과 함께 친구에게 말한다.",
+        "친구의 예측을 듣고 다른 가능성을 들어 되묻는다."
+      ],
+      "assessmentPrompt": "이야기를 중간까지 들려주고 이어질 내용을 까닭과 함께 말하게 한 뒤 서로 되묻게 하라.",
+      "misconceptions": [
+        "예측만 말하고 그렇게 생각한 까닭은 대지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-02]",
+        "code": "[4국01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0102.03": {
+      "evidence": [
+        "듣기 전에 제목과 첫 장면으로 흐름을 미리 그려 본다.",
+        "들으면서 자기 예측이 맞았는지 표시하며 고쳐 간다."
+      ],
+      "assessmentPrompt": "이야기를 듣기 전 예측을 적게 하고, 들으면서 맞은 것과 틀린 것을 표시해 고치게 하라.",
+      "misconceptions": [
+        "처음 세운 예측을 끝까지 붙들고 새 내용을 반영하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-02]",
+        "code": "[4국01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0102.04": {
+      "evidence": [
+        "예측이 빗나간 까닭을 이야기 내용에서 찾아 말한다.",
+        "다음 듣기에서 살펴볼 단서를 두 가지 골라 정한다."
+      ],
+      "assessmentPrompt": "예측이 빗나간 곳을 골라 그 까닭을 이야기에서 찾게 하고, 다음에 살필 단서를 정하게 하라.",
+      "misconceptions": [
+        "예측이 틀리면 이야기가 이상하다고 말하고 자기 근거는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0103.01": {
+      "evidence": [
+        "억양, 어조, 속도와 표정, 몸짓을 갈라 예를 든다.",
+        "같은 말이라도 표현에 따라 뜻이 달라지는 예를 찾아 설명한다."
+      ],
+      "assessmentPrompt": "‘괜찮아’를 서로 다른 억양으로 들려주고 각각 어떤 뜻으로 들리는지 구분해 설명하게 하라.",
+      "misconceptions": [
+        "말의 내용만 보고 억양이나 표정의 차이는 없는 것으로 다룬다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-03]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0103.02": {
+      "evidence": [
+        "이야기하는 상황에 맞추어 목소리 크기와 빠르기를 바꾼다.",
+        "듣는 사람의 표정을 살펴 말하는 방식을 조절한다."
+      ],
+      "assessmentPrompt": "같은 안내를 교실 앞과 짝에게 각각 말하게 하고, 목소리와 몸짓을 어떻게 바꾸었는지 말하게 하라.",
+      "misconceptions": [
+        "어떤 상황에서도 같은 크기와 빠르기로만 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-03]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0103.03": {
+      "evidence": [
+        "말하기 전에 상황에 맞는 표정과 몸짓을 정해 둔다.",
+        "연습 장면을 보고 표현을 한 가지 골라 고친다."
+      ],
+      "assessmentPrompt": "역할 놀이 대사를 정한 뒤 어울리는 표정과 몸짓을 골라 연습하고 한 가지를 고쳐 다시 하게 하라.",
+      "misconceptions": [
+        "몸짓을 지나치게 많이 넣어 말의 내용이 묻힌다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-03]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0103.04": {
+      "evidence": [
+        "녹화한 자기 말하기를 보고 고칠 표현을 고른다.",
+        "친구의 준언어 표현에서 배울 점을 찾아 말한다."
+      ],
+      "assessmentPrompt": "역할 놀이를 녹화해 함께 보게 하고, 자기 표현에서 고칠 점과 친구에게 배울 점을 각각 말하게 하라.",
+      "misconceptions": [
+        "자기 목소리가 어색하다는 말만 하고 무엇을 고칠지 정하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국01-03]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0104.01": {
+      "evidence": [
+        "때와 곳, 상대에 따라 달라지는 말투를 갈라 설명한다.",
+        "예의를 지킨 대화와 그렇지 않은 대화를 구분해 고른다."
+      ],
+      "assessmentPrompt": "같은 부탁을 선생님과 친구에게 하는 두 대화를 보여 주고 무엇이 달라야 하는지 설명하게 하라.",
+      "misconceptions": [
+        "높임말만 쓰면 예의를 지킨 대화라고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-04]",
+        "code": "[4국01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0104.02": {
+      "evidence": [
+        "상대의 처지를 헤아리는 말을 넣어 대화를 이어 간다.",
+        "부탁하거나 거절할 때 알맞은 호칭과 인사말을 쓴다."
+      ],
+      "assessmentPrompt": "친구에게 부탁했다가 거절당하는 상황을 역할 놀이로 하게 하고, 서로 예의를 지켜 대화를 마치게 하라.",
+      "misconceptions": [
+        "거절당하면 말을 끊고 상대의 까닭을 듣지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-04]",
+        "code": "[4국01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0104.03": {
+      "evidence": [
+        "대화 전에 상대와 상황을 확인하고 말할 방식을 정한다.",
+        "대화 도중 어긋난 말을 알아채고 바꾸어 말한다."
+      ],
+      "assessmentPrompt": "대화 상대와 장소를 적은 쪽지를 뽑게 하고, 그에 맞는 말투를 정해 대화를 이어 가게 하라.",
+      "misconceptions": [
+        "상대만 확인하고 때와 곳은 살피지 않아 말투가 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > 성취기준 [4국01-04]",
+        "code": "[4국01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0104.04": {
+      "evidence": [
+        "하루의 대화를 돌아보고 지킨 점을 점검표에 표시한다.",
+        "집에서도 예의를 지켜 말한 일을 찾아 말한다."
+      ],
+      "assessmentPrompt": "학교와 집에서 나눈 대화를 점검표로 돌아보게 하고, 다음 주에 실천할 것을 한 가지 정하게 하라.",
+      "misconceptions": [
+        "교실에서만 예의를 지키고 온라인 대화에서는 지키지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0105.01": {
+      "evidence": [
+        "발표 목적과 주제에 맞는 자료와 그렇지 않은 자료를 구분한다.",
+        "발표에 쓸 자료를 고른 기준을 두 가지 들어 설명한다."
+      ],
+      "assessmentPrompt": "같은 주제의 자료 네 개를 주고 발표에 쓸 것 두 개를 고르게 한 뒤 고른 기준을 설명하게 하라.",
+      "misconceptions": [
+        "자료가 많을수록 좋은 발표라고 보아 관련 없는 것까지 넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-05]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0105.02": {
+      "evidence": [
+        "듣는 사람을 바라보며 준비한 내용을 차례대로 발표한다.",
+        "발표를 마친 뒤 질문을 받아 자기 말로 답한다."
+      ],
+      "assessmentPrompt": "정리한 자료로 삼 분 발표를 하게 하고, 친구들의 질문 두 개에 자기 말로 답하게 하라.",
+      "misconceptions": [
+        "적어 온 대본을 그대로 읽고 듣는 사람을 보지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-05]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0105.03": {
+      "evidence": [
+        "자료에서 발표에 쓸 내용을 골라 말할 차례를 정한다.",
+        "연습하며 전달이 잘되는지 확인하고 부족한 곳을 고친다."
+      ],
+      "assessmentPrompt": "발표할 내용을 차례대로 정리하게 한 뒤, 짝 앞에서 연습하고 고칠 곳 한 가지를 바꾸게 하라.",
+      "misconceptions": [
+        "연습 없이 바로 발표해 시간이 넘거나 내용이 뒤섞인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-05]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0105.04": {
+      "evidence": [
+        "발표 뒤 잘된 점과 아쉬운 점을 기준에 따라 적는다.",
+        "다음 발표에서 바꿀 점을 골라 연습 계획을 세운다."
+      ],
+      "assessmentPrompt": "발표를 마친 뒤 미리 정한 기준으로 스스로 점검하게 하고, 다음 발표에서 바꿀 점을 적게 하라.",
+      "misconceptions": [
+        "친구의 평가를 흠으로만 받아들여 다음 발표를 피하려 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국01-05]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0106.01": {
+      "evidence": [
+        "의견과 그 의견을 받치는 이유를 갈라 짚는다.",
+        "주제에 맞는 의견과 주제에서 벗어난 의견을 구분해 말한다."
+      ],
+      "assessmentPrompt": "학급 문제 하나를 주고 의견과 이유를 나누어 적게 한 뒤, 주제에서 벗어난 의견을 골라내게 하라.",
+      "misconceptions": [
+        "이유 자리에 같은 의견을 말만 바꾸어 다시 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-06]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0106.02": {
+      "evidence": [
+        "자기 의견을 이유와 함께 모둠 친구들에게 말한다.",
+        "친구의 의견을 다시 묻고 다른 점을 짚어 답한다."
+      ],
+      "assessmentPrompt": "모둠 토의에서 의견과 이유를 말하게 하고, 다른 친구의 의견에 한 번씩 되묻게 하라.",
+      "misconceptions": [
+        "자기 의견만 되풀이하고 친구 의견에는 답하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-06]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0106.03": {
+      "evidence": [
+        "토의 주제를 확인하고 의견과 이유를 미리 적는다.",
+        "차례를 정해 말하고 나온 의견을 표에 모은다."
+      ],
+      "assessmentPrompt": "토의 전에 의견과 이유를 적게 하고, 차례대로 말한 뒤 나온 의견을 표로 모으게 하라.",
+      "misconceptions": [
+        "준비 없이 토의를 시작해 같은 말이 되풀이된다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (가) 성취기준 해설",
+        "code": "[4국01-06]"
+      }
+    },
+    "kr.mt.korean.listening-speaking.3-4.4guk0106.04": {
+      "evidence": [
+        "자기 이유가 의견을 잘 받쳤는지 되짚어 말한다.",
+        "친구 의견을 듣고 바뀐 자기 생각을 밝혀 말한다."
+      ],
+      "assessmentPrompt": "토의를 마친 뒤 자기 이유가 의견을 잘 받쳤는지 점검하게 하고, 생각이 바뀐 곳을 말하게 하라.",
+      "misconceptions": [
+        "생각이 바뀌면 진 것이라고 여겨 처음 의견을 고집한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (1) 듣기⋅말하기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국01-06]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0201.01": {
+      "evidence": [
+        "인물의 말을 어조를 살려 친구들 앞에서 읽는다.",
+        "짝의 읽기를 듣고 잘된 점과 고칠 점을 말해 준다."
+      ],
+      "assessmentPrompt": "이야기의 한 대목을 인물의 어조를 살려 읽게 하고, 짝은 들은 느낌을 말해 주게 하라.",
+      "misconceptions": [
+        "인물이 바뀌어도 같은 목소리로 읽어 누구의 말인지 구분되지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-01]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0201.02": {
+      "evidence": [
+        "유창하게 읽는 것과 빨리만 읽는 것의 차이를 설명한다.",
+        "글의 분위기에 어울리는 어조와 속도를 골라 말한다."
+      ],
+      "assessmentPrompt": "같은 글을 두 가지 방식으로 읽어 주고 어느 쪽이 뜻을 잘 드러내는지 고른 뒤 까닭을 설명하게 하라.",
+      "misconceptions": [
+        "빠르게 읽을수록 잘 읽는 것이라고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-01]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0201.03": {
+      "evidence": [
+        "글을 훑어 읽고 분위기를 정한 뒤 소리 내어 읽는다.",
+        "막히는 곳을 표시해 두고 다시 읽어 매끄럽게 잇는다."
+      ],
+      "assessmentPrompt": "글을 먼저 훑어 읽고 분위기를 정하게 한 뒤, 막힌 곳을 표시해 두 번째 읽기에서 고치게 하라.",
+      "misconceptions": [
+        "한 번 읽고 끝내 막힌 곳이 그대로 남는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-01]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0201.04": {
+      "evidence": [
+        "짝과 서로 들으며 읽기 속도가 알맞았는지 점검한다.",
+        "자기 읽기에서 지난번보다 나아진 점을 찾아 말한다."
+      ],
+      "assessmentPrompt": "짝과 번갈아 읽고 서로 점검표에 표시하게 한 뒤, 지난번보다 나아진 점을 말하게 하라.",
+      "misconceptions": [
+        "점검표를 채우기만 하고 읽는 방법은 바꾸지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국02-01]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0202.01": {
+      "evidence": [
+        "간추린 내용을 친구에게 말하고 빠진 곳을 함께 찾는다.",
+        "같은 글을 간추린 두 가지 결과를 견주어 말한다."
+      ],
+      "assessmentPrompt": "각자 간추린 내용을 짝과 견주게 하고, 서로 다른 곳이 왜 생겼는지 이야기하게 하라.",
+      "misconceptions": [
+        "친구와 다르면 무조건 자기 것을 지우고 그대로 베낀다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > 성취기준 [4국02-02]",
+        "code": "[4국02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.reading.3-4.4guk0202.02": {
+      "evidence": [
+        "문단에서 중심 문장과 뒷받침 문장을 갈라 짚는다.",
+        "여러 문단의 중심 생각을 모아 글 전체의 생각을 정한다."
+      ],
+      "assessmentPrompt": "세 문단으로 된 글을 주고 문단마다 중심 문장을 찾은 뒤 글 전체의 생각을 한 문장으로 쓰게 하라.",
+      "misconceptions": [
+        "문단마다 첫 문장을 기계적으로 중심 문장으로 고른다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > 성취기준 [4국02-02]",
+        "code": "[4국02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.reading.3-4.4guk0202.03": {
+      "evidence": [
+        "되풀이되거나 덧붙인 문장을 지우고 남길 문장을 고른다.",
+        "남긴 문장을 이어 붙여 자기 말로 짧게 다시 쓴다."
+      ],
+      "assessmentPrompt": "글에서 지워도 되는 문장에 줄을 긋게 한 뒤, 남은 내용을 자기 말로 다섯 문장 안에 쓰게 하라.",
+      "misconceptions": [
+        "중요한 문장까지 지워 글의 뜻이 달라진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > 성취기준 [4국02-02]",
+        "code": "[4국02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.reading.3-4.4guk0202.04": {
+      "evidence": [
+        "간추린 글과 본래 글을 견주어 빠진 내용을 확인한다.",
+        "간추릴 때 쓴 방법 가운데 도움이 된 것을 고른다."
+      ],
+      "assessmentPrompt": "간추린 글을 본래 글과 견주어 빠진 내용을 찾게 하고, 다음에 다시 쓸 방법을 고르게 하라.",
+      "misconceptions": [
+        "분량만 줄이면 잘 간추린 것으로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.reading.3-4.4guk0203.01": {
+      "evidence": [
+        "만든 질문을 짝에게 던지고 답을 함께 찾는다.",
+        "친구의 질문을 듣고 자기가 놓친 부분을 짚는다."
+      ],
+      "assessmentPrompt": "짝과 질문을 주고받으며 글을 읽게 하고, 답을 찾은 곳을 서로 짚어 주게 하라.",
+      "misconceptions": [
+        "질문을 주고받기만 하고 글에서 답을 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-03]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0203.02": {
+      "evidence": [
+        "글을 읽기 전에 던질 질문과 읽는 중에 던질 질문을 갈라 만든다.",
+        "답을 글에서 찾을 수 있는 질문인지 판단해 고른다."
+      ],
+      "assessmentPrompt": "글의 제목과 그림을 보고 질문 세 개를 만들게 한 뒤, 글에서 답을 찾을 수 있는 질문을 고르게 하라.",
+      "misconceptions": [
+        "재미있을지 궁금하다처럼 글로는 답할 수 없는 질문만 만든다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-03]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0203.03": {
+      "evidence": [
+        "제목과 차례를 보고 이어질 내용을 예측해 적는다.",
+        "읽으면서 예측이 맞는지 표시하고 어긋나면 고친다."
+      ],
+      "assessmentPrompt": "제목과 차례로 내용을 예측해 적게 한 뒤, 읽으면서 맞은 곳과 어긋난 곳을 표시하게 하라.",
+      "misconceptions": [
+        "예측을 적기만 하고 읽는 동안 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-03]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0203.04": {
+      "evidence": [
+        "읽다가 막힌 곳을 표시하고 그 까닭을 말한다.",
+        "이해가 잘된 부분과 그렇지 않은 부분을 나누어 점검한다."
+      ],
+      "assessmentPrompt": "읽기를 마친 뒤 이해가 어려웠던 곳을 표시하게 하고, 그 까닭과 다시 읽을 방법을 말하게 하라.",
+      "misconceptions": [
+        "모르는 곳을 표시하지 않고 끝까지 읽어 어디가 막혔는지 말하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국02-03]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0204.01": {
+      "evidence": [
+        "글쓴이의 의견과 자기 의견의 같은 점과 다른 점을 말한다.",
+        "다른 의견을 가진 친구에게 까닭을 물어 견준다."
+      ],
+      "assessmentPrompt": "글쓴이의 의견에 찬성하는지 밝히게 하고, 다른 생각을 가진 친구와 까닭을 견주어 말하게 하라.",
+      "misconceptions": [
+        "글쓴이의 의견을 그대로 자기 의견으로 옮겨 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-04]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0204.02": {
+      "evidence": [
+        "확인할 수 있는 사실과 사람마다 다른 의견을 갈라 표시한다.",
+        "의견을 받치는 이유가 알맞은지 판단해 말한다."
+      ],
+      "assessmentPrompt": "짧은 주장 글의 문장을 사실과 의견으로 나누게 하고, 의견을 받치는 이유가 알맞은지 말하게 하라.",
+      "misconceptions": [
+        "숫자가 들어간 문장이면 무조건 사실로 표시한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-04]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0204.03": {
+      "evidence": [
+        "글을 읽으며 사실과 의견에 서로 다른 표시를 한다.",
+        "표시한 것을 표로 모아 두 의견을 나란히 놓는다."
+      ],
+      "assessmentPrompt": "글을 읽으며 사실과 의견에 다른 색으로 표시하게 하고, 글쓴이 의견과 자기 의견을 표로 견주게 하라.",
+      "misconceptions": [
+        "표시를 하고도 표로 옮길 때 사실과 의견을 뒤섞는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-04]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0204.04": {
+      "evidence": [
+        "자기 의견을 받치는 이유가 충분한지 되짚어 말한다.",
+        "친구의 이유를 듣고 자기 의견을 고쳐 밝힌다."
+      ],
+      "assessmentPrompt": "친구의 이유를 들은 뒤 자기 의견을 그대로 둘지 고칠지 정하게 하고 그 까닭을 말하게 하라.",
+      "misconceptions": [
+        "글쓴이가 어른이라는 까닭만으로 의견이 옳다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국02-04]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0205.01": {
+      "evidence": [
+        "고른 자료가 믿을 만한 까닭을 친구에게 설명한다.",
+        "친구가 가져온 자료에 대해 확인할 점을 물어본다."
+      ],
+      "assessmentPrompt": "모둠에서 각자 찾은 자료를 소개하게 하고, 믿을 만한지 서로 묻고 답하게 하라.",
+      "misconceptions": [
+        "친구가 가져온 자료라는 이유만으로 확인 없이 받아들인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-05]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0205.02": {
+      "evidence": [
+        "자료를 누가 언제 만들었는지 확인할 곳을 찾아 짚는다.",
+        "믿을 만한 자료를 가리는 기준을 두 가지 들어 설명한다."
+      ],
+      "assessmentPrompt": "같은 내용을 담은 자료 두 개를 주고 어느 쪽이 더 믿을 만한지 고른 뒤 그 기준을 설명하게 하라.",
+      "misconceptions": [
+        "화면이 예쁘고 그림이 많으면 믿을 만한 자료라고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-05]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0205.03": {
+      "evidence": [
+        "자료를 만든 곳과 만든 때를 차례로 확인해 적는다.",
+        "같은 내용을 다른 자료와 견주어 맞는지 살핀다."
+      ],
+      "assessmentPrompt": "인터넷 자료 하나를 주고 만든 곳과 만든 때를 적게 한 뒤, 다른 자료와 견주어 확인하게 하라.",
+      "misconceptions": [
+        "가장 먼저 나온 검색 결과만 보고 다른 자료와 견주지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (가) 성취기준 해설",
+        "code": "[4국02-05]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0205.04": {
+      "evidence": [
+        "자기가 고른 자료를 다시 살펴 바꿀지 정한다.",
+        "믿기 어려운 자료를 만났을 때 할 일을 말한다."
+      ],
+      "assessmentPrompt": "발표에 쓰려던 자료를 다시 살펴보게 하고, 그대로 쓸지 바꿀지 정한 까닭을 말하게 하라.",
+      "misconceptions": [
+        "이미 정리해 둔 자료라서 아깝다는 까닭으로 그대로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국02-05]"
+      }
+    },
+    "kr.mt.korean.reading.3-4.4guk0206.01": {
+      "evidence": [
+        "읽은 책을 친구에게 권하며 그 까닭을 말한다.",
+        "친구가 권해 준 책을 읽고 서로 생각을 나눈다."
+      ],
+      "assessmentPrompt": "읽은 책 가운데 하나를 친구에게 권하게 하고, 권한 까닭과 어울리는 친구를 함께 말하게 하라.",
+      "misconceptions": [
+        "재미있다는 말만 하고 어떤 친구에게 어울리는지는 말하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > 성취기준 [4국02-06]",
+        "code": "[4국02-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.reading.3-4.4guk0206.02": {
+      "evidence": [
+        "자기 수준과 관심에 맞는 읽을거리를 고르는 기준을 말한다.",
+        "읽기 계획에 넣어야 할 것을 두 가지 이상 짚는다."
+      ],
+      "assessmentPrompt": "한 권을 끝까지 읽기 위한 계획에 무엇이 들어가야 하는지 말하게 하고, 자기 계획을 세우게 하라.",
+      "misconceptions": [
+        "두께가 얇은 책만 고르고 관심과 수준은 따지지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > 성취기준 [4국02-06]",
+        "code": "[4국02-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.reading.3-4.4guk0206.03": {
+      "evidence": [
+        "스스로 정한 시간과 분량에 따라 읽기를 이어 간다.",
+        "읽은 날짜와 쪽수를 읽기 기록장에 적어 모은다."
+      ],
+      "assessmentPrompt": "이 주 동안 한 권을 읽을 계획을 세우게 하고, 날마다 읽은 쪽수를 기록장에 적게 하라.",
+      "misconceptions": [
+        "계획은 세우되 기록을 미루어 어디까지 읽었는지 놓친다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 22,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > 성취기준 [4국02-06]",
+        "code": "[4국02-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.reading.3-4.4guk0206.04": {
+      "evidence": [
+        "읽기가 어려웠던 곳을 말하고 도움받을 방법을 고른다.",
+        "지난달보다 나아진 점을 자기 기록을 보며 짚는다."
+      ],
+      "assessmentPrompt": "읽기 기록장을 보며 나아진 점을 찾게 하고, 어려웠던 점과 도움받을 방법을 말하게 하라.",
+      "misconceptions": [
+        "읽은 양만 견주고 읽는 방법이 나아졌는지는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (2) 읽기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국02-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0301.01": {
+      "evidence": [
+        "중심 문장과 뒷받침 문장이 하는 구실을 갈라 설명한다.",
+        "한 문단에 여러 생각이 섞였는지 판단해 표시한다."
+      ],
+      "assessmentPrompt": "여러 문단을 주고 중심 문장을 찾게 한 뒤, 뒷받침이 모자란 문단을 골라 까닭을 설명하게 하라.",
+      "misconceptions": [
+        "문단이 길면 짜임이 잘 갖추어졌다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-01]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0301.02": {
+      "evidence": [
+        "자기가 쓴 문단을 짝에게 읽히고 고칠 점을 듣는다.",
+        "친구의 문단에서 뒷받침이 약한 곳을 짚어 말해 준다."
+      ],
+      "assessmentPrompt": "쓴 문단을 짝과 바꾸어 읽게 하고, 뒷받침이 약한 곳을 서로 한 군데씩 짚어 주게 하라.",
+      "misconceptions": [
+        "맞춤법만 고쳐 주고 문단의 짜임은 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-01]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0301.03": {
+      "evidence": [
+        "중심 문장을 먼저 정하고 받쳐 줄 내용을 이어 쓴다.",
+        "쓴 문단을 다시 읽으며 문장을 더하거나 뺀다."
+      ],
+      "assessmentPrompt": "주제를 하나 정해 중심 문장을 먼저 쓰게 하고, 받쳐 주는 문장 두 개를 이어 문단을 완성하게 하라.",
+      "misconceptions": [
+        "받쳐 주는 자리에 중심 문장을 말만 바꾸어 되풀이한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-01]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0301.04": {
+      "evidence": [
+        "고쳐 쓴 곳을 표시하고 왜 그렇게 고쳤는지 말한다.",
+        "다음 글을 쓸 때 먼저 살필 점을 골라 적는다."
+      ],
+      "assessmentPrompt": "초고와 고쳐 쓴 글을 나란히 놓게 하고, 고친 곳과 그렇게 고친 까닭을 말하게 하라.",
+      "misconceptions": [
+        "고쳐쓰기를 맞춤법 고치기로만 여겨 문단은 그대로 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 25,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국03-01]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0302.01": {
+      "evidence": [
+        "보고하는 글에 들어갈 내용 요소를 골라 짚는다.",
+        "사실을 적은 문장과 부풀린 문장을 구분해 표시한다."
+      ],
+      "assessmentPrompt": "보고하는 글의 예를 주고 들어갈 내용 요소를 찾게 한 뒤, 부풀려 쓴 문장을 골라내게 하라.",
+      "misconceptions": [
+        "느낀 점을 길게 적고 절차와 결과는 한 줄로 줄인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-02]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0302.02": {
+      "evidence": [
+        "조사한 절차와 결과를 모둠 친구들 앞에서 설명한다.",
+        "친구의 보고를 듣고 빠진 절차가 없는지 물어본다."
+      ],
+      "assessmentPrompt": "모둠 조사 결과를 보고하는 글로 쓰고 발표하게 한 뒤, 다른 모둠의 질문에 답하게 하라.",
+      "misconceptions": [
+        "결과만 말하고 어떻게 알아냈는지는 밝히지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-02]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0302.03": {
+      "evidence": [
+        "조사한 차례를 정리하고 결과를 표나 문장으로 적는다.",
+        "정확한 낱말로 고쳐 쓰며 어림한 표현을 줄인다."
+      ],
+      "assessmentPrompt": "교실 물건을 조사해 절차와 결과가 드러나게 보고하는 글을 쓰게 하고, 어림한 표현을 고치게 하라.",
+      "misconceptions": [
+        "많았다, 조금처럼 어림한 말로만 결과를 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-02]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0302.04": {
+      "evidence": [
+        "쓴 보고 글이 사실에 맞는지 조사 기록과 견주어 확인한다.",
+        "다음 보고에서 더 정확하게 적을 곳을 골라 정한다."
+      ],
+      "assessmentPrompt": "쓴 보고 글을 조사 기록과 견주게 하고, 다르게 적힌 곳을 찾아 고치게 하라.",
+      "misconceptions": [
+        "기록과 다른 곳을 찾고도 글이 더 그럴듯하다는 까닭으로 두고 넘어간다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 25,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국03-02]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0303.01": {
+      "evidence": [
+        "의견을 밝힌 문장과 이유를 든 문장을 갈라 표시한다.",
+        "주제에 알맞은 이유인지 판단해 알맞은 것을 고른다."
+      ],
+      "assessmentPrompt": "학급 문제에 대한 짧은 글을 주고 의견과 이유를 나누게 한 뒤, 알맞지 않은 이유를 골라내게 하라.",
+      "misconceptions": [
+        "이유 자리에 자기 기분만 적고 까닭을 대지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-03]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0303.02": {
+      "evidence": [
+        "자기가 쓴 글을 친구에게 읽히고 이유가 잘 통하는지 듣는다.",
+        "다른 의견을 가진 친구의 글을 읽고 답하는 말을 한다."
+      ],
+      "assessmentPrompt": "의견 글을 모둠에서 돌려 읽게 하고, 서로 이유가 잘 통하는지 말해 주게 하라.",
+      "misconceptions": [
+        "다른 의견의 글을 읽고 틀렸다고만 말하고 까닭을 대지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-03]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0303.03": {
+      "evidence": [
+        "쟁점이 되는 일을 고르고 자기 의견을 한 문장으로 적는다.",
+        "겪은 일이나 아는 것을 들어 이유를 이어 쓴다."
+      ],
+      "assessmentPrompt": "학교에서 고쳤으면 하는 일을 골라 의견을 한 문장으로 쓰고, 이유 두 가지를 이어 쓰게 하라.",
+      "misconceptions": [
+        "의견을 여러 개 늘어놓고 이유는 하나도 붙이지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (가) 성취기준 해설",
+        "code": "[4국03-03]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0303.04": {
+      "evidence": [
+        "자기 이유가 의견을 받치는지 다시 읽어 점검한다.",
+        "친구의 물음을 받아 이유를 더 자세히 고쳐 쓴다."
+      ],
+      "assessmentPrompt": "친구가 물은 곳을 표시하게 하고, 그 자리에 이유를 더 자세히 써서 고치게 하라.",
+      "misconceptions": [
+        "물음을 받으면 의견 자체를 바꾸어 글의 앞뒤가 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 25,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국03-03]"
+      }
+    },
+    "kr.mt.korean.writing.3-4.4guk0304.01": {
+      "evidence": [
+        "글을 읽을 사람과 글을 쓰는 목적을 갈라 말한다.",
+        "마음을 전하는 글에 어울리는 표현을 골라 짚는다."
+      ],
+      "assessmentPrompt": "고마움을 전하는 글과 알리는 글을 견주게 하고, 읽을 사람과 목적이 어떻게 다른지 말하게 하라.",
+      "misconceptions": [
+        "읽을 사람을 정하지 않고 자기 이야기만 늘어놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > 성취기준 [4국03-04]",
+        "code": "[4국03-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0304.02": {
+      "evidence": [
+        "자기가 쓴 글을 실제로 받을 사람에게 건네어 전한다.",
+        "글을 받은 사람의 반응을 듣고 이야기를 나눈다."
+      ],
+      "assessmentPrompt": "고마운 마음을 전할 사람을 정해 편지를 쓰고, 실제로 전한 뒤 받은 반응을 이야기하게 하라.",
+      "misconceptions": [
+        "누구에게나 쓸 수 있는 인사말만 적어 받는 사람이 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > 성취기준 [4국03-04]",
+        "code": "[4국03-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0304.03": {
+      "evidence": [
+        "전할 마음과 그 까닭을 정하고 형식을 갖추어 쓴다.",
+        "읽을 사람을 떠올리며 알맞은 낱말과 말투를 고른다."
+      ],
+      "assessmentPrompt": "전할 마음과 그 까닭을 먼저 정하게 한 뒤, 받을 사람에 어울리는 말투로 편지를 쓰게 하라.",
+      "misconceptions": [
+        "형식만 갖추고 왜 그런 마음이 들었는지는 쓰지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > 성취기준 [4국03-04]",
+        "code": "[4국03-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0304.04": {
+      "evidence": [
+        "쓴 글이 읽을 사람에게 잘 전해질지 짚어 본다.",
+        "받는 사람의 처지에서 고칠 곳을 찾아 고친다."
+      ],
+      "assessmentPrompt": "쓴 글을 받을 사람의 처지에서 다시 읽게 하고, 고칠 곳을 한 군데 찾아 바꾸게 하라.",
+      "misconceptions": [
+        "자기가 만족하면 다 되었다고 보고 읽을 사람의 처지를 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 25,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국03-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0305.01": {
+      "evidence": [
+        "글을 쓰는 전체 과정을 여러 단계로 나누어 말한다.",
+        "쓰기 단계마다 점검할 것을 하나씩 골라 짚는다."
+      ],
+      "assessmentPrompt": "글을 쓰는 차례를 단계로 나누어 말하게 하고, 단계마다 확인할 점을 하나씩 정하게 하라.",
+      "misconceptions": [
+        "쓰기를 글을 적는 일로만 보고 계획과 고치기는 넣지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > 성취기준 [4국03-05]",
+        "code": "[4국03-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0305.02": {
+      "evidence": [
+        "쓰기가 막힌 곳을 친구나 교사에게 말하고 도움을 청한다.",
+        "친구가 쓴 글에서 잘된 점을 하나 찾아 말해 준다."
+      ],
+      "assessmentPrompt": "쓰다가 막힌 곳을 짝에게 말하게 하고, 짝은 도울 방법을 한 가지 제안하게 하라.",
+      "misconceptions": [
+        "막혀도 말하지 않고 빈칸으로 두어 글을 끝내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > 성취기준 [4국03-05]",
+        "code": "[4국03-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0305.03": {
+      "evidence": [
+        "계획, 쓰기, 고치기의 차례를 따라 글을 마무리한다.",
+        "점검표를 보며 단계마다 확인해 표시하고 넘어간다."
+      ],
+      "assessmentPrompt": "점검표를 나누어 주고 계획부터 고치기까지 단계마다 표시하며 한 편의 글을 끝내게 하라.",
+      "misconceptions": [
+        "고치기 단계를 건너뛰고 초고를 그대로 낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > 성취기준 [4국03-05]",
+        "code": "[4국03-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.writing.3-4.4guk0305.04": {
+      "evidence": [
+        "지난번에 쓴 글과 견주어 나아진 점을 찾아 말한다.",
+        "쓰기가 즐거웠던 때를 골라 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "지난달에 쓴 글과 이번 글을 견주어 나아진 점 한 가지와 아쉬운 점 한 가지를 말하게 하라.",
+      "misconceptions": [
+        "맞춤법이 틀릴까 걱정해 쓰기를 미루고 분량을 줄인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 25,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (3) 쓰기 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국03-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0401.01": {
+      "evidence": [
+        "비슷한 말과 반대말을 갈라 서로 짝지어 놓는다.",
+        "넓은 뜻의 말과 그 안에 드는 말을 구분해 묶는다."
+      ],
+      "assessmentPrompt": "낱말 카드를 비슷한 말끼리, 반대말끼리 짝지어 놓게 하고 그렇게 묶은 기준을 말하게 하라.",
+      "misconceptions": [
+        "글자 모양이 비슷하면 뜻도 비슷하다고 보고 짝짓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-01]",
+        "code": "[4국04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0401.02": {
+      "evidence": [
+        "낱말 관계를 이용한 놀이에서 답을 말하고 설명한다.",
+        "친구가 든 낱말이 알맞은지 까닭을 들어 말해 준다."
+      ],
+      "assessmentPrompt": "한 사람이 낱말을 말하면 짝이 반대말을 대는 놀이를 하게 하고, 서로 맞는지 까닭을 말하게 하라.",
+      "misconceptions": [
+        "반대말 자리에 안을 붙인 말을 대고 그대로 넘어간다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-01]",
+        "code": "[4국04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0401.03": {
+      "evidence": [
+        "글에서 뜻이 이어지는 낱말을 찾아 어휘망으로 잇는다.",
+        "이은 낱말을 관계에 따라 다시 나누어 정리한다."
+      ],
+      "assessmentPrompt": "글에서 한 주제와 이어지는 낱말을 찾아 어휘망으로 잇게 하고, 관계에 따라 나누어 정리하게 하라.",
+      "misconceptions": [
+        "낱말을 많이 모으기만 하고 어떤 관계인지 나누지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-01]",
+        "code": "[4국04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0401.04": {
+      "evidence": [
+        "자기 글에서 되풀이된 낱말을 찾아 다른 말로 바꾼다.",
+        "새로 알게 된 낱말을 골라 자기 목록에 적는다."
+      ],
+      "assessmentPrompt": "자기 글에서 되풀이된 낱말을 찾아 비슷한 말로 바꾸게 하고, 바꾼 까닭을 말하게 하라.",
+      "misconceptions": [
+        "비슷한 말로 바꾸면서 문장에 어울리지 않는 말을 넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0402.01": {
+      "evidence": [
+        "이름을 나타내는 말과 움직임을 나타내는 말을 갈라 놓는다.",
+        "낱말의 기본형과 모양이 바뀐 형태를 구분해 짚는다."
+      ],
+      "assessmentPrompt": "낱말 카드를 이름, 움직임, 성질을 나타내는 말로 나누게 하고 나눈 기준을 설명하게 하라.",
+      "misconceptions": [
+        "먹었다처럼 모양이 바뀐 형태를 그대로 사전에서 찾으려 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (가) 성취기준 해설",
+        "code": "[4국04-02]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0402.02": {
+      "evidence": [
+        "찾은 뜻을 친구에게 알려 주며 예문을 들어 말한다.",
+        "낱말의 여러 뜻 가운데 어느 것인지 함께 정한다."
+      ],
+      "assessmentPrompt": "같은 낱말이 다르게 쓰인 두 문장을 주고, 사전에서 알맞은 뜻을 찾아 짝에게 설명하게 하라.",
+      "misconceptions": [
+        "사전에 나온 첫 번째 뜻만 읽고 문장에 맞는지 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (가) 성취기준 해설",
+        "code": "[4국04-02]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0402.03": {
+      "evidence": [
+        "낱말을 기본형으로 바꾼 뒤 사전에서 차례대로 찾는다.",
+        "찾은 쪽에서 뜻, 발음, 예문을 골라 적는다."
+      ],
+      "assessmentPrompt": "글에서 모르는 낱말 세 개를 골라 기본형으로 바꾸어 사전에서 찾고, 뜻과 예문을 적게 하라.",
+      "misconceptions": [
+        "자모 차례를 헤아리지 않고 사전을 아무 곳이나 펴서 헤맨다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (가) 성취기준 해설",
+        "code": "[4국04-02]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0402.04": {
+      "evidence": [
+        "짐작한 뜻과 사전에서 찾은 뜻을 견주어 말한다.",
+        "국어사전을 쓰면 좋은 때가 언제인지 찾아 정한다."
+      ],
+      "assessmentPrompt": "먼저 뜻을 짐작해 적게 한 뒤 사전에서 확인하게 하고, 다르게 짐작한 까닭을 말하게 하라.",
+      "misconceptions": [
+        "짐작한 뜻이 맞았는지 확인하지 않고 넘어간다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국04-02]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0403.01": {
+      "evidence": [
+        "문장에서 누가 또는 무엇이에 해당하는 부분을 찾아 표시한다.",
+        "짜임이 갖추어진 문장과 모자란 문장을 구분한다."
+      ],
+      "assessmentPrompt": "여러 문장을 주고 누가에 해당하는 부분과 어찌하다에 해당하는 부분을 나누게 한 뒤, 모자란 문장을 고르게 하라.",
+      "misconceptions": [
+        "맨 앞의 낱말을 늘 주어 자리로 보아 잘못 나눈다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-03]",
+        "code": "[4국04-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0403.02": {
+      "evidence": [
+        "문장의 짜임을 갖추어 자기 생각을 문장으로 말한다.",
+        "친구의 말에서 빠진 부분을 찾아 짚어 되묻는다."
+      ],
+      "assessmentPrompt": "그림을 보고 누가 무엇을 하는지 드러나는 문장으로 말하게 하고, 짝은 빠진 곳을 되묻게 하라.",
+      "misconceptions": [
+        "주어를 자주 빼고 말해 누구의 일인지 알기 어렵다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-03]",
+        "code": "[4국04-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0403.03": {
+      "evidence": [
+        "낱말 카드를 짜임에 맞게 늘어놓아 문장을 만든다.",
+        "만든 문장에 꾸미는 말을 넣어 더 길게 늘려 쓴다."
+      ],
+      "assessmentPrompt": "낱말 카드로 문장을 만들게 한 뒤, 꾸미는 말을 넣어 더 자세한 문장으로 늘려 쓰게 하라.",
+      "misconceptions": [
+        "낱말을 이어 붙이기만 해 뜻이 통하지 않는 문장을 만든다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-03]",
+        "code": "[4국04-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0403.04": {
+      "evidence": [
+        "자기 글에서 짜임이 어색한 문장을 찾아 고친다.",
+        "고친 문장이 더 잘 통하는지 소리 내어 확인한다."
+      ],
+      "assessmentPrompt": "자기 글에서 뜻이 잘 통하지 않는 문장을 두 개 찾아 짜임에 맞게 고쳐 쓰게 하라.",
+      "misconceptions": [
+        "문장이 길수록 좋은 문장이라고 보고 계속 이어 붙인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국04-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0404.01": {
+      "evidence": [
+        "높임을 나타내는 말과 그렇지 않은 말을 갈라 짚는다.",
+        "이, 그, 저가 가리키는 것을 글에서 찾아 잇는다."
+      ],
+      "assessmentPrompt": "짧은 글에서 높임 표현과 가리키는 말을 각각 찾게 하고, 가리키는 말이 무엇을 가리키는지 잇게 하라.",
+      "misconceptions": [
+        "어미만 높임으로 보고 부르는 말이나 낮춤말은 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (가) 성취기준 해설",
+        "code": "[4국04-04]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0404.02": {
+      "evidence": [
+        "말하는 상대에 맞추어 높임 표현을 골라 말한다.",
+        "이어 주는 말을 써서 앞뒤 말을 연결해 이야기한다."
+      ],
+      "assessmentPrompt": "선생님과 친구에게 각각 같은 부탁을 하게 하고, 높임 표현과 이어 주는 말을 알맞게 쓰게 하라.",
+      "misconceptions": [
+        "높임말을 지나치게 겹쳐 써서 어색한 말이 된다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (가) 성취기준 해설",
+        "code": "[4국04-04]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0404.03": {
+      "evidence": [
+        "글을 쓰며 앞 문장을 가리키는 말로 바꾸어 잇는다.",
+        "이어 주는 말을 골라 문장과 문장을 연결한다."
+      ],
+      "assessmentPrompt": "되풀이되는 말이 많은 글을 주고 가리키는 말과 이어 주는 말을 넣어 고쳐 쓰게 하라.",
+      "misconceptions": [
+        "그리고만 계속 써서 앞뒤 관계가 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (가) 성취기준 해설",
+        "code": "[4국04-04]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0404.04": {
+      "evidence": [
+        "자기 말에서 높임 표현이 알맞았는지 점검표에 표시한다.",
+        "가리키는 말이 무엇을 가리키는지 다시 읽어 확인한다."
+      ],
+      "assessmentPrompt": "자기가 쓴 글을 다시 읽으며 가리키는 말이 분명한지 확인하고 어긋난 곳을 고치게 하라.",
+      "misconceptions": [
+        "가리키는 말이 여러 곳을 가리켜도 뜻이 통한다고 여겨 그대로 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국04-04]"
+      }
+    },
+    "kr.mt.korean.grammar.3-4.4guk0405.01": {
+      "evidence": [
+        "말이 알림에 쓰이는 장면과 사귐에 쓰이는 장면을 갈라 예를 든다.",
+        "같은 상황에서 말에 따라 관계가 달라진 예를 설명한다."
+      ],
+      "assessmentPrompt": "생활에서 모은 말 사례를 알리는 말과 사귐을 위한 말로 나누게 하고 그 차이를 설명하게 하라.",
+      "misconceptions": [
+        "말은 정보를 전하는 데만 쓰인다고 보고 사귐의 구실을 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-05]",
+        "code": "[4국04-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0405.02": {
+      "evidence": [
+        "관계를 좋게 하는 말을 골라 친구에게 건넨다.",
+        "말로 마음이 풀린 일을 예로 들어 이야기한다."
+      ],
+      "assessmentPrompt": "친구와 다툰 뒤 관계를 되돌릴 수 있는 말을 골라 실제로 건네고, 그 결과를 이야기하게 하라.",
+      "misconceptions": [
+        "사과의 말만 하고 상대의 마음을 묻는 말은 하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-05]",
+        "code": "[4국04-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0405.03": {
+      "evidence": [
+        "생활에서 쓰이는 말 사례를 모아 갈래별로 정리한다.",
+        "정리한 사례에서 되풀이되는 특징을 찾아 적는다."
+      ],
+      "assessmentPrompt": "하루 동안 들은 말 가운데 다섯 개를 모아 쓰임에 따라 나누고, 눈에 띄는 특징을 적게 하라.",
+      "misconceptions": [
+        "사례를 모으기만 하고 어떤 쓰임인지 나누지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 26,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > 성취기준 [4국04-05]",
+        "code": "[4국04-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.grammar.3-4.4guk0405.04": {
+      "evidence": [
+        "자기 말버릇을 점검표로 돌아보고 고칠 것을 정한다.",
+        "생활 속에서 우리말을 아껴 쓴 일을 찾아 말한다."
+      ],
+      "assessmentPrompt": "한 주 동안 자기 국어생활을 점검표로 돌아보게 하고, 바꾸고 싶은 말버릇 한 가지를 정하게 하라.",
+      "misconceptions": [
+        "남의 말버릇만 지적하고 자기 말은 돌아보지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (4) 문법 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국04-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0501.01": {
+      "evidence": [
+        "인물의 성격을 알려 주는 말과 행동을 찾아 짚는다.",
+        "사건이 일어난 차례와 그 까닭을 이어 설명한다."
+      ],
+      "assessmentPrompt": "이야기를 읽고 인물의 성격을 알 수 있는 대목을 찾게 한 뒤, 사건의 차례를 이어 설명하게 하라.",
+      "misconceptions": [
+        "인물의 성격을 착하다, 나쁘다로만 나누고 근거를 대지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-01]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0501.02": {
+      "evidence": [
+        "인물에 대한 생각을 근거를 들어 모둠에서 말한다.",
+        "친구와 다른 해석을 듣고 어느 대목 때문인지 묻는다."
+      ],
+      "assessmentPrompt": "인물의 행동에 대한 생각을 근거와 함께 말하게 하고, 다르게 본 친구에게 그 대목을 묻게 하라.",
+      "misconceptions": [
+        "자기 생각과 다르면 잘못 읽었다고 말하고 대목을 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-01]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0501.03": {
+      "evidence": [
+        "이야기의 사건을 일어난 차례대로 정리해 표로 만든다.",
+        "인물의 특성을 살려 이어질 이야기를 상상해 쓴다."
+      ],
+      "assessmentPrompt": "이야기의 사건을 차례대로 표로 정리하게 한 뒤, 인물의 성격에 맞게 이어질 이야기를 쓰게 하라.",
+      "misconceptions": [
+        "이어질 이야기에서 인물의 성격을 갑자기 바꾸어 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-01]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0501.04": {
+      "evidence": [
+        "정리한 흐름을 작품과 견주어 빠진 사건을 찾는다.",
+        "작품을 감상하며 새로 알게 된 점을 찾아 말한다."
+      ],
+      "assessmentPrompt": "정리한 사건 표를 작품과 견주어 빠진 곳을 찾게 하고, 감상하며 새로 알게 된 점을 말하게 하라.",
+      "misconceptions": [
+        "재미있는 장면만 표에 넣고 사건을 잇는 대목은 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국05-01]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0502.01": {
+      "evidence": [
+        "작품에서 실제로 있을 수 있는 일과 지어낸 일을 갈라 표시한다.",
+        "작품 속 배경과 자기 생활을 견주어 다른 점을 짚는다."
+      ],
+      "assessmentPrompt": "작품에서 있을 법한 일과 지어낸 일을 나누어 표시하게 하고, 그렇게 나눈 까닭을 말하게 하라.",
+      "misconceptions": [
+        "동물이 말을 하면 모두 지어낸 일이라며 다른 요소는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-02]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0502.02": {
+      "evidence": [
+        "비슷한 경험을 들어 작품에 대한 생각을 말한다.",
+        "친구의 경험을 듣고 작품의 다른 면을 짚어 말한다."
+      ],
+      "assessmentPrompt": "작품 속 사건과 비슷한 자기 경험을 말하게 하고, 친구 이야기를 들은 뒤 새로 보인 점을 말하게 하라.",
+      "misconceptions": [
+        "자기 경험만 길게 말하고 작품 내용과 잇지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-02]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0502.03": {
+      "evidence": [
+        "작품 속 장면과 자기 경험을 표에 나란히 적는다.",
+        "작품과 자기 경험의 같은 점과 다른 점을 나누어 정리한다."
+      ],
+      "assessmentPrompt": "작품 속 장면과 자기 경험을 표에 나란히 적게 하고, 같은 점과 다른 점을 나누어 쓰게 하라.",
+      "misconceptions": [
+        "표를 채우면서 다른 점만 적고 닮은 점은 찾지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-02]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0502.04": {
+      "evidence": [
+        "지어낸 부분에 대한 자기 의견을 근거를 들어 말한다.",
+        "처음과 견주어 감상이 달라진 곳을 짚어 말한다."
+      ],
+      "assessmentPrompt": "작품에서 지어냈다고 본 부분에 대한 의견을 근거와 함께 말하고, 생각이 바뀐 곳을 짚게 하라.",
+      "misconceptions": [
+        "지어낸 이야기라서 말할 것이 없다고 여겨 의견을 내지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국05-02]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0503.01": {
+      "evidence": [
+        "소개하는 글에 넣을 내용을 골라 차례를 정한다.",
+        "작품이 마음에 든 까닭을 근거로 정리해 말한다."
+      ],
+      "assessmentPrompt": "소개할 작품을 고르고 소개 글에 넣을 내용 세 가지를 정한 뒤 그 차례를 말하게 하라.",
+      "misconceptions": [
+        "줄거리를 끝까지 다 밝혀 소개를 듣는 재미를 없앤다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > 성취기준 [4국05-03]",
+        "code": "[4국05-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0503.02": {
+      "evidence": [
+        "고른 작품을 친구들 앞에서 근거를 들어 소개한다.",
+        "소개를 듣고 궁금한 점을 물으며 이야기를 잇는다."
+      ],
+      "assessmentPrompt": "마음에 드는 작품을 반 친구들에게 소개하게 하고, 듣는 친구들은 궁금한 점을 묻게 하라.",
+      "misconceptions": [
+        "재미있으니 읽어 보라는 말만 하고 근거를 대지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > 성취기준 [4국05-03]",
+        "code": "[4국05-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0503.03": {
+      "evidence": [
+        "소개할 작품을 고르고 인상 깊은 대목을 찾아 적는다.",
+        "적은 내용을 소개 글이나 소개 카드로 옮겨 만든다."
+      ],
+      "assessmentPrompt": "인상 깊은 대목을 찾아 적게 한 뒤, 소개 카드를 만들어 교실에 걸게 하라.",
+      "misconceptions": [
+        "책 제목과 글쓴이만 적고 인상 깊은 대목은 넣지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > 성취기준 [4국05-03]",
+        "code": "[4국05-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0503.04": {
+      "evidence": [
+        "친구들의 반응을 보고 소개에서 고칠 점을 찾는다.",
+        "친구가 소개한 작품 가운데 읽고 싶은 것을 고른다."
+      ],
+      "assessmentPrompt": "소개를 마친 뒤 친구들의 반응을 보고 고칠 점을 찾게 하고, 읽고 싶어진 작품을 고르게 하라.",
+      "misconceptions": [
+        "자기 소개가 끝나면 친구가 소개한 작품에는 관심을 두지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국05-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0504.01": {
+      "evidence": [
+        "보고 듣고 만지는 느낌을 살린 표현을 찾아 짚는다.",
+        "감각을 살린 문장과 그렇지 않은 문장을 견주어 설명한다."
+      ],
+      "assessmentPrompt": "시에서 감각을 살린 표현을 찾게 하고, 그 표현을 뺀 문장과 견주어 무엇이 달라지는지 설명하게 하라.",
+      "misconceptions": [
+        "흉내 내는 말만 감각적 표현으로 보고 빗대어 쓴 표현은 지나친다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-04]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0504.02": {
+      "evidence": [
+        "감각을 살린 표현을 넣어 자기 생각을 말한다.",
+        "친구의 표현을 듣고 머릿속에 떠오른 장면을 말해 준다."
+      ],
+      "assessmentPrompt": "오늘의 날씨나 기분을 감각을 살린 표현으로 말하게 하고, 듣는 친구는 떠오른 장면을 말하게 하라.",
+      "misconceptions": [
+        "예쁜 말을 늘어놓기만 하고 전하려는 생각이 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-04]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0504.03": {
+      "evidence": [
+        "나타낼 대상을 정하고 어떤 감각을 살릴지 고른다.",
+        "고른 감각에 맞는 표현을 넣어 짧은 글로 쓴다."
+      ],
+      "assessmentPrompt": "정한 대상에 어울리는 감각을 고르게 한 뒤, 그 감각을 살린 표현을 넣어 짧은 글을 쓰게 하라.",
+      "misconceptions": [
+        "모든 문장에 색깔을 나타내는 말만 넣어 표현이 단조로워진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (가) 성취기준 해설",
+        "code": "[4국05-04]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0504.04": {
+      "evidence": [
+        "표현을 넣기 전과 뒤의 글을 견주어 달라진 점을 말한다.",
+        "친구의 말을 듣고 고칠 표현을 하나 골라 다시 쓴다."
+      ],
+      "assessmentPrompt": "감각을 살린 표현을 넣기 전과 뒤의 글을 나란히 놓고 무엇이 달라졌는지 말하게 하라.",
+      "misconceptions": [
+        "표현을 많이 넣을수록 좋은 글이라고 보고 문장을 늘리기만 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국05-04]"
+      }
+    },
+    "kr.mt.korean.literature.3-4.4guk0505.01": {
+      "evidence": [
+        "자기 흥미와 수준에 맞는 작품을 고르는 기준을 말한다.",
+        "재미를 느낀 대목과 마음이 움직인 대목을 갈라 짚는다."
+      ],
+      "assessmentPrompt": "읽은 작품에서 재미있던 대목과 마음에 남은 대목을 나누어 짚게 하고 그 까닭을 말하게 하라.",
+      "misconceptions": [
+        "웃긴 장면만 재미로 보고 마음이 움직인 대목은 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > 성취기준 [4국05-05]",
+        "code": "[4국05-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0505.02": {
+      "evidence": [
+        "감상을 그림이나 짧은 글로 나타내 친구와 나눈다.",
+        "친구의 감상을 듣고 같은 점과 다른 점을 말한다."
+      ],
+      "assessmentPrompt": "작품을 읽은 뒤 감상을 그림이나 글로 나타내게 하고, 모둠에서 서로 나누어 보게 하라.",
+      "misconceptions": [
+        "감상을 나눌 때 좋았다는 말만 하고 대목을 짚지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > 성취기준 [4국05-05]",
+        "code": "[4국05-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0505.03": {
+      "evidence": [
+        "여러 갈래의 작품 가운데 감상할 것을 스스로 고른다.",
+        "고른 작품을 끝까지 감상하고 기록장에 적는다."
+      ],
+      "assessmentPrompt": "책, 오디오북, 애니메이션 가운데 하나를 골라 끝까지 감상하고 기록장에 감상을 적게 하라.",
+      "misconceptions": [
+        "고르기만 하고 끝까지 감상하지 않아 기록장이 비어 있다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 27,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > 성취기준 [4국05-05]",
+        "code": "[4국05-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.literature.3-4.4guk0505.04": {
+      "evidence": [
+        "한 달 동안 감상한 작품을 돌아보고 갈래를 넓혀 고른다.",
+        "작품을 즐긴 시간을 돌아보고 다음 계획을 세운다."
+      ],
+      "assessmentPrompt": "한 달 동안 감상한 작품을 돌아보게 하고, 다음 달에 새로 해 볼 갈래를 골라 계획을 세우게 하라.",
+      "misconceptions": [
+        "늘 같은 갈래만 골라 감상의 폭이 넓어지지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (5) 문학 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국05-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.media.3-4.4guk0601.01": {
+      "evidence": [
+        "학습 목적에 맞는 자료와 그렇지 않은 자료를 구분한다.",
+        "자료를 고르는 기준을 두 가지 들어 설명한다."
+      ],
+      "assessmentPrompt": "같은 주제로 모은 자료 네 개를 주고 학습에 쓸 것을 고르게 한 뒤 고른 기준을 설명하게 하라.",
+      "misconceptions": [
+        "가장 먼저 눈에 띈 자료를 목적과 견주지 않고 고른다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (가) 성취기준 해설",
+        "code": "[4국06-01]"
+      }
+    },
+    "kr.mt.korean.media.3-4.4guk0601.02": {
+      "evidence": [
+        "안내받은 인터넷 공간에 접속해 자료를 훑어본다.",
+        "훑어본 자료의 내용을 확인하고 쓸 것을 골라 담는다."
+      ],
+      "assessmentPrompt": "교사가 정해 준 인터넷 공간에서 자료를 훑어보게 하고, 학습에 필요한 자료 두 개를 골라 담게 하라.",
+      "misconceptions": [
+        "제목만 보고 자료를 담아 내용이 주제와 맞지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (가) 성취기준 해설",
+        "code": "[4국06-01]"
+      }
+    },
+    "kr.mt.korean.media.3-4.4guk0601.03": {
+      "evidence": [
+        "고른 자료를 학습 주제에 맞게 정리해 나타낸다.",
+        "정리한 자료를 친구에게 보여 주며 차례대로 설명한다."
+      ],
+      "assessmentPrompt": "고른 자료를 학습 주제에 맞게 한 장으로 정리하게 하고, 무엇을 왜 넣었는지 설명하게 하라.",
+      "misconceptions": [
+        "자료를 그대로 옮겨 붙이기만 하고 주제에 맞게 추리지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (가) 성취기준 해설",
+        "code": "[4국06-01]"
+      }
+    },
+    "kr.mt.korean.media.3-4.4guk0601.04": {
+      "evidence": [
+        "고른 자료가 학습에 도움이 되었는지 돌아보고 바꾼다.",
+        "자료를 찾다가 어려웠던 점을 말하고 도움을 청한다."
+      ],
+      "assessmentPrompt": "쓰고 난 뒤 자료가 학습에 도움이 되었는지 돌아보게 하고, 바꾸고 싶은 자료를 고르게 하라.",
+      "misconceptions": [
+        "자료를 많이 모은 것만으로 잘했다고 여기고 쓸모는 따지지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 29,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국06-01]"
+      }
+    },
+    "kr.mt.korean.media.3-4.4guk0602.01": {
+      "evidence": [
+        "발표 자료에 넣을 것과 뺄 것을 골라 그 까닭을 말한다.",
+        "글과 그림, 사진이 하는 구실을 갈라 설명한다."
+      ],
+      "assessmentPrompt": "발표 자료 예시 두 개를 견주게 하고, 보기 쉬운 쪽을 고른 뒤 그 까닭을 두 가지 말하게 하라.",
+      "misconceptions": [
+        "글자를 많이 넣을수록 좋은 자료라고 보고 화면을 가득 채운다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > 성취기준 [4국06-02]",
+        "code": "[4국06-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.media.3-4.4guk0602.02": {
+      "evidence": [
+        "발표할 차례에 맞추어 자료를 보여 줄 순서를 정한다.",
+        "고른 매체로 자료를 만들고 잘 보이는지 확인한다."
+      ],
+      "assessmentPrompt": "발표 차례를 정한 뒤 매체를 골라 세 장 안의 발표 자료를 만들고 잘 보이는지 확인하게 하라.",
+      "misconceptions": [
+        "자료를 다 만든 뒤에야 발표 차례를 정해 순서가 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > 성취기준 [4국06-02]",
+        "code": "[4국06-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.media.3-4.4guk0602.03": {
+      "evidence": [
+        "핵심 낱말과 그림을 함께 넣어 화면을 꾸민다.",
+        "만든 자료를 보이며 발표 내용을 이어 말한다."
+      ],
+      "assessmentPrompt": "핵심 낱말과 그림을 함께 넣어 발표 자료를 만들게 하고, 그 자료를 보이며 발표하게 하라.",
+      "misconceptions": [
+        "그림만 크게 넣고 무엇을 말하려는지 화면에서 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 28,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > 성취기준 [4국06-02]",
+        "code": "[4국06-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.media.3-4.4guk0602.04": {
+      "evidence": [
+        "친구의 자료와 견주어 고칠 점을 찾아 바꾼다.",
+        "다음 발표에서 쓸 매체를 고르고 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "친구의 발표 자료와 견주어 고칠 점을 한 가지 찾아 바꾸게 하고, 다음에 쓸 매체를 고르게 하라.",
+      "misconceptions": [
+        "친구 자료를 그대로 흉내 내고 자기 발표 내용에 맞추지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 29,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국06-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.korean.media.3-4.4guk0603.01": {
+      "evidence": [
+        "남의 글, 사진, 목소리를 함부로 쓰면 안 되는 까닭을 설명한다.",
+        "함께 나눌 수 있는 자료와 그렇지 않은 자료를 구분한다."
+      ],
+      "assessmentPrompt": "여러 자료를 보여 주고 함께 나눌 수 있는 것과 그렇지 않은 것을 나눈 뒤 그 까닭을 설명하게 하라.",
+      "misconceptions": [
+        "인터넷에 올라와 있으면 누구나 마음대로 써도 된다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 29,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (가) 성취기준 해설",
+        "code": "[4국06-03]"
+      }
+    },
+    "kr.mt.korean.media.3-4.4guk0603.02": {
+      "evidence": [
+        "자료를 쓸 때 만든 사람과 가져온 곳을 함께 적는다.",
+        "친구 얼굴이 담긴 사진은 먼저 허락을 받고 쓴다."
+      ],
+      "assessmentPrompt": "발표 자료에 쓴 그림과 사진마다 만든 사람과 가져온 곳을 적게 하고, 허락이 필요한 것을 고르게 하라.",
+      "misconceptions": [
+        "자료를 내려받아 쓰면서 어디서 가져왔는지 적지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 29,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (가) 성취기준 해설",
+        "code": "[4국06-03]"
+      }
+    },
+    "kr.mt.korean.media.3-4.4guk0603.03": {
+      "evidence": [
+        "가져온 곳을 밝힌 표시를 넣어 자료를 만들어 올린다.",
+        "만든 자료를 정해진 곳에 올려 친구들과 나눈다."
+      ],
+      "assessmentPrompt": "만든 자료에 가져온 곳을 밝혀 적고, 학급 게시판에 올려 친구들과 나누게 하라.",
+      "misconceptions": [
+        "표시를 자료 맨 끝에 작게 넣고 어느 자료에 붙는 것인지 밝히지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 29,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (가) 성취기준 해설",
+        "code": "[4국06-03]"
+      }
+    },
+    "kr.mt.korean.media.3-4.4guk0603.04": {
+      "evidence": [
+        "자기가 올린 자료에 빠진 것이 없는지 점검한다.",
+        "친구의 자료에 남길 말을 예의에 맞게 고쳐 쓴다."
+      ],
+      "assessmentPrompt": "올린 자료를 점검표로 확인하게 하고, 친구 자료에 남길 댓글을 예의에 맞게 쓰게 하라.",
+      "misconceptions": [
+        "댓글에 장난스러운 말을 남기고 상대가 어떻게 느낄지 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-moe-2022-33-annex5-pdf",
+        "printedPage": 29,
+        "section": "나. 성취기준 > [초등학교 3∼4학년] > (6) 매체 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[4국06-03]"
+      }
+    }
+  }
+}

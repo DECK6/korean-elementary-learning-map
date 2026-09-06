@@ -248,14 +248,14 @@
   "cq-17-content-kinds.rq": {
     "groups": [
       {
-        "count": 1593,
+        "count": 939,
         "countVariable": "topicCount",
         "match": {
           "contentKind": "https://dexa.art/learnmap/ontology/k12-core#content-mechanical-derivative"
         }
       },
       {
-        "count": 363,
+        "count": 1017,
         "countVariable": "topicCount",
         "match": {
           "contentKind": "https://dexa.art/learnmap/ontology/k12-core#content-source-grounded-draft"

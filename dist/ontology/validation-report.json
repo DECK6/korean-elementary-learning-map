@@ -30,7 +30,7 @@
       },
       "cq-03-evidence-prompts.rq": {
         "pass": true,
-        "resultSha256": "014d25242ef886627c0cee6fb3114f0a76dcb56efe22fa86916b275c960dd628",
+        "resultSha256": "d166d6913788d093805f0635a6eec1c1ac03659e4d3eb19a173a255dbd2e374c",
         "rowCount": 4008
       },
       "cq-04-direct-prerequisites.rq": {
@@ -100,7 +100,7 @@
       },
       "cq-17-content-kinds.rq": {
         "pass": true,
-        "resultSha256": "a47e195ceba06c88b2abf1bf84e00ef2fefdebc7f0b863ad3ede2e7c88b8b2d0",
+        "resultSha256": "c8d823af2a4ccf58d5b0ee0b6886599c9445677e68a7b0fe2e76a5f360e6f498",
         "rowCount": 2
       },
       "cq-18-k12-core-vocabulary.rq": {
@@ -125,7 +125,7 @@
       "LearningTopic": 1956,
       "PrerequisiteAssertion": 2291,
       "SourceDocument": 16,
-      "SourceLocator": 2203,
+      "SourceLocator": 2857,
       "StandardTopicAlignment": 1956,
       "Subject": 12,
       "VerificationRecord": 6851
@@ -158,7 +158,7 @@
       "standards": 620,
       "topics": 1956
     },
-    "totalGraphResources": 22163
+    "totalGraphResources": 22817
   },
   "fixtures": {
     "adversarial": {
@@ -284,15 +284,15 @@
   "graphs": {
     "generatedEquivalence": {
       "isomorphic": true,
-      "jsonldCanonicalHash": "14407211615767765076585945984330560695655726015890489889742396701456161841091949141",
-      "jsonldTripleCount": 248548,
+      "jsonldCanonicalHash": "14886208322088361828125761838216265493932501250854082476495191974211446736315733747",
+      "jsonldTripleCount": 256786,
       "pass": true,
-      "turtleCanonicalHash": "14407211615767765076585945984330560695655726015890489889742396701456161841091949141",
-      "turtleTripleCount": 248548
+      "turtleCanonicalHash": "14886208322088361828125761838216265493932501250854082476495191974211446736315733747",
+      "turtleTripleCount": 256786
     },
     "parsedTripleCounts": {
-      "dist/ontology/learning-map.jsonld": 248548,
-      "dist/ontology/learning-map.ttl": 248548,
+      "dist/ontology/learning-map.jsonld": 256786,
+      "dist/ontology/learning-map.ttl": 256786,
       "ontology/k12-core.ttl": 412,
       "ontology/learning-map.ttl": 916,
       "ontology/metadata.ttl": 58,
@@ -303,8 +303,8 @@
     "data/kr/curriculum-standards.json": "e9eca97885d466cdc3e34c9d4e3527fded0ff7df0464fc7ac77d7a3960b66570",
     "data/kr/dependencies.candidate.json": "0a320dfae76e276ba1ba1b7b3c55f150248f26c62ddaf259de23011ef88c61d2",
     "data/kr/dependencies.json": "351a436dfcfd9a1d5b144f422b425e7232d2bdb7f90b06af0a2b1e793ea8819e",
-    "dist/ontology/learning-map.jsonld": "55bfa724d05cde5c07f5ab5c534e91b97952efb5743b2b9710b96acc5bac7192",
-    "dist/ontology/learning-map.ttl": "4be2a8280bb298711871dbecb02041e877e16f51cc36fc048b9c73c5bca6dacd",
+    "dist/ontology/learning-map.jsonld": "43d350b14e9af6150a7099b31aaf8da1c58443dd07a22b378444275a16a742b0",
+    "dist/ontology/learning-map.ttl": "f5cf0bdb281399d2276e11684e15ad53654d48f23ea048ba60ec34991a5a9ffb",
     "ontology/fixtures/adversarial/direct-cycle.ttl": "110388381bec880b782f7036f28ea51ea6e3c01e9ce5a5040bdf25f7a88a19e1",
     "ontology/fixtures/adversarial/direct-self-loop.ttl": "c08c4f106b808b38c374e6f1c05fa54f0332ce76df4f6d3c5d5179eefcd1e394",
     "ontology/fixtures/adversarial/duplicate-prerequisite-assertion.ttl": "9ba1fc44507297ab34a3c9398ae9f817ba6578a17989af0d26164e08f732b977",
@@ -338,7 +338,7 @@
     "ontology/queries/cq-16-relation-layers.rq": "f6832c5a820924627c565465b1171f2d036adf51ec43de5cc01fb448b9ec841e",
     "ontology/queries/cq-17-content-kinds.rq": "aefd84f70543a34249da94058f079c9669742f07061e490febbc6a77ff982975",
     "ontology/queries/cq-18-k12-core-vocabulary.rq": "b8519c05e7c006f09abe80126b6b4b3f094282b718121e5ed380f91d17462cff",
-    "ontology/queries/expected.json": "245f1b9d77810ed7795741f3794b66d90eda424f5cc5e0dd26cf140364b0dbf3",
+    "ontology/queries/expected.json": "d57f0389e8766ec0d8c81ce5d8daa41cb42ed6df1d06aadbb9b40ab824787ee1",
     "ontology/shapes.ttl": "e0807eb239b364ad958206f2f8ef2c269781ddeae5ee131f036fc236cd4d9cec"
   },
   "integrity": {
@@ -362,7 +362,7 @@
       "forbiddenKeyCount": 0,
       "forbiddenUrlLiteralCount": 0,
       "pass": true,
-      "resourceCount": 22163
+      "resourceCount": 22817
     },
     "profile": {
       "errorCount": 0,

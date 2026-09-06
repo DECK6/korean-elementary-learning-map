@@ -1,0 +1,2508 @@
+{
+  "$schema": "../../../schema/kr-content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "과학",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-ncic-science-pdf-2022"
+  ],
+  "note": "초등 3~4학년군 과학 153개 주제의 증거·평가 프롬프트·오개념 초안. 교육부 고시 제2022-33호 [별책 9] 과학과 교육과정의 3~4학년군 성취기준, 성취기준 해설, 적용 시 고려 사항, 평가의 방향을 근거로 새로 썼다(인쇄 쪽 = PDF 쪽 − 6).",
+  "entries": {
+    "kr.mt.science.earth-space.earth-sea.g4-06-01.concept": {
+      "evidence": [
+        "지구를 둘러싼 공기가 있음을 생활 속 예를 들어 말한다.",
+        "육지와 바다를 넓이와 물의 종류로 견주어 차이를 설명한다."
+      ],
+      "assessmentPrompt": "지구본을 보고 육지와 바다 가운데 어느 쪽이 더 넓은지 고르고, 그렇게 판단한 까닭을 쓰세요.",
+      "misconceptions": [
+        "공기는 눈에 보이지 않으므로 지구를 둘러싸고 있지 않다고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 성취기준",
+        "code": "[4과06-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-01.procedure": {
+      "evidence": [
+        "지구본 사진에 눈금판을 올리고 두 곳이 차지하는 칸 수를 센다.",
+        "센 칸 수를 적고 넓이가 큰 쪽부터 차례로 늘어놓는다."
+      ],
+      "assessmentPrompt": "투명한 눈금판을 지구 사진 위에 올려 육지와 바다가 차지하는 칸 수를 세어 비교하세요.",
+      "misconceptions": [
+        "지도에서 잘 보이는 큰 대륙만 보고 육지가 더 넓다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과06-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-01.representation": {
+      "evidence": [
+        "육지와 바다의 특징을 두 칸 표로 나누어 적는다.",
+        "넓이를 견준 결과를 막대의 길이로 나타내 보여 준다."
+      ],
+      "assessmentPrompt": "육지와 바다가 차지하는 정도를 막대로 나타내고, 두 곳의 특징을 표로 정리해 설명하세요.",
+      "misconceptions": [
+        "막대의 길이를 실제로 센 값과 맞추지 않고 눈대중으로 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 성취기준",
+        "code": "[4과06-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-02.concept": {
+      "evidence": [
+        "바닷물과 육지의 물을 맛과 가열한 뒤 남는 물질로 갈라 말한다.",
+        "바닷가에서 볼 수 있는 지형의 생김새를 견주어 설명한다."
+      ],
+      "assessmentPrompt": "바닷물과 강물을 각각 가열한 결과를 보고, 두 물이 어떻게 다른지 근거를 들어 쓰세요.",
+      "misconceptions": [
+        "바닷물이 짠 까닭을 누군가 바다에 소금을 뿌렸기 때문이라고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 (가) 성취기준 해설",
+        "code": "[4과06-02]"
+      }
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-02.procedure": {
+      "evidence": [
+        "가열할 때 끓임쪽을 넣고 보호 장비를 갖추어 안전하게 실험한다.",
+        "가열한 뒤 접시에 남은 물질을 돋보기로 살펴 기록한다."
+      ],
+      "assessmentPrompt": "끓임쪽을 넣고 바닷물과 강물을 각각 가열한 뒤, 남은 물질의 색과 모양을 관찰해 기록하세요.",
+      "misconceptions": [
+        "가열 장치를 다룰 때 보호 장비 없이 얼굴을 가까이 대고 들여다본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과06-02]"
+      }
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-02.representation": {
+      "evidence": [
+        "조사한 해안 지형을 사진과 이름표로 정리해 붙인다.",
+        "지형이 나타나는 곳을 지도에 표시해 보여 준다."
+      ],
+      "assessmentPrompt": "우리나라 바닷가에서 볼 수 있는 지형 두 곳을 조사해 사진과 이름을 넣은 소개판을 만드세요.",
+      "misconceptions": [
+        "지형 사진만 붙이고 어느 바닷가에서 볼 수 있는지 적지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 성취기준",
+        "code": "[4과06-02]"
+      }
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-03.concept": {
+      "evidence": [
+        "밀물과 썰물을 바닷물 높이가 달라지는 모습으로 갈라 말한다.",
+        "갯벌이 사람과 생물에게 주는 이로움을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "같은 바닷가를 아침과 낮에 찍은 사진 두 장을 보고 썰물 때를 고른 뒤 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "밀물과 썰물을 파도가 세게 치는 정도로 잘못 갈라 놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 (가) 성취기준 해설",
+        "code": "[4과06-03]"
+      }
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-03.procedure": {
+      "evidence": [
+        "갯벌에 사는 생물과 갯벌이 하는 일을 자료로 조사한다.",
+        "조사한 내용을 바탕으로 알리는 활동을 계획해 실천한다."
+      ],
+      "assessmentPrompt": "우리나라 갯벌 한 곳을 조사해 그곳에 사는 생물과 갯벌이 하는 일을 정리하고, 알릴 계획을 세우세요.",
+      "misconceptions": [
+        "갯벌을 쓸모없는 진흙 땅으로 여겨 지켜야 할 까닭을 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과06-03]"
+      }
+    },
+    "kr.mt.science.earth-space.earth-sea.g4-06-03.representation": {
+      "evidence": [
+        "갯벌을 지켜야 하는 까닭을 담은 알림 자료를 만든다.",
+        "알림 자료에 조사한 사실과 부탁하는 말을 갈라 적는다."
+      ],
+      "assessmentPrompt": "갯벌을 지키자는 알림 포스터를 만들어 조사한 사실 두 가지와 부탁하는 말을 함께 넣으세요.",
+      "misconceptions": [
+        "부탁하는 말만 크게 적고 조사한 사실을 근거로 넣지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 17,
+        "section": "(6) 지구와 바다 성취기준",
+        "code": "[4과06-03]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-01.concept": {
+      "evidence": [
+        "흐르는 물이 땅을 깎는 곳과 흙을 쌓는 곳을 갈라 말한다.",
+        "강의 위쪽과 아래쪽 지형 차이를 물의 작용과 이어 설명한다."
+      ],
+      "assessmentPrompt": "강의 위쪽에 큰 바위가 많고 아래쪽에 모래가 많은 까닭을 흐르는 물의 작용으로 설명하세요.",
+      "misconceptions": [
+        "강의 모든 곳에서 땅이 똑같이 깎인다고 여겨 쌓이는 곳을 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (가) 성취기준 해설",
+        "code": "[4과11-01]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-01.procedure": {
+      "evidence": [
+        "흙 언덕을 만들고 물을 천천히 흘려보내며 변화를 살핀다.",
+        "깎인 곳과 쌓인 곳에 표시를 남기고 사진으로 기록한다."
+      ],
+      "assessmentPrompt": "쟁반에 흙 언덕을 만들고 위에서 물을 흘려보낸 뒤, 깎인 곳과 쌓인 곳을 찾아 표시하세요.",
+      "misconceptions": [
+        "물을 한꺼번에 많이 부어 언덕이 무너진 것을 물이 깎은 결과로 기록한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과11-01]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-01.representation": {
+      "evidence": [
+        "실험 전과 후의 언덕 모습을 그림으로 나란히 그린다.",
+        "깎인 곳과 쌓인 곳을 서로 다른 기호로 표시해 보여 준다."
+      ],
+      "assessmentPrompt": "실험 전과 후의 흙 언덕을 그림으로 그리고, 깎인 곳과 쌓인 곳을 다른 기호로 표시하세요.",
+      "misconceptions": [
+        "실험한 뒤의 모습만 그려 무엇이 달라졌는지 견줄 수 없게 만든다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 성취기준",
+        "code": "[4과11-01]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-02.concept": {
+      "evidence": [
+        "화산과 화산이 아닌 산을 생김새로 갈라 말한다.",
+        "화산 활동에서 나오는 물질을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "화산 사진과 일반 산 사진을 견주어, 화산이라고 판단한 까닭을 두 가지 쓰세요.",
+      "misconceptions": [
+        "산꼭대기가 뾰족하면 모두 화산이라고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (가) 성취기준 해설",
+        "code": "[4과11-02]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-02.procedure": {
+      "evidence": [
+        "모형실험 재료를 안전하게 다루며 화산 모형을 작동시킨다.",
+        "흘러나온 물질의 모습과 흐른 자리를 관찰해 기록한다."
+      ],
+      "assessmentPrompt": "화산 모형실험을 안전 수칙을 지키며 하고, 흘러나온 물질이 어디로 어떻게 흘렀는지 기록하세요.",
+      "misconceptions": [
+        "가열 기구 가까이에서 보호 장비 없이 모형을 들여다본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과11-02]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-02.representation": {
+      "evidence": [
+        "화산 모형과 실제 화산의 모습을 견주어 표로 적는다.",
+        "물질이 나오는 자리와 흐르는 길을 그림에 표시한다."
+      ],
+      "assessmentPrompt": "화산 모형실험과 실제 화산을 견주어 닮은 점과 다른 점을 표로 정리해 발표하세요.",
+      "misconceptions": [
+        "모형에서 본 것이 실제 화산에서도 똑같이 일어난다고 그대로 옮겨 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 성취기준",
+        "code": "[4과11-02]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-03.concept": {
+      "evidence": [
+        "현무암과 화강암을 알갱이의 크기와 색으로 갈라 말한다.",
+        "관찰한 특징을 근거로 두 암석 가운데 무엇인지 판단한다."
+      ],
+      "assessmentPrompt": "구멍이 많고 어두운 암석과 알갱이가 큰 밝은 암석에 각각 이름을 붙이고, 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "돌덩이가 크면 알갱이도 크다고 여겨 겉모습만으로 나눈다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (가) 성취기준 해설",
+        "code": "[4과11-03]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-03.procedure": {
+      "evidence": [
+        "돋보기로 암석 표면의 알갱이를 살펴 특징을 적는다.",
+        "정한 기준에 따라 암석 시료를 두 무리로 나누어 놓는다."
+      ],
+      "assessmentPrompt": "현무암과 화강암 시료를 돋보기로 관찰해 알갱이 크기와 색을 적고, 두 무리로 나누세요.",
+      "misconceptions": [
+        "시료를 관찰하지 않고 이름표만 보고 무리를 나눈다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과11-03]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-03.representation": {
+      "evidence": [
+        "관찰한 특징을 암석 이름별로 나눈 표에 정리해 적는다.",
+        "암석 그림에 알갱이의 크기를 나타내 견주어 보여 준다."
+      ],
+      "assessmentPrompt": "두 화성암의 색, 알갱이 크기, 구멍 여부를 표로 정리하고, 무엇을 기준으로 나누었는지 설명하세요.",
+      "misconceptions": [
+        "표에 이름과 사진만 넣고 나눈 기준이 되는 특징은 적지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 성취기준",
+        "code": "[4과11-03]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-04.concept": {
+      "evidence": [
+        "화산 활동이 주는 피해와 이로운 점을 갈라 말한다.",
+        "지진이 일어났을 때 위험한 곳을 골라 그 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "화산 활동이 사람에게 주는 피해와 이로운 점을 한 가지씩 쓰고, 그렇게 생각한 까닭을 설명하세요.",
+      "misconceptions": [
+        "화산 활동은 피해만 준다고 여겨 이로운 점을 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (가) 성취기준 해설",
+        "code": "[4과11-04]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-04.procedure": {
+      "evidence": [
+        "대피 훈련에서 정해진 차례에 따라 몸을 보호하고 이동한다.",
+        "피해 사례를 조사해 상황별 대처 방법을 정리한다."
+      ],
+      "assessmentPrompt": "교실에서 지진이 났을 때의 대피 차례를 정해 훈련하고, 각 단계에서 할 일을 확인하세요.",
+      "misconceptions": [
+        "흔들리는 동안 곧바로 건물 밖으로 뛰어나가는 것을 가장 안전한 방법으로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과11-04]"
+      }
+    },
+    "kr.mt.science.earth-space.land-change.g4-11-04.representation": {
+      "evidence": [
+        "조사한 피해와 대처 방법을 표로 짝지어 정리한다.",
+        "대피 차례를 그림 순서도로 만들어 보여 준다."
+      ],
+      "assessmentPrompt": "지진이 났을 때의 대처 방법을 그림 순서도로 만들고, 각 단계에서 할 일을 적으세요.",
+      "misconceptions": [
+        "순서도에 할 일만 적고 어떤 상황에서 하는지는 나타내지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(11) 땅의 변화 성취기준",
+        "code": "[4과11-04]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-01.concept": {
+      "evidence": [
+        "여러 날 동안 달의 모양이 달라짐을 예를 들어 말한다.",
+        "달 표면에서 보이는 밝은 곳과 어두운 곳을 갈라 설명한다."
+      ],
+      "assessmentPrompt": "여러 날 동안 찍은 달 사진을 차례대로 늘어놓고, 모양이 어떻게 달라졌는지 쓰세요.",
+      "misconceptions": [
+        "달의 모양이 달라지는 까닭을 구름에 가려진 정도 때문이라고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(13) 밤하늘 관찰 (가) 성취기준 해설",
+        "code": "[4과13-01]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-01.procedure": {
+      "evidence": [
+        "여러 날 동안 같은 시각에 달을 관찰하며 안전 수칙을 지킨다.",
+        "관찰한 날짜와 달의 모양을 그때그때 기록한다."
+      ],
+      "assessmentPrompt": "두 주 동안 저녁 같은 시각에 달을 관찰해 날짜와 모양을 기록하고, 보이지 않은 날은 까닭을 적으세요.",
+      "misconceptions": [
+        "관찰 시각을 날마다 다르게 하고도 같은 조건에서 보았다고 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(13) 밤하늘 관찰 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과13-01]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-01.representation": {
+      "evidence": [
+        "관찰한 달의 모양을 날짜 차례대로 그려 나타낸다.",
+        "그린 모양을 이어 보며 달라지는 차례를 설명한다."
+      ],
+      "assessmentPrompt": "관찰한 달의 모양을 날짜와 함께 그려 늘어놓고, 모양이 달라지는 차례를 설명하세요.",
+      "misconceptions": [
+        "날짜를 적지 않고 모양만 그려 변화의 차례를 알 수 없게 만든다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(13) 밤하늘 관찰 성취기준",
+        "code": "[4과13-01]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-02.concept": {
+      "evidence": [
+        "태양계에 드는 천체와 들지 않는 천체를 갈라 말한다.",
+        "행성의 표면에서 보이는 특징을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "태양, 지구, 목성, 북극성 가운데 태양계에 들지 않는 것을 고르고, 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "밤하늘에서 밝게 보이면 모두 행성이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(13) 밤하늘 관찰 (가) 성취기준 해설",
+        "code": "[4과13-02]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-02.procedure": {
+      "evidence": [
+        "모형이나 관측 프로그램으로 행성의 모습을 조사한다.",
+        "조사한 특징을 행성별로 나누어 기록장에 정리한다."
+      ],
+      "assessmentPrompt": "행성 두 개를 골라 모습과 표면의 특징을 조사하고, 행성별로 나누어 기록하세요.",
+      "misconceptions": [
+        "크기나 거리 값을 찾는 데 매달려 표면의 모습은 살피지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(13) 밤하늘 관찰 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과13-02]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-02.representation": {
+      "evidence": [
+        "조사한 행성의 표면 특징을 표로 정리해 나타낸다.",
+        "행성을 태양에서 가까운 차례로 늘어놓아 보여 준다."
+      ],
+      "assessmentPrompt": "태양계 행성을 태양에서 가까운 차례로 늘어놓고, 행성마다 특징을 표로 정리하세요.",
+      "misconceptions": [
+        "행성을 크기 차례로 늘어놓고 태양에서 가까운 차례라고 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(13) 밤하늘 관찰 성취기준",
+        "code": "[4과13-02]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-03.concept": {
+      "evidence": [
+        "별과 행성을 스스로 빛을 내는지로 갈라 말한다.",
+        "북극성을 찾는 방법을 주변 별자리와 이어 설명한다."
+      ],
+      "assessmentPrompt": "별과 행성의 차이를 한 가지 쓰고, 밤하늘에서 북극성을 찾는 방법을 설명하세요.",
+      "misconceptions": [
+        "밤하늘에서 움직이지 않는 것처럼 보이면 모두 별이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(13) 밤하늘 관찰 (가) 성취기준 해설",
+        "code": "[4과13-03]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-03.procedure": {
+      "evidence": [
+        "관측 프로그램이나 밤하늘에서 북극성 주변 별자리를 찾는다.",
+        "밤에 관찰할 때 지켜야 할 안전 수칙을 지키며 활동한다."
+      ],
+      "assessmentPrompt": "관측 프로그램으로 북두칠성을 찾아 북극성까지 이어 보고, 찾아간 차례를 기록하세요.",
+      "misconceptions": [
+        "가장 밝게 보이는 별을 북극성이라고 여겨 엉뚱한 별을 가리킨다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(13) 밤하늘 관찰 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과13-03]"
+      }
+    },
+    "kr.mt.science.earth-space.night-sky.g4-13-03.representation": {
+      "evidence": [
+        "찾은 별자리를 점과 선으로 이어 그림으로 나타낸다.",
+        "그린 별자리에 북극성의 자리를 표시해 보여 준다."
+      ],
+      "assessmentPrompt": "북극성 주변의 별자리를 점과 선으로 그리고, 북극성의 자리를 표시해 이름을 적으세요.",
+      "misconceptions": [
+        "별을 잇는 선을 마음대로 그어 별자리의 모양이 달라진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(13) 밤하늘 관찰 성취기준",
+        "code": "[4과13-03]"
+      }
+    },
+    "kr.mt.science.life.animal-life.g4-02-01.concept": {
+      "evidence": [
+        "동물의 생김새 가운데 무리를 가를 기준이 될 특징을 찾아 말한다.",
+        "정한 기준으로 나눈 두 무리에 겹치는 동물이 없는지 따져 판단한다."
+      ],
+      "assessmentPrompt": "개구리, 참새, 붕어, 사슴벌레를 보고 “날개가 있는가”로 나눈 뒤 각 무리에 든 동물 이름을 쓰세요.",
+      "misconceptions": [
+        "“귀엽다”처럼 사람마다 답이 달라지는 말을 분류 기준으로 삼는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 (가) 성취기준 해설",
+        "code": "[4과02-01]"
+      }
+    },
+    "kr.mt.science.life.animal-life.g4-02-01.procedure": {
+      "evidence": [
+        "다리 수, 날개, 더듬이를 차례로 살펴 동물마다 특징을 적는다.",
+        "정한 기준에 따라 동물 카드를 두 무리로 갈라 놓는다."
+      ],
+      "assessmentPrompt": "동물 카드 여덟 장을 관찰해 특징을 적고, 스스로 정한 기준 하나로 두 무리로 나누어 보세요.",
+      "misconceptions": [
+        "관찰한 특징을 적지 않고 이미 알던 이름만으로 무리를 정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과02-01]"
+      }
+    },
+    "kr.mt.science.life.animal-life.g4-02-01.representation": {
+      "evidence": [
+        "분류한 차례를 가지가 갈라지는 그림으로 나타낸다.",
+        "갈라지는 자리마다 쓴 기준을 묻는 말로 적어 보여 준다."
+      ],
+      "assessmentPrompt": "동물 여섯 종을 두 번에 걸쳐 나누는 분류 그림을 그리고, 갈라지는 자리마다 쓴 기준을 적으세요.",
+      "misconceptions": [
+        "분류 그림의 갈림길에 기준 대신 동물 이름을 적어 넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 성취기준",
+        "code": "[4과02-01]"
+      }
+    },
+    "kr.mt.science.life.animal-life.g4-02-02.concept": {
+      "evidence": [
+        "사는 곳이 다른 두 동물의 생김새 차이를 서식지와 이어 말한다.",
+        "같은 곳에 사는 동물들이 공통으로 보이는 생활 방식을 찾아 설명한다."
+      ],
+      "assessmentPrompt": "사막에 사는 낙타와 극지방에 사는 북극곰의 생김새를 견주고, 사는 곳과 어떤 관련이 있는지 쓰세요.",
+      "misconceptions": [
+        "동물이 사는 곳에 맞추어 스스로 몸을 바꾼 것이라고 설명한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 (가) 성취기준 해설",
+        "code": "[4과02-02]"
+      }
+    },
+    "kr.mt.science.life.animal-life.g4-02-02.procedure": {
+      "evidence": [
+        "땅, 물, 사막처럼 환경을 하나 정해 그곳에 사는 동물을 조사한다.",
+        "조사한 내용을 생김새와 생활 방식으로 갈라 기록한다."
+      ],
+      "assessmentPrompt": "물에 사는 동물 두 종을 골라 자료로 조사하고, 생김새와 먹이를 찾는 방법을 나누어 기록하세요.",
+      "misconceptions": [
+        "동물 이름과 사진만 모으고 사는 곳과의 관련은 적지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과02-02]"
+      }
+    },
+    "kr.mt.science.life.animal-life.g4-02-02.representation": {
+      "evidence": [
+        "환경별로 칸을 나눈 표에 동물의 생김새와 생활 방식을 채운다.",
+        "표에서 같은 환경에 사는 동물의 공통점을 짚어 보여 준다."
+      ],
+      "assessmentPrompt": "땅·물·하늘에 사는 동물을 한 종씩 정해 표에 생김새와 이동 방법을 적고, 공통점을 한 가지 쓰세요.",
+      "misconceptions": [
+        "표의 칸을 채우기만 하고 환경과 특징을 이어서 읽지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 성취기준",
+        "code": "[4과02-02]"
+      }
+    },
+    "kr.mt.science.life.animal-life.g4-02-03.concept": {
+      "evidence": [
+        "생활용품에 살릴 동물의 특징을 하나 골라 고른 까닭을 말한다.",
+        "고른 특징이 만들려는 물건의 쓰임에 맞는지 따져 판단한다."
+      ],
+      "assessmentPrompt": "문어 빨판의 특징을 이용해 만들 수 있는 생활용품을 하나 정하고, 그 특징이 왜 쓸모 있는지 쓰세요.",
+      "misconceptions": [
+        "동물의 겉모습만 흉내 내고 그 특징이 하는 일과 물건의 쓰임을 잇지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 성취기준",
+        "code": "[4과02-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.animal-life.g4-02-03.procedure": {
+      "evidence": [
+        "모둠에서 생각을 주고받으며 설계 계획을 함께 손질한다.",
+        "친구의 의견을 듣고 바꾼 곳을 설계도에 표시해 남긴다."
+      ],
+      "assessmentPrompt": "모둠에서 동물의 특징을 이용한 생활용품을 정해 설계하고, 친구 의견을 들어 고친 곳을 표시하세요.",
+      "misconceptions": [
+        "의견을 모으지 않고 한 사람의 생각을 그대로 설계도로 옮긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과02-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.animal-life.g4-02-03.representation": {
+      "evidence": [
+        "설계도에 이용한 동물 특징과 부분 이름을 함께 적는다.",
+        "완성한 설계도를 친구 앞에서 짚어 가며 설명한다."
+      ],
+      "assessmentPrompt": "설계한 생활용품을 그림으로 그리고, 어느 부분이 어떤 동물 특징에서 왔는지 화살표로 표시하세요.",
+      "misconceptions": [
+        "그림만 그리고 어떤 동물 특징을 살렸는지 표시하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(2) 동물의 생활 성취기준",
+        "code": "[4과02-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.life-cycle.g4-04-01.concept": {
+      "evidence": [
+        "동물이 자라며 모습이 달라지는 단계를 차례대로 말한다.",
+        "알, 애벌레, 번데기, 어른벌레 사진을 보고 어느 단계인지 갈라 낸다."
+      ],
+      "assessmentPrompt": "배추흰나비의 한살이 사진을 보고 단계 이름을 붙인 뒤, 차례대로 늘어놓고 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "움직이지 않는 번데기 시기를 죽은 상태로 보고 한살이에서 빼놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(4) 생물의 한살이 성취기준",
+        "code": "[4과04-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.life-cycle.g4-04-01.procedure": {
+      "evidence": [
+        "기르는 동물을 여러 날 같은 시각에 살펴보고 달라진 점을 적는다.",
+        "먹이와 온도를 살피며 기르는 통의 상태를 관리한다."
+      ],
+      "assessmentPrompt": "배추흰나비 애벌레를 두 주 동안 기르며 사흘마다 크기와 모습을 관찰해 날짜와 함께 기록하세요.",
+      "misconceptions": [
+        "한두 번만 살펴보고 나머지 날은 책에서 본 내용으로 기록장을 채운다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(4) 생물의 한살이 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과04-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.life-cycle.g4-04-01.representation": {
+      "evidence": [
+        "관찰한 모습을 그림으로 그리고 날짜와 크기를 함께 적는다.",
+        "글과 그림을 차례대로 이어 붙여 자라는 과정을 한눈에 보여 준다."
+      ],
+      "assessmentPrompt": "관찰 기록을 모아 배추흰나비가 자라는 과정을 그림 네 컷과 짧은 글로 나타내세요.",
+      "misconceptions": [
+        "그림만 그리고 날짜나 크기를 적지 않아 변화 과정을 읽어 낼 수 없다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(4) 생물의 한살이 성취기준",
+        "code": "[4과04-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.life-cycle.g4-04-02.concept": {
+      "evidence": [
+        "물과 햇빛 가운데 실험에서 다르게 할 조건 하나를 골라 말한다.",
+        "같게 해야 할 조건과 다르게 할 조건을 갈라 설명한다."
+      ],
+      "assessmentPrompt": "씨가 싹트는 데 물이 필요한지 알아보려 합니다. 같게 할 조건과 다르게 할 조건을 각각 쓰세요.",
+      "misconceptions": [
+        "물과 햇빛을 한꺼번에 다르게 해 놓고 어느 조건 때문인지 결론을 내린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(4) 생물의 한살이 (가) 성취기준 해설",
+        "code": "[4과04-02]"
+      }
+    },
+    "kr.mt.science.life.life-cycle.g4-04-02.procedure": {
+      "evidence": [
+        "다르게 할 조건만 바꾼 두 화분을 마련해 같은 자리에 놓는다.",
+        "정해 둔 날마다 싹이 튼 개수와 자란 길이를 잰다."
+      ],
+      "assessmentPrompt": "물을 준 화분과 주지 않은 화분을 만들어 일주일 동안 기르고, 이틀마다 싹의 수와 길이를 재어 적으세요.",
+      "misconceptions": [
+        "두 화분을 밝기가 다른 자리에 두고도 물의 영향만 살폈다고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(4) 생물의 한살이 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과04-02]"
+      }
+    },
+    "kr.mt.science.life.life-cycle.g4-04-02.representation": {
+      "evidence": [
+        "잰 값을 날짜별 표에 적어 두 화분을 나란히 놓고 나타낸다.",
+        "표의 값을 막대로 옮겨 자란 정도의 차이를 보여 준다."
+      ],
+      "assessmentPrompt": "두 화분에서 잰 줄기 길이를 날짜별 표로 정리하고, 막대그래프로 나타내 차이를 설명하세요.",
+      "misconceptions": [
+        "두 화분의 값을 한 칸에 섞어 적어 조건별 차이를 읽어 내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(4) 생물의 한살이 성취기준",
+        "code": "[4과04-02]"
+      }
+    },
+    "kr.mt.science.life.life-cycle.g4-04-03.concept": {
+      "evidence": [
+        "한해살이와 여러해살이를 사는 기간을 들어 갈라 말한다.",
+        "동물마다 거치는 단계 수가 다름을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "벼와 감나무 가운데 여러해살이 식물을 고르고, 그렇게 판단한 까닭을 사는 기간으로 설명하세요.",
+      "misconceptions": [
+        "겨울에 잎이 지는 나무를 한 해만 사는 식물로 잘못 나눈다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(4) 생물의 한살이 (가) 성취기준 해설",
+        "code": "[4과04-03]"
+      }
+    },
+    "kr.mt.science.life.life-cycle.g4-04-03.procedure": {
+      "evidence": [
+        "생물 두 종을 정해 자라는 과정을 책과 누리집으로 조사한다.",
+        "조사한 내용을 단계별로 정리하고 빠진 곳을 다시 찾아 채운다."
+      ],
+      "assessmentPrompt": "개구리와 감나무가 자라는 과정을 각각 조사해 단계별로 정리하고, 두 생물의 차이를 한 가지 찾으세요.",
+      "misconceptions": [
+        "한 생물만 조사하고 다른 생물의 단계는 짐작해서 채워 넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(4) 생물의 한살이 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과04-03]"
+      }
+    },
+    "kr.mt.science.life.life-cycle.g4-04-03.representation": {
+      "evidence": [
+        "조사한 내용을 그림과 짧은 글이 있는 소개 자료로 만든다.",
+        "만든 자료를 친구에게 보여 주며 단계의 차이를 설명한다."
+      ],
+      "assessmentPrompt": "생물 한 종이 자라는 과정을 소개하는 카드를 만들어 단계 그림과 설명을 넣고 친구에게 발표하세요.",
+      "misconceptions": [
+        "단계 그림을 차례 없이 늘어놓아 자라는 순서가 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(4) 생물의 한살이 성취기준",
+        "code": "[4과04-03]"
+      }
+    },
+    "kr.mt.science.life.microbes-life.g4-12-01.concept": {
+      "evidence": [
+        "버섯과 곰팡이에서 공통으로 보이는 특징을 찾아 말한다.",
+        "균류, 원생생물, 세균이 주로 사는 곳을 갈라 설명한다."
+      ],
+      "assessmentPrompt": "곰팡이가 잘 자라는 곳의 조건을 두 가지 쓰고, 그렇게 생각한 까닭을 설명하세요.",
+      "misconceptions": [
+        "곰팡이를 식물로 여겨 뿌리와 잎이 있다고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(12) 다양한 생물과 우리 생활 성취기준",
+        "code": "[4과12-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.microbes-life.g4-12-01.procedure": {
+      "evidence": [
+        "실체현미경의 배율과 초점을 맞추어 버섯과 곰팡이를 관찰한다.",
+        "관찰한 모습을 그림과 글로 관찰 기록장에 남긴다."
+      ],
+      "assessmentPrompt": "버섯과 곰팡이를 실체현미경으로 관찰하고, 보이는 모습과 크기를 기록장에 그림과 글로 남기세요.",
+      "misconceptions": [
+        "처음부터 배율을 가장 높게 맞추어 관찰할 부분을 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(12) 다양한 생물과 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과12-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.microbes-life.g4-12-01.representation": {
+      "evidence": [
+        "세 생물 무리의 특징과 사는 곳을 표로 정리한다.",
+        "관찰한 모습을 그림으로 그려 무리별로 견주어 보여 준다."
+      ],
+      "assessmentPrompt": "균류, 원생생물, 세균의 특징과 사는 곳을 표로 정리하고, 관찰한 모습을 그림으로 함께 나타내세요.",
+      "misconceptions": [
+        "표에 생물 이름만 적고 어디에서 사는지는 비워 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(12) 다양한 생물과 우리 생활 성취기준",
+        "code": "[4과12-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.microbes-life.g4-12-02.concept": {
+      "evidence": [
+        "작은 생물이 주는 이로운 점과 해로운 점을 갈라 말한다.",
+        "조사한 사례가 어느 쪽에 드는지 근거를 들어 판단한다."
+      ],
+      "assessmentPrompt": "된장과 곰팡이가 핀 빵을 예로 들어, 같은 생물이 이로울 때와 해로울 때를 나누어 설명하세요.",
+      "misconceptions": [
+        "곰팡이와 세균은 모두 해롭기만 하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(12) 다양한 생물과 우리 생활 성취기준",
+        "code": "[4과12-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.microbes-life.g4-12-02.procedure": {
+      "evidence": [
+        "책과 누리집에서 사례를 찾아 이로운 점과 해로운 점으로 나누어 모은다.",
+        "모은 자료로 발표 차례를 정해 모둠에서 발표한다."
+      ],
+      "assessmentPrompt": "작은 생물이 우리 생활에 주는 영향 사례를 네 가지 조사해 이로움과 해로움으로 나누어 발표하세요.",
+      "misconceptions": [
+        "사례를 모으기만 하고 어떤 생물이 관련되는지는 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(12) 다양한 생물과 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과12-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.microbes-life.g4-12-02.representation": {
+      "evidence": [
+        "조사한 사례를 두 갈래로 나눈 표에 정리한다.",
+        "발표 자료에 사진과 짧은 설명을 함께 넣어 보여 준다."
+      ],
+      "assessmentPrompt": "조사한 사례를 이로운 점과 해로운 점으로 나눈 발표 자료를 만들어 사진과 설명을 넣으세요.",
+      "misconceptions": [
+        "발표 자료에 사진만 넣고 어떤 영향을 주는지 설명을 적지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(12) 다양한 생물과 우리 생활 성취기준",
+        "code": "[4과12-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.microbes-life.g4-12-03.concept": {
+      "evidence": [
+        "생활 속에서 작은 생물을 이용한 사례를 골라 말한다.",
+        "고른 사례가 어떤 생물과 관련되는지 근거를 들어 판단한다."
+      ],
+      "assessmentPrompt": "요구르트 만들기와 음식물 찌꺼기 분해 가운데 하나를 골라, 어떤 생물이 어떤 일을 하는지 쓰세요.",
+      "misconceptions": [
+        "기계로만 만든 제품까지 생물을 이용한 사례로 넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(12) 다양한 생물과 우리 생활 (가) 성취기준 해설",
+        "code": "[4과12-03]"
+      }
+    },
+    "kr.mt.science.life.microbes-life.g4-12-03.procedure": {
+      "evidence": [
+        "관련 도서와 누리망 자료에서 사례를 찾아 내용을 간추린다.",
+        "간추린 내용을 소개 자료로 만들어 친구들과 나눈다."
+      ],
+      "assessmentPrompt": "작은 생물을 이용한 사례 두 가지를 조사해 간추리고, 친구들과 나눌 소개 자료로 만드세요.",
+      "misconceptions": [
+        "찾은 글을 그대로 옮겨 적고 무엇이 중요한 내용인지 가려내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 22,
+        "section": "(12) 다양한 생물과 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과12-03]"
+      }
+    },
+    "kr.mt.science.life.microbes-life.g4-12-03.representation": {
+      "evidence": [
+        "소개 자료에 사례와 이용된 생물을 짝지어 적는다.",
+        "만든 자료를 보여 주며 이용되는 차례를 설명한다."
+      ],
+      "assessmentPrompt": "생명과학이 쓰이는 사례를 소개하는 자료를 만들어, 사례와 관련된 생물을 짝지어 나타내세요.",
+      "misconceptions": [
+        "소개 자료에 좋은 점만 적고 어떤 생물이 무슨 일을 하는지는 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 21,
+        "section": "(12) 다양한 생물과 우리 생활 성취기준",
+        "code": "[4과12-03]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-01.concept": {
+      "evidence": [
+        "생태계를 이루는 것 가운데 생물 요소와 비생물 요소를 갈라 말한다.",
+        "숲과 바다처럼 서로 다른 곳의 구성 요소를 견주어 설명한다."
+      ],
+      "assessmentPrompt": "학교 화단에서 볼 수 있는 것 여섯 가지를 생물 요소와 비생물 요소로 나누어 쓰세요.",
+      "misconceptions": [
+        "눈에 보이지 않는 공기나 온도를 구성 요소에서 빼놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(14) 생물과 환경 (가) 성취기준 해설",
+        "code": "[4과14-01]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-01.procedure": {
+      "evidence": [
+        "정한 장소에서 눈에 띄는 것을 빠짐없이 찾아 적는다.",
+        "찾은 것을 두 갈래로 나누어 목록으로 만든다."
+      ],
+      "assessmentPrompt": "학교 화단이나 연못을 정해 그곳을 이루는 것을 조사하고, 생물 요소와 비생물 요소로 나눈 목록을 만드세요.",
+      "misconceptions": [
+        "눈에 잘 띄는 큰 생물만 적고 흙이나 물 같은 것은 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(14) 생물과 환경 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과14-01]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-01.representation": {
+      "evidence": [
+        "조사한 내용을 두 갈래로 나눈 표에 정리한다.",
+        "그린 그림에 요소가 있는 자리를 표시해 보여 준다."
+      ],
+      "assessmentPrompt": "조사한 곳을 그림으로 그리고, 생물 요소와 비생물 요소를 서로 다른 색으로 표시하세요.",
+      "misconceptions": [
+        "표에 이름만 적고 어느 갈래에 드는지는 표시하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(14) 생물과 환경 성취기준",
+        "code": "[4과14-01]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-02.concept": {
+      "evidence": [
+        "먹는 쪽과 먹히는 쪽을 화살표의 방향으로 갈라 말한다.",
+        "먹이 관계가 여러 갈래일 때 생물에게 어떤 점이 나은지 설명한다."
+      ],
+      "assessmentPrompt": "메뚜기, 개구리, 뱀의 먹고 먹히는 관계를 차례대로 쓰고, 화살표가 어느 쪽을 향하는지 설명하세요.",
+      "misconceptions": [
+        "먹이 관계 화살표를 먹는 쪽에서 먹히는 쪽으로 거꾸로 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(14) 생물과 환경 (가) 성취기준 해설",
+        "code": "[4과14-02]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-02.procedure": {
+      "evidence": [
+        "생물이 무엇을 먹는지 자료로 조사해 짝을 지어 적는다.",
+        "먹이 관계 모형을 만들며 이어지는 갈래를 확인한다."
+      ],
+      "assessmentPrompt": "숲에 사는 생물 여섯 종이 무엇을 먹는지 조사해, 먹고 먹히는 짝을 모두 찾아 적으세요.",
+      "misconceptions": [
+        "한 생물이 한 가지만 먹는다고 보고 다른 먹이는 조사하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(14) 생물과 환경 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과14-02]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-02.representation": {
+      "evidence": [
+        "조사한 먹이 관계를 화살표로 이어 그물 모양으로 나타낸다.",
+        "그린 그물에서 갈래가 많은 생물을 짚어 보여 준다."
+      ],
+      "assessmentPrompt": "조사한 생물들의 먹이 관계를 화살표로 이어 그물 모양으로 그리고, 갈래가 가장 많은 생물을 찾으세요.",
+      "misconceptions": [
+        "생물을 한 줄로만 이어 여러 갈래로 얽힌 관계를 나타내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(14) 생물과 환경 성취기준",
+        "code": "[4과14-02]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-03.concept": {
+      "evidence": [
+        "대기오염, 수질오염, 토양오염을 사례로 갈라 말한다.",
+        "사람의 활동이 다른 생물에게 주는 영향을 근거를 들어 설명한다."
+      ],
+      "assessmentPrompt": "쓰레기를 강에 버렸을 때 생기는 일을 두 단계로 이어서 쓰고, 어떤 생물이 영향을 받는지 설명하세요.",
+      "misconceptions": [
+        "오염이 사람에게만 나쁘고 다른 생물에게는 영향이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(14) 생물과 환경 (가) 성취기준 해설",
+        "code": "[4과14-03]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-03.procedure": {
+      "evidence": [
+        "학급에서 실천할 활동을 정해 계획을 세우고 실행한다.",
+        "실천한 결과를 날마다 기록하고 잘된 점을 점검한다."
+      ],
+      "assessmentPrompt": "학급에서 실천할 보전 활동을 하나 정해 계획을 세우고, 두 주 동안 실천한 결과를 기록하세요.",
+      "misconceptions": [
+        "계획만 세우고 실천 결과를 남기지 않아 무엇이 달라졌는지 확인하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(14) 생물과 환경 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과14-03]"
+      }
+    },
+    "kr.mt.science.life.organisms-environment.g4-14-03.representation": {
+      "evidence": [
+        "조사한 영향과 실천 방법을 짝지어 표로 정리한다.",
+        "토의한 내용을 안내 자료로 만들어 보여 준다."
+      ],
+      "assessmentPrompt": "사람의 활동이 남긴 영향과 우리가 할 수 있는 일을 짝지어 표로 정리해 발표하세요.",
+      "misconceptions": [
+        "실천 방법을 적으면서 어떤 문제를 줄이려는 것인지 잇지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 23,
+        "section": "(14) 생물과 환경 성취기준",
+        "code": "[4과14-03]"
+      }
+    },
+    "kr.mt.science.life.plant-life.g4-03-01.concept": {
+      "evidence": [
+        "잎의 가장자리 모양이나 잎맥처럼 눈으로 확인되는 특징을 찾아 말한다.",
+        "“잎 가장자리가 톱니 모양인가”와 같은 기준을 세워 잎을 두 무리로 가른다."
+      ],
+      "assessmentPrompt": "은행나무, 단풍나무, 소나무의 잎을 관찰해 나눌 기준을 하나 정하고, 그 기준으로 잎을 갈라 보세요.",
+      "misconceptions": [
+        "“예쁘다”, “흔하다”처럼 보는 사람마다 달라지는 말을 기준으로 삼는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(3) 식물의 생활 (가) 성취기준 해설",
+        "code": "[4과03-01]"
+      }
+    },
+    "kr.mt.science.life.plant-life.g4-03-01.procedure": {
+      "evidence": [
+        "학교 주변에서 서로 다른 잎을 모아 종류별로 늘어놓고 살핀다.",
+        "돋보기로 잎맥과 가장자리를 살펴 관찰 기록장에 적는다."
+      ],
+      "assessmentPrompt": "학교 화단에서 서로 다른 잎 다섯 장을 모아 돋보기로 관찰하고, 특징을 관찰 기록장에 적으세요.",
+      "misconceptions": [
+        "잎을 모으기만 하고 특징을 적지 않아 기준을 세우지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(3) 식물의 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과03-01]"
+      }
+    },
+    "kr.mt.science.life.plant-life.g4-03-01.representation": {
+      "evidence": [
+        "나눈 잎을 종이에 붙이고 무리마다 사용한 기준을 써 붙인다.",
+        "만든 잎 분류판을 친구에게 보여 주며 나눈 차례를 설명한다."
+      ],
+      "assessmentPrompt": "모은 잎을 두 무리로 나누어 종이에 붙이고, 무리마다 사용한 기준을 적어 잎 분류판을 만드세요.",
+      "misconceptions": [
+        "무리 이름만 적고 어떤 기준으로 갈랐는지는 쓰지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(3) 식물의 생활 성취기준",
+        "code": "[4과03-01]"
+      }
+    },
+    "kr.mt.science.life.plant-life.g4-03-02.concept": {
+      "evidence": [
+        "사막과 물에 사는 식물의 줄기와 잎 차이를 사는 곳과 이어 말한다.",
+        "잎이나 줄기의 특징이 그곳에서 살아가는 방식과 어떻게 이어지는지 설명한다."
+      ],
+      "assessmentPrompt": "선인장과 부레옥잠의 줄기와 잎을 견주고, 각 식물이 사는 곳과 어떤 관련이 있는지 쓰세요.",
+      "misconceptions": [
+        "식물이 사는 곳에 맞추어 스스로 모습을 바꾼 것이라고 설명한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(3) 식물의 생활 (가) 성취기준 해설",
+        "code": "[4과03-02]"
+      }
+    },
+    "kr.mt.science.life.plant-life.g4-03-02.procedure": {
+      "evidence": [
+        "사는 곳이 서로 다른 식물 두 종을 정해 자료로 조사한다.",
+        "조사한 내용을 잎, 줄기, 사는 곳으로 갈라 기록한다."
+      ],
+      "assessmentPrompt": "들과 물에 사는 식물을 한 종씩 골라 조사하고, 잎과 줄기의 특징을 사는 곳과 함께 기록하세요.",
+      "misconceptions": [
+        "사진만 모으고 잎이나 줄기의 특징을 사는 곳과 갈라 적지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(3) 식물의 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과03-02]"
+      }
+    },
+    "kr.mt.science.life.plant-life.g4-03-02.representation": {
+      "evidence": [
+        "사는 곳별로 칸을 나눈 표에 식물의 생김새와 사는 방식을 채운다.",
+        "표를 보며 같은 곳에 사는 식물의 닮은 점을 짚어 설명한다."
+      ],
+      "assessmentPrompt": "사막·들·물에 사는 식물을 한 종씩 표에 넣어 잎과 줄기의 특징을 적고, 닮은 점을 한 가지 쓰세요.",
+      "misconceptions": [
+        "표에 적은 특징을 사는 곳과 이어 읽지 못하고 따로 떼어 설명한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(3) 식물의 생활 성취기준",
+        "code": "[4과03-02]"
+      }
+    },
+    "kr.mt.science.life.plant-life.g4-03-03.concept": {
+      "evidence": [
+        "생활용품에 살릴 식물의 특징을 고르고 고른 까닭을 말한다.",
+        "고른 특징이 물건의 쓰임에 맞는지 따져 보고 판단한다."
+      ],
+      "assessmentPrompt": "도꼬마리 열매의 갈고리 모양을 이용해 만들 물건을 정하고, 그 특징이 왜 쓸모 있는지 쓰세요.",
+      "misconceptions": [
+        "식물의 색이나 모양만 따라 그리고 그 특징이 하는 일은 설명하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(3) 식물의 생활 성취기준",
+        "code": "[4과03-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.plant-life.g4-03-03.procedure": {
+      "evidence": [
+        "모둠 친구들과 식물 특징 목록을 만들어 쓸 만한 것을 골라낸다.",
+        "고른 특징으로 설계한 뒤 친구 의견을 들어 한 곳을 고친다."
+      ],
+      "assessmentPrompt": "모둠에서 식물의 특징 세 가지를 모아 하나를 고르고, 그 특징을 살린 생활용품을 설계해 보세요.",
+      "misconceptions": [
+        "특징 목록을 만들지 않고 떠오른 물건부터 그려 식물과의 관련이 흐려진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 15,
+        "section": "(3) 식물의 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과03-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.life.plant-life.g4-03-03.representation": {
+      "evidence": [
+        "설계도에 식물 이름과 살린 특징을 함께 적어 나타낸다.",
+        "설계도를 보여 주며 어느 부분이 무엇을 본떴는지 짚어 설명한다."
+      ],
+      "assessmentPrompt": "설계한 물건을 그림으로 그리고, 어느 부분이 어떤 식물 특징을 본떴는지 이름표를 붙이세요.",
+      "misconceptions": [
+        "그림에 이름표를 붙이지 않아 어떤 특징을 살렸는지 알기 어렵다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 14,
+        "section": "(3) 식물의 생활 성취기준",
+        "code": "[4과03-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.gases.g4-15-01.concept": {
+      "evidence": [
+        "공기를 넣은 용기와 뺀 용기의 무게 차이를 근거로 삼아 말한다.",
+        "무게가 달라진 까닭을 용기 안 공기의 양과 이어 설명한다."
+      ],
+      "assessmentPrompt": "같은 용기에 공기를 더 넣었더니 무게가 늘었습니다. 이 결과로 알 수 있는 점을 쓰세요.",
+      "misconceptions": [
+        "공기는 가벼우니 무게가 아예 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 (가) 성취기준 해설",
+        "code": "[4과15-01]"
+      }
+    },
+    "kr.mt.science.matter.gases.g4-15-01.procedure": {
+      "evidence": [
+        "같은 용기로 공기를 넣기 전과 뒤의 무게를 전자저울로 잰다.",
+        "잰 값을 조건과 함께 적고 두 번 이상 다시 확인한다."
+      ],
+      "assessmentPrompt": "페트병에 공기를 넣기 전과 넣은 뒤의 무게를 전자저울로 각각 재어 g 단위로 기록하세요.",
+      "misconceptions": [
+        "용기를 바꾸어 가며 무게를 재고 그 차이를 공기 때문이라고 결론짓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과15-01]"
+      }
+    },
+    "kr.mt.science.matter.gases.g4-15-01.representation": {
+      "evidence": [
+        "잰 무게를 조건별로 나눈 표에 단위와 함께 정리한다.",
+        "두 값의 차이를 막대의 길이로 나타내 보여 준다."
+      ],
+      "assessmentPrompt": "공기를 넣기 전과 넣은 뒤의 무게를 표로 정리하고, 그 차이를 막대로 나타내 설명하세요.",
+      "misconceptions": [
+        "두 값만 적고 차이를 구하지 않아 무엇을 알 수 있는지 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 성취기준",
+        "code": "[4과15-01]"
+      }
+    },
+    "kr.mt.science.matter.gases.g4-15-02.concept": {
+      "evidence": [
+        "온도를 높일 때와 낮출 때 공기의 부피가 어떻게 달라지는지 말한다.",
+        "압력을 세게 할 때 나타나는 변화를 생활 속 예로 설명한다."
+      ],
+      "assessmentPrompt": "찌그러진 탁구공을 뜨거운 물에 넣으면 펴지는 까닭을 공기의 부피와 이어 설명하세요.",
+      "misconceptions": [
+        "온도를 높이면 용기 안 공기의 양 자체가 늘어난다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 (가) 성취기준 해설",
+        "code": "[4과15-02]"
+      }
+    },
+    "kr.mt.science.matter.gases.g4-15-02.procedure": {
+      "evidence": [
+        "고무풍선을 씌운 병을 따뜻한 물과 찬물에 차례로 담가 관찰한다.",
+        "뜨거운 물을 다룰 때 주의할 점을 지키며 실험한다."
+      ],
+      "assessmentPrompt": "고무풍선을 씌운 병을 따뜻한 물과 찬물에 차례로 담그고, 풍선의 모습을 관찰해 기록하세요.",
+      "misconceptions": [
+        "물의 온도를 재지 않고 따뜻한 정도를 손 느낌으로만 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과15-02]"
+      }
+    },
+    "kr.mt.science.matter.gases.g4-15-02.representation": {
+      "evidence": [
+        "조건별로 달라진 부피 변화를 표로 정리해 나타낸다.",
+        "달라진 모습을 그림으로 그려 조건과 짝지어 보여 준다."
+      ],
+      "assessmentPrompt": "온도와 압력을 바꾸었을 때 기체의 부피가 달라진 결과를 표와 그림으로 나타내세요.",
+      "misconceptions": [
+        "온도를 바꾼 결과와 압력을 바꾼 결과를 한 칸에 섞어 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 성취기준",
+        "code": "[4과15-02]"
+      }
+    },
+    "kr.mt.science.matter.gases.g4-15-03.concept": {
+      "evidence": [
+        "산소와 이산화 탄소의 쓰임을 각 기체의 성질과 이어 말한다.",
+        "기체마다 쓰이는 곳이 다른 까닭을 근거를 들어 설명한다."
+      ],
+      "assessmentPrompt": "산소와 이산화 탄소 가운데 소화기에 쓰이는 기체를 고르고, 그 성질을 근거로 까닭을 쓰세요.",
+      "misconceptions": [
+        "모든 기체가 물질을 잘 타게 돕는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 성취기준",
+        "code": "[4과15-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.gases.g4-15-03.procedure": {
+      "evidence": [
+        "여러 기체의 종류와 쓰임을 자료로 조사해 정리한다.",
+        "조사한 내용을 모둠에서 나누어 맡아 발표한다."
+      ],
+      "assessmentPrompt": "질소, 산소, 이산화 탄소가 생활에서 쓰이는 곳을 조사해 기체별로 정리하고 발표하세요.",
+      "misconceptions": [
+        "쓰임만 적고 그 기체의 어떤 성질 때문인지는 조사하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과15-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.gases.g4-15-03.representation": {
+      "evidence": [
+        "기체별 성질과 쓰이는 곳을 표로 짝지어 나타낸다.",
+        "발표 자료에 기체 사진과 쓰임 설명을 함께 넣어 보여 준다."
+      ],
+      "assessmentPrompt": "조사한 기체 세 가지의 성질과 쓰임을 표로 정리해 발표 자료로 만드세요.",
+      "misconceptions": [
+        "표에 기체 이름과 쓰임만 적고 성질 칸을 비워 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 성취기준",
+        "code": "[4과15-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.gases.g4-15-04.concept": {
+      "evidence": [
+        "장치를 움직이는 데 이용할 공기의 성질을 골라 말한다.",
+        "고른 성질이 장치의 움직임과 맞는지 따져 판단한다."
+      ],
+      "assessmentPrompt": "공기를 넣으면 앞으로 나아가는 장난감을 만들 때 이용하는 공기의 성질을 쓰고 까닭을 설명하세요.",
+      "misconceptions": [
+        "공기를 넣기만 하면 어떤 장치든 저절로 움직인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 성취기준",
+        "code": "[4과15-04]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.gases.g4-15-04.procedure": {
+      "evidence": [
+        "주사기와 고무관으로 공기를 보내는 장치를 만들어 작동시킨다.",
+        "잘 움직이지 않는 곳을 찾아 고친 뒤 다시 확인한다."
+      ],
+      "assessmentPrompt": "주사기와 고무관으로 공기를 보내 움직이는 장치를 만들고, 잘 움직이지 않으면 고쳐 다시 시험하세요.",
+      "misconceptions": [
+        "관이 새는 곳을 확인하지 않고 힘을 더 세게 주는 것으로만 해결하려 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과15-04]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.gases.g4-15-04.representation": {
+      "evidence": [
+        "설계도에 공기가 지나는 길을 화살표로 나타낸다.",
+        "장치에서 이용한 공기의 성질을 이름표로 적어 보여 준다."
+      ],
+      "assessmentPrompt": "만든 장치를 그림으로 그리고, 공기가 지나는 길과 이용한 성질을 표시해 설명하세요.",
+      "misconceptions": [
+        "장치 그림만 그리고 공기가 어느 쪽으로 움직이는지 나타내지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 24,
+        "section": "(15) 여러 가지 기체 성취기준",
+        "code": "[4과15-04]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-01.concept": {
+      "evidence": [
+        "나무, 철, 유리, 플라스틱의 단단한 정도와 잘 휘는 정도를 견주어 말한다.",
+        "겉모습이 비슷한 물체라도 무엇으로 만들어졌는지에 따라 갈라 낸다."
+      ],
+      "assessmentPrompt": "교실에 있는 물체 여섯 개를 살펴 나무, 금속, 플라스틱 가운데 무엇으로 만들어졌는지 각각 쓰세요.",
+      "misconceptions": [
+        "물체 이름과 물질 이름을 섞어 써서 컵과 유리를 같은 말로 다룬다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 (가) 성취기준 해설",
+        "code": "[4과05-01]"
+      }
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-01.procedure": {
+      "evidence": [
+        "물질마다 눌러 보고 구부려 보며 성질을 차례로 살핀다.",
+        "살펴본 성질을 물질 이름 옆에 그때그때 적는다."
+      ],
+      "assessmentPrompt": "나무 막대, 철 막대, 플라스틱 자를 손으로 구부려 보고 단단한 정도를 관찰해 차례대로 적으세요.",
+      "misconceptions": [
+        "한 가지 성질만 확인하고 나머지 성질은 짐작으로 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과05-01]"
+      }
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-01.representation": {
+      "evidence": [
+        "물질별 성질을 칸으로 나눈 표에 정리해 적는다.",
+        "표를 근거로 물체를 물질 종류대로 묶어 보여 준다."
+      ],
+      "assessmentPrompt": "물체 여섯 개를 물질 종류별로 묶은 표를 만들고, 물질마다 성질을 한 가지씩 적으세요.",
+      "misconceptions": [
+        "표에 성질 대신 물체 이름만 적어 묶은 근거가 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 성취기준",
+        "code": "[4과05-01]"
+      }
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-02.concept": {
+      "evidence": [
+        "그릇이 바뀔 때 모양과 부피가 달라지는지로 세 상태를 갈라 말한다.",
+        "고체, 액체, 기체의 예를 각각 들고 그렇게 나눈 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "나무 막대, 물, 공기를 다른 그릇에 옮겨 담았을 때 모양과 부피가 어떻게 되는지 각각 쓰세요.",
+      "misconceptions": [
+        "눈에 보이지 않는 공기는 아무것도 없는 것이라고 여겨 기체에서 뺀다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 (가) 성취기준 해설",
+        "code": "[4과05-02]"
+      }
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-02.procedure": {
+      "evidence": [
+        "모양이 다른 그릇에 물을 옮겨 담으며 물의 높이와 모양을 살핀다.",
+        "비닐봉지에 공기를 넣어 부풀려 보며 공간을 차지하는지 확인한다."
+      ],
+      "assessmentPrompt": "모양이 다른 그릇 세 개에 물 200 ㎖를 차례로 옮겨 담고, 모양과 높이가 어떻게 달라지는지 관찰해 적으세요.",
+      "misconceptions": [
+        "그릇이 바뀌어 물의 높이가 달라지면 물의 양도 늘거나 줄었다고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과05-02]"
+      }
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-02.representation": {
+      "evidence": [
+        "세 상태의 모양 변화와 부피 변화를 표에 ○와 ×로 정리한다.",
+        "정리한 표를 보며 세 상태의 차이를 짚어 설명한다."
+      ],
+      "assessmentPrompt": "고체, 액체, 기체의 모양 변화와 부피 변화를 ○와 ×로 나타낸 표를 만들고 차이를 설명하세요.",
+      "misconceptions": [
+        "표에서 액체와 기체를 한 칸으로 묶어 부피의 차이를 나타내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 성취기준",
+        "code": "[4과05-02]"
+      }
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-03.concept": {
+      "evidence": [
+        "만들 물체의 쓰임에 맞는 성질이 무엇인지 골라 말한다.",
+        "고른 물질이 그 쓰임에 알맞은지 성질을 근거로 판단한다."
+      ],
+      "assessmentPrompt": "비 오는 날 쓰는 우산의 겉감을 어떤 물질로 만들지 정하고, 그 물질의 성질을 근거로 까닭을 쓰세요.",
+      "misconceptions": [
+        "값이 싸거나 색이 예쁘다는 이유만으로 물질을 고른다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 성취기준",
+        "code": "[4과05-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-03.procedure": {
+      "evidence": [
+        "쓰임을 먼저 정한 뒤 알맞은 물질을 골라 간단한 설계도를 그린다.",
+        "설계한 물체의 부분마다 쓸 물질을 적어 계획을 마무리한다."
+      ],
+      "assessmentPrompt": "뜨거운 국을 뜨는 국자를 설계하고, 손잡이와 국물이 닿는 부분에 쓸 물질을 각각 정해 적으세요.",
+      "misconceptions": [
+        "모든 부분을 한 가지 물질로만 정해 쓰임에 따른 차이를 살리지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과05-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.objects-materials.g4-05-03.representation": {
+      "evidence": [
+        "설계도에 부분 이름과 고른 물질을 나란히 적는다.",
+        "설계도를 보여 주며 물질을 고른 근거를 짚어 설명한다."
+      ],
+      "assessmentPrompt": "설계한 물체를 그림으로 그리고, 부분마다 쓸 물질과 그 물질을 고른 까닭을 적어 넣으세요.",
+      "misconceptions": [
+        "그림에 물질 이름만 적고 그 물질의 성질과 쓰임을 잇지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 16,
+        "section": "(5) 물체와 물질 성취기준",
+        "code": "[4과05-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-01.concept": {
+      "evidence": [
+        "물, 얼음, 수증기를 상태에 따라 갈라 말한다.",
+        "주변에서 물이 다른 상태로 바뀐 예를 찾아 어떤 변화인지 설명한다."
+      ],
+      "assessmentPrompt": "겨울 유리창에 맺힌 물방울과 처마의 고드름을 보고, 각각 물이 어떤 상태로 바뀐 것인지 쓰세요.",
+      "misconceptions": [
+        "하얗게 보이는 김을 수증기라고 여겨 눈에 보이는 것으로 다룬다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 (가) 성취기준 해설",
+        "code": "[4과10-01]"
+      }
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-01.procedure": {
+      "evidence": [
+        "얼음을 접시에 두고 시간이 지나며 달라지는 모습을 살핀다.",
+        "뜨거운 물을 다룰 때 주의할 점을 지키며 관찰한다."
+      ],
+      "assessmentPrompt": "얼음 두 조각을 접시에 놓고 10분마다 모습을 관찰해, 시간과 함께 달라진 점을 기록하세요.",
+      "misconceptions": [
+        "얼음이 녹아 생긴 물을 처음부터 접시에 있던 물이라고 기록한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과10-01]"
+      }
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-01.representation": {
+      "evidence": [
+        "물의 세 가지 상태를 그림과 이름으로 나타낸다.",
+        "찾은 예를 상태별로 나누어 표에 붙여 보여 준다."
+      ],
+      "assessmentPrompt": "생활에서 찾은 예 여섯 가지를 물, 얼음, 수증기로 나눈 표에 정리해 보이세요.",
+      "misconceptions": [
+        "상태 이름 대신 뜨겁다, 차갑다 같은 느낌으로만 나눈다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 성취기준",
+        "code": "[4과10-01]"
+      }
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-02.concept": {
+      "evidence": [
+        "증발과 끓음이 모두 물이 수증기로 바뀌는 변화임을 말한다.",
+        "물이 얼 때와 얼음이 녹을 때 부피가 어떻게 달라지는지 설명한다."
+      ],
+      "assessmentPrompt": "물을 얼렸더니 물기둥이 높아졌습니다. 얼 때 부피가 어떻게 되었는지 쓰고 까닭을 설명하세요.",
+      "misconceptions": [
+        "물이 얼면 무게도 함께 늘어난다고 여겨 부피와 무게를 섞어 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 (가) 성취기준 해설",
+        "code": "[4과10-02]"
+      }
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-02.procedure": {
+      "evidence": [
+        "물을 넣은 시험관에 높이를 표시하고 언 뒤의 높이를 잰다.",
+        "가열 실험에서 주의할 점을 지키며 끓는 모습을 관찰한다."
+      ],
+      "assessmentPrompt": "시험관에 물을 넣고 물기둥 높이를 표시한 뒤 얼려서, 언 다음의 높이를 재어 비교하세요.",
+      "misconceptions": [
+        "처음 높이를 표시하지 않고 얼린 뒤 달라졌는지를 눈대중으로만 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과10-02]"
+      }
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-02.representation": {
+      "evidence": [
+        "다섯 가지 변화를 이름과 그림으로 나누어 정리한다.",
+        "변화 전과 후의 모습을 화살표로 이어 보여 준다."
+      ],
+      "assessmentPrompt": "물이 얼 때, 녹을 때, 증발할 때, 끓을 때, 응결할 때의 변화를 화살표 그림으로 나타내세요.",
+      "misconceptions": [
+        "증발과 응결의 화살표 방향을 서로 바꾸어 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 성취기준",
+        "code": "[4과10-02]"
+      }
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-03.concept": {
+      "evidence": [
+        "장치에 이용할 상태 변화가 무엇인지 골라 말한다.",
+        "고른 변화가 물을 모으는 데 알맞은지 근거를 들어 판단한다."
+      ],
+      "assessmentPrompt": "바닷물에서 마실 물을 얻으려면 어떤 상태 변화를 이용해야 하는지 쓰고 까닭을 설명하세요.",
+      "misconceptions": [
+        "물을 끓이면 녹아 있던 소금도 함께 수증기가 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 성취기준",
+        "code": "[4과10-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-03.procedure": {
+      "evidence": [
+        "주변에서 구할 수 있는 재료로 물을 모으는 장치를 만든다.",
+        "만든 장치를 햇빛이 드는 곳에 두고 모인 물의 양을 확인한다."
+      ],
+      "assessmentPrompt": "그릇과 비닐랩, 작은 컵으로 물을 모으는 장치를 만들어 햇빛 아래에 두고 모인 물을 확인하세요.",
+      "misconceptions": [
+        "비닐랩을 팽팽하게만 씌워 맺힌 물방울이 컵으로 흘러들지 않게 만든다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과10-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.matter.water-state-change.g4-10-03.representation": {
+      "evidence": [
+        "설계도에 물이 지나는 길을 화살표로 나타낸다.",
+        "장치의 각 부분이 하는 일을 이름표로 적어 보여 준다."
+      ],
+      "assessmentPrompt": "만든 장치를 그림으로 그리고, 물이 수증기가 되었다가 다시 모이는 길을 화살표로 표시하세요.",
+      "misconceptions": [
+        "장치의 겉모습만 그리고 물이 어디서 어디로 옮겨 가는지 나타내지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(10) 물의 상태 변화 성취기준",
+        "code": "[4과10-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-01.concept": {
+      "evidence": [
+        "밀 때와 당길 때 물체가 움직이는 방향이 어떻게 다른지 나누어 말한다.",
+        "무거운 상자와 가벼운 상자를 각각 밀어 보고 든 힘의 차이를 근거를 들어 설명한다."
+      ],
+      "assessmentPrompt": "책상 위의 필통과 가방을 차례로 밀어 보고, 두 물체를 움직일 때 든 힘이 어떻게 달랐는지 쓰세요.",
+      "misconceptions": [
+        "힘을 준 방향과 물체가 움직인 방향을 서로 반대로 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 (가) 성취기준 해설",
+        "code": "[4과01-01]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-01.procedure": {
+      "evidence": [
+        "두 물체를 같은 자리에서 같은 세기로 밀도록 조건을 맞추어 활동한다.",
+        "민 뒤 물체가 멈춘 자리에 표시를 하고 두 자리를 견주어 기록한다."
+      ],
+      "assessmentPrompt": "바닥에 출발선을 긋고 빈 상자와 책을 담은 상자를 같은 세기로 밀어, 멈춘 자리를 표시해 비교하세요.",
+      "misconceptions": [
+        "미는 세기를 매번 다르게 하면서 결과의 차이를 무게 탓으로만 돌린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과01-01]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-01.representation": {
+      "evidence": [
+        "밀기와 당기기에서 나타난 변화를 두 칸 표에 나누어 적는다.",
+        "그림에 화살표를 그려 힘을 준 쪽과 물체가 움직인 쪽을 보여 준다."
+      ],
+      "assessmentPrompt": "밀 때와 당길 때의 모습을 각각 그림으로 그리고, 힘을 준 방향을 화살표로 표시해 설명하세요.",
+      "misconceptions": [
+        "화살표를 물체가 도착한 자리에만 그려 힘을 준 방향이 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 성취기준",
+        "code": "[4과01-01]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-02.concept": {
+      "evidence": [
+        "나무판이 수평을 이룬 상태와 기울어진 상태를 보고 서로 구분해 말한다.",
+        "기울어진 쪽에 놓인 물체가 더 무겁다고 판단하고 그 까닭을 댄다."
+      ],
+      "assessmentPrompt": "양팔저울이 왼쪽으로 기울었을 때 어느 쪽 물체가 더 무거운지 고르고, 그렇게 판단한 까닭을 쓰세요.",
+      "misconceptions": [
+        "저울이 내려간 쪽을 가벼운 쪽이라고 거꾸로 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 성취기준",
+        "code": "[4과01-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-02.procedure": {
+      "evidence": [
+        "받침점에서 같은 거리가 되도록 두 물체를 올려놓고 수평을 맞춘다.",
+        "물체를 짝지어 바꾸어 가며 어느 쪽이 내려가는지 여러 번 확인한다."
+      ],
+      "assessmentPrompt": "나무판과 받침대로 수평잡기 도구를 만들어 지우개와 풀을 올려 보고, 어느 쪽이 무거운지 확인하세요.",
+      "misconceptions": [
+        "두 물체를 받침점에서 서로 다른 거리에 올려놓고 결과를 무게로만 설명한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과01-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-02.representation": {
+      "evidence": [
+        "짝지어 견준 결과를 무거운 차례대로 줄 세워 적는다.",
+        "기울어진 나무판을 그림으로 그리고 무거운 쪽에 표시를 남긴다."
+      ],
+      "assessmentPrompt": "지우개, 가위, 풀을 두 개씩 짝지어 수평잡기로 견주고, 무거운 차례를 표로 정리하세요.",
+      "misconceptions": [
+        "둘씩 비교한 결과를 이어 붙이지 못해 세 물체의 전체 차례를 정하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 성취기준",
+        "code": "[4과01-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-03.concept": {
+      "evidence": [
+        "손으로 들어서는 가리기 어려운 경우를 예로 들어 저울이 필요한 까닭을 말한다.",
+        "물체의 크기에 맞게 g과 ㎏ 가운데 알맞은 단위를 골라 무게를 읽는다."
+      ],
+      "assessmentPrompt": "가위와 필통의 무게를 저울로 재어 g 단위로 쓰고, 어느 쪽이 얼마나 더 무거운지 판단해 설명하세요.",
+      "misconceptions": [
+        "눈금 사이에 바늘이 놓이면 가까운 큰 눈금 값으로만 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 (가) 성취기준 해설",
+        "code": "[4과01-03]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-03.procedure": {
+      "evidence": [
+        "전자저울을 평평한 곳에 놓고 영점을 맞춘 뒤 물체를 올린다.",
+        "같은 저울로 물체를 하나씩 재고 잰 값을 그때그때 적는다."
+      ],
+      "assessmentPrompt": "전자저울의 영점을 맞춘 뒤 필통, 공책, 물통의 무게를 차례로 재어 g 단위로 기록하세요.",
+      "misconceptions": [
+        "영점을 맞추지 않은 채 잰 값을 그대로 물체의 무게로 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과01-03]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-03.representation": {
+      "evidence": [
+        "잰 무게를 물체 이름과 단위가 함께 보이는 표로 정리한다.",
+        "표의 값을 읽고 무거운 차례대로 물체 이름을 늘어놓는다."
+      ],
+      "assessmentPrompt": "세 물체의 무게를 잰 표를 만들고, 표를 보고 무거운 차례대로 물체 이름을 쓰세요.",
+      "misconceptions": [
+        "단위를 빼고 숫자만 적어 g으로 잰 값과 ㎏으로 잰 값을 섞어 견준다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 성취기준",
+        "code": "[4과01-03]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-04.concept": {
+      "evidence": [
+        "지레나 빗면을 쓸 때와 쓰지 않을 때 드는 힘을 견주어 말한다.",
+        "생활 도구에서 지레가 쓰인 것과 빗면이 쓰인 것을 갈라 낸다."
+      ],
+      "assessmentPrompt": "가위, 병따개, 미끄럼틀 가운데 빗면을 이용한 것을 고르고, 그렇게 생각한 까닭을 쓰세요.",
+      "misconceptions": [
+        "도구를 쓰면 힘이 덜 든다는 말을 힘이 아예 들지 않는다는 뜻으로 받아들인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 (가) 성취기준 해설",
+        "code": "[4과01-04]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-04.procedure": {
+      "evidence": [
+        "도구가 쓰이는 곳을 사진과 자료로 조사해 목록으로 모은다.",
+        "모은 도구를 모둠에서 나누어 맡아 발표 자료로 다듬는다."
+      ],
+      "assessmentPrompt": "집이나 학교에서 지레나 빗면을 이용한 도구 두 가지를 찾아, 사진과 쓰임을 담은 발표 자료를 만드세요.",
+      "misconceptions": [
+        "도구 이름만 모으고 어떤 상황에서 힘이 덜 드는지는 적지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과01-04]"
+      }
+    },
+    "kr.mt.science.motion-energy.force-life.g4-01-04.representation": {
+      "evidence": [
+        "조사한 도구를 지레와 빗면으로 갈라 표에 적는다.",
+        "도구 그림에 힘을 주는 곳과 물체가 놓이는 곳을 표시한다."
+      ],
+      "assessmentPrompt": "조사한 도구를 지레와 빗면으로 나눈 표를 만들고, 도구 그림마다 힘을 주는 곳을 표시하세요.",
+      "misconceptions": [
+        "나누는 기준을 정하지 않고 겉모습만 보고 표의 칸을 채운다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 13,
+        "section": "(1) 힘과 우리 생활 성취기준",
+        "code": "[4과01-04]"
+      }
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-01.concept": {
+      "evidence": [
+        "자석에 붙는 물체와 붙지 않는 물체를 만들어진 재료로 갈라 말한다.",
+        "자석과 물체가 닿지 않아도 힘이 작용함을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "클립, 나무 막대, 못, 지우개 가운데 자석에 붙는 것을 고르고, 그 물체들의 공통점을 쓰세요.",
+      "misconceptions": [
+        "금속처럼 보이면 쇠붙이가 아니어도 모두 자석에 붙는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 (가) 성취기준 해설",
+        "code": "[4과09-01]"
+      }
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-01.procedure": {
+      "evidence": [
+        "여러 물체를 자석에 하나씩 가까이 대어 결과를 확인한다.",
+        "자석과 물체 사이의 거리를 조금씩 바꾸며 붙는 순간을 살핀다."
+      ],
+      "assessmentPrompt": "물체 여덟 개를 자석에 차례로 가까이 대어 보고, 붙는 것과 붙지 않는 것으로 나누어 적으세요.",
+      "misconceptions": [
+        "물체를 자석에 문질러 붙여 놓고 자석이 끌어당겼다고 기록한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과09-01]"
+      }
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-01.representation": {
+      "evidence": [
+        "붙는 물체와 붙지 않는 물체를 두 칸 표로 정리한다.",
+        "표를 근거로 붙는 물체의 공통점을 짚어 보여 준다."
+      ],
+      "assessmentPrompt": "자석에 붙는 물체와 붙지 않는 물체를 표로 정리하고, 붙는 물체의 공통점을 한 문장으로 쓰세요.",
+      "misconceptions": [
+        "표에 물체 이름만 적고 무엇으로 만들어졌는지는 적지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 성취기준",
+        "code": "[4과09-01]"
+      }
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-02.concept": {
+      "evidence": [
+        "같은 극끼리 마주할 때와 다른 극끼리 마주할 때를 갈라 말한다.",
+        "자석이 밀거나 당기는 까닭을 극과 이어서 설명한다."
+      ],
+      "assessmentPrompt": "막대자석 두 개의 N극끼리 마주 댔을 때 나타나는 현상을 쓰고, 그 까닭을 극과 이어 설명하세요.",
+      "misconceptions": [
+        "자석이 크면 언제나 끌어당긴다고 여겨 극과 잇지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 (가) 성취기준 해설",
+        "code": "[4과09-02]"
+      }
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-02.procedure": {
+      "evidence": [
+        "두 자석의 극을 바꾸어 가며 가까이 대고 결과를 확인한다.",
+        "나침반을 자석에 가까이 대어 바늘이 움직이는 모습을 관찰한다."
+      ],
+      "assessmentPrompt": "막대자석 두 개를 극을 바꾸어 가며 네 가지 방법으로 마주 대어 보고, 각각의 결과를 기록하세요.",
+      "misconceptions": [
+        "자석을 손으로 붙였다 떼면서 미는 힘과 당기는 힘을 가려내지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과09-02]"
+      }
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-02.representation": {
+      "evidence": [
+        "극을 짝지은 경우와 나타난 현상을 표로 이어 적는다.",
+        "미는 방향과 당기는 방향을 화살표로 그려 보여 준다."
+      ],
+      "assessmentPrompt": "N극과 S극을 짝지은 네 가지 경우를 표로 정리하고, 각 경우의 힘의 방향을 화살표로 그리세요.",
+      "misconceptions": [
+        "화살표를 한쪽 자석에만 그려 서로 힘을 주고받는 모습을 나타내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 성취기준",
+        "code": "[4과09-02]"
+      }
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-03.concept": {
+      "evidence": [
+        "장치에 살릴 자석의 성질이 무엇인지 골라 말한다.",
+        "고른 성질이 장치의 쓰임에 맞는지 따져 판단한다."
+      ],
+      "assessmentPrompt": "문이 저절로 닫히게 하려면 자석의 어떤 성질을 이용해야 하는지 쓰고, 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "자석을 붙이기만 하면 어떤 물체든 잡을 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 성취기준",
+        "code": "[4과09-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-03.procedure": {
+      "evidence": [
+        "생활에서 불편한 점을 찾아 자석으로 풀 방법을 계획한다.",
+        "계획한 장치를 그림으로 그리고 자석을 놓을 자리를 정한다."
+      ],
+      "assessmentPrompt": "교실에서 불편한 점을 하나 찾아 자석을 이용해 해결하는 장치를 계획하고 설계도를 그리세요.",
+      "misconceptions": [
+        "만들기부터 시작해 자석의 성질을 어떻게 살릴지 계획에 담지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 20,
+        "section": "(9) 자석의 이용 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과09-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.magnet-use.g4-09-03.representation": {
+      "evidence": [
+        "설계도에 자석의 극과 놓는 자리를 표시해 나타낸다.",
+        "설계도를 보여 주며 자석이 하는 일을 짚어 설명한다."
+      ],
+      "assessmentPrompt": "설계한 장치를 그림으로 그리고, 자석을 놓을 자리와 극을 표시해 하는 일을 설명하세요.",
+      "misconceptions": [
+        "설계도에 자석의 자리만 그리고 극의 방향은 나타내지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(9) 자석의 이용 성취기준",
+        "code": "[4과09-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-01.concept": {
+      "evidence": [
+        "소리가 나는 물체에서 떨림이 나타남을 예를 들어 말한다.",
+        "소리가 나는 물체와 나지 않는 물체를 만져 보고 갈라 낸다."
+      ],
+      "assessmentPrompt": "소리굽쇠를 두드려 소리를 낸 뒤 손으로 잡았을 때와 잡지 않았을 때가 어떻게 다른지 쓰세요.",
+      "misconceptions": [
+        "소리가 물체 안에 담겨 있다가 나온다고 여겨 떨림과 잇지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 성취기준",
+        "code": "[4과07-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-01.procedure": {
+      "evidence": [
+        "소리가 나는 소리굽쇠를 물에 살짝 대어 물이 튀는 모습을 관찰한다.",
+        "귀가 다치지 않도록 소리의 세기를 조절하며 활동한다."
+      ],
+      "assessmentPrompt": "소리가 나는 소리굽쇠를 물이 담긴 수조에 살짝 대어 보고, 물의 모습이 어떻게 달라지는지 관찰해 적으세요.",
+      "misconceptions": [
+        "소리굽쇠를 세게 두드린 뒤 귀 가까이 대어 안전 수칙을 지키지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과07-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-01.representation": {
+      "evidence": [
+        "떨림이 있을 때와 없을 때의 모습을 그림으로 나누어 그린다.",
+        "관찰한 결과를 표에 적어 소리와 떨림을 이어 보여 준다."
+      ],
+      "assessmentPrompt": "소리가 날 때와 나지 않을 때의 소리굽쇠 모습을 그림으로 그리고, 무엇이 다른지 설명하세요.",
+      "misconceptions": [
+        "그림에 떨리는 모습을 나타내지 못하고 소리만 글자로 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 성취기준",
+        "code": "[4과07-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-02.concept": {
+      "evidence": [
+        "큰 소리와 작은 소리를 소리의 세기로 갈라 말한다.",
+        "높은 소리와 낮은 소리를 듣고 어느 쪽인지 골라 낸다."
+      ],
+      "assessmentPrompt": "실로폰의 긴 음판과 짧은 음판을 쳐 보고 어느 쪽이 더 높은 소리인지 고른 뒤 까닭을 쓰세요.",
+      "misconceptions": [
+        "소리가 크면 높은 소리라고 여겨 세기와 높낮이를 섞어 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 성취기준",
+        "code": "[4과07-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-02.procedure": {
+      "evidence": [
+        "북을 세게 칠 때와 약하게 칠 때를 나누어 소리를 내 본다.",
+        "고무줄이나 관의 길이를 바꾸어 높낮이가 다른 소리를 낸다."
+      ],
+      "assessmentPrompt": "고무줄의 길이를 바꾸어 가며 튕겨 보고, 소리의 높낮이가 어떻게 달라지는지 관찰해 적으세요.",
+      "misconceptions": [
+        "길이는 그대로 두고 세게만 튕기면서 높낮이를 바꾸었다고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과07-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-02.representation": {
+      "evidence": [
+        "소리의 세기와 높낮이를 칸으로 나눈 표에 적는다.",
+        "관찰한 결과를 그림 기호로 나타내 서로 견주어 보여 준다."
+      ],
+      "assessmentPrompt": "길이가 다른 고무줄에서 난 소리를 표로 정리하고, 높낮이의 차이를 화살표로 나타내세요.",
+      "misconceptions": [
+        "표에 세기와 높낮이를 한 칸에 함께 적어 무엇이 달라졌는지 알기 어렵다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 성취기준",
+        "code": "[4과07-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-03.concept": {
+      "evidence": [
+        "실, 나무, 물처럼 소리를 전하는 물질의 예를 들어 말한다.",
+        "소음을 줄이는 방법이 왜 도움이 되는지 근거를 들어 설명한다."
+      ],
+      "assessmentPrompt": "실 전화기로 이야기가 들리는 까닭을 소리가 지나는 길에 무엇이 있는지로 설명하세요.",
+      "misconceptions": [
+        "소리는 공기로만 전해진다고 여겨 실이나 물을 통한 전달을 인정하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 (가) 성취기준 해설",
+        "code": "[4과07-03]"
+      }
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-03.procedure": {
+      "evidence": [
+        "실 전화기를 만들어 실을 팽팽히 했을 때와 느슨하게 했을 때를 견준다.",
+        "교실에서 소리가 큰 곳을 찾아 줄이는 방법을 정해 실천한다."
+      ],
+      "assessmentPrompt": "실 전화기를 만들어 실을 팽팽하게 했을 때와 느슨하게 했을 때 소리가 어떻게 들리는지 비교하세요.",
+      "misconceptions": [
+        "실을 손으로 잡은 채 실험하고 잘 들리지 않는 까닭을 실의 굵기 탓으로 돌린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과07-03]"
+      }
+    },
+    "kr.mt.science.motion-energy.sound-properties.g4-07-03.representation": {
+      "evidence": [
+        "물질별로 소리가 전해진 정도를 표로 정리해 나타낸다.",
+        "소음을 줄이는 실천 방법을 안내판으로 만들어 보여 준다."
+      ],
+      "assessmentPrompt": "실, 나무 막대, 물을 통해 들리는 소리를 비교한 표를 만들고, 교실 소음 줄이기 안내판을 만드세요.",
+      "misconceptions": [
+        "안내판에 하지 말자는 말만 적고 어떤 방법이 소리를 줄이는지 쓰지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(7) 소리의 성질 성취기준",
+        "code": "[4과07-03]"
+      }
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-01.concept": {
+      "evidence": [
+        "가뭄, 폭염, 홍수처럼 예년과 크게 다른 현상의 예를 말한다.",
+        "사람의 활동과 그런 현상이 어떻게 이어지는지 근거를 들어 설명한다."
+      ],
+      "assessmentPrompt": "최근 여름에 있었던 폭염이나 홍수 사례를 하나 들고, 사람의 활동과 어떤 관련이 있는지 쓰세요.",
+      "misconceptions": [
+        "하루 날씨가 더운 것과 여러 해에 걸친 변화를 같은 것으로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 (가) 성취기준 해설",
+        "code": "[4과16-01]"
+      }
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-01.procedure": {
+      "evidence": [
+        "기온과 강수량 자료를 찾아 예년 값과 견주어 살핀다.",
+        "조사한 자료를 근거로 삼아 모둠 토의에 참여한다."
+      ],
+      "assessmentPrompt": "우리 지역의 최근 여름 기온 자료를 찾아 예년과 견주고, 알게 된 점을 모둠에서 토의하세요.",
+      "misconceptions": [
+        "자료를 확인하지 않고 겪은 느낌만으로 토의 의견을 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과16-01]"
+      }
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-01.representation": {
+      "evidence": [
+        "조사한 사례를 현상 종류별로 나눈 표에 정리한다.",
+        "기온 자료를 꺾은선으로 나타내 변화를 보여 준다."
+      ],
+      "assessmentPrompt": "여러 해의 여름 평균 기온을 꺾은선그래프로 나타내고, 어떤 변화가 보이는지 설명하세요.",
+      "misconceptions": [
+        "눈금 간격을 고르지 않게 그려 변화가 실제보다 커 보이게 만든다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 성취기준",
+        "code": "[4과16-01]"
+      }
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-02.concept": {
+      "evidence": [
+        "기후변화가 생활과 환경에 남기는 영향을 예를 들어 말한다.",
+        "모형실험 결과를 근거로 앞으로 생길 피해를 예상해 설명한다."
+      ],
+      "assessmentPrompt": "바닷물의 높이가 올라가면 바닷가 마을에 어떤 일이 생길지 두 가지 쓰고, 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "그런 변화를 먼 나라의 일로만 여겨 자기 생활과 잇지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 (가) 성취기준 해설",
+        "code": "[4과16-02]"
+      }
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-02.procedure": {
+      "evidence": [
+        "얼음이 녹을 때 물의 높이가 달라지는 모형실험을 수행한다.",
+        "실험 전과 후의 물 높이를 자로 재어 기록한다."
+      ],
+      "assessmentPrompt": "수조에 얼음과 모형 땅을 놓고 얼음이 녹기 전과 뒤의 물 높이를 재어 기록하세요.",
+      "misconceptions": [
+        "물의 높이를 눈대중으로만 보고 잰 값을 남기지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과16-02]"
+      }
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-02.representation": {
+      "evidence": [
+        "실험 결과와 예상한 피해를 짝지어 표로 정리한다.",
+        "피해가 나타날 곳을 그림이나 지도에 표시해 보여 준다."
+      ],
+      "assessmentPrompt": "모형실험 결과를 표로 정리하고, 바닷물 높이가 올라갈 때 영향을 받을 곳을 지도에 표시하세요.",
+      "misconceptions": [
+        "실험 결과와 상관없는 피해까지 지도에 함께 표시한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 성취기준",
+        "code": "[4과16-02]"
+      }
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-03.concept": {
+      "evidence": [
+        "생활에서 실천할 수 있는 대응 방법을 골라 까닭을 말한다.",
+        "고른 방법이 실제로 도움이 되는지 근거를 들어 판단한다."
+      ],
+      "assessmentPrompt": "가까운 거리 걸어 다니기와 물 아껴 쓰기 가운데 하나를 골라, 어떤 도움이 되는지 쓰세요.",
+      "misconceptions": [
+        "실천은 어른이 할 일이라고 여겨 자신이 할 수 있는 일을 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 성취기준",
+        "code": "[4과16-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-03.procedure": {
+      "evidence": [
+        "대응 방법을 조사해 실천 계획을 세우고 날마다 실행한다.",
+        "실천한 날을 기록하고 이어 가기 어려운 점을 점검한다."
+      ],
+      "assessmentPrompt": "대응 방법 두 가지를 조사해 두 주 동안 실천하고, 날마다 실천한 결과를 표에 기록하세요.",
+      "misconceptions": [
+        "하루만 실천하고 나머지 날의 기록을 미리 채워 넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과16-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.science-society.climate-life.g4-16-03.representation": {
+      "evidence": [
+        "실천 기록을 표로 정리해 이어 온 정도를 나타낸다.",
+        "함께 하자고 권하는 안내 자료를 만들어 보여 준다."
+      ],
+      "assessmentPrompt": "실천 기록을 표로 정리하고, 친구들에게 함께 하자고 권하는 안내 자료를 만드세요.",
+      "misconceptions": [
+        "안내 자료에 겁을 주는 말만 적고 실천 방법은 넣지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 25,
+        "section": "(16) 기후변화와 우리 생활 성취기준",
+        "code": "[4과16-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-01.concept": {
+      "evidence": [
+        "예방접종을 받은 경험을 들어 생활 속 감염병의 예를 말한다.",
+        "사람 사이에 옮는 질병과 옮지 않는 질병을 갈라 낸다."
+      ],
+      "assessmentPrompt": "감기, 충치, 독감 가운데 사람 사이에 옮는 질병을 고르고, 그렇게 생각한 까닭을 쓰세요.",
+      "misconceptions": [
+        "다쳐서 생긴 상처처럼 옮지 않는 것까지 감염병으로 묶는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(8) 감염병과 건강한 생활 (가) 성취기준 해설",
+        "code": "[4과08-01]"
+      }
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-01.procedure": {
+      "evidence": [
+        "생활 속 감염병 사례를 조사해 모둠 토의 자료로 모은다.",
+        "토의에서 친구의 의견을 듣고 자기 생각을 근거와 함께 말한다."
+      ],
+      "assessmentPrompt": "학교에서 유행한 적이 있는 질병 한 가지를 조사해, 그 질병이 왜 위험한지 모둠에서 토의하고 정리하세요.",
+      "misconceptions": [
+        "질병이 생긴 까닭을 특정한 사람의 탓으로 돌리는 말로 토의를 이어 간다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(8) 감염병과 건강한 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과08-01]"
+      }
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-01.representation": {
+      "evidence": [
+        "조사한 질병과 위험한 점을 칸으로 나눈 표에 정리한다.",
+        "토의한 내용을 한 장에 모아 친구들에게 보여 준다."
+      ],
+      "assessmentPrompt": "조사한 질병 두 가지를 옮는 방법과 위험한 점으로 나눈 표에 정리해 발표하세요.",
+      "misconceptions": [
+        "표에 질병 이름만 적고 어떤 점이 위험한지는 적지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(8) 감염병과 건강한 생활 성취기준",
+        "code": "[4과08-01]"
+      }
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-02.concept": {
+      "evidence": [
+        "손으로 닿아 옮는 경우와 침방울로 옮는 경우를 갈라 말한다.",
+        "어떤 생활 습관이 유행을 키우는지 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "기침을 가리지 않는 습관이 어떤 감염 과정과 이어지는지 쓰고, 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "손을 씻는 일을 감염과 상관없는 예절 문제로만 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(8) 감염병과 건강한 생활 (가) 성취기준 해설",
+        "code": "[4과08-02]"
+      }
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-02.procedure": {
+      "evidence": [
+        "역할극이나 놀이로 감염이 퍼지는 과정을 따라 해 본다.",
+        "활동을 마친 뒤 어떤 습관이 퍼짐을 키웠는지 찾아 적는다."
+      ],
+      "assessmentPrompt": "형광 가루를 손에 묻히고 물건을 만지는 활동을 한 뒤, 가루가 옮아간 곳을 확인해 기록하세요.",
+      "misconceptions": [
+        "활동을 놀이로만 하고 어떤 습관 때문에 퍼졌는지는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(8) 감염병과 건강한 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과08-02]"
+      }
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-02.representation": {
+      "evidence": [
+        "감염이 퍼진 길을 화살표로 이은 그림으로 나타낸다.",
+        "그림의 단계마다 관련된 생활 습관을 짝지어 적는다."
+      ],
+      "assessmentPrompt": "감염이 퍼지는 과정을 화살표 그림으로 그리고, 각 단계에서 바꿀 수 있는 습관을 적으세요.",
+      "misconceptions": [
+        "화살표를 한 방향으로만 그려 여러 갈래로 퍼지는 모습을 나타내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(8) 감염병과 건강한 생활 성취기준",
+        "code": "[4과08-02]"
+      }
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-03.concept": {
+      "evidence": [
+        "감염병을 막는 데 도움이 되는 수칙을 골라 까닭을 말한다.",
+        "교실에서 바로 지킬 수 있는 수칙과 어려운 수칙을 갈라 판단한다."
+      ],
+      "assessmentPrompt": "손 씻기, 마스크 쓰기, 창문 열기 가운데 교실에서 바로 지킬 수 있는 수칙을 고르고 까닭을 쓰세요.",
+      "misconceptions": [
+        "약을 먹는 것만 예방이라고 여겨 생활 습관을 수칙에서 뺀다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(8) 감염병과 건강한 생활 성취기준",
+        "code": "[4과08-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-03.procedure": {
+      "evidence": [
+        "모둠에서 실천 수칙을 정하고 지킨 날을 표에 남긴다.",
+        "일주일 동안 실천한 뒤 잘된 점과 어려운 점을 점검한다."
+      ],
+      "assessmentPrompt": "모둠에서 예방 수칙 세 가지를 정해 일주일 동안 실천하고, 날마다 지킨 결과를 표에 기록하세요.",
+      "misconceptions": [
+        "수칙을 정하기만 하고 지켰는지 확인하지 않아 실천이 이어지지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 19,
+        "section": "(8) 감염병과 건강한 생활 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4과08-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.science.science-society.infection-health.g4-08-03.representation": {
+      "evidence": [
+        "정한 수칙을 그림과 짧은 글이 있는 안내물로 만든다.",
+        "만든 안내물을 교실에 붙이고 친구에게 설명한다."
+      ],
+      "assessmentPrompt": "감염병 예방 수칙을 담은 안내물을 만들어 그림과 실천 방법을 함께 넣고 교실에 붙이세요.",
+      "misconceptions": [
+        "안내물에 하지 말라는 말만 적고 어떻게 하는지는 알려 주지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-science-pdf-2022",
+        "printedPage": 18,
+        "section": "(8) 감염병과 건강한 생활 성취기준",
+        "code": "[4과08-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    }
+  }
+}

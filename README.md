@@ -103,7 +103,7 @@ P3 릴리스는 다음을 제공합니다.
 - 직접 선수 추천 `directRequires`, 다단계 파생 관계 `indirectRequires`, 파생 역관계 `unlocks`를 구분합니다. 직접 관계는 모든 학습자에게 적용되는 보편 법칙이나 전이 속성이 아닙니다.
 - `hard`/`soft`는 원값을 보존하면서 모델 내부의 `required`/`recommended` 추천 강도로 정규화합니다.
 - 선수 관계와 성취기준-주제 정렬은 각각 `PrerequisiteAssertion`, `StandardTopicAlignment`로 강도·이유·근거·출처·정렬 역할·신뢰도 같은 한정자를 보존합니다. 선수 단정은 추가로 `lm:assertionLayer`·`lm:relationKind`·`lm:basisKind`·`lm:scope`·`lm:reviewStatus` 한정자를 갖습니다.
-- 11개 교육과정, 620개 성취기준, 1,956개 주제, 2,291개 선수 주장(official 416 + 후보 1,875), 1,956개 성취기준 정렬, 152개 클러스터, 46개 커버리지 갭을 포함해 총 22,163개 인스턴스 리소스와 검증된 248,548개 RDF 트리플을 내보냅니다.
+- 11개 교육과정, 620개 성취기준, 1,956개 주제, 2,291개 선수 주장(official 416 + 후보 1,875), 1,956개 성취기준 정렬, 152개 클러스터, 46개 커버리지 갭을 포함해 총 22,817개 인스턴스 리소스와 검증된 256,786개 RDF 트리플을 내보냅니다.
 - `directRequires` 416개는 official 층에서만 나오고, `unlocks` 416개는 그 정확한 역관계로, `indirectRequires` 97개는 길이 2 이상의 비직접 경로로만 물질화합니다.
 - OWL/Turtle TBox, 로컬 JSON-LD 컨텍스트, SHACL Advanced 제약, SPARQL 역량 질문 18개, 양성 fixture와 적대 fixture 10개를 제공합니다.
 - 중등 저장소와 공유하는 K-12 코어 TBox [`ontology/k12-core.ttl`](ontology/k12-core.ttl)(`https://dexa.art/learnmap/ontology/k12-core`, versionIRI `…/1.0.0`)를 `owl:imports`로 선언하고 로컬 사본에서 읽습니다. 기존 `lm:` IRI는 재발급하지 않고 `owl:equivalentClass`·`owl:equivalentProperty`·`skos:exactMatch`로 코어에 연결하며, 두 저장소의 사본이 같은지는 `tests/k12-core-sync.test.mjs`가 헤더의 기준 해시로 검사합니다.
@@ -122,7 +122,7 @@ P3 릴리스는 다음을 제공합니다.
 | --- | --- |
 | [`ontology/learning-map.ttl`](ontology/learning-map.ttl) | 정적 OWL/Turtle TBox와 통제 개념 |
 | [`ontology/context.jsonld`](ontology/context.jsonld), [`ontology/shapes.ttl`](ontology/shapes.ttl), [`ontology/metadata.ttl`](ontology/metadata.ttl) | JSON-LD 컨텍스트, 실행 SHACL, 버전·검토·권리 메타데이터 |
-| [`dist/ontology/learning-map.jsonld`](dist/ontology/learning-map.jsonld), [`dist/ontology/learning-map.ttl`](dist/ontology/learning-map.ttl) | 22,163개 인스턴스 리소스의 결정적 ABox |
+| [`dist/ontology/learning-map.jsonld`](dist/ontology/learning-map.jsonld), [`dist/ontology/learning-map.ttl`](dist/ontology/learning-map.ttl) | 22,817개 인스턴스 리소스의 결정적 ABox |
 | [`docs/ontology-reference.md`](docs/ontology-reference.md) | 클래스·속성·개념·수명주기 자동 생성 참조문서 |
 | [`docs/ontology-release-report.md`](docs/ontology-release-report.md) | 일곱 게이트의 명령·도구·개수·한계 증거 |
 | [`dist/ontology/release-manifest.json`](dist/ontology/release-manifest.json) | 전체 릴리스 파일의 결정적 바이트 수와 SHA-256 |
@@ -140,7 +140,7 @@ P3 릴리스는 다음을 제공합니다.
 | [`data/kr/clusters.json`](data/kr/clusters.json) | 152개 학습 클러스터와 학부모용 요약 |
 | [`data/kr/manifest.json`](data/kr/manifest.json) | 개수, 정책, 파일별 바이트 수와 SHA-256 |
 | [`data/kr/workstreams/`](data/kr/workstreams/) | 교과별 생성·통합 입력 산출물 |
-| `data/kr/content/` | 주제 콘텐츠 오버레이 빌드 입력(`<subject>-<gradeBand>.json`, 현재 수학 3개 파일·363주제) |
+| `data/kr/content/` | 주제 콘텐츠 오버레이 빌드 입력(`<subject>-<gradeBand>.json`, 현재 수학·국어·과학 8개 파일·1,017주제) |
 | `data/kr/*.seed.json` | 이전 단계의 후보 시드 기록 |
 | [`schema/`](schema/) | 최종 KR 데이터와 콘텐츠 오버레이용 JSON Schema 6종 |
 

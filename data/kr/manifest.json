@@ -17,8 +17,8 @@
     "standardMappings": 1956,
     "coverageGaps": 46,
     "workstreams": 9,
-    "contentOverlayFiles": 3,
-    "sourceGroundedTopics": 363
+    "contentOverlayFiles": 8,
+    "sourceGroundedTopics": 1017
   },
   "targets": {
     "topicsAtLeast": 1500
@@ -109,6 +109,18 @@
       "bytes": 70468,
       "sha256": "c9664dd578a5492d163dc258cd054d5c8eda501c35ac81844a3f34d1c6c5c1b5"
     },
+    "content/korean-1-2.json": {
+      "bytes": 77537,
+      "sha256": "70519608b3c03221388e69cc8388b0de1ab2a2ebb073b3defdcb9b2e33c214d4"
+    },
+    "content/korean-3-4.json": {
+      "bytes": 100542,
+      "sha256": "641263176c4a081e6b2b3fd0bb3ac82e586baae1b523e8998554af963ca9d504"
+    },
+    "content/korean-5-6.json": {
+      "bytes": 115661,
+      "sha256": "1ac375f426d9b4e4bcb63eeed8183bb9b4c4169d441b0bee37991e03d3166429"
+    },
     "content/math-1-2.json": {
       "bytes": 86281,
       "sha256": "8b3d3001ba66901ffd20116b78953d4dbe57dd0976f4352da0c365b710c34ce6"
@@ -120,6 +132,14 @@
     "content/math-5-6.json": {
       "bytes": 132508,
       "sha256": "b4dd43c45a4c3cd2f84e0e76c2d5d19350863ceac3e02982f51398e609af8d84"
+    },
+    "content/science-3-4.json": {
+      "bytes": 125399,
+      "sha256": "9c3c0a4d9caeed383feda510ff170bbb6d897d5f5132714d2db685e34b2e170e"
+    },
+    "content/science-5-6.json": {
+      "bytes": 123475,
+      "sha256": "6ef9a75411c62addd6413740f9171e2bfc44b5d1287d5009bf453b845b661b2d"
     },
     "curriculum-standards.json": {
       "bytes": 1973586,
@@ -142,8 +162,8 @@
       "sha256": "8a25e60bae09954d457f932dd152afc5e7541a261a280ceb4bbf13d3bbe85884"
     },
     "topics.json": {
-      "bytes": 5917903,
-      "sha256": "16a2b8438a9235c8e7997b0c6c9a9a847993920b0da374a3d0fe04521302ad2f"
+      "bytes": 5905788,
+      "sha256": "ea1c5dd690ac75a8f4b1a0be1dd451ac36b85f41a4e13952838019f6a7e6ffa9"
     },
     "topics.seed.json": {
       "bytes": 365755,

@@ -2,16 +2,16 @@
   "datasetRelease": "kr-full-depth-v0.5",
   "files": [
     {
-      "bytes": 29736248,
+      "bytes": 30403153,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "55bfa724d05cde5c07f5ab5c534e91b97952efb5743b2b9710b96acc5bac7192"
+      "sha256": "43d350b14e9af6150a7099b31aaf8da1c58443dd07a22b378444275a16a742b0"
     },
     {
-      "bytes": 21629559,
+      "bytes": 22005392,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "4be2a8280bb298711871dbecb02041e877e16f51cc36fc048b9c73c5bca6dacd"
+      "sha256": "f5cf0bdb281399d2276e11684e15ad53654d48f23ea048ba60ec34991a5a9ffb"
     }
   ],
   "formatVersion": 3,
@@ -29,7 +29,7 @@
     "LearningTopic": 1956,
     "PrerequisiteAssertion": 2291,
     "SourceDocument": 16,
-    "SourceLocator": 2203,
+    "SourceLocator": 2857,
     "StandardTopicAlignment": 1956,
     "Subject": 12,
     "VerificationRecord": 6851

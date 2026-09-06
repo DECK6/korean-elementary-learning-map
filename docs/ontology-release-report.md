@@ -38,7 +38,7 @@ Verification was run with Node `20.11.1`-compatible tooling and the local `.venv
 
 ## Exact graph evidence
 
-The deterministic graph contains 22,163 instance resources and 248,548 locally verified triples in each isomorphic JSON-LD and Turtle serialization. Snapshot counts are 11 curricula, 620 standards, 1,956 topics, 2,291 prerequisite assertions (416 official, 1,875 pedagogical-candidate), 1,956 standard-topic alignments, 152 clusters, and 46 retained coverage gaps. Only the official layer materializes binary prerequisite views: 416 `directRequires`, 416 `unlocks`, 97 `indirectRequires`, and 1,956 `alignedToStandard` pairs. The bounded OWL-RL check expanded 1,160 input triples to a 3,398-triple closure with no explicit contradiction or unsatisfiable named class.
+The deterministic graph contains 22,817 instance resources and 256,786 locally verified triples in each isomorphic JSON-LD and Turtle serialization. Snapshot counts are 11 curricula, 620 standards, 1,956 topics, 2,291 prerequisite assertions (416 official, 1,875 pedagogical-candidate), 1,956 standard-topic alignments, 152 clusters, and 46 retained coverage gaps. Only the official layer materializes binary prerequisite views: 416 `directRequires`, 416 `unlocks`, 97 `indirectRequires`, and 1,956 `alignedToStandard` pairs. The bounded OWL-RL check expanded 1,160 input triples to a 3,398-triple closure with no explicit contradiction or unsatisfiable named class.
 
 ## What 0.4.0 adds over 0.3.0-p3
 
