@@ -1,0 +1,1338 @@
+{
+  "$schema": "../../../schema/kr-content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "실과(기술·가정)/정보",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-ncic-practical-arts-pdf-2022"
+  ],
+  "note": "교육부 고시 제2022-33호 [별책 10] 실과(기술⋅가정)/정보과 교육과정의 초등학교 실과 성취기준과 성취기준 해설, 성취기준 적용 시 고려 사항(인쇄 p.12∼19), 그리고 실험⋅실습 안전 지침(인쇄 p.33)을 근거로 5∼6학년군 세부 주제를 새로 쓴 초안이다. 인쇄 쪽 = PDF 쪽 − 6이며, 수행 facet에는 안전⋅위생 유의점을 함께 담았다.",
+  "entries": {
+    "kr.mt.practical.human-development-self-directed-life.5-6.0101.concept": {
+      "evidence": [
+        "아동기에 나타나는 변화를 몸과 마음과 관계 영역으로 나누어 각각 예를 든다.",
+        "같은 나이라도 자라는 속도가 다를 수 있음을 자료에서 찾아 근거로 제시한다."
+      ],
+      "assessmentPrompt": "또래 성장 자료표를 주고 아동기 변화를 몸과 마음과 관계 영역으로 나누어 정리하게 한 뒤, 같은 나이에서 차이가 나타나는 대목을 찾아 근거로 제시하게 하라.",
+      "misconceptions": [
+        "자라는 속도가 다르면 어느 한쪽이 뒤처진 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-01]",
+        "code": "[6실01-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0101.practice": {
+      "evidence": [
+        "자신의 키와 수면 시간과 활동량을 두 주 동안 재어 기록장에 적는다.",
+        "기록을 근거로 성장에 도움이 될 실천을 한 가지 정해 실행하고 결과를 남긴다."
+      ],
+      "assessmentPrompt": "두 주 동안 키와 수면 시간과 활동량을 재어 기록하게 하고, 그 기록을 근거로 성장에 도움이 될 실천을 하나 정해 실행한 뒤 변화를 적게 하라.",
+      "misconceptions": [
+        "한 번 잰 수치만으로 자신의 성장 상태를 단정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-01]",
+        "code": "[6실01-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0102.concept": {
+      "evidence": [
+        "몸을 돌보는 습관과 마음을 돌보는 습관을 갈라 놓고 각각 예를 든다.",
+        "자기 관리 계획이 지켜지려면 갖추어야 할 조건을 두 가지 짚어 말한다."
+      ],
+      "assessmentPrompt": "생활습관 카드 여덟 장을 주고 몸을 돌보는 것과 마음을 돌보는 것으로 나누게 한 뒤, 계획이 지켜지려면 필요한 조건 두 가지를 말하게 하라.",
+      "misconceptions": [
+        "계획을 촘촘하게 세울수록 잘 지켜진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-02]",
+        "code": "[6실01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0102.practice": {
+      "evidence": [
+        "한 주 자기 관리 계획을 세워 날마다 실행 여부를 점검표에 표시한다.",
+        "점검표에서 빠진 날의 조건을 찾아 다음 주 계획을 고쳐 다시 실행한다."
+      ],
+      "assessmentPrompt": "한 주 자기 관리 계획을 세워 날마다 점검표에 표시하게 하고, 빠진 날의 조건을 찾아 다음 주 계획을 고쳐 다시 실행하게 하라.",
+      "misconceptions": [
+        "하루 빠뜨리면 계획이 실패한 것으로 보고 점검 자체를 그만둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-02]",
+        "code": "[6실01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0103.concept": {
+      "evidence": [
+        "가족마다 맡은 일과 바라는 것이 다를 수 있음을 사례를 들어 설명한다.",
+        "가정일을 나누는 방식을 두 가지 견주어 각각의 좋은 점을 짚는다."
+      ],
+      "assessmentPrompt": "구성원 수와 사정이 다른 가정 두 곳의 하루를 주고, 각 가족이 맡은 일과 바라는 것을 정리한 뒤 일을 나누는 두 방식을 견주어 좋은 점을 짚게 하라.",
+      "misconceptions": [
+        "가정일은 특정 구성원이 맡는 것이 당연하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-03]",
+        "code": "[6실01-03]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0103.practice": {
+      "evidence": [
+        "가족과 의논해 자신이 맡을 가정일을 정하고 한 주 동안 수행한다.",
+        "수행한 일과 가족의 반응을 기록해 다음 주 분담을 다시 조정한다."
+      ],
+      "assessmentPrompt": "가족과 의논해 자신이 맡을 가정일을 정하고 한 주 동안 수행하게 한 뒤, 수행 기록과 가족의 반응을 근거로 다음 주 분담을 조정해 적게 하라.",
+      "misconceptions": [
+        "도움을 준 횟수만 세고 가족이 실제로 필요로 했는지는 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-03]",
+        "code": "[6실01-03]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0104.concept": {
+      "evidence": [
+        "한 끼 식단에서 부족하거나 넘치는 식품군을 찾아 이름을 붙여 말한다.",
+        "균형 잡힌 식사가 갖추어야 할 조건을 세 가지 들어 설명한다."
+      ],
+      "assessmentPrompt": "급식 식단표 세 끼를 주고 각 끼니에서 부족하거나 넘치는 식품군을 찾게 한 뒤, 균형 잡힌 식사의 조건 세 가지를 들어 설명하게 하라.",
+      "misconceptions": [
+        "좋아하는 음식을 많이 먹으면 잘 먹은 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-04]",
+        "code": "[6실01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0104.practice": {
+      "evidence": [
+        "사흘 동안 자신이 먹은 것을 기록해 식품군별로 표에 나눈다.",
+        "표에서 모자란 식품군을 채우는 하루 식단을 짜서 실제로 실천한다."
+      ],
+      "assessmentPrompt": "사흘 동안 먹은 것을 기록해 식품군별 표로 나누게 하고, 모자란 식품군을 채우는 하루 식단을 짜서 실천한 뒤 결과를 적게 하라.",
+      "misconceptions": [
+        "식단을 짜기만 하고 실제로 먹은 결과는 기록하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-04]",
+        "code": "[6실01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0105.concept": {
+      "evidence": [
+        "옷이 하는 일을 몸 보호와 활동 편의와 자기 표현으로 갈라 예를 든다.",
+        "같은 옷이라도 때와 장소에 따라 알맞음이 달라지는 경우를 들어 말한다."
+      ],
+      "assessmentPrompt": "운동장과 실험실과 행사장 세 장면을 주고 각 장면에 알맞은 옷차림을 고르게 한 뒤, 몸 보호와 활동 편의와 표현 가운데 무엇을 앞세웠는지 밝히게 하라.",
+      "misconceptions": [
+        "옷은 보기 좋으면 된다고 여겨 안전과 위생 조건은 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-05]",
+        "code": "[6실01-05]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0105.practice": {
+      "evidence": [
+        "다음 날 일정에 맞추어 옷차림을 계획하고 그 까닭을 적어 실제로 입는다.",
+        "입어 본 뒤 불편했던 점을 찾아 다음 옷차림 계획을 고쳐 쓴다."
+      ],
+      "assessmentPrompt": "다음 날 일정을 살펴 옷차림을 계획하고 까닭을 적어 실제로 입어 보게 한 뒤, 불편했던 점을 찾아 다음 계획을 고쳐 쓰게 하라.",
+      "misconceptions": [
+        "날씨만 보고 정하며 실험이나 조리처럼 안전이 걸린 활동은 고려하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-05]",
+        "code": "[6실01-05]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0106.concept": {
+      "evidence": [
+        "집에서 이루어지는 일을 끼니와 옷과 공간 갈래로 나누어 목록을 만든다.",
+        "그 일이 멈추면 생활에 어떤 문제가 생기는지 두 가지 들어 설명한다."
+      ],
+      "assessmentPrompt": "집에서 이루어지는 일을 끼니와 옷과 공간 갈래로 나누어 목록을 만들게 하고, 각 갈래의 일이 멈추면 생기는 문제를 두 가지씩 쓰게 하라.",
+      "misconceptions": [
+        "가정일은 눈에 보이는 청소와 설거지뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-06]",
+        "code": "[6실01-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0106.practice": {
+      "evidence": [
+        "한 주 동안 집에서 이루어진 일을 누가 얼마나 했는지 표에 적는다.",
+        "표를 근거로 자신이 더 맡을 일을 골라 실행하고 걸린 시간을 기록한다."
+      ],
+      "assessmentPrompt": "한 주 동안 집에서 이루어진 일을 누가 얼마나 했는지 표에 적게 하고, 자신이 더 맡을 일을 골라 실행한 뒤 걸린 시간을 기록하게 하라.",
+      "misconceptions": [
+        "자신이 하지 않은 일은 시간이 얼마 걸리지 않을 것이라고 짐작한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-06]",
+        "code": "[6실01-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0107.concept": {
+      "evidence": [
+        "직업이 개인과 사회에 하는 일을 나누어 각각 사례를 들어 설명한다.",
+        "적성과 흥미와 성격을 가르는 물음을 만들어 자기 답을 적는다."
+      ],
+      "assessmentPrompt": "직업 소개 자료 세 편을 주고 각 직업이 개인과 사회에 하는 일을 나누어 정리하게 한 뒤, 적성과 흥미와 성격을 가르는 물음을 만들어 자기 답을 적게 하라.",
+      "misconceptions": [
+        "잘 알려진 직업만 직업이라고 여겨 둘레의 여러 일은 목록에서 뺀다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-07]",
+        "code": "[6실01-07]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.human-development-self-directed-life.5-6.0107.practice": {
+      "evidence": [
+        "관심 직업 두 가지를 조사해 하는 일과 필요한 준비를 표로 정리한다.",
+        "정리한 표를 바탕으로 올해 해 볼 일을 정해 진로 계획서에 적는다."
+      ],
+      "assessmentPrompt": "관심 직업 두 가지를 조사해 하는 일과 필요한 준비를 표로 정리하게 하고, 올해 해 볼 일을 정해 진로 계획서에 적어 실행 시기까지 표시하게 하라.",
+      "misconceptions": [
+        "성별이나 나이에 따라 할 수 있는 직업이 정해져 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 실과] > (1) 인간 발달과 주도적 삶 > 성취기준 [6실01-07]",
+        "code": "[6실01-07]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0201.concept": {
+      "evidence": [
+        "시간과 용돈이 한정되어 있음을 자기 사례를 들어 수치로 보인다.",
+        "같은 돈으로 얻는 쓸모가 달라지는 경우를 견주어 판단 기준을 말한다."
+      ],
+      "assessmentPrompt": "한 달 용돈과 쓰임 목록을 주고 한정된 자원임을 수치로 보이게 한 뒤, 같은 금액으로 쓸모가 달라지는 두 선택을 견주어 판단 기준을 말하게 하라.",
+      "misconceptions": [
+        "돈이 더 생기면 관리는 필요 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-01]",
+        "code": "[6실02-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0201.practice": {
+      "evidence": [
+        "두 주 동안 쓴 용돈과 시간을 항목별로 기록해 표로 정리한다.",
+        "정리한 표에서 줄일 항목을 골라 다음 두 주 계획에 반영해 실행한다."
+      ],
+      "assessmentPrompt": "두 주 동안 쓴 용돈과 시간을 항목별로 기록해 표로 정리하게 하고, 줄일 항목을 골라 다음 두 주 계획에 반영해 실행한 결과를 적게 하라.",
+      "misconceptions": [
+        "적은 금액은 기록할 필요가 없다고 보고 합계를 실제보다 작게 잡는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-01]",
+        "code": "[6실02-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0202.concept": {
+      "evidence": [
+        "물건을 오래 쓰게 하는 보관 조건을 온도와 습기와 자리로 나누어 든다.",
+        "같은 물건을 잘 보관한 경우와 그렇지 않은 경우를 견주어 차이를 짚는다."
+      ],
+      "assessmentPrompt": "옷과 식품과 학용품 보관 사진을 각각 두 장씩 주고, 잘 보관한 쪽을 고른 뒤 온도와 습기와 자리 가운데 무엇이 갈랐는지 짚게 하라.",
+      "misconceptions": [
+        "보이지 않게 넣어 두기만 하면 잘 보관한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-02]",
+        "code": "[6실02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0202.practice": {
+      "evidence": [
+        "자기 사물함이나 서랍을 갈래별로 나누어 다시 배치하고 사진으로 남긴다.",
+        "두 주 뒤 상태를 다시 확인해 무너진 곳을 찾아 배치를 고친다."
+      ],
+      "assessmentPrompt": "자기 사물함을 갈래별로 나누어 다시 배치하고 전후 사진을 남기게 한 뒤, 두 주 뒤 상태를 확인해 무너진 곳을 찾아 배치를 고치게 하라.",
+      "misconceptions": [
+        "한 번 정리하면 그대로 유지된다고 보고 다시 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-02]",
+        "code": "[6실02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0203.concept": {
+      "evidence": [
+        "물건이 쓰레기가 되는 갈림길을 사용과 폐기 단계에서 찾아 설명한다.",
+        "다시 쓰는 일과 원료로 되살리는 일을 갈라 놓고 각각 알맞은 물건을 든다."
+      ],
+      "assessmentPrompt": "다 쓴 물건 여섯 가지를 주고 다시 쓸 것과 원료로 되살릴 것과 버릴 것으로 나누게 한 뒤, 각 판단의 근거를 한 문장씩 쓰게 하라.",
+      "misconceptions": [
+        "분리배출 통에 넣기만 하면 모두 다시 쓰인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-03]",
+        "code": "[6실02-03]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0203.practice": {
+      "evidence": [
+        "학급에서 나온 폐기물을 기준에 맞게 분리해 배출하고 양을 기록한다.",
+        "쓰지 않는 물건을 골라 나눔이나 다시 쓰기 계획을 세워 실행한다."
+      ],
+      "assessmentPrompt": "한 주 동안 학급 폐기물을 기준에 맞게 분리해 배출하고 갈래별 양을 기록하게 한 뒤, 쓰지 않는 물건을 골라 나눔 계획을 세워 실행하게 하라.",
+      "misconceptions": [
+        "아직 쓸 만한 물건도 낡았으면 버려야 한다고 보고 나눔은 고려하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-03]",
+        "code": "[6실02-03]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0204.concept": {
+      "evidence": [
+        "식재료가 밥상에 오르기까지의 흐름을 생산과 이동과 판매로 나누어 적는다.",
+        "제철에 나는 식재료와 그렇지 않은 것을 갈라 고르는 기준을 밝힌다."
+      ],
+      "assessmentPrompt": "같은 채소의 제철 표와 산지 표를 주고 밥상에 오르기까지의 흐름을 정리하게 한 뒤, 어떤 것을 고를지 정하고 그 기준을 밝히게 하라.",
+      "misconceptions": [
+        "값이 싸면 언제나 좋은 식재료라고 여겨 신선도와 산지는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-04]",
+        "code": "[6실02-04]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0204.practice": {
+      "evidence": [
+        "식재료 세 가지를 눈과 코와 혀로 살펴 색과 냄새와 맛을 표에 기록한다.",
+        "덜 먹던 식재료를 하나 골라 자기 식사에 넣고 먹은 결과를 남긴다."
+      ],
+      "assessmentPrompt": "손을 씻고 신선도를 확인한 뒤 식재료 세 가지를 색과 냄새와 맛으로 살펴 표에 기록하게 하고, 덜 먹던 것을 하나 골라 식사에 넣어 본 결과를 적게 하라.",
+      "misconceptions": [
+        "한 번 맛본 느낌만으로 그 식재료를 영영 먹지 못한다고 결론짓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-04]",
+        "code": "[6실02-04]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0205.concept": {
+      "evidence": [
+        "간단한 조리 과정을 준비와 조리와 정리 단계로 나누어 차례를 적는다.",
+        "단계마다 지켜야 할 위생과 안전 조건을 하나씩 짚어 말한다."
+      ],
+      "assessmentPrompt": "간단한 간식 조리법을 주고 준비와 조리와 정리 단계로 차례를 나누게 한 뒤, 각 단계에서 지켜야 할 위생과 안전 조건을 하나씩 적게 하라.",
+      "misconceptions": [
+        "조리는 불을 쓰는 순간만 조심하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-05]",
+        "code": "[6실02-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0205.practice": {
+      "evidence": [
+        "조리 도구를 미리 점검하고 손 씻기를 마친 뒤 계획한 간식을 만든다.",
+        "조리를 마치고 열원을 끄고 도구를 제자리에 되돌린 상태를 확인해 기록한다."
+      ],
+      "assessmentPrompt": "조리 도구를 미리 점검하고 손을 씻은 뒤 계획한 간식을 만들게 하고, 열원을 끄고 도구를 제자리에 되돌린 상태까지 확인해 점검표에 기록하게 하라.",
+      "misconceptions": [
+        "다 만들면 끝이라고 보고 열원 잠그기와 도구 정리는 건너뛴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-05]",
+        "code": "[6실02-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0206.concept": {
+      "evidence": [
+        "밥과 국과 반찬이 놓이는 자리를 그림으로 나타내고 그 까닭을 말한다.",
+        "함께 먹을 때 지키는 예절을 상황별로 두 가지 들어 설명한다."
+      ],
+      "assessmentPrompt": "밥상 사진 두 장을 주고 그릇이 놓인 자리를 그림으로 옮겨 그리게 한 뒤, 그렇게 놓는 까닭과 함께 먹을 때의 예절 두 가지를 설명하게 하라.",
+      "misconceptions": [
+        "차림의 자리는 정해진 규칙일 뿐 쓰임과는 관계가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-06]",
+        "code": "[6실02-06]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0206.practice": {
+      "evidence": [
+        "모둠이 함께 먹을 상을 차리고 정해진 자리에 그릇을 놓아 완성한다.",
+        "식사 중에 지킨 예절을 점검표로 확인하고 고칠 점을 적는다."
+      ],
+      "assessmentPrompt": "모둠이 함께 먹을 상을 정해진 자리에 맞추어 차리게 하고, 식사 중 지킨 예절을 점검표로 확인해 고칠 점을 한 가지 적게 하라.",
+      "misconceptions": [
+        "예절은 남이 볼 때만 지키면 되는 것으로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-06]",
+        "code": "[6실02-06]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0207.concept": {
+      "evidence": [
+        "옷 한 벌을 이루는 부분을 나누어 이름을 붙이고 쓰임을 설명한다.",
+        "옷이 만들어지는 흐름을 실과 천과 바느질 단계로 나누어 차례를 적는다."
+      ],
+      "assessmentPrompt": "옷 한 벌의 사진과 실물을 주고 부분을 나누어 이름과 쓰임을 적게 한 뒤, 실에서 옷이 되기까지의 흐름을 차례대로 정리하게 하라.",
+      "misconceptions": [
+        "옷은 완성된 상태로 만들어진다고 보고 중간 단계는 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-07]",
+        "code": "[6실02-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0207.practice": {
+      "evidence": [
+        "천 조각을 살펴 짜임과 두께를 손으로 확인하고 결과를 표에 적는다.",
+        "확인한 특징에 맞는 쓰임을 정해 작은 용품 계획도를 그려 낸다."
+      ],
+      "assessmentPrompt": "서로 다른 천 조각 세 가지를 주고 짜임과 두께를 손으로 확인해 표에 적게 한 뒤, 각 천에 맞는 쓰임을 정해 작은 용품 계획도를 그리게 하라.",
+      "misconceptions": [
+        "천은 모두 비슷하다고 보고 쓰임에 따라 고를 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-07]",
+        "code": "[6실02-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0208.concept": {
+      "evidence": [
+        "바느질 도구를 이름과 쓰임에 맞추어 짝지어 놓고 차이를 말한다.",
+        "만들 물건에 맞는 재료와 도구를 고르고 고른 까닭을 밝힌다."
+      ],
+      "assessmentPrompt": "바늘과 시침핀과 가위 등 도구 사진을 주고 이름과 쓰임을 짝짓게 한 뒤, 만들 물건 하나를 정해 알맞은 재료와 도구를 고르고 까닭을 밝히게 하라.",
+      "misconceptions": [
+        "도구는 아무것이나 써도 결과는 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-08]",
+        "code": "[6실02-08]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0208.practice": {
+      "evidence": [
+        "바늘과 가위를 정해진 자리에서 꺼내 쓰고 쓴 뒤에는 제자리에 되돌린다.",
+        "계획한 생활용품을 순서대로 만들어 완성하고 남은 재료를 갈래별로 처리한다."
+      ],
+      "assessmentPrompt": "바늘과 가위를 정해진 자리에서 꺼내 안전하게 쓰며 계획한 생활용품을 순서대로 만들게 하고, 완성 뒤 도구를 되돌리고 남은 재료를 갈래별로 처리하게 하라.",
+      "misconceptions": [
+        "작업을 빨리 끝내려고 도구를 책상에 늘어놓은 채 다음 단계로 넘어간다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-08]",
+        "code": "[6실02-08]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0209.concept": {
+      "evidence": [
+        "옷에 생기는 문제를 터짐과 얼룩과 늘어남으로 갈라 예를 든다.",
+        "문제마다 알맞은 해결 방법을 짝지어 놓고 고른 까닭을 말한다."
+      ],
+      "assessmentPrompt": "옷에 생긴 문제 사진 네 장을 주고 터짐과 얼룩과 늘어남으로 갈라 정리하게 한 뒤, 각 문제에 알맞은 해결 방법을 짝짓고 까닭을 말하게 하라.",
+      "misconceptions": [
+        "조금 상한 옷은 고쳐 쓸 수 없으니 버려야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-09]",
+        "code": "[6실02-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0209.practice": {
+      "evidence": [
+        "터진 곳이나 떨어진 단추를 골라 알맞은 방법으로 직접 손질한다.",
+        "손질 전후를 견주어 남은 문제를 찾아 다음 손질 계획을 적는다."
+      ],
+      "assessmentPrompt": "터진 솔기나 떨어진 단추를 골라 알맞은 방법으로 손질하게 하고, 바늘 다루기 규칙을 지킨 뒤 손질 전후를 견주어 남은 문제와 다음 계획을 적게 하라.",
+      "misconceptions": [
+        "겉으로 보이지 않으면 손질이 끝난 것이라 보고 튼튼한지는 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-09]",
+        "code": "[6실02-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0210.concept": {
+      "evidence": [
+        "생활공간이 어지러워질 때 생기는 문제를 위생과 안전으로 나누어 든다.",
+        "정리와 청소와 쓰레기 처리를 갈라 놓고 각각 하는 일을 설명한다."
+      ],
+      "assessmentPrompt": "어질러진 교실 사진을 주고 위생과 안전에서 생길 문제를 나누어 적게 한 뒤, 정리와 청소와 쓰레기 처리로 할 일을 갈라 목록을 만들게 하라.",
+      "misconceptions": [
+        "물건을 한곳에 몰아 두면 정리가 끝난 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-10]",
+        "code": "[6실02-10]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0210.practice": {
+      "evidence": [
+        "맡은 구역을 정해진 차례에 따라 정리하고 청소한 뒤 상태를 확인한다.",
+        "나온 쓰레기를 갈래에 맞게 나누어 배출하고 처리한 양을 기록한다."
+      ],
+      "assessmentPrompt": "맡은 구역을 차례에 따라 정리하고 청소하게 한 뒤 상태를 점검표로 확인하고, 나온 쓰레기를 갈래에 맞게 배출해 처리한 양을 기록하게 하라.",
+      "misconceptions": [
+        "눈에 보이는 곳만 치우고 손이 닿기 어려운 곳은 남겨 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-10]",
+        "code": "[6실02-10]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0211.concept": {
+      "evidence": [
+        "의식주 생활에서 환경에 부담을 주는 지점을 갈래별로 찾아 설명한다.",
+        "부담을 줄이는 행동을 옷과 밥과 집으로 나누어 각각 예를 든다."
+      ],
+      "assessmentPrompt": "하루 생활 기록을 주고 옷과 밥과 집 갈래에서 환경에 부담을 주는 지점을 찾게 한 뒤, 각 갈래에서 줄일 수 있는 행동을 하나씩 적게 하라.",
+      "misconceptions": [
+        "환경을 위한 실천은 특별한 날에만 하는 행사라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-11]",
+        "code": "[6실02-11]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.life-environment-sustainable-choice.5-6.0211.practice": {
+      "evidence": [
+        "잔반 줄이기와 전등 끄기 같은 행동을 정해 두 주 동안 날마다 실행한다.",
+        "실행 기록을 모아 줄어든 양을 수치로 정리해 학급에 게시한다."
+      ],
+      "assessmentPrompt": "잔반 줄이기와 전등 끄기 가운데 하나를 정해 두 주 동안 실행하게 하고, 기록을 모아 줄어든 양을 수치로 정리해 학급에 게시하게 하라.",
+      "misconceptions": [
+        "행동을 정해 두기만 하고 줄어든 양은 재지 않아 효과를 확인하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 실과] > (2) 생활환경과 지속가능한 선택 > 성취기준 [6실02-11]",
+        "code": "[6실02-11]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0301.concept": {
+      "evidence": [
+        "새로 만들어 낸 것과 원래 있던 것을 찾아낸 것을 갈라 놓고 기준을 말한다.",
+        "생활을 바꾼 물건 하나를 골라 그것이 나오기 전과 후를 견주어 설명한다."
+      ],
+      "assessmentPrompt": "발명과 발견 사례 카드 여섯 장을 주고 두 무리로 나누게 한 뒤, 생활을 바꾼 물건 하나를 골라 그것이 나오기 전과 후를 견주어 설명하게 하라.",
+      "misconceptions": [
+        "복잡한 기계만 발명이라고 보고 단순한 도구는 발명이 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-01]",
+        "code": "[6실03-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0301.practice": {
+      "evidence": [
+        "형편이 어려운 곳에서 쓰이는 도구를 조사해 쓰임과 값을 표로 정리한다.",
+        "그 도구가 어떤 문제를 풀었는지 찾아 학급 게시물로 만들어 보인다."
+      ],
+      "assessmentPrompt": "형편이 어려운 지역에서 쓰이는 도구를 조사해 쓰임과 값을 표로 정리하게 하고, 그 도구가 어떤 문제를 풀었는지 찾아 학급 게시물로 만들게 하라.",
+      "misconceptions": [
+        "값이 비싸고 앞선 기술일수록 좋은 발명이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-01]",
+        "code": "[6실03-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0302.concept": {
+      "evidence": [
+        "문제를 푸는 차례를 확인과 구상과 실행과 평가로 나누어 적는다.",
+        "생활에서 불편한 점을 찾아 풀어야 할 문제 문장으로 바꾸어 쓴다."
+      ],
+      "assessmentPrompt": "교실에서 불편한 점을 세 가지 찾게 하고 각각을 문제 문장으로 바꾼 뒤, 문제 해결 차례를 확인과 구상과 실행과 평가로 나누어 계획표를 채우게 하라.",
+      "misconceptions": [
+        "떠오른 생각을 곧바로 만들면 되므로 문제 확인 단계는 건너뛴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-02]",
+        "code": "[6실03-02]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0302.practice": {
+      "evidence": [
+        "구상한 물건을 재료와 도구를 점검한 뒤 계획한 차례대로 만든다.",
+        "만든 물건을 직접 써 보고 평가표에 따라 고칠 점을 찾아 손본다."
+      ],
+      "assessmentPrompt": "구상한 물건을 재료와 도구를 미리 점검한 뒤 차례대로 만들게 하고, 완성품을 직접 써 본 결과를 평가표에 적어 고칠 점을 찾아 손보게 하라.",
+      "misconceptions": [
+        "만들고 나면 끝이라고 보고 써 본 결과로 고치는 단계는 하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-02]",
+        "code": "[6실03-02]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0303.concept": {
+      "evidence": [
+        "만든 사람의 권리가 지켜지는 경우와 침해되는 경우를 갈라 놓는다.",
+        "권리를 지키기 위해 필요한 절차를 차례대로 짚어 말한다."
+      ],
+      "assessmentPrompt": "다른 사람의 창작물을 쓴 사례 네 가지를 주고 권리가 지켜진 것과 침해된 것으로 나눈 뒤, 각 판단의 근거와 필요한 절차를 적게 하라.",
+      "misconceptions": [
+        "값을 치르지 않았어도 이름만 밝히면 어떤 창작물이든 써도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-03]",
+        "code": "[6실03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0303.practice": {
+      "evidence": [
+        "자기가 만든 물건이나 자료에 만든 사람과 날짜를 적어 남긴다.",
+        "남의 자료를 쓸 때 허락 여부와 밝힐 내용을 확인해 표시한다."
+      ],
+      "assessmentPrompt": "자기가 만든 자료에 만든 사람과 날짜를 적어 남기게 하고, 남의 자료를 한 가지 골라 허락 여부와 밝혀야 할 내용을 확인해 표시하게 하라.",
+      "misconceptions": [
+        "학교 과제로 쓰는 것은 권리와 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-03]",
+        "code": "[6실03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0304.concept": {
+      "evidence": [
+        "사람과 물건을 옮기는 일을 땅과 물과 하늘로 갈라 예를 든다.",
+        "탈것이 달라져 온 흐름을 시대 순으로 늘어놓아 설명한다."
+      ],
+      "assessmentPrompt": "탈것 사진 여덟 장을 주고 땅과 물과 하늘로 나눈 뒤 시대 순으로 늘어놓게 하고, 무엇이 달라졌는지 두 가지 짚어 설명하게 하라.",
+      "misconceptions": [
+        "빠른 수단일수록 언제나 더 나은 선택이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-04]",
+        "code": "[6실03-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0304.practice": {
+      "evidence": [
+        "집에서 학교까지 쓰는 탈것과 걸린 시간을 사흘 동안 기록한다.",
+        "기록을 견주어 시간과 비용과 환경 면에서 나은 길을 골라 표시한다."
+      ],
+      "assessmentPrompt": "집에서 학교까지 쓰는 탈것과 걸린 시간을 사흘 동안 기록하게 하고, 시간과 비용과 환경을 견주어 더 나은 길을 골라 근거와 함께 표시하게 하라.",
+      "misconceptions": [
+        "걸린 시간만 견주고 비용과 환경 부담은 세지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-04]",
+        "code": "[6실03-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0305.concept": {
+      "evidence": [
+        "탈것을 움직이고 방향을 바꾸고 멈추는 부분으로 나누어 이름 붙인다.",
+        "친환경 에너지를 쓰는 탈것의 좋은 점과 한계를 각각 들어 밝힌다."
+      ],
+      "assessmentPrompt": "장난감 자동차 분해 그림을 주고 움직임과 방향과 멈춤을 맡은 부분에 이름을 붙이게 한 뒤, 친환경 에너지를 쓸 때의 좋은 점과 한계를 적게 하라.",
+      "misconceptions": [
+        "친환경 에너지를 쓰면 어떤 조건에서도 잘 움직인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-05]",
+        "code": "[6실03-05]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.technological-problem-solving-innovation.5-6.0305.practice": {
+      "evidence": [
+        "태양광 전지를 붙인 시제품을 순서에 따라 조립해 움직임을 확인한다.",
+        "움직임이 약한 까닭을 찾아 부품 위치나 연결을 바꾸어 다시 시험한다."
+      ],
+      "assessmentPrompt": "태양광 전지를 붙인 시제품을 순서에 따라 조립해 움직임을 확인하게 하고, 약한 부분의 까닭을 찾아 부품 위치나 연결을 바꾸어 다시 시험하게 하라.",
+      "misconceptions": [
+        "한 번 움직이지 않으면 부품이 잘못되었다고 보고 연결 상태는 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 실과] > (3) 기술적 문제해결과 혁신 > 성취기준 [6실03-05]",
+        "code": "[6실03-05]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0401.concept": {
+      "evidence": [
+        "둘레의 구조물을 사람이 머무는 것과 잇고 나르는 것으로 갈라 적는다.",
+        "환경을 덜 해치는 구조물의 특징을 두 가지 찾아 설명한다."
+      ],
+      "assessmentPrompt": "학교 둘레의 구조물 사진을 주고 사람이 머무는 것과 잇고 나르는 것으로 나누게 한 뒤, 환경을 덜 해치는 특징을 두 가지 찾아 설명하게 하라.",
+      "misconceptions": [
+        "구조물은 건물만 가리킨다고 보고 다리나 길은 빼놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-01]",
+        "code": "[6실04-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0401.practice": {
+      "evidence": [
+        "종이나 막대로 다리 모형을 만들어 무게를 얹고 견디는 정도를 잰다.",
+        "무너진 자리를 찾아 뼈대 모양을 바꾸어 다시 만들고 결과를 견준다."
+      ],
+      "assessmentPrompt": "종이와 막대로 다리 모형을 만들어 무게를 얹어 가며 견디는 정도를 재게 하고, 무너진 자리를 찾아 뼈대 모양을 바꾸어 다시 만든 결과를 견주게 하라.",
+      "misconceptions": [
+        "재료를 많이 쓸수록 튼튼해진다고 보고 모양이 하는 구실은 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-01]",
+        "code": "[6실04-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0402.concept": {
+      "evidence": [
+        "생활에서 디지털 기술이 쓰이는 곳을 세 가지 찾아 하는 일을 적는다.",
+        "발표 자료를 만들 때 쓰는 도구를 담을 내용에 맞추어 갈라 놓는다."
+      ],
+      "assessmentPrompt": "생활에서 디지털 기술이 쓰이는 곳을 세 가지 찾아 하는 일을 적게 하고, 글과 그림과 영상 가운데 무엇을 담을지에 따라 알맞은 도구를 골라 까닭을 쓰게 하라.",
+      "misconceptions": [
+        "기능이 많은 도구일수록 언제나 더 나은 자료를 만든다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-02]",
+        "code": "[6실04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0402.practice": {
+      "evidence": [
+        "저작 도구로 발표 자료를 만들고 화면 구성을 보기 쉽게 다듬는다.",
+        "만든 자료를 시험 삼아 보여 주고 받은 의견을 반영해 고친다."
+      ],
+      "assessmentPrompt": "저작 도구로 발표 자료를 만들어 화면 구성을 보기 쉽게 다듬게 하고, 모둠에게 시험 삼아 보여 준 뒤 받은 의견을 반영해 고치게 하라.",
+      "misconceptions": [
+        "글자와 그림을 많이 넣을수록 잘 만든 자료라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-02]",
+        "code": "[6실04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0403.concept": {
+      "evidence": [
+        "온라인에 올려도 되는 내용과 지워야 할 내용을 갈라 놓고 기준을 밝힌다.",
+        "남의 자료를 쓸 때 밝혀야 할 것을 항목으로 나누어 적는다."
+      ],
+      "assessmentPrompt": "발표 자료 한 편을 주고 온라인에 올릴 때 지워야 할 내용을 찾아 표시하게 한 뒤, 남의 자료에 대해 밝혀야 할 항목을 목록으로 적게 하라.",
+      "misconceptions": [
+        "학급 안에서만 나누면 개인 정보를 지우지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-03]",
+        "code": "[6실04-03]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0403.practice": {
+      "evidence": [
+        "공유 전에 개인 정보와 인용 표시를 점검표로 확인하고 고친다.",
+        "정해진 공간에 자료를 올리고 받은 의견에 예의를 갖추어 답한다."
+      ],
+      "assessmentPrompt": "공유 전에 개인 정보와 인용 표시를 점검표로 확인해 고치게 하고, 정해진 공간에 올린 뒤 받은 의견에 예의를 갖춘 답을 달게 하라.",
+      "misconceptions": [
+        "한 번 올린 자료는 지우면 흔적 없이 사라진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-03]",
+        "code": "[6실04-03]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0404.concept": {
+      "evidence": [
+        "로봇을 이루는 부분을 감지와 판단과 움직임으로 나누어 이름 붙인다.",
+        "생활에서 쓰이는 로봇을 찾아 어떤 일을 대신하는지 설명한다."
+      ],
+      "assessmentPrompt": "청소 로봇 구조 그림을 주고 감지와 판단과 움직임을 맡은 부분에 이름을 붙이게 한 뒤, 그 로봇이 사람의 어떤 일을 대신하는지 설명하게 하라.",
+      "misconceptions": [
+        "사람 모습을 한 기계만 로봇이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-04]",
+        "code": "[6실04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0404.practice": {
+      "evidence": [
+        "교육용 로봇을 안전 규칙에 따라 켜고 정해진 동작을 시켜 결과를 살핀다.",
+        "동작이 어긋난 지점을 찾아 값을 바꾸어 다시 움직이게 한다."
+      ],
+      "assessmentPrompt": "교육용 로봇을 안전 규칙에 따라 켜고 정해진 동작을 시켜 결과를 관찰하게 한 뒤, 어긋난 지점을 찾아 값을 바꾸어 다시 움직이게 하라.",
+      "misconceptions": [
+        "로봇이 뜻대로 움직이지 않으면 고장이라고 보고 명령 값은 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-04]",
+        "code": "[6실04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0405.concept": {
+      "evidence": [
+        "쓰임에 따라 로봇을 갈래로 나누고 각 갈래의 특징을 짚어 말한다.",
+        "같은 갈래 안에서도 움직이는 방식이 다른 경우를 찾아 견준다."
+      ],
+      "assessmentPrompt": "산업과 의료와 생활 분야 로봇 자료를 주고 쓰임에 따라 갈래를 나누게 한 뒤, 같은 갈래 안에서 움직이는 방식이 다른 두 가지를 찾아 견주게 하라.",
+      "misconceptions": [
+        "로봇은 모두 같은 방식으로 움직인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-05]",
+        "code": "[6실04-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0405.practice": {
+      "evidence": [
+        "관심 있는 로봇 하나를 조사해 감지와 움직임의 흐름을 도식으로 그린다.",
+        "그린 도식을 모둠에 설명하고 받은 질문에 근거를 들어 답한다."
+      ],
+      "assessmentPrompt": "관심 있는 로봇 하나를 조사해 감지에서 움직임까지의 흐름을 도식으로 그리게 하고, 모둠에 설명한 뒤 받은 질문에 근거를 들어 답하게 하라.",
+      "misconceptions": [
+        "겉모습만 그리고 무엇을 감지해 어떻게 움직이는지는 나타내지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-05]",
+        "code": "[6실04-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0406.concept": {
+      "evidence": [
+        "센서가 받은 값이 동작으로 이어지는 흐름을 차례대로 적는다.",
+        "조건에 따라 다르게 움직이는 규칙을 문장으로 만들어 보인다."
+      ],
+      "assessmentPrompt": "빛 센서와 거리 센서 자료를 주고 값이 동작으로 이어지는 흐름을 차례대로 적게 한 뒤, 조건에 따라 다르게 움직이는 규칙을 문장으로 만들게 하라.",
+      "misconceptions": [
+        "센서를 붙이기만 하면 로봇이 알아서 판단한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-06]",
+        "code": "[6실04-06]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0406.practice": {
+      "evidence": [
+        "블록 도구로 로봇 동작을 짜서 올리고 실제 움직임을 확인한다.",
+        "뜻대로 되지 않은 부분을 찾아 블록을 고치고 다시 실행해 견준다."
+      ],
+      "assessmentPrompt": "블록 도구로 로봇 동작을 짜서 올려 실제 움직임을 확인하게 하고, 뜻대로 되지 않은 부분의 블록을 고쳐 다시 실행한 결과를 앞선 결과와 견주게 하라.",
+      "misconceptions": [
+        "여러 곳을 한꺼번에 바꾸어 무엇이 결과를 바꾸었는지 알지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-06]",
+        "code": "[6실04-06]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0407.concept": {
+      "evidence": [
+        "둘레의 동물과 식물을 먹거리와 옷감과 돌봄 목적으로 갈라 적는다.",
+        "같은 생물이 여러 목적으로 쓰이는 경우를 찾아 설명한다."
+      ],
+      "assessmentPrompt": "동식물 자원 카드 여덟 장을 주고 먹거리와 옷감과 돌봄 목적으로 나누게 한 뒤, 여러 목적으로 쓰이는 생물을 찾아 그 쓰임을 설명하게 하라.",
+      "misconceptions": [
+        "동식물 자원은 먹는 것에만 쓰인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-07]",
+        "code": "[6실04-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0407.practice": {
+      "evidence": [
+        "지역에서 나는 동식물 자원을 조사해 쓰임과 나는 철을 표로 정리한다.",
+        "조사한 자원 하나를 골라 관련 기술을 찾아 소개 자료로 만든다."
+      ],
+      "assessmentPrompt": "지역에서 나는 동식물 자원을 조사해 쓰임과 나는 철을 표로 정리하게 하고, 그 가운데 하나를 골라 관련 기술을 찾아 소개 자료로 만들게 하라.",
+      "misconceptions": [
+        "가게에서 파는 것만 조사하고 지역에서 나는 자원은 찾아보지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-07]",
+        "code": "[6실04-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0408.concept": {
+      "evidence": [
+        "기르는 생물에 필요한 조건을 물과 빛과 자리로 나누어 적는다.",
+        "조건이 어긋났을 때 겉으로 나타나는 표시를 찾아 설명한다."
+      ],
+      "assessmentPrompt": "식물 두 종류의 재배 안내를 주고 물과 빛과 자리 조건을 나누어 정리하게 한 뒤, 조건이 어긋났을 때 나타나는 표시를 찾아 설명하게 하라.",
+      "misconceptions": [
+        "물을 자주 줄수록 잘 자란다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-08]",
+        "code": "[6실04-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0408.practice": {
+      "evidence": [
+        "맡은 식물을 조건에 맞추어 돌보고 자란 모습을 이레마다 기록한다.",
+        "기록을 견주어 돌봄 방법을 고치고 바꾼 뒤의 변화를 다시 적는다."
+      ],
+      "assessmentPrompt": "맡은 식물을 조건에 맞추어 돌보며 이레마다 자란 모습을 기록하게 하고, 흙과 도구를 만진 뒤 손을 씻게 한 다음 돌봄 방법을 고쳐 변화를 다시 적게 하라.",
+      "misconceptions": [
+        "잎이 시들면 곧바로 새것으로 바꾸고 원인을 찾지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-08]",
+        "code": "[6실04-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0409.concept": {
+      "evidence": [
+        "농사에서 자원이 돌고 도는 고리를 찾아 화살표로 이어 나타낸다.",
+        "먼 곳에서 온 먹거리와 가까운 곳에서 온 먹거리를 견주어 차이를 짚는다."
+      ],
+      "assessmentPrompt": "농장에서 밥상까지의 흐름도를 주고 자원이 돌고 도는 고리를 화살표로 잇게 한 뒤, 먼 곳과 가까운 곳에서 온 먹거리의 차이를 짚게 하라.",
+      "misconceptions": [
+        "친환경 농업은 농약만 쓰지 않으면 되는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-09]",
+        "code": "[6실04-09]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0409.practice": {
+      "evidence": [
+        "친환경 농업 사례를 조사해 순환이 이루어지는 지점을 표로 정리한다.",
+        "조사 결과를 바탕으로 학교 텃밭에 적용할 방법을 정해 실행 계획을 쓴다."
+      ],
+      "assessmentPrompt": "친환경 농업 사례 두 가지를 조사해 순환이 이루어지는 지점을 표로 정리하게 하고, 학교 텃밭에 적용할 방법을 정해 실행 계획을 쓰게 하라.",
+      "misconceptions": [
+        "규모가 큰 농장에서만 순환하는 농업이 가능하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-09]",
+        "code": "[6실04-09]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0410.concept": {
+      "evidence": [
+        "생활에서 볼 수 있는 농업 활동을 기르기와 가공과 돌봄으로 갈라 적는다.",
+        "각 활동이 생활에 주는 도움을 두 가지 들어 설명한다."
+      ],
+      "assessmentPrompt": "실내 화분 가꾸기와 장 담그기와 원예 활동 자료를 주고 기르기와 가공과 돌봄으로 갈라 정리하게 한 뒤, 각 활동이 생활에 주는 도움을 적게 하라.",
+      "misconceptions": [
+        "농업은 시골에서만 이루어지는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-10]",
+        "code": "[6실04-10]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0410.practice": {
+      "evidence": [
+        "실내 화분 가꾸기나 간단한 가공 활동을 골라 차례대로 수행한다.",
+        "수행 과정에서 겪은 어려움을 적고 다음 활동에서 고칠 점을 정한다."
+      ],
+      "assessmentPrompt": "실내 화분 가꾸기나 간단한 가공 활동을 골라 차례대로 수행하게 하고, 도구와 재료를 위생에 맞게 다룬 뒤 겪은 어려움과 고칠 점을 적게 하라.",
+      "misconceptions": [
+        "활동을 한 번 해 보면 끝이라고 보고 이어 갈 방법은 정하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-10]",
+        "code": "[6실04-10]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0411.concept": {
+      "evidence": [
+        "농업과 농촌이 하는 일을 먹거리 생산 밖의 갈래로 나누어 적는다.",
+        "각 갈래가 사람들의 삶에 닿는 지점을 사례로 들어 설명한다."
+      ],
+      "assessmentPrompt": "농촌 경관과 축제와 물 저장 사례를 주고 먹거리 생산 밖의 역할을 갈래로 나누게 한 뒤, 각 역할이 사람들의 삶에 닿는 지점을 설명하게 하라.",
+      "misconceptions": [
+        "농촌의 값어치는 생산한 농산물의 양으로만 매길 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-11]",
+        "code": "[6실04-11]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.sustainable-technology-convergence.5-6.0411.practice": {
+      "evidence": [
+        "미래 농업과 이어진 직업을 조사해 하는 일과 필요한 준비를 정리한다.",
+        "관심 있는 직업 하나를 골라 그 일을 소개하는 자료를 만들어 보인다."
+      ],
+      "assessmentPrompt": "미래 농업과 이어진 직업 세 가지를 조사해 하는 일과 필요한 준비를 정리하게 하고, 관심 있는 하나를 골라 소개 자료를 만들어 발표하게 하라.",
+      "misconceptions": [
+        "농업과 이어진 직업은 밭에서 일하는 것뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 실과] > (4) 지속가능한 기술과 융합 > 성취기준 [6실04-11]",
+        "code": "[6실04-11]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0501.concept": {
+      "evidence": [
+        "문제의 시작 상태와 이르려는 상태를 갈라 놓고 각각 문장으로 적는다.",
+        "같은 절차를 말과 순서도로 각각 나타내어 서로 견준다."
+      ],
+      "assessmentPrompt": "가방 싸기처럼 익숙한 일을 하나 정해 시작 상태와 목표 상태를 문장으로 적게 한 뒤, 같은 절차를 말과 순서도로 각각 나타내어 견주게 하라.",
+      "misconceptions": [
+        "절차를 대충 적어도 사람이 알아들으면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-01]",
+        "code": "[6실05-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0501.practice": {
+      "evidence": [
+        "생활 문제 하나를 골라 해결 절차를 빠짐없는 차례로 적어 낸다.",
+        "친구가 그 차례대로 따라 해 보게 하고 막힌 곳을 찾아 고친다."
+      ],
+      "assessmentPrompt": "생활 문제 하나를 골라 해결 절차를 빠짐없는 차례로 적게 하고, 친구가 그대로 따라 해 보게 한 뒤 막힌 곳을 찾아 절차를 고치게 하라.",
+      "misconceptions": [
+        "자기에게 뻔한 단계는 적지 않아도 된다고 보고 절차를 건너뛴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-01]",
+        "code": "[6실05-01]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0502.concept": {
+      "evidence": [
+        "명령이 적힌 차례대로 실행되는 성질을 짧은 예를 들어 설명한다.",
+        "차례를 바꾸면 결과가 달라지는 경우를 찾아 견주어 보인다."
+      ],
+      "assessmentPrompt": "블록 명령 다섯 개를 주고 실행 결과를 예상해 적게 한 뒤, 차례를 바꾸어 결과가 달라지는 경우를 찾아 두 결과를 견주게 하라.",
+      "misconceptions": [
+        "명령을 넣어 두면 컴퓨터가 뜻을 알아서 맞추어 준다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-02]",
+        "code": "[6실05-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0502.practice": {
+      "evidence": [
+        "주어진 문제를 푸는 프로그램을 만들어 실행하고 결과를 확인한다.",
+        "결과가 어긋난 곳을 한 군데씩 고쳐 다시 실행하며 원인을 좁힌다."
+      ],
+      "assessmentPrompt": "주어진 문제를 푸는 프로그램을 만들어 실행하게 하고, 결과가 어긋나면 한 군데씩 고쳐 다시 실행하며 원인을 좁혀 기록하게 하라.",
+      "misconceptions": [
+        "잘 되지 않으면 처음부터 새로 만들어 무엇이 문제였는지 알지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-02]",
+        "code": "[6실05-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0503.concept": {
+      "evidence": [
+        "함께 만들 때 나눌 수 있는 일을 역할별로 갈라 적는다.",
+        "결과물을 나눌 때 갖추어야 할 설명 항목을 목록으로 만들어 보인다."
+      ],
+      "assessmentPrompt": "모둠 프로그램 과제를 주고 나눌 수 있는 일을 역할별로 갈라 적게 한 뒤, 결과물을 나눌 때 갖출 설명 항목을 목록으로 만들게 하라.",
+      "misconceptions": [
+        "잘하는 한 사람이 다 만들면 협력한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-03]",
+        "code": "[6실05-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0503.practice": {
+      "evidence": [
+        "모둠에서 맡은 부분을 만들어 합치고 함께 실행해 결과를 확인한다.",
+        "완성한 프로그램을 정해진 곳에 올리고 받은 의견으로 고친다."
+      ],
+      "assessmentPrompt": "모둠에서 맡은 부분을 만들어 합쳐 함께 실행하게 하고, 완성한 프로그램을 정해진 곳에 올려 받은 의견을 반영해 고치게 하라.",
+      "misconceptions": [
+        "각자 만든 것을 붙이기만 하고 합쳐서 실행해 보지는 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-03]",
+        "code": "[6실05-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0504.concept": {
+      "evidence": [
+        "이어지는 값으로 된 자료와 끊어진 값으로 된 자료를 갈라 예를 든다.",
+        "숫자와 글자와 소리와 그림 자료를 쓰임에 맞추어 나누어 적는다."
+      ],
+      "assessmentPrompt": "온도계 눈금과 화면 숫자 표시를 견주게 하여 두 자료의 성질을 갈라 적게 한 뒤, 숫자와 글자와 소리와 그림 자료를 쓰임에 맞추어 나누게 하라.",
+      "misconceptions": [
+        "화면에 보이는 것은 모두 같은 종류의 자료라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-04]",
+        "code": "[6실05-04]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0504.practice": {
+      "evidence": [
+        "주변에서 자료를 모아 갈래별로 나누고 표에 정리해 보인다.",
+        "모은 자료 가운데 학습에 쓸 수 있는 것을 골라 그 까닭을 적는다."
+      ],
+      "assessmentPrompt": "교실 주변에서 소리와 그림과 숫자 자료를 모아 갈래별 표로 정리하게 하고, 인공지능 학습에 쓸 수 있는 것을 골라 까닭을 적게 하라.",
+      "misconceptions": [
+        "자료는 많이 모으기만 하면 그대로 쓸 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-04]",
+        "code": "[6실05-04]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0505.concept": {
+      "evidence": [
+        "기계가 배우는 과정을 자료 모으기와 학습과 시험으로 나누어 적는다.",
+        "자료가 한쪽으로 치우칠 때 생기는 문제를 사례로 들어 설명한다."
+      ],
+      "assessmentPrompt": "고양이 사진만으로 학습한 도구가 개를 잘못 알아본 사례를 주고, 기계가 배우는 과정을 세 단계로 나누어 적은 뒤 치우친 자료의 문제를 설명하게 하라.",
+      "misconceptions": [
+        "인공지능은 사람이 준 자료와 상관없이 스스로 옳은 답을 찾는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-05]",
+        "code": "[6실05-05]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.practical.digital-society-ai.5-6.0505.practice": {
+      "evidence": [
+        "학습 도구에 자료를 넣어 결과를 확인하고 틀린 사례를 기록한다.",
+        "자료를 보태거나 바꾸어 다시 학습시키고 앞뒤 결과를 견준다."
+      ],
+      "assessmentPrompt": "간단한 학습 도구에 자료를 넣어 결과를 확인하고 틀린 사례를 기록하게 한 뒤, 자료를 보태거나 바꾸어 다시 학습시켜 앞뒤 결과를 견주게 하라.",
+      "misconceptions": [
+        "결과가 틀리면 도구가 나쁘다고 보고 넣은 자료는 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-practical-arts-pdf-2022",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 실과] > (5) 디지털 사회와 인공지능 > 성취기준 [6실05-05]",
+        "code": "[6실05-05]"
+      },
+      "note": "성취기준 해설과 같은 영역의 성취기준 적용 시 고려 사항을 근거로 썼다. 실습 증거에는 별책 10 인쇄 p.33의 실험⋅실습 안전⋅위생 지침(도구 사전 점검, 지정 장소 보관, 열원 취급, 잔여물 분리 처리)을 함께 담았다."
+    }
+  }
+}

@@ -212,7 +212,7 @@ test('formal README label preserves provenance, rights, and interpretation limit
   assert.match(readme, /공개 공식 출처 URL/);
   assert.match(readme, /dependencies\.candidate\.json/);
 
-  assert.match(releaseReport, /93\/93 Node/);
+  assert.match(releaseReport, /96\/96 Node/);
   assert.match(releaseReport, /local tracked-artifact verification/i);
   assert.match(releaseReport, /does not claim a CI run has completed/i);
   assert.match(releaseReport, /Python `3\.14\.7`/);

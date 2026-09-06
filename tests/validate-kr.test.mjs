@@ -384,6 +384,31 @@ test('Korean josa resolver deterministically handles final consonants and legacy
   assert.equal(resolveKoreanText('의사소통과/와 연결한다.'), '의사소통과 연결한다.');
 });
 
+test('Korean text repair rejoins PDF line-wrap splits without touching ordinary spacing', () => {
+  const wrapped = [
+    ['환경에 미치는 영향을 설 명', '환경에 미치는 영향을 설명'],
+    ['녹는 용질의 양이 달라 짐을 비교', '녹는 용질의 양이 달라짐을 비교'],
+    ['용액의 상대적인 진하 기를 비교', '용액의 상대적인 진하기를 비교'],
+    ['여러 기관이 서로 관 련되어 있음을 설명', '여러 기관이 서로 관련되어 있음을 설명'],
+    ['실천할 수 있는 다 양한 사례를 공유', '실천할 수 있는 다양한 사례를 공유'],
+    ['산성 용액과 염기성 용 액으로 분류', '산성 용액과 염기성 용액으로 분류'],
+  ];
+  for (const [broken, fixed] of wrapped) assert.equal(resolveKoreanText(broken), fixed);
+  for (const kept of ['가설 명확히 세운다', '사용 액으로 계산한다', '실험을 다 양한다', '상관 련도를 본다']) {
+    assert.equal(resolveKoreanText(kept), kept);
+  }
+});
+
+test('no built standard focus carries a PDF line-wrap split', () => {
+  const standards = JSON.parse(readFileSync(resolve(KR_DATA, 'curriculum-standards.json'), 'utf8'))
+    .curricula.flatMap((curriculum) => curriculum.standards ?? []);
+  const wrapped = standards.filter((standard) => {
+    const focus = Array.isArray(standard.focus) ? standard.focus.join(' ') : standard.focus;
+    return typeof focus === 'string' && resolveKoreanText(focus) !== focus;
+  });
+  assert.deepEqual(wrapped.map((standard) => `${standard.code} ${standard.focus}`), []);
+});
+
 test('KR validation rejects unresolved and known-malformed Korean particles', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');

@@ -191,8 +191,9 @@ class OntologyP2ReportTest(unittest.TestCase):
             queries["results"]["cq-15-prerequisite-round-trip.rq"]["rowCount"], ASSERTION_COUNT
         )
         self.assertEqual(queries["results"]["cq-16-relation-layers.rq"]["rowCount"], 4)
-        # Two content kinds; every topic carries exactly one.
-        self.assertEqual(queries["results"]["cq-17-content-kinds.rq"]["rowCount"], 2)
+        # Every topic carries exactly one content kind; all 1,956 are authored drafts since the
+        # R6 overlays landed, so the query returns the single source-grounded-draft row.
+        self.assertEqual(queries["results"]["cq-17-content-kinds.rq"]["rowCount"], 1)
         # The core-vocabulary query text is shared with the secondary repository.
         self.assertGreater(queries["results"]["cq-18-k12-core-vocabulary.rq"]["rowCount"], 0)
 

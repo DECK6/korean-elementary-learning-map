@@ -17,8 +17,8 @@
     "standardMappings": 1956,
     "coverageGaps": 46,
     "workstreams": 9,
-    "contentOverlayFiles": 8,
-    "sourceGroundedTopics": 1017
+    "contentOverlayFiles": 22,
+    "sourceGroundedTopics": 1956
   },
   "targets": {
     "topicsAtLeast": 1500
@@ -109,6 +109,26 @@
       "bytes": 70468,
       "sha256": "c9664dd578a5492d163dc258cd054d5c8eda501c35ac81844a3f34d1c6c5c1b5"
     },
+    "content/art-3-4.json": {
+      "bytes": 34872,
+      "sha256": "04d2343d1d0ce4a28c6c73c4b635e2eb6ebff313bd2cf470178d9a41255554a4"
+    },
+    "content/art-5-6.json": {
+      "bytes": 34955,
+      "sha256": "c9c7a773788008c9315d1e187e0d808aabc929e4243d7d7e728389febfac6bd1"
+    },
+    "content/english-efl-3-4.json": {
+      "bytes": 57486,
+      "sha256": "23909f556bba77d891ed1cb052ae5e7920958b8281697c7fce5dba3734f0ef3f"
+    },
+    "content/english-efl-5-6.json": {
+      "bytes": 57203,
+      "sha256": "84482417c4bfc2fa610ab3267b03f276443fa5fbf45ce3b92c0293a9f5cdc08d"
+    },
+    "content/integrated-1-2.json": {
+      "bytes": 153225,
+      "sha256": "31553dd4ac5b8aedc01d28d712d65da431cab9c8482146cbd042dc35df6ad7f3"
+    },
     "content/korean-1-2.json": {
       "bytes": 77537,
       "sha256": "70519608b3c03221388e69cc8388b0de1ab2a2ebb073b3defdcb9b2e33c214d4"
@@ -133,6 +153,34 @@
       "bytes": 132508,
       "sha256": "b4dd43c45a4c3cd2f84e0e76c2d5d19350863ceac3e02982f51398e609af8d84"
     },
+    "content/moral-3-4.json": {
+      "bytes": 65206,
+      "sha256": "20bffded52a41b7f75aa6d174df24f5317420aa413b9da2af7c740019ea1fa7e"
+    },
+    "content/moral-5-6.json": {
+      "bytes": 65118,
+      "sha256": "093dc3de006dcc1e2e162b070718b031f6069a12f3b3d1507c45c6f5048f5480"
+    },
+    "content/music-3-4.json": {
+      "bytes": 38663,
+      "sha256": "375adc6771aa6a7ed55588d9106e5044f7bf9beb8ed7ef831f1272c7779b2c13"
+    },
+    "content/music-5-6.json": {
+      "bytes": 38866,
+      "sha256": "fbf1ad011feb4f45cb6a8684ae52f80b63b70d28ba8166ce73021be65e9744a2"
+    },
+    "content/pe-3-4.json": {
+      "bytes": 58031,
+      "sha256": "bbbce4cb06bca801ed0b71b67deece2959195e83f1cb3cfb5dc0e369890f04db"
+    },
+    "content/pe-5-6.json": {
+      "bytes": 65761,
+      "sha256": "9a0db29cbef095ed01b08c329e4f216ac5d3b518044186b7f7cbc52c8b580ea6"
+    },
+    "content/practical-arts-5-6.json": {
+      "bytes": 90754,
+      "sha256": "e137a5c74a9b9e85526d924535960fda7512abdbd9e011bd3895ad5beffaba88"
+    },
     "content/science-3-4.json": {
       "bytes": 125399,
       "sha256": "9c3c0a4d9caeed383feda510ff170bbb6d897d5f5132714d2db685e34b2e170e"
@@ -141,9 +189,17 @@
       "bytes": 123475,
       "sha256": "6ef9a75411c62addd6413740f9171e2bfc44b5d1287d5009bf453b845b661b2d"
     },
+    "content/social-3-4.json": {
+      "bytes": 59058,
+      "sha256": "f3d2a3fd370fc07dd05eb8b2c677fe30cdf97eec399cfd21933ab37551628a09"
+    },
+    "content/social-5-6.json": {
+      "bytes": 71230,
+      "sha256": "4188fa6101a5977f6f60bf0a7ebcc9caea3b617474bb55057cce6a52875fa33a"
+    },
     "curriculum-standards.json": {
-      "bytes": 1973586,
-      "sha256": "e9eca97885d466cdc3e34c9d4e3527fded0ff7df0464fc7ac77d7a3960b66570"
+      "bytes": 1973580,
+      "sha256": "263ca788c03fd2094538371b54bdc2e0f63e045235f3adbc46bc3c3ba43862b8"
     },
     "curriculum-standards.seed.json": {
       "bytes": 1085753,
@@ -162,8 +218,8 @@
       "sha256": "8a25e60bae09954d457f932dd152afc5e7541a261a280ceb4bbf13d3bbe85884"
     },
     "topics.json": {
-      "bytes": 5905788,
-      "sha256": "ea1c5dd690ac75a8f4b1a0be1dd451ac36b85f41a4e13952838019f6a7e6ffa9"
+      "bytes": 6123005,
+      "sha256": "91849c2a6cfed14f7474510c2fd9b4527e86c6124d295cacb92a05669f177cc7"
     },
     "topics.seed.json": {
       "bytes": 365755,
@@ -198,8 +254,8 @@
       "sha256": "9387cec4b861ec1ed2061d02e3c4afdb60869e924a904f2efa78c885295e1c78"
     },
     "workstreams/science.json": {
-      "bytes": 1272326,
-      "sha256": "2f423c25b41160ae9e657da71536c8603a6760ae9905eaffd75cdace066b9029"
+      "bytes": 1272146,
+      "sha256": "30eff35cb4e6e8d43b9027cae36265f9daf5f6fdc97c16a9821bd39dbca58461"
     },
     "workstreams/social.json": {
       "bytes": 626270,

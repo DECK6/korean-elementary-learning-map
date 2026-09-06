@@ -29,7 +29,7 @@ Verification was run with Node `20.11.1`-compatible tooling and the local `.venv
 | Gate | Command(s) | Result |
 | ---: | --- | --- |
 | G1 | `npm run build` | PASS — 11 curricula, 620 standards, 1,956 topics, 416 official + 1,875 candidate relations, 152 clusters |
-| G2 | `npm test` | PASS — 93/93 Node regression, relation-layer contract, ontology-governance, artifact, and CI-contract tests |
+| G2 | `npm test` | PASS — 96/96 Node regression, relation-layer contract, ontology-governance, artifact, and CI-contract tests |
 | G3 | `npm run validate` | PASS — schema, official inventory, source locator, DAG, reference, and data-manifest checks |
 | G4 | `npm run check:content` | PASS — all reported final/workstream defect metrics were zero |
 | G5 | `npm run validate:ontology` | PASS — complete controlled vocabulary and P3 release metadata |
@@ -38,14 +38,14 @@ Verification was run with Node `20.11.1`-compatible tooling and the local `.venv
 
 ## Exact graph evidence
 
-The deterministic graph contains 22,817 instance resources and 256,786 locally verified triples in each isomorphic JSON-LD and Turtle serialization. Snapshot counts are 11 curricula, 620 standards, 1,956 topics, 2,291 prerequisite assertions (416 official, 1,875 pedagogical-candidate), 1,956 standard-topic alignments, 152 clusters, and 46 retained coverage gaps. Only the official layer materializes binary prerequisite views: 416 `directRequires`, 416 `unlocks`, 97 `indirectRequires`, and 1,956 `alignedToStandard` pairs. The bounded OWL-RL check expanded 1,160 input triples to a 3,398-triple closure with no explicit contradiction or unsatisfiable named class.
+The deterministic graph contains 23,660 instance resources and 267,757 locally verified triples in each isomorphic JSON-LD and Turtle serialization. Snapshot counts are 11 curricula, 620 standards, 1,956 topics, 2,291 prerequisite assertions (416 official, 1,875 pedagogical-candidate), 1,956 standard-topic alignments, 152 clusters, and 46 retained coverage gaps. Only the official layer materializes binary prerequisite views: 416 `directRequires`, 416 `unlocks`, 97 `indirectRequires`, and 1,956 `alignedToStandard` pairs. The bounded OWL-RL check expanded 1,160 input triples to a 3,398-triple closure with no explicit contradiction or unsatisfiable named class.
 
 ## What 0.4.0 adds over 0.3.0-p3
 
 - **Two-layer relations.** Prerequisite assertions carry `lm:assertionLayer`, `lm:relationKind`, `lm:basisKind`, `lm:scope`, and `lm:reviewStatus`. Only the official layer materializes `directRequires`, `unlocks`, and `indirectRequires`; the pedagogical-candidate layer exists as `PrerequisiteAssertion` records only.
 - **Official relations mined across all eleven subjects.** 416 official edges, each backed by a content-system grade progression or an explicit sentence in an achievement-standard commentary, with a printed-page locator.
 - **Re-pinned notice editions.** 통합교과 follows the 2026-1 partial revision ([별책 15], attachment 10004214) as a single edition; 음악 and 실과 follow their current attachments. Twelve 즐거운 생활 codes keep their identifier while the achievement standard behind it was replaced, which is recorded in `ontology/CHANGELOG.md` under Compatibility.
-- **Topic content overlay.** Topics carry `core:contentKind`; 363 mathematics topics are authored `source-grounded-draft` records with `core:misconception` literals and a `core:contentSourceLocator`, and SHACL rejects a draft without that locator.
+- **Topic content overlay.** Topics carry `core:contentKind`; 1,956 topics across 11 subjects are authored `source-grounded-draft` records with `core:misconception` literals and a `core:contentSourceLocator`, and SHACL rejects a draft without that locator.
 - **Achievement-standard summaries are authored paraphrases.** All 620 standards carry `summaryKind: source-grounded-paraphrase`. The repository stores no official standard sentence; the longest run any summary shares with the governing text is 15 characters, checked at authoring time by `scripts/dev/check-standard-summary-verbatim.mjs` against an extracted text file kept outside the repository.
 - **Shared K-12 core TBox.** `ontology/k12-core.ttl` is imported by the repository TBox and kept byte-identical with `korean-secondary-learning-map`. No `lm:` IRI was reminted; the two vocabularies are joined by `owl:equivalentClass`, `owl:equivalentProperty`, and `skos:exactMatch`. Competency query `cq-18-k12-core-vocabulary.rq` is byte-identical to the secondary repository's `scq-21-k12-core-vocabulary.rq`.
 

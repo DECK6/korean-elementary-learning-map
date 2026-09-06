@@ -166,6 +166,7 @@ test('scope is the mechanical comparison of standard, domain, and subject', () =
 // --- Contract section 7.3: topic fields -------------------------------------
 
 test('every topic carries decompositionKind, one of the eight facets, and a standard key', () => {
+  const facetKeysByStandard = new Map();
   const standardKeys = new Set(
     STANDARDS.curricula.flatMap((curriculum) => curriculum.standards.map((standard) => standard.key)),
   );
@@ -176,6 +177,10 @@ test('every topic carries decompositionKind, one of the eight facets, and a stan
     assert.equal(topic.standardKey, topic.standards[0], topic.id);
     assert.ok(standardKeys.has(topic.standardKey), topic.id);
     assert.equal(topic.sourceStandardCode, topic.standardKey.split(':').at(-1), topic.id);
+    // Facets decompose one standard, so two topics of that standard may not share a facetKey.
+    const facetSeen = `${topic.standardKey}\u0000${topic.facetKey}`;
+    assert.equal(facetKeysByStandard.has(facetSeen), false, `${topic.id} repeats ${facetKeysByStandard.get(facetSeen)}`);
+    facetKeysByStandard.set(facetSeen, topic.id);
     // Placeholder or null English titles are dropped rather than published.
     if ('titleEnglish' in topic) {
       assert.equal(typeof topic.titleEnglish, 'string', topic.id);
@@ -221,7 +226,10 @@ test('deriveFacetKey prefers the id suffix and falls back to the topic type', ()
   assert.equal(deriveFacetKey({ id: 'kr.mt.x.perform', type: 'CONCEPTUAL' }), 'procedure');
   assert.equal(deriveFacetKey({ id: 'kr.mt.x.make', type: 'CONCEPTUAL' }), 'procedure');
   assert.equal(deriveFacetKey({ id: 'kr.mt.x.practice', type: 'CONCEPTUAL' }), 'application');
+  // `.evidence` is the one suffix that maps to two facets, so the topic type decides.
   assert.equal(deriveFacetKey({ id: 'kr.mt.x.evidence', type: 'CONCEPTUAL' }), 'inquiry');
+  assert.equal(deriveFacetKey({ id: 'kr.mt.x.evidence', type: 'PROCEDURAL' }), 'inquiry');
+  assert.equal(deriveFacetKey({ id: 'kr.mt.x.evidence', type: 'REPRESENTATIONAL' }), 'representation');
   assert.equal(deriveFacetKey({ id: 'kr.mt.x.reflect', type: 'CONCEPTUAL' }), 'reflection');
   // Numeric and free-text suffixes fall through to the type map.
   assert.equal(deriveFacetKey({ id: 'kr.mt.x.01', type: 'LANGUAGE' }), 'communication');

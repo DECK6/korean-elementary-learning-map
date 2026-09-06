@@ -16,6 +16,7 @@ import {
   standardsByKeyFrom,
   subjectSlug,
 } from '../scripts/lib/kr-content-overlay.mjs';
+import { isAuthoredObservableEvidence, isLearnerObservableEvidence } from '../scripts/lib/kr-content-quality.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const KR_DATA = resolve(ROOT, 'data', 'kr');
@@ -140,6 +141,28 @@ test('content checks reject provenance sentences in place of learner-observable 
     entry.evidence[1],
   ];
   assert.ok(matched(analyze(overlay).errors, 'evidence is not learner-observable'));
+});
+
+test('authored evidence may teach source credibility while the repair path keeps the strict rule', () => {
+  const learningContent = [
+    '글에 적힌 출처를 찾아 믿을 만한지 두 가지 근거로 판단해 말한다.',
+    '가져온 자료의 원문을 어디서 얻었는지 밝혀 적고 친구에게 설명한다.',
+  ];
+  for (const item of learningContent) {
+    assert.equal(isAuthoredObservableEvidence(item), true, item);
+    assert.equal(isLearnerObservableEvidence(item), false, item);
+  }
+  const provenanceMeta = [
+    '이 주제의 출처 locator는 별책5 인쇄 20쪽을 가리킨다고 기록한다.',
+    '원문 재수록 없이 별책5에서 분해했다고 적어 둔다.',
+    '별책5 인쇄 20쪽 원문을 그대로 옮겨 적는다.',
+  ];
+  for (const item of provenanceMeta) {
+    assert.equal(isAuthoredObservableEvidence(item), false, item);
+  }
+  const overlay = clone(overlays[0]);
+  onlyEntry(overlay).evidence = learningContent;
+  assert.ok(!matched(analyze(overlay).errors, 'evidence is not learner-observable'));
 });
 
 test('content checks reject exact duplicates inside one overlay file', () => {

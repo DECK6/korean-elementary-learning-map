@@ -1,0 +1,2844 @@
+{
+  "$schema": "../../../schema/kr-content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "통합교과",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-ncic-2026-1-annex15-pdf"
+  ],
+  "note": "바른 생활·슬기로운 생활 32개 성취기준은 교육부 고시 제2022-33호 [별책 15](인쇄 p.7∼10, p.23∼26), 즐거운 생활 16개와 건강한 생활 9개 성취기준은 국가교육위원회 고시 제2026-1호 일부개정 [별책 15](인쇄 p.39∼47, p.63∼78)의 성취기준·성취기준 해설·성취기준 적용 시 고려 사항을 근거로 새로 쓴 초안이다. 각 항목의 sourceLocator.section에 어느 판을 근거로 했는지 적었고, 인쇄 쪽 = PDF 쪽 − 6이며 공식 문장은 재수록하지 않았다.",
+  "entries": {
+    "kr.mt.integrated.healthy-life.healthy-body.2geon0101.01": {
+      "evidence": [
+        "자기 몸으로 잘할 수 있는 움직임을 찾아 말한다.",
+        "몸을 움직이면 무엇이 좋아지는지 하나 찾아 든다."
+      ],
+      "assessmentPrompt": "자기 몸으로 잘할 수 있는 움직임을 찾아 말하고, 몸을 움직이면 무엇이 좋은지 하나 말해 보자.",
+      "misconceptions": [
+        "몸을 잘 쓰는 사람만 신체 활동을 할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 39,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (1) 건강한 몸 > (가) 성취기준 해설 [2건01-01]",
+        "code": "[2건01-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.healthy-body.2geon0101.02": {
+      "evidence": [
+        "준비 운동을 따라 하며 몸을 골고루 풀어 준다.",
+        "걷기나 계단 오르기를 정한 횟수만큼 끝까지 해낸다."
+      ],
+      "assessmentPrompt": "선생님을 따라 준비 운동을 하고, 계단 오르기나 걷기를 정한 만큼 안전하게 해 보자.",
+      "misconceptions": [
+        "준비 운동은 하지 않아도 다치지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 39,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (1) 건강한 몸 > (가) 성취기준 해설 [2건01-01]",
+        "code": "[2건01-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.healthy-body.2geon0101.03": {
+      "evidence": [
+        "몸을 움직인 뒤에 숨과 몸이 어떻게 달라졌는지 말한다.",
+        "자기 몸을 아끼는 말을 하나 골라 소리 내어 말한다."
+      ],
+      "assessmentPrompt": "몸을 움직인 뒤 숨과 몸이 어떻게 달라졌는지 말하고, 자기 몸을 아끼는 말을 하나 골라 말해 보자.",
+      "misconceptions": [
+        "숨이 차면 몸에 나쁜 일이 생긴 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 39,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (1) 건강한 몸 > (가) 성취기준 해설 [2건01-01]",
+        "code": "[2건01-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.healthy-body.2geon0102.01": {
+      "evidence": [
+        "그림 카드를 건강에 좋은 일과 해로운 일로 갈라 놓는다.",
+        "길을 안전하게 다니려면 지킬 일을 하나 말한다."
+      ],
+      "assessmentPrompt": "그림 카드를 건강에 좋은 일과 해로운 일로 나누어 놓고, 길을 안전하게 다니려면 지킬 일을 말해 보자.",
+      "misconceptions": [
+        "재미있는 일은 몸에 해롭지 않다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 40,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (1) 건강한 몸 > (가) 성취기준 해설 [2건01-02]",
+        "code": "[2건01-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.healthy-body.2geon0102.02": {
+      "evidence": [
+        "손 씻기와 바르게 앉기를 하루 동안 지켜 본다.",
+        "잠자리에 드는 시간을 스스로 정해 사흘 동안 지킨다."
+      ],
+      "assessmentPrompt": "손 씻기와 바르게 앉기를 하루 동안 지켜 보고, 잠자리에 드는 시간을 정해 지켜 보자.",
+      "misconceptions": [
+        "손은 더러워 보일 때만 씻으면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 40,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (1) 건강한 몸 > (가) 성취기준 해설 [2건01-02]",
+        "code": "[2건01-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.healthy-body.2geon0102.03": {
+      "evidence": [
+        "일주일 동안 지킨 일을 날마다 세어 표에 색칠한다.",
+        "다음 주에 더 지키고 싶은 일을 골라 말한다."
+      ],
+      "assessmentPrompt": "일주일 동안 지킨 일을 세어 표에 색칠하고, 다음 주에 더 지키고 싶은 일을 하나 골라 말해 보자.",
+      "misconceptions": [
+        "하루만 잘 지키면 습관이 된 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 40,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (1) 건강한 몸 > (가) 성취기준 해설 [2건01-02]",
+        "code": "[2건01-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0201.01": {
+      "evidence": [
+        "자리를 옮기지 않고 하는 움직임을 찾아 말한다.",
+        "균형을 잡기 쉬운 자세와 어려운 자세를 가른다."
+      ],
+      "assessmentPrompt": "자리를 옮기지 않고 할 수 있는 움직임을 찾아 말하고, 균형을 잡기 쉬운 자세와 어려운 자세를 가려 보자.",
+      "misconceptions": [
+        "자리를 옮겨야만 움직임이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 41,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-01]",
+        "code": "[2건02-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0201.02": {
+      "evidence": [
+        "몸으로 글자 모양을 만들어 열을 셀 때까지 멈춘다.",
+        "앉고 서며 높낮이를 바꾸어 여러 자세를 해 본다."
+      ],
+      "assessmentPrompt": "몸으로 글자 모양을 만들어 열까지 세는 동안 멈추어 보고, 앉고 서며 높낮이를 바꾸어 다시 해 보자.",
+      "misconceptions": [
+        "가만히 있는 것은 놀이가 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 41,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-01]",
+        "code": "[2건02-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0201.03": {
+      "evidence": [
+        "가장 오래 버틴 자세를 골라 어땠는지 말한다.",
+        "다음 시간에 해 보고 싶은 자세를 하나 골라 정한다."
+      ],
+      "assessmentPrompt": "오늘 해 본 자세 가운데 가장 오래 버틴 것을 골라 말하고, 다음에 해 보고 싶은 자세를 정해 보자.",
+      "misconceptions": [
+        "한 번에 잘 안 되는 자세는 나에게 맞지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 41,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-01]",
+        "code": "[2건02-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0202.01": {
+      "evidence": [
+        "걷기와 달리기가 어떻게 다른지 해 보고 말한다.",
+        "빠르게 갈 때와 천천히 갈 때의 다른 점을 가른다."
+      ],
+      "assessmentPrompt": "걷기와 달리기를 해 보고 무엇이 다른지 말한 뒤, 빠르게 갈 때와 천천히 갈 때를 가려 보자.",
+      "misconceptions": [
+        "걷기와 달리기는 빠르기만 다르다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 42,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-02]",
+        "code": "[2건02-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0202.02": {
+      "evidence": [
+        "방향을 바꾸어 가며 정해진 길을 걷거나 달린다.",
+        "친구와 배턴을 주고받으며 차례대로 이어 달린다."
+      ],
+      "assessmentPrompt": "고깔 사이로 방향을 바꾸며 달려 보고, 친구와 배턴을 주고받으며 이어 달려 보자.",
+      "misconceptions": [
+        "앞만 보고 달리면 부딪히지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 42,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-02]",
+        "code": "[2건02-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0202.03": {
+      "evidence": [
+        "달리기 놀이에서 즐거웠던 때를 떠올려 말한다.",
+        "다음에 바꾸어 볼 길이나 빠르기를 골라 정한다."
+      ],
+      "assessmentPrompt": "달리며 가장 즐거웠던 때를 말하고, 다음에는 길이나 빠르기를 어떻게 바꿀지 정해 보자.",
+      "misconceptions": [
+        "일등을 해야만 잘 달린 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 42,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-02]",
+        "code": "[2건02-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0203.01": {
+      "evidence": [
+        "멀리 뛰기와 높이 뛰기가 어떻게 다른지 말한다.",
+        "뛰고 나서 안전하게 내려앉는 방법을 하나 말한다."
+      ],
+      "assessmentPrompt": "멀리 뛰기와 높이 뛰기를 해 보고 어떻게 다른지 말한 뒤, 안전하게 내려앉는 방법을 말해 보자.",
+      "misconceptions": [
+        "뛰어오르는 것만 잘하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 43,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-03]",
+        "code": "[2건02-03]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0203.02": {
+      "evidence": [
+        "줄이나 고무줄을 넘어 무릎을 굽혀 내려앉는다.",
+        "줄의 높이를 조금씩 올려 가며 다시 넘어 본다."
+      ],
+      "assessmentPrompt": "낮은 줄을 넘어 무릎을 굽혀 내려앉고, 줄 높이를 조금씩 올려 가며 다시 넘어 보자.",
+      "misconceptions": [
+        "높이 뛸수록 무조건 잘한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 43,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-03]",
+        "code": "[2건02-03]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0203.03": {
+      "evidence": [
+        "자기가 넘은 줄의 높이를 세어 표에 표시한다.",
+        "무섭지 않게 뛰려면 무엇이 있어야 하는지 말한다."
+      ],
+      "assessmentPrompt": "오늘 넘은 높이를 표에 표시하고, 무섭지 않게 뛰려면 무엇이 있으면 좋을지 말해 보자.",
+      "misconceptions": [
+        "무서운 마음은 말하면 안 되는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 43,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-03]",
+        "code": "[2건02-03]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0204.01": {
+      "evidence": [
+        "던지기와 굴리기가 어떻게 다른지 해 보고 말한다.",
+        "도구를 안전하게 다루는 방법을 하나 찾아 든다."
+      ],
+      "assessmentPrompt": "콩주머니를 던지고 굴려 보며 무엇이 다른지 말한 뒤, 도구를 안전하게 다루는 방법을 말해 보자.",
+      "misconceptions": [
+        "도구는 세게 다룰수록 잘 다루는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 44,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-04]",
+        "code": "[2건02-04]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0204.02": {
+      "evidence": [
+        "짝과 마주 서서 공을 열 번 끊기지 않게 주고받는다.",
+        "친구가 받기 좋도록 힘을 맞추어 공을 보낸다."
+      ],
+      "assessmentPrompt": "짝과 마주 서서 공을 열 번 주고받되, 친구가 받기 좋도록 힘을 맞추어 보내 보자.",
+      "misconceptions": [
+        "내가 잘 던지면 받는 것은 친구 몫이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 44,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-04]",
+        "code": "[2건02-04]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0204.03": {
+      "evidence": [
+        "공 주고받기가 가장 잘되었던 때를 떠올려 말한다.",
+        "오늘 친구를 도운 말이나 행동을 하나 말한다."
+      ],
+      "assessmentPrompt": "공 주고받기가 잘된 때를 떠올려 말하고, 오늘 친구를 도운 말이나 행동을 하나 말해 보자.",
+      "misconceptions": [
+        "실수한 친구에게는 아무 말도 하지 않는 것이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 44,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-04]",
+        "code": "[2건02-04]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0205.01": {
+      "evidence": [
+        "지금까지 배운 움직임을 떠올려 이름을 차례로 댄다.",
+        "두 가지 움직임을 어떻게 이을지 짝과 함께 정한다."
+      ],
+      "assessmentPrompt": "배운 움직임을 떠올려 이름을 차례로 대고, 그 가운데 두 가지를 골라 어떻게 이을지 짝과 정해 보자.",
+      "misconceptions": [
+        "움직임은 하나씩만 할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 45,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-05]",
+        "code": "[2건02-05]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0205.02": {
+      "evidence": [
+        "정한 두 가지 움직임을 멈추지 않고 이어서 한다.",
+        "모둠에서 차례를 지켜 친구들과 함께 움직인다."
+      ],
+      "assessmentPrompt": "정한 두 움직임을 멈추지 않고 이어서 하고, 모둠에서 차례를 지켜 다 함께 해 보자.",
+      "misconceptions": [
+        "함께 할 때는 자기 차례만 잘하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 45,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-05]",
+        "code": "[2건02-05]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.active-movement.2geon0205.03": {
+      "evidence": [
+        "친구들과 함께 움직이며 좋았던 점을 하나 말한다.",
+        "다음 놀이에 넣고 싶은 움직임을 골라 정한다."
+      ],
+      "assessmentPrompt": "친구들과 함께 움직이며 좋았던 점을 하나 말하고, 다음에 넣고 싶은 움직임을 골라 정해 보자.",
+      "misconceptions": [
+        "함께 하면 잘하는 친구만 눈에 띈다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 45,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (2) 활기찬 움직임 > (가) 성취기준 해설 [2건02-05]",
+        "code": "[2건02-05]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.creative-expression.2geon0301.01": {
+      "evidence": [
+        "몸으로 나타낼 것을 골라 어떤 모습인지 말한다.",
+        "그 모습에서 움직이는 곳을 찾아 손으로 짚는다."
+      ],
+      "assessmentPrompt": "나비나 나무 가운데 나타낼 것을 골라 어떤 모습인지 말하고, 그 가운데 움직이는 곳을 짚어 보자.",
+      "misconceptions": [
+        "움직이지 않는 것은 몸으로 나타낼 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 46,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (3) 창의적 표현 > (가) 성취기준 해설 [2건03-01]",
+        "code": "[2건03-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.creative-expression.2geon0301.02": {
+      "evidence": [
+        "고른 것의 모습을 몸으로 흉내 내어 나타낸다.",
+        "같은 것을 친구와 서로 다른 방법으로 해 본다."
+      ],
+      "assessmentPrompt": "고른 것을 몸으로 흉내 내어 나타내고, 같은 것을 친구와 다른 방법으로 한 번 더 해 보자.",
+      "misconceptions": [
+        "흉내 내기는 똑같이 해야 잘한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 46,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (3) 창의적 표현 > (가) 성취기준 해설 [2건03-01]",
+        "code": "[2건03-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.creative-expression.2geon0301.03": {
+      "evidence": [
+        "친구가 무엇을 나타냈는지 잘 보고 맞혀 말한다.",
+        "내 움직임에서 더 잘 보이게 바꿀 곳을 정한다."
+      ],
+      "assessmentPrompt": "친구가 몸으로 나타낸 것이 무엇인지 맞혀 보고, 내 것에서 더 잘 보이게 바꿀 곳을 정해 보자.",
+      "misconceptions": [
+        "친구가 못 맞히면 그만두는 것이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 46,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (3) 창의적 표현 > (가) 성취기준 해설 [2건03-01]",
+        "code": "[2건03-01]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.creative-expression.2geon0302.01": {
+      "evidence": [
+        "기쁠 때와 슬플 때 몸이 어떻게 다른지 말한다.",
+        "높이와 빠르기 가운데 바꾸어 볼 것을 하나 고른다."
+      ],
+      "assessmentPrompt": "기쁠 때와 슬플 때 몸이 어떻게 달라지는지 말하고, 높이와 빠르기 가운데 바꿔 볼 것을 골라 보자.",
+      "misconceptions": [
+        "마음은 몸으로 나타낼 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 47,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (3) 창의적 표현 > (가) 성취기준 해설 [2건03-02]",
+        "code": "[2건03-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.creative-expression.2geon0302.02": {
+      "evidence": [
+        "높이와 빠르기를 바꾸어 오늘의 마음을 나타낸다.",
+        "음악에 맞추어 만든 움직임을 여덟 박 동안 이어 간다."
+      ],
+      "assessmentPrompt": "높이와 빠르기를 바꾸어 오늘의 마음을 몸으로 나타내고, 음악에 맞추어 여덟까지 세며 이어 가 보자.",
+      "misconceptions": [
+        "춤은 배운 동작만 해야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 47,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (3) 창의적 표현 > (가) 성취기준 해설 [2건03-02]",
+        "code": "[2건03-02]"
+      }
+    },
+    "kr.mt.integrated.healthy-life.creative-expression.2geon0302.03": {
+      "evidence": [
+        "친구의 움직임에서 재미있던 곳을 찾아 말해 준다.",
+        "자기 움직임에서 바꾸고 싶은 곳을 하나 정한다."
+      ],
+      "assessmentPrompt": "친구의 움직임에서 재미있던 곳을 말해 주고, 내 움직임에서 바꾸고 싶은 곳을 하나 정해 다시 해 보자.",
+      "misconceptions": [
+        "내 마음은 남이 알아볼 수 없으니 보여 줄 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 47,
+        "section": "2026-1 별책15 > 건강한 생활 > 나. 성취기준 > (3) 창의적 표현 > (가) 성취기준 해설 [2건03-02]",
+        "code": "[2건03-02]"
+      }
+    },
+    "kr.mt.integrated.right-life.who.2ba0101.01": {
+      "evidence": [
+        "학교에서 날마다 하는 일을 차례대로 그림으로 늘어놓는다.",
+        "교실과 복도에서 지켜야 할 약속을 두 가지 말한다."
+      ],
+      "assessmentPrompt": "아침에 학교에 와서 하는 일을 그림 카드로 차례대로 놓고, 교실에서 지킬 약속을 두 가지 말해 보자.",
+      "misconceptions": [
+        "학교 약속은 선생님이 볼 때만 지키면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-01])",
+        "code": "[2바01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0101.02": {
+      "evidence": [
+        "가방과 사물함을 정한 자리에 스스로 정리한다.",
+        "복도에서 오른쪽으로 걸어 다니며 뛰지 않는다."
+      ],
+      "assessmentPrompt": "하루 동안 가방 정리하기와 복도에서 걷기를 스스로 해 보고, 잘한 날에 붙임 딱지를 붙여 보자.",
+      "misconceptions": [
+        "정리는 어른이 대신 해 주는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-01])",
+        "code": "[2바01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0101.03": {
+      "evidence": [
+        "일주일 동안 붙인 딱지를 세어 잘된 일을 말한다.",
+        "더 잘하고 싶은 일 한 가지를 골라 그림으로 그린다."
+      ],
+      "assessmentPrompt": "일주일 동안 붙인 딱지를 세어 보고 가장 잘한 일을 말한 뒤, 다음 주에 더 잘하고 싶은 일을 그려 보자.",
+      "misconceptions": [
+        "딱지를 많이 받으면 다음 주에는 안 해도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-01])",
+        "code": "[2바01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0102.01": {
+      "evidence": [
+        "자기가 좋아하는 것과 잘하는 것을 그림으로 나타낸다.",
+        "친구와 자기가 서로 다른 점을 하나 찾아 말한다."
+      ],
+      "assessmentPrompt": "내가 좋아하는 것과 잘하는 것을 그림으로 그리고, 짝의 그림과 견주어 다른 점을 하나 말해 보자.",
+      "misconceptions": [
+        "좋아하는 것이 친구와 다르면 이상한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-02])",
+        "code": "[2바01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0102.02": {
+      "evidence": [
+        "거울을 보며 자기 모습에서 마음에 드는 곳을 짚는다.",
+        "자기를 아끼는 말을 골라 소리 내어 말해 본다."
+      ],
+      "assessmentPrompt": "거울을 보며 마음에 드는 곳을 짚어 보고, “나는 소중해”처럼 자기를 아끼는 말을 크게 말해 보자.",
+      "misconceptions": [
+        "자기를 아끼는 말은 부끄러워서 하면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-02])",
+        "code": "[2바01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0102.03": {
+      "evidence": [
+        "오늘 하루 자기를 칭찬할 일을 하나 찾아 말한다.",
+        "칭찬을 적은 카드를 모아 칭찬 상자에 넣어 둔다."
+      ],
+      "assessmentPrompt": "오늘 하루 가운데 자기를 칭찬할 일을 하나 찾아 카드에 적고, 칭찬 상자에 넣어 보자.",
+      "misconceptions": [
+        "칭찬받을 일은 큰일을 해냈을 때만 생긴다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-02])",
+        "code": "[2바01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0103.01": {
+      "evidence": [
+        "우리 집에서 함께 사는 사람들을 그림으로 그린다.",
+        "집집마다 사는 모습이 다를 수 있음을 말한다."
+      ],
+      "assessmentPrompt": "우리 집 식구를 그림으로 그리고, 친구네 그림과 견주어 어떤 점이 다른지 이야기해 보자.",
+      "misconceptions": [
+        "가족은 모두 같은 모습이어야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-03])",
+        "code": "[2바01-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0103.02": {
+      "evidence": [
+        "집에서 할 수 있는 도움을 하나 골라 실제로 한다.",
+        "고마운 마음을 담은 짧은 편지를 써서 전한다."
+      ],
+      "assessmentPrompt": "집에서 내가 할 수 있는 도움을 하나 골라 해 보고, 고마운 마음을 담은 짧은 편지를 써서 전해 보자.",
+      "misconceptions": [
+        "도와주는 일은 어른이 시킬 때만 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-03])",
+        "code": "[2바01-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0103.03": {
+      "evidence": [
+        "도움을 준 뒤에 달라진 식구의 표정을 말한다.",
+        "다음에 해 볼 도움을 하나 정해 그림으로 남긴다."
+      ],
+      "assessmentPrompt": "내가 도운 뒤에 식구의 표정이 어떠했는지 말하고, 다음에 해 볼 도움을 하나 정해 그려 보자.",
+      "misconceptions": [
+        "도움은 한 번 하면 그것으로 끝이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바01-03])",
+        "code": "[2바01-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0104.01": {
+      "evidence": [
+        "우리 둘레에서 함께 사는 생물을 찾아 이름을 댄다.",
+        "사람과 생물이 서로 도움을 주는 일을 하나 말한다."
+      ],
+      "assessmentPrompt": "학교 화단에서 함께 사는 생물을 찾아 이름을 대고, 사람과 그 생물이 서로 도움을 주는 일을 말해 보자.",
+      "misconceptions": [
+        "사람만 잘 살면 둘레의 생물은 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2바01-04]",
+        "code": "[2바01-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0104.02": {
+      "evidence": [
+        "화단이나 화분을 돌보는 일을 맡아 사흘 동안 해낸다.",
+        "물과 종이를 아껴 쓰는 방법을 골라 실천한다."
+      ],
+      "assessmentPrompt": "화분에 물 주기와 종이 아껴 쓰기 가운데 하나를 맡아 사흘 동안 해 보고, 한 날마다 표시해 보자.",
+      "misconceptions": [
+        "물과 종이는 얼마든지 있으니 아낄 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2바01-04]",
+        "code": "[2바01-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.who.2ba0104.03": {
+      "evidence": [
+        "돌본 생물의 모습이 어떻게 달라졌는지 살펴 말한다.",
+        "친구들과 함께 지킬 약속을 하나 정해 붙인다."
+      ],
+      "assessmentPrompt": "내가 돌본 화분이 어떻게 달라졌는지 살펴 말하고, 함께 지킬 약속을 하나 정해 교실에 붙여 보자.",
+      "misconceptions": [
+        "한 사람이 아끼는 것은 아무 소용이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 7,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2바01-04]",
+        "code": "[2바01-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0201.01": {
+      "evidence": [
+        "우리 반에서 여럿이 함께 쓰는 것을 찾아 말한다.",
+        "내가 반을 위해 할 수 있는 일을 하나 고른다."
+      ],
+      "assessmentPrompt": "우리 반에서 함께 쓰는 물건을 찾아 말하고, 그 가운데 내가 돌볼 수 있는 일을 하나 골라 보자.",
+      "misconceptions": [
+        "반의 일은 반장만 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-01]",
+        "code": "[2바02-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0201.02": {
+      "evidence": [
+        "맡은 반 일을 정한 날에 빠뜨리지 않고 한다.",
+        "친구가 맡은 일을 도와 끝까지 함께 마무리한다."
+      ],
+      "assessmentPrompt": "내가 맡은 반 일을 정한 날에 하고, 친구가 어려워하면 함께 도와 끝까지 마무리해 보자.",
+      "misconceptions": [
+        "내 일만 하면 되고 친구 일은 도울 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-01]",
+        "code": "[2바02-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0201.03": {
+      "evidence": [
+        "맡은 일을 하고 나서 달라진 교실을 살펴 말한다.",
+        "다음번에 맡고 싶은 반 일을 하나 골라 손을 든다."
+      ],
+      "assessmentPrompt": "맡은 일을 하고 나서 교실이 어떻게 달라졌는지 말하고, 다음에 맡고 싶은 일에 손을 들어 보자.",
+      "misconceptions": [
+        "교실이 깨끗한 것은 저절로 되는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-01]",
+        "code": "[2바02-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0202.01": {
+      "evidence": [
+        "우리나라를 나타내는 것을 찾아 그 이름을 댄다.",
+        "그 가운데 하나를 골라 어떤 뜻을 담았는지 말한다."
+      ],
+      "assessmentPrompt": "태극기와 무궁화처럼 우리나라를 나타내는 것을 찾아 이름을 대고, 하나를 골라 어떤 뜻인지 말해 보자.",
+      "misconceptions": [
+        "우리나라 것이 다른 나라 것보다 언제나 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바02-02])",
+        "code": "[2바02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0202.02": {
+      "evidence": [
+        "태극기를 바르게 그리고 알맞은 자리에 붙인다.",
+        "나라를 아끼는 마음을 노래나 그림으로 나타낸다."
+      ],
+      "assessmentPrompt": "태극기를 바르게 그려 교실에 붙이고, 나라를 아끼는 마음을 노래나 그림으로 나타내 보자.",
+      "misconceptions": [
+        "태극기는 아무 모양으로 그려도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바02-02])",
+        "code": "[2바02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0202.03": {
+      "evidence": [
+        "우리나라에 대해 오늘 새로 알게 된 것을 말한다.",
+        "더 알고 싶은 것을 하나 골라 물음을 만든다."
+      ],
+      "assessmentPrompt": "우리나라에 대해 새로 알게 된 것을 말하고, 더 알고 싶은 것을 하나 골라 물음으로 만들어 보자.",
+      "misconceptions": [
+        "우리나라에 대해서는 이미 다 알고 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바02-02])",
+        "code": "[2바02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0203.01": {
+      "evidence": [
+        "여러 나라의 옷과 음식을 사진에서 찾아 견준다.",
+        "서로 다른 것이 왜 있는지 자기 말로 말한다."
+      ],
+      "assessmentPrompt": "여러 나라의 옷과 음식 사진을 보고 우리와 다른 점을 찾아 말한 뒤, 왜 다른지 생각을 말해 보자.",
+      "misconceptions": [
+        "우리와 다른 문화는 이상한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-03]",
+        "code": "[2바02-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0203.02": {
+      "evidence": [
+        "다른 나라 놀이를 하나 배워 친구와 해 본다.",
+        "친구가 좋아하는 것을 놀리지 않고 받아들인다."
+      ],
+      "assessmentPrompt": "다른 나라 놀이를 하나 배워 친구와 함께 해 보고, 친구가 좋아하는 것을 놀리지 않는 말을 써 보자.",
+      "misconceptions": [
+        "내가 모르는 놀이는 재미없는 놀이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-03]",
+        "code": "[2바02-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0203.03": {
+      "evidence": [
+        "다른 나라 놀이를 해 본 뒤에 달라진 마음을 말한다.",
+        "서로 다른 점을 존중하는 약속을 하나 정한다."
+      ],
+      "assessmentPrompt": "다른 나라 놀이를 해 본 뒤 마음이 어떻게 달라졌는지 말하고, 우리 반이 지킬 약속을 하나 정해 보자.",
+      "misconceptions": [
+        "다른 점을 말하지 않으면 존중한 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-03]",
+        "code": "[2바02-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0204.01": {
+      "evidence": [
+        "해 보지 않은 일 가운데 해 보고 싶은 것을 고른다.",
+        "그 일을 왜 하고 싶은지 짧은 말로 밝혀 말한다."
+      ],
+      "assessmentPrompt": "아직 해 보지 않은 일 가운데 해 보고 싶은 것을 하나 고르고, 왜 하고 싶은지 짧게 말해 보자.",
+      "misconceptions": [
+        "해 보지 않은 일은 무서우니 하지 않는 것이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-04]",
+        "code": "[2바02-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0204.02": {
+      "evidence": [
+        "고른 일을 작은 단계로 나누어 하나씩 해 본다.",
+        "잘 되지 않아도 그만두지 않고 한 번 더 해 본다."
+      ],
+      "assessmentPrompt": "고른 일을 세 단계로 나누어 하나씩 해 보고, 잘 되지 않으면 한 번 더 해 본 뒤 표시해 보자.",
+      "misconceptions": [
+        "한 번에 되지 않으면 그만두는 것이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-04]",
+        "code": "[2바02-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.where.2ba0204.03": {
+      "evidence": [
+        "새로운 일을 해 보고 나서 어떤 기분이 들었는지 말한다.",
+        "다음에 도전할 일을 하나 골라 그림으로 그린다."
+      ],
+      "assessmentPrompt": "새로운 일을 해 보고 나서 어떤 기분이 들었는지 말하고, 다음에 도전할 일을 골라 그려 보자.",
+      "misconceptions": [
+        "도전은 잘하는 사람만 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 8,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2바02-04]",
+        "code": "[2바02-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0301.01": {
+      "evidence": [
+        "하루에 하는 일을 아침·낮·저녁으로 나누어 놓는다.",
+        "하루에 날마다 되풀이되는 일을 하나 찾아 말한다."
+      ],
+      "assessmentPrompt": "내가 하루에 하는 일을 아침·낮·저녁 칸에 나누어 그리고, 날마다 되풀이되는 일을 하나 찾아 말해 보자.",
+      "misconceptions": [
+        "하루는 모두에게 똑같이 흘러가는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바03-01])",
+        "code": "[2바03-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0301.02": {
+      "evidence": [
+        "오늘 하루 가운데 마음에 남는 때를 골라 그린다.",
+        "그때를 소중히 여기는 까닭을 짧은 말로 말한다."
+      ],
+      "assessmentPrompt": "오늘 하루 가운데 마음에 남는 때를 골라 그림으로 그리고, 왜 그때가 소중한지 짧게 말해 보자.",
+      "misconceptions": [
+        "특별한 일이 없는 날은 기억할 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바03-01])",
+        "code": "[2바03-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0301.03": {
+      "evidence": [
+        "일주일 동안 그린 그림을 이어 붙여 달라진 점을 찾는다.",
+        "내일 꼭 하고 싶은 일을 하나 정해 종이에 적는다."
+      ],
+      "assessmentPrompt": "일주일 동안 그린 그림을 이어 붙여 달라진 점을 찾아 말하고, 내일 꼭 하고 싶은 일을 하나 정해 보자.",
+      "misconceptions": [
+        "어제와 오늘은 아무것도 달라지지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바03-01])",
+        "code": "[2바03-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0302.01": {
+      "evidence": [
+        "계절에 따라 달라지는 옷차림을 짝지어 놓는다.",
+        "계절마다 조심해야 할 일을 하나씩 찾아 말한다."
+      ],
+      "assessmentPrompt": "봄·여름·가을·겨울 그림에 알맞은 옷차림 카드를 짝지어 놓고, 계절마다 조심할 일을 하나씩 말해 보자.",
+      "misconceptions": [
+        "옷차림은 계절과 상관없이 마음대로 정해도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바03-02])",
+        "code": "[2바03-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0302.02": {
+      "evidence": [
+        "오늘 날씨를 살펴 알맞은 옷과 준비물을 챙긴다.",
+        "더위나 추위를 이기는 방법을 하나 골라 실천한다."
+      ],
+      "assessmentPrompt": "오늘 날씨를 살펴 알맞은 옷과 준비물을 챙기고, 더위나 추위를 이기는 방법을 하나 골라 해 보자.",
+      "misconceptions": [
+        "날씨는 아침에만 살피면 하루 내내 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바03-02])",
+        "code": "[2바03-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0302.03": {
+      "evidence": [
+        "계절이 바뀌며 달라진 학교 둘레를 살펴 말한다.",
+        "다음 계절에 하고 싶은 일을 정해 그림으로 그린다."
+      ],
+      "assessmentPrompt": "계절이 바뀌며 학교 둘레가 어떻게 달라졌는지 살펴 말하고, 다음 계절에 하고 싶은 일을 그려 보자.",
+      "misconceptions": [
+        "계절이 바뀌어도 생활은 달라지지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바03-02])",
+        "code": "[2바03-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0303.01": {
+      "evidence": [
+        "다른 사람을 도운 인물의 이야기를 듣고 한 일을 말한다.",
+        "그 사람이 왜 그렇게 했을지 짐작해 이야기한다."
+      ],
+      "assessmentPrompt": "다른 사람을 도운 인물의 이야기를 듣고 그 사람이 한 일을 말한 뒤, 왜 그렇게 했을지 생각을 말해 보자.",
+      "misconceptions": [
+        "남을 돕는 일은 특별한 사람만 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2바03-03]",
+        "code": "[2바03-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0303.02": {
+      "evidence": [
+        "그 인물처럼 지금 할 수 있는 일을 골라 해 본다.",
+        "내가 도운 일을 그림이나 짧은 글로 적어 남긴다."
+      ],
+      "assessmentPrompt": "이야기 속 인물처럼 내가 지금 할 수 있는 일을 하나 골라 해 보고, 그 일을 그림이나 짧은 말로 남겨 보자.",
+      "misconceptions": [
+        "어린이는 아직 남을 도울 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2바03-03]",
+        "code": "[2바03-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0303.03": {
+      "evidence": [
+        "도운 뒤에 상대가 보인 반응을 떠올려 말한다.",
+        "우리 반이 함께 할 일을 하나 골라 제안한다."
+      ],
+      "assessmentPrompt": "내가 도운 뒤에 상대가 어떻게 했는지 떠올려 말하고, 우리 반이 함께 할 수 있는 일을 하나 제안해 보자.",
+      "misconceptions": [
+        "돕는 일은 남이 알아줄 때만 뜻이 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2바03-03]",
+        "code": "[2바03-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0304.01": {
+      "evidence": [
+        "오래 쓰는 물건과 한 번 쓰고 버리는 물건을 가른다.",
+        "물건을 오래 쓰면 무엇이 좋은지 짧게 말한다."
+      ],
+      "assessmentPrompt": "교실 물건을 오래 쓰는 것과 한 번 쓰고 버리는 것으로 나누어 놓고, 오래 쓰면 좋은 점을 말해 보자.",
+      "misconceptions": [
+        "새 물건을 자주 사는 것이 언제나 좋다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2바03-04]",
+        "code": "[2바03-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0304.02": {
+      "evidence": [
+        "남은 종이나 물건을 다시 쓰는 방법을 찾아 해 본다.",
+        "교실에서 전기를 아끼는 일을 하나 골라 실천한다."
+      ],
+      "assessmentPrompt": "남은 종이를 다시 쓰는 방법을 찾아 만들어 보고, 교실에서 전기를 아끼는 일을 하나 골라 해 보자.",
+      "misconceptions": [
+        "작은 것을 아끼는 일은 아무 도움이 되지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2바03-04]",
+        "code": "[2바03-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.now.2ba0304.03": {
+      "evidence": [
+        "다시 쓴 물건이 얼마나 늘었는지 세어 말한다.",
+        "앞으로 이어서 할 일을 하나 정해 교실에 붙인다."
+      ],
+      "assessmentPrompt": "일주일 동안 다시 쓴 물건이 몇 개인지 세어 말하고, 앞으로 이어서 할 일을 하나 정해 교실에 붙여 보자.",
+      "misconceptions": [
+        "한 주만 하고 그만두어도 달라진 것은 그대로 남는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 9,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2바03-04]",
+        "code": "[2바03-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0401.01": {
+      "evidence": [
+        "학교를 돌아보며 다니기 불편한 곳을 찾아 짚는다.",
+        "그곳이 누구에게 특히 불편할지 떠올려 말한다."
+      ],
+      "assessmentPrompt": "학교를 돌아보며 다니기 불편한 곳을 찾아 짚고, 그곳이 누구에게 특히 불편할지 말해 보자.",
+      "misconceptions": [
+        "나에게 편한 곳은 누구에게나 편하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (가) 성취기준 해설 [2바04-01]",
+        "code": "[2바04-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0401.02": {
+      "evidence": [
+        "불편한 곳을 고칠 방법을 그림으로 그려 낸다.",
+        "우리가 바로 할 수 있는 일을 골라 해 본다."
+      ],
+      "assessmentPrompt": "불편한 곳을 고칠 방법을 그림으로 그리고, 그 가운데 우리가 바로 할 수 있는 일을 골라 해 보자.",
+      "misconceptions": [
+        "학교 시설을 고치는 일은 어린이와 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (가) 성취기준 해설 [2바04-01]",
+        "code": "[2바04-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0401.03": {
+      "evidence": [
+        "우리가 고친 뒤에 무엇이 달라졌는지 살펴 말한다.",
+        "더 고치고 싶은 곳을 하나 골라 선생님께 알린다."
+      ],
+      "assessmentPrompt": "우리가 고친 뒤에 무엇이 달라졌는지 살펴 말하고, 더 고치고 싶은 곳을 하나 골라 선생님께 알려 보자.",
+      "misconceptions": [
+        "한 번 고치면 더 살펴볼 것은 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (가) 성취기준 해설 [2바04-01]",
+        "code": "[2바04-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0402.01": {
+      "evidence": [
+        "같은 그림을 보고 친구와 다르게 말한 점을 찾는다.",
+        "서로 다르게 생각할 수 있음을 짧은 말로 밝힌다."
+      ],
+      "assessmentPrompt": "같은 그림을 보고 무엇이 떠오르는지 각자 말한 뒤, 친구와 다르게 말한 점을 찾아 이야기해 보자.",
+      "misconceptions": [
+        "내 생각과 다르면 친구가 틀린 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-02])",
+        "code": "[2바04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0402.02": {
+      "evidence": [
+        "친구가 말할 때 끼어들지 않고 끝까지 듣는다.",
+        "들은 말을 자기 말로 다시 옮겨 뜻을 확인한다."
+      ],
+      "assessmentPrompt": "짝이 말할 때 끝까지 듣고, 들은 말을 “네 말은 이런 뜻이지?”처럼 다시 옮겨 확인해 보자.",
+      "misconceptions": [
+        "먼저 말하는 사람이 이기는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-02])",
+        "code": "[2바04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0402.03": {
+      "evidence": [
+        "이야기를 나눈 뒤 새로 알게 된 생각을 말한다.",
+        "다음 이야기 나눌 때 쓸 듣기 약속을 하나 정한다."
+      ],
+      "assessmentPrompt": "이야기를 나눈 뒤 친구에게서 새로 알게 된 생각을 말하고, 다음에 쓸 듣기 약속을 하나 정해 보자.",
+      "misconceptions": [
+        "남의 말을 들으면 내 생각이 없어진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-02])",
+        "code": "[2바04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0403.01": {
+      "evidence": [
+        "혼자 할 때와 함께 할 때 달라지는 점을 말한다.",
+        "여럿이 함께 하면 좋은 점을 하나 찾아 말한다."
+      ],
+      "assessmentPrompt": "블록 쌓기를 혼자 할 때와 둘이 할 때를 견주어 보고, 함께 하면 좋은 점을 하나 말해 보자.",
+      "misconceptions": [
+        "함께 하면 내 몫이 줄어드니 손해라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-03])",
+        "code": "[2바04-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0403.02": {
+      "evidence": [
+        "모둠에서 맡을 일을 스스로 골라 먼저 손을 든다.",
+        "친구가 힘들어할 때 먼저 다가가 함께 돕는다."
+      ],
+      "assessmentPrompt": "모둠 놀이에서 맡을 일을 스스로 골라 손을 들고, 친구가 힘들어하면 먼저 다가가 도와 보자.",
+      "misconceptions": [
+        "내가 나서지 않아도 누군가는 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-03])",
+        "code": "[2바04-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0403.03": {
+      "evidence": [
+        "오늘 모둠 활동에서 잘된 점을 하나 찾아 말한다.",
+        "다음에 바꿀 역할을 정해 모둠에 서로 알린다."
+      ],
+      "assessmentPrompt": "모둠 활동에서 잘된 점을 하나 찾아 말하고, 다음에는 누가 어떤 역할을 맡을지 정해 서로 알려 보자.",
+      "misconceptions": [
+        "역할은 처음 정한 대로 계속 가야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-03])",
+        "code": "[2바04-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0404.01": {
+      "evidence": [
+        "일 학년 때와 지금의 달라진 점을 찾아 말한다.",
+        "자기의 좋은 습관과 고칠 습관을 갈라 적는다."
+      ],
+      "assessmentPrompt": "일 학년 때 사진이나 그림을 보고 지금과 달라진 점을 찾아 말한 뒤, 좋은 습관과 고칠 습관을 나누어 보자.",
+      "misconceptions": [
+        "습관은 한 번 들면 바꿀 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-04])",
+        "code": "[2바04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0404.02": {
+      "evidence": [
+        "고칠 습관 하나를 골라 사흘 동안 지켜 본다.",
+        "지킨 날마다 표의 칸을 색칠해 눈에 보이게 남긴다."
+      ],
+      "assessmentPrompt": "고치고 싶은 습관을 하나 골라 사흘 동안 지켜 보고, 지킨 날마다 표에 색칠해 보자.",
+      "misconceptions": [
+        "습관은 마음만 먹으면 하루 만에 바뀐다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-04])",
+        "code": "[2바04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.right-life.doing.2ba0404.03": {
+      "evidence": [
+        "색칠한 표를 보고 잘 지킨 날과 못 지킨 날을 말한다.",
+        "삼 학년에 이어 갈 습관을 하나 정해 그린다."
+      ],
+      "assessmentPrompt": "색칠한 표를 보고 잘 지킨 날과 못 지킨 날을 말한 뒤, 삼 학년에 이어 갈 습관을 하나 정해 그려 보자.",
+      "misconceptions": [
+        "학년이 바뀌면 습관도 저절로 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 10,
+        "section": "2022-33 별책15 > 바른 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2바04-04])",
+        "code": "[2바04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0101.01": {
+      "evidence": [
+        "학교에서 궁금한 곳을 하나 골라 물음을 만든다.",
+        "그 물음을 풀려면 무엇을 살펴야 할지 함께 적는다."
+      ],
+      "assessmentPrompt": "학교에서 아직 가 보지 않은 곳을 골라 “여기는 무엇을 하는 곳일까”처럼 물음을 만들고 무엇을 살필지 적어 보자.",
+      "misconceptions": [
+        "학교는 다 알고 있으니 궁금한 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬01-01])",
+        "code": "[2슬01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0101.02": {
+      "evidence": [
+        "교실과 특별실을 돌아보며 본 것을 그림으로 남긴다.",
+        "안내판과 표지를 읽고 새로 알게 된 것을 적는다."
+      ],
+      "assessmentPrompt": "학교 특별실을 돌아보며 본 것을 그림으로 그리고, 붙어 있는 안내판을 읽어 알게 된 것을 적어 보자.",
+      "misconceptions": [
+        "그림으로 남긴 것은 자료가 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬01-01])",
+        "code": "[2슬01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0101.03": {
+      "evidence": [
+        "돌아보며 알아낸 것을 친구에게 차례대로 말한다.",
+        "학교에서 안전하게 다니는 길을 지도에 짚어 보인다."
+      ],
+      "assessmentPrompt": "돌아보며 알아낸 것을 친구에게 차례대로 말하고, 학교에서 안전하게 다니는 길을 지도에 짚어 보자.",
+      "misconceptions": [
+        "알아낸 것은 말하지 않아도 다들 안다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬01-01])",
+        "code": "[2슬01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0102.01": {
+      "evidence": [
+        "자기에 대해 알고 싶은 것을 물음으로 만든다.",
+        "그 물음을 어떻게 알아볼지 방법을 하나 고른다."
+      ],
+      "assessmentPrompt": "“나는 무엇을 할 때 가장 즐거울까”처럼 나에 대한 물음을 만들고, 어떻게 알아볼지 방법을 골라 보자.",
+      "misconceptions": [
+        "자기 자신은 따로 알아볼 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬01-02])",
+        "code": "[2슬01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0102.02": {
+      "evidence": [
+        "하루 동안 자기가 한 일을 빠짐없이 표에 표시한다.",
+        "가족이나 친구에게 물어 들은 답을 모아 적는다."
+      ],
+      "assessmentPrompt": "하루 동안 내가 한 일을 표에 표시하고, 가족이나 친구에게 나에 대해 물어 답을 모아 보자.",
+      "misconceptions": [
+        "내 이야기는 남에게 물을 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬01-02])",
+        "code": "[2슬01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0102.03": {
+      "evidence": [
+        "모은 것을 바탕으로 자기를 소개하는 말을 한다.",
+        "소개한 내용 가운데 가장 자기다운 점을 짚는다."
+      ],
+      "assessmentPrompt": "모은 자료를 보고 나를 소개하는 말을 세 문장으로 만들어 발표하고, 가장 나다운 점을 짚어 보자.",
+      "misconceptions": [
+        "자기소개는 이름과 나이만 말하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬01-02])",
+        "code": "[2슬01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0103.01": {
+      "evidence": [
+        "내가 오가며 만나는 사람들을 떠올려 물음을 만든다.",
+        "누구에게 물어볼지 정해 그 이름을 적어 둔다."
+      ],
+      "assessmentPrompt": "오가며 만나는 사람들을 떠올려 “무슨 일을 하실까”처럼 물음을 만들고, 누구에게 물어볼지 정해 보자.",
+      "misconceptions": [
+        "가까이 사는 사람만 우리 둘레 사람이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2슬01-03]",
+        "code": "[2슬01-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0103.02": {
+      "evidence": [
+        "정한 사람에게 물어 들은 답을 그림이나 글로 적는다.",
+        "들은 이야기에서 되풀이되는 말을 찾아 표시한다."
+      ],
+      "assessmentPrompt": "정한 사람에게 물어 들은 답을 그림이나 글로 적고, 여러 사람이 함께 말한 내용을 찾아 표시해 보자.",
+      "misconceptions": [
+        "어른이 하는 말은 어려워서 적을 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2슬01-03]",
+        "code": "[2슬01-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0103.03": {
+      "evidence": [
+        "모은 이야기를 묶어 함께 사는 모습을 말한다.",
+        "고마운 사람에게 마음을 전하는 말을 직접 한다."
+      ],
+      "assessmentPrompt": "모은 이야기를 묶어 우리가 함께 살아가는 모습을 말하고, 고마운 사람에게 마음을 전해 보자.",
+      "misconceptions": [
+        "조사한 내용은 발표만 하면 끝이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2슬01-03]",
+        "code": "[2슬01-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0104.01": {
+      "evidence": [
+        "학교 둘레에서 살펴볼 생물을 골라 물음을 만든다.",
+        "그 생물이 무엇을 먹고 어디에 사는지 묻는다."
+      ],
+      "assessmentPrompt": "학교 화단에서 살펴볼 생물을 하나 골라 “무엇을 먹고 어디서 살까”처럼 물음을 만들어 보자.",
+      "misconceptions": [
+        "작은 벌레는 살펴볼 가치가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2슬01-04]",
+        "code": "[2슬01-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0104.02": {
+      "evidence": [
+        "고른 생물을 사흘 동안 살펴 그림으로 남긴다.",
+        "달라진 점이 있으면 날짜와 함께 나란히 적는다."
+      ],
+      "assessmentPrompt": "고른 생물을 사흘 동안 살펴 그림으로 그리고, 달라진 점이 있으면 날짜와 함께 적어 보자.",
+      "misconceptions": [
+        "한 번 보면 그 생물에 대해 다 안 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2슬01-04]",
+        "code": "[2슬01-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.who.2seul0104.03": {
+      "evidence": [
+        "살펴본 것을 바탕으로 그 생물이 사는 모습을 말한다.",
+        "사람과 그 생물이 서로 이어져 있는 점을 짚는다."
+      ],
+      "assessmentPrompt": "사흘 동안 살펴본 것을 바탕으로 그 생물이 사는 모습을 말하고, 사람과 어떻게 이어져 있는지 짚어 보자.",
+      "misconceptions": [
+        "사람과 다른 생물은 서로 아무 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 23,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (1) 우리는 누구로 살아갈까 > (가) 성취기준 해설 [2슬01-04]",
+        "code": "[2슬01-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0201.01": {
+      "evidence": [
+        "우리 마을에서 알고 싶은 곳을 골라 물음을 만든다.",
+        "그곳에 가면 무엇을 살필지 미리 정해 적는다."
+      ],
+      "assessmentPrompt": "우리 마을에서 알고 싶은 곳을 하나 골라 물음을 만들고, 그곳에 가면 무엇을 살필지 정해 보자.",
+      "misconceptions": [
+        "마을은 늘 지나다니니 살펴볼 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬02-01])",
+        "code": "[2슬02-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0201.02": {
+      "evidence": [
+        "마을을 돌아보며 본 곳을 지도 위에 표시한다.",
+        "마을에서 일하는 사람들의 모습을 그림으로 남긴다."
+      ],
+      "assessmentPrompt": "마을을 돌아보며 본 곳을 지도에 표시하고, 그곳에서 일하는 사람들의 모습을 그림으로 남겨 보자.",
+      "misconceptions": [
+        "지도는 어른만 그릴 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬02-01])",
+        "code": "[2슬02-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0201.03": {
+      "evidence": [
+        "알아낸 마을의 모습을 친구에게 차례대로 설명한다.",
+        "도움을 청할 수 있는 곳을 지도에서 짚어 알린다."
+      ],
+      "assessmentPrompt": "알아낸 마을의 모습을 친구에게 설명하고, 위험할 때 도움을 청할 수 있는 곳을 지도에서 짚어 알려 보자.",
+      "misconceptions": [
+        "도움을 청하는 곳은 어른만 알면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬02-01])",
+        "code": "[2슬02-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0202.01": {
+      "evidence": [
+        "우리나라에 대해 알고 싶은 것을 물음으로 만든다.",
+        "조사할 것을 하나 골라 종이에 또박또박 적는다."
+      ],
+      "assessmentPrompt": "우리나라의 모습이나 문화 가운데 알고 싶은 것을 물음으로 만들고, 조사할 것을 하나 골라 적어 보자.",
+      "misconceptions": [
+        "우리나라 문화는 옛날 것만 가리킨다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2슬02-02]",
+        "code": "[2슬02-02]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0202.02": {
+      "evidence": [
+        "책이나 그림 자료에서 필요한 것을 찾아 모은다.",
+        "찾은 것을 옷·음식·놀이처럼 종류별로 나누어 붙인다."
+      ],
+      "assessmentPrompt": "책이나 그림 자료에서 우리나라에 대한 것을 찾아 모으고, 옷·음식·놀이처럼 종류별로 나누어 붙여 보자.",
+      "misconceptions": [
+        "자료는 많이 모으기만 하면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2슬02-02]",
+        "code": "[2슬02-02]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0202.03": {
+      "evidence": [
+        "모은 자료를 보고 새로 알게 된 것을 발표한다.",
+        "우리 것과 다른 나라 것을 하나씩 견주어 말한다."
+      ],
+      "assessmentPrompt": "모은 자료를 보고 알게 된 것을 발표하고, 우리나라 것과 다른 나라 것을 하나씩 견주어 말해 보자.",
+      "misconceptions": [
+        "발표는 자료를 그대로 읽으면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2슬02-02]",
+        "code": "[2슬02-02]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0203.01": {
+      "evidence": [
+        "알고 싶은 나라를 골라 궁금한 것을 세 가지 적는다.",
+        "무엇을 보고 알아볼지 그 방법을 스스로 정한다."
+      ],
+      "assessmentPrompt": "알고 싶은 나라를 하나 골라 궁금한 것을 세 가지 적고, 무엇을 보고 알아볼지 방법을 정해 보자.",
+      "misconceptions": [
+        "나라를 알아보는 것은 어른이 정해 주어야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬02-03])",
+        "code": "[2슬02-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0203.02": {
+      "evidence": [
+        "정한 방법으로 자료를 찾아 그림과 글로 모은다.",
+        "찾은 것 가운데 가장 놀라웠던 것을 골라 표시한다."
+      ],
+      "assessmentPrompt": "정한 방법으로 그 나라의 자료를 찾아 그림과 글로 모으고, 가장 놀라웠던 것에 표시해 보자.",
+      "misconceptions": [
+        "사진이 없는 자료는 쓸 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬02-03])",
+        "code": "[2슬02-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0203.03": {
+      "evidence": [
+        "알아낸 것을 그림과 함께 친구에게 설명해 말한다.",
+        "그 나라에 대해 더 묻고 싶은 것을 하나 남긴다."
+      ],
+      "assessmentPrompt": "알아낸 것을 그림과 함께 친구에게 말하고, 그 나라에 대해 더 묻고 싶은 것을 하나 남겨 보자.",
+      "misconceptions": [
+        "조사가 끝나면 더 궁금할 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬02-03])",
+        "code": "[2슬02-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0204.01": {
+      "evidence": [
+        "가 보기 어려운 곳 가운데 궁금한 곳을 고른다.",
+        "그곳에 대해 묻고 싶은 것을 세 가지 골라 적는다."
+      ],
+      "assessmentPrompt": "우주나 바닷속처럼 가 보기 어려운 곳 가운데 궁금한 곳을 고르고, 묻고 싶은 것을 적어 보자.",
+      "misconceptions": [
+        "가 볼 수 없는 곳은 알아볼 방법이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2슬02-04]",
+        "code": "[2슬02-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0204.02": {
+      "evidence": [
+        "영상과 책을 함께 보며 알게 된 것을 적는다.",
+        "두 자료에서 다르게 나온 것을 찾아 표시한다."
+      ],
+      "assessmentPrompt": "영상과 책을 함께 보며 알게 된 것을 적고, 두 자료에서 다르게 나온 것이 있으면 찾아 표시해 보자.",
+      "misconceptions": [
+        "영상에 나오는 것은 모두 사실이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2슬02-04]",
+        "code": "[2슬02-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.where.2seul0204.03": {
+      "evidence": [
+        "알아낸 것을 그림과 말로 친구들에게 전해 준다.",
+        "아직 밝혀지지 않은 것은 어떨지 상상해 말한다."
+      ],
+      "assessmentPrompt": "알아낸 것을 그림과 말로 친구에게 전하고, 아직 밝혀지지 않은 것은 어떨지 마음껏 상상해 말해 보자.",
+      "misconceptions": [
+        "상상한 것은 말하면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 24,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (2) 우리는 어디서 살아갈까 > (가) 성취기준 해설 [2슬02-04]",
+        "code": "[2슬02-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0301.01": {
+      "evidence": [
+        "낮과 밤에 달라지는 것을 골라 물음을 만든다.",
+        "누구의 하루를 알아볼지 정해 그 이름을 적는다."
+      ],
+      "assessmentPrompt": "낮과 밤에 달라지는 것을 골라 물음을 만들고, 누구의 하루를 알아볼지 정해 적어 보자.",
+      "misconceptions": [
+        "모든 사람의 하루는 똑같이 흘러간다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2슬03-01]",
+        "code": "[2슬03-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0301.02": {
+      "evidence": [
+        "정한 사람의 하루를 물어 시간 차례로 적는다.",
+        "낮에 일하는 사람과 밤에 일하는 사람을 나눈다."
+      ],
+      "assessmentPrompt": "정한 사람의 하루를 물어 시간 차례로 적고, 낮에 일하는 사람과 밤에 일하는 사람으로 나누어 보자.",
+      "misconceptions": [
+        "밤에는 아무도 일하지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2슬03-01]",
+        "code": "[2슬03-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0301.03": {
+      "evidence": [
+        "알아낸 하루를 자기 하루와 나란히 견주어 말한다.",
+        "다른 하루를 사는 사람에게 전할 말을 정한다."
+      ],
+      "assessmentPrompt": "알아낸 하루를 내 하루와 나란히 놓고 다른 점을 말한 뒤, 그분에게 전하고 싶은 말을 정해 보자.",
+      "misconceptions": [
+        "나와 다른 하루를 사는 것은 잘못이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2슬03-01]",
+        "code": "[2슬03-01]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0302.01": {
+      "evidence": [
+        "계절에 따라 달라지는 일을 골라 물음을 만든다.",
+        "계절마다 무엇을 살필지 미리 정해 적어 둔다."
+      ],
+      "assessmentPrompt": "계절에 따라 달라지는 일을 하나 골라 물음을 만들고, 계절마다 무엇을 살필지 정해 적어 보자.",
+      "misconceptions": [
+        "계절은 날씨만 달라지는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬03-02])",
+        "code": "[2슬03-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0302.02": {
+      "evidence": [
+        "계절마다 찍은 사진과 그림을 모아 표에 붙인다.",
+        "같은 곳의 모습이 계절마다 어떻게 달라졌는지 적는다."
+      ],
+      "assessmentPrompt": "계절별 사진과 그림을 모아 표에 붙이고, 같은 곳의 모습이 계절마다 어떻게 달라졌는지 적어 보자.",
+      "misconceptions": [
+        "한 계절만 보아도 계절의 변화를 알 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬03-02])",
+        "code": "[2슬03-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0302.03": {
+      "evidence": [
+        "계절과 우리 생활이 이어지는 점을 찾아 말한다.",
+        "다음 계절에 준비할 것을 골라 친구에게 알린다."
+      ],
+      "assessmentPrompt": "모은 자료를 보고 계절과 우리 생활이 어떻게 이어지는지 말하고, 다음 계절에 준비할 것을 골라 알려 보자.",
+      "misconceptions": [
+        "계절과 생활은 서로 상관이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬03-02])",
+        "code": "[2슬03-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0303.01": {
+      "evidence": [
+        "달라진 모습이 궁금한 것을 골라 물음을 만든다.",
+        "언제와 언제를 견주어 볼지 스스로 정해 적는다."
+      ],
+      "assessmentPrompt": "옛날과 지금이 달라진 것 가운데 궁금한 것을 골라 물음을 만들고, 언제와 언제를 견줄지 정해 보자.",
+      "misconceptions": [
+        "옛날 것은 지금과 아무 관계가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬03-03])",
+        "code": "[2슬03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0303.02": {
+      "evidence": [
+        "옛날 사진과 지금 사진을 나란히 놓고 살핀다.",
+        "달라진 곳과 그대로인 곳을 나누어 각각 표시한다."
+      ],
+      "assessmentPrompt": "옛날 사진과 지금 사진을 나란히 놓고 살펴, 달라진 곳과 그대로인 곳을 나누어 표시해 보자.",
+      "misconceptions": [
+        "사진에 없는 것은 옛날에 없었던 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬03-03])",
+        "code": "[2슬03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0303.03": {
+      "evidence": [
+        "무엇이 어떻게 달라졌는지 차례를 지켜 설명한다.",
+        "앞으로 어떻게 될지 상상해 그림으로 그려 낸다."
+      ],
+      "assessmentPrompt": "무엇이 어떻게 달라졌는지 차례대로 설명하고, 앞으로 어떻게 될지 상상해 그림으로 그려 보자.",
+      "misconceptions": [
+        "앞으로 일어날 일은 아무도 생각해 볼 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬03-03])",
+        "code": "[2슬03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0304.01": {
+      "evidence": [
+        "우리 생활에서 걱정되는 일을 골라 물음을 만든다.",
+        "그 일에 대해 무엇을 알아볼지 스스로 정한다."
+      ],
+      "assessmentPrompt": "쓰레기나 물 부족처럼 걱정되는 일을 하나 골라 물음을 만들고, 무엇을 알아볼지 정해 보자.",
+      "misconceptions": [
+        "지구의 문제는 어린이와 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2슬03-04]",
+        "code": "[2슬03-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0304.02": {
+      "evidence": [
+        "교실과 집에서 나오는 쓰레기를 종류별로 세어 적는다.",
+        "모은 자료를 보고 가장 많이 나오는 것을 찾는다."
+      ],
+      "assessmentPrompt": "하루 동안 교실에서 나온 쓰레기를 종류별로 세어 적고, 가장 많이 나온 것을 찾아 표시해 보자.",
+      "misconceptions": [
+        "쓰레기는 세어 볼 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2슬03-04]",
+        "code": "[2슬03-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.now.2seul0304.03": {
+      "evidence": [
+        "알아낸 것을 바탕으로 지금 할 수 있는 일을 말한다.",
+        "우리 반이 함께 할 일을 하나 골라 친구들에게 알린다."
+      ],
+      "assessmentPrompt": "알아낸 것을 바탕으로 지금 우리가 할 수 있는 일을 말하고, 반이 함께 할 일을 하나 골라 알려 보자.",
+      "misconceptions": [
+        "어른들이 해결해 줄 때까지 기다리면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 25,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (3) 우리는 지금 어떻게 살아갈까 > (가) 성취기준 해설 [2슬03-04]",
+        "code": "[2슬03-04]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0401.01": {
+      "evidence": [
+        "자주 쓰는 도구를 하나 골라 궁금한 점을 묻는다.",
+        "그 도구가 왜 그런 모양인지 까닭을 짐작해 말한다."
+      ],
+      "assessmentPrompt": "가위나 컵처럼 자주 쓰는 도구를 골라 “왜 이런 모양일까”라고 묻고, 그 까닭을 짐작해 말해 보자.",
+      "misconceptions": [
+        "도구의 모양은 처음부터 정해져 바꿀 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-01])",
+        "code": "[2슬04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0401.02": {
+      "evidence": [
+        "고른 도구를 살펴 모양과 하는 일을 나누어 적는다.",
+        "친구가 찾은 쓰임과 자기가 찾은 것을 견준다."
+      ],
+      "assessmentPrompt": "고른 도구를 살펴 모양과 하는 일을 나누어 적고, 친구가 찾은 쓰임과 견주어 다른 점을 말해 보자.",
+      "misconceptions": [
+        "도구는 정해진 한 가지 일에만 쓸 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-01])",
+        "code": "[2슬04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0401.03": {
+      "evidence": [
+        "모양을 바꾼 도구를 그려 어떻게 쓰는지 말한다.",
+        "바꾼 도구가 누구에게 도움이 될지 찾아 짚는다."
+      ],
+      "assessmentPrompt": "고른 도구의 모양을 바꾸어 그리고, 어떻게 쓰는 것인지와 누구에게 도움이 될지 말해 보자.",
+      "misconceptions": [
+        "새로 생각한 도구는 만들 수 없으니 소용없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-01])",
+        "code": "[2슬04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0402.01": {
+      "evidence": [
+        "만들고 싶은 것을 떠올려 짧은 말로 밝혀 말한다.",
+        "무엇으로 만들지 쓸 재료를 하나 골라 적는다."
+      ],
+      "assessmentPrompt": "만들고 싶은 것을 떠올려 짧은 말로 밝히고, 종이·상자·점토 가운데 무엇으로 만들지 골라 보자.",
+      "misconceptions": [
+        "실제로 있는 것만 만들 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-02])",
+        "code": "[2슬04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0402.02": {
+      "evidence": [
+        "고른 재료를 손으로 다루어 상상한 모양을 만든다.",
+        "만들면서 바꾼 곳이 있으면 그림으로 그려 남긴다."
+      ],
+      "assessmentPrompt": "고른 재료로 상상한 것을 만들어 보고, 만들다가 바꾼 곳이 있으면 그림으로 남겨 보자.",
+      "misconceptions": [
+        "처음 생각한 대로만 만들어야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-02])",
+        "code": "[2슬04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0402.03": {
+      "evidence": [
+        "만든 것을 친구에게 보이며 어떤 것인지 설명한다.",
+        "친구 것과 견주어 새로 떠오른 생각을 말한다."
+      ],
+      "assessmentPrompt": "만든 것을 친구에게 보이며 어떤 것인지 설명하고, 친구 것을 보고 새로 떠오른 생각을 말해 보자.",
+      "misconceptions": [
+        "만든 것은 설명하지 않아도 다 알아본다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-02])",
+        "code": "[2슬04-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0403.01": {
+      "evidence": [
+        "겪은 일 가운데 더 알고 싶은 것을 하나 고른다.",
+        "고른 것에 대해 궁금한 물음을 세 개 만들어 적는다."
+      ],
+      "assessmentPrompt": "지금까지 겪은 일 가운데 더 알고 싶은 것을 하나 고르고, 그것에 대한 물음을 세 개 만들어 보자.",
+      "misconceptions": [
+        "탐구 주제는 선생님이 정해 주는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (가) 성취기준 해설 [2슬04-03]",
+        "code": "[2슬04-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0403.02": {
+      "evidence": [
+        "책과 그림과 물어보기로 답이 될 것을 모은다.",
+        "모은 것을 물음별로 나누어 큰 종이에 붙인다."
+      ],
+      "assessmentPrompt": "만든 물음의 답이 될 것을 책이나 사람에게 물어 모으고, 물음별로 나누어 붙여 보자.",
+      "misconceptions": [
+        "한 곳에서만 찾아도 답을 다 알 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (가) 성취기준 해설 [2슬04-03]",
+        "code": "[2슬04-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0403.03": {
+      "evidence": [
+        "모은 것을 하나로 묶어 알게 된 것을 발표한다.",
+        "아직 답을 찾지 못한 물음에 표시를 해 남긴다."
+      ],
+      "assessmentPrompt": "모은 것을 묶어 알게 된 것을 발표하고, 아직 답을 못 찾은 물음은 표시해 남겨 보자.",
+      "misconceptions": [
+        "답을 못 찾은 물음은 지워야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (가) 성취기준 해설 [2슬04-03]",
+        "code": "[2슬04-03]"
+      },
+      "note": "2022-33 별책15의 해당 성취기준 해설을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0404.01": {
+      "evidence": [
+        "올해 배운 것 가운데 기억에 남는 것을 고른다.",
+        "앞으로 더 배우고 싶은 것을 하나 골라 적는다."
+      ],
+      "assessmentPrompt": "올해 배운 것 가운데 기억에 남는 것을 고르고, 앞으로 더 배우고 싶은 것을 하나 골라 적어 보자.",
+      "misconceptions": [
+        "배운 것은 학년이 끝나면 쓸 일이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-04])",
+        "code": "[2슬04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0404.02": {
+      "evidence": [
+        "배운 것 카드와 배울 것 카드를 선으로 이어 붙인다.",
+        "그렇게 이어 붙인 까닭을 짧은 글로 적어 둔다."
+      ],
+      "assessmentPrompt": "배운 것 카드와 배우고 싶은 것 카드를 선으로 이어 붙이고, 왜 이었는지 짧게 적어 보자.",
+      "misconceptions": [
+        "교과마다 배우는 것은 서로 이어지지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-04])",
+        "code": "[2슬04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.wise-life.doing.2seul0404.03": {
+      "evidence": [
+        "이어 붙인 것을 보이며 앞으로의 배움을 말한다.",
+        "삼 학년에 해 보고 싶은 일을 그림으로 그린다."
+      ],
+      "assessmentPrompt": "이어 붙인 것을 보이며 앞으로 어떤 배움이 이어질지 말하고, 삼 학년에 해 보고 싶은 일을 그려 보자.",
+      "misconceptions": [
+        "앞으로 배울 것은 미리 생각해 볼 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 26,
+        "section": "2022-33 별책15 > 슬기로운 생활 > 나. 성취기준 > [초등학교 1~2학년] > (4) 우리는 무엇을 하며 살아갈까 > (나) 성취기준 적용 시 고려 사항 ([2슬04-04])",
+        "code": "[2슬04-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 2022-33 별책15의 항목별 성취기준 적용 시 고려 사항을 근거로 썼다."
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0101.01": {
+      "evidence": [
+        "긴 소리와 짧은 소리를 듣고 손짓으로 갈라 보인다.",
+        "높은 소리와 낮은 소리를 가려 그 이름을 댄다."
+      ],
+      "assessmentPrompt": "들려주는 소리를 듣고 긴 소리와 짧은 소리를 손짓으로 나누고, 높은 소리와 낮은 소리도 가려 보자.",
+      "misconceptions": [
+        "큰 소리가 곧 높은 소리라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 63,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-01]",
+        "code": "[2즐01-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0101.02": {
+      "evidence": [
+        "눈을 감고 소리만 들어 무엇인지 알아맞혀 말한다.",
+        "교실에서 소리 나는 것을 찾아 세 가지 내어 본다."
+      ],
+      "assessmentPrompt": "눈을 감고 소리만 듣고 무엇인지 알아맞힌 뒤, 교실에서 소리 나는 것을 찾아 세 가지 내어 보자.",
+      "misconceptions": [
+        "소리는 악기에서만 나는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 63,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-01]",
+        "code": "[2즐01-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0101.03": {
+      "evidence": [
+        "찾은 소리를 그림이나 몸짓으로 나타내 보인다.",
+        "더 듣고 싶은 소리를 하나 골라 짝에게 말한다."
+      ],
+      "assessmentPrompt": "찾은 소리를 그림이나 몸짓으로 나타내 보이고, 더 듣고 싶은 소리를 골라 짝에게 말해 보자.",
+      "misconceptions": [
+        "소리는 그림으로 나타낼 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 63,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-01]",
+        "code": "[2즐01-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0102.01": {
+      "evidence": [
+        "소리를 내는 것들을 여럿 모아 종류별로 나눈다.",
+        "같은 도구로 다른 소리를 내는 방법을 말한다."
+      ],
+      "assessmentPrompt": "소리를 내는 것들을 모아 목소리·물체·악기·몸으로 나누고, 같은 것으로 다른 소리를 내는 방법을 말해 보자.",
+      "misconceptions": [
+        "한 도구에서는 한 가지 소리만 난다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 64,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-02]",
+        "code": "[2즐01-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0102.02": {
+      "evidence": [
+        "고른 도구로 서로 다른 소리를 여러 가지 내어 본다.",
+        "짧은 이야기를 소리로 바꾸어 친구에게 들려준다."
+      ],
+      "assessmentPrompt": "고른 도구로 여러 가지 소리를 내어 보고, “비가 오다가 그쳤어요” 같은 짧은 이야기를 소리로 들려주자.",
+      "misconceptions": [
+        "악기는 정해진 방법으로만 소리를 내야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 64,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-02]",
+        "code": "[2즐01-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0102.03": {
+      "evidence": [
+        "자기가 낸 소리 가운데 마음에 든 것을 고른다.",
+        "친구가 낸 소리를 듣고 좋았던 점을 찾아 말한다."
+      ],
+      "assessmentPrompt": "자기가 낸 소리 가운데 마음에 든 것을 골라 다시 들려주고, 친구의 소리에서 좋았던 점을 말해 보자.",
+      "misconceptions": [
+        "내가 낸 소리는 남에게 들려줄 것이 못 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 64,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-02]",
+        "code": "[2즐01-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0103.01": {
+      "evidence": [
+        "같은 물건을 보았을 때와 만졌을 때의 느낌을 갈라 말한다.",
+        "대상의 특징을 나타내는 말을 세 개 골라 적는다."
+      ],
+      "assessmentPrompt": "솔방울을 눈으로 보고 손으로 만져 보며 느낌이 어떻게 다른지 말하고, 어울리는 말을 세 개 골라 보자.",
+      "misconceptions": [
+        "물건의 느낌은 눈으로만 알 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 65,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-03]",
+        "code": "[2즐01-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0103.02": {
+      "evidence": [
+        "여러 가지 감각을 함께 써서 대상을 살펴본다.",
+        "살핀 느낌을 말·그림·몸짓 가운데 하나로 나타낸다."
+      ],
+      "assessmentPrompt": "솔방울을 보고 만지고 흔들어 소리도 들어 본 뒤, 느낌을 말·그림·몸짓 가운데 하나로 나타내 보자.",
+      "misconceptions": [
+        "느낌은 말로만 나타낼 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 65,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-03]",
+        "code": "[2즐01-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0103.03": {
+      "evidence": [
+        "친구가 나타낸 것을 보고 나와 다른 점을 말한다.",
+        "다음에 살펴보고 싶은 것을 하나 골라 말한다."
+      ],
+      "assessmentPrompt": "친구가 나타낸 것을 보고 나와 다른 점을 말하고, 다음에 살펴보고 싶은 것을 골라 말해 보자.",
+      "misconceptions": [
+        "같은 물건이면 느낌도 모두 같아야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 65,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-03]",
+        "code": "[2즐01-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0104.01": {
+      "evidence": [
+        "둘레에서 눈에 띄는 모양과 색을 찾아 짚는다.",
+        "같은 것을 보고도 다른 모습이 떠오름을 말한다."
+      ],
+      "assessmentPrompt": "교실과 복도에서 눈에 띄는 모양과 색을 찾아 짚고, 그 모양을 보면 무엇이 떠오르는지 말해 보자.",
+      "misconceptions": [
+        "이미지는 그림책에만 있는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 66,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-04]",
+        "code": "[2즐01-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0104.02": {
+      "evidence": [
+        "둘레에서 찾은 모습을 사진이나 그림으로 남긴다.",
+        "남긴 것에서 선과 모양과 색을 찾아 표시한다."
+      ],
+      "assessmentPrompt": "둘레에서 찾은 모습을 사진이나 그림으로 남기고, 그 안에서 선과 모양과 색을 찾아 표시해 보자.",
+      "misconceptions": [
+        "자연에는 모양이나 색이 정해져 있지 않다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 66,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-04]",
+        "code": "[2즐01-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.experience.2jeul0104.03": {
+      "evidence": [
+        "모은 것을 친구들과 함께 늘어놓고 이야기한다.",
+        "더 찾아보고 싶은 곳을 하나 골라 짝에게 말한다."
+      ],
+      "assessmentPrompt": "모은 그림과 사진을 함께 늘어놓고 이야기를 나눈 뒤, 더 찾아보고 싶은 곳을 골라 말해 보자.",
+      "misconceptions": [
+        "한 번 찾은 곳은 다시 볼 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 66,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (1) 체험 > (가) 성취기준 해설 [2즐01-04]",
+        "code": "[2즐01-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0201.01": {
+      "evidence": [
+        "노래할 때 바른 자세를 그림에서 골라 짚는다.",
+        "악기를 어디로 잡는지 자리를 손으로 짚어 보인다."
+      ],
+      "assessmentPrompt": "노래하는 자세 그림 가운데 바른 것을 골라 짚고, 악기를 어디로 잡는지 손으로 짚어 보자.",
+      "misconceptions": [
+        "자세는 노랫소리와 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 67,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-01]",
+        "code": "[2즐02-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0201.02": {
+      "evidence": [
+        "바른 자세로 서서 배운 노래를 끝까지 부른다.",
+        "간단한 주법으로 악기를 노래의 박에 맞추어 친다."
+      ],
+      "assessmentPrompt": "바른 자세로 서서 배운 노래를 끝까지 부르고, 이어서 간단한 악기를 박에 맞추어 쳐 보자.",
+      "misconceptions": [
+        "큰 소리로 부를수록 잘 부른 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 67,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-01]",
+        "code": "[2즐02-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0201.03": {
+      "evidence": [
+        "노래하고 나서 자세와 소리를 돌아보고 말한다.",
+        "다음에 고칠 점을 하나 골라 처음부터 다시 해 본다."
+      ],
+      "assessmentPrompt": "노래하고 나서 자세와 소리가 어땠는지 말하고, 고칠 점을 하나 골라 다시 불러 보자.",
+      "misconceptions": [
+        "한 번 부르면 그것으로 끝이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 67,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-01]",
+        "code": "[2즐02-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0202.01": {
+      "evidence": [
+        "빠른 소리와 느린 소리를 듣고 갈라 표시한다.",
+        "센 소리와 여린 소리를 서로 다른 몸짓으로 나타낸다."
+      ],
+      "assessmentPrompt": "들려주는 소리를 듣고 빠른 것과 느린 것을 갈라 표시하고, 센 소리와 여린 소리를 몸짓으로 나타내 보자.",
+      "misconceptions": [
+        "빠른 소리가 곧 센 소리라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 68,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-02]",
+        "code": "[2즐02-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0202.02": {
+      "evidence": [
+        "선생님이 내는 짧은 소리를 그대로 따라 내어 본다.",
+        "따라 낸 소리의 빠르기나 세기를 바꾸어 다시 낸다."
+      ],
+      "assessmentPrompt": "선생님이 내는 짧은 소리를 그대로 따라 내고, 빠르기나 세기를 조금 바꾸어 다시 내어 보자.",
+      "misconceptions": [
+        "따라 하기만 해야 하고 다르게 해 보면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 68,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-02]",
+        "code": "[2즐02-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0202.03": {
+      "evidence": [
+        "자기가 바꾼 소리에서 무엇이 달라졌는지 말한다.",
+        "친구가 만든 소리를 듣고 그대로 따라 해 본다."
+      ],
+      "assessmentPrompt": "자기가 바꾼 소리에서 무엇이 달라졌는지 말하고, 친구가 만든 소리를 따라 내어 보자.",
+      "misconceptions": [
+        "바꾼 소리는 틀린 소리라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 68,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-02]",
+        "code": "[2즐02-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0203.01": {
+      "evidence": [
+        "목소리와 악기와 몸으로 낼 수 있는 소리를 들어 본다.",
+        "셋 가운데 자기가 쓰고 싶은 것을 하나 고른다."
+      ],
+      "assessmentPrompt": "목소리와 악기와 몸으로 낼 수 있는 소리를 하나씩 들어 보고, 자기가 쓰고 싶은 것을 골라 보자.",
+      "misconceptions": [
+        "악기가 없으면 음악을 만들 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 69,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-03]",
+        "code": "[2즐02-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0203.02": {
+      "evidence": [
+        "고른 것으로 네 박짜리 소리를 만들어 들려준다.",
+        "짝과 소리를 겹쳐 가며 여덟 박 동안 함께 연주한다."
+      ],
+      "assessmentPrompt": "고른 것으로 네 박짜리 소리를 만들어 들려주고, 짝과 소리를 겹쳐 함께 연주해 보자.",
+      "misconceptions": [
+        "함께 연주하면 자기 소리가 사라진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 69,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-03]",
+        "code": "[2즐02-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0203.03": {
+      "evidence": [
+        "혼자 할 때와 함께 할 때 다른 점을 말한다.",
+        "다음 시간에 함께 해 보고 싶은 것을 하나 정한다."
+      ],
+      "assessmentPrompt": "혼자 소리 낼 때와 함께 낼 때가 어떻게 달랐는지 말하고, 다음에 함께 해 보고 싶은 것을 정해 보자.",
+      "misconceptions": [
+        "혼자 하는 것이 언제나 편하고 좋다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 69,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-03]",
+        "code": "[2즐02-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0204.01": {
+      "evidence": [
+        "굵은 선과 가는 선을 그려 보고 갈라 말한다.",
+        "곧은 선과 굽은 선을 찾아 각각 손으로 짚는다."
+      ],
+      "assessmentPrompt": "굵은 선과 가는 선, 곧은 선과 굽은 선을 그려 보고 어떤 느낌이 다른지 말해 보자.",
+      "misconceptions": [
+        "선은 모두 같은 것이라 나눌 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 70,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-04]",
+        "code": "[2즐02-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0204.02": {
+      "evidence": [
+        "여러 가지 선을 이어 그려 한 그림을 만든다.",
+        "어울리는 색을 골라 칠해 모양이 드러나게 한다."
+      ],
+      "assessmentPrompt": "여러 가지 선을 이어 그려 하나의 그림을 만들고, 어울리는 색을 칠해 모양이 드러나게 해 보자.",
+      "misconceptions": [
+        "색은 아무 데나 칠해도 그림은 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 70,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-04]",
+        "code": "[2즐02-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0204.03": {
+      "evidence": [
+        "그린 그림에서 마음에 드는 선을 짚어 말한다.",
+        "친구 그림에서 처음 보는 선을 하나 찾아낸다."
+      ],
+      "assessmentPrompt": "내 그림에서 마음에 드는 선을 짚어 말하고, 친구 그림에서 처음 본 선을 하나 찾아보자.",
+      "misconceptions": [
+        "잘 그린 그림에는 곧은 선만 있어야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 70,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-04]",
+        "code": "[2즐02-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0205.01": {
+      "evidence": [
+        "색연필과 크레파스로 칠한 자리를 견주어 말한다.",
+        "풀과 가위를 안전하게 쓰는 방법을 찾아 말한다."
+      ],
+      "assessmentPrompt": "색연필과 크레파스로 같은 칸을 칠해 보고 어떻게 다른지 말한 뒤, 가위를 안전하게 쓰는 방법을 말해 보자.",
+      "misconceptions": [
+        "재료는 무엇으로 칠해도 똑같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 71,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-05]",
+        "code": "[2즐02-05]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0205.02": {
+      "evidence": [
+        "가위를 바르게 잡고 그어 놓은 선을 따라 오린다.",
+        "풀을 알맞은 양만큼 발라 종이를 제자리에 붙인다."
+      ],
+      "assessmentPrompt": "가위를 바르게 잡고 그은 선을 따라 오린 뒤, 풀을 알맞게 발라 종이에 붙여 보자.",
+      "misconceptions": [
+        "풀은 많이 바를수록 잘 붙는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 71,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-05]",
+        "code": "[2즐02-05]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0205.03": {
+      "evidence": [
+        "쓰고 난 재료와 용구를 모두 제자리에 정리한다.",
+        "다음에 써 보고 싶은 재료를 하나 골라 말한다."
+      ],
+      "assessmentPrompt": "쓰고 난 재료와 용구를 제자리에 정리하고, 다음에 써 보고 싶은 재료를 골라 말해 보자.",
+      "misconceptions": [
+        "정리는 나중에 어른이 해 주면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 71,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-05]",
+        "code": "[2즐02-05]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0206.01": {
+      "evidence": [
+        "살펴볼 것을 하나 골라 눈에 띄는 곳을 짚는다.",
+        "그 모양이 무엇과 닮았는지 곰곰이 떠올려 말한다."
+      ],
+      "assessmentPrompt": "살펴볼 것을 하나 골라 눈에 띄는 곳을 짚고, 그 모양이 무엇과 닮았는지 떠올려 말해 보자.",
+      "misconceptions": [
+        "보이는 대로 그리는 것 말고는 할 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 72,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-06]",
+        "code": "[2즐02-06]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0206.02": {
+      "evidence": [
+        "자세히 살펴본 것을 종이 가운데에 크게 그린다.",
+        "떠오른 것을 덧붙여 나만의 새로운 그림을 만든다."
+      ],
+      "assessmentPrompt": "고른 것을 자세히 살펴 종이에 크게 그리고, 떠오른 것을 덧붙여 새로운 그림으로 만들어 보자.",
+      "misconceptions": [
+        "실제와 다르게 그리면 틀린 그림이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 72,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-06]",
+        "code": "[2즐02-06]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.expression.2jeul0206.03": {
+      "evidence": [
+        "그림을 그리면서 재미있었던 때를 떠올려 말한다.",
+        "친구 그림을 보고 좋았던 점을 하나 찾아 말한다."
+      ],
+      "assessmentPrompt": "그리면서 가장 재미있었던 때를 말하고, 친구 그림을 보고 좋았던 점을 하나 말해 주자.",
+      "misconceptions": [
+        "그림은 다 그리고 나서만 이야기할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 72,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (2) 표현 > (가) 성취기준 해설 [2즐02-06]",
+        "code": "[2즐02-06]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0301.01": {
+      "evidence": [
+        "들은 곡이 빠른지 느린지 가려 손을 들어 말한다.",
+        "곡을 듣고 떠오른 장면을 짧은 말로 이야기한다."
+      ],
+      "assessmentPrompt": "두 곡을 듣고 어느 것이 빠른지 가려 말한 뒤, 각각 어떤 장면이 떠올랐는지 짧게 말해 보자.",
+      "misconceptions": [
+        "음악은 들으면 되고 생각할 것은 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 73,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-01]",
+        "code": "[2즐03-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0301.02": {
+      "evidence": [
+        "음악에 맞추어 걷다가 소리가 그치면 그 자리에 멈춘다.",
+        "음악을 들으며 떠오른 것을 그림으로 그려 낸다."
+      ],
+      "assessmentPrompt": "음악에 맞추어 걷다가 멈추어 보고, 그 음악을 들으며 떠오른 것을 그림으로 그려 보자.",
+      "misconceptions": [
+        "음악을 들을 때는 가만히 있어야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 73,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-01]",
+        "code": "[2즐03-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0301.03": {
+      "evidence": [
+        "친구와 서로 다르게 반응한 점을 찾아 말한다.",
+        "다시 듣고 싶은 곡을 하나 골라 까닭을 말한다."
+      ],
+      "assessmentPrompt": "같은 곡에 친구와 내가 다르게 반응한 점을 찾아 말하고, 다시 듣고 싶은 곡을 골라 까닭을 말해 보자.",
+      "misconceptions": [
+        "음악을 듣고 느끼는 것은 모두 같아야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 73,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-01]",
+        "code": "[2즐03-01]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0302.01": {
+      "evidence": [
+        "곡에서 되풀이되는 부분을 찾아 그때 손을 든다.",
+        "센 박이 오는 자리를 찾아 손뼉을 쳐서 짚는다."
+      ],
+      "assessmentPrompt": "짧은 곡을 들으며 되풀이되는 부분에서 손을 들고, 센 박이 오는 자리에 손뼉을 쳐 보자.",
+      "misconceptions": [
+        "음악에는 되풀이되는 부분이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 74,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-02]",
+        "code": "[2즐03-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0302.02": {
+      "evidence": [
+        "들은 곡의 빠르기를 걷는 속도로 바꾸어 나타낸다.",
+        "찾은 음악 요소를 그림이나 짧은 말로 적는다."
+      ],
+      "assessmentPrompt": "들은 곡의 빠르기를 걸음으로 나타내고, 찾은 것을 그림이나 짧은 말로 적어 보자.",
+      "misconceptions": [
+        "음악 요소는 이름을 정확히 말해야만 찾은 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 74,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-02]",
+        "code": "[2즐03-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0302.03": {
+      "evidence": [
+        "친구가 찾은 것과 자기가 찾은 것을 견주어 말한다.",
+        "곡을 다시 들으며 새로 찾은 것을 적어 덧붙인다."
+      ],
+      "assessmentPrompt": "친구가 찾은 것과 내가 찾은 것을 견주어 말하고, 곡을 다시 들으며 새로 찾은 것을 덧붙여 보자.",
+      "misconceptions": [
+        "한 번 들으면 다 찾은 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 74,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-02]",
+        "code": "[2즐03-02]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0303.01": {
+      "evidence": [
+        "작품에서 가장 먼저 눈에 들어온 곳을 짚는다.",
+        "작품 속에서 아는 것을 찾아 하나씩 이름을 댄다."
+      ],
+      "assessmentPrompt": "그림을 보고 가장 먼저 눈에 들어온 곳을 짚고, 그림 속에서 아는 것을 찾아 이름을 대어 보자.",
+      "misconceptions": [
+        "그림은 어른만 이해할 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 75,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-03]",
+        "code": "[2즐03-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0303.02": {
+      "evidence": [
+        "작품을 보고 든 느낌을 말이나 몸짓으로 나타낸다.",
+        "작품 속에서 있었을 이야기를 상상해 짧게 말한다."
+      ],
+      "assessmentPrompt": "그림을 보고 든 느낌을 말이나 몸짓으로 나타내고, 그림 속에서 어떤 일이 있었을지 상상해 말해 보자.",
+      "misconceptions": [
+        "그림에는 정해진 이야기가 하나만 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 75,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-03]",
+        "code": "[2즐03-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0303.03": {
+      "evidence": [
+        "친구가 말한 느낌을 듣고 나와 다른 점을 찾는다.",
+        "작품을 한 번 더 보고 새로 든 생각을 말한다."
+      ],
+      "assessmentPrompt": "친구가 말한 느낌을 듣고 나와 다른 점을 찾아 말한 뒤, 그림을 다시 보고 새로 든 생각을 말해 보자.",
+      "misconceptions": [
+        "한 번 말한 느낌은 바꾸면 안 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 75,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-03]",
+        "code": "[2즐03-03]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0304.01": {
+      "evidence": [
+        "가 볼 수 있는 전시를 찾아 그 이름을 적는다.",
+        "전시장에서 지켜야 할 일을 하나 찾아 말한다."
+      ],
+      "assessmentPrompt": "가 볼 수 있는 전시를 찾아 이름을 적고, 전시장에서 지켜야 할 일을 하나 말해 보자.",
+      "misconceptions": [
+        "전시는 아무 때나 가서 뛰어다녀도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 76,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-04]",
+        "code": "[2즐03-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0304.02": {
+      "evidence": [
+        "전시나 가상 전시를 둘러보며 작품을 하나씩 살핀다.",
+        "마음에 든 작품을 하나 골라 그림으로 남긴다."
+      ],
+      "assessmentPrompt": "전시나 가상 전시를 둘러보며 작품을 살피고, 마음에 든 작품을 하나 골라 그림으로 남겨 보자.",
+      "misconceptions": [
+        "전시는 빨리 한 바퀴 돌면 다 본 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 76,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-04]",
+        "code": "[2즐03-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0304.03": {
+      "evidence": [
+        "전시에서 본 것을 친구에게 자세히 이야기해 준다.",
+        "또 가 보고 싶은 전시를 하나 골라 까닭을 말한다."
+      ],
+      "assessmentPrompt": "전시에서 본 것을 친구에게 이야기해 주고, 또 가 보고 싶은 전시를 골라 까닭을 말해 보자.",
+      "misconceptions": [
+        "전시에서 본 것은 말할 거리가 못 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 76,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-04]",
+        "code": "[2즐03-04]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0305.01": {
+      "evidence": [
+        "국악기의 소리를 듣고 이름 카드를 찾아 짝짓는다.",
+        "전통 무늬를 보고 눈에 띄는 모양을 찾아 짚는다."
+      ],
+      "assessmentPrompt": "국악기 소리를 듣고 이름 카드와 짝지어 놓고, 전통 무늬에서 눈에 띄는 모양을 짚어 보자.",
+      "misconceptions": [
+        "국악은 옛날 사람만 듣던 음악이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 77,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-05]",
+        "code": "[2즐03-05]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0305.02": {
+      "evidence": [
+        "전래 동요를 장단에 맞추어 친구들과 함께 부른다.",
+        "마음에 든 전통 무늬를 따라 그려 종이에 나타낸다."
+      ],
+      "assessmentPrompt": "전래 동요를 장단에 맞추어 함께 부르고, 마음에 든 전통 무늬를 따라 그려 보자.",
+      "misconceptions": [
+        "전통 무늬는 어려워서 따라 그릴 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 77,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-05]",
+        "code": "[2즐03-05]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0305.03": {
+      "evidence": [
+        "생활에서 국악이나 전통 미술을 본 곳을 말한다.",
+        "오늘 활동에서 친근하게 느낀 점을 찾아 말한다."
+      ],
+      "assessmentPrompt": "생활에서 국악이나 전통 미술을 본 곳을 말하고, 오늘 활동에서 친근하게 느낀 점을 말해 보자.",
+      "misconceptions": [
+        "국악과 전통 미술은 우리 생활에 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 77,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-05]",
+        "code": "[2즐03-05]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0306.01": {
+      "evidence": [
+        "서로 다른 두 곡을 듣고 어떤 점이 다른지 말한다.",
+        "다른 나라 작품에서 낯설게 느낀 점을 찾아 짚는다."
+      ],
+      "assessmentPrompt": "서로 다른 두 곡을 듣고 다른 점을 말하고, 다른 나라 그림에서 낯선 점을 찾아 짚어 보자.",
+      "misconceptions": [
+        "낯선 음악이나 그림은 좋지 않은 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 78,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-06]",
+        "code": "[2즐03-06]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0306.02": {
+      "evidence": [
+        "익숙하지 않은 작품도 끝까지 듣거나 보고 있는다.",
+        "작품에서 느낀 점을 그림이나 몸짓으로 나타낸다."
+      ],
+      "assessmentPrompt": "익숙하지 않은 곡과 그림을 끝까지 듣고 본 뒤, 느낀 점을 그림이나 몸짓으로 나타내 보자.",
+      "misconceptions": [
+        "마음에 안 드는 작품은 보지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 78,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-06]",
+        "code": "[2즐03-06]"
+      }
+    },
+    "kr.mt.integrated.joyful-life.appreciation.2jeul0306.03": {
+      "evidence": [
+        "친구의 다른 느낌을 끝까지 듣고 고개를 끄덕인다.",
+        "서로 다르게 느껴도 괜찮은 까닭을 찾아 말한다."
+      ],
+      "assessmentPrompt": "같은 작품에 대한 친구의 다른 느낌을 끝까지 듣고, 서로 다르게 느껴도 괜찮은 까닭을 말해 보자.",
+      "misconceptions": [
+        "느낌이 다르면 한 사람은 틀린 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "printedPage": 78,
+        "section": "2026-1 별책15 > 즐거운 생활 > 나. 성취기준 > (3) 감상 > (가) 성취기준 해설 [2즐03-06]",
+        "code": "[2즐03-06]"
+      }
+    }
+  }
+}

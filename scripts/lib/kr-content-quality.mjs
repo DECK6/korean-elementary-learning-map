@@ -15,8 +15,20 @@ const JOSA_PLACEHOLDER = /(?:을\/를|이\/가|이\(가\)|을\(를\)|과\/와)/;
 const KNOWN_MALFORMED = /(?:하기과|존중를|조건와)/;
 const ENGLISH_FACET = /\b(?:concept|practice|reflection)\b/i;
 const UNDEFINED_PLACEHOLDER = /\bundefined\b/i;
-const PROVENANCE_SIGNAL =
-  /(?:source-to-topic-decomposition|source link|mapped to|official (?:code|achievement|wording)|NCIC|PDF (?:text|attachment|lists)|workstream-authored|성취기준에서 분해|공식 (?:코드|문구|원문)|출처|원문)/i;
+// Alternatives that name the repository pipeline itself; they are provenance in every path.
+const PROVENANCE_SIGNAL_SHARED =
+  'source-to-topic-decomposition|source link|mapped to|official (?:code|achievement|wording)|NCIC|PDF (?:text|attachment|lists)|workstream-authored|성취기준에서 분해|공식 (?:코드|문구|원문)';
+// Strict pattern for machine-generated text, where a bare 출처/원문 only ever comes from a locator line.
+const PROVENANCE_SIGNAL = new RegExp(`(?:${PROVENANCE_SIGNAL_SHARED}|출처|원문)`, 'i');
+// Authored overlays teach source credibility ([4국02-05]) and media ethics ([4국06-03]), so there
+// 출처/원문 are the learning content itself and count as provenance only next to locator vocabulary.
+const AUTHORED_PROVENANCE_SIGNAL = new RegExp(
+  `(?:${PROVENANCE_SIGNAL_SHARED}` +
+    '|(?:출처|원문)[^\\n]{0,4}(?:locator|로케이터|재수록|sourceId|sourceRefs)' +
+    '|(?:별책|고시 제|PDF|sourceId|sourceRefs)[^\\n]{0,16}(?:출처|원문)' +
+    '|(?:출처|원문)[^\\n]{0,16}(?:별책|고시 제|PDF|sourceId|sourceRefs))',
+  'i',
+);
 const OBSERVABLE_SIGNAL =
   /(?:설명|제시|구분|식별|선택|비교|연결|분류|수행|실행|적용|표현|제작|구성|기록|확인|찾|말하|읽|쓰|듣|연주|노래|움직|관찰|조사|분석|평가|점검|수정|개선|참여|보여|근거)/;
 
@@ -97,6 +109,19 @@ export function attachJosa(text, pair) {
   return `${text}${choices[hasFinalConsonant(text) ? 0 : 1]}`;
 }
 
+// `pdftotext` wrapped these words mid-token in the 초등 과학과 교육과정 annex, and the wrap survived
+// into the hand-maintained science workstream `focus` text. This repository keeps no extracted source
+// corpus to score merges against, so each repair is listed with the standard it was observed in and is
+// anchored on hangul boundaries — ordinary text such as "가설 명확히" or "사용 액으로" stays untouched.
+const PDF_WRAP_REPAIRS = [
+  [/(?<![가-힣])설 명(?![가-힣])/g, '설명'], // [4과16-02]
+  [/(?<![가-힣])달라 짐(?=[을이은])/g, '달라짐'], // [6과03-01]
+  [/(?<![가-힣])진하 기(?=[를가는])/g, '진하기'], // [6과03-02]
+  [/(?<![가-힣])관 련(?=되)/g, '관련'], // [6과04-02]
+  [/(?<![가-힣])다 양한(?![가-힣])/g, '다양한'], // [6과08-03]
+  [/(?<![가-힣])용 액(?=[으을의이])/g, '용액'], // [6과09-01]
+];
+
 export function resolveKoreanText(value) {
   if (typeof value !== 'string') return value;
   const patterns = [
@@ -109,6 +134,9 @@ export function resolveKoreanText(value) {
   let repaired = value;
   for (const [pair, pattern] of patterns) {
     repaired = repaired.replace(pattern, (_, char) => attachJosa(char, pair));
+  }
+  for (const [pattern, replacement] of PDF_WRAP_REPAIRS) {
+    repaired = repaired.replace(pattern, replacement);
   }
   return repaired
     .replaceAll('하기과', '하기와')
@@ -160,7 +188,7 @@ export function isLearnerObservableEvidence(item) {
 // Broader classifier for human/agent-authored overlay evidence: accepts any present-tense action
 // verb ending in addition to the curated stems, but still rejects cognitive-state endings.
 export function isAuthoredObservableEvidence(item) {
-  if (typeof item !== 'string' || item.trim().length < 8 || PROVENANCE_SIGNAL.test(item)) return false;
+  if (typeof item !== 'string' || item.trim().length < 8 || AUTHORED_PROVENANCE_SIGNAL.test(item)) return false;
   if (OBSERVABLE_SIGNAL.test(item)) return true;
   return endsWithPresentActionVerb(item) && !NON_OBSERVABLE_ENDING.test(item);
 }
@@ -461,4 +489,5 @@ export const CONTENT_QUALITY_PATTERNS = {
   ENGLISH_FACET,
   UNDEFINED_PLACEHOLDER,
   PROVENANCE_SIGNAL,
+  AUTHORED_PROVENANCE_SIGNAL,
 };

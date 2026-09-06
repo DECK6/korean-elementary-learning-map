@@ -6,22 +6,22 @@
       "CoverageGap": 46,
       "Curriculum": 11,
       "DatasetRelease": 1,
-      "EvidenceCriterion": 4008,
+      "EvidenceCriterion": 3912,
       "GradeBand": 5,
       "LearningCluster": 152,
       "LearningDomain": 79,
       "LearningTopic": 1956,
       "PrerequisiteAssertion": 2291,
       "SourceDocument": 16,
-      "SourceLocator": 2857,
+      "SourceLocator": 3796,
       "StandardTopicAlignment": 1956,
       "Subject": 12,
       "VerificationRecord": 6851
     },
     "rdfTriples": {
-      "generatedABox": 256786,
-      "jsonld": 256786,
-      "turtle": 256786
+      "generatedABox": 267757,
+      "jsonld": 267757,
+      "turtle": 267757
     },
     "relations": {
       "alignedToStandard": {
@@ -51,33 +51,33 @@
       "standards": 620,
       "topics": 1956
     },
-    "totalGraphResources": 22817
+    "totalGraphResources": 23660
   },
   "datasetRelease": "kr-full-depth-v0.4",
   "files": [
     {
-      "bytes": 30403153,
+      "bytes": 31505743,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "43d350b14e9af6150a7099b31aaf8da1c58443dd07a22b378444275a16a742b0"
+      "sha256": "eaf5f9c7dbac01faa6cd092cedf8113a362c3f35c40f9edcc22e4a4b04ea8b7c"
     },
     {
-      "bytes": 22005392,
+      "bytes": 22720814,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "f5cf0bdb281399d2276e11684e15ad53654d48f23ea048ba60ec34991a5a9ffb"
+      "sha256": "a206dbf48f6bc65f539d00466c3b0fcc601fb9a9ed210f17237a30f02a3caea0"
     },
     {
       "bytes": 1874,
       "mediaType": "application/json",
       "path": "dist/ontology/manifest.json",
-      "sha256": "4ddccd6fef2bcc44709b6716e8e94619b7f02a432e7be74e11ed8848952bb6d0"
+      "sha256": "c379357bd61e35e14dac2fe0f498f0756f58f785e49d7c6c8e54dfd7c8b9d669"
     },
     {
       "bytes": 16972,
       "mediaType": "application/json",
       "path": "dist/ontology/validation-report.json",
-      "sha256": "11564f2b6c5999f671a5569e110457d7e286e824157d2b552dfabcd34b52cd34"
+      "sha256": "c260ec934942a4f81f1fc53c53826b5ff67e650c2629d2747a6b626b4b0cb458"
     },
     {
       "bytes": 34518,
@@ -86,10 +86,10 @@
       "sha256": "0c2ae2b5ddeb31102b5eb6ea99dbed75c88e5001bc97cc820d31d3d9ad29d64f"
     },
     {
-      "bytes": 6889,
+      "bytes": 6898,
       "mediaType": "text/markdown",
       "path": "docs/ontology-release-report.md",
-      "sha256": "261c45ade405acbda548f8bd5ec882ecfddebcde12ad004f98ef43d00cb9120c"
+      "sha256": "03ff28ffdac5c37112468fc0979a6f51ad2b514306b54d5226db43d2659e69eb"
     },
     {
       "bytes": 8688,
@@ -338,10 +338,10 @@
       "sha256": "b8519c05e7c006f09abe80126b6b4b3f094282b718121e5ed380f91d17462cff"
     },
     {
-      "bytes": 8867,
+      "bytes": 8658,
       "mediaType": "application/json",
       "path": "ontology/queries/expected.json",
-      "sha256": "d57f0389e8766ec0d8c81ce5d8daa41cb42ed6df1d06aadbb9b40ab824787ee1"
+      "sha256": "59e4abc1bd552e9030e45ff08a67acaef8fb32d2b8f83a3151a472d978ae830a"
     },
     {
       "bytes": 247,

@@ -44,9 +44,13 @@ const SUFFIX_FACET_KEYS = new Map([
   ['application', 'application'],
   ['practice', 'application'],
   ['inquiry', 'inquiry'],
-  ['evidence', 'inquiry'],
   ['reflect', 'reflection'],
 ]);
+
+// `.evidence` is the one suffix the generators use for two different facets: 표현·근거 topics
+// (REPRESENTATIONAL) and 탐구 topics. Reading it as `inquiry` regardless of type made the 49 social
+// `.evidence` topics collide with the `.inquiry` sibling of the same standard, so the type decides.
+const EVIDENCE_SUFFIX_FACET_KEYS = new Map([['REPRESENTATIONAL', 'representation']]);
 
 // Fallback used by numeric suffixes (.01-.04) and by free-text Korean suffixes.
 const TYPE_FACET_KEYS = new Map([
@@ -87,9 +91,11 @@ export function facetSuffixOf(topicId) {
 export function deriveFacetKey(topic) {
   if (!topic) return 'concept';
   const suffix = facetSuffixOf(topic.id);
+  const type = String(topic.type).toUpperCase();
+  if (suffix === 'evidence') return EVIDENCE_SUFFIX_FACET_KEYS.get(type) ?? 'inquiry';
   const bySuffix = SUFFIX_FACET_KEYS.get(suffix);
   if (bySuffix) return bySuffix;
-  return TYPE_FACET_KEYS.get(String(topic.type).toUpperCase()) ?? 'concept';
+  return TYPE_FACET_KEYS.get(type) ?? 'concept';
 }
 
 export function standardKeyOf(topic) {

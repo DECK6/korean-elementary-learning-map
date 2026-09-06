@@ -438,6 +438,16 @@ for (const topic of topicsFile.topics || []) {
   topicsById.set(topic.id, topic);
 }
 
+// One standard decomposes into facets, so two topics of the same standard may never share a facetKey:
+// a collision means the facet axis lost a distinction the topic ids still make.
+const facetKeysByStandard = new Map();
+for (const topic of topicsFile.topics || []) {
+  const key = `${topic.standardKey}\u0000${topic.facetKey}`;
+  const previous = facetKeysByStandard.get(key);
+  if (previous) errors.push(`topic ${topic.id} repeats facetKey ${topic.facetKey} of ${previous} within ${topic.standardKey}`);
+  else facetKeysByStandard.set(key, topic.id);
+}
+
 check(standardsFile.microTopicCount === topicIds.size, `microTopicCount ${standardsFile.microTopicCount} != ${topicIds.size}`);
 for (const error of contentQualityErrors(topicsFile.topics || [])) errors.push(`content quality: ${error}`);
 

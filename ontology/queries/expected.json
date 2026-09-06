@@ -27,7 +27,7 @@
       "prompt",
       "promptText"
     ],
-    "rowCount": 4008
+    "rowCount": 3912
   },
   "cq-04-direct-prerequisites.rq": {
     "nonNull": [
@@ -248,14 +248,7 @@
   "cq-17-content-kinds.rq": {
     "groups": [
       {
-        "count": 939,
-        "countVariable": "topicCount",
-        "match": {
-          "contentKind": "https://dexa.art/learnmap/ontology/k12-core#content-mechanical-derivative"
-        }
-      },
-      {
-        "count": 1017,
+        "count": 1956,
         "countVariable": "topicCount",
         "match": {
           "contentKind": "https://dexa.art/learnmap/ontology/k12-core#content-source-grounded-draft"
@@ -266,7 +259,7 @@
       "contentKind",
       "topicCount"
     ],
-    "rowCount": 2,
+    "rowCount": 1,
     "sum": {
       "topicCount": 1956
     }
@@ -298,7 +291,7 @@
         }
       },
       {
-        "count": 122,
+        "count": 73,
         "countVariable": "subjectCount",
         "match": {
           "vocabulary": "facet",
@@ -322,7 +315,7 @@
         }
       },
       {
-        "count": 280,
+        "count": 329,
         "countVariable": "subjectCount",
         "match": {
           "vocabulary": "facet",

@@ -1,0 +1,1260 @@
+{
+  "$schema": "../../../schema/kr-content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "체육",
+  "authoredAt": "2026-09-06",
+  "sourceRefs": [
+    "kr-ncic-2022-physical-education-pdf"
+  ],
+  "note": "교육부 고시 제2022-33호 [별책 11] 체육과 교육과정의 초등학교 5∼6학년 성취기준·성취기준 해설·성취기준 적용 시 고려 사항(인쇄 p.17∼25)을 근거로 새로 쓴 초안이다. 인쇄 쪽 = PDF 쪽 − 6이며 공식 문장은 재수록하지 않았다.",
+  "entries": {
+    "kr.mt.physical-education.5-6.6che0101.perform": {
+      "evidence": [
+        "고른 체력 요소에 알맞은 운동 방법을 두 가지 찾아 해 본다.",
+        "찾은 운동이 그 요소를 기르는지 몸의 반응으로 확인해 적는다."
+      ],
+      "assessmentPrompt": "유연성과 심폐지구력 가운데 하나를 고르고, 그 요소를 기르는 운동을 두 가지 찾아 3분씩 해 본 뒤 몸의 반응을 적어 보자.",
+      "misconceptions": [
+        "한 가지 운동을 하면 모든 체력 요소가 함께 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-01]",
+        "code": "[6체01-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0101.reflect": {
+      "evidence": [
+        "자기가 고른 운동이 목표한 요소와 맞았는지 근거를 들어 판단한다.",
+        "요소별 운동 목록에서 바꿀 항목을 하나 골라 다시 정한다."
+      ],
+      "assessmentPrompt": "고른 운동이 목표한 체력 요소와 맞았는지 판단해 적고, 맞지 않았다면 어떤 운동으로 바꿀지 골라 목록을 고쳐 보자.",
+      "misconceptions": [
+        "재미있는 운동이면 어떤 체력 요소든 기를 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-01]",
+        "code": "[6체01-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0101.understand": {
+      "evidence": [
+        "근력·심폐지구력과 순발력·민첩성을 두 갈래로 갈라 놓는다.",
+        "각 갈래가 어떤 활동에서 쓰이는지 보기를 들어 설명한다."
+      ],
+      "assessmentPrompt": "제시된 체력 요소 여덟 개를 건강과 관련된 것과 경기 기록과 관련된 것으로 나누어 붙이고, 나눈 기준을 모둠에 설명해 보자.",
+      "misconceptions": [
+        "체력은 힘이 센 정도 하나로만 재는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-01]",
+        "code": "[6체01-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0102.perform": {
+      "evidence": [
+        "모자란 요소에 맞춘 운동을 정한 횟수만큼 나흘 동안 해낸다.",
+        "날마다 한 횟수와 몸의 반응을 기록지에 남긴다."
+      ],
+      "assessmentPrompt": "모자란 체력 요소를 기르는 운동을 하나 정해 나흘 동안 하고, 날마다 한 횟수와 힘든 정도를 기록지에 남겨 보자.",
+      "misconceptions": [
+        "한 번에 많이 하면 짧은 시간에 체력이 오른다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-02]",
+        "code": "[6체01-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0102.reflect": {
+      "evidence": [
+        "나흘 기록에서 횟수가 늘어난 날과 줄어든 날을 견준다.",
+        "다음 주 운동량을 얼마나 바꿀지 정해 계획에 적는다."
+      ],
+      "assessmentPrompt": "나흘 기록에서 횟수가 늘거나 줄어든 날을 찾아 까닭을 적고, 다음 주에는 운동량을 얼마로 바꿀지 정해 계획에 써 보자.",
+      "misconceptions": [
+        "기록이 들쭉날쭉하면 측정이 잘못된 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-02]",
+        "code": "[6체01-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0102.understand": {
+      "evidence": [
+        "측정 결과 표를 읽고 자기에게 넉넉한 요소와 모자란 요소를 가른다.",
+        "모자란 요소를 기르려면 무엇을 늘려야 하는지 근거를 들어 말한다."
+      ],
+      "assessmentPrompt": "체력 측정 결과표를 보고 넉넉한 요소와 모자란 요소를 하나씩 고른 뒤, 모자란 요소를 기르려면 무엇을 늘려야 할지 설명해 보자.",
+      "misconceptions": [
+        "측정 점수가 낮으면 그 요소는 기를 수 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-02]",
+        "code": "[6체01-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0103.perform": {
+      "evidence": [
+        "성장 시기에 알맞은 운동을 골라 정해진 시간 동안 해 본다.",
+        "운동을 한 뒤 몸과 기분의 변화를 표에 나누어 적는다."
+      ],
+      "assessmentPrompt": "가벼운 달리기와 스트레칭을 10분씩 한 뒤, 몸의 변화와 기분의 변화를 나누어 표에 적어 보자.",
+      "misconceptions": [
+        "성장기에는 운동을 줄여야 키가 큰다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-03]",
+        "code": "[6체01-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0103.reflect": {
+      "evidence": [
+        "친구마다 자라는 속도가 다르다는 것을 자료를 근거로 말한다.",
+        "서로 다른 속도를 존중하는 말이나 행동을 하나 정해 실천한다."
+      ],
+      "assessmentPrompt": "반 친구들의 성장 속도가 저마다 다른 까닭을 자료를 보고 정리하고, 서로를 존중하기 위해 쓸 말이나 행동을 하나 정해 보자.",
+      "misconceptions": [
+        "또래보다 늦게 자라면 운동을 잘못한 탓이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-03]",
+        "code": "[6체01-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0103.understand": {
+      "evidence": [
+        "자라면서 몸과 마음에 나타나는 변화를 갈래별로 나누어 적는다.",
+        "몸을 꾸준히 움직이는 것이 그 변화에 어떻게 도움이 되는지 근거를 든다."
+      ],
+      "assessmentPrompt": "자라면서 나타나는 변화를 몸·마음·친구 관계로 나누어 적고, 꾸준한 운동이 그 가운데 무엇에 도움이 되는지 근거를 들어 말해 보자.",
+      "misconceptions": [
+        "성장은 키가 크는 것만을 뜻한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 17,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-03]",
+        "code": "[6체01-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0104.perform": {
+      "evidence": [
+        "다친 상황을 가정해 도움을 청하고 알리는 절차를 차례대로 해 본다.",
+        "활동에 앞서 기구와 바닥을 점검해 위험 요소를 없앤다."
+      ],
+      "assessmentPrompt": "친구가 발목을 접질린 상황을 정해 도움을 청하고 알리는 차례를 정한 뒤, 모둠이 역할을 나누어 그대로 해 보자.",
+      "misconceptions": [
+        "다친 사람을 곧바로 일으켜 세우는 것이 가장 먼저 할 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-04]",
+        "code": "[6체01-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0104.reflect": {
+      "evidence": [
+        "연습해 본 대처 절차에서 빠진 단계를 찾아 말한다.",
+        "우리 반에 맞게 절차를 고쳐 게시할 안내문을 정한다."
+      ],
+      "assessmentPrompt": "연습한 대처 절차에서 빠진 단계를 찾아 표시하고, 우리 반 교실에 붙일 안내문으로 고쳐 써 보자.",
+      "misconceptions": [
+        "안전 절차는 어른이 다 해 주므로 익힐 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-04]",
+        "code": "[6체01-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0104.understand": {
+      "evidence": [
+        "운동 중에 생기는 위험과 생활 속에서 생기는 위험을 갈라 보기를 든다.",
+        "성장에 해로운 생활 방식이 왜 문제가 되는지 근거를 들어 밝힌다."
+      ],
+      "assessmentPrompt": "체육관과 등굣길에서 생길 수 있는 위험을 두 가지씩 적고, 각각 어떻게 막을 수 있을지 방법을 말해 보자.",
+      "misconceptions": [
+        "위험한 일은 운이 나쁠 때만 생긴다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-04]",
+        "code": "[6체01-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0105.perform": {
+      "evidence": [
+        "정한 체력 운동을 두 주 동안 정해진 요일에 빠짐없이 한다.",
+        "빠진 날에는 다른 날로 옮겨 실행하고 그 사실을 적는다."
+      ],
+      "assessmentPrompt": "체력 운동 한 가지를 정해 두 주 동안 정한 요일에 하고, 빠진 날은 다른 날로 옮긴 뒤 옮긴 까닭을 기록해 보자.",
+      "misconceptions": [
+        "하루 거르면 계획이 무너진 것이니 그만두어야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-05]",
+        "code": "[6체01-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0105.reflect": {
+      "evidence": [
+        "두 주 기록에서 운동을 빠뜨린 날의 공통점을 찾아 말한다.",
+        "찾은 공통점을 없앨 방법을 하나 골라 다음 계획에 넣는다."
+      ],
+      "assessmentPrompt": "두 주 기록을 보고 운동을 빠뜨린 날의 공통점을 찾아 적고, 그 조건을 없앨 방법을 다음 계획에 넣어 보자.",
+      "misconceptions": [
+        "빠진 날이 있으면 기록을 아예 지우는 것이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-05]",
+        "code": "[6체01-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0105.understand": {
+      "evidence": [
+        "운동을 이어 가지 못하게 만드는 조건을 자기와 둘레로 나누어 적는다.",
+        "그 조건을 넘어설 방법을 근거와 함께 고른다."
+      ],
+      "assessmentPrompt": "운동을 꾸준히 하지 못하게 만드는 까닭을 자기 안의 것과 둘레의 것으로 나누어 적고, 넘어설 방법을 하나씩 골라 보자.",
+      "misconceptions": [
+        "의지가 약해서 못 하는 것이니 방법을 찾아도 소용없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-05]",
+        "code": "[6체01-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0106.perform": {
+      "evidence": [
+        "정해진 위험 상황에서 침착하게 차례를 지켜 대응해 보인다.",
+        "모둠 활동에서 차이를 배려한 역할을 맡아 수행한다."
+      ],
+      "assessmentPrompt": "화재 대피 상황을 가정해 모둠이 차례를 정해 침착하게 이동해 보고, 도움이 필요한 친구를 어떻게 배려했는지 말해 보자.",
+      "misconceptions": [
+        "위험할 때는 빨리 뛰어나가는 것이 가장 안전하다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-06]",
+        "code": "[6체01-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0106.reflect": {
+      "evidence": [
+        "대응 과정에서 당황했던 순간과 그 까닭을 짚는다.",
+        "다음에 침착하게 움직이려고 미리 정할 신호를 만든다."
+      ],
+      "assessmentPrompt": "대응 연습에서 당황했던 순간을 적고, 다음에는 침착하게 움직이도록 모둠이 쓸 신호를 하나 만들어 보자.",
+      "misconceptions": [
+        "침착함은 타고나는 것이라 연습해도 달라지지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-06]",
+        "code": "[6체01-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0106.understand": {
+      "evidence": [
+        "몸·마음·관계에서 나타나는 차이를 사례로 나누어 든다.",
+        "차이를 존중하는 말과 상처를 주는 말을 갈라 고른다."
+      ],
+      "assessmentPrompt": "친구들 사이에 나타나는 차이를 몸·마음·관계로 나누어 적고, 그 차이를 존중하는 말과 상처를 주는 말을 갈라 보자.",
+      "misconceptions": [
+        "다른 사람과 같아지는 것이 잘 자라는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 18,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (1) 운동 > (가) 성취기준 해설 [6체01-06]",
+        "code": "[6체01-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0201.perform": {
+      "evidence": [
+        "세 갈래를 하나씩 맛보는 짧은 활동에 차례로 참여한다.",
+        "활동하며 갈래마다 다른 겨루기 방식을 몸으로 확인해 말한다."
+      ],
+      "assessmentPrompt": "기록형·동작형·투기형 활동을 5분씩 돌아가며 해 보고, 갈래마다 무엇이 승부를 가르는지 활동 뒤에 말해 보자.",
+      "misconceptions": [
+        "갈래가 달라도 연습 방법은 모두 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-01]",
+        "code": "[6체02-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0201.reflect": {
+      "evidence": [
+        "세 갈래 가운데 자기에게 맞는 것을 근거와 함께 고른다.",
+        "잘 되지 않은 갈래에서 필요한 연습을 하나 정한다."
+      ],
+      "assessmentPrompt": "세 갈래 활동을 마친 뒤 자기에게 맞는 갈래를 근거와 함께 고르고, 어려웠던 갈래에 필요한 연습을 하나 정해 보자.",
+      "misconceptions": [
+        "한 번 해 보고 어려우면 그 갈래는 자기와 맞지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-01]",
+        "code": "[6체02-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0201.understand": {
+      "evidence": [
+        "기록형·동작형·투기형이 무엇을 겨루는지 갈라 말한다.",
+        "같은 종목을 왜 그 갈래로 넣었는지 근거를 든다."
+      ],
+      "assessmentPrompt": "멀리뛰기, 매트 운동, 씨름을 기록형·동작형·투기형으로 나누고, 각각 무엇을 겨루는지 근거를 들어 설명해 보자.",
+      "misconceptions": [
+        "기술을 겨루는 경기는 힘이 센 사람이 늘 이긴다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-01]",
+        "code": "[6체02-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0202.perform": {
+      "evidence": [
+        "도움닫기를 한 뒤 발 구르는 자리를 맞추어 멀리뛰기를 한다.",
+        "손 짚고 옆돌기나 뛰어넘기 가운데 하나를 안전하게 해낸다."
+      ],
+      "assessmentPrompt": "도움닫기 다섯 걸음으로 멀리뛰기를 세 번 하고, 손 짚고 옆돌기와 다리 벌려 뛰어넘기 가운데 하나를 골라 안전하게 해 보자.",
+      "misconceptions": [
+        "발을 구르는 자리를 맞추지 않아도 기록에는 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-02]",
+        "code": "[6체02-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0202.reflect": {
+      "evidence": [
+        "세 번의 시도 가운데 가장 잘된 시도의 다른 점을 짚는다.",
+        "다음 시도에서 고칠 동작 한 가지를 정해 연습한다."
+      ],
+      "assessmentPrompt": "멀리뛰기 세 번의 기록을 견주어 가장 잘된 시도의 다른 점을 적고, 다음 시도에서 고칠 동작을 하나 정해 연습해 보자.",
+      "misconceptions": [
+        "기록이 가장 좋은 시도는 우연히 나온 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-02]",
+        "code": "[6체02-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0202.understand": {
+      "evidence": [
+        "도움닫기와 뛰어오르기가 기록에 어떻게 이어지는지 설명한다.",
+        "정확하게 던지려면 무엇을 맞추어야 하는지 조건을 든다."
+      ],
+      "assessmentPrompt": "도움닫기 멀리뛰기 영상을 보고 기록을 늘리는 데 도움이 되는 동작을 두 가지 찾아 적고, 그 까닭을 설명해 보자.",
+      "misconceptions": [
+        "도움닫기는 빠르기만 하면 기록이 늘어난다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-02]",
+        "code": "[6체02-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0203.perform": {
+      "evidence": [
+        "정한 방법으로 기록을 재고 표에 옮겨 적는다.",
+        "잰 기록을 바탕으로 다음 경기에서 쓸 방법을 골라 적용한다."
+      ],
+      "assessmentPrompt": "모둠에서 역할을 나누어 서로의 기록을 재어 표에 적고, 그 표를 보고 다음 경기에서 쓸 방법을 하나 골라 써 보자.",
+      "misconceptions": [
+        "경기 계획은 팀 경기에서만 세우는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-03]",
+        "code": "[6체02-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0203.reflect": {
+      "evidence": [
+        "고른 방법이 기록에 도움이 되었는지 자료를 들어 판단한다.",
+        "도움이 되지 않은 방법을 다른 것으로 바꾸어 정한다."
+      ],
+      "assessmentPrompt": "고른 방법을 쓴 뒤의 기록을 그 전과 견주어 도움이 되었는지 판단하고, 아니라면 다른 방법으로 바꾸어 적어 보자.",
+      "misconceptions": [
+        "한 번 정한 방법은 끝까지 바꾸지 않아야 한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-03]",
+        "code": "[6체02-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0203.understand": {
+      "evidence": [
+        "기록을 재고 서로 견주는 방법을 차례대로 말한다.",
+        "상대와 자기가 잘하는 점을 나누어 표로 정리한다."
+      ],
+      "assessmentPrompt": "달리기 기록을 재는 방법을 차례대로 적고, 기록을 견줄 때 무엇을 함께 살펴야 하는지 두 가지 말해 보자.",
+      "misconceptions": [
+        "기록만 보면 잘한 정도를 다 알 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-03]",
+        "code": "[6체02-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0204.perform": {
+      "evidence": [
+        "고른 갈래의 변형 게임에 규칙을 지키며 참여한다.",
+        "게임 중 자기 갈래의 득점 방식이 드러난 장면을 짚어 말한다."
+      ],
+      "assessmentPrompt": "영역형·필드형·네트형 가운데 하나를 골라 변형 게임을 하고, 그 갈래의 득점 방식이 드러난 장면을 하나 짚어 말해 보자.",
+      "misconceptions": [
+        "변형 게임은 진짜 경기가 아니므로 규칙을 지키지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-04]",
+        "code": "[6체02-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0204.reflect": {
+      "evidence": [
+        "갈래마다 어떤 움직임이 많이 나왔는지 견주어 정리한다.",
+        "다음에 익히고 싶은 갈래와 그 까닭을 정해 적는다."
+      ],
+      "assessmentPrompt": "세 갈래 게임에서 많이 나온 움직임을 표로 견주어 정리하고, 다음에 더 익히고 싶은 갈래를 까닭과 함께 적어 보자.",
+      "misconceptions": [
+        "잘하는 갈래만 계속하면 실력이 고루 는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-04]",
+        "code": "[6체02-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0204.understand": {
+      "evidence": [
+        "영역형·필드형·네트형이 득점하는 방식을 갈라 말한다.",
+        "종목 사진을 보고 어느 갈래인지 근거를 들어 가른다."
+      ],
+      "assessmentPrompt": "축구, 야구, 배구가 어떻게 점수를 얻는지 각각 적고, 세 경기를 갈래로 나눈 기준을 설명해 보자.",
+      "misconceptions": [
+        "공을 손으로 다루면 모두 같은 갈래라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-04]",
+        "code": "[6체02-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0205.perform": {
+      "evidence": [
+        "짝과 움직이면서 패스를 주고받는 것을 열 번 이어 간다.",
+        "네트 너머로 서브나 토스를 정해진 곳에 보낸다."
+      ],
+      "assessmentPrompt": "짝과 함께 걸으며 패스를 열 번 주고받고, 이어서 네트 너머 표시된 칸으로 서브를 세 번 보내 보자.",
+      "misconceptions": [
+        "제자리에 서서 주고받는 것이 가장 정확한 방법이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-05]",
+        "code": "[6체02-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0205.reflect": {
+      "evidence": [
+        "성공한 패스와 실패한 패스의 차이를 조건으로 나눈다.",
+        "다음 연습에서 바꿀 조건 하나를 정해 다시 해 본다."
+      ],
+      "assessmentPrompt": "성공한 패스와 실패한 패스를 거리·세기·때맞춤으로 나누어 적고, 하나를 바꾸어 다시 열 번 주고받아 보자.",
+      "misconceptions": [
+        "실패한 패스는 받는 사람이 늦게 움직인 탓이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-05]",
+        "code": "[6체02-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0205.understand": {
+      "evidence": [
+        "패스와 드리블이 각각 어떤 상황에서 쓰이는지 갈라 말한다.",
+        "받기 좋은 공과 받기 어려운 공의 차이를 근거로 든다."
+      ],
+      "assessmentPrompt": "패스와 드리블이 쓰이는 상황을 각각 두 가지 적고, 친구가 받기 좋은 공이 되려면 무엇을 맞추어야 하는지 말해 보자.",
+      "misconceptions": [
+        "드리블을 오래 하는 사람이 경기를 잘하는 사람이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-05]",
+        "code": "[6체02-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0206.perform": {
+      "evidence": [
+        "모둠에서 역할을 나누고 정한 방법대로 게임에 참여한다.",
+        "경기 중 빈 곳을 찾아 공을 보내거나 그 자리를 막는다."
+      ],
+      "assessmentPrompt": "모둠이 역할을 나누어 공격과 수비 방법을 정하고, 게임에서 빈 곳으로 공을 보내거나 그 자리를 막는 장면을 세 번 만들어 보자.",
+      "misconceptions": [
+        "경기 방법은 잘하는 친구가 정하면 되고 나머지는 따라가면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-06]",
+        "code": "[6체02-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0206.reflect": {
+      "evidence": [
+        "정한 방법이 통한 장면과 통하지 않은 장면을 나누어 짚는다.",
+        "모둠 회의에서 바꿀 역할이나 자리를 정해 다시 적용한다."
+      ],
+      "assessmentPrompt": "경기 뒤 정한 방법이 통한 장면과 통하지 않은 장면을 나누어 적고, 모둠 회의로 역할이나 자리를 바꾸어 다시 해 보자.",
+      "misconceptions": [
+        "졌으면 방법이 아니라 실력만 부족했던 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-06]",
+        "code": "[6체02-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0206.understand": {
+      "evidence": [
+        "빈 공간을 만드는 움직임과 막는 움직임을 갈라 말한다.",
+        "코트 그림에 공격과 수비의 자리를 표시해 까닭을 밝힌다."
+      ],
+      "assessmentPrompt": "코트 그림에 공격이 빈 곳을 만드는 길과 수비가 막는 자리를 그려 넣고, 왜 그 자리를 골랐는지 설명해 보자.",
+      "misconceptions": [
+        "수비는 공을 가진 사람만 따라다니면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 20,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-06]",
+        "code": "[6체02-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0207.perform": {
+      "evidence": [
+        "학교 둘레에서 할 수 있는 야외 활동을 골라 참여한다.",
+        "활동 중 환경을 해치지 않는 행동을 골라 실천한다."
+      ],
+      "assessmentPrompt": "학교 둘레에서 할 수 있는 활동을 하나 골라 참여하고, 활동하는 동안 환경을 해치지 않기 위해 한 행동을 적어 보자.",
+      "misconceptions": [
+        "쓰레기만 버리지 않으면 환경을 지킨 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-07]",
+        "code": "[6체02-07]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0207.reflect": {
+      "evidence": [
+        "활동한 곳의 상태가 처음과 어떻게 달라졌는지 살펴 말한다.",
+        "다음 활동에서 지킬 약속을 모둠과 정해 적는다."
+      ],
+      "assessmentPrompt": "활동을 마친 뒤 그곳이 처음과 어떻게 달라졌는지 살펴 적고, 다음 활동에서 지킬 약속을 모둠과 정해 보자.",
+      "misconceptions": [
+        "자연은 넓으니 한두 사람의 행동은 영향을 주지 않는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-07]",
+        "code": "[6체02-07]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0207.understand": {
+      "evidence": [
+        "생활 둘레에서 하는 활동과 자연에서 하는 활동을 갈라 든다.",
+        "환경에 따라 준비물이 달라지는 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "자전거 타기와 등산을 견주어 어디에서 하는 활동인지 나누고, 환경에 따라 준비물이 어떻게 달라지는지 말해 보자.",
+      "misconceptions": [
+        "바깥 활동은 날씨만 좋으면 준비가 필요 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-07]",
+        "code": "[6체02-07]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0208.perform": {
+      "evidence": [
+        "고른 야외 활동의 기본 동작을 안전 장비를 갖추고 해낸다.",
+        "동작을 하며 힘의 세기와 방향을 상황에 맞게 조절한다."
+      ],
+      "assessmentPrompt": "원반 던지기와 오르기 활동 가운데 하나를 골라 장비를 갖추고 기본 동작을 다섯 번 해 보며 힘의 세기를 조절해 보자.",
+      "misconceptions": [
+        "힘을 최대로 쓰면 언제나 멀리 보낼 수 있다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-08]",
+        "code": "[6체02-08]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0208.reflect": {
+      "evidence": [
+        "성공한 동작에서 힘과 방향이 어떠했는지 되짚어 말한다.",
+        "다음 시도에 맞게 힘의 세기를 정해 다시 해 본다."
+      ],
+      "assessmentPrompt": "가장 잘된 시도에서 힘의 세기와 방향이 어떠했는지 적고, 그에 맞추어 다음 다섯 번을 다시 해 보자.",
+      "misconceptions": [
+        "잘된 동작은 되풀이할수록 저절로 나온다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-08]",
+        "code": "[6체02-08]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0208.understand": {
+      "evidence": [
+        "활동마다 필요한 안전 장비와 그 쓰임을 짝지어 말한다.",
+        "몸의 균형과 힘 조절이 필요한 까닭을 활동을 들어 설명한다."
+      ],
+      "assessmentPrompt": "오르기 활동과 원반 던지기에 필요한 장비를 각각 적고, 두 활동에서 몸의 어느 곳을 특히 조절해야 하는지 말해 보자.",
+      "misconceptions": [
+        "장비를 갖추면 위험은 모두 사라진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-08]",
+        "code": "[6체02-08]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0209.perform": {
+      "evidence": [
+        "장소 조건에 맞추어 활동을 고르고 장비를 챙겨 참여한다.",
+        "활동을 마친 뒤 장비와 장소를 정한 차례대로 정리한다."
+      ],
+      "assessmentPrompt": "장소를 살펴 알맞은 활동을 고르고 필요한 장비를 챙겨 참여한 뒤, 정한 차례에 따라 장비와 장소를 정리해 보자.",
+      "misconceptions": [
+        "장비는 쓰던 자리에 두면 다음 사람이 알아서 정리한다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-09]",
+        "code": "[6체02-09]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0209.reflect": {
+      "evidence": [
+        "고른 활동이 그 장소에 맞았는지 근거를 들어 판단한다.",
+        "다음에 바꿀 장소나 장비를 정해 계획에 반영한다."
+      ],
+      "assessmentPrompt": "고른 활동이 그 장소에 맞았는지 근거를 들어 판단하고, 다음에는 장소나 장비를 어떻게 바꿀지 계획에 적어 보자.",
+      "misconceptions": [
+        "한 번 정한 장소는 계절이 바뀌어도 그대로 쓰면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-09]",
+        "code": "[6체02-09]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0209.understand": {
+      "evidence": [
+        "장소의 조건을 살펴 알맞은 활동을 고르는 기준을 든다.",
+        "정리까지가 활동에 들어가는 까닭을 근거로 설명한다."
+      ],
+      "assessmentPrompt": "우리 학교 운동장과 뒷마당의 조건을 적고, 각 장소에 알맞은 활동을 고르는 기준을 두 가지 말해 보자.",
+      "misconceptions": [
+        "활동이 끝나면 정리는 하지 않아도 되는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-09]",
+        "code": "[6체02-09]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0210.perform": {
+      "evidence": [
+        "정한 목표에 맞추어 연습 계획을 지키며 경기에 참여한다.",
+        "경기가 끝나면 상대가 잘한 점을 찾아 말로 전한다."
+      ],
+      "assessmentPrompt": "정한 목표에 맞추어 연습한 뒤 경기에 참여하고, 경기가 끝나면 상대 팀에게 잘한 점 한 가지를 찾아 말해 주자.",
+      "misconceptions": [
+        "상대를 칭찬하면 우리 팀이 약해 보인다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-10]",
+        "code": "[6체02-10]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0210.reflect": {
+      "evidence": [
+        "목표에 얼마나 다가갔는지 기록을 들어 판단한다.",
+        "다음 목표를 자기 수준에 맞게 다시 정해 적는다."
+      ],
+      "assessmentPrompt": "이번 달 기록을 보고 목표에 얼마나 다가갔는지 판단해 적고, 다음 목표를 자기 수준에 맞게 다시 정해 보자.",
+      "misconceptions": [
+        "목표를 못 이루면 노력한 과정은 남는 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-10]",
+        "code": "[6체02-10]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0210.understand": {
+      "evidence": [
+        "이룰 수 있는 목표와 지나친 목표를 갈라 까닭을 말한다.",
+        "상대 팀이 잘한 점을 찾아 근거를 들어 말한다."
+      ],
+      "assessmentPrompt": "이번 달에 이룰 목표를 하나 정하고 그것이 지나치지 않은 까닭을 적은 뒤, 상대 팀에서 배우고 싶은 점을 하나 찾아 말해 보자.",
+      "misconceptions": [
+        "목표는 높게 잡을수록 좋은 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-10]",
+        "code": "[6체02-10]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0211.perform": {
+      "evidence": [
+        "회의에서 모든 팀원의 의견을 듣고 역할을 정해 맡는다.",
+        "어려워하는 친구에게 방법을 알려 주며 함께 활동한다."
+      ],
+      "assessmentPrompt": "팀 회의에서 모두의 의견을 한 번씩 듣고 역할을 정한 뒤, 어려워하는 친구에게 방법을 알려 주며 경기에 참여해 보자.",
+      "misconceptions": [
+        "배려는 잘하는 친구가 대신 해 주는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-11]",
+        "code": "[6체02-11]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0211.reflect": {
+      "evidence": [
+        "회의에서 말이 적었던 사람을 살펴 그 까닭을 짚는다.",
+        "다음 회의에서 쓸 발언 규칙을 팀과 정해 적는다."
+      ],
+      "assessmentPrompt": "지난 회의에서 말을 적게 한 사람이 누구였는지 살펴 적고, 모두가 말할 수 있도록 다음 회의에서 쓸 규칙을 정해 보자.",
+      "misconceptions": [
+        "말을 하지 않는 사람은 의견이 없는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-11]",
+        "code": "[6체02-11]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0211.understand": {
+      "evidence": [
+        "팀에서 필요한 역할을 나누어 적고 맡을 사람을 정한다.",
+        "함께 의논해 정하는 방식과 한 사람이 정하는 방식의 차이를 든다."
+      ],
+      "assessmentPrompt": "우리 팀에 필요한 역할을 모두 적고, 역할을 정할 때 함께 의논하는 방식과 한 사람이 정하는 방식이 어떻게 다른지 말해 보자.",
+      "misconceptions": [
+        "잘하는 사람이 정하면 팀이 가장 빨리 좋아진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-11]",
+        "code": "[6체02-11]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0212.perform": {
+      "evidence": [
+        "사용한 용구를 정한 자리에 제대로 두고 상태를 살핀다.",
+        "시설을 오래 쓰기 위한 행동을 골라 활동 중에 실천한다."
+      ],
+      "assessmentPrompt": "오늘 쓴 용구의 상태를 살펴 표에 적고 정한 자리에 두며, 시설을 오래 쓰기 위해 할 수 있는 행동을 하나 실천해 보자.",
+      "misconceptions": [
+        "망가진 용구는 알리지 않고 그냥 두어도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-12]",
+        "code": "[6체02-12]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0212.reflect": {
+      "evidence": [
+        "시설을 쓰며 고마웠던 점과 아쉬웠던 점을 나누어 말한다.",
+        "더 나은 이용을 위해 학교에 낼 제안을 하나 정한다."
+      ],
+      "assessmentPrompt": "시설을 쓰면서 고마웠던 점과 아쉬웠던 점을 나누어 적고, 더 잘 쓰기 위한 제안을 하나 정해 학교에 내 보자.",
+      "misconceptions": [
+        "불편한 점은 말해도 달라지지 않으니 참는 것이 낫다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-12]",
+        "code": "[6체02-12]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0212.understand": {
+      "evidence": [
+        "학교와 마을에서 쓸 수 있는 운동 시설을 조사해 적는다.",
+        "그 시설이 있어서 좋은 점을 근거를 들어 말한다."
+      ],
+      "assessmentPrompt": "학교와 마을에서 쓸 수 있는 운동 시설을 조사해 표에 적고, 그 시설이 우리 생활에 주는 좋은 점을 두 가지 말해 보자.",
+      "misconceptions": [
+        "운동 시설은 원래 있는 것이니 살펴볼 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 21,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (2) 스포츠 > (가) 성취기준 해설 [6체02-12]",
+        "code": "[6체02-12]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0301.perform": {
+      "evidence": [
+        "세 갈래의 대표 동작을 하나씩 따라 해 보인다.",
+        "따라 하며 갈래마다 다른 점을 몸으로 확인해 짚는다."
+      ],
+      "assessmentPrompt": "세 갈래에서 대표 동작을 하나씩 골라 따라 해 보고, 몸을 쓰는 방식이 어떻게 달랐는지 활동 뒤에 짚어 보자.",
+      "misconceptions": [
+        "동작을 따라 하기만 하면 갈래의 특징을 다 안 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-01]",
+        "code": "[6체03-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0301.reflect": {
+      "evidence": [
+        "세 갈래 가운데 더 깊이 해 보고 싶은 것을 근거와 함께 고른다.",
+        "고른 갈래에서 익힐 동작을 하나 정해 적는다."
+      ],
+      "assessmentPrompt": "세 갈래 가운데 더 해 보고 싶은 것을 근거와 함께 고르고, 그 갈래에서 익힐 동작을 하나 정해 적어 보자.",
+      "misconceptions": [
+        "익숙한 갈래만 고르면 표현 실력이 는다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-01]",
+        "code": "[6체03-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0301.understand": {
+      "evidence": [
+        "세 표현 갈래의 기본 동작이 어떻게 다른지 견주어 말한다.",
+        "작품을 보고 어느 갈래인지 근거를 들어 가른다."
+      ],
+      "assessmentPrompt": "창작체조, 민속무용, 스트리트댄스 영상을 보고 세 갈래로 나눈 뒤, 동작과 구성에서 무엇이 달랐는지 설명해 보자.",
+      "misconceptions": [
+        "표현 활동은 모두 같은 방식으로 만든다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-01]",
+        "code": "[6체03-01]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0302.perform": {
+      "evidence": [
+        "체조 동작을 늘이거나 멈추어 표현 동작으로 바꾼다.",
+        "바꾼 동작을 음악의 박에 맞추어 이어서 보인다."
+      ],
+      "assessmentPrompt": "앞구르기나 균형 잡기 동작을 골라 속도와 멈춤을 바꿔 표현 동작으로 만들고, 음악에 맞추어 여덟 박 동안 보이자.",
+      "misconceptions": [
+        "음악은 배경일 뿐 동작과 맞출 필요는 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-02]",
+        "code": "[6체03-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0302.reflect": {
+      "evidence": [
+        "자기 동작에서 아름답게 살아난 부분을 짚는다.",
+        "친구 의견을 받아 한 동작의 속도나 크기를 고친다."
+      ],
+      "assessmentPrompt": "모둠에 보여 준 뒤 가장 인상 깊은 부분이 어디였는지 듣고, 한 동작의 속도나 크기를 고쳐 다시 보이자.",
+      "misconceptions": [
+        "표현은 사람마다 다르니 고칠 것이 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-02]",
+        "code": "[6체03-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0302.understand": {
+      "evidence": [
+        "운동 동작이 표현으로 바뀔 때 무엇이 달라지는지 말한다.",
+        "아름답게 보이는 동작의 조건을 두 가지 든다."
+      ],
+      "assessmentPrompt": "체조 동작을 경기용과 표현용으로 나누어 보여 주는 영상을 보고, 무엇이 달라졌는지 두 가지 적어 보자.",
+      "misconceptions": [
+        "동작이 어려울수록 아름다운 표현이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-02]",
+        "code": "[6체03-02]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0303.perform": {
+      "evidence": [
+        "모둠에서 동작을 골라 서른두 박짜리 작품으로 구성한다.",
+        "구성한 작품을 미리 정한 대형을 지키며 발표한다."
+      ],
+      "assessmentPrompt": "모둠이 동작 네 개를 골라 서른두 박짜리 작품으로 구성하고, 대형을 지키며 다른 모둠 앞에서 발표해 보자.",
+      "misconceptions": [
+        "대형은 발표할 때 자리만 잡으면 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-03]",
+        "code": "[6체03-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0303.reflect": {
+      "evidence": [
+        "다른 모둠 작품에서 배울 점을 근거를 들어 말한다.",
+        "우리 작품에서 고칠 부분을 하나 정해 다시 구성한다."
+      ],
+      "assessmentPrompt": "다른 모둠 발표를 보고 배울 점을 근거와 함께 적고, 우리 작품에서 고칠 부분을 하나 정해 다시 구성해 보자.",
+      "misconceptions": [
+        "감상은 잘했는지 못했는지만 가리는 일이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-03]",
+        "code": "[6체03-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0303.understand": {
+      "evidence": [
+        "작품을 시작·펼침·맺음으로 나누어 짜임을 말한다.",
+        "동작을 잇는 방법을 두 가지 이상 찾아 든다."
+      ],
+      "assessmentPrompt": "짧은 창작체조 작품을 보고 시작·펼침·맺음이 어디인지 표시하고, 동작을 잇는 방법을 두 가지 찾아 적어 보자.",
+      "misconceptions": [
+        "동작을 많이 넣으면 좋은 작품이 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-03]",
+        "code": "[6체03-03]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0304.perform": {
+      "evidence": [
+        "전통 표현의 기본 동작을 장단에 맞추어 해 보인다.",
+        "문화의 특징이 드러나도록 손과 발의 모양을 맞춘다."
+      ],
+      "assessmentPrompt": "장단에 맞추어 전통 표현 기본 동작을 여덟 박 동안 하고, 손과 발의 모양이 그 문화의 특징을 어떻게 드러내는지 말해 보자.",
+      "misconceptions": [
+        "장단은 빠르기만 맞추면 되는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-04]",
+        "code": "[6체03-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0304.reflect": {
+      "evidence": [
+        "익힌 동작에서 어려웠던 부분과 그 까닭을 짚는다.",
+        "다른 문화의 표현을 존중하는 태도를 말이나 글로 나타낸다."
+      ],
+      "assessmentPrompt": "익힌 전통 동작에서 어려웠던 부분과 까닭을 적고, 다른 나라의 표현을 존중하기 위해 지킬 점을 한 문장으로 써 보자.",
+      "misconceptions": [
+        "우리 것이 아닌 표현은 배울 가치가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-04]",
+        "code": "[6체03-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0304.understand": {
+      "evidence": [
+        "전통 표현 동작에 담긴 생활 모습을 찾아 말한다.",
+        "나라나 지역에 따라 동작이 다른 까닭을 근거로 든다."
+      ],
+      "assessmentPrompt": "우리나라 민속무용과 다른 나라 민속무용 영상을 보고 동작에 담긴 생활 모습을 각각 찾아 적어 보자.",
+      "misconceptions": [
+        "전통 표현은 옛날 것이라 오늘의 생활과 상관없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-04]",
+        "code": "[6체03-04]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0305.perform": {
+      "evidence": [
+        "조사한 특성을 살려 모둠 작품을 짜고 차례를 정한다.",
+        "정한 차례대로 장단에 맞추어 모둠이 발표한다."
+      ],
+      "assessmentPrompt": "조사한 특성을 살려 모둠 작품의 차례를 정하고, 장단에 맞추어 다른 모둠 앞에서 발표해 보자.",
+      "misconceptions": [
+        "작품 차례는 발표하기 바로 전에 정해도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-05]",
+        "code": "[6체03-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0305.reflect": {
+      "evidence": [
+        "발표한 작품이 그 전통의 뜻을 잘 담았는지 근거로 판단한다.",
+        "친구들의 감상을 듣고 고칠 부분을 하나 정한다."
+      ],
+      "assessmentPrompt": "우리 작품이 그 전통의 뜻을 잘 담았는지 근거를 들어 판단하고, 친구들의 감상을 들은 뒤 고칠 부분을 하나 정해 보자.",
+      "misconceptions": [
+        "옛 방식대로만 하면 전통을 잘 살린 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-05]",
+        "code": "[6체03-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0305.understand": {
+      "evidence": [
+        "고른 전통 표현이 언제 어떤 자리에서 쓰였는지 조사해 말한다.",
+        "그 쓰임이 동작에 어떻게 남아 있는지 짚는다."
+      ],
+      "assessmentPrompt": "모둠이 고른 전통 표현이 어떤 자리에서 쓰였는지 조사해 적고, 그 쓰임이 동작에 남아 있는 곳을 찾아 표시해 보자.",
+      "misconceptions": [
+        "전통 표현은 동작만 익히면 되는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 23,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-05]",
+        "code": "[6체03-05]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0306.perform": {
+      "evidence": [
+        "주제를 정해 틀에 매이지 않는 동작을 만들어 보인다.",
+        "만든 동작을 되풀이할 수 있도록 차례를 정해 익힌다."
+      ],
+      "assessmentPrompt": "“파도”나 “도시”처럼 주제를 하나 정해 틀에 매이지 않는 동작 네 개를 만들고, 되풀이할 수 있도록 차례를 정해 익혀 보자.",
+      "misconceptions": [
+        "즉흥으로 한 동작은 다시 할 수 없으니 적어 둘 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-06]",
+        "code": "[6체03-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0306.reflect": {
+      "evidence": [
+        "만든 동작이 주제를 잘 나타냈는지 근거로 판단한다.",
+        "친구들의 의견을 받아 동작 하나를 바꾸어 정한다."
+      ],
+      "assessmentPrompt": "만든 동작이 주제를 잘 나타냈는지 근거를 들어 판단하고, 친구들의 의견을 받아 동작 하나를 바꾸어 다시 익혀 보자.",
+      "misconceptions": [
+        "자유로운 표현은 남의 의견을 받을 필요가 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-06]",
+        "code": "[6체03-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0306.understand": {
+      "evidence": [
+        "정해진 틀이 있는 동작과 자유로운 동작을 갈라 말한다.",
+        "자유로운 표현에서도 지켜야 할 조건을 찾아 든다."
+      ],
+      "assessmentPrompt": "정해진 순서가 있는 동작과 자유롭게 만든 동작을 견주어 무엇이 다른지 적고, 자유롭게 할 때도 지킬 점을 말해 보자.",
+      "misconceptions": [
+        "자유로운 표현에는 아무 규칙도 없다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-06]",
+        "code": "[6체03-06]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0307.perform": {
+      "evidence": [
+        "주제와 흐름을 정해 모둠 작품을 새로 구성한다.",
+        "구성한 작품을 무대 공간을 나누어 쓰며 발표한다."
+      ],
+      "assessmentPrompt": "모둠이 주제와 흐름을 정해 작품을 구성하고, 무대 공간을 앞뒤로 나누어 쓰면서 발표해 보자.",
+      "misconceptions": [
+        "무대는 넓게 쓰기만 하면 좋은 발표라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-07]",
+        "code": "[6체03-07]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0307.reflect": {
+      "evidence": [
+        "보는 사람이 읽어 낸 주제와 우리가 정한 주제를 견준다.",
+        "차이가 난 부분을 고쳐 작품을 다시 다듬는다."
+      ],
+      "assessmentPrompt": "보는 사람이 읽어 낸 주제를 물어 우리가 정한 주제와 견주고, 차이가 난 부분을 고쳐 작품을 다시 다듬어 보자.",
+      "misconceptions": [
+        "보는 사람이 다르게 읽으면 그 사람이 잘못 본 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-07]",
+        "code": "[6체03-07]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0307.understand": {
+      "evidence": [
+        "작품의 주제와 흐름이 이어지는 곳을 찾아 말한다.",
+        "흐름이 끊기면 무엇이 달라지는지 근거를 든다."
+      ],
+      "assessmentPrompt": "짧은 현대 표현 작품을 보고 주제가 드러나는 곳과 흐름이 이어지는 곳을 표시한 뒤, 그 까닭을 설명해 보자.",
+      "misconceptions": [
+        "동작이 화려하면 주제는 저절로 드러난다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-07]",
+        "code": "[6체03-07]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0308.perform": {
+      "evidence": [
+        "익숙하지 않은 갈래의 동작을 끝까지 따라 해 본다.",
+        "친구의 표현을 끝까지 보고 좋았던 점을 근거와 함께 전한다."
+      ],
+      "assessmentPrompt": "평소에 해 보지 않은 갈래의 동작을 골라 끝까지 따라 해 보고, 친구의 표현에서 좋았던 점을 근거와 함께 말해 주자.",
+      "misconceptions": [
+        "낯선 갈래는 자기와 맞지 않으니 해 보지 않아도 된다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-08]",
+        "code": "[6체03-08]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0308.reflect": {
+      "evidence": [
+        "여러 갈래를 겪은 뒤 달라진 자기 생각을 적는다.",
+        "앞으로 이어 갈 표현 활동을 하나 골라 계획한다."
+      ],
+      "assessmentPrompt": "여러 갈래를 겪고 나서 달라진 생각을 적고, 앞으로 이어 갈 표현 활동을 하나 골라 언제 어떻게 할지 계획해 보자.",
+      "misconceptions": [
+        "표현 활동은 학교에서만 하는 것이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-08]",
+        "code": "[6체03-08]"
+      }
+    },
+    "kr.mt.physical-education.5-6.6che0308.understand": {
+      "evidence": [
+        "여러 갈래의 작품에서 아름답다고 느낀 점을 갈래별로 적는다.",
+        "느낌이 서로 다른 까닭을 근거를 들어 말한다."
+      ],
+      "assessmentPrompt": "세 갈래의 작품을 보고 각각 아름답다고 느낀 점을 적은 뒤, 친구와 느낌이 다른 까닭을 이야기해 보자.",
+      "misconceptions": [
+        "아름다움을 재는 기준은 하나뿐이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-2022-physical-education-pdf",
+        "printedPage": 24,
+        "section": "나. 성취기준 > [초등학교 5∼6학년] > (3) 표현 > (가) 성취기준 해설 [6체03-08]",
+        "code": "[6체03-08]"
+      }
+    }
+  }
+}

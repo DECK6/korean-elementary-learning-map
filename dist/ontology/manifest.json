@@ -2,16 +2,16 @@
   "datasetRelease": "kr-full-depth-v0.5",
   "files": [
     {
-      "bytes": 30403153,
+      "bytes": 31505743,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "43d350b14e9af6150a7099b31aaf8da1c58443dd07a22b378444275a16a742b0"
+      "sha256": "eaf5f9c7dbac01faa6cd092cedf8113a362c3f35c40f9edcc22e4a4b04ea8b7c"
     },
     {
-      "bytes": 22005392,
+      "bytes": 22720814,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "f5cf0bdb281399d2276e11684e15ad53654d48f23ea048ba60ec34991a5a9ffb"
+      "sha256": "a206dbf48f6bc65f539d00466c3b0fcc601fb9a9ed210f17237a30f02a3caea0"
     }
   ],
   "formatVersion": 3,
@@ -22,14 +22,14 @@
     "CoverageGap": 46,
     "Curriculum": 11,
     "DatasetRelease": 1,
-    "EvidenceCriterion": 4008,
+    "EvidenceCriterion": 3912,
     "GradeBand": 5,
     "LearningCluster": 152,
     "LearningDomain": 79,
     "LearningTopic": 1956,
     "PrerequisiteAssertion": 2291,
     "SourceDocument": 16,
-    "SourceLocator": 2857,
+    "SourceLocator": 3796,
     "StandardTopicAlignment": 1956,
     "Subject": 12,
     "VerificationRecord": 6851
