@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/DECK6/korean-elementary-learning-map/main/schema/kr-dependencies-candidate.schema.json",
+  "title": "Korean Elementary Learning Map — pedagogical candidate relations",
+  "description": "Candidate layer of the K-12 relation contract v1. Code order, decomposition order, and repository reasoning; product surfaces these as recommended order only.",
+  "type": "object",
+  "required": ["version", "layer", "edgeCount", "graphPolicy", "dependencies"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "type": "string" },
+    "taxonomyVersion": { "type": "string" },
+    "locale": { "const": "ko-KR" },
+    "country": { "const": "KR" },
+    "layer": { "const": "pedagogical-candidate" },
+    "edgeCount": { "type": "integer", "minimum": 0 },
+    "graphPolicy": {
+      "type": "object",
+      "required": ["relation", "acyclic", "edgeSelection", "crossSubjectEdges", "layers"],
+      "properties": {
+        "relation": { "const": "recommended-order" },
+        "acyclic": { "const": true },
+        "edgeSelection": { "const": "pedagogical-candidate-only" },
+        "crossSubjectEdges": { "const": "none" },
+        "layers": { "$ref": "#/$defs/layerPolicy" }
+      },
+      "additionalProperties": false
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "layer",
+          "topicId",
+          "prerequisiteId",
+          "relationKind",
+          "basisKind",
+          "scope",
+          "strength",
+          "reviewStatus",
+          "reason",
+          "basis",
+          "source",
+          "sourceRefs"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^kr\\.dep\\.[0-9a-f]{20}$" },
+          "layer": { "const": "pedagogical-candidate" },
+          "topicId": { "type": "string", "pattern": "^kr\\.mt\\." },
+          "prerequisiteId": { "type": "string", "pattern": "^kr\\.mt\\." },
+          "relationKind": { "const": "recommended-before" },
+          "basisKind": {
+            "enum": ["official-code-order", "decomposition-order", "repository-authored", "expert-authored"]
+          },
+          "scope": { "$ref": "#/$defs/scope" },
+          "strength": { "enum": ["hard", "soft"] },
+          "reviewStatus": { "const": "candidate" },
+          "reason": { "type": "string", "minLength": 8 },
+          "basis": { "type": "string", "minLength": 1 },
+          "source": { "type": "string", "minLength": 1 },
+          "sourceRefs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "sourceLocator": {
+            "type": "object",
+            "required": ["sourceId"],
+            "properties": {
+              "sourceId": { "type": "string", "minLength": 1 },
+              "printedPage": { "type": "integer", "minimum": 1 },
+              "pdfPage": { "type": "integer", "minimum": 1 },
+              "section": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "scope": {
+      "enum": ["same-standard", "same-domain", "same-subject", "cross-school-level"]
+    },
+    "layerPolicy": {
+      "type": "object",
+      "required": ["official", "pedagogical-candidate"],
+      "properties": {
+        "official": { "$ref": "#/$defs/layerPolicyEntry" },
+        "pedagogical-candidate": { "$ref": "#/$defs/layerPolicyEntry" }
+      },
+      "additionalProperties": false
+    },
+    "layerPolicyEntry": {
+      "type": "object",
+      "required": ["file", "relationKind", "basisKind", "reviewStatus", "edgeCount", "derivesOntologyViews"],
+      "properties": {
+        "file": { "type": "string", "minLength": 1 },
+        "relationKind": { "type": "string", "minLength": 1 },
+        "basisKind": { "type": "string", "minLength": 1 },
+        "reviewStatus": { "type": "string", "minLength": 1 },
+        "edgeCount": { "type": "integer", "minimum": 0 },
+        "derivesOntologyViews": { "type": "boolean" },
+        "note": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

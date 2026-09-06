@@ -1,0 +1,1473 @@
+{
+  "$schema": "../../../schema/kr-content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "수학",
+  "authoredAt": "2026-09-05",
+  "sourceRefs": [
+    "kr-ncic-math-pdf-2022"
+  ],
+  "note": "교육부 고시 제2022-33호 별책 8 수학과 교육과정의 초등학교 1∼2학년군 성취기준, 성취기준 해설, 성취기준 적용 시 고려 사항(인쇄 p.11∼16)과 평가의 방향(인쇄 p.47)을 근거로 새로 쓴 초안이다. 인쇄 쪽 = PDF 쪽 − 6이며 공식 문장은 재수록하지 않았다.",
+  "entries": {
+    "kr.mt.math.change-relationships.g1-2.s2-02-01.application": {
+      "evidence": [
+        "규칙을 찾아 다음에 올 것이나 중간에 빠진 것을 알아낸다.",
+        "찾은 규칙이 배열 전체에 맞는지 되짚어 확인한다."
+      ],
+      "assessmentPrompt": "2, 4, 6, □, 10에서 빠진 수를 구하게 하고, 그 규칙이 앞뒤 수에 모두 맞는지 확인해 말하게 하라.",
+      "misconceptions": [
+        "빠진 자리만 앞 수에 이어 채우고 뒤에 오는 수와 맞는지 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (2) 변화와 관계 > (가) 성취기준 해설",
+        "code": "[2수02-01]"
+      }
+    },
+    "kr.mt.math.change-relationships.g1-2.s2-02-01.concept": {
+      "evidence": [
+        "배열에서 되풀이되는 부분과 늘어나는 부분을 구분하여 말한다.",
+        "규칙이 있는 배열과 규칙을 찾기 어려운 배열을 보고 나눈다."
+      ],
+      "assessmentPrompt": "빨강, 파랑, 파랑이 되풀이되는 무늬를 보여 주고 어떤 규칙인지 말한 뒤, 규칙이 없는 무늬와 무엇이 다른지 설명하게 하라.",
+      "misconceptions": [
+        "앞의 두세 개만 보고 규칙을 정해 뒤쪽에서 어긋나는 것을 확인하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (2) 변화와 관계 > (가) 성취기준 해설",
+        "code": "[2수02-01]"
+      }
+    },
+    "kr.mt.math.change-relationships.g1-2.s2-02-01.representation": {
+      "evidence": [
+        "찾은 규칙을 말, 수, 그림, 몸동작 가운데 두 가지 방법으로 나타낸다.",
+        "같은 규칙을 다른 방법으로 나타낸 것을 보고 서로 연결한다."
+      ],
+      "assessmentPrompt": "박수와 무릎치기가 되풀이되는 규칙을 보여 주고, 같은 규칙을 그림과 수로도 나타내게 한 뒤 세 표현이 왜 같은지 말하게 하라.",
+      "misconceptions": [
+        "몸동작 규칙을 그림으로 옮길 때 되풀이되는 한 덩이의 길이를 다르게 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (2) 변화와 관계 > (가) 성취기준 해설",
+        "code": "[2수02-01]"
+      }
+    },
+    "kr.mt.math.change-relationships.g1-2.s2-02-02.application": {
+      "evidence": [
+        "정한 규칙에 맞게 물체나 수를 끝까지 배열하고 그 차례를 설명한다.",
+        "친구의 배열에서 규칙을 찾아내어 이어서 놓는다."
+      ],
+      "assessmentPrompt": "색깔과 모양을 함께 쓰는 규칙을 스스로 정해 열 칸을 채우게 하고, 짝이 그 규칙을 찾아 세 칸을 더 잇게 하라.",
+      "misconceptions": [
+        "배열 도중에 규칙을 바꾸어 놓고도 처음 규칙대로 놓았다고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (2) 변화와 관계 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.change-relationships.g1-2.s2-02-02.concept": {
+      "evidence": [
+        "자신이 정한 규칙을 다른 사람이 알아듣도록 말로 밝힌다.",
+        "규칙이 분명한 배열과 그렇지 않은 배열을 구분하여 고른다."
+      ],
+      "assessmentPrompt": "스스로 만든 무늬 규칙을 말로 설명하게 하고, 짝이 그 설명만 듣고 다음에 올 것을 맞힐 수 있는지 확인하게 하라.",
+      "misconceptions": [
+        "머릿속으로만 규칙을 정하고 말로 밝히지 못해 다른 사람이 배열을 이어 가지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (2) 변화와 관계 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.change-relationships.g1-2.s2-02-02.representation": {
+      "evidence": [
+        "자신이 정한 규칙을 그림이나 기호로 간단히 표현한다.",
+        "수 배열표나 덧셈표에 자신의 규칙을 나타내어 보여 준다."
+      ],
+      "assessmentPrompt": "수 배열표에서 3씩 커지는 규칙으로 칸을 색칠하게 하고, 그 규칙을 기호나 짧은 말로 적어 두게 하라.",
+      "misconceptions": [
+        "색칠한 칸의 규칙과 적어 둔 설명이 서로 달라 두 표현이 이어지지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 13,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (2) 변화와 관계 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수02-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-01.application": {
+      "evidence": [
+        "정한 기준에 따라 자료를 빠짐없이 분류하고 개수를 센다.",
+        "분류한 결과를 보고 알게 된 점을 두 가지 말한다."
+      ],
+      "assessmentPrompt": "학용품을 종류에 따라 나누게 하고 각각 몇 개인지 센 뒤, 가장 많은 것이 무엇인지 말하게 하라.",
+      "misconceptions": [
+        "어느 무리에도 넣기 어려운 자료를 빼놓고 세어 전체 개수가 맞지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-01.concept": {
+      "evidence": [
+        "분류 기준이 분명한 경우와 그렇지 않은 경우를 구분하여 말한다.",
+        "같은 자료도 기준에 따라 다르게 나뉨을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "‘예쁜 것과 예쁘지 않은 것’으로 나눈 예를 보여 주고, 이 기준으로는 분류하기 어려운 까닭을 말하게 하라.",
+      "misconceptions": [
+        "‘예쁘다’처럼 사람마다 다르게 보는 말을 분류 기준으로 삼는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-01.representation": {
+      "evidence": [
+        "분류한 결과를 자리를 나누어 놓거나 그림으로 나타낸다.",
+        "무리마다 이름을 붙여 무엇으로 나누었는지 보여 준다."
+      ],
+      "assessmentPrompt": "단추를 색깔에 따라 나누어 놓게 하고, 무리마다 이름과 개수를 적어 다른 사람이 알아보게 나타내게 하라.",
+      "misconceptions": [
+        "무리에 이름을 붙이지 않아 어떤 기준으로 나누었는지 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수04-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-02.application": {
+      "evidence": [
+        "모은 자료를 기준에 따라 분류하여 표의 칸을 채운다.",
+        "만든 표를 보고 가장 많은 것과 가장 적은 것을 찾아 말한다."
+      ],
+      "assessmentPrompt": "학급 친구들이 좋아하는 과일을 조사하게 하고, 그 결과를 표로 정리한 뒤 가장 많은 과일을 말하게 하라.",
+      "misconceptions": [
+        "조사한 자료를 표로 옮기며 같은 사람을 두 번 세어 합이 실제 인원보다 커진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (가) 성취기준 해설",
+        "code": "[2수04-02]"
+      }
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-02.concept": {
+      "evidence": [
+        "표에서 항목과 수가 각각 어디에 적히는지 구분하여 말한다.",
+        "표로 나타내면 수를 비교하기 쉬운 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "같은 자료를 흩어 놓은 그림과 표로 각각 보여 주고, 어느 쪽이 수를 비교하기 쉬운지 고르고 까닭을 말하게 하라.",
+      "misconceptions": [
+        "표의 합계 칸을 항목 가운데 하나로 여겨 다시 세어 더한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (가) 성취기준 해설",
+        "code": "[2수04-02]"
+      }
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-02.representation": {
+      "evidence": [
+        "분류한 자료를 표의 항목과 수로 빠짐없이 옮겨 표현한다.",
+        "표에 제목과 항목 이름을 적어 무엇을 나타내는지 보여 준다."
+      ],
+      "assessmentPrompt": "조사한 자료를 표로 나타내게 하고, 표의 제목과 합계를 적은 뒤 합계가 조사한 인원과 같은지 확인하게 하라.",
+      "misconceptions": [
+        "표에 제목을 적지 않아 무엇을 조사한 표인지 알 수 없게 나타낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (가) 성취기준 해설",
+        "code": "[2수04-02]"
+      }
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-03.application": {
+      "evidence": [
+        "표의 수만큼 ○를 아래에서부터 빠짐없이 채워 그래프를 완성하고 확인한다.",
+        "만든 그래프를 보고 알 수 있는 점을 두 가지 설명한다."
+      ],
+      "assessmentPrompt": "조사한 표를 보고 ○를 이용한 그래프로 나타내게 한 뒤, 그래프를 보고 알 수 있는 점을 두 가지 말하게 하라.",
+      "misconceptions": [
+        "○를 아래부터 이어 채우지 않고 띄엄띄엄 그려 높이를 비교할 수 없게 만든다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (가) 성취기준 해설",
+        "code": "[2수04-03]"
+      }
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-03.concept": {
+      "evidence": [
+        "그래프에서 한 칸이 무엇을 나타내는지 확인하여 말한다.",
+        "그래프로 나타내면 많고 적음을 한눈에 알 수 있는 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "같은 자료를 표와 그래프로 각각 보여 주고, 어느 쪽이 많고 적음을 한눈에 알기 쉬운지 고르고 까닭을 말하게 하라.",
+      "misconceptions": [
+        "칸의 크기가 다른 그래프에서도 칸 수만 세어 많고 적음을 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (가) 성취기준 해설",
+        "code": "[2수04-03]"
+      }
+    },
+    "kr.mt.math.data-probability.g1-2.s2-04-03.representation": {
+      "evidence": [
+        "그래프의 가로와 세로에 항목과 수를 알맞게 적어 표현한다.",
+        "같은 자료를 표와 그래프로 각각 나타내어 서로 연결한다."
+      ],
+      "assessmentPrompt": "같은 자료를 표와 그래프로 각각 나타내게 하고, 표의 어느 수가 그래프의 어느 부분과 짝이 되는지 짚게 하라.",
+      "misconceptions": [
+        "그래프의 가로와 세로에 무엇을 적을지 정하지 못해 항목과 수를 뒤바꾸어 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 16,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (4) 자료와 가능성 > (가) 성취기준 해설",
+        "code": "[2수04-03]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-01.application": {
+      "evidence": [
+        "생활 주변에서 배운 세 가지 모양의 물건을 찾아 모은다.",
+        "여러 모양을 이어 붙여 정한 주제의 모양을 구성한다."
+      ],
+      "assessmentPrompt": "상자 모양과 둥근 기둥 모양 물건으로 자동차를 만들게 하고, 어느 자리에 어떤 모양을 왜 썼는지 말하게 하라.",
+      "misconceptions": [
+        "바퀴 자리에 상자 모양을 놓고도 모양의 특징을 살펴 고쳐 보지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-01.concept": {
+      "evidence": [
+        "상자 모양, 둥근 기둥 모양, 공 모양을 특징에 따라 구분하여 말한다.",
+        "잘 굴러가는 모양과 잘 쌓이는 모양을 나누고 그렇게 나눈 근거를 든다."
+      ],
+      "assessmentPrompt": "여러 물건을 늘어놓고 굴러가는 것끼리 모으게 한 뒤, 왜 그렇게 모았는지 모양의 특징을 들어 설명하게 하라.",
+      "misconceptions": [
+        "물건의 색깔이나 크기를 기준으로 모아 놓고 모양으로 나누었다고 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-01.representation": {
+      "evidence": [
+        "만든 모양을 그림으로 그리고 쓰인 모양의 이름을 함께 적는다.",
+        "생활 속 물건과 같은 모양의 그림을 찾아 짝지어 연결한다."
+      ],
+      "assessmentPrompt": "만든 모양을 그림으로 그리게 한 뒤, 그림에서 상자 모양과 공 모양이 쓰인 곳을 짚어 설명하게 하라.",
+      "misconceptions": [
+        "그림에서는 둥글게 그려 놓고 상자 모양을 썼다고 말해 실물과 그림이 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-02.application": {
+      "evidence": [
+        "친구의 설명을 듣고 쌓기나무로 같은 모양을 만든다.",
+        "자신이 만든 모양의 쌓는 순서를 위치를 나타내는 말로 차례대로 설명한다."
+      ],
+      "assessmentPrompt": "쌓기나무 다섯 개로 모양을 만들게 하고, 짝이 보지 않은 채 설명만 듣고 똑같이 쌓을 수 있도록 말하게 하라.",
+      "misconceptions": [
+        "‘여기’, ‘저기’ 같은 말에 기대어 설명해 듣는 사람이 같은 모양을 만들지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-02]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-02.concept": {
+      "evidence": [
+        "앞, 뒤, 옆, 위와 같이 위치를 나타내는 말을 알맞게 선택한다.",
+        "같은 쌓기나무 모양도 보는 자리에 따라 다르게 설명될 수 있음을 말한다."
+      ],
+      "assessmentPrompt": "쌓기나무 세 개로 만든 모양을 보여 주고, 맨 위 나무가 어디에 있는지 위치를 나타내는 말로 설명하게 하라.",
+      "misconceptions": [
+        "보는 방향이 바뀌면 왼쪽과 오른쪽이 달라진다는 점을 놓치고 늘 자기 기준으로만 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-02]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-02.representation": {
+      "evidence": [
+        "쌓기나무로 만든 모양을 층수가 드러나게 그림으로 표현한다.",
+        "그림으로 나타낸 모양을 다시 쌓기나무로 옮겨 구성한다."
+      ],
+      "assessmentPrompt": "2층으로 쌓은 모양을 그림으로 그리게 한 뒤, 그림만 보고 짝이 같은 모양을 쌓을 수 있는지 확인하게 하라.",
+      "misconceptions": [
+        "뒤에 가려진 쌓기나무를 그리지 않아 그림과 실제 모양의 개수가 다르다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-02]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-03.application": {
+      "evidence": [
+        "생활 주변 물건에서 삼각형, 사각형, 원 모양을 찾아낸다.",
+        "여러 도형 조각을 이어 붙여 정해진 모양을 구성한다."
+      ],
+      "assessmentPrompt": "칠교판 조각으로 집 모양을 만들게 하고, 어떤 도형을 몇 개 썼는지 세어 말하게 하라.",
+      "misconceptions": [
+        "조각을 겹쳐 놓고도 쓴 도형의 수를 겹친 채로 세어 실제와 다르게 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-03.concept": {
+      "evidence": [
+        "곧은 선으로 둘러싸인 모양과 둥근 모양을 구분하여 말한다.",
+        "곧은 변의 수를 세어 삼각형과 사각형을 구분하여 말한다."
+      ],
+      "assessmentPrompt": "여러 도형 조각을 주고 삼각형끼리, 사각형끼리 모으게 한 뒤 무엇을 보고 나누었는지 말하게 하라.",
+      "misconceptions": [
+        "뾰족한 부분만 보고 삼각형으로 여겨 변이 다섯인 도형까지 함께 모은다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-03.representation": {
+      "evidence": [
+        "만든 모양에 쓰인 도형을 그림 위에 선으로 나누어 나타낸다.",
+        "찾은 도형의 이름을 그림 옆에 적어 짝지어 보여 준다."
+      ],
+      "assessmentPrompt": "만든 모양을 그림으로 그리게 하고, 그 안에 들어 있는 삼각형과 사각형을 선으로 나누어 표시하게 하라.",
+      "misconceptions": [
+        "그림에서 도형의 경계를 나누지 않고 색만 칠해 어떤 도형을 썼는지 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-04.application": {
+      "evidence": [
+        "본뜨기나 도형판을 이용하여 삼각형과 사각형을 구성한다.",
+        "정해진 조건에 맞는 도형을 선택하여 모양을 완성한다."
+      ],
+      "assessmentPrompt": "도형판에 고무줄로 사각형을 만들게 하고, 만든 도형이 사각형인지 변과 꼭짓점을 세어 확인하게 하라.",
+      "misconceptions": [
+        "도형판에서 고무줄이 한 점에서 겹쳐 있어도 사각형이 되었다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-04]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-04.concept": {
+      "evidence": [
+        "삼각형인 것과 삼각형이 아닌 것을 분류하고 그 까닭을 말한다.",
+        "끊어진 선이나 굽은 선이 있으면 삼각형이 아님을 짚어 설명한다."
+      ],
+      "assessmentPrompt": "삼각형처럼 보이지만 한 곳이 벌어진 도형을 함께 보여 주고, 삼각형인 것만 고른 뒤 까닭을 설명하게 하라.",
+      "misconceptions": [
+        "한 곳이 벌어진 도형도 곧은 선이 셋이면 삼각형이라고 판단한다.",
+        "기울어져 놓인 사각형을 사각형이 아니라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-04]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-04.representation": {
+      "evidence": [
+        "삼각형, 사각형, 원의 모양을 자나 본을 이용하여 그려 표현한다.",
+        "자신이 그린 도형에서 변과 꼭짓점이 어디인지 찾아 표시한다."
+      ],
+      "assessmentPrompt": "종이에 사각형을 그리게 한 뒤, 변과 꼭짓점을 각각 다른 색으로 표시하고 몇 개인지 세어 쓰게 하라.",
+      "misconceptions": [
+        "꼭짓점을 표시할 때 변의 가운데 점까지 함께 세어 개수를 많게 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-04]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-05.application": {
+      "evidence": [
+        "여러 도형을 공통점을 기준으로 두 무리로 분류한다.",
+        "나눈 기준을 다른 사람이 알아듣도록 한 문장으로 말한다."
+      ],
+      "assessmentPrompt": "삼각형과 사각형이 섞인 도형 카드를 두 무리로 나누게 하고, 나눈 기준을 한 문장으로 말하게 하라.",
+      "misconceptions": [
+        "색이나 크기처럼 도형의 성질이 아닌 것을 기준으로 삼아 나눈다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > 평면도형과 그 구성 요소",
+        "code": "[2수03-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-05.concept": {
+      "evidence": [
+        "여러 삼각형을 살펴 변과 꼭짓점의 수가 같음을 찾아 말한다.",
+        "크기나 방향이 달라도 같은 도형으로 볼 수 있음을 설명한다."
+      ],
+      "assessmentPrompt": "크기와 방향이 다른 삼각형 네 개를 보여 주고, 모두 삼각형이라고 말할 수 있는 까닭을 공통점을 들어 설명하게 하라.",
+      "misconceptions": [
+        "크기가 다르면 다른 도형이라고 여겨 공통점을 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > 평면도형과 그 구성 요소",
+        "code": "[2수03-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-05.representation": {
+      "evidence": [
+        "찾은 공통점을 표나 그림에 정리하여 나타낸다.",
+        "도형마다 변과 꼭짓점의 수를 세어 표에 기록한다."
+      ],
+      "assessmentPrompt": "도형 카드마다 변과 꼭짓점의 수를 세어 표에 적게 하고, 표를 보며 알게 된 공통점을 말하게 하라.",
+      "misconceptions": [
+        "표에 수를 적으면서 변과 꼭짓점의 칸을 바꾸어 적어 공통점을 잘못 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > 평면도형과 그 구성 요소",
+        "code": "[2수03-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-06.application": {
+      "evidence": [
+        "직접 대어 보거나 옮겨 담아 두 양의 크고 작음을 비교한다.",
+        "비교한 결과를 상황에 알맞은 비교하는 말로 골라 이야기한다."
+      ],
+      "assessmentPrompt": "물병 두 개를 주고 어느 쪽에 물이 더 많이 들어가는지 알아보게 한 뒤, 알아본 방법과 결과를 말하게 하라.",
+      "misconceptions": [
+        "그릇의 모양이 다르면 옮겨 담아 보지 않고 키가 큰 쪽을 더 많다고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-06.concept": {
+      "evidence": [
+        "‘길다, 짧다’와 같은 말이 어떤 비교에 쓰이는지 구분하여 말한다.",
+        "두 물건의 길이를 비교할 때 한쪽 끝을 맞추어야 함을 설명한다."
+      ],
+      "assessmentPrompt": "길이가 비슷한 연필 두 자루를 주고 어느 것이 더 긴지 판단하게 한 뒤, 어떻게 비교했는지 설명하게 하라.",
+      "misconceptions": [
+        "한쪽 끝을 맞추지 않고 겉보기만으로 더 길다고 판단한다.",
+        "그릇이 크면 담긴 양과 상관없이 더 무겁다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-06.representation": {
+      "evidence": [
+        "비교한 결과를 그림이나 줄 세우기로 나타낸다.",
+        "여러 물건을 긴 것부터 차례로 늘어놓아 보여 준다."
+      ],
+      "assessmentPrompt": "책, 지우개, 색연필의 길이를 비교하게 하고, 긴 것부터 차례로 늘어놓아 그림으로 나타내게 하라.",
+      "misconceptions": [
+        "차례로 늘어놓을 때 기준을 바꾸어 길이와 무게를 섞어 줄 세운다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-06]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-07.application": {
+      "evidence": [
+        "여러 시각의 시계를 보고 ‘몇 시 몇 분’으로 읽는다.",
+        "생활 시간표와 시계를 비교하여 지금 할 일을 찾는다."
+      ],
+      "assessmentPrompt": "모형 시계를 3시 25분에 맞추어 보여 주고 시각을 읽게 한 뒤, 그 시각에 학교에서 무엇을 하는지 말하게 하라.",
+      "misconceptions": [
+        "긴바늘이 가리키는 숫자를 그대로 읽어 5분씩 세지 않고 3시 5분이라고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-07.concept": {
+      "evidence": [
+        "짧은바늘과 긴바늘이 각각 무엇을 나타내는지 구분하여 말한다.",
+        "긴바늘이 작은 눈금 한 칸을 지나면 1분이 지남을 설명한다."
+      ],
+      "assessmentPrompt": "시계 그림을 보여 주고 짧은바늘과 긴바늘이 각각 무엇을 알려 주는지 짚어 설명하게 하라.",
+      "misconceptions": [
+        "짧은바늘이 두 수 사이에 있을 때 뒤쪽 수를 읽어 시각을 한 시간 늦게 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-07.representation": {
+      "evidence": [
+        "주어진 시각에 맞게 시계 그림에 두 바늘을 그려 표현한다.",
+        "읽은 시각을 숫자로 쓰고 시계 모양과 짝지어 보여 준다."
+      ],
+      "assessmentPrompt": "‘9시 40분’을 들려주고 시계 그림에 두 바늘을 그리게 한 뒤, 짧은바늘을 그 자리에 그린 까닭을 말하게 하라.",
+      "misconceptions": [
+        "짧은바늘을 숫자 9에 정확히 맞추어 그려 40분이 지난 위치를 나타내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-08.application": {
+      "evidence": [
+        "시작한 시각과 끝난 시각을 비교하여 걸린 시간을 구한다.",
+        "구한 시간을 ‘몇 시간 몇 분’으로 바꾸어 친구에게 설명한다."
+      ],
+      "assessmentPrompt": "‘2시 10분에 시작해 3시 30분에 끝났다’는 상황을 주고 걸린 시간을 구하게 한 뒤, 어떻게 세었는지 설명하게 하라.",
+      "misconceptions": [
+        "시각의 숫자끼리만 빼려다가 분이 모자라는 경우에 걸린 시간을 구하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-08.concept": {
+      "evidence": [
+        "1시간이 60분과 같음을 시계의 눈금을 들어 설명한다.",
+        "‘시각’과 ‘시간’이 어떻게 다른지 예를 들어 구분한다."
+      ],
+      "assessmentPrompt": "‘3시’와 ‘3시간’이 어떻게 다른지 설명하게 하고, 각각을 쓸 수 있는 상황을 하나씩 말하게 하라.",
+      "misconceptions": [
+        "시각과 시간을 같은 말로 여겨 ‘2시 동안 놀았다’처럼 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-08.representation": {
+      "evidence": [
+        "걸린 시간을 시계 그림에 화살표로 그려 표현한다.",
+        "같은 시간을 ‘몇 분’과 ‘몇 시간 몇 분’으로 각각 기록한다."
+      ],
+      "assessmentPrompt": "80분을 시계 그림에 나타내게 하고, 같은 시간을 ‘1시간 20분’으로도 쓰게 한 뒤 두 표현이 같은 까닭을 말하게 하라.",
+      "misconceptions": [
+        "80분을 ‘8시간’이나 ‘1시간 80분’처럼 써서 60분이 1시간임을 나타내지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-09.application": {
+      "evidence": [
+        "달력에서 어떤 날의 며칠 뒤나 몇 주 뒤 날짜를 찾는다.",
+        "생활 계획을 세우며 알맞은 시간 단위를 선택하여 쓴다."
+      ],
+      "assessmentPrompt": "달력에서 오늘부터 2주일 뒤가 며칠인지 찾게 하고, 어떻게 세었는지 손으로 짚으며 설명하게 하라.",
+      "misconceptions": [
+        "2주일 뒤를 셀 때 오늘을 첫째 날로 세어 날짜가 하루씩 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-09.concept": {
+      "evidence": [
+        "1주일이 7일임을 달력의 칸을 세어 확인하여 말한다.",
+        "1일, 1주일, 1개월 가운데 어느 것이 더 긴 시간인지 구분한다."
+      ],
+      "assessmentPrompt": "달력을 보여 주고 1주일과 1개월 가운데 어느 쪽이 더 긴지 고르게 한 뒤, 달력의 어디를 보고 알았는지 짚게 하라.",
+      "misconceptions": [
+        "달마다 날수가 다르다는 점을 모른 채 모든 달을 30일로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-09.representation": {
+      "evidence": [
+        "시간 단위 사이의 관계를 표나 그림으로 정리하여 표현한다.",
+        "일정을 달력에 표시하여 며칠 동안인지 보여 준다."
+      ],
+      "assessmentPrompt": "학급 행사 기간을 달력에 색칠하여 표시하게 하고, 모두 며칠이고 몇 주일인지 함께 쓰게 하라.",
+      "misconceptions": [
+        "달력에 색칠한 칸 수와 적어 놓은 날수가 달라 표현이 서로 맞지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-10.application": {
+      "evidence": [
+        "자의 눈금 0에 물건의 끝을 맞추어 길이를 재고 확인한다.",
+        "잰 길이를 상황에 맞게 cm나 m 단위를 붙여 기록한다."
+      ],
+      "assessmentPrompt": "지우개와 교실 문의 길이를 재게 하고, 각각 어떤 단위와 도구를 골랐는지 그 까닭을 말하게 하라.",
+      "misconceptions": [
+        "자의 끝에서부터 재고 눈금 0에 맞추지 않아 길이를 실제보다 길게 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-10]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-10.concept": {
+      "evidence": [
+        "사람마다 다른 단위로 재면 결과가 달라짐을 확인하여 말한다.",
+        "1cm와 1m가 각각 어느 정도 길이인지 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "뼘으로 책상 길이를 재게 한 뒤 친구의 결과와 비교하게 하고, 왜 결과가 다른지 설명하게 하라.",
+      "misconceptions": [
+        "뼘이나 발 길이처럼 사람마다 다른 단위로 잰 값도 누구에게나 같다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-10]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-10.representation": {
+      "evidence": [
+        "잰 길이를 숫자와 단위를 함께 써서 기록한다.",
+        "주어진 길이만큼 선분을 자로 정확히 그어 표현한다."
+      ],
+      "assessmentPrompt": "7cm짜리 선을 자로 긋게 한 뒤, 그은 선을 다시 재어 길이가 맞는지 확인하고 기록하게 하라.",
+      "misconceptions": [
+        "길이를 적을 때 단위를 빠뜨려 7cm인지 7m인지 알 수 없게 기록한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-10]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-11.application": {
+      "evidence": [
+        "1m가 넘는 물건의 길이를 재어 알맞은 단위로 표현한다.",
+        "같은 길이를 두 가지 단위 표현으로 바꾸어 말한다."
+      ],
+      "assessmentPrompt": "교실 창문의 가로 길이를 재게 하고, 그 결과를 ‘몇 m 몇 cm’와 ‘몇 cm’로 각각 말하게 하라.",
+      "misconceptions": [
+        "130cm를 ‘1m 3cm’로 바꾸어 십의 자리 값을 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-11]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-11.concept": {
+      "evidence": [
+        "1m가 100cm와 같음을 자를 보며 확인하여 말한다.",
+        "긴 길이에 m를, 짧은 길이에 cm를 쓰는 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "칠판의 길이를 잴 때 m와 cm 가운데 어느 단위가 알맞은지 고르게 하고, 그 까닭을 말하게 하라.",
+      "misconceptions": [
+        "1m를 10cm로 여겨 두 단위 사이의 관계를 잘못 말한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-11]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-11.representation": {
+      "evidence": [
+        "잰 길이를 ‘몇 m 몇 cm’ 꼴로 바꾸어 기록한다.",
+        "두 가지로 쓴 길이가 같은 길이임을 그림이나 자로 보여 준다."
+      ],
+      "assessmentPrompt": "‘2m 40cm’를 종이테이프에 표시하게 하고, 같은 길이를 cm만으로도 써서 두 표현을 잇게 하라.",
+      "misconceptions": [
+        "‘2m 40cm’를 240cm가 아니라 24cm나 2040cm로 옮겨 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-11]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-12.application": {
+      "evidence": [
+        "물건의 길이를 먼저 어림한 뒤 자로 재어 확인한다.",
+        "어림한 값과 잰 값의 차이를 비교하여 다음 어림을 고친다."
+      ],
+      "assessmentPrompt": "책상의 긴 쪽 길이를 먼저 어림해 적게 한 뒤 자로 재게 하고, 두 값을 비교해 알게 된 점을 말하게 하라.",
+      "misconceptions": [
+        "어림한 값을 적어 두지 않아 잰 값과 비교하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-12]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-12.concept": {
+      "evidence": [
+        "어림한 길이와 잰 길이가 다를 수 있음을 알고 그 까닭을 설명한다.",
+        "몸의 한 부분을 기준으로 길이를 짐작하는 방법을 설명한다."
+      ],
+      "assessmentPrompt": "손가락 한 마디가 약 1cm임을 확인하게 한 뒤, 이를 기준으로 필통의 길이를 어림해 말하게 하라.",
+      "misconceptions": [
+        "어림한 값을 정확한 값으로 여겨 자로 재어 확인하려 하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-12]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-12.representation": {
+      "evidence": [
+        "어림한 길이와 잰 길이를 표에 나란히 기록하여 나타낸다.",
+        "‘약 몇 cm’라는 말을 써서 어림한 결과를 기록한다."
+      ],
+      "assessmentPrompt": "물건 세 개의 길이를 어림한 값과 잰 값으로 표에 적게 하고, 어느 물건에서 가장 가깝게 어림했는지 말하게 하라.",
+      "misconceptions": [
+        "어림한 값에 ‘약’을 붙이지 않아 잰 값과 구분되지 않게 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 14,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (가) 성취기준 해설",
+        "code": "[2수03-12]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-13.application": {
+      "evidence": [
+        "생활 상황에 길이의 덧셈과 뺄셈을 적용하여 문제를 해결한다.",
+        "구한 길이를 단위를 붙여 말하고 답이 알맞은지 확인한다."
+      ],
+      "assessmentPrompt": "‘2m 50cm 색테이프에서 90cm를 잘라 썼다’는 상황에서 남은 길이를 구하게 하고, 계산 과정을 설명하게 하라.",
+      "misconceptions": [
+        "cm끼리 뺄 수 없을 때 m에서 100cm를 가져오지 않고 그대로 뺀다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-13]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-13.concept": {
+      "evidence": [
+        "길이를 더하거나 뺄 때 같은 단위끼리 계산해야 함을 설명한다.",
+        "두 길이를 이었을 때와 잘라 냈을 때 필요한 셈을 구분하여 고른다."
+      ],
+      "assessmentPrompt": "‘1m 20cm짜리 끈에 80cm를 이었다’는 상황을 주고 어떤 셈이 필요한지 고르게 한 뒤 까닭을 말하게 하라.",
+      "misconceptions": [
+        "m와 cm를 자리에 맞추지 않고 숫자끼리만 더해 답을 구한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-13]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.geometry-measurement.g1-2.s2-03-13.representation": {
+      "evidence": [
+        "길이의 합과 차를 그림이나 종이테이프로 나타내어 보여 준다.",
+        "계산 과정을 m와 cm의 자리를 맞추어 세로로 기록한다."
+      ],
+      "assessmentPrompt": "1m 30cm와 45cm를 종이테이프로 이어 붙이게 한 뒤, 그 과정을 식으로 쓰고 답이 맞는지 확인하게 하라.",
+      "misconceptions": [
+        "세로로 쓸 때 m와 cm의 자리를 맞추지 않아 계산 결과가 크게 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 15,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (3) 도형과 측정 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수03-13]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-01.application": {
+      "evidence": [
+        "물건 100개 이하를 묶어 세는 방법을 적용하여 전체 개수를 구한다.",
+        "세어 본 결과를 숫자로 쓰고 어떤 방법으로 세었는지 차례대로 설명한다."
+      ],
+      "assessmentPrompt": "블록 60개가 담긴 통을 주고 개수를 세어 종이에 쓰게 한 다음, 어떤 방법으로 세었고 그 방법이 왜 편했는지 말하게 하라.",
+      "misconceptions": [
+        "하나씩만 세다가 이미 센 물건을 다시 세거나 빠뜨려 개수가 달라진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 11,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-01.concept": {
+      "evidence": [
+        "개수를 나타내는 수와 순서를 나타내는 수를 생활 사례에서 구분하여 말한다.",
+        "0이 아무것도 없는 상태를 나타내는 수임을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "교실 물건 사진을 보여 주고 개수를 나타내는 수와 순서를 나타내는 수를 하나씩 고르게 한 뒤, 그렇게 고른 까닭을 말하게 하라.",
+      "misconceptions": [
+        "0을 수가 아니라 빈칸으로 여겨 세기나 쓰기에서 빠뜨린다.",
+        "‘셋째’와 ‘세 개’를 같은 뜻으로 여겨 순서와 개수를 뒤섞는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 11,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-01.representation": {
+      "evidence": [
+        "같은 수를 구체물, 수 모형, 숫자 세 가지로 표현하고 서로 같은 수임을 말한다.",
+        "친구가 읽어 준 수를 듣고 숫자로 바르게 쓴다."
+      ],
+      "assessmentPrompt": "‘예순셋’이라고 읽어 주고 그 수만큼 바둑돌을 놓게 한 뒤, 숫자로도 쓰고 두 표현이 같은 수인 까닭을 설명하게 하라.",
+      "misconceptions": [
+        "읽어 준 ‘예순셋’을 63이 아니라 603처럼 들리는 대로 이어 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 11,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-01]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-02.application": {
+      "evidence": [
+        "수 모형을 천, 백, 십, 일 묶음으로 분류하여 전체 수를 숫자로 쓴다.",
+        "10개씩 묶음과 낱개로 놓인 물건의 수를 세어 두 자리 수로 표현한다."
+      ],
+      "assessmentPrompt": "빨대 100개씩 묶음 2개, 10개씩 묶음 4개, 낱개 7개를 주고 모두 몇 개인지 숫자로 쓰고 세는 방법을 설명하게 하라.",
+      "misconceptions": [
+        "묶음과 낱개를 자리에 맞추지 않고 이어 붙여 247을 2407처럼 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-02.concept": {
+      "evidence": [
+        "같은 숫자라도 놓인 자리에 따라 나타내는 값이 달라짐을 예를 들어 설명한다.",
+        "네 자리 수에서 각 숫자가 얼마를 나타내는지 자리 이름과 함께 설명한다."
+      ],
+      "assessmentPrompt": "3535를 보여 주고 앞의 3과 뒤의 3이 각각 얼마를 나타내는지 자리 이름을 써서 설명하게 하라.",
+      "misconceptions": [
+        "자리와 상관없이 숫자를 읽은 값 그대로 여겨 3535의 두 3을 같은 값으로 본다.",
+        "빈 자리의 0을 빠뜨려 2050을 205로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-02.representation": {
+      "evidence": [
+        "수 모형으로 놓인 수를 숫자와 자릿값이 드러나는 말로 함께 표현한다.",
+        "네 자리 수를 소리 내어 읽고, 읽은 수를 숫자로 다시 쓴다."
+      ],
+      "assessmentPrompt": "수 모형으로 2306을 만들어 주고 그 수를 숫자로 쓰고 읽게 한 다음, 십의 자리가 0인 까닭을 말하게 하라.",
+      "misconceptions": [
+        "‘이천삼백육’으로 읽은 뒤 십의 자리 0을 빼고 236으로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-02]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-03.application": {
+      "evidence": [
+        "10씩 또는 100씩 뛰어 세어 빈칸에 알맞은 수를 찾아 채운다.",
+        "여러 수를 작은 수부터 차례로 늘어놓고 그 순서를 설명한다."
+      ],
+      "assessmentPrompt": "수 카드 470, 407, 740, 704를 주고 작은 수부터 늘어놓게 한 뒤, 어떤 자리를 먼저 보았는지 말하게 하라.",
+      "misconceptions": [
+        "100씩 뛰어 세다가 950 다음을 1050이 아닌 1005로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-03.concept": {
+      "evidence": [
+        "두 수의 크기를 자릿수와 높은 자리 숫자를 기준으로 비교하여 판단한다.",
+        "수의 계열에서 앞에 온 수와 다음에 올 수를 찾아 말한다."
+      ],
+      "assessmentPrompt": "1250과 985 중 어느 수가 더 큰지 고르게 하고, 자릿수를 근거로 그렇게 판단한 까닭을 설명하게 하라.",
+      "misconceptions": [
+        "자릿수를 보지 않고 맨 앞 숫자만 비교해 985가 1250보다 크다고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-03.representation": {
+      "evidence": [
+        "수 배열표에서 일정하게 뛰어 센 수의 자리를 찾아 색칠하여 나타낸다.",
+        "두 수의 크기를 ‘>’, ‘<’ 기호와 말로 각각 나타내고 두 표현을 연결한다."
+      ],
+      "assessmentPrompt": "수 배열표에서 5씩 뛰어 센 수에 색칠하게 하고, 색칠한 수들이 어떻게 커지는지 말과 기호로 나타내게 하라.",
+      "misconceptions": [
+        "‘>’와 ‘<’의 벌어진 쪽을 작은 수 쪽으로 향하게 하여 반대로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-03]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-04.application": {
+      "evidence": [
+        "10을 만드는 두 수를 찾아 모으기와 가르기를 빠르게 수행한다.",
+        "20 이하의 수를 상황에 맞게 갈라 문제를 해결하고 방법을 설명한다."
+      ],
+      "assessmentPrompt": "사탕 15개를 두 사람이 나누어 가지는 방법을 세 가지 찾아 쓰게 하고, 그중 공평한 방법을 고르고 까닭을 말하게 하라.",
+      "misconceptions": [
+        "가르기 결과를 다시 모아 처음 수가 되는지 확인하지 않고 답을 정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-04.concept": {
+      "evidence": [
+        "하나의 수를 두 수로 가르는 방법이 여러 가지임을 예를 들어 설명한다.",
+        "두 수를 모으면 처음 수가 된다는 관계를 구체물로 확인한다."
+      ],
+      "assessmentPrompt": "구슬 9개를 두 접시에 나누어 담게 하고, 나눌 수 있는 방법을 모두 찾아 말하게 하라.",
+      "misconceptions": [
+        "9를 가르는 방법이 한 가지뿐이라고 여겨 다른 경우를 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-04.representation": {
+      "evidence": [
+        "가르기와 모으기 결과를 가르기 그림과 식으로 각각 표현한다.",
+        "구체물을 옮기며 만든 모으기 과정을 그림으로 그려 설명한다."
+      ],
+      "assessmentPrompt": "바둑돌 12개를 두 묶음으로 가른 뒤, 그 결과를 그림과 식으로 나타내고 두 표현이 어떻게 이어지는지 말하게 하라.",
+      "misconceptions": [
+        "그림으로는 바르게 갈랐으나 식으로 옮길 때 두 수의 자리를 바꾸어 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-04]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-05.application": {
+      "evidence": [
+        "덧셈이 필요한 생활 장면을 스스로 찾아 문제로 만들어 해결한다.",
+        "문제 상황을 읽고 알맞은 셈을 골라 답을 구한 뒤 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "교실에서 일어난 일로 덧셈 문제와 뺄셈 문제를 하나씩 만들게 하고, 짝과 바꾸어 풀고 답이 맞는지 확인하게 하라.",
+      "misconceptions": [
+        "만든 문제의 수는 맞지만 상황과 반대되는 셈으로 답을 구한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-05.concept": {
+      "evidence": [
+        "더하는 상황과 덜어 내는 상황을 이야기에서 구분하여 말한다.",
+        "‘합’과 ‘차’가 어떤 상황을 나타내는지 자기 말로 설명한다."
+      ],
+      "assessmentPrompt": "‘사과 5개 중 2개를 먹었다’와 ‘사과 5개에 2개를 더 담았다’를 들려주고, 각각 어떤 셈이 필요한지 고르고 까닭을 말하게 하라.",
+      "misconceptions": [
+        "‘모두’, ‘남은’ 같은 낱말만 보고 상황을 살피지 않은 채 셈을 정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-05.representation": {
+      "evidence": [
+        "덧셈이 일어난 상황을 그림으로 그린 뒤 덧셈식으로 표현한다.",
+        "하나의 식을 보고 그에 어울리는 이야기를 만들어 설명한다."
+      ],
+      "assessmentPrompt": "8 − 3 = 5를 보여 주고 이 식에 어울리는 이야기를 만들어 말한 뒤, 그 이야기를 그림으로도 나타내게 하라.",
+      "misconceptions": [
+        "식은 뺄셈인데 이야기는 더하는 상황으로 만들어 둘을 연결하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-05]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-06.application": {
+      "evidence": [
+        "두 자리 수의 덧셈과 뺄셈을 끝까지 계산하고 답이 맞는지 확인한다.",
+        "생활 문제에서 알맞은 식을 세워 계산하고 답이 뜻하는 바를 설명한다."
+      ],
+      "assessmentPrompt": "‘색종이 68장 중 39장을 썼다’는 상황을 주고 남은 수를 구하는 식을 세워 계산한 뒤, 답이 알맞은지 어떻게 알았는지 설명하게 하라.",
+      "misconceptions": [
+        "큰 수에서 작은 수를 빼는 습관 때문에 자리마다 큰 숫자에서 작은 숫자를 빼 버린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 11,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (가) 성취기준 해설",
+        "code": "[2수01-06]"
+      }
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-06.concept": {
+      "evidence": [
+        "받아올림이 왜 필요한지 10개씩 묶음을 들어 설명한다.",
+        "받아내림이 일어나는 뺄셈과 그렇지 않은 뺄셈을 보고 구분한다."
+      ],
+      "assessmentPrompt": "27 + 15를 계산하기 전에 받아올림이 필요한지 먼저 판단하게 하고, 그렇게 생각한 까닭을 말하게 하라.",
+      "misconceptions": [
+        "받아올림한 1을 십의 자리에 더하지 않아 답이 10만큼 작아진다.",
+        "받아내림을 하고도 십의 자리 수를 1 줄이지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 11,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (가) 성취기준 해설",
+        "code": "[2수01-06]"
+      }
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-06.representation": {
+      "evidence": [
+        "덧셈 과정을 수 모형과 세로셈으로 각각 나타내고 두 방법을 비교한다.",
+        "합이 세 자리 수가 되는 계산을 자리에 맞추어 세로로 기록한다."
+      ],
+      "assessmentPrompt": "85 + 47을 수 모형으로 먼저 해결하게 한 뒤, 같은 과정을 세로셈으로 쓰고 어느 부분이 서로 짝이 되는지 짚게 하라.",
+      "misconceptions": [
+        "세로셈에서 자리를 맞추지 않고 왼쪽부터 나란히 써서 자릿값이 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 11,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (가) 성취기준 해설",
+        "code": "[2수01-06]"
+      }
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-07.application": {
+      "evidence": [
+        "덧셈으로 구한 답을 뺄셈으로 다시 확인하여 맞는지 판단한다.",
+        "한 상황에 덧셈식과 뺄셈식을 함께 적용하여 문제를 해결한다."
+      ],
+      "assessmentPrompt": "‘구슬 몇 개에 6개를 더했더니 14개가 되었다’는 상황을 주고, 처음 구슬 수를 구하는 식을 세워 답을 구하고 확인 방법을 말하게 하라.",
+      "misconceptions": [
+        "답을 구한 뒤 되돌려 확인하지 않아 계산 실수를 스스로 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-07.concept": {
+      "evidence": [
+        "덧셈식에서 뺄셈식을 만들 수 있는 까닭을 세 수의 관계로 설명한다.",
+        "등호의 양쪽이 나타내는 양이 서로 같음을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "7 + 5 = 12를 보여 주고 이 식으로 만들 수 있는 뺄셈식을 모두 쓰게 한 뒤, 왜 그런 식이 되는지 설명하게 하라.",
+      "misconceptions": [
+        "덧셈식에서 뺄셈식을 만들 때 가장 큰 수를 앞에 두지 않아 식이 맞지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-07.representation": {
+      "evidence": [
+        "세 수의 관계를 그림이나 수 막대로 표현하고 두 가지 식으로 옮긴다.",
+        "같은 상황을 덧셈식과 뺄셈식으로 각각 써서 나란히 보여 준다."
+      ],
+      "assessmentPrompt": "빨간 구슬 9개와 파란 구슬 4개를 그림으로 그리게 하고, 그 그림에서 만들 수 있는 덧셈식과 뺄셈식을 각각 쓰게 하라.",
+      "misconceptions": [
+        "그림의 전체 수와 부분 수를 뒤바꾸어 식으로 옮긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-07]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-08.application": {
+      "evidence": [
+        "합이 10이 되는 두 수를 먼저 찾아 세 수의 덧셈을 편하게 계산한다.",
+        "세 수가 나오는 생활 문제를 한 식으로 세워 답을 구하고 확인한다."
+      ],
+      "assessmentPrompt": "‘사탕을 6개 사고 4개를 더 산 뒤 5개를 먹었다’는 상황을 한 식으로 쓰고 계산하게 한 다음, 어느 두 수를 먼저 계산했는지 말하게 하라.",
+      "misconceptions": [
+        "세 수가 나오는 상황을 한 식으로 쓰지 못하고 중간 답을 잃어버린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-08.concept": {
+      "evidence": [
+        "세 수를 더할 때 더하는 순서를 바꾸어도 합이 같음을 확인하여 말한다.",
+        "세 수의 뺄셈은 앞에서부터 차례로 계산해야 함을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "3 + 7 + 8을 두 가지 순서로 계산하게 하고, 두 결과를 비교하여 알게 된 점을 말하게 하라.",
+      "misconceptions": [
+        "세 수의 뺄셈에서도 순서를 바꾸어 계산해 답이 달라진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-08.representation": {
+      "evidence": [
+        "세 수의 덧셈 과정을 화살표나 그림으로 차례가 드러나게 표현한다.",
+        "먼저 계산한 두 수를 묶어 표시하며 풀이 과정을 기록한다."
+      ],
+      "assessmentPrompt": "8 + 2 + 6에서 먼저 계산한 두 수를 묶어 표시하며 풀게 하고, 그렇게 묶은 까닭을 설명하게 하라.",
+      "misconceptions": [
+        "묶어 계산한 중간 값을 식에 남기지 않아 풀이 과정을 설명하지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-08]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-09.application": {
+      "evidence": [
+        "생활 상황을 □가 들어간 식으로 표현하고 □의 값을 구한다.",
+        "구한 □의 값을 원래 식에 넣어 답이 맞는지 확인한다."
+      ],
+      "assessmentPrompt": "‘연필 몇 자루를 사서 3자루를 동생에게 주었더니 9자루가 남았다’를 □가 들어간 식으로 쓰고 □의 값을 구하게 하라.",
+      "misconceptions": [
+        "□의 값을 구한 뒤 식에 넣어 확인하지 않아 반대로 계산한 실수를 놓친다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-09.concept": {
+      "evidence": [
+        "□가 아직 모르는 수를 나타내는 자리임을 예를 들어 설명한다.",
+        "□의 값을 구하려면 어떤 셈이 필요한지 판단하여 선택한다."
+      ],
+      "assessmentPrompt": "□ + 4 = 11과 11 − □ = 4를 나란히 보여 주고, 각각 □가 무엇을 뜻하는지 자기 말로 설명하게 하라.",
+      "misconceptions": [
+        "□를 늘 답이 들어가는 자리로 여겨 식의 오른쪽 수를 그대로 옮겨 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-09.representation": {
+      "evidence": [
+        "□가 들어간 식을 구체물이나 그림으로 옮겨 표현한다.",
+        "그림에서 모르는 부분을 □로 표시하여 식으로 기록한다."
+      ],
+      "assessmentPrompt": "구슬 그림에서 가려진 부분을 □로 표시하게 하고, 그림에 맞는 덧셈식을 쓴 뒤 □의 값을 구하게 하라.",
+      "misconceptions": [
+        "그림의 가려진 부분과 식의 □를 서로 다른 양으로 여겨 식을 잘못 세운다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-09]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-10.application": {
+      "evidence": [
+        "묶어 세기가 필요한 생활 문제에 곱셈을 적용하여 해결한다.",
+        "같은 수의 묶음이 있는 장면을 찾아 곱셈 문제로 만든다."
+      ],
+      "assessmentPrompt": "교실에서 똑같이 묶여 있는 물건을 하나 찾아 모두 몇 개인지 곱셈으로 구하게 하고, 왜 곱셈을 썼는지 말하게 하라.",
+      "misconceptions": [
+        "묶음마다 개수가 다른 장면에도 곱셈을 그대로 적용해 답을 구한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-10]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-10.concept": {
+      "evidence": [
+        "같은 수를 여러 번 더하는 상황을 곱셈으로 볼 수 있음을 설명한다.",
+        "‘몇 배’가 무엇을 뜻하는지 구체물을 놓아 보이며 설명한다."
+      ],
+      "assessmentPrompt": "‘4개씩 담긴 접시가 3개 있다’는 상황을 주고, 덧셈과 곱셈 중 어느 것으로 나타낼 수 있는지 모두 고르고 까닭을 말하게 하라.",
+      "misconceptions": [
+        "묶음의 수와 한 묶음의 개수를 뒤바꾸어 상황에 맞는 곱셈식을 세우지 못한다.",
+        "0을 곱하는 상황을 0을 더하는 것과 연결하지 못해 값을 1로 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-10]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-10.representation": {
+      "evidence": [
+        "곱셈 상황을 묶음 그림, 덧셈식, 곱셈식으로 잇따라 표현한다.",
+        "곱셈식을 보고 그에 알맞은 묶음 그림을 그려 표현한다."
+      ],
+      "assessmentPrompt": "2 × 5를 보여 주고 이에 맞는 묶음 그림을 그리게 한 뒤, 같은 상황을 덧셈식으로도 쓰고 두 식을 비교하게 하라.",
+      "misconceptions": [
+        "곱셈식을 그림으로 옮길 때 묶음의 수만큼만 물건을 그려 전체 개수가 달라진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-10]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-11.application": {
+      "evidence": [
+        "한 자리 수의 곱셈이 필요한 문제에 곱셈구구를 적용하여 해결한다.",
+        "구한 곱이 알맞은지 묶어 세기로 다시 확인한다."
+      ],
+      "assessmentPrompt": "‘한 상자에 8개씩 든 지우개가 4상자 있다’는 상황에서 전체 개수를 구하게 하고, 답이 맞는지 다른 방법으로 확인하게 하라.",
+      "misconceptions": [
+        "곱셈구구 값을 잘못 떠올리고도 세어 보는 확인 없이 답을 정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-11]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-11.concept": {
+      "evidence": [
+        "곱셈표에서 두 수를 바꾸어 곱해도 곱이 같음을 찾아 말한다.",
+        "1을 곱한 값과 0을 곱한 값이 어떻게 되는지 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "곱셈표에서 6 × 7과 7 × 6을 찾아 값을 비교하게 하고, 이런 짝을 두 개 더 찾아 알게 된 점을 말하게 하라.",
+      "misconceptions": [
+        "곱셈구구를 외운 순서대로만 떠올려 7 × 6은 답하지만 6 × 7은 모른다고 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-11]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    },
+    "kr.mt.math.number-operations.g1-2.s2-01-11.representation": {
+      "evidence": [
+        "곱셈구구의 값을 곱셈표에서 찾아 그 자리를 짚어 나타낸다.",
+        "곱이 같은 곱셈식을 곱셈표에서 찾아 표시한다."
+      ],
+      "assessmentPrompt": "곱셈표에서 값이 12인 칸을 모두 찾아 표시하게 하고, 그 칸들이 어떤 곱셈식인지 쓰게 하라.",
+      "misconceptions": [
+        "곱셈표에서 가로줄과 세로줄을 바꾸어 읽어 엉뚱한 칸의 값을 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 12,
+        "section": "나. 성취기준 > [초등학교 1∼2학년] > (1) 수와 연산 > (나) 성취기준 적용 시 고려 사항",
+        "code": "[2수01-11]"
+      },
+      "note": "해설 없음. 성취기준 문장과 같은 영역의 (나) 성취기준 적용 시 고려 사항, 내용 체계표를 근거로 삼았다."
+    }
+  }
+}

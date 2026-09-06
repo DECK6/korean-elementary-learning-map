@@ -1,14 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Korean Elementary Curriculum Learning Ontology controlled vocabulary",
-  "version": "0.3.0-p3",
-  "priorVersion": "0.2.0-p2",
+  "version": "0.4.0",
+  "priorVersion": "0.3.0-p3",
   "status": "formal-release",
   "namespaces": {
     "ontology": "https://dexa.art/learnmap/ontology#",
     "instance": "https://dexa.art/learnmap/#/",
     "vocabulary": "https://dexa.art/learnmap/vocab/",
-    "reservedInstancePath": "https://dexa.art/learnmap/id/"
+    "reservedInstancePath": "https://dexa.art/learnmap/id/",
+    "core": "https://dexa.art/learnmap/ontology/k12-core#"
   },
   "releaseMetadata": {
     "formalOntologyAvailable": true,
@@ -23,7 +24,11 @@
     "sourceRightsBasis": "public-government-document",
     "officialTextIncluded": false,
     "officialStatus": "independent-non-official",
-    "learnerDiagnosisSupported": false
+    "learnerDiagnosisSupported": false,
+    "relationLayerContract": "k12-relation-vocabulary-spec-v1",
+    "officialRelationLayerFile": "data/kr/dependencies.json",
+    "candidateRelationLayerFile": "data/kr/dependencies.candidate.json",
+    "derivedPrerequisiteViewsLayer": "official"
   },
   "classes": [
     {
@@ -330,6 +335,102 @@
       "range": ["CoverageGap"],
       "cardinality": "DatasetRelease 0..*; CoverageGap 1",
       "assertionPolicy": "asserted"
+    },
+    {
+      "term": "assertionLayer",
+      "definition": "Release layer of a prerequisite assertion; only the official layer materializes derived prerequisite views.",
+      "direction": "PrerequisiteAssertion -> RelationLayer concept",
+      "domain": ["PrerequisiteAssertion"],
+      "range": ["skos:Concept"],
+      "cardinality": "PrerequisiteAssertion exactly 1",
+      "assertionPolicy": "asserted"
+    },
+    {
+      "term": "relationKind",
+      "definition": "Normalized reading of the relation: a required prerequisite or a recommended order.",
+      "direction": "PrerequisiteAssertion -> RelationKind concept",
+      "domain": ["PrerequisiteAssertion"],
+      "range": ["skos:Concept"],
+      "cardinality": "PrerequisiteAssertion exactly 1",
+      "assertionPolicy": "asserted"
+    },
+    {
+      "term": "basisKind",
+      "definition": "Kind of evidence behind the relation; official-source is reserved for the official layer.",
+      "direction": "PrerequisiteAssertion -> BasisKind concept",
+      "domain": ["PrerequisiteAssertion"],
+      "range": ["skos:Concept"],
+      "cardinality": "PrerequisiteAssertion exactly 1",
+      "assertionPolicy": "asserted"
+    },
+    {
+      "term": "scope",
+      "definition": "Mechanically computed distance between the two endpoints of a relation.",
+      "direction": "PrerequisiteAssertion -> RelationScope concept",
+      "domain": ["PrerequisiteAssertion"],
+      "range": ["skos:Concept"],
+      "cardinality": "PrerequisiteAssertion exactly 1",
+      "assertionPolicy": "asserted"
+    },
+    {
+      "term": "reviewStatus",
+      "definition": "Human review reached for the relation record.",
+      "direction": "PrerequisiteAssertion -> ReviewStatus concept",
+      "domain": ["PrerequisiteAssertion"],
+      "range": ["skos:Concept"],
+      "cardinality": "PrerequisiteAssertion exactly 1",
+      "assertionPolicy": "asserted"
+    },
+    {
+      "term": "decompositionKind",
+      "definition": "Whether a topic represents a whole achievement standard or one subject facet of it.",
+      "direction": "LearningTopic -> DecompositionKind concept",
+      "domain": ["LearningTopic"],
+      "range": ["skos:Concept"],
+      "cardinality": "LearningTopic exactly 1",
+      "assertionPolicy": "asserted"
+    },
+    {
+      "term": "facetKey",
+      "definition": "Shared K-12 facet of the topic, drawn from the common eight-concept facet scheme.",
+      "direction": "LearningTopic -> Facet concept",
+      "domain": ["LearningTopic"],
+      "range": ["skos:Concept"],
+      "cardinality": "LearningTopic exactly 1",
+      "assertionPolicy": "asserted"
+    },
+    {
+      "term": "contentKind",
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "definition": "Whether a topic's evidence, prompt, and misconceptions are a mechanical derivative of the standard record or an authored source-grounded draft.",
+      "direction": "LearningTopic -> ContentKind concept",
+      "domain": ["LearningTopic"],
+      "range": ["skos:Concept"],
+      "cardinality": "LearningTopic exactly 1",
+      "assertionPolicy": "asserted",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"]
+    },
+    {
+      "term": "contentSourceLocator",
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "definition": "The source passage an authored source-grounded draft was written from; required whenever contentKind is source-grounded-draft.",
+      "direction": "LearningTopic -> SourceLocator",
+      "domain": ["LearningTopic"],
+      "range": ["SourceLocator"],
+      "cardinality": "LearningTopic 0..1, exactly 1 for a source-grounded draft",
+      "assertionPolicy": "asserted",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"]
+    },
+    {
+      "term": "locatorKind",
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "definition": "Selects which locator fields apply: a printed page in a published document, or a record read from the STAS achievement-standard service.",
+      "direction": "SourceLocator -> SourceLocatorKind concept",
+      "domain": ["SourceLocator"],
+      "range": ["skos:Concept"],
+      "cardinality": "SourceLocator exactly 1 where asserted",
+      "assertionPolicy": "asserted",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"]
     }
   ],
   "datatypeProperties": [
@@ -731,6 +832,52 @@
       "domain": ["CoverageGap"],
       "datatype": "rdf:langString",
       "cardinality": "CoverageGap 1..* across languages"
+    },
+    {
+      "term": "relationIdentifier",
+      "definition": "Deterministic kr.dep.* identifier of the source relation record.",
+      "domain": ["PrerequisiteAssertion"],
+      "datatype": "xsd:string",
+      "cardinality": "PrerequisiteAssertion exactly 1"
+    },
+    {
+      "term": "standardKey",
+      "definition": "Primary achievement-standard key of the topic (curriculumId:code). Derived: always equal to the first entry of the topic alignment list, which stays authoritative.",
+      "domain": ["LearningTopic"],
+      "datatype": "xsd:string",
+      "cardinality": "LearningTopic exactly 1",
+      "assertionPolicy": "derived"
+    },
+    {
+      "term": "gapStatus",
+      "definition": "Normalized coverage-gap status.",
+      "domain": ["CoverageGap"],
+      "datatype": "xsd:string",
+      "cardinality": "CoverageGap exactly 1"
+    },
+    {
+      "term": "sourceGapSeverity",
+      "definition": "Severity string exactly as written by the workstream artifact, before normalization.",
+      "domain": ["CoverageGap"],
+      "datatype": "xsd:string",
+      "cardinality": "CoverageGap 0..1"
+    },
+    {
+      "term": "sourceGapStatus",
+      "definition": "Status string exactly as written by the workstream artifact, before normalization.",
+      "domain": ["CoverageGap"],
+      "datatype": "xsd:string",
+      "cardinality": "CoverageGap 0..1"
+    },
+    {
+      "term": "misconception",
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "definition": "A learner misconception an authored draft expects to encounter; never a copy of official source text.",
+      "domain": ["LearningTopic"],
+      "datatype": "rdf:langString",
+      "cardinality": "LearningTopic 0..n",
+      "assertionPolicy": "asserted",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"]
     }
   ],
   "conceptSchemes": [
@@ -929,6 +1076,235 @@
         "CLEARED": "cleared",
         "public-government-document": "cleared"
       }
+    },
+    {
+      "term": "RelationLayer",
+      "definition": "Release layer of a prerequisite assertion under the K-12 relation contract v1.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "official",
+          "definition": "Backed directly by an official curriculum document with a printed page locator."
+        },
+        {
+          "term": "pedagogical-candidate",
+          "definition": "Code order, decomposition order, or repository reasoning; a recommended order only."
+        }
+      ],
+      "derivesPrerequisiteViews": "official"
+    },
+    {
+      "term": "RelationKind",
+      "definition": "Normalized reading of a relation record.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "required-prerequisite",
+          "definition": "The learner is expected to have met the prerequisite topic first."
+        },
+        {
+          "term": "recommended-before",
+          "definition": "The released model recommends the order without claiming a prerequisite."
+        }
+      ]
+    },
+    {
+      "term": "BasisKind",
+      "definition": "Kind of evidence behind a relation record.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "official-source",
+          "definition": "An official document sentence or content-system progression states the order."
+        },
+        {
+          "term": "official-code-order",
+          "definition": "Derived from official code or unit ordering, which is document arrangement rather than a prerequisite claim."
+        },
+        {
+          "term": "decomposition-order",
+          "definition": "Derived from the repository facet decomposition inside one achievement standard."
+        },
+        {
+          "term": "repository-authored",
+          "definition": "Pedagogical reasoning authored in this repository without a document sentence."
+        },
+        {
+          "term": "expert-authored",
+          "definition": "Authored by an external subject expert whose review is recorded."
+        }
+      ],
+      "officialLayerOnly": ["official-source"],
+      "legacyValueMap": {
+        "within-standard decomposition order": "decomposition-order",
+        "within-standard evidence-to-inquiry bridge": "decomposition-order",
+        "within-standard representation-to-language bridge": "decomposition-order",
+        "within-standard inquiry-to-reflection bridge": "decomposition-order",
+        "within-standard language-to-reflection bridge": "decomposition-order",
+        "official-code sequence within grade-band/domain": "official-code-order",
+        "within-unit official sequence candidate": "official-code-order",
+        "grade-band progression by domain": "repository-authored",
+        "grade-band progression candidate": "repository-authored",
+        "same-grade domain sequence candidate": "repository-authored",
+        "cross-grade official linkage candidate from PDF 고려 사항 and content progression": "repository-authored",
+        "workstream-authored": "repository-authored"
+      }
+    },
+    {
+      "term": "RelationScope",
+      "definition": "Mechanically computed distance between the two endpoints of a relation.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "same-standard",
+          "definition": "Both topics decompose the same achievement standard."
+        },
+        {
+          "term": "same-domain",
+          "definition": "Both topics sit in the same subject and content domain."
+        },
+        {
+          "term": "same-subject",
+          "definition": "Both topics sit in the same subject but different domains."
+        },
+        {
+          "term": "cross-school-level",
+          "definition": "The endpoints span school levels; reserved for elementary-to-secondary bridges."
+        }
+      ]
+    },
+    {
+      "term": "ReviewStatus",
+      "definition": "Human review reached for a relation record.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "candidate",
+          "definition": "Machine-generated or repository-authored; no human review recorded."
+        },
+        {
+          "term": "internal-reviewed",
+          "definition": "Reviewed inside the repository against the cited official locator."
+        },
+        {
+          "term": "subject-expert-reviewed",
+          "definition": "Reviewed by an external subject expert."
+        },
+        {
+          "term": "classroom-reviewed",
+          "definition": "Checked against classroom practice."
+        }
+      ]
+    },
+    {
+      "term": "DecompositionKind",
+      "definition": "How a topic relates to its achievement standard.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "standard-core",
+          "definition": "The topic represents the achievement standard as a whole."
+        },
+        {
+          "term": "subject-facet",
+          "definition": "The topic represents one subject facet of the achievement standard."
+        }
+      ]
+    },
+    {
+      "term": "Facet",
+      "definition": "Eight facets shared by the Korean elementary and secondary learning maps; every topic carries exactly one.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "concept",
+          "definition": "Distinguishing concepts, conditions, and examples."
+        },
+        {
+          "term": "procedure",
+          "definition": "Carrying out a procedure, skill, or making task."
+        },
+        {
+          "term": "representation",
+          "definition": "Representing, modelling, or converting between forms."
+        },
+        {
+          "term": "application",
+          "definition": "Applying learning to problems and life situations."
+        },
+        {
+          "term": "inquiry",
+          "definition": "Investigating, gathering data, and reasoning from evidence."
+        },
+        {
+          "term": "communication",
+          "definition": "Expressing and interacting through language."
+        },
+        {
+          "term": "reflection",
+          "definition": "Reflecting on, valuing, and transferring learning."
+        },
+        {
+          "term": "core",
+          "definition": "The whole achievement standard rather than one facet of it."
+        }
+      ],
+      "namespace": "https://dexa.art/learnmap/vocab/facet/",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"],
+      "sourceValueMap": {
+        "concept": "concept",
+        "understand": "concept",
+        "procedure": "procedure",
+        "perform": "procedure",
+        "make": "procedure",
+        "representation": "representation",
+        "application": "application",
+        "practice": "application",
+        "inquiry": "inquiry",
+        "evidence": "inquiry",
+        "reflect": "reflection",
+        "CONCEPTUAL": "concept",
+        "PROCEDURAL": "procedure",
+        "REPRESENTATIONAL": "representation",
+        "LANGUAGE": "communication",
+        "META": "reflection"
+      }
+    },
+    {
+      "term": "ContentKind",
+      "definition": "Provenance of a topic's evidence, assessment prompt, and misconceptions.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "mechanical-derivative",
+          "definition": "Generated from the standard record by a deterministic template; not authored against a source passage."
+        },
+        {
+          "term": "source-grounded-draft",
+          "definition": "Authored against a cited source passage and awaiting subject-expert review."
+        }
+      ],
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"],
+      "conceptPrefix": "content-"
+    },
+    {
+      "term": "LocatorKind",
+      "definition": "Which locator fields apply to a source locator. The stas-record kind is reserved vocabulary; no instance data is emitted in this release.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "printed-page",
+          "definition": "A page and section inside a published curriculum document."
+        },
+        {
+          "term": "stas-record",
+          "definition": "A record read from the STAS achievement-standard service, identified by endpoint, acvmtStdSeq, collection date, and response hash."
+        }
+      ],
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"],
+      "conceptPrefix": "locator-"
     }
   ]
 }

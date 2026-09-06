@@ -9,20 +9,48 @@ import {
 } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  applyContentOverlay,
+  contentOverlayDirectory,
+  indexOverlayEntries,
+  readContentOverlays,
+} from './lib/kr-content-overlay.mjs';
 import { repairTopicRecords, resolveKoreanText } from './lib/kr-content-quality.mjs';
 import {
   normalizeKrSourceRecord,
   normalizeKrSourceRefs,
   STALE_KR_SOURCE_IDS,
 } from './lib/kr-source-provenance.mjs';
+import { officialRelationSpecs } from './lib/official-relation-specs/index.mjs';
+import { expandOfficialRelations } from './lib/official-relations.mjs';
+import {
+  classifyLegacyBasis,
+  computeScope,
+  deriveFacetKey,
+  normalizeCoverageGapSeverity,
+  normalizeCoverageGapStatus,
+  relationId,
+  standardCodeOf,
+} from './lib/relation-vocabulary.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const KR_DATA = resolve(ROOT, 'data', 'kr');
 const WORKSTREAM_DIR = resolve(KR_DATA, 'workstreams');
-const VERSION = 'kr-full-depth-v0.4';
+const VERSION = 'kr-full-depth-v0.5';
 const CREATED_AT = '2026-07-09';
-const GENERATED_AT = '2026-07-09T00:00:00+09:00';
+const GENERATED_AT = '2026-09-05T00:00:00+09:00';
 const MIN_TOPICS = 1500;
+// Cited editions whose enforcement date is later than the build date. Recorded
+// under textPolicy so a consumer can tell "current notice" from "in force".
+const EDITION_EFFECTIVE_FROM = [
+  {
+    sourceId: 'kr-ncic-2026-1-annex15-pdf',
+    curriculumId: 'kr-2022-elem-integrated',
+    effectiveFrom: '2028-03-01',
+    note: '국가교육위원회 고시 제2026-1호 부칙: 초등학교 1·2학년은 2028-03-01부터 시행한다. 그 전 학년도의 현장 시행판은 교육부 고시 제2022-33호 [별책 15](첨부 10003571)이며, 이 데이터셋은 현행 고시본인 2026-1판을 따른다.',
+  },
+];
+const TITLE_ENGLISH_PLACEHOLDER = /micro-topic\s+\d+/i;
 
 const SUBJECT_ORDER = [
   '국어',
@@ -256,11 +284,17 @@ for (const { file, data } of workstreams) {
   for (const gap of data.coverageGaps || []) {
     const body = typeof gap === 'string' ? { description: gap } : clone(gap);
     body.description ||= body.note || body.gap || body.issue || body.title || body.id || 'Documented workstream coverage gap.';
+    const status = normalizeCoverageGapStatus(body.status);
+    const severity = normalizeCoverageGapSeverity(body.severity, status);
     coverageGaps.push({
       workstreamFile: file,
       subject: artifactSubject,
       subjectKorean: artifactSubjectKorean,
       ...body,
+      severity,
+      status,
+      ...(body.severity ? { severitySource: body.severity } : {}),
+      ...(body.status ? { statusSource: body.status } : {}),
       ...(body.sourceRefs ? { sourceRefs: normalizeKrSourceRefs(body.sourceRefs) } : {}),
     });
   }
@@ -273,6 +307,37 @@ for (const topic of topicById.values()) {
 const repairedTopics = repairTopicRecords([...topicById.values()]);
 topicById.clear();
 for (const topic of repairedTopics) topicById.set(topic.id, topic);
+
+// K-12 common topic fields (contract section 4). Elementary decomposition is
+// always subject-facet; facetKey comes from the id suffix with a `type` fallback.
+for (const topic of topicById.values()) {
+  topic.decompositionKind = 'subject-facet';
+  topic.facetKey = deriveFacetKey(topic);
+  topic.standardKey = topic.standards?.[0] ?? null;
+  const code = standardCodeOf(topic);
+  if (code) topic.sourceStandardCode = code;
+  if (topic.titleEnglish === null || TITLE_ENGLISH_PLACEHOLDER.test(String(topic.titleEnglish ?? ''))) {
+    delete topic.titleEnglish;
+  }
+}
+
+// 주제 콘텐츠 오버레이(P3-2). data/kr/content 디렉터리가 없으면 기계적 템플릿을 그대로 둔다.
+const contentOverlays = readContentOverlays(contentOverlayDirectory(KR_DATA));
+const { entries: contentOverlayEntries, errors: contentOverlayErrors } = indexOverlayEntries(contentOverlays);
+if (contentOverlayErrors.length) throw new Error(contentOverlayErrors.join('\n'));
+const unusedOverlayEntries = new Set(contentOverlayEntries.keys());
+let sourceGroundedTopicCount = 0;
+for (const topic of topicById.values()) {
+  if (!applyContentOverlay(topic, contentOverlayEntries.get(topic.id))) continue;
+  unusedOverlayEntries.delete(topic.id);
+  sourceGroundedTopicCount += 1;
+}
+if (unusedOverlayEntries.size > 0) {
+  throw new Error(
+    `data/kr/content: ${unusedOverlayEntries.size} overlay entries reference unknown topics ` +
+      `(${[...unusedOverlayEntries].slice(0, 3).join(', ')})`,
+  );
+}
 
 const standardByCurriculum = new Map();
 for (const standard of standardByKey.values()) {
@@ -299,7 +364,7 @@ const curricula = [...standardByCurriculum.entries()]
       sourceIds: [...sourceIds].sort(),
       sourceUrls: sourceUrls(sourceIds, sourcesById),
       textIncluded: false,
-      license: 'Work-level KOGL and commercial-reuse permission are unresolved; see PROVENANCE.md. This dataset stores original summaries, provenance, and code anchors without verbatim standard text.',
+      license: 'MIT (repository code and derived data). The cited Korean curriculum documents are state-published public materials openly available from their original sources; work-level reuse is CLEARED with attribution. See LICENSE and PROVENANCE.md. This dataset stores original summaries, provenance, and code anchors without verbatim standard text.',
       verificationStatus,
       sourceBasis: `Integrated from workstream artifacts for ${first.subjectKorean}; official text is not reproduced.`,
       standardCount: standards.length,
@@ -320,29 +385,89 @@ const mappings = [...mappingByPair.values()].sort(
     a.microTopicId.localeCompare(b.microTopicId, 'ko'),
 );
 
-const dependencies = [];
-const dependencyKeys = new Set();
-function addDependency(topicId, prerequisiteId, strength, reason, basis, source) {
-  if (!topicById.has(topicId) || !topicById.has(prerequisiteId) || topicId === prerequisiteId) return false;
-  const key = `${topicId}->${prerequisiteId}`;
-  if (dependencyKeys.has(key)) return false;
-  dependencyKeys.add(key);
-  dependencies.push({ topicId, prerequisiteId, strength, reason, basis, source });
-  return true;
+// Layer 1 — official: only what a subject spec module backs with a printed page.
+const { relations: officialDependencies } = expandOfficialRelations({
+  specs: officialRelationSpecs,
+  topics,
+  sourcesById,
+});
+const officialPairs = new Set();
+for (const relation of officialDependencies) {
+  officialPairs.add(`${relation.topicId}->${relation.prerequisiteId}`);
+  // Reverse direction too: an official edge outranks the candidate ordering and
+  // keeping both would make the union graph cyclic.
+  officialPairs.add(`${relation.prerequisiteId}->${relation.topicId}`);
 }
 
+// Union graph reachability, seeded with the official layer. Candidate edges that
+// would contradict an official ordering are dropped: official always wins.
+const unionEdges = new Map();
+const addUnionEdge = (from, to) => {
+  if (!unionEdges.has(from)) unionEdges.set(from, new Set());
+  unionEdges.get(from).add(to);
+};
+for (const relation of officialDependencies) addUnionEdge(relation.topicId, relation.prerequisiteId);
+function unionReaches(start, target) {
+  const stack = [start];
+  const seen = new Set();
+  while (stack.length > 0) {
+    const node = stack.pop();
+    if (node === target) return true;
+    if (seen.has(node)) continue;
+    seen.add(node);
+    for (const next of unionEdges.get(node) || []) stack.push(next);
+  }
+  return false;
+}
+
+// Layer 2 — pedagogical candidate: every workstream suggestion, vocabulary-normalized.
+const candidateDependencies = [];
+const candidateKeys = new Set();
+let officialPromotions = 0;
+let candidateConflicts = 0;
 for (const { file, data } of workstreams) {
   for (const dep of data.dependencySuggestions || []) {
-    addDependency(
-      dep.topicId,
-      dep.prerequisiteId,
-      dep.strength || 'soft',
-      dep.reason || dep.rationale || 'Workstream-authored prerequisite suggestion.',
-      dep.basis || dep.relationship || 'workstream-authored',
-      `workstream:${file}`,
-    );
+    const topic = topicById.get(dep.topicId);
+    const prerequisite = topicById.get(dep.prerequisiteId);
+    if (!topic || !prerequisite || dep.topicId === dep.prerequisiteId) continue;
+    const key = `${dep.topicId}->${dep.prerequisiteId}`;
+    if (candidateKeys.has(key)) continue;
+    if (officialPairs.has(key)) {
+      officialPromotions += 1;
+      candidateKeys.add(key);
+      continue;
+    }
+    if (unionReaches(dep.prerequisiteId, dep.topicId)) {
+      candidateConflicts += 1;
+      candidateKeys.add(key);
+      continue;
+    }
+    candidateKeys.add(key);
+    addUnionEdge(dep.topicId, dep.prerequisiteId);
+    const basis = dep.basis || dep.relationship || 'workstream-authored';
+    candidateDependencies.push({
+      id: relationId(dep.topicId, dep.prerequisiteId),
+      layer: 'pedagogical-candidate',
+      topicId: dep.topicId,
+      prerequisiteId: dep.prerequisiteId,
+      relationKind: 'recommended-before',
+      basisKind: classifyLegacyBasis(basis),
+      scope: computeScope(topic, prerequisite),
+      strength: dep.strength || 'soft',
+      reviewStatus: 'candidate',
+      reason: dep.reason || dep.rationale || 'Workstream-authored prerequisite suggestion.',
+      basis,
+      source: `workstream:${file}`,
+      sourceRefs: [
+        ...new Set([...(topic.sourceRefs || []), ...(prerequisite.sourceRefs || [])]),
+      ].sort(),
+    });
   }
 }
+candidateDependencies.sort(
+  (left, right) =>
+    left.topicId.localeCompare(right.topicId) || left.prerequisiteId.localeCompare(right.prerequisiteId),
+);
 
 const sources = [...sourcesById.values()].sort((a, b) => a.id.localeCompare(b.id));
 const aggregateVerification = verificationMax([
@@ -367,6 +492,12 @@ const curriculumStandards = {
     summaryPolicy: 'Original summaries, source-derived paraphrases, evidence notes, and assessment prompts only; no bulk verbatim curriculum text.',
     licensingStatus: 'public-government-document',
     licenseCaution: 'CLEARED: the cited Korean curriculum documents are state-published public materials openly available from their original sources (Ministry of Education, National Education Commission, NCIC). Preserve attribution and see PROVENANCE.md.',
+    // Edition policy: pin every subject to the notice edition NCIC currently
+    // serves, not to the edition in force in classrooms. Where the two differ,
+    // the difference is recorded here and on the affected standards rather than
+    // by keeping two parallel inventories.
+    sourceEditionPolicy: 'Current notice edition ("현행 고시본"), not the edition currently enforced ("현재 시행판"). Where a cited edition is not yet enforced, the affected standards carry effectiveFrom and the entry is listed in effectiveFrom below.',
+    effectiveFrom: EDITION_EFFECTIVE_FROM,
   },
   sourceCount: sources.length,
   sources,
@@ -390,20 +521,61 @@ const topicsFile = {
   topics,
 };
 
+const relationLayerPolicy = {
+  official: {
+    file: 'dependencies.json',
+    relationKind: 'required-prerequisite',
+    basisKind: 'official-source',
+    reviewStatus: 'internal-reviewed',
+    edgeCount: officialDependencies.length,
+    derivesOntologyViews: true,
+    note: 'Only official-source relations are materialized as directRequires/unlocks/indirectRequires.',
+  },
+  'pedagogical-candidate': {
+    file: 'dependencies.candidate.json',
+    relationKind: 'recommended-before',
+    basisKind: 'official-code-order | decomposition-order | repository-authored',
+    reviewStatus: 'candidate',
+    edgeCount: candidateDependencies.length,
+    derivesOntologyViews: false,
+    note: 'Product surfaces these as recommended order only; they are not prerequisite claims.',
+  },
+};
+
 const dependenciesFile = {
   $schema: '../../schema/kr-dependencies.schema.json',
   version: VERSION,
   taxonomyVersion: VERSION,
   locale: 'ko-KR',
   country: 'KR',
-  edgeCount: dependencies.length,
+  layer: 'official',
+  edgeCount: officialDependencies.length,
   graphPolicy: {
     relation: 'prerequisite',
     acyclic: true,
-    edgeSelection: 'workstream-reviewed-only',
+    edgeSelection: 'official-source-only',
     crossSubjectEdges: 'none',
+    layers: relationLayerPolicy,
   },
-  dependencies,
+  dependencies: officialDependencies,
+};
+
+const candidateDependenciesFile = {
+  $schema: '../../schema/kr-dependencies-candidate.schema.json',
+  version: VERSION,
+  taxonomyVersion: VERSION,
+  locale: 'ko-KR',
+  country: 'KR',
+  layer: 'pedagogical-candidate',
+  edgeCount: candidateDependencies.length,
+  graphPolicy: {
+    relation: 'recommended-order',
+    acyclic: true,
+    edgeSelection: 'pedagogical-candidate-only',
+    crossSubjectEdges: 'none',
+    layers: relationLayerPolicy,
+  },
+  dependencies: candidateDependencies,
 };
 
 const clustersFile = {
@@ -426,6 +598,7 @@ if (topics.length < MIN_TOPICS) throw new Error(`KR topic target missed: ${topic
 writeJson(resolve(KR_DATA, 'curriculum-standards.json'), curriculumStandards);
 writeJson(resolve(KR_DATA, 'topics.json'), topicsFile);
 writeJson(resolve(KR_DATA, 'dependencies.json'), dependenciesFile);
+writeJson(resolve(KR_DATA, 'dependencies.candidate.json'), candidateDependenciesFile);
 writeJson(resolve(KR_DATA, 'clusters.json'), clustersFile);
 
 const files = {};
@@ -451,16 +624,35 @@ writeJson(resolve(KR_DATA, 'manifest.json'), {
     curricula: curricula.length,
     standards: standardByKey.size,
     topics: topics.length,
-    dependencies: dependencies.length,
+    dependencies: officialDependencies.length,
+    candidateDependencies: candidateDependencies.length,
     clusters: clusters.length,
     standardMappings: mappings.length,
     coverageGaps: coverageGaps.length,
     workstreams: workstreams.length,
+    contentOverlayFiles: contentOverlays.length,
+    sourceGroundedTopics: sourceGroundedTopicCount,
   },
   targets: {
     topicsAtLeast: MIN_TOPICS,
   },
   graphPolicy: dependenciesFile.graphPolicy,
+  relationLayers: {
+    official: {
+      file: 'dependencies.json',
+      edgeCount: officialDependencies.length,
+      bytes: files['dependencies.json'].bytes,
+      sha256: files['dependencies.json'].sha256,
+    },
+    'pedagogical-candidate': {
+      file: 'dependencies.candidate.json',
+      edgeCount: candidateDependencies.length,
+      bytes: files['dependencies.candidate.json'].bytes,
+      sha256: files['dependencies.candidate.json'].sha256,
+      supersededByOfficial: officialPromotions,
+      droppedForOfficialOrdering: candidateConflicts,
+    },
+  },
   coverageNotes: {
     social: {
       posture: 'Korea-first official Annex 7 inventory; no imported US/UK social-studies defaults.',
@@ -479,20 +671,26 @@ writeJson(resolve(KR_DATA, 'manifest.json'), {
       topics: topics.filter((topic) => ['미술', '음악', '체육'].includes(topic.subjectKorean)).length,
     },
     amendedAnnex15: {
-      posture: 'Current accessible 2026 amendment retained with nine directly located 건강한 생활 standards.',
-      standards: [...standardByKey.values()].filter((standard) => standard.code.startsWith('[2건')).length,
-      topics: topics.filter((topic) => topic.domainKorean === '건강한 생활').length,
+      posture:
+        'Integrated subjects are pinned to the 2026-1 amended Annex 15 alone (attachment 10004214): 바 16 + 슬 16 + 건 9 + 즐 16. The 2022-33 Annex 15 is no longer cited because the amendment reassigned every 즐거운 생활 code.',
+      standards: standardByCurriculum.get('kr-2022-elem-integrated')?.length || 0,
+      healthStandards: [...standardByKey.values()].filter((standard) => standard.code.startsWith('[2건')).length,
+      joyfulStandards: [...standardByKey.values()].filter((standard) => standard.code.startsWith('[2즐')).length,
+      topics: topics.filter((topic) => topic.subjectKorean === '통합교과').length,
     },
   },
   workstreams: workstreamFiles,
   files,
   sourcePosture: {
     recordSchema: 'All integrated source records use id, name, url, accessDate, usage, and sourceType; stale portal aliases and dead notice URLs are excluded.',
-    verification: 'Official-inventory gates bind every curriculum to an exact standard count and direct official PDF source.',
+    verification: 'Official-inventory gates bind every curriculum to an exact standard count, an exact code-set digest, and a direct official PDF source.',
+    editionPolicy: curriculumStandards.textPolicy.sourceEditionPolicy,
+    effectiveFrom: EDITION_EFFECTIVE_FROM,
     workLevelReuseStatus: 'CLEARED: the cited Korean official curriculum documents are state-published public materials openly available from their original sources; see PROVENANCE.md.',
   },
 });
 
 console.log(
-  `Built KR full-depth data: ${curricula.length} curricula, ${standardByKey.size} standards, ${topics.length} topics, ${dependencies.length} dependencies, ${clusters.length} clusters.`,
+  `Built KR full-depth data: ${curricula.length} curricula, ${standardByKey.size} standards, ${topics.length} topics, ` +
+    `${officialDependencies.length} official + ${candidateDependencies.length} candidate relations, ${clusters.length} clusters.`,
 );

@@ -35,10 +35,12 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT_PATH = ROOT / "dist" / "ontology" / "validation-report.json"
 
 LM = Namespace("https://dexa.art/learnmap/ontology#")
+CORE = Namespace("https://dexa.art/learnmap/ontology/k12-core#")
 LMV = Namespace("https://dexa.art/learnmap/vocab/#/")
 INSTANCE_NAMESPACE = "https://dexa.art/learnmap/#/"
 ONTOLOGY_NAMESPACE = "https://dexa.art/learnmap/ontology#"
 VOCABULARY_NAMESPACE = "https://dexa.art/learnmap/vocab/#/"
+CORE_NAMESPACE = "https://dexa.art/learnmap/ontology/k12-core#"
 
 REQUIRED_VERSIONS = {
     "rdflib": "7.1.4",
@@ -48,6 +50,7 @@ REQUIRED_VERSIONS = {
 
 PARSED_INPUTS = {
     "ontology/learning-map.ttl": "turtle",
+    "ontology/k12-core.ttl": "turtle",
     "ontology/shapes.ttl": "turtle",
     "ontology/metadata.ttl": "turtle",
     "dist/ontology/learning-map.ttl": "turtle",
@@ -56,44 +59,111 @@ PARSED_INPUTS = {
 
 ROUND_TRIP_SOURCE_FILES = [
     "data/kr/dependencies.json",
+    "data/kr/dependencies.candidate.json",
     "data/kr/curriculum-standards.json",
 ]
 
+
+def _load_relation_layer_counts() -> tuple[int, int]:
+    official = json.loads((ROOT / "data" / "kr" / "dependencies.json").read_text(encoding="utf-8"))
+    candidate = json.loads(
+        (ROOT / "data" / "kr" / "dependencies.candidate.json").read_text(encoding="utf-8")
+    )
+    return len(official["dependencies"]), len(candidate["dependencies"])
+
+
+def _indirect_official_closure() -> int:
+    official = json.loads((ROOT / "data" / "kr" / "dependencies.json").read_text(encoding="utf-8"))
+    adjacency: dict[str, set[str]] = defaultdict(set)
+    for edge in official["dependencies"]:
+        adjacency[edge["topicId"]].add(edge["prerequisiteId"])
+        adjacency.setdefault(edge["prerequisiteId"], set())
+    total = 0
+    for dependent, direct in adjacency.items():
+        reachable: set[str] = set()
+        pending = deque(direct)
+        while pending:
+            current = pending.pop()
+            if current in reachable:
+                continue
+            reachable.add(current)
+            pending.extend(adjacency.get(current, set()))
+        total += len({node for node in reachable if node != dependent and node not in direct})
+    return total
+
+
+def _load_dataset_counts() -> dict[str, int]:
+    """Dataset record counts read straight from the published KR files.
+
+    The exporter must emit exactly one graph resource per record, so these are
+    derived rather than pinned; only the structural constants below are fixed.
+    """
+    standards = json.loads(
+        (ROOT / "data" / "kr" / "curriculum-standards.json").read_text(encoding="utf-8")
+    )
+    topics = json.loads((ROOT / "data" / "kr" / "topics.json").read_text(encoding="utf-8"))
+    clusters = json.loads((ROOT / "data" / "kr" / "clusters.json").read_text(encoding="utf-8"))
+    return {
+        "curricula": len(standards["curricula"]),
+        "standards": standards["standardCount"],
+        "sources": len(standards["sources"]),
+        "standardMappings": len(standards["standardMappings"]),
+        "coverageGaps": len(standards["coverageGaps"]),
+        "topics": len(topics["topics"]),
+        "clusters": len(clusters["clusters"]),
+        "evidenceCriteria": sum(len(topic.get("evidence") or []) for topic in topics["topics"]),
+        "contentSourceLocators": sum(1 for topic in topics["topics"] if topic.get("contentSourceLocator")),
+    }
+
+
+OFFICIAL_RELATION_COUNT, CANDIDATE_RELATION_COUNT = _load_relation_layer_counts()
+ASSERTION_COUNT = OFFICIAL_RELATION_COUNT + CANDIDATE_RELATION_COUNT
+DATASET_COUNTS = _load_dataset_counts()
+# Source locators and verification records that do not belong to a prerequisite
+# assertion. Every official relation adds one locator and one verification
+# record; every candidate relation adds one verification record; every
+# source-grounded draft adds one content source locator.
+BASE_SOURCE_LOCATORS = 1424
+BASE_VERIFICATION_RECORDS = 4560
+
 EXPECTED_SOURCE_COUNTS = {
-    "curricula": 11,
-    "standards": 620,
-    "topics": 1956,
-    "dependencies": 1894,
-    "clusters": 153,
-    "standardMappings": 1956,
-    "coverageGaps": 43,
+    "curricula": DATASET_COUNTS["curricula"],
+    "standards": DATASET_COUNTS["standards"],
+    "topics": DATASET_COUNTS["topics"],
+    "dependencies": OFFICIAL_RELATION_COUNT,
+    "candidateDependencies": CANDIDATE_RELATION_COUNT,
+    "clusters": DATASET_COUNTS["clusters"],
+    "standardMappings": DATASET_COUNTS["standardMappings"],
+    "coverageGaps": DATASET_COUNTS["coverageGaps"],
 }
 
 EXPECTED_GRAPH_RESOURCES = {
-    "AchievementStandard": 620,
-    "AssessmentPrompt": 1956,
-    "CoverageGap": 43,
-    "Curriculum": 11,
+    "AchievementStandard": DATASET_COUNTS["standards"],
+    "AssessmentPrompt": DATASET_COUNTS["topics"],
+    "CoverageGap": DATASET_COUNTS["coverageGaps"],
+    "Curriculum": DATASET_COUNTS["curricula"],
     "DatasetRelease": 1,
-    "EvidenceCriterion": 4056,
+    "EvidenceCriterion": DATASET_COUNTS["evidenceCriteria"],
     "GradeBand": 5,
-    "LearningCluster": 153,
+    "LearningCluster": DATASET_COUNTS["clusters"],
     "LearningDomain": 79,
-    "LearningTopic": 1956,
-    "PrerequisiteAssertion": 1894,
-    "SourceDocument": 17,
-    "SourceLocator": 1232,
-    "StandardTopicAlignment": 1956,
+    "LearningTopic": DATASET_COUNTS["topics"],
+    "PrerequisiteAssertion": ASSERTION_COUNT,
+    "SourceDocument": DATASET_COUNTS["sources"],
+    "SourceLocator": BASE_SOURCE_LOCATORS + OFFICIAL_RELATION_COUNT + DATASET_COUNTS["contentSourceLocators"],
+    "StandardTopicAlignment": DATASET_COUNTS["standardMappings"],
     "Subject": 12,
-    "VerificationRecord": 6455,
+    "VerificationRecord": BASE_VERIFICATION_RECORDS + ASSERTION_COUNT,
 }
 
 EXPECTED_RELATIONS = {
-    "alignedToStandard": 1956,
-    "directRequires": 1894,
-    "indirectRequires": 53656,
-    "unlocks": 1894,
+    "alignedToStandard": DATASET_COUNTS["standardMappings"],
+    "directRequires": OFFICIAL_RELATION_COUNT,
+    "indirectRequires": _indirect_official_closure(),
+    "unlocks": OFFICIAL_RELATION_COUNT,
 }
+
+OFFICIAL_LAYER = URIRef(f"{VOCABULARY_NAMESPACE}RelationLayer/official")
 
 ALLOWED_GRADE_BANDS = {"1-2", "3-4", "5-6", "3-6", "1-6"}
 RIGHTS_CLEARED = URIRef(f"{VOCABULARY_NAMESPACE}RightsStatus/cleared")
@@ -146,6 +216,12 @@ CARDINALITY_PROFILE: dict[str, dict[URIRef, tuple[int, int | None]]] = {
         LM.hasGradeBand: (1, 1),
         LM.hasLearningDomain: (1, 1),
         LM.topicType: (1, 1),
+        LM.decompositionKind: (1, 1),
+        LM.facetKey: (1, 1),
+        CORE.facetKey: (1, 1),
+        CORE.contentKind: (1, 1),
+        LM.standardKey: (1, 1),
+        LM.sourceStandardCode: (1, 1),
         LM.hasEvidenceCriterion: (1, None),
         LM.hasAssessmentPrompt: (1, None),
         LM.hasStandardTopicAlignment: (1, None),
@@ -170,11 +246,17 @@ CARDINALITY_PROFILE: dict[str, dict[URIRef, tuple[int, int | None]]] = {
     },
     "PrerequisiteAssertion": {
         LM.identifier: (1, 1),
+        LM.relationIdentifier: (1, 1),
         LM.dependentTopic: (1, 1),
         LM.prerequisiteTopic: (1, 1),
         LM.prerequisiteStrength: (1, 1),
         LM.prerequisiteReason: (1, None),
         LM.legacyPrerequisiteStrength: (1, 1),
+        LM.assertionLayer: (1, 1),
+        LM.relationKind: (1, 1),
+        LM.basisKind: (1, 1),
+        LM.scope: (1, 1),
+        LM.reviewStatus: (1, 1),
         LM.assertionBasis: (1, 1),
         LM.assertionSource: (1, 1),
         LM.hasVerificationRecord: (1, 1),
@@ -213,6 +295,7 @@ CARDINALITY_PROFILE: dict[str, dict[URIRef, tuple[int, int | None]]] = {
         LM.identifier: (1, 1),
         LM.gapCategory: (1, 1),
         LM.gapSeverity: (1, 1),
+        LM.gapStatus: (1, 1),
         LM.sourceGapSeverityPresent: (1, 1),
         LM.gapDescription: (1, None),
     },
@@ -255,7 +338,10 @@ OBJECT_PROPERTY_PROFILE: dict[URIRef, tuple[set[str], str]] = {
         },
         "SourceDocument",
     ),
-    LM.hasSourceLocator: ({"SourceDocument", "AchievementStandard", "LearningTopic", "CoverageGap"}, "SourceLocator"),
+    LM.hasSourceLocator: (
+        {"SourceDocument", "AchievementStandard", "LearningTopic", "CoverageGap", "PrerequisiteAssertion"},
+        "SourceLocator",
+    ),
     LM.hasVerificationRecord: (
         {"DatasetRelease", "Curriculum", "SourceDocument", "AchievementStandard", "LearningTopic", "PrerequisiteAssertion", "StandardTopicAlignment"},
         "VerificationRecord",
@@ -271,7 +357,19 @@ CONTROLLED_CONCEPT_PROPERTIES = {
     LM.rightsStatus,
     LM.gapCategory,
     LM.gapSeverity,
+    LM.assertionLayer,
+    LM.relationKind,
+    LM.basisKind,
+    LM.scope,
+    LM.reviewStatus,
+    LM.decompositionKind,
 }
+
+# The shared K-12 facet scheme lives outside the repo-local vocab/#/ namespace.
+FACET_NAMESPACE = "https://dexa.art/learnmap/vocab/facet/"
+FACET_CONCEPT_PROPERTIES = {LM.facetKey}
+# Core-namespace projections shared with the secondary map.
+CORE_CONCEPT_PROPERTIES = {CORE.facetKey, CORE.contentKind, CORE.layerConcept, CORE.locatorKind}
 
 
 def sha256_bytes(data: bytes) -> str:
@@ -619,6 +717,16 @@ def validate_profile(graph: Graph, tbox_graph: Graph) -> dict[str, Any]:
             if not isinstance(obj, URIRef) or not str(obj).startswith(VOCABULARY_NAMESPACE) or obj not in tbox_concepts:
                 errors.append(f"{term_key(predicate)} controlled concept mismatch on {term_key(subject)} -> {term_key(obj)}")
 
+    for predicate in FACET_CONCEPT_PROPERTIES:
+        for subject, _, obj in graph.triples((None, predicate, None)):
+            if not isinstance(obj, URIRef) or not str(obj).startswith(FACET_NAMESPACE) or obj not in tbox_concepts:
+                errors.append(f"{term_key(predicate)} facet concept mismatch on {term_key(subject)} -> {term_key(obj)}")
+
+    for predicate in CORE_CONCEPT_PROPERTIES:
+        for subject, _, obj in graph.triples((None, predicate, None)):
+            if not isinstance(obj, URIRef) or not str(obj).startswith(CORE_NAMESPACE) or obj not in tbox_concepts:
+                errors.append(f"{term_key(predicate)} core concept mismatch on {term_key(subject)} -> {term_key(obj)}")
+
     return {
         "pass": not errors,
         "errorCount": len(errors),
@@ -811,19 +919,26 @@ def source_standard_iri(standard_key: str) -> str:
 
 
 def validate_qualified_round_trips(graph: Graph) -> dict[str, Any]:
-    dependencies = read_json("data/kr/dependencies.json")["dependencies"]
+    dependencies = (
+        read_json("data/kr/dependencies.json")["dependencies"]
+        + read_json("data/kr/dependencies.candidate.json")["dependencies"]
+    )
     standards = read_json("data/kr/curriculum-standards.json")
     standard_mappings = standards["standardMappings"]
     direct = relation_pairs(graph, LM.directRequires)
     aligned = relation_pairs(graph, LM.alignedToStandard)
 
     prerequisite_pairs = Counter()
+    official_pairs = Counter()
     prerequisite_records = Counter()
     for assertion in graph.subjects(RDF.type, LM.PrerequisiteAssertion):
         dependent = graph.value(assertion, LM.dependentTopic)
         prerequisite = graph.value(assertion, LM.prerequisiteTopic)
         strength = graph.value(assertion, LM.prerequisiteStrength)
+        layer = graph.value(assertion, LM.assertionLayer)
         prerequisite_pairs[(str(dependent), str(prerequisite))] += 1
+        if layer == OFFICIAL_LAYER:
+            official_pairs[(str(dependent), str(prerequisite))] += 1
         prerequisite_records[
             (
                 str(dependent),
@@ -833,6 +948,12 @@ def validate_qualified_round_trips(graph: Graph) -> dict[str, Any]:
                 literal_string(graph, assertion, LM.prerequisiteReason),
                 literal_string(graph, assertion, LM.assertionBasis),
                 literal_string(graph, assertion, LM.assertionSource),
+                str(layer),
+                str(graph.value(assertion, LM.relationKind)),
+                str(graph.value(assertion, LM.basisKind)),
+                str(graph.value(assertion, LM.scope)),
+                str(graph.value(assertion, LM.reviewStatus)),
+                literal_string(graph, assertion, LM.relationIdentifier),
             )
         ] += 1
 
@@ -848,6 +969,12 @@ def validate_qualified_round_trips(graph: Graph) -> dict[str, Any]:
                 edge["reason"],
                 edge["basis"],
                 edge["source"],
+                f"{VOCABULARY_NAMESPACE}RelationLayer/{edge['layer']}",
+                f"{VOCABULARY_NAMESPACE}RelationKind/{edge['relationKind']}",
+                f"{VOCABULARY_NAMESPACE}BasisKind/{edge['basisKind']}",
+                f"{VOCABULARY_NAMESPACE}RelationScope/{edge['scope']}",
+                f"{VOCABULARY_NAMESPACE}ReviewStatus/{edge['reviewStatus']}",
+                edge["id"],
             )
         ] += 1
 
@@ -902,14 +1029,14 @@ def validate_qualified_round_trips(graph: Graph) -> dict[str, Any]:
             )
         ] += 1
 
-    prerequisite_pair_set = set(prerequisite_pairs)
+    prerequisite_pair_set = set(official_pairs)
     alignment_pair_set = set(alignment_pairs)
     duplicate_prerequisites = sum(count - 1 for count in prerequisite_pairs.values() if count > 1)
     duplicate_alignments = sum(count - 1 for count in alignment_pairs.values() if count > 1)
     errors = []
     if direct != prerequisite_pair_set:
         errors.append(
-            f"directRequires/PrerequisiteAssertion mismatch missing {len(direct - prerequisite_pair_set)}, "
+            f"directRequires/official PrerequisiteAssertion mismatch missing {len(direct - prerequisite_pair_set)}, "
             f"extra {len(prerequisite_pair_set - direct)}"
         )
     if aligned != alignment_pair_set:
@@ -1051,7 +1178,7 @@ def build_input_hashes() -> dict[str, str]:
 def validate_ontology() -> dict[str, Any]:
     versions = tool_versions()
     graphs = {path: parse_graph(path, rdf_format) for path, rdf_format in PARSED_INPUTS.items()}
-    tbox_graph = graphs["ontology/learning-map.ttl"]
+    tbox_graph = merge_graphs(graphs["ontology/learning-map.ttl"], graphs["ontology/k12-core.ttl"])
     shapes_graph = graphs["ontology/shapes.ttl"]
     data_graph = graphs["dist/ontology/learning-map.ttl"]
     ontology_graph = tbox_graph

@@ -116,7 +116,7 @@
       "sequence": 1,
       "module": "네 자리 이하의 수",
       "focus": "네 자리 이하의 수 소주제의 수와 연산 성취기준 [2수01-01]",
-      "summary": "1-2학년군 수와 연산 영역의 '네 자리 이하의 수' 소주제에 배치된 공식 성취기준 [2수01-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "0부터 100까지 수가 쓰이는 까닭을 알고 세어 읽고 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -130,7 +130,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-01] appears in the 초등학교 1-2학년 수와 연산 section under '네 자리 이하의 수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-02]",
@@ -144,7 +145,7 @@
       "sequence": 2,
       "module": "네 자리 이하의 수",
       "focus": "네 자리 이하의 수 소주제의 수와 연산 성취기준 [2수01-02]",
-      "summary": "1-2학년군 수와 연산 영역의 '네 자리 이하의 수' 소주제에 배치된 공식 성취기준 [2수01-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "천 단위까지 자릿값 체계를 파악해 네 자리 수 읽고 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -158,7 +159,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-02] appears in the 초등학교 1-2학년 수와 연산 section under '네 자리 이하의 수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-03]",
@@ -172,7 +174,7 @@
       "sequence": 3,
       "module": "네 자리 이하의 수",
       "focus": "네 자리 이하의 수 소주제의 수와 연산 성취기준 [2수01-03]",
-      "summary": "1-2학년군 수와 연산 영역의 '네 자리 이하의 수' 소주제에 배치된 공식 성취기준 [2수01-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "네 자리 범위에서 수가 늘어서는 차례를 알고 크기 견주기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -186,7 +188,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-03] appears in the 초등학교 1-2학년 수와 연산 section under '네 자리 이하의 수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-04]",
@@ -200,7 +203,7 @@
       "sequence": 4,
       "module": "네 자리 이하의 수",
       "focus": "네 자리 이하의 수 소주제의 수와 연산 성취기준 [2수01-04]",
-      "summary": "1-2학년군 수와 연산 영역의 '네 자리 이하의 수' 소주제에 배치된 공식 성취기준 [2수01-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "한 수를 두 수로 가르고 다시 모으며 수 감각 키우기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -214,7 +217,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-04] appears in the 초등학교 1-2학년 수와 연산 section under '네 자리 이하의 수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-05]",
@@ -228,7 +232,7 @@
       "sequence": 5,
       "module": "두 자리 수 범위의 덧셈과 뺄셈",
       "focus": "두 자리 수 범위의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [2수01-05]",
-      "summary": "1-2학년군 수와 연산 영역의 '두 자리 수 범위의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [2수01-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 장면과 이어 더하기와 빼기가 뜻하는 바 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -242,7 +246,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-05] appears in the 초등학교 1-2학년 수와 연산 section under '두 자리 수 범위의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-06]",
@@ -256,7 +261,7 @@
       "sequence": 6,
       "module": "두 자리 수 범위의 덧셈과 뺄셈",
       "focus": "두 자리 수 범위의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [2수01-06]",
-      "summary": "1-2학년군 수와 연산 영역의 '두 자리 수 범위의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [2수01-06]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "두 자리 수끼리 더하고 빼는 셈법 원리를 익혀 계산하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -270,7 +275,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-06] appears in the 초등학교 1-2학년 수와 연산 section under '두 자리 수 범위의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-07]",
@@ -284,7 +290,7 @@
       "sequence": 7,
       "module": "두 자리 수 범위의 덧셈과 뺄셈",
       "focus": "두 자리 수 범위의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [2수01-07]",
-      "summary": "1-2학년군 수와 연산 영역의 '두 자리 수 범위의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [2수01-07]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "더하기와 빼기가 서로 어떻게 이어지는지 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -298,7 +304,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-07] appears in the 초등학교 1-2학년 수와 연산 section under '두 자리 수 범위의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-08]",
@@ -312,7 +319,7 @@
       "sequence": 8,
       "module": "두 자리 수 범위의 덧셈과 뺄셈",
       "focus": "두 자리 수 범위의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [2수01-08]",
-      "summary": "1-2학년군 수와 연산 영역의 '두 자리 수 범위의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [2수01-08]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "세 수를 잇달아 더하거나 빼는 계산 수행하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -326,7 +333,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-08] appears in the 초등학교 1-2학년 수와 연산 section under '두 자리 수 범위의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-09]",
@@ -340,7 +348,7 @@
       "sequence": 9,
       "module": "두 자리 수 범위의 덧셈과 뺄셈",
       "focus": "두 자리 수 범위의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [2수01-09]",
-      "summary": "1-2학년군 수와 연산 영역의 '두 자리 수 범위의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [2수01-09]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "네모가 들어간 식을 세우고 그 자리의 값 찾아내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -354,7 +362,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-09] appears in the 초등학교 1-2학년 수와 연산 section under '두 자리 수 범위의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-10]",
@@ -368,7 +377,7 @@
       "sequence": 10,
       "module": "한 자리 수의 곱셈",
       "focus": "한 자리 수의 곱셈 소주제의 수와 연산 성취기준 [2수01-10]",
-      "summary": "1-2학년군 수와 연산 영역의 '한 자리 수의 곱셈' 소주제에 배치된 공식 성취기준 [2수01-10]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 속 묶음 장면과 이어 곱하기가 뜻하는 바 알기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -382,7 +391,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-10] appears in the 초등학교 1-2학년 수와 연산 section under '한 자리 수의 곱셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수01-11]",
@@ -396,7 +406,7 @@
       "sequence": 11,
       "module": "한 자리 수의 곱셈",
       "focus": "한 자리 수의 곱셈 소주제의 수와 연산 성취기준 [2수01-11]",
-      "summary": "1-2학년군 수와 연산 영역의 '한 자리 수의 곱셈' 소주제에 배치된 공식 성취기준 [2수01-11]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "구구단을 익혀 한 자리 수끼리 곱하는 셈 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -410,7 +420,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수01-11] appears in the 초등학교 1-2학년 수와 연산 section under '한 자리 수의 곱셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수02-01]",
@@ -424,7 +435,7 @@
       "sequence": 1,
       "module": "규칙 찾기",
       "focus": "규칙 찾기 소주제의 변화와 관계 성취기준 [2수02-01]",
-      "summary": "1-2학년군 변화와 관계 영역의 '규칙 찾기' 소주제에 배치된 공식 성취기준 [2수02-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "물체와 무늬, 수가 늘어선 모습에서 규칙 찾아 여러 방식으로 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -438,7 +449,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수02-01] appears in the 초등학교 1-2학년 변화와 관계 section under '규칙 찾기'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수02-02]",
@@ -452,7 +464,7 @@
       "sequence": 2,
       "module": "규칙 찾기",
       "focus": "규칙 찾기 소주제의 변화와 관계 성취기준 [2수02-02]",
-      "summary": "1-2학년군 변화와 관계 영역의 '규칙 찾기' 소주제에 배치된 공식 성취기준 [2수02-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "스스로 정한 규칙대로 물체나 무늬를 차례로 늘어놓기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -466,7 +478,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수02-02] appears in the 초등학교 1-2학년 변화와 관계 section under '규칙 찾기'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-01]",
@@ -480,7 +493,7 @@
       "sequence": 1,
       "module": "입체도형의 모양",
       "focus": "입체도형의 모양 소주제의 도형과 측정 성취기준 [2수03-01]",
-      "summary": "1-2학년군 도형과 측정 영역의 '입체도형의 모양' 소주제에 배치된 공식 성취기준 [2수03-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 물건에서 직육면체와 원기둥, 구 모양 찾아 새 모양 꾸미기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -494,7 +507,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-01] appears in the 초등학교 1-2학년 도형과 측정 section under '입체도형의 모양'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-02]",
@@ -508,7 +522,7 @@
       "sequence": 2,
       "module": "입체도형의 모양",
       "focus": "입체도형의 모양 소주제의 도형과 측정 성취기준 [2수03-02]",
-      "summary": "1-2학년군 도형과 측정 영역의 '입체도형의 모양' 소주제에 배치된 공식 성취기준 [2수03-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "쌓기나무로 입체 모양을 만들고 위치와 방향으로 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -522,7 +536,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-02] appears in the 초등학교 1-2학년 도형과 측정 section under '입체도형의 모양'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-03]",
@@ -536,7 +551,7 @@
       "sequence": 3,
       "module": "평면도형과 그 구성 요소",
       "focus": "평면도형과 그 구성 요소 소주제의 도형과 측정 성취기준 [2수03-03]",
-      "summary": "1-2학년군 도형과 측정 영역의 '평면도형과 그 구성 요소' 소주제에 배치된 공식 성취기준 [2수03-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "주변 물건에서 삼각형과 사각형, 원 모양 찾아 꾸며 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -550,7 +565,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-03] appears in the 초등학교 1-2학년 도형과 측정 section under '평면도형과 그 구성 요소'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-04]",
@@ -564,7 +580,7 @@
       "sequence": 4,
       "module": "평면도형과 그 구성 요소",
       "focus": "평면도형과 그 구성 요소 소주제의 도형과 측정 성취기준 [2수03-04]",
-      "summary": "1-2학년군 도형과 측정 영역의 '평면도형과 그 구성 요소' 소주제에 배치된 공식 성취기준 [2수03-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "삼각형과 사각형, 원을 눈으로 알아보고 그 모양 그리기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -578,7 +594,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-04] appears in the 초등학교 1-2학년 도형과 측정 section under '평면도형과 그 구성 요소'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-05]",
@@ -592,7 +609,7 @@
       "sequence": 5,
       "module": "평면도형과 그 구성 요소",
       "focus": "평면도형과 그 구성 요소 소주제의 도형과 측정 성취기준 [2수03-05]",
-      "summary": "1-2학년군 도형과 측정 영역의 '평면도형과 그 구성 요소' 소주제에 배치된 공식 성취기준 [2수03-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "삼각형과 사각형이 지닌 공통된 특징 찾아 말하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -606,7 +623,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-05] appears in the 초등학교 1-2학년 도형과 측정 section under '평면도형과 그 구성 요소'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-06]",
@@ -620,7 +638,7 @@
       "sequence": 6,
       "module": "양의 비교",
       "focus": "양의 비교 소주제의 도형과 측정 성취기준 [2수03-06]",
-      "summary": "1-2학년군 도형과 측정 영역의 '양의 비교' 소주제에 배치된 공식 성취기준 [2수03-06]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "물건의 길이와 들이, 무게, 넓이를 견주어 알맞은 말로 구별하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -634,7 +652,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-06] appears in the 초등학교 1-2학년 도형과 측정 section under '양의 비교'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-07]",
@@ -648,7 +667,7 @@
       "sequence": 7,
       "module": "시각과 시간",
       "focus": "시각과 시간 소주제의 도형과 측정 성취기준 [2수03-07]",
-      "summary": "1-2학년군 도형과 측정 영역의 '시각과 시간' 소주제에 배치된 공식 성취기준 [2수03-07]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "시계를 살펴 몇 시 몇 분까지 시각 읽어내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -662,7 +681,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-07] appears in the 초등학교 1-2학년 도형과 측정 section under '시각과 시간'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-08]",
@@ -676,7 +696,7 @@
       "sequence": 8,
       "module": "시각과 시간",
       "focus": "시각과 시간 소주제의 도형과 측정 성취기준 [2수03-08]",
-      "summary": "1-2학년군 도형과 측정 영역의 '시각과 시간' 소주제에 배치된 공식 성취기준 [2수03-08]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "한 시간과 일 분의 관계를 알고 시간 단위로 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -690,7 +710,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-08] appears in the 초등학교 1-2학년 도형과 측정 section under '시각과 시간'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-09]",
@@ -704,7 +725,7 @@
       "sequence": 9,
       "module": "시각과 시간",
       "focus": "시각과 시간 소주제의 도형과 측정 성취기준 [2수03-09]",
-      "summary": "1-2학년군 도형과 측정 영역의 '시각과 시간' 소주제에 배치된 공식 성취기준 [2수03-09]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분과 시간, 일, 주, 개월, 해 사이 관계를 생활 문제로 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -718,7 +739,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-09] appears in the 초등학교 1-2학년 도형과 측정 section under '시각과 시간'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-10]",
@@ -732,7 +754,7 @@
       "sequence": 10,
       "module": "길이",
       "focus": "길이 소주제의 도형과 측정 성취기준 [2수03-10]",
-      "summary": "1-2학년군 도형과 측정 영역의 '길이' 소주제에 배치된 공식 성취기준 [2수03-10]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "센티미터와 미터 단위를 알고 주변 물건 길이 재기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -746,7 +768,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-10] appears in the 초등학교 1-2학년 도형과 측정 section under '길이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-11]",
@@ -760,7 +783,7 @@
       "sequence": 11,
       "module": "길이",
       "focus": "길이 소주제의 도형과 측정 성취기준 [2수03-11]",
-      "summary": "1-2학년군 도형과 측정 영역의 '길이' 소주제에 배치된 공식 성취기준 [2수03-11]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "미터와 센티미터 관계를 알고 두 가지 방식으로 길이 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -774,7 +797,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-11] appears in the 초등학교 1-2학년 도형과 측정 section under '길이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-12]",
@@ -788,7 +812,7 @@
       "sequence": 12,
       "module": "길이",
       "focus": "길이 소주제의 도형과 측정 성취기준 [2수03-12]",
-      "summary": "1-2학년군 도형과 측정 영역의 '길이' 소주제에 배치된 공식 성취기준 [2수03-12]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "여러 물건의 길이를 눈대중으로 재며 양감 키우기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -802,7 +826,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-12] appears in the 초등학교 1-2학년 도형과 측정 section under '길이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수03-13]",
@@ -816,7 +841,7 @@
       "sequence": 13,
       "module": "길이",
       "focus": "길이 소주제의 도형과 측정 성취기준 [2수03-13]",
-      "summary": "1-2학년군 도형과 측정 영역의 '길이' 소주제에 배치된 공식 성취기준 [2수03-13]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 문제 장면 속에서 길이끼리 더하고 빼기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -830,7 +855,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수03-13] appears in the 초등학교 1-2학년 도형과 측정 section under '길이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수04-01]",
@@ -844,7 +870,7 @@
       "sequence": 1,
       "module": "자료의 정리",
       "focus": "자료의 정리 소주제의 자료와 가능성 성취기준 [2수04-01]",
-      "summary": "1-2학년군 자료와 가능성 영역의 '자료의 정리' 소주제에 배치된 공식 성취기준 [2수04-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "정한 기준으로 사물을 나누고 개수를 세어 결과 말하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -858,7 +884,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수04-01] appears in the 초등학교 1-2학년 자료와 가능성 section under '자료의 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수04-02]",
@@ -872,7 +899,7 @@
       "sequence": 2,
       "module": "자료의 정리",
       "focus": "자료의 정리 소주제의 자료와 가능성 성취기준 [2수04-02]",
-      "summary": "1-2학년군 자료와 가능성 영역의 '자료의 정리' 소주제에 배치된 공식 성취기준 [2수04-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "자료를 갈래별로 나누어 표로 옮기고 그 편리함 말하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -886,7 +913,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수04-02] appears in the 초등학교 1-2학년 자료와 가능성 section under '자료의 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[2수04-03]",
@@ -900,7 +928,7 @@
       "sequence": 3,
       "module": "자료의 정리",
       "focus": "자료의 정리 소주제의 자료와 가능성 성취기준 [2수04-03]",
-      "summary": "1-2학년군 자료와 가능성 영역의 '자료의 정리' 소주제에 배치된 공식 성취기준 [2수04-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "나눈 자료를 기호 그래프로 옮기고 좋은 점 이야기하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -914,7 +942,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[2수04-03] appears in the 초등학교 1-2학년 자료와 가능성 section under '자료의 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-01]",
@@ -928,7 +957,7 @@
       "sequence": 1,
       "module": "다섯 자리 이상의 수",
       "focus": "다섯 자리 이상의 수 소주제의 수와 연산 성취기준 [4수01-01]",
-      "summary": "3-4학년군 수와 연산 영역의 '다섯 자리 이상의 수' 소주제에 배치된 공식 성취기준 [4수01-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "만보다 큰 수의 자릿값 체계가 필요한 까닭 알고 읽고 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -942,7 +971,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-01] appears in the 초등학교 3-4학년 수와 연산 section under '다섯 자리 이상의 수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-02]",
@@ -956,7 +986,7 @@
       "sequence": 2,
       "module": "다섯 자리 이상의 수",
       "focus": "다섯 자리 이상의 수 소주제의 수와 연산 성취기준 [4수01-02]",
-      "summary": "3-4학년군 수와 연산 영역의 '다섯 자리 이상의 수' 소주제에 배치된 공식 성취기준 [4수01-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "다섯 자리 넘는 수의 차례를 알고 크기 비교법 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -970,7 +1000,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-02] appears in the 초등학교 3-4학년 수와 연산 section under '다섯 자리 이상의 수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-03]",
@@ -984,7 +1015,7 @@
       "sequence": 3,
       "module": "세 자리 수의 덧셈과 뺄셈",
       "focus": "세 자리 수의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [4수01-03]",
-      "summary": "3-4학년군 수와 연산 영역의 '세 자리 수의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [4수01-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "세 자리 수끼리 더하고 빼는 셈의 이치 알고 계산하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -998,7 +1029,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-03] appears in the 초등학교 3-4학년 수와 연산 section under '세 자리 수의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-04]",
@@ -1012,7 +1044,7 @@
       "sequence": 4,
       "module": "세 자리 수 범위의 곱셈",
       "focus": "세 자리 수 범위의 곱셈 소주제의 수와 연산 성취기준 [4수01-04]",
-      "summary": "3-4학년군 수와 연산 영역의 '세 자리 수 범위의 곱셈' 소주제에 배치된 공식 성취기준 [4수01-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "한 자리나 두 자리 수를 곱하는 셈의 이치 익혀 계산하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1026,7 +1058,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-04] appears in the 초등학교 3-4학년 수와 연산 section under '세 자리 수 범위의 곱셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-05]",
@@ -1040,7 +1073,7 @@
       "sequence": 5,
       "module": "세 자리 수 범위의 나눗셈",
       "focus": "세 자리 수 범위의 나눗셈 소주제의 수와 연산 성취기준 [4수01-05]",
-      "summary": "3-4학년군 수와 연산 영역의 '세 자리 수 범위의 나눗셈' 소주제에 배치된 공식 성취기준 [4수01-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 장면에서 나눗셈 뜻을 알고 곱셈과의 관련 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1054,7 +1087,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-05] appears in the 초등학교 3-4학년 수와 연산 section under '세 자리 수 범위의 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-06]",
@@ -1068,7 +1102,7 @@
       "sequence": 6,
       "module": "세 자리 수 범위의 나눗셈",
       "focus": "세 자리 수 범위의 나눗셈 소주제의 수와 연산 성취기준 [4수01-06]",
-      "summary": "3-4학년군 수와 연산 영역의 '세 자리 수 범위의 나눗셈' 소주제에 배치된 공식 성취기준 [4수01-06]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "한 자리 수로 나누는 셈을 하고 몫과 나머지 뜻 알기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1082,7 +1116,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-06] appears in the 초등학교 3-4학년 수와 연산 section under '세 자리 수 범위의 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-07]",
@@ -1096,7 +1131,7 @@
       "sequence": 7,
       "module": "세 자리 수 범위의 나눗셈",
       "focus": "세 자리 수 범위의 나눗셈 소주제의 수와 연산 성취기준 [4수01-07]",
-      "summary": "3-4학년군 수와 연산 영역의 '세 자리 수 범위의 나눗셈' 소주제에 배치된 공식 성취기준 [4수01-07]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "두 자리 수로 나누는 셈의 이치 익혀 계산 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1110,7 +1145,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-07] appears in the 초등학교 3-4학년 수와 연산 section under '세 자리 수 범위의 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-08]",
@@ -1124,7 +1160,7 @@
       "sequence": 8,
       "module": "자연수의 어림셈",
       "focus": "자연수의 어림셈 소주제의 수와 연산 성취기준 [4수01-08]",
-      "summary": "3-4학년군 수와 연산 영역의 '자연수의 어림셈' 소주제에 배치된 공식 성취기준 [4수01-08]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "네 가지 연산 장면에서 대략의 값 헤아려 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1138,7 +1174,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-08] appears in the 초등학교 3-4학년 수와 연산 section under '자연수의 어림셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-09]",
@@ -1152,7 +1189,7 @@
       "sequence": 9,
       "module": "분수",
       "focus": "분수 소주제의 수와 연산 성취기준 [4수01-09]",
-      "summary": "3-4학년군 수와 연산 영역의 '분수' 소주제에 배치된 공식 성취기준 [4수01-09]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "양을 똑같이 나누는 활동으로 분수 알고 읽고 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1166,7 +1203,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-09] appears in the 초등학교 3-4학년 수와 연산 section under '분수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-10]",
@@ -1180,7 +1218,7 @@
       "sequence": 10,
       "module": "분수",
       "focus": "분수 소주제의 수와 연산 성취기준 [4수01-10]",
-      "summary": "3-4학년군 수와 연산 영역의 '분수' 소주제에 배치된 공식 성취기준 [4수01-10]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "단위분수와 진분수, 가분수, 대분수의 관계 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1194,7 +1232,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-10] appears in the 초등학교 3-4학년 수와 연산 section under '분수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-11]",
@@ -1208,7 +1247,7 @@
       "sequence": 11,
       "module": "분수",
       "focus": "분수 소주제의 수와 연산 성취기준 [4수01-11]",
-      "summary": "3-4학년군 수와 연산 영역의 '분수' 소주제에 배치된 공식 성취기준 [4수01-11]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분모가 같거나 단위분수인 분수의 크기 견주고 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1222,7 +1261,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-11] appears in the 초등학교 3-4학년 수와 연산 section under '분수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-12]",
@@ -1236,7 +1276,7 @@
       "sequence": 12,
       "module": "소수",
       "focus": "소수 소주제의 수와 연산 성취기준 [4수01-12]",
-      "summary": "3-4학년군 수와 연산 영역의 '소수' 소주제에 배치된 공식 성취기준 [4수01-12]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "십분의 몇인 분수와 이어 소수 한 자리 수 읽고 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1250,7 +1290,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-12] appears in the 초등학교 3-4학년 수와 연산 section under '소수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-13]",
@@ -1264,7 +1305,7 @@
       "sequence": 13,
       "module": "소수",
       "focus": "소수 소주제의 수와 연산 성취기준 [4수01-13]",
-      "summary": "3-4학년군 수와 연산 영역의 '소수' 소주제에 배치된 공식 성취기준 [4수01-13]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "자릿값 원리로 소수 둘째, 셋째 자리 수 파악하고 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1278,7 +1319,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-13] appears in the 초등학교 3-4학년 수와 연산 section under '소수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-14]",
@@ -1292,7 +1334,7 @@
       "sequence": 14,
       "module": "소수",
       "focus": "소수 소주제의 수와 연산 성취기준 [4수01-14]",
-      "summary": "3-4학년군 수와 연산 영역의 '소수' 소주제에 배치된 공식 성취기준 [4수01-14]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "소수끼리 크기를 견주고 견준 방법 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1306,7 +1348,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-14] appears in the 초등학교 3-4학년 수와 연산 section under '소수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-15]",
@@ -1320,7 +1363,7 @@
       "sequence": 15,
       "module": "분수의 덧셈과 뺄셈",
       "focus": "분수의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [4수01-15]",
-      "summary": "3-4학년군 수와 연산 영역의 '분수의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [4수01-15]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분모가 같은 분수끼리 더하고 빼는 이치 익혀 셈하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1334,7 +1377,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-15] appears in the 초등학교 3-4학년 수와 연산 section under '분수의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수01-16]",
@@ -1348,7 +1392,7 @@
       "sequence": 16,
       "module": "소수의 덧셈과 뺄셈",
       "focus": "소수의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [4수01-16]",
-      "summary": "3-4학년군 수와 연산 영역의 '소수의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [4수01-16]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "소수 둘째 자리까지 더하고 빼는 셈 원리 익혀 계산하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1362,7 +1406,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수01-16] appears in the 초등학교 3-4학년 수와 연산 section under '소수의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수02-01]",
@@ -1376,7 +1421,7 @@
       "sequence": 1,
       "module": "규칙을 수나 식으로 나타내기",
       "focus": "규칙을 수나 식으로 나타내기 소주제의 변화와 관계 성취기준 [4수02-01]",
-      "summary": "3-4학년군 변화와 관계 영역의 '규칙을 수나 식으로 나타내기' 소주제에 배치된 공식 성취기준 [4수02-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "변화하는 규칙을 찾아 설명하고 수나 식으로 옮기기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1390,7 +1435,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수02-01] appears in the 초등학교 3-4학년 변화와 관계 section under '규칙을 수나 식으로 나타내기'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수02-02]",
@@ -1404,7 +1450,7 @@
       "sequence": 2,
       "module": "규칙을 수나 식으로 나타내기",
       "focus": "규칙을 수나 식으로 나타내기 소주제의 변화와 관계 성취기준 [4수02-02]",
-      "summary": "3-4학년군 변화와 관계 영역의 '규칙을 수나 식으로 나타내기' 소주제에 배치된 공식 성취기준 [4수02-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "늘어선 계산식에서 규칙을 찾아 결과 미리 짐작하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1418,7 +1464,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수02-02] appears in the 초등학교 3-4학년 변화와 관계 section under '규칙을 수나 식으로 나타내기'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수02-03]",
@@ -1432,7 +1479,7 @@
       "sequence": 3,
       "module": "등호와 동치 관계",
       "focus": "등호와 동치 관계 소주제의 변화와 관계 성취기준 [4수02-03]",
-      "summary": "3-4학년군 변화와 관계 영역의 '등호와 동치 관계' 소주제에 배치된 공식 성취기준 [4수02-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "등호로 크기가 같은 두 양의 관계 식으로 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1446,7 +1493,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수02-03] appears in the 초등학교 3-4학년 변화와 관계 section under '등호와 동치 관계'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-01]",
@@ -1460,7 +1508,7 @@
       "sequence": 1,
       "module": "도형의 기초",
       "focus": "도형의 기초 소주제의 도형과 측정 성취기준 [4수03-01]",
-      "summary": "3-4학년군 도형과 측정 영역의 '도형의 기초' 소주제에 배치된 공식 성취기준 [4수03-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "곧은 선과 선분, 반직선을 알아보고 서로 구별하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1474,7 +1522,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-01] appears in the 초등학교 3-4학년 도형과 측정 section under '도형의 기초'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-02]",
@@ -1488,7 +1537,7 @@
       "sequence": 2,
       "module": "도형의 기초",
       "focus": "도형의 기초 소주제의 도형과 측정 성취기준 [4수03-02]",
-      "summary": "3-4학년군 도형과 측정 영역의 '도형의 기초' 소주제에 배치된 공식 성취기준 [4수03-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "직각을 기준 삼아 각을 살펴 예각과 둔각 가려내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1502,7 +1551,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-02] appears in the 초등학교 3-4학년 도형과 측정 section under '도형의 기초'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-03]",
@@ -1516,7 +1566,7 @@
       "sequence": 3,
       "module": "도형의 기초",
       "focus": "도형의 기초 소주제의 도형과 측정 성취기준 [4수03-03]",
-      "summary": "3-4학년군 도형과 측정 영역의 '도형의 기초' 소주제에 배치된 공식 성취기준 [4수03-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "두 직선이 이루는 수직 관계와 평행 관계 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1530,7 +1580,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-03] appears in the 초등학교 3-4학년 도형과 측정 section under '도형의 기초'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-04]",
@@ -1544,7 +1595,7 @@
       "sequence": 4,
       "module": "평면도형의 이동",
       "focus": "평면도형의 이동 소주제의 도형과 측정 성취기준 [4수03-04]",
-      "summary": "3-4학년군 도형과 측정 영역의 '평면도형의 이동' 소주제에 배치된 공식 성취기준 [4수03-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "도형을 밀고 뒤집고 돌리며 생기는 변화 살펴보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1558,7 +1609,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-04] appears in the 초등학교 3-4학년 도형과 측정 section under '평면도형의 이동'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-05]",
@@ -1572,7 +1624,7 @@
       "sequence": 5,
       "module": "평면도형의 이동",
       "focus": "평면도형의 이동 소주제의 도형과 측정 성취기준 [4수03-05]",
-      "summary": "3-4학년군 도형과 측정 영역의 '평면도형의 이동' 소주제에 배치된 공식 성취기준 [4수03-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "평면에서 점이 옮겨 간 자리를 방향과 함께 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1586,7 +1638,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-05] appears in the 초등학교 3-4학년 도형과 측정 section under '평면도형의 이동'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-06]",
@@ -1600,7 +1653,7 @@
       "sequence": 6,
       "module": "원의 구성 요소",
       "focus": "원의 구성 요소 소주제의 도형과 측정 성취기준 [4수03-06]",
-      "summary": "3-4학년군 도형과 측정 영역의 '원의 구성 요소' 소주제에 배치된 공식 성취기준 [4수03-06]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "원의 중심과 반지름, 지름을 알고 그 성질 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1614,7 +1667,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-06] appears in the 초등학교 3-4학년 도형과 측정 section under '원의 구성 요소'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-07]",
@@ -1628,7 +1682,7 @@
       "sequence": 7,
       "module": "원의 구성 요소",
       "focus": "원의 구성 요소 소주제의 도형과 측정 성취기준 [4수03-07]",
-      "summary": "3-4학년군 도형과 측정 영역의 '원의 구성 요소' 소주제에 배치된 공식 성취기준 [4수03-07]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "컴퍼스를 써서 크기가 다른 원 여러 개 그려 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1642,7 +1696,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-07] appears in the 초등학교 3-4학년 도형과 측정 section under '원의 구성 요소'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-08]",
@@ -1656,7 +1711,7 @@
       "sequence": 8,
       "module": "여러 가지 삼각형",
       "focus": "여러 가지 삼각형 소주제의 도형과 측정 성취기준 [4수03-08]",
-      "summary": "3-4학년군 도형과 측정 영역의 '여러 가지 삼각형' 소주제에 배치된 공식 성취기준 [4수03-08]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "삼각형을 갈래지어 이등변삼각형과 정삼각형 성질 탐구하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1670,7 +1725,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-08] appears in the 초등학교 3-4학년 도형과 측정 section under '여러 가지 삼각형'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-09]",
@@ -1684,7 +1740,7 @@
       "sequence": 9,
       "module": "여러 가지 삼각형",
       "focus": "여러 가지 삼각형 소주제의 도형과 측정 성취기준 [4수03-09]",
-      "summary": "3-4학년군 도형과 측정 영역의 '여러 가지 삼각형' 소주제에 배치된 공식 성취기준 [4수03-09]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "각의 크기로 삼각형을 갈라 직각·예각·둔각삼각형 알기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1698,7 +1754,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-09] appears in the 초등학교 3-4학년 도형과 측정 section under '여러 가지 삼각형'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-10]",
@@ -1712,7 +1769,7 @@
       "sequence": 10,
       "module": "여러 가지 사각형",
       "focus": "여러 가지 사각형 소주제의 도형과 측정 성취기준 [4수03-10]",
-      "summary": "3-4학년군 도형과 측정 영역의 '여러 가지 사각형' 소주제에 배치된 공식 성취기준 [4수03-10]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "사각형을 갈래지어 직사각형부터 마름모까지 성질 살피기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1726,7 +1783,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-10] appears in the 초등학교 3-4학년 도형과 측정 section under '여러 가지 사각형'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-11]",
@@ -1740,7 +1798,7 @@
       "sequence": 11,
       "module": "다각형",
       "focus": "다각형 소주제의 도형과 측정 성취기준 [4수03-11]",
-      "summary": "3-4학년군 도형과 측정 영역의 '다각형' 소주제에 배치된 공식 성취기준 [4수03-11]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "변이 여럿인 도형과 정다각형이 뜻하는 바 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1754,7 +1812,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-11] appears in the 초등학교 3-4학년 도형과 측정 section under '다각형'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-12]",
@@ -1768,7 +1827,7 @@
       "sequence": 12,
       "module": "다각형",
       "focus": "다각형 소주제의 도형과 측정 성취기준 [4수03-12]",
-      "summary": "3-4학년군 도형과 측정 영역의 '다각형' 소주제에 배치된 공식 성취기준 [4수03-12]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "주어진 조각으로 모양을 만들거나 빈틈없이 채워 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1782,7 +1841,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-12] appears in the 초등학교 3-4학년 도형과 측정 section under '다각형'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-13]",
@@ -1796,7 +1856,7 @@
       "sequence": 13,
       "module": "시각과 시간",
       "focus": "시각과 시간 소주제의 도형과 측정 성취기준 [4수03-13]",
-      "summary": "3-4학년군 도형과 측정 영역의 '시각과 시간' 소주제에 배치된 공식 성취기준 [4수03-13]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "일 분과 일 초의 관계를 알고 초까지 시각 읽기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1810,7 +1870,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-13] appears in the 초등학교 3-4학년 도형과 측정 section under '시각과 시간'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-14]",
@@ -1824,7 +1885,7 @@
       "sequence": 14,
       "module": "시각과 시간",
       "focus": "시각과 시간 소주제의 도형과 측정 성취기준 [4수03-14]",
-      "summary": "3-4학년군 도형과 측정 영역의 '시각과 시간' 소주제에 배치된 공식 성취기준 [4수03-14]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 문제에서 초 단위 시간끼리 더하고 빼기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1838,7 +1899,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-14] appears in the 초등학교 3-4학년 도형과 측정 section under '시각과 시간'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-15]",
@@ -1852,7 +1914,7 @@
       "sequence": 15,
       "module": "길이",
       "focus": "길이 소주제의 도형과 측정 성취기준 [4수03-15]",
-      "summary": "3-4학년군 도형과 측정 영역의 '길이' 소주제에 배치된 공식 성취기준 [4수03-15]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "밀리미터와 킬로미터 단위로 길이를 재고 어림해 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1866,7 +1928,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-15] appears in the 초등학교 3-4학년 도형과 측정 section under '길이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-16]",
@@ -1880,7 +1943,7 @@
       "sequence": 16,
       "module": "길이",
       "focus": "길이 소주제의 도형과 측정 성취기준 [4수03-16]",
-      "summary": "3-4학년군 도형과 측정 영역의 '길이' 소주제에 배치된 공식 성취기준 [4수03-16]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "센티미터와 밀리미터, 킬로미터와 미터 관계를 알고 다양하게 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1894,7 +1957,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-16] appears in the 초등학교 3-4학년 도형과 측정 section under '길이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-17]",
@@ -1908,7 +1972,7 @@
       "sequence": 17,
       "module": "들이",
       "focus": "들이 소주제의 도형과 측정 성취기준 [4수03-17]",
-      "summary": "3-4학년군 도형과 측정 영역의 '들이' 소주제에 배치된 공식 성취기준 [4수03-17]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "리터와 밀리리터 단위로 들이를 재고 어림해 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1922,7 +1986,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-17] appears in the 초등학교 3-4학년 도형과 측정 section under '들이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-18]",
@@ -1936,7 +2001,7 @@
       "sequence": 18,
       "module": "들이",
       "focus": "들이 소주제의 도형과 측정 성취기준 [4수03-18]",
-      "summary": "3-4학년군 도형과 측정 영역의 '들이' 소주제에 배치된 공식 성취기준 [4수03-18]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "리터와 밀리리터 사이 관계를 알고 두 방식으로 표현하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1950,7 +2015,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-18] appears in the 초등학교 3-4학년 도형과 측정 section under '들이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-19]",
@@ -1964,7 +2030,7 @@
       "sequence": 19,
       "module": "들이",
       "focus": "들이 소주제의 도형과 측정 성취기준 [4수03-19]",
-      "summary": "3-4학년군 도형과 측정 영역의 '들이' 소주제에 배치된 공식 성취기준 [4수03-19]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 장면에서 들이끼리 더하고 빼는 셈 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -1978,7 +2044,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-19] appears in the 초등학교 3-4학년 도형과 측정 section under '들이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-20]",
@@ -1992,7 +2059,7 @@
       "sequence": 20,
       "module": "무게",
       "focus": "무게 소주제의 도형과 측정 성취기준 [4수03-20]",
-      "summary": "3-4학년군 도형과 측정 영역의 '무게' 소주제에 배치된 공식 성취기준 [4수03-20]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "그램과 킬로그램 단위로 무게를 재고 어림해 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2006,7 +2073,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-20] appears in the 초등학교 3-4학년 도형과 측정 section under '무게'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-21]",
@@ -2020,7 +2088,7 @@
       "sequence": 21,
       "module": "무게",
       "focus": "무게 소주제의 도형과 측정 성취기준 [4수03-21]",
-      "summary": "3-4학년군 도형과 측정 영역의 '무게' 소주제에 배치된 공식 성취기준 [4수03-21]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "킬로그램과 그램 관계를 알고 무게를 두 방식으로 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2034,7 +2102,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-21] appears in the 초등학교 3-4학년 도형과 측정 section under '무게'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-22]",
@@ -2048,7 +2117,7 @@
       "sequence": 22,
       "module": "무게",
       "focus": "무게 소주제의 도형과 측정 성취기준 [4수03-22]",
-      "summary": "3-4학년군 도형과 측정 영역의 '무게' 소주제에 배치된 공식 성취기준 [4수03-22]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "톤 단위의 쓰임과 킬로그램과의 관계 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2062,7 +2131,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-22] appears in the 초등학교 3-4학년 도형과 측정 section under '무게'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-23]",
@@ -2076,7 +2146,7 @@
       "sequence": 23,
       "module": "무게",
       "focus": "무게 소주제의 도형과 측정 성취기준 [4수03-23]",
-      "summary": "3-4학년군 도형과 측정 영역의 '무게' 소주제에 배치된 공식 성취기준 [4수03-23]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 장면에서 무게끼리 더하고 빼는 셈 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2090,7 +2160,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-23] appears in the 초등학교 3-4학년 도형과 측정 section under '무게'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-24]",
@@ -2104,7 +2175,7 @@
       "sequence": 24,
       "module": "각도",
       "focus": "각도 소주제의 도형과 측정 성취기준 [4수03-24]",
-      "summary": "3-4학년군 도형과 측정 영역의 '각도' 소주제에 배치된 공식 성취기준 [4수03-24]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "각의 크기 단위인 도를 알고 각도기로 재고 어림하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2118,7 +2189,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-24] appears in the 초등학교 3-4학년 도형과 측정 section under '각도'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수03-25]",
@@ -2132,7 +2204,7 @@
       "sequence": 25,
       "module": "각도",
       "focus": "각도 소주제의 도형과 측정 성취기준 [4수03-25]",
-      "summary": "3-4학년군 도형과 측정 영역의 '각도' 소주제에 배치된 공식 성취기준 [4수03-25]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "삼각형과 사각형 내각 합을 여러 방법으로 추론해 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2146,7 +2218,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수03-25] appears in the 초등학교 3-4학년 도형과 측정 section under '각도'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수04-01]",
@@ -2160,7 +2233,7 @@
       "sequence": 1,
       "module": "자료의 수집과 정리",
       "focus": "자료의 수집과 정리 소주제의 자료와 가능성 성취기준 [4수04-01]",
-      "summary": "3-4학년군 자료와 가능성 영역의 '자료의 수집과 정리' 소주제에 배치된 공식 성취기준 [4수04-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "모은 자료를 그림그래프와 막대그래프로 옮기고 읽어내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2174,7 +2247,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수04-01] appears in the 초등학교 3-4학년 자료와 가능성 section under '자료의 수집과 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수04-02]",
@@ -2188,7 +2262,7 @@
       "sequence": 2,
       "module": "자료의 수집과 정리",
       "focus": "자료의 수집과 정리 소주제의 자료와 가능성 성취기준 [4수04-02]",
-      "summary": "3-4학년군 자료와 가능성 영역의 '자료의 수집과 정리' 소주제에 배치된 공식 성취기준 [4수04-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "모은 자료를 꺾은선그래프로 옮기고 변화 읽어내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2202,7 +2276,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수04-02] appears in the 초등학교 3-4학년 자료와 가능성 section under '자료의 수집과 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[4수04-03]",
@@ -2216,7 +2291,7 @@
       "sequence": 3,
       "module": "자료의 수집과 정리",
       "focus": "자료의 수집과 정리 소주제의 자료와 가능성 성취기준 [4수04-03]",
-      "summary": "3-4학년군 자료와 가능성 영역의 '자료의 수집과 정리' 소주제에 배치된 공식 성취기준 [4수04-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "탐구 문제 해결을 위해 자료를 모아 알맞은 그래프로 해석하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2230,7 +2305,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[4수04-03] appears in the 초등학교 3-4학년 자료와 가능성 section under '자료의 수집과 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-01]",
@@ -2244,7 +2320,7 @@
       "sequence": 1,
       "module": "자연수의 혼합 계산",
       "focus": "자연수의 혼합 계산 소주제의 수와 연산 성취기준 [6수01-01]",
-      "summary": "5-6학년군 수와 연산 영역의 '자연수의 혼합 계산' 소주제에 배치된 공식 성취기준 [6수01-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "사칙 계산이 섞인 식에서 순서를 알고 계산 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2258,7 +2334,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-01] appears in the 초등학교 5-6학년 수와 연산 section under '자연수의 혼합 계산'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-02]",
@@ -2272,7 +2349,7 @@
       "sequence": 2,
       "module": "수의 범위와 올림, 버림, 반올림",
       "focus": "수의 범위와 올림, 버림, 반올림 소주제의 수와 연산 성취기준 [6수01-02]",
-      "summary": "5-6학년군 수와 연산 영역의 '수의 범위와 올림, 버림, 반올림' 소주제에 배치된 공식 성취기준 [6수01-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "이상과 이하, 초과, 미만의 쓰임을 알고 수의 범위 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2286,7 +2363,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-02] appears in the 초등학교 5-6학년 수와 연산 section under '수의 범위와 올림, 버림, 반올림'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-03]",
@@ -2300,7 +2378,7 @@
       "sequence": 3,
       "module": "수의 범위와 올림, 버림, 반올림",
       "focus": "수의 범위와 올림, 버림, 반올림 소주제의 수와 연산 성취기준 [6수01-03]",
-      "summary": "5-6학년군 수와 연산 영역의 '수의 범위와 올림, 버림, 반올림' 소주제에 배치된 공식 성취기준 [6수01-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "올림과 버림, 반올림으로 어림값 구해 생활에 활용하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2314,7 +2392,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-03] appears in the 초등학교 5-6학년 수와 연산 section under '수의 범위와 올림, 버림, 반올림'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-04]",
@@ -2328,7 +2407,7 @@
       "sequence": 4,
       "module": "약수와 배수",
       "focus": "약수와 배수 소주제의 수와 연산 성취기준 [6수01-04]",
-      "summary": "5-6학년군 수와 연산 영역의 '약수와 배수' 소주제에 배치된 공식 성취기준 [6수01-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "약수와 공약수, 최대공약수가 뜻하는 바 알고 찾아내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2342,7 +2421,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-04] appears in the 초등학교 5-6학년 수와 연산 section under '약수와 배수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-05]",
@@ -2356,7 +2436,7 @@
       "sequence": 5,
       "module": "약수와 배수",
       "focus": "약수와 배수 소주제의 수와 연산 성취기준 [6수01-05]",
-      "summary": "5-6학년군 수와 연산 영역의 '약수와 배수' 소주제에 배치된 공식 성취기준 [6수01-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "배수와 공배수, 최소공배수가 뜻하는 바 알고 구해 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2370,7 +2450,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-05] appears in the 초등학교 5-6학년 수와 연산 section under '약수와 배수'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-06]",
@@ -2384,7 +2465,7 @@
       "sequence": 6,
       "module": "분수의 덧셈과 뺄셈",
       "focus": "분수의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [6수01-06]",
-      "summary": "5-6학년군 수와 연산 영역의 '분수의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [6수01-06]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "크기가 같은 분수를 만드는 원리로 약분과 통분하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2398,7 +2479,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-06] appears in the 초등학교 5-6학년 수와 연산 section under '분수의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-07]",
@@ -2412,7 +2494,7 @@
       "sequence": 7,
       "module": "분수의 덧셈과 뺄셈",
       "focus": "분수의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [6수01-07]",
-      "summary": "5-6학년군 수와 연산 영역의 '분수의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [6수01-07]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분모가 서로 다른 분수의 크기를 견주고 방법 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2426,7 +2508,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-07] appears in the 초등학교 5-6학년 수와 연산 section under '분수의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-08]",
@@ -2440,7 +2523,7 @@
       "sequence": 8,
       "module": "분수의 덧셈과 뺄셈",
       "focus": "분수의 덧셈과 뺄셈 소주제의 수와 연산 성취기준 [6수01-08]",
-      "summary": "5-6학년군 수와 연산 영역의 '분수의 덧셈과 뺄셈' 소주제에 배치된 공식 성취기준 [6수01-08]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분모가 다른 분수끼리 더하고 빼는 이치 탐구해 계산하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2454,7 +2537,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-08] appears in the 초등학교 5-6학년 수와 연산 section under '분수의 덧셈과 뺄셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-09]",
@@ -2468,7 +2552,7 @@
       "sequence": 9,
       "module": "분수의 곱셈과 나눗셈",
       "focus": "분수의 곱셈과 나눗셈 소주제의 수와 연산 성취기준 [6수01-09]",
-      "summary": "5-6학년군 수와 연산 영역의 '분수의 곱셈과 나눗셈' 소주제에 배치된 공식 성취기준 [6수01-09]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분수끼리 곱하는 셈의 이치를 탐구하고 계산 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2482,7 +2566,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-09] appears in the 초등학교 5-6학년 수와 연산 section under '분수의 곱셈과 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-10]",
@@ -2496,7 +2581,7 @@
       "sequence": 10,
       "module": "분수의 곱셈과 나눗셈",
       "focus": "분수의 곱셈과 나눗셈 소주제의 수와 연산 성취기준 [6수01-10]",
-      "summary": "5-6학년군 수와 연산 영역의 '분수의 곱셈과 나눗셈' 소주제에 배치된 공식 성취기준 [6수01-10]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "자연수를 자연수로 나눈 몫을 분수 형태로 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2510,7 +2595,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-10] appears in the 초등학교 5-6학년 수와 연산 section under '분수의 곱셈과 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-11]",
@@ -2524,7 +2610,7 @@
       "sequence": 11,
       "module": "분수의 곱셈과 나눗셈",
       "focus": "분수의 곱셈과 나눗셈 소주제의 수와 연산 성취기준 [6수01-11]",
-      "summary": "5-6학년군 수와 연산 영역의 '분수의 곱셈과 나눗셈' 소주제에 배치된 공식 성취기준 [6수01-11]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분수끼리 나누는 셈의 이치를 탐구하고 계산 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2538,7 +2624,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-11] appears in the 초등학교 5-6학년 수와 연산 section under '분수의 곱셈과 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-12]",
@@ -2552,7 +2639,7 @@
       "sequence": 12,
       "module": "분수와 소수의 관계",
       "focus": "분수와 소수의 관계 소주제의 수와 연산 성취기준 [6수01-12]",
-      "summary": "5-6학년군 수와 연산 영역의 '분수와 소수의 관계' 소주제에 배치된 공식 성취기준 [6수01-12]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "분수와 소수가 맺는 관계를 알고 크기 견주어 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2566,7 +2653,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-12] appears in the 초등학교 5-6학년 수와 연산 section under '분수와 소수의 관계'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-13]",
@@ -2580,7 +2668,7 @@
       "sequence": 13,
       "module": "소수의 곱셈과 나눗셈",
       "focus": "소수의 곱셈과 나눗셈 소주제의 수와 연산 성취기준 [6수01-13]",
-      "summary": "5-6학년군 수와 연산 영역의 '소수의 곱셈과 나눗셈' 소주제에 배치된 공식 성취기준 [6수01-13]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "소수끼리 곱하는 셈의 이치를 탐구하고 계산 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2594,7 +2682,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-13] appears in the 초등학교 5-6학년 수와 연산 section under '소수의 곱셈과 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-14]",
@@ -2608,7 +2697,7 @@
       "sequence": 14,
       "module": "소수의 곱셈과 나눗셈",
       "focus": "소수의 곱셈과 나눗셈 소주제의 수와 연산 성취기준 [6수01-14]",
-      "summary": "5-6학년군 수와 연산 영역의 '소수의 곱셈과 나눗셈' 소주제에 배치된 공식 성취기준 [6수01-14]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "자연수끼리 나눈 몫을 소수 형태로 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2622,7 +2711,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-14] appears in the 초등학교 5-6학년 수와 연산 section under '소수의 곱셈과 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수01-15]",
@@ -2636,7 +2726,7 @@
       "sequence": 15,
       "module": "소수의 곱셈과 나눗셈",
       "focus": "소수의 곱셈과 나눗셈 소주제의 수와 연산 성취기준 [6수01-15]",
-      "summary": "5-6학년군 수와 연산 영역의 '소수의 곱셈과 나눗셈' 소주제에 배치된 공식 성취기준 [6수01-15]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "소수끼리 나누는 셈의 이치를 탐구하고 계산 해내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2650,7 +2740,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수01-15] appears in the 초등학교 5-6학년 수와 연산 section under '소수의 곱셈과 나눗셈'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수02-01]",
@@ -2664,7 +2755,7 @@
       "sequence": 1,
       "module": "대응 관계",
       "focus": "대응 관계 소주제의 변화와 관계 성취기준 [6수02-01]",
-      "summary": "5-6학년군 변화와 관계 영역의 '대응 관계' 소주제에 배치된 공식 성취기준 [6수02-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "한 양에 따라 변하는 다른 양의 대응 규칙 찾아 식으로 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2678,7 +2769,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수02-01] appears in the 초등학교 5-6학년 변화와 관계 section under '대응 관계'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수02-02]",
@@ -2692,7 +2784,7 @@
       "sequence": 2,
       "module": "비와 비율",
       "focus": "비와 비율 소주제의 변화와 관계 성취기준 [6수02-02]",
-      "summary": "5-6학년군 변화와 관계 영역의 '비와 비율' 소주제에 배치된 공식 성취기준 [6수02-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "두 양을 견주는 장면에서 비의 뜻을 알고 비로 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2706,7 +2798,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수02-02] appears in the 초등학교 5-6학년 변화와 관계 section under '비와 비율'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수02-03]",
@@ -2720,7 +2813,7 @@
       "sequence": 3,
       "module": "비와 비율",
       "focus": "비와 비율 소주제의 변화와 관계 성취기준 [6수02-03]",
-      "summary": "5-6학년군 변화와 관계 영역의 '비와 비율' 소주제에 배치된 공식 성취기준 [6수02-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "비율이 뜻하는 바를 알고 분수와 소수, 백분율로 바꾸어 쓰기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2734,7 +2827,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수02-03] appears in the 초등학교 5-6학년 변화와 관계 section under '비와 비율'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수02-04]",
@@ -2748,7 +2842,7 @@
       "sequence": 4,
       "module": "비례식과 비례배분",
       "focus": "비례식과 비례배분 소주제의 변화와 관계 성취기준 [6수02-04]",
-      "summary": "5-6학년군 변화와 관계 영역의 '비례식과 비례배분' 소주제에 배치된 공식 성취기준 [6수02-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "비례식의 성질을 파악하고 간단한 비례식 풀어내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2762,7 +2856,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수02-04] appears in the 초등학교 5-6학년 변화와 관계 section under '비례식과 비례배분'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수02-05]",
@@ -2776,7 +2871,7 @@
       "sequence": 5,
       "module": "비례식과 비례배분",
       "focus": "비례식과 비례배분 소주제의 변화와 관계 성취기준 [6수02-05]",
-      "summary": "5-6학년군 변화와 관계 영역의 '비례식과 비례배분' 소주제에 배치된 공식 성취기준 [6수02-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "비례배분이 뜻하는 바를 알고 주어진 양을 비로 나누기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2790,7 +2885,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수02-05] appears in the 초등학교 5-6학년 변화와 관계 section under '비례식과 비례배분'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-01]",
@@ -2804,7 +2900,7 @@
       "sequence": 1,
       "module": "합동과 대칭",
       "focus": "합동과 대칭 소주제의 도형과 측정 성취기준 [6수03-01]",
-      "summary": "5-6학년군 도형과 측정 영역의 '합동과 대칭' 소주제에 배치된 공식 성취기준 [6수03-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "포개어지는 두 도형의 합동과 그 성질 탐구해 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2818,7 +2914,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-01] appears in the 초등학교 5-6학년 도형과 측정 section under '합동과 대칭'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-02]",
@@ -2832,7 +2929,7 @@
       "sequence": 2,
       "module": "합동과 대칭",
       "focus": "합동과 대칭 소주제의 도형과 측정 성취기준 [6수03-02]",
-      "summary": "5-6학년군 도형과 측정 영역의 '합동과 대칭' 소주제에 배치된 공식 성취기준 [6수03-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "생활 사례와 이어 선대칭과 점대칭 도형 파악하고 그리기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2846,7 +2943,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-02] appears in the 초등학교 5-6학년 도형과 측정 section under '합동과 대칭'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-03]",
@@ -2860,7 +2958,7 @@
       "sequence": 3,
       "module": "직육면체와 정육면체",
       "focus": "직육면체와 정육면체 소주제의 도형과 측정 성취기준 [6수03-03]",
-      "summary": "5-6학년군 도형과 측정 영역의 '직육면체와 정육면체' 소주제에 배치된 공식 성취기준 [6수03-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "직육면체와 정육면체의 구성 요소와 성질 살펴 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2874,7 +2972,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-03] appears in the 초등학교 5-6학년 도형과 측정 section under '직육면체와 정육면체'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-04]",
@@ -2888,7 +2987,7 @@
       "sequence": 4,
       "module": "직육면체와 정육면체",
       "focus": "직육면체와 정육면체 소주제의 도형과 측정 성취기준 [6수03-04]",
-      "summary": "5-6학년군 도형과 측정 영역의 '직육면체와 정육면체' 소주제에 배치된 공식 성취기준 [6수03-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "직육면체와 정육면체를 겨냥도와 전개도로 그려 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2902,7 +3001,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-04] appears in the 초등학교 5-6학년 도형과 측정 section under '직육면체와 정육면체'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-05]",
@@ -2916,7 +3016,7 @@
       "sequence": 5,
       "module": "각기둥과 각뿔",
       "focus": "각기둥과 각뿔 소주제의 도형과 측정 성취기준 [6수03-05]",
-      "summary": "5-6학년군 도형과 측정 영역의 '각기둥과 각뿔' 소주제에 배치된 공식 성취기준 [6수03-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "각기둥과 각뿔의 구성 요소와 성질 탐구해 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2930,7 +3030,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-05] appears in the 초등학교 5-6학년 도형과 측정 section under '각기둥과 각뿔'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-06]",
@@ -2944,7 +3045,7 @@
       "sequence": 6,
       "module": "각기둥과 각뿔",
       "focus": "각기둥과 각뿔 소주제의 도형과 측정 성취기준 [6수03-06]",
-      "summary": "5-6학년군 도형과 측정 영역의 '각기둥과 각뿔' 소주제에 배치된 공식 성취기준 [6수03-06]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "각기둥을 펼친 모습을 전개도로 그려 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2958,7 +3059,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-06] appears in the 초등학교 5-6학년 도형과 측정 section under '각기둥과 각뿔'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-07]",
@@ -2972,7 +3074,7 @@
       "sequence": 7,
       "module": "원기둥, 원뿔, 구",
       "focus": "원기둥, 원뿔, 구 소주제의 도형과 측정 성취기준 [6수03-07]",
-      "summary": "5-6학년군 도형과 측정 영역의 '원기둥, 원뿔, 구' 소주제에 배치된 공식 성취기준 [6수03-07]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "원기둥과 원뿔, 구의 구성 요소와 성질 탐구해 설명하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -2986,7 +3088,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-07] appears in the 초등학교 5-6학년 도형과 측정 section under '원기둥, 원뿔, 구'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-08]",
@@ -3000,7 +3103,7 @@
       "sequence": 8,
       "module": "원기둥, 원뿔, 구",
       "focus": "원기둥, 원뿔, 구 소주제의 도형과 측정 성취기준 [6수03-08]",
-      "summary": "5-6학년군 도형과 측정 영역의 '원기둥, 원뿔, 구' 소주제에 배치된 공식 성취기준 [6수03-08]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "원기둥을 펼친 모습을 전개도로 옮겨 그리기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3014,7 +3117,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-08] appears in the 초등학교 5-6학년 도형과 측정 section under '원기둥, 원뿔, 구'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-09]",
@@ -3028,7 +3132,7 @@
       "sequence": 9,
       "module": "입체도형의 공간 감각",
       "focus": "입체도형의 공간 감각 소주제의 도형과 측정 성취기준 [6수03-09]",
-      "summary": "5-6학년군 도형과 측정 영역의 '입체도형의 공간 감각' 소주제에 배치된 공식 성취기준 [6수03-09]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "쌓기나무로 만든 입체를 보고 사용한 개수 구하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3042,7 +3146,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-09] appears in the 초등학교 5-6학년 도형과 측정 section under '입체도형의 공간 감각'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-10]",
@@ -3056,7 +3161,7 @@
       "sequence": 10,
       "module": "입체도형의 공간 감각",
       "focus": "입체도형의 공간 감각 소주제의 도형과 측정 성취기준 [6수03-10]",
-      "summary": "5-6학년군 도형과 측정 영역의 '입체도형의 공간 감각' 소주제에 배치된 공식 성취기준 [6수03-10]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "위와 앞, 옆에서 본 모양으로 쌓은 모양 나타내고 추측하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3070,7 +3175,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-10] appears in the 초등학교 5-6학년 도형과 측정 section under '입체도형의 공간 감각'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-11]",
@@ -3084,7 +3190,7 @@
       "sequence": 11,
       "module": "다각형의 둘레와 넓이",
       "focus": "다각형의 둘레와 넓이 소주제의 도형과 측정 성취기준 [6수03-11]",
-      "summary": "5-6학년군 도형과 측정 영역의 '다각형의 둘레와 넓이' 소주제에 배치된 공식 성취기준 [6수03-11]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "평면도형 둘레가 뜻하는 바를 알고 기본 도형 둘레 구하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3098,7 +3204,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-11] appears in the 초등학교 5-6학년 도형과 측정 section under '다각형의 둘레와 넓이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-12]",
@@ -3112,7 +3219,7 @@
       "sequence": 12,
       "module": "다각형의 둘레와 넓이",
       "focus": "다각형의 둘레와 넓이 소주제의 도형과 측정 성취기준 [6수03-12]",
-      "summary": "5-6학년군 도형과 측정 영역의 '다각형의 둘레와 넓이' 소주제에 배치된 공식 성취기준 [6수03-12]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "제곱센티미터부터 제곱킬로미터까지 넓이 단위 관계 알기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3126,7 +3233,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-12] appears in the 초등학교 5-6학년 도형과 측정 section under '다각형의 둘레와 넓이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-13]",
@@ -3140,7 +3248,7 @@
       "sequence": 13,
       "module": "다각형의 둘레와 넓이",
       "focus": "다각형의 둘레와 넓이 소주제의 도형과 측정 성취기준 [6수03-13]",
-      "summary": "5-6학년군 도형과 측정 영역의 '다각형의 둘레와 넓이' 소주제에 배치된 공식 성취기준 [6수03-13]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "직사각형과 정사각형 넓이 구하는 방법 익혀 구해 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3154,7 +3262,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-13] appears in the 초등학교 5-6학년 도형과 측정 section under '다각형의 둘레와 넓이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-14]",
@@ -3168,7 +3277,7 @@
       "sequence": 14,
       "module": "다각형의 둘레와 넓이",
       "focus": "다각형의 둘레와 넓이 소주제의 도형과 측정 성취기준 [6수03-14]",
-      "summary": "5-6학년군 도형과 측정 영역의 '다각형의 둘레와 넓이' 소주제에 배치된 공식 성취기준 [6수03-14]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "평행사변형과 삼각형, 사다리꼴, 마름모 넓이 구하는 방법 추론하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3182,7 +3291,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-14] appears in the 초등학교 5-6학년 도형과 측정 section under '다각형의 둘레와 넓이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-15]",
@@ -3196,7 +3306,7 @@
       "sequence": 15,
       "module": "원주율과 원의 넓이",
       "focus": "원주율과 원의 넓이 소주제의 도형과 측정 성취기준 [6수03-15]",
-      "summary": "5-6학년군 도형과 측정 영역의 '원주율과 원의 넓이' 소주제에 배치된 공식 성취기준 [6수03-15]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "둥근 물체의 원주와 지름을 재어 원주율이 일정함 확인하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3210,7 +3320,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-15] appears in the 초등학교 5-6학년 도형과 측정 section under '원주율과 원의 넓이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-16]",
@@ -3224,7 +3335,7 @@
       "sequence": 16,
       "module": "원주율과 원의 넓이",
       "focus": "원주율과 원의 넓이 소주제의 도형과 측정 성취기준 [6수03-16]",
-      "summary": "5-6학년군 도형과 측정 영역의 '원주율과 원의 넓이' 소주제에 배치된 공식 성취기준 [6수03-16]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "원의 둘레와 넓이 구하는 방법 익혀 값 구해 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3238,7 +3349,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-16] appears in the 초등학교 5-6학년 도형과 측정 section under '원주율과 원의 넓이'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-17]",
@@ -3252,7 +3364,7 @@
       "sequence": 17,
       "module": "입체도형의 겉넓이와 부피",
       "focus": "입체도형의 겉넓이와 부피 소주제의 도형과 측정 성취기준 [6수03-17]",
-      "summary": "5-6학년군 도형과 측정 영역의 '입체도형의 겉넓이와 부피' 소주제에 배치된 공식 성취기준 [6수03-17]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "직육면체와 정육면체 겉넓이 구하는 방법 익혀 구하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3266,7 +3378,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-17] appears in the 초등학교 5-6학년 도형과 측정 section under '입체도형의 겉넓이와 부피'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-18]",
@@ -3280,7 +3393,7 @@
       "sequence": 18,
       "module": "입체도형의 겉넓이와 부피",
       "focus": "입체도형의 겉넓이와 부피 소주제의 도형과 측정 성취기준 [6수03-18]",
-      "summary": "5-6학년군 도형과 측정 영역의 '입체도형의 겉넓이와 부피' 소주제에 배치된 공식 성취기준 [6수03-18]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "세제곱센티미터와 세제곱미터 단위 사이 관계 파악하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3294,7 +3407,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-18] appears in the 초등학교 5-6학년 도형과 측정 section under '입체도형의 겉넓이와 부피'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수03-19]",
@@ -3308,7 +3422,7 @@
       "sequence": 19,
       "module": "입체도형의 겉넓이와 부피",
       "focus": "입체도형의 겉넓이와 부피 소주제의 도형과 측정 성취기준 [6수03-19]",
-      "summary": "5-6학년군 도형과 측정 영역의 '입체도형의 겉넓이와 부피' 소주제에 배치된 공식 성취기준 [6수03-19]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "직육면체와 정육면체 부피 구하는 방법 익혀 구해 보기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3322,7 +3436,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수03-19] appears in the 초등학교 5-6학년 도형과 측정 section under '입체도형의 겉넓이와 부피'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수04-01]",
@@ -3336,7 +3451,7 @@
       "sequence": 1,
       "module": "자료의 수집과 정리",
       "focus": "자료의 수집과 정리 소주제의 자료와 가능성 성취기준 [6수04-01]",
-      "summary": "5-6학년군 자료와 가능성 영역의 '자료의 수집과 정리' 소주제에 배치된 공식 성취기준 [6수04-01]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "평균이 뜻하는 바를 알고 자료를 모아 구해 해석하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3350,7 +3465,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수04-01] appears in the 초등학교 5-6학년 자료와 가능성 section under '자료의 수집과 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수04-02]",
@@ -3364,7 +3480,7 @@
       "sequence": 2,
       "module": "자료의 수집과 정리",
       "focus": "자료의 수집과 정리 소주제의 자료와 가능성 성취기준 [6수04-02]",
-      "summary": "5-6학년군 자료와 가능성 영역의 '자료의 수집과 정리' 소주제에 배치된 공식 성취기준 [6수04-02]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "모은 자료를 띠그래프와 원그래프로 옮기고 읽어내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3378,7 +3494,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수04-02] appears in the 초등학교 5-6학년 자료와 가능성 section under '자료의 수집과 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수04-03]",
@@ -3392,7 +3509,7 @@
       "sequence": 3,
       "module": "자료의 수집과 정리",
       "focus": "자료의 수집과 정리 소주제의 자료와 가능성 성취기준 [6수04-03]",
-      "summary": "5-6학년군 자료와 가능성 영역의 '자료의 수집과 정리' 소주제에 배치된 공식 성취기준 [6수04-03]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "탐구 문제를 세우고 자료를 모아 알맞은 그래프로 해석하기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3406,7 +3523,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수04-03] appears in the 초등학교 5-6학년 자료와 가능성 section under '자료의 수집과 정리'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수04-04]",
@@ -3420,7 +3538,7 @@
       "sequence": 4,
       "module": "가능성",
       "focus": "가능성 소주제의 자료와 가능성 성취기준 [6수04-04]",
-      "summary": "5-6학년군 자료와 가능성 영역의 '가능성' 소주제에 배치된 공식 성취기준 [6수04-04]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "어떤 일이 일어날 가능성을 말로 나타내고 견주기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3434,7 +3552,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수04-04] appears in the 초등학교 5-6학년 자료와 가능성 section under '가능성'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수04-05]",
@@ -3448,7 +3567,7 @@
       "sequence": 5,
       "module": "가능성",
       "focus": "가능성 소주제의 자료와 가능성 성취기준 [6수04-05]",
-      "summary": "5-6학년군 자료와 가능성 영역의 '가능성' 소주제에 배치된 공식 성취기준 [6수04-05]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "일이 일어날 가능성을 수로 바꾸어 나타내기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3462,7 +3581,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수04-05] appears in the 초등학교 5-6학년 자료와 가능성 section under '가능성'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-math:[6수04-06]",
@@ -3476,7 +3596,7 @@
       "sequence": 6,
       "module": "가능성",
       "focus": "가능성 소주제의 자료와 가능성 성취기준 [6수04-06]",
-      "summary": "5-6학년군 자료와 가능성 영역의 '가능성' 소주제에 배치된 공식 성취기준 [6수04-06]이다. 표준 본문은 재수록하지 않고 코드, 위치, 분해 근거만 기록했다.",
+      "summary": "자료를 근거로 가능성을 예상하고 알맞은 판단 내리기",
       "sourceTextIncluded": false,
       "sourceRefs": [
         "kr-ncic-math-pdf-2022"
@@ -3490,7 +3610,8 @@
           "evidenceType": "official-achievement-standard-code",
           "basis": "[6수04-06] appears in the 초등학교 5-6학년 자료와 가능성 section under '가능성'. Source text is not reproduced."
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     }
   ],
   "microTopics": [
@@ -23062,9 +23183,10 @@
     },
     {
       "id": "math-gap-2026-amendment-scope",
-      "status": "out-of-scope-for-card",
-      "description": "NCIC also lists 2026.01 amended elementary math inventory nodes, but this card explicitly targets the 2022 elementary math curriculum source.",
-      "owner": "project-owner"
+      "status": "resolved",
+      "description": "Resolved 2026-09-05. 국가교육위원회 고시 제2026-1호 names 별책 1·2·3·4·15 as its only amendment targets, and the NCIC 초등학교(2026.01) branch exposes no 수학 row. The cited attachment 10003559 is byte-identical to the file the current 수학 row still serves (sha256 ba7c7c63…), so 2022 remains the current edition for elementary mathematics.",
+      "owner": "project-owner",
+      "severity": "low"
     }
   ]
 }

@@ -8,7 +8,15 @@ const readJson = (...parts) => JSON.parse(readFileSync(resolve(ROOT, ...parts), 
 const readWorkstream = (name) => readJson('data', 'kr', 'workstreams', name);
 
 const ENGLISH_SHA256 = '596d13897b002a4279a3e21f16396bdae7ac74988450f45fb348f87af943f92a';
-const HEALTH_SHA256 = '39954a4b5605b0ee691bd1a13e8207568ecb9079c97cdd6bf4ef490a7b7a41c6';
+const ANNEX15_SHA256 = '39954a4b5605b0ee691bd1a13e8207568ecb9079c97cdd6bf4ef490a7b7a41c6';
+const HEALTH_SHA256 = ANNEX15_SHA256;
+// Attachment 10004214 prints every page number six pages behind the PDF page.
+const PRINTED_PAGE_OFFSET = 6;
+const INTEGRATED_SOURCE_REFS = [
+  'kr-ncic-2026-1-annex15-pdf',
+  'kr-ncic-2026-1-annex2-pdf',
+  'kr-ncic-2026-elem-integrated-attachment',
+];
 const HEALTH_PAGE_BY_CODE = new Map([
   ['[2건01-01]', 45],
   ['[2건01-02]', 46],
@@ -19,6 +27,25 @@ const HEALTH_PAGE_BY_CODE = new Map([
   ['[2건02-05]', 51],
   ['[2건03-01]', 52],
   ['[2건03-02]', 53],
+]);
+// 2026-1 rebuilt 즐거운 생활 around 체험·표현·감상 and gave every code its own page.
+const JOYFUL_PAGE_BY_CODE = new Map([
+  ['[2즐01-01]', 69],
+  ['[2즐01-02]', 70],
+  ['[2즐01-03]', 71],
+  ['[2즐01-04]', 72],
+  ['[2즐02-01]', 73],
+  ['[2즐02-02]', 74],
+  ['[2즐02-03]', 75],
+  ['[2즐02-04]', 76],
+  ['[2즐02-05]', 77],
+  ['[2즐02-06]', 78],
+  ['[2즐03-01]', 79],
+  ['[2즐03-02]', 80],
+  ['[2즐03-03]', 81],
+  ['[2즐03-04]', 82],
+  ['[2즐03-05]', 83],
+  ['[2즐03-06]', 84],
 ]);
 
 test('English EFL workstream emits ten distinct skill-specific classroom task families', () => {
@@ -97,39 +124,57 @@ test('English standards preserve exact NCIC locators and document the unmapped l
   assert.equal(gap.sourceLocator.sha256, ENGLISH_SHA256);
 });
 
-test('current Annex 15 workstream adds exactly nine located 건강한 생활 standards', () => {
+test('integrated workstream is pinned to the 2026-1 Annex 15 alone', () => {
   const artifact = readWorkstream('integrated.json');
-  const healthStandards = artifact.standards.filter((standard) => standard.code.startsWith('[2건'));
-  const healthSource = artifact.sources.find((source) => source.id === 'kr-ncic-2026-1-annex15-pdf');
+  const codes = artifact.standards.map((standard) => standard.code);
+  const annexSource = artifact.sources.find((source) => source.id === 'kr-ncic-2026-1-annex15-pdf');
+  const crossCheckSource = artifact.sources.find((source) => source.id === 'kr-ncic-2026-1-annex2-pdf');
   const inventorySource = artifact.sources.find((source) => source.id === 'kr-ncic-2026-elem-integrated-attachment');
 
   assert.equal(artifact.standards.length, 57);
   assert.equal(artifact.microTopics.length, 171);
-  assert.deepEqual(healthStandards.map((standard) => standard.code), [...HEALTH_PAGE_BY_CODE.keys()]);
-  assert.equal(healthSource.attachmentNo, '10004214');
-  assert.equal(healthSource.sha256, HEALTH_SHA256);
-  assert.equal(healthSource.fileSizeBytes, 1449216);
-  assert.equal(healthSource.pdfPages, 90);
-  assert.deepEqual(healthSource.healthAchievementStandardPdfPages, [45, 53]);
-  assert.deepEqual(healthSource.healthAchievementStandardPrintedPages, [39, 47]);
+  // The superseded 2022-33 edition must not survive anywhere in the artifact.
+  assert.deepEqual(artifact.sources.map((source) => source.id).sort(), INTEGRATED_SOURCE_REFS);
+  assert.ok(!JSON.stringify(artifact).includes('kr-moe-2022-33-annex15-pdf'));
+  // The superseded attachment number survives only as the `supersedes` note on the source record.
+  assert.ok(!JSON.stringify(artifact.standards).includes('10003571'));
+  assert.ok(!JSON.stringify(artifact.microTopics).includes('10003571'));
+  assert.equal(annexSource.supersedes.includes('10003571'), true);
+
+  assert.deepEqual(codes.filter((code) => code.startsWith('[2건')), [...HEALTH_PAGE_BY_CODE.keys()]);
+  assert.deepEqual(codes.filter((code) => code.startsWith('[2즐')), [...JOYFUL_PAGE_BY_CODE.keys()]);
+  assert.equal(codes.filter((code) => code.startsWith('[2바')).length, 16);
+  assert.equal(codes.filter((code) => code.startsWith('[2슬')).length, 16);
+  // Deleted by the amendment; a ghost code here is the failure this gate exists for.
+  assert.ok(!codes.some((code) => code.startsWith('[2즐04')));
+
+  assert.equal(annexSource.attachmentNo, '10004214');
+  assert.equal(annexSource.sha256, ANNEX15_SHA256);
+  assert.equal(annexSource.fileSizeBytes, 1449216);
+  assert.equal(annexSource.pdfPages, 90);
+  assert.equal(annexSource.printedPageOffset, PRINTED_PAGE_OFFSET);
+  assert.equal(annexSource.effectiveFrom, '2028-03-01');
+  assert.deepEqual(annexSource.achievementStandardPdfPages['건강한 생활'], [45, 53]);
+  assert.deepEqual(annexSource.achievementStandardPdfPages['즐거운 생활'], [69, 84]);
+  assert.equal(crossCheckSource.attachmentNo, '10004180');
+  assert.equal(crossCheckSource.sha256, 'f943dab812a4b1fdb48af16fd724b5391d0db64bda83ed4e4b3b2a95faf3d4f9');
   assert.equal(inventorySource.apiIdentifiers.subjectCode, '3417');
   assert.equal(inventorySource.apiIdentifiers.openYear, '2026');
   assert.equal(inventorySource.apiIdentifiers.openMonth, '01');
 
-  for (const standard of healthStandards) {
-    const expectedPdfPage = HEALTH_PAGE_BY_CODE.get(standard.code);
+  const pageByCode = new Map([...HEALTH_PAGE_BY_CODE, ...JOYFUL_PAGE_BY_CODE]);
+  for (const standard of artifact.standards) {
     assert.equal(standard.verificationStatus, 'official-source-checked');
     assert.equal(standard.officialTextIncluded, false);
-    assert.deepEqual(standard.sourceRefs, [
-      'kr-ncic-2026-1-annex15-pdf',
-      'kr-ncic-2026-elem-integrated-attachment',
-    ]);
+    assert.deepEqual(standard.sourceRefs, INTEGRATED_SOURCE_REFS);
+    assert.equal(standard.effectiveFrom, '2028-03-01');
     assert.equal(standard.sourceLocator.sourceId, 'kr-ncic-2026-1-annex15-pdf');
     assert.equal(standard.sourceLocator.attachmentNo, '10004214');
-    assert.equal(standard.sourceLocator.sha256, HEALTH_SHA256);
-    assert.equal(standard.sourceLocator.pdfPage, expectedPdfPage);
-    assert.equal(standard.sourceLocator.printedPage, expectedPdfPage - 6);
+    assert.equal(standard.sourceLocator.sha256, ANNEX15_SHA256);
     assert.equal(standard.sourceLocator.code, standard.code);
+    assert.equal(standard.sourceLocator.printedPage, standard.sourceLocator.pdfPage - PRINTED_PAGE_OFFSET);
+    const expectedPdfPage = pageByCode.get(standard.code);
+    if (expectedPdfPage) assert.equal(standard.sourceLocator.pdfPage, expectedPdfPage);
   }
 });
 
@@ -157,14 +202,40 @@ test('건강한 생활 topics and clusters use health areas rather than legacy l
   assert.equal(artifact.coverageGaps.some((gap) => gap.id === 'gap.kr.integrated.2026-amendment-reconciliation'), false);
 });
 
-test('KR schema code pattern accepts every current 건강한 생활 code', () => {
+test('즐거운 생활 uses the 2026 체험·표현·감상 areas rather than the four life questions', () => {
+  const artifact = readWorkstream('integrated.json');
+  const joyfulTopics = artifact.microTopics.filter((topic) => topic.domainKorean === '즐거운 생활');
+  const joyfulClusters = artifact.clusters.filter((cluster) => cluster.domainKorean === '즐거운 생활');
+
+  assert.equal(joyfulTopics.length, 48);
+  assert.equal(new Set(joyfulTopics.map((topic) => topic.assessmentPrompt)).size, 48);
+  assert.ok(joyfulTopics.every((topic) => topic.curriculumAreaKind === 'arts-domain'));
+  assert.ok(joyfulTopics.every((topic) => topic.lifeQuestion == null && topic.lifeQuestionKorean == null));
+  assert.ok(joyfulTopics.every((topic) => topic.evidence.length >= 2));
+  assert.ok(joyfulTopics.every((topic) => topic.sourceLocator?.attachmentNo === '10004214'));
+
+  assert.deepEqual(joyfulClusters.map((cluster) => cluster.curriculumAreaKorean), ['체험', '표현', '감상']);
+  assert.deepEqual(joyfulClusters.map((cluster) => cluster.topicCount), [12, 18, 18]);
+  assert.deepEqual(joyfulClusters.map((cluster) => cluster.id), [
+    'kr.cluster.integrated.joyful-life.experience.1-2',
+    'kr.cluster.integrated.joyful-life.expression.1-2',
+    'kr.cluster.integrated.joyful-life.appreciation.1-2',
+  ]);
+  // Life questions survive only in 바른 생활 and 슬기로운 생활.
+  const lifeQuestionDomains = new Set(
+    artifact.clusters.filter((cluster) => cluster.lifeQuestionKorean).map((cluster) => cluster.domainKorean),
+  );
+  assert.deepEqual([...lifeQuestionDomains].sort(), ['바른 생활', '슬기로운 생활']);
+});
+
+test('KR schema code pattern accepts every current 건강한 생활 and 즐거운 생활 code', () => {
   const schema = readJson('schema', 'kr-curriculum-standards.schema.json');
   const pattern = new RegExp(schema.$defs.standard.properties.code.pattern);
-  for (const code of HEALTH_PAGE_BY_CODE.keys()) assert.match(code, pattern);
+  for (const code of [...HEALTH_PAGE_BY_CODE.keys(), ...JOYFUL_PAGE_BY_CODE.keys()]) assert.match(code, pattern);
   assert.doesNotMatch('[2헬01-01]', pattern);
 });
 
-test('full-depth build preserves EFL tasks and the current 건강한 생활 amendment', () => {
+test('full-depth build preserves EFL tasks and the current 2026-1 integrated inventory', () => {
   const standardsFile = readJson('data', 'kr', 'curriculum-standards.json');
   const topicsFile = readJson('data', 'kr', 'topics.json');
   const clustersFile = readJson('data', 'kr', 'clusters.json');
@@ -185,7 +256,18 @@ test('full-depth build preserves EFL tasks and the current 건강한 생활 amen
     integrated.standards.filter((standard) => standard.code.startsWith('[2건')).map((standard) => standard.code),
     [...HEALTH_PAGE_BY_CODE.keys()],
   );
+  assert.deepEqual(
+    integrated.standards.filter((standard) => standard.code.startsWith('[2즐')).map((standard) => standard.code),
+    [...JOYFUL_PAGE_BY_CODE.keys()],
+  );
   assert.equal(healthTopics.length, 27);
   assert.equal(healthClusters.length, 3);
   assert.ok(healthTopics.every((topic) => topic.sourceLocator?.sha256 === HEALTH_SHA256));
+  const integratedTopics = topicsFile.topics.filter((topic) => topic.subjectKorean === '통합교과');
+  assert.equal(integratedTopics.length, 171);
+  assert.ok(integratedTopics.every((topic) => topic.sourceLocator?.sha256 === ANNEX15_SHA256));
+  assert.ok(
+    integrated.sourceIds.every((id) => INTEGRATED_SOURCE_REFS.includes(id)),
+    'integrated curriculum must cite the 2026-1 edition only',
+  );
 });

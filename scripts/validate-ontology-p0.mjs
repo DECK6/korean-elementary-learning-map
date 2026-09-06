@@ -40,6 +40,16 @@ const REQUIRED_TERMS = {
     'hasPrerequisiteAssertion',
     'dependentTopic',
     'prerequisiteTopic',
+    'assertionLayer',
+    'relationKind',
+    'basisKind',
+    'scope',
+    'reviewStatus',
+    'decompositionKind',
+    'facetKey',
+    'contentKind',
+    'contentSourceLocator',
+    'locatorKind',
     'hasSourceLocator',
     'hasVerificationRecord',
     'reportsCoverageGap',
@@ -65,6 +75,10 @@ const REQUIRED_TERMS = {
     'rightsStatus',
     'officialTextIncluded',
     'sourceGapSeverityPresent',
+    'relationIdentifier',
+    'standardKey',
+    'misconception',
+    'gapStatus',
   ],
   conceptSchemes: [
     'LearningTopicType',
@@ -74,6 +88,15 @@ const REQUIRED_TERMS = {
     'GapSeverity',
     'VerificationStatus',
     'RightsStatus',
+    'RelationLayer',
+    'RelationKind',
+    'BasisKind',
+    'RelationScope',
+    'ReviewStatus',
+    'DecompositionKind',
+    'Facet',
+    'ContentKind',
+    'LocatorKind',
   ],
 };
 
@@ -219,6 +242,38 @@ export function validateControlledVocabulary(vocabulary) {
   if (topicTypes?.modeling !== 'skos:Concept' || topicTypes?.disjointnessAsserted !== false) {
     errors.push('LearningTopicType values must remain non-disjoint skos:Concept values');
   }
+  const facets = schemes.get('Facet');
+  const facetTerms = new Set((facets?.concepts ?? []).map((concept) => concept.term));
+  const requiredFacets = [
+    'concept',
+    'procedure',
+    'representation',
+    'application',
+    'inquiry',
+    'communication',
+    'reflection',
+    'core',
+  ];
+  if (facets?.namespace !== 'https://dexa.art/learnmap/vocab/facet/') {
+    errors.push('Facet scheme must use the shared K-12 facet namespace');
+  }
+  if (requiredFacets.some((term) => !facetTerms.has(term)) || facetTerms.size !== requiredFacets.length) {
+    errors.push('Facet scheme must define exactly the eight shared K-12 facets');
+  }
+
+  const relationLayers = schemes.get('RelationLayer');
+  if (relationLayers?.derivesPrerequisiteViews !== 'official') {
+    errors.push('only the official relation layer may derive prerequisite views');
+  }
+  const basisKinds = schemes.get('BasisKind');
+  if (
+    !Array.isArray(basisKinds?.officialLayerOnly) ||
+    basisKinds.officialLayerOnly.length !== 1 ||
+    basisKinds.officialLayerOnly[0] !== 'official-source'
+  ) {
+    errors.push('official-source must be the only official-layer basis kind');
+  }
+
   const dependencyLevels = schemes.get('DependencyRequirementLevel');
   if (
     dependencyLevels?.legacyValueMap?.hard !== 'required' ||
@@ -229,8 +284,8 @@ export function validateControlledVocabulary(vocabulary) {
 
   const release = vocabulary.releaseMetadata;
   if (
-    vocabulary.version !== '0.3.0-p3' ||
-    vocabulary.priorVersion !== '0.2.0-p2' ||
+    vocabulary.version !== '0.4.0' ||
+    vocabulary.priorVersion !== '0.3.0-p3' ||
     release?.formalOntologyAvailable !== true ||
     release?.rdfConversionStatus !== 'complete' ||
     release?.ontologyFormatStatus !== 'p3-formal-release'

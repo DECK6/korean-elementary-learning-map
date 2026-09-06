@@ -4,19 +4,19 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://dexa.art/learnmap/#/release/kr-full-depth-v0.4>
+<https://dexa.art/learnmap/#/release/kr-full-depth-v0.5>
   a lm:DatasetRelease, prov:Entity ;
-  lm:identifier "kr-full-depth-v0.4" ;
+  lm:identifier "kr-full-depth-v0.5" ;
   lm:status "formal-ontology-release" ;
   lm:rightsStatus <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> ;
   lm:officialTextIncluded false ;
-  lm:hasVerificationRecord <https://dexa.art/learnmap/#/verification/ontology-p3-formal-gates> ;
-  dcterms:title "Korean Elementary Curriculum Learning Ontology — kr-full-depth-v0.4"@en ;
-  dcterms:hasVersion "kr-full-depth-v0.4" ;
-  dcterms:issued "2026-07-10"^^xsd:date ;
+  lm:hasVerificationRecord <https://dexa.art/learnmap/#/verification/ontology-0-4-0-relation-layer-gates> ;
+  dcterms:title "Korean Elementary Curriculum Learning Ontology — kr-full-depth-v0.5"@en ;
+  dcterms:hasVersion "kr-full-depth-v0.5" ;
+  dcterms:issued "2026-09-05"^^xsd:date ;
   dcterms:format "text/turtle", "application/ld+json" ;
   dcterms:conformsTo
-    <https://dexa.art/learnmap/ontology/0.3.0-p3>,
+    <https://dexa.art/learnmap/ontology/0.4.0>,
     <https://dexa.art/learnmap/ontology/shapes.ttl> ;
   dcterms:rights "CLEARED — the cited Korean official curriculum documents (Ministry of Education and National Education Commission notices and appendices, distributed via NCIC) are state-published public materials openly available from their original sources; this ontology conversion neither adds nor removes those public terms."@en ;
   prov:wasDerivedFrom
@@ -27,12 +27,12 @@
   a owl:Ontology, prov:Entity ;
   dcterms:title "Korean Elementary Curriculum Learning Ontology"@en ;
   dcterms:description "Independent, non-official curriculum learning ontology; it does not provide learner diagnosis."@en ;
-  dcterms:hasVersion "0.3.0-p3" ;
-  dcterms:replaces <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
-  owl:versionIRI <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
-  owl:priorVersion <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
-  owl:versionInfo "0.3.0-p3" ;
-  dcterms:issued "2026-07-10"^^xsd:date ;
+  dcterms:hasVersion "0.4.0" ;
+  dcterms:replaces <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
+  owl:versionIRI <https://dexa.art/learnmap/ontology/0.4.0> ;
+  owl:priorVersion <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
+  owl:versionInfo "0.4.0" ;
+  dcterms:issued "2026-09-05"^^xsd:date ;
   dcterms:format "text/turtle" ;
   dcterms:source <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> ;
   dcterms:hasFormat
@@ -42,18 +42,18 @@
     <https://dexa.art/learnmap/ontology/metadata.ttl> ;
   prov:wasDerivedFrom <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> .
 
-<https://dexa.art/learnmap/ontology/0.3.0-p3>
+<https://dexa.art/learnmap/ontology/0.4.0>
   a owl:Ontology, prov:Entity ;
   dcterms:isVersionOf <https://dexa.art/learnmap/ontology> ;
-  dcterms:hasVersion "0.3.0-p3" ;
-  dcterms:replaces <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
-  owl:priorVersion <https://dexa.art/learnmap/ontology/0.2.0-p2> .
+  dcterms:hasVersion "0.4.0" ;
+  dcterms:replaces <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
+  owl:priorVersion <https://dexa.art/learnmap/ontology/0.3.0-p3> .
 
-<https://dexa.art/learnmap/#/verification/ontology-p3-formal-gates>
+<https://dexa.art/learnmap/#/verification/ontology-0-4-0-relation-layer-gates>
   a lm:VerificationRecord, prov:Entity ;
-  lm:identifier "ontology-p3-formal-gates" ;
+  lm:identifier "ontology-0-4-0-relation-layer-gates" ;
   lm:verificationStatus <https://dexa.art/learnmap/vocab/#/VerificationStatus/workstream-reviewed> ;
-  lm:summary "Seven automated release gates passed with deterministic artifacts and pinned RDF tooling."@en ;
+  lm:summary "Release gates passed with deterministic artifacts and pinned RDF tooling; prerequisite relations are split into an official layer and a pedagogical-candidate layer, and only the official layer derives directRequires, unlocks, and indirectRequires."@en ;
   lm:note "External curriculum, subject, pedagogy, and classroom review remains ongoing; this status is not official approval, rights clearance, or learner diagnosis."@en .
 
 <https://dexa.art/learnmap/ontology/learning-map.ttl>

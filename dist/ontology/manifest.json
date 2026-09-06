@@ -1,17 +1,17 @@
 {
-  "datasetRelease": "kr-full-depth-v0.4",
+  "datasetRelease": "kr-full-depth-v0.5",
   "files": [
     {
-      "bytes": 31221604,
+      "bytes": 29736248,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "247803f846edb204d92beb9141a1366181aecb7044aac7ce889c1c13c18479f0"
+      "sha256": "55bfa724d05cde5c07f5ab5c534e91b97952efb5743b2b9710b96acc5bac7192"
     },
     {
-      "bytes": 22739314,
+      "bytes": 21629559,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "c3e1ed8b2b71a4c8640132c01e8bf778f20a6e6b35f0781f2260d97ced4d912e"
+      "sha256": "4be2a8280bb298711871dbecb02041e877e16f51cc36fc048b9c73c5bca6dacd"
     }
   ],
   "formatVersion": 3,
@@ -19,47 +19,48 @@
   "graphResources": {
     "AchievementStandard": 620,
     "AssessmentPrompt": 1956,
-    "CoverageGap": 43,
+    "CoverageGap": 46,
     "Curriculum": 11,
     "DatasetRelease": 1,
-    "EvidenceCriterion": 4056,
+    "EvidenceCriterion": 4008,
     "GradeBand": 5,
-    "LearningCluster": 153,
+    "LearningCluster": 152,
     "LearningDomain": 79,
     "LearningTopic": 1956,
-    "PrerequisiteAssertion": 1894,
-    "SourceDocument": 17,
-    "SourceLocator": 1232,
+    "PrerequisiteAssertion": 2291,
+    "SourceDocument": 16,
+    "SourceLocator": 2203,
     "StandardTopicAlignment": 1956,
     "Subject": 12,
-    "VerificationRecord": 6455
+    "VerificationRecord": 6851
   },
-  "ontologyVersion": "0.3.0-p3",
+  "ontologyVersion": "0.4.0",
   "phase": "P3",
-  "priorOntologyVersion": "0.2.0-p2",
+  "priorOntologyVersion": "0.3.0-p3",
   "relations": {
     "alignedToStandard": {
       "count": 1956,
-      "sha256": "bb750c1580454f5b16edb010b29689cedc2f03f5e71d279299da3b9cbc0fcedf"
+      "sha256": "fba823d0214e335c305cbce845502bf3540c96203efd81e91507cc2c523996b7"
     },
     "directRequires": {
-      "count": 1894,
-      "sha256": "16cfe6dc70f5eebcd675aeb548354a725adbd75c36c8a9619d2f44666be3c132"
+      "count": 416,
+      "sha256": "bdc951d8aaf7e75767e6729c9819bed76d4a52019f46305c0921f25b8272a3d5"
     },
     "indirectRequires": {
-      "count": 53656,
-      "sha256": "e455382f0d617bf815b856783a12f8c5fb52f0b8edb9ea2441b53b2a6c75f8db"
+      "count": 97,
+      "sha256": "89e8a346b4e479380b886733fae9d381e5b15caa4944d6497e43757f875c0d4e"
     },
     "unlocks": {
-      "count": 1894,
-      "sha256": "7695eecf55e2fd8c7f04a08a2b926a04f0cd3e4fed47777981f6c6691c75ece1"
+      "count": 416,
+      "sha256": "43aae289c4bdeb093923378608ce245b940293998f0ec5bda8bd766521beb64f"
     }
   },
   "sourceRecords": {
-    "clusters": 153,
-    "coverageGaps": 43,
+    "candidateDependencies": 1875,
+    "clusters": 152,
+    "coverageGaps": 46,
     "curricula": 11,
-    "dependencies": 1894,
+    "dependencies": 416,
     "standardMappings": 1956,
     "standards": 620,
     "topics": 1956

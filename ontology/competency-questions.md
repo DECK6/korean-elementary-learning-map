@@ -19,6 +19,9 @@ These questions are the acceptance contract for a later RDF/SHACL conversion. P0
 | CQ-13 | Which topic-type facets describe a topic, and are they asserted as disjoint? | Topic types resolve to `LearningTopicType` SKOS concepts. The fixture and schema contain no disjointness axiom, so overlap remains possible. |
 | CQ-14 | Can a standard-topic alignment preserve `introduces`, `supports`, `extends`, or `assesses`, confidence, note, basis, and source through a round trip? | Four qualified alignment fixtures cover all roles; JSON -> RDF -> JSON comparison retains every qualifier and flags any defaulted value. |
 | CQ-15 | Can prerequisite qualifiers survive RDF conversion even when a convenient `directRequires` edge is materialized? | The round-trip fixture reconstructs the original dependent ID, prerequisite ID, legacy strength, reason, basis, and source from `PrerequisiteAssertion`; flattening to the edge alone fails the test. |
+| CQ-16 | Which release layer, relation kind, and basis kind does each prerequisite assertion carry? | Assertions group into the official layer (`required-prerequisite` / `official-source`) and the pedagogical-candidate layer (`recommended-before` / code order, decomposition order, repository reasoning). Only the official layer materializes `directRequires`. |
+| CQ-17 | How many topics carry each content kind? | Topics split into `core:content-mechanical-derivative` and `core:content-source-grounded-draft`; a source-grounded draft must also carry `core:contentSourceLocator`, which SHACL enforces. |
+| CQ-18 | Can the shared K-12 core vocabulary answer the same question in the elementary and secondary repositories? | The query text is identical to the secondary repository's `scq-21-k12-core-vocabulary.rq`; both ABoxes emit `core:facetKey` and `core:layerConcept`, so each returns its own facet and relation-layer distribution. |
 
 ## Query-result guardrails
 

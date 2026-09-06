@@ -1,21 +1,24 @@
 {
   "dataset": "Korean Elementary Learning Map full-depth integrated workstream build",
-  "taxonomyVersion": "kr-full-depth-v0.4",
-  "generatedAt": "2026-07-09T00:00:00+09:00",
+  "taxonomyVersion": "kr-full-depth-v0.5",
+  "generatedAt": "2026-09-05T00:00:00+09:00",
   "locale": "ko-KR",
   "country": "KR",
   "status": "integrated-workstream-candidate",
   "verificationStatus": "public-doc-derived",
   "counts": {
-    "sources": 17,
+    "sources": 16,
     "curricula": 11,
     "standards": 620,
     "topics": 1956,
-    "dependencies": 1894,
-    "clusters": 153,
+    "dependencies": 416,
+    "candidateDependencies": 1875,
+    "clusters": 152,
     "standardMappings": 1956,
-    "coverageGaps": 43,
-    "workstreams": 9
+    "coverageGaps": 46,
+    "workstreams": 9,
+    "contentOverlayFiles": 3,
+    "sourceGroundedTopics": 363
   },
   "targets": {
     "topicsAtLeast": 1500
@@ -23,8 +26,44 @@
   "graphPolicy": {
     "relation": "prerequisite",
     "acyclic": true,
-    "edgeSelection": "workstream-reviewed-only",
-    "crossSubjectEdges": "none"
+    "edgeSelection": "official-source-only",
+    "crossSubjectEdges": "none",
+    "layers": {
+      "official": {
+        "file": "dependencies.json",
+        "relationKind": "required-prerequisite",
+        "basisKind": "official-source",
+        "reviewStatus": "internal-reviewed",
+        "edgeCount": 416,
+        "derivesOntologyViews": true,
+        "note": "Only official-source relations are materialized as directRequires/unlocks/indirectRequires."
+      },
+      "pedagogical-candidate": {
+        "file": "dependencies.candidate.json",
+        "relationKind": "recommended-before",
+        "basisKind": "official-code-order | decomposition-order | repository-authored",
+        "reviewStatus": "candidate",
+        "edgeCount": 1875,
+        "derivesOntologyViews": false,
+        "note": "Product surfaces these as recommended order only; they are not prerequisite claims."
+      }
+    }
+  },
+  "relationLayers": {
+    "official": {
+      "file": "dependencies.json",
+      "edgeCount": 416,
+      "bytes": 378619,
+      "sha256": "351a436dfcfd9a1d5b144f422b425e7232d2bdb7f90b06af0a2b1e793ea8819e"
+    },
+    "pedagogical-candidate": {
+      "file": "dependencies.candidate.json",
+      "edgeCount": 1875,
+      "bytes": 1354292,
+      "sha256": "0a320dfae76e276ba1ba1b7b3c55f150248f26c62ddaf259de23011ef88c61d2",
+      "supersededByOfficial": 2,
+      "droppedForOfficialOrdering": 1
+    }
   },
   "coverageNotes": {
     "social": {
@@ -43,9 +82,11 @@
       "topics": 303
     },
     "amendedAnnex15": {
-      "posture": "Current accessible 2026 amendment retained with nine directly located 건강한 생활 standards.",
-      "standards": 9,
-      "topics": 27
+      "posture": "Integrated subjects are pinned to the 2026-1 amended Annex 15 alone (attachment 10004214): 바 16 + 슬 16 + 건 9 + 즐 16. The 2022-33 Annex 15 is no longer cited because the amendment reassigned every 즐거운 생활 code.",
+      "standards": 57,
+      "healthStandards": 9,
+      "joyfulStandards": 16,
+      "topics": 171
     }
   },
   "workstreams": [
@@ -61,77 +102,102 @@
   ],
   "files": {
     "clusters.json": {
-      "bytes": 336090,
-      "sha256": "6f98f583fa1f9afa1ae4498e9e49cfa6ebbda845701ba161fdae0daaa1e03fdb"
+      "bytes": 334207,
+      "sha256": "38a53c9a616a86f8566e20411af89a8af97888d03d6ea52a9072f79812c2b6e9"
     },
     "clusters.seed.json": {
       "bytes": 70468,
       "sha256": "c9664dd578a5492d163dc258cd054d5c8eda501c35ac81844a3f34d1c6c5c1b5"
     },
+    "content/math-1-2.json": {
+      "bytes": 86281,
+      "sha256": "8b3d3001ba66901ffd20116b78953d4dbe57dd0976f4352da0c365b710c34ce6"
+    },
+    "content/math-3-4.json": {
+      "bytes": 123596,
+      "sha256": "3a808c8a10d41fd6977785719a253f32c4dc7cc64dea0c312286165b4759f96d"
+    },
+    "content/math-5-6.json": {
+      "bytes": 132508,
+      "sha256": "b4dd43c45a4c3cd2f84e0e76c2d5d19350863ceac3e02982f51398e609af8d84"
+    },
     "curriculum-standards.json": {
-      "bytes": 1913076,
-      "sha256": "aaaebb939c17fcc11a808fef3ae8164823425f74bfe8092a4a66941cb8c33335"
+      "bytes": 1973586,
+      "sha256": "e9eca97885d466cdc3e34c9d4e3527fded0ff7df0464fc7ac77d7a3960b66570"
     },
     "curriculum-standards.seed.json": {
       "bytes": 1085753,
       "sha256": "c82f717d4f86b62e1f248f772591786be83e0d0dd8d2c18f5c733890c418db55"
     },
+    "dependencies.candidate.json": {
+      "bytes": 1354292,
+      "sha256": "0a320dfae76e276ba1ba1b7b3c55f150248f26c62ddaf259de23011ef88c61d2"
+    },
     "dependencies.json": {
-      "bytes": 762739,
-      "sha256": "e09a6137bb70edf2a0b0928c05a4bd3f102c80845846ff13b10767ef4ceafe2c"
+      "bytes": 378619,
+      "sha256": "351a436dfcfd9a1d5b144f422b425e7232d2bdb7f90b06af0a2b1e793ea8819e"
     },
     "dependencies.seed.json": {
       "bytes": 127512,
       "sha256": "8a25e60bae09954d457f932dd152afc5e7541a261a280ceb4bbf13d3bbe85884"
     },
     "topics.json": {
-      "bytes": 5387054,
-      "sha256": "80aa059ed305ce4cbeb0df45436c0b204a42cd208204c1cc1e5332c70c4bf5f3"
+      "bytes": 5917903,
+      "sha256": "16a2b8438a9235c8e7997b0c6c9a9a847993920b0da374a3d0fe04521302ad2f"
     },
     "topics.seed.json": {
       "bytes": 365755,
       "sha256": "0c982e39e36f7fa02945eab21a981043c61fef1765bfba9274bb55988e53043f"
     },
     "workstreams/arts-pe.json": {
-      "bytes": 1210650,
-      "sha256": "2b87c874e5ebce69820a66459fc2117a015567a7d5d00b47fe1f93218bb553be"
+      "bytes": 1226171,
+      "sha256": "6609f1acedf65f5f52ab3cf11cd3cfeefdd5a5c5b0036e4b6c1d0706c8a3f3a2"
     },
     "workstreams/english-efl.json": {
-      "bytes": 450549,
-      "sha256": "98972ddc5859a93dfdac045c7970f708082537387ffa5e2396b4e2f9582517ca"
+      "bytes": 451673,
+      "sha256": "9764a708c4080beaa2cd8f4e38fd7edc875d89887a8145fc73dfc3ce04c1d361"
     },
     "workstreams/integrated.json": {
-      "bytes": 670046,
-      "sha256": "71cbf7dcb8bd9099f3527d498810713a86ebebd78653622ae09eb56059bde2b6"
+      "bytes": 766130,
+      "sha256": "3de7c6c68014c815b9484510b0e1134af2877a06b6015f8a5163730e5b35bff8"
     },
     "workstreams/korean.json": {
-      "bytes": 1413436,
-      "sha256": "41bb284c1e2c86e076113306f8d848eb74f568cf6815b9ea2e8d374b3d8ba814"
+      "bytes": 1418191,
+      "sha256": "ff63934d926f5843d816fc4ec666d928f1e0d28926f6edf8f5d8143590fb8543"
     },
     "workstreams/math.json": {
-      "bytes": 1321687,
-      "sha256": "7cf8393c439e676293e804eb4fd114c9b77298eb4ac4dea54c10b6b84a835694"
+      "bytes": 1311118,
+      "sha256": "d9a5c98b656026302d0cf3a9ee9a322616de54a8bab25eb34ae935d53bd7fbd2"
     },
     "workstreams/moral.json": {
-      "bytes": 487356,
-      "sha256": "118b1688e11ee9864f35793f5541e58c1f90cf0854bed6e7e5360b525be6abfa"
+      "bytes": 486161,
+      "sha256": "45df1e49cccfcfa12fbf40ba742675568a03bf9412f5fb34fee2319889b18c69"
     },
     "workstreams/practical-arts.json": {
-      "bytes": 265661,
-      "sha256": "f000b84919b73f799bcdbec973986d373ffc1823002317ea5ce67c2738158b1a"
+      "bytes": 275670,
+      "sha256": "9387cec4b861ec1ed2061d02e3c4afdb60869e924a904f2efa78c885295e1c78"
     },
     "workstreams/science.json": {
-      "bytes": 1284608,
-      "sha256": "7f3032eec37b30801d45630751616d748163c2041145eb9ea816e9fa4c94f210"
+      "bytes": 1272326,
+      "sha256": "2f423c25b41160ae9e657da71536c8603a6760ae9905eaffd75cdace066b9029"
     },
     "workstreams/social.json": {
-      "bytes": 623771,
-      "sha256": "2025dcc017bfacf710d6911d2f957baaeab2b225863b8acced6fcb5aa0698734"
+      "bytes": 626270,
+      "sha256": "888a1da737bd3af4b5a7112c1a7aac1a243c07796ff31e19f48be07a621d1acd"
     }
   },
   "sourcePosture": {
     "recordSchema": "All integrated source records use id, name, url, accessDate, usage, and sourceType; stale portal aliases and dead notice URLs are excluded.",
-    "verification": "Official-inventory gates bind every curriculum to an exact standard count and direct official PDF source.",
+    "verification": "Official-inventory gates bind every curriculum to an exact standard count, an exact code-set digest, and a direct official PDF source.",
+    "editionPolicy": "Current notice edition (\"현행 고시본\"), not the edition currently enforced (\"현재 시행판\"). Where a cited edition is not yet enforced, the affected standards carry effectiveFrom and the entry is listed in effectiveFrom below.",
+    "effectiveFrom": [
+      {
+        "sourceId": "kr-ncic-2026-1-annex15-pdf",
+        "curriculumId": "kr-2022-elem-integrated",
+        "effectiveFrom": "2028-03-01",
+        "note": "국가교육위원회 고시 제2026-1호 부칙: 초등학교 1·2학년은 2028-03-01부터 시행한다. 그 전 학년도의 현장 시행판은 교육부 고시 제2022-33호 [별책 15](첨부 10003571)이며, 이 데이터셋은 현행 고시본인 2026-1판을 따른다."
+      }
+    ],
     "workLevelReuseStatus": "CLEARED: the cited Korean official curriculum documents are state-published public materials openly available from their original sources; see PROVENANCE.md."
   }
 }

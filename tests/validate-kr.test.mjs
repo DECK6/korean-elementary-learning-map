@@ -7,6 +7,7 @@ import { spawnSync } from 'node:child_process';
 import test from 'node:test';
 import { attachJosa, resolveKoreanText } from '../scripts/lib/kr-content-quality.mjs';
 import { STALE_KR_SOURCE_IDS } from '../scripts/lib/kr-source-provenance.mjs';
+import { relationId } from '../scripts/lib/relation-vocabulary.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const KR_DATA = resolve(ROOT, 'data', 'kr');
@@ -98,7 +99,7 @@ test('KR workstream learner fields contain no known direct-josa regressions', ()
 
 test('KR dependency validation accepts the canonical DAG and rejects a reciprocal cycle', () => {
   const dataDir = fixture();
-  const dependencyFile = readJson(dataDir, 'dependencies.json');
+  const dependencyFile = readJson(dataDir, 'dependencies.candidate.json');
   const original = dependencyFile.dependencies.find(
     (candidate) =>
       !dependencyFile.dependencies.some(
@@ -108,12 +109,13 @@ test('KR dependency validation accepts the canonical DAG and rejects a reciproca
   assert.ok(original, 'expected at least one non-reciprocal dependency edge');
   dependencyFile.dependencies.push({
     ...original,
+    id: relationId(original.prerequisiteId, original.topicId),
     topicId: original.prerequisiteId,
     prerequisiteId: original.topicId,
     reason: 'Adversarial regression fixture: reverse an existing prerequisite edge.',
   });
   dependencyFile.edgeCount = dependencyFile.dependencies.length;
-  writeJson(dataDir, 'dependencies.json', dependencyFile);
+  writeJson(dataDir, 'dependencies.candidate.json', dependencyFile);
 
   const mutated = runValidator(dataDir);
   assertRejected(mutated, /reciprocal dependency pair/, /cyclic prerequisite SCC/);
@@ -361,11 +363,12 @@ test('KR validation rejects malformed source URLs and missing repository-local s
 test('KR validation enforces the explicit no-cross-subject-edge policy', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
-  const dependencyFile = readJson(dataDir, 'dependencies.json');
+  const dependencyFile = readJson(dataDir, 'dependencies.candidate.json');
   const dependency = dependencyFile.dependencies[0];
   const topicSubject = topicsFile.topics.find((topic) => topic.id === dependency.topicId).subjectKorean;
   dependency.prerequisiteId = topicsFile.topics.find((topic) => topic.subjectKorean !== topicSubject).id;
-  writeJson(dataDir, 'dependencies.json', dependencyFile);
+  dependency.id = relationId(dependency.topicId, dependency.prerequisiteId);
+  writeJson(dataDir, 'dependencies.candidate.json', dependencyFile);
 
   assertRejected(runValidator(dataDir), /synthetic cross-subject dependency forbidden/);
 });

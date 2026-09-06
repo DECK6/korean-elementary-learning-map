@@ -1,4 +1,5 @@
 @prefix lm: <https://dexa.art/learnmap/ontology#> .
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <urn:fixture:release> a lm:DatasetRelease ;
@@ -57,6 +58,12 @@
 
 <urn:fixture:topic-a> a lm:LearningTopic ;
   lm:identifier "fixture-topic-a" ;
+  core:facetKey core:facet-concept ;
+  core:contentKind core:content-mechanical-derivative ;
+  lm:decompositionKind <https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet> ;
+  lm:facetKey <https://dexa.art/learnmap/vocab/facet/concept> ;
+  lm:standardKey "fixture-curriculum:[2수01-01]" ;
+  lm:sourceStandardCode "[2수01-01]" ;
   lm:preferredLabel "Fixture topic A"@en ;
   lm:hasSubject <urn:fixture:subject> ;
   lm:hasGradeBand <urn:fixture:grade-1-2> ;
@@ -72,6 +79,12 @@
 
 <urn:fixture:topic-b> a lm:LearningTopic ;
   lm:identifier "fixture-topic-b" ;
+  core:facetKey core:facet-procedure ;
+  core:contentKind core:content-mechanical-derivative ;
+  lm:decompositionKind <https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet> ;
+  lm:facetKey <https://dexa.art/learnmap/vocab/facet/procedure> ;
+  lm:standardKey "fixture-curriculum:[2수01-01]" ;
+  lm:sourceStandardCode "[2수01-01]" ;
   lm:preferredLabel "Fixture topic B"@en ;
   lm:hasSubject <urn:fixture:subject> ;
   lm:hasGradeBand <urn:fixture:grade-1-2> ;
@@ -89,6 +102,12 @@
 
 <urn:fixture:topic-c> a lm:LearningTopic ;
   lm:identifier "fixture-topic-c" ;
+  core:facetKey core:facet-reflection ;
+  core:contentKind core:content-mechanical-derivative ;
+  lm:decompositionKind <https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet> ;
+  lm:facetKey <https://dexa.art/learnmap/vocab/facet/reflection> ;
+  lm:standardKey "fixture-curriculum:[2수01-01]" ;
+  lm:sourceStandardCode "[2수01-01]" ;
   lm:preferredLabel "Fixture topic C"@en ;
   lm:hasSubject <urn:fixture:subject> ;
   lm:hasGradeBand <urn:fixture:grade-1-2> ;
@@ -106,6 +125,12 @@
 
 <urn:fixture:topic-d> a lm:LearningTopic ;
   lm:identifier "fixture-topic-d" ;
+  core:facetKey core:facet-communication ;
+  core:contentKind core:content-mechanical-derivative ;
+  lm:decompositionKind <https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet> ;
+  lm:facetKey <https://dexa.art/learnmap/vocab/facet/communication> ;
+  lm:standardKey "fixture-curriculum:[2수01-01]" ;
+  lm:sourceStandardCode "[2수01-01]" ;
   lm:preferredLabel "Fixture topic D"@en ;
   lm:hasSubject <urn:fixture:subject> ;
   lm:hasGradeBand <urn:fixture:grade-1-2> ;
@@ -120,6 +145,14 @@
 
 <urn:fixture:topic-e> a lm:LearningTopic ;
   lm:identifier "fixture-topic-e" ;
+  core:facetKey core:facet-representation ;
+  core:contentKind core:content-source-grounded-draft ;
+  core:misconception "학습자는 표현을 바꾸면 값도 바뀐다고 생각한다."@ko ;
+  core:contentSourceLocator <urn:fixture:content-locator> ;
+  lm:decompositionKind <https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet> ;
+  lm:facetKey <https://dexa.art/learnmap/vocab/facet/representation> ;
+  lm:standardKey "fixture-curriculum:[2수01-01]" ;
+  lm:sourceStandardCode "[2수01-01]" ;
   lm:preferredLabel "Fixture topic E"@en ;
   lm:hasSubject <urn:fixture:subject> ;
   lm:hasGradeBand <urn:fixture:grade-1-2> ;
@@ -147,6 +180,14 @@
 
 <urn:fixture:pa-b-a> a lm:PrerequisiteAssertion ;
   lm:identifier "fixture-pa-b-a" ;
+  lm:relationIdentifier "kr.dep.0123456789abcdef0123" ;
+  lm:assertionLayer <https://dexa.art/learnmap/vocab/#/RelationLayer/official> ;
+  core:layerConcept core:layer-official ;
+  lm:relationKind <https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite> ;
+  lm:basisKind <https://dexa.art/learnmap/vocab/#/BasisKind/official-source> ;
+  lm:scope <https://dexa.art/learnmap/vocab/#/RelationScope/same-domain> ;
+  lm:reviewStatus <https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed> ;
+  lm:hasSourceLocator <urn:fixture:locator> ;
   lm:dependentTopic <urn:fixture:topic-b> ;
   lm:prerequisiteTopic <urn:fixture:topic-a> ;
   lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/required> ;
@@ -158,6 +199,14 @@
 
 <urn:fixture:pa-c-b> a lm:PrerequisiteAssertion ;
   lm:identifier "fixture-pa-c-b" ;
+  lm:relationIdentifier "kr.dep.fedcba98765432100fed" ;
+  lm:assertionLayer <https://dexa.art/learnmap/vocab/#/RelationLayer/official> ;
+  core:layerConcept core:layer-official ;
+  lm:relationKind <https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite> ;
+  lm:basisKind <https://dexa.art/learnmap/vocab/#/BasisKind/official-source> ;
+  lm:scope <https://dexa.art/learnmap/vocab/#/RelationScope/same-domain> ;
+  lm:reviewStatus <https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed> ;
+  lm:hasSourceLocator <urn:fixture:locator> ;
   lm:dependentTopic <urn:fixture:topic-c> ;
   lm:prerequisiteTopic <urn:fixture:topic-b> ;
   lm:prerequisiteStrength <https://dexa.art/learnmap/vocab/#/DependencyRequirementLevel/recommended> ;
@@ -256,10 +305,17 @@
   lm:locatorValue "fixture section" ;
   lm:documentedBy <urn:fixture:source> .
 
+<urn:fixture:content-locator> a lm:SourceLocator ;
+  lm:identifier "fixture-content-locator" ;
+  lm:locatorValue "printedPage: 11" , "section: 성취기준 적용 시 고려 사항" ;
+  core:locatorKind core:locator-printed-page ;
+  lm:documentedBy <urn:fixture:source> .
+
 <urn:fixture:coverage-gap> a lm:CoverageGap ;
   lm:identifier "fixture-gap" ;
   lm:gapCategory <https://dexa.art/learnmap/vocab/#/CoverageGapCategory/content-coverage> ;
-  lm:gapSeverity <https://dexa.art/learnmap/vocab/#/GapSeverity/review-needed> ;
+  lm:gapSeverity <https://dexa.art/learnmap/vocab/#/GapSeverity/medium> ;
+  lm:gapStatus "needs-review" ;
   lm:sourceGapSeverityPresent false ;
   lm:gapDescription "Fixture gap is retained for validation."@en .
 

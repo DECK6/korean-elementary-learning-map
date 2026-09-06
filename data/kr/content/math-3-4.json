@@ -1,0 +1,2369 @@
+{
+  "$schema": "../../../schema/kr-content-overlay.schema.json",
+  "contentKind": "source-grounded-draft",
+  "subjectKorean": "수학",
+  "authoredAt": "2026-09-05",
+  "sourceRefs": [
+    "kr-ncic-math-pdf-2022"
+  ],
+  "note": "초등 3~4학년군 수학 141개 주제의 증거·평가 프롬프트·오개념 초안. 교육부 고시 제2022-33호 [별책 8] 수학과 교육과정의 3~4학년군 성취기준, 성취기준 해설, 적용 시 고려 사항을 근거로 새로 썼다(인쇄 쪽 = PDF 쪽 − 6).",
+  "entries": {
+    "kr.mt.math.change-relationships.g3-4.s4-02-01.application": {
+      "evidence": [
+        "생활 속 배열이나 무늬에서 규칙을 찾아 다음에 올 것을 예상한다.",
+        "예상한 값을 배열에 다시 넣어 보고 맞는지 확인해 말한다."
+      ],
+      "assessmentPrompt": "달력에서 같은 요일의 날짜가 늘어나는 규칙을 찾아 쓰고, 그 규칙으로 넷째 주 같은 요일의 날짜를 구하세요.",
+      "misconceptions": [
+        "규칙을 말로만 설명하고 수로 나타내지 못해 다음 값을 하나씩 세어서만 구한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(2) 변화와 관계 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수02-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-01.concept": {
+      "evidence": [
+        "늘어놓은 수나 모양에서 반복되거나 커지는 규칙을 찾아 자기 말로 말한다.",
+        "찾은 규칙이 배열 전체에 맞는지 다음 자리에 넣어 보고 판단한다."
+      ],
+      "assessmentPrompt": "2, 5, 8, 11로 이어지는 수 배열에서 규칙을 찾아 말하고, 다음에 올 두 수를 쓰세요.",
+      "misconceptions": [
+        "앞의 두 수만 보고 규칙을 정한 뒤 뒤쪽에서 맞지 않아도 고치지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(2) 변화와 관계 성취기준",
+        "code": "[4수02-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-01.representation": {
+      "evidence": [
+        "찾은 규칙을 표에 정리하고 수나 식으로 바꾸어 나타낸다.",
+        "표에 적은 값과 식이 서로 맞는지 짚어 가며 설명한다."
+      ],
+      "assessmentPrompt": "쌓기나무를 1개, 3개, 5개로 늘려 쌓은 모양을 표로 정리하고, 개수가 늘어나는 규칙을 식으로 나타내세요.",
+      "misconceptions": [
+        "표에서 순서와 개수를 뒤바꿔 적어 규칙을 거꾸로 나타낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(2) 변화와 관계 성취기준",
+        "code": "[4수02-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-02.application": {
+      "evidence": [
+        "계산식 배열의 규칙을 이용해 빠진 식이나 다음 식의 값을 구한다.",
+        "추측한 값을 실제로 계산해 보고 맞는지 확인한다."
+      ],
+      "assessmentPrompt": "100-10=90, 100-20=80, 100-30=70으로 이어지는 배열에서 100-60의 값을 규칙으로 추측하고, 계산해 확인하세요.",
+      "misconceptions": [
+        "규칙으로 추측한 값을 계산으로 확인하지 않고 그대로 답으로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(2) 변화와 관계 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수02-02]"
+      }
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-02.concept": {
+      "evidence": [
+        "늘어놓은 계산식에서 어떤 수가 어떻게 달라지는지 구분해 말한다.",
+        "찾은 규칙이 다음 식에도 맞는지 판단하고 근거를 든다."
+      ],
+      "assessmentPrompt": "11×1=11, 11×2=22, 11×3=33으로 이어지는 배열에서 규칙을 찾아 쓰고, 11×5의 값을 추측하세요.",
+      "misconceptions": [
+        "몇 개의 식만 보고 규칙을 정한 뒤 어긋나는 식이 나와도 다시 살피지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(2) 변화와 관계 (가) 성취기준 해설",
+        "code": "[4수02-02]"
+      }
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-02.representation": {
+      "evidence": [
+        "계산식 배열을 표에 정리해 달라지는 부분이 드러나게 나타낸다.",
+        "정리한 표에서 값이 얼마씩 커지는지 짚어 규칙을 설명한다."
+      ],
+      "assessmentPrompt": "1+2=3, 1+2+3=6, 1+2+3+4=10인 계산식을 표로 정리하고, 결과가 얼마씩 커지는지 표에 나타내세요.",
+      "misconceptions": [
+        "표를 만들 때 식과 결과를 한 칸에 몰아 적어 달라지는 부분이 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(2) 변화와 관계 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수02-02]"
+      }
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-03.application": {
+      "evidence": [
+        "크기가 같은 두 양을 찾아 등호가 들어간 식으로 나타낸다.",
+        "양팔저울이나 구체물로 양쪽이 같은지 확인하고 설명한다."
+      ],
+      "assessmentPrompt": "양팔저울이 평형을 이루도록 오른쪽에 놓을 수를 정하고, 그 관계를 등호가 들어간 식으로 쓰세요.",
+      "misconceptions": [
+        "양쪽 값을 각각 세어 보지 않고 놓인 물건 수가 같으면 크기도 같다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(2) 변화와 관계 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수02-03]"
+      }
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-03.concept": {
+      "evidence": [
+        "등호가 양쪽의 크기가 같음을 나타내는 기호임을 자기 말로 말한다.",
+        "주어진 식이 옳은지 양쪽 값을 견주어 판단하고 까닭을 말한다."
+      ],
+      "assessmentPrompt": "25+13과 38이 같은지 판단하고, 등호의 뜻을 들어 그렇게 판단한 까닭을 설명하세요.",
+      "misconceptions": [
+        "등호를 “답이 나온다”는 뜻으로 여겨 등호 오른쪽에는 늘 계산 결과만 온다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(2) 변화와 관계 (가) 성취기준 해설",
+        "code": "[4수02-03]"
+      }
+    },
+    "kr.mt.math.change-relationships.g3-4.s4-02-03.representation": {
+      "evidence": [
+        "크기가 같은 두 양을 구체물이나 그림으로 나란히 나타낸다.",
+        "그림에서 양쪽이 같음을 짚어 등호가 들어간 식과 이어 설명한다."
+      ],
+      "assessmentPrompt": "30+14와 크기가 같은 덧셈식을 하나 만들고, 두 식이 같음을 그림과 등호가 들어간 식으로 나타내세요.",
+      "misconceptions": [
+        "그림에서는 양쪽을 같게 그려 놓고 식에는 등호 대신 부등호를 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(2) 변화와 관계 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수02-03]"
+      }
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-01.application": {
+      "evidence": [
+        "학급 친구들에게 조사한 자료를 세어 표로 정리한다.",
+        "정리한 자료를 그래프로 나타내고 알 수 있는 점을 말한다."
+      ],
+      "assessmentPrompt": "우리 반이 좋아하는 운동을 조사해 표로 정리하고, 막대그래프로 나타낸 뒤 알게 된 점을 쓰세요.",
+      "misconceptions": [
+        "조사한 사람을 빠뜨리거나 두 번 세어 표의 합이 반 전체 수와 달라진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(4) 자료와 가능성 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수04-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-01.concept": {
+      "evidence": [
+        "그림그래프에서 그림 하나가 나타내는 수를 찾아 말한다.",
+        "막대그래프의 가로와 세로가 무엇을 나타내는지 구분해 설명한다."
+      ],
+      "assessmentPrompt": "막대그래프를 보고 가장 많은 항목과 가장 적은 항목을 찾고, 어떻게 알았는지 쓰세요.",
+      "misconceptions": [
+        "막대의 길이만 보고 눈금 한 칸의 크기를 살피지 않아 수를 잘못 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(4) 자료와 가능성 성취기준",
+        "code": "[4수04-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-01.representation": {
+      "evidence": [
+        "항목의 이름과 그림 하나가 나타내는 수를 정해 그림그래프를 그린다.",
+        "그린 그래프에서 그림의 개수와 실제 수를 이어 설명한다."
+      ],
+      "assessmentPrompt": "학년별로 심은 나무 수를 그림그래프로 나타내되, 그림 하나가 몇 그루를 나타내는지 정해 표시하세요.",
+      "misconceptions": [
+        "그림 하나가 나타내는 수를 정하지 않아 그림 개수와 실제 수가 맞지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(4) 자료와 가능성 성취기준",
+        "code": "[4수04-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-02.application": {
+      "evidence": [
+        "여러 날 잰 기온이나 키를 표로 정리해 그래프로 나타낸다.",
+        "그래프에서 변화의 흐름을 읽고 다음 값을 예상해 말한다."
+      ],
+      "assessmentPrompt": "일주일 동안의 낮 기온을 조사해 꺾은선그래프로 나타내고, 기온이 어떻게 변했는지 쓰세요.",
+      "misconceptions": [
+        "조사한 날짜의 차례를 뒤섞어 점을 찍어 변화의 흐름이 드러나지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 24,
+        "section": "(4) 자료와 가능성 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수04-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-02.concept": {
+      "evidence": [
+        "꺾은선그래프가 시간에 따른 변화를 보기에 좋다는 점을 말한다.",
+        "선이 올라가거나 내려간 부분에서 변화를 읽어 설명한다."
+      ],
+      "assessmentPrompt": "온도 변화를 나타낸 꺾은선그래프를 보고 기온이 가장 많이 오른 때를 찾고, 어떻게 알았는지 쓰세요.",
+      "misconceptions": [
+        "선이 가파르면 값도 크다고 여겨 변화의 정도와 값의 크기를 섞어 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(4) 자료와 가능성 성취기준",
+        "code": "[4수04-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-02.representation": {
+      "evidence": [
+        "가로와 세로가 나타내는 것을 정하고 눈금 한 칸의 크기를 알맞게 정한다.",
+        "점을 찍어 선으로 잇고 그래프의 제목과 단위를 적어 완성한다."
+      ],
+      "assessmentPrompt": "표에 정리한 식물의 키를 꺾은선그래프로 나타내되, 눈금 한 칸의 크기를 정해 표시하세요.",
+      "misconceptions": [
+        "점만 찍고 선으로 잇지 않거나 눈금 간격을 일정하지 않게 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(4) 자료와 가능성 성취기준",
+        "code": "[4수04-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-03.application": {
+      "evidence": [
+        "탐구할 문제를 정하고 필요한 자료를 직접 모아 정리한다.",
+        "그래프로 나타낸 결과를 근거로 처음 정한 문제에 답한다."
+      ],
+      "assessmentPrompt": "“우리 반이 가장 많이 남기는 급식 반찬은 무엇일까”를 알아보려고 자료를 모아 그래프로 나타내고, 알아낸 답을 쓰세요.",
+      "misconceptions": [
+        "자료를 모으고 그리기만 하고 처음에 정한 문제와 이어 답하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 24,
+        "section": "(4) 자료와 가능성 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수04-03]"
+      }
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-03.concept": {
+      "evidence": [
+        "자료의 크기를 견줄 때와 변화를 살필 때 알맞은 그래프를 고른다.",
+        "고른 그래프가 왜 알맞은지 자료의 특성을 들어 설명한다."
+      ],
+      "assessmentPrompt": "반별 도서 대출 권수와 한 달 동안의 기온 변화를 나타낼 때 알맞은 그래프를 각각 고르고 까닭을 쓰세요.",
+      "misconceptions": [
+        "어떤 자료든 익숙한 막대그래프로만 나타내려 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(4) 자료와 가능성 (가) 성취기준 해설",
+        "code": "[4수04-03]"
+      }
+    },
+    "kr.mt.math.data-probability.g3-4.s4-04-03.representation": {
+      "evidence": [
+        "모은 자료를 표로 정리한 뒤 목적에 맞는 그래프로 옮겨 그린다.",
+        "그래프의 제목과 축, 눈금이 알맞은지 살펴 고쳐 나타낸다."
+      ],
+      "assessmentPrompt": "조사한 자료를 표와 그래프로 각각 나타내고, 그래프의 제목과 눈금이 알맞은지 살펴 고친 점을 쓰세요.",
+      "misconceptions": [
+        "그래프에 제목이나 축의 이름을 적지 않아 무엇을 나타낸 것인지 알 수 없다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 24,
+        "section": "(4) 자료와 가능성 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수04-03]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-01.application": {
+      "evidence": [
+        "교실이나 운동장에서 선분과 반직선처럼 보이는 곳을 찾아 말한다.",
+        "찾은 것이 왜 그 이름에 맞는지 끝점을 짚어 설명한다."
+      ],
+      "assessmentPrompt": "교실에서 선분처럼 보이는 곳과 반직선처럼 보이는 곳을 하나씩 찾아 쓰고, 그렇게 본 까닭을 설명하세요.",
+      "misconceptions": [
+        "끝점을 살피지 않고 곧게 뻗은 것은 모두 직선이라고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-01.concept": {
+      "evidence": [
+        "직선, 선분, 반직선을 끝점이 있는지 살펴 구분해 말한다.",
+        "주어진 그림에서 반직선을 골라 그렇게 고른 까닭을 말한다."
+      ],
+      "assessmentPrompt": "칠판에 그린 세 가지 선을 보고 직선, 선분, 반직선을 각각 고르고, 어떻게 구별했는지 쓰세요.",
+      "misconceptions": [
+        "선분과 직선을 길이가 길고 짧은 차이로만 구별한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-01.representation": {
+      "evidence": [
+        "두 점을 정해 선분과 반직선을 자를 대고 각각 그린다.",
+        "그린 선에 점의 이름을 붙여 어떤 선인지 나타낸다."
+      ],
+      "assessmentPrompt": "점 ㄱ과 점 ㄴ을 찍고 선분 ㄱㄴ과 반직선 ㄱㄴ을 각각 그린 뒤, 두 그림이 어떻게 다른지 쓰세요.",
+      "misconceptions": [
+        "반직선 ㄱㄴ과 반직선 ㄴㄱ을 같은 것으로 여겨 방향을 바꾸어 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-02.application": {
+      "evidence": [
+        "교실 물건에서 직각인 부분과 그렇지 않은 부분을 찾아 나눈다.",
+        "찾은 각이 예각인지 둔각인지 삼각자의 직각과 대어 보고 말한다."
+      ],
+      "assessmentPrompt": "교실에서 예각과 둔각을 하나씩 찾고, 삼각자의 직각과 대어 본 결과를 함께 쓰세요.",
+      "misconceptions": [
+        "직각보다 조금 작은 각을 눈대중으로만 보고 직각이라고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-02.concept": {
+      "evidence": [
+        "각을 이루는 꼭짓점과 두 변을 찾아 이름을 붙여 말한다.",
+        "직각과 견주어 예각과 둔각을 구분하고 그 까닭을 든다."
+      ],
+      "assessmentPrompt": "세 개의 각을 보고 예각, 직각, 둔각으로 나누고, 무엇을 기준으로 구별했는지 쓰세요.",
+      "misconceptions": [
+        "각의 크기를 변의 길이로 판단해 변이 긴 각을 더 큰 각이라고 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-02.representation": {
+      "evidence": [
+        "주어진 점을 꼭짓점으로 하여 예각과 둔각을 각각 그린다.",
+        "그린 각에 꼭짓점과 변을 표시해 어떤 각인지 나타낸다."
+      ],
+      "assessmentPrompt": "점 ㄴ을 꼭짓점으로 하여 예각 하나와 둔각 하나를 그리고, 각의 꼭짓점과 변을 각각 표시하세요.",
+      "misconceptions": [
+        "각을 그릴 때 두 변이 꼭짓점에서 만나지 않고 떨어지게 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-03.application": {
+      "evidence": [
+        "책상, 창틀, 횡단보도에서 수직인 곳과 평행한 곳을 찾아 말한다.",
+        "찾은 곳이 왜 수직이거나 평행인지 삼각자를 대어 확인한다."
+      ],
+      "assessmentPrompt": "교실에서 수직인 곳과 평행한 곳을 하나씩 찾아 쓰고, 삼각자나 자로 확인한 방법을 설명하세요.",
+      "misconceptions": [
+        "길이가 같은 두 선분을 보고 서로 평행하다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-03.concept": {
+      "evidence": [
+        "두 직선이 만나 이루는 각이 직각일 때 수직이라고 부름을 말한다.",
+        "평행한 두 직선이 아무리 늘여도 만나지 않는다는 점을 그림으로 설명한다."
+      ],
+      "assessmentPrompt": "그림에서 서로 수직인 두 직선과 서로 평행한 두 직선을 각각 찾고, 그렇게 판단한 까닭을 쓰세요.",
+      "misconceptions": [
+        "가로와 세로로 놓인 직선만 수직이라고 여겨 기울어진 직선의 수직 관계를 알아채지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-03.representation": {
+      "evidence": [
+        "주어진 직선에 수직인 직선과 평행한 직선을 삼각자로 그린다.",
+        "그린 그림에 수선과 평행선을 표시해 관계를 나타낸다."
+      ],
+      "assessmentPrompt": "직선을 하나 그린 뒤 그 직선에 수직인 직선과 평행한 직선을 각각 그리고, 어떤 방법으로 그렸는지 쓰세요.",
+      "misconceptions": [
+        "평행선을 그릴 때 두 직선 사이의 거리를 일정하게 하지 않아 한쪽이 벌어지게 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-03]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-04.application": {
+      "evidence": [
+        "생활에서 본 무늬나 표지판에서 뒤집거나 돌린 모양을 찾는다.",
+        "찾은 모양이 어떤 이동으로 만들어졌는지 까닭을 들어 말한다."
+      ],
+      "assessmentPrompt": "포장지나 바닥 타일 무늬에서 뒤집거나 돌려서 만든 부분을 찾고, 어떤 이동을 했는지 설명하세요.",
+      "misconceptions": [
+        "돌리기와 뒤집기를 구별하지 못하고 방향만 달라지면 모두 돌렸다고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-04]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-04.concept": {
+      "evidence": [
+        "밀기, 뒤집기, 돌리기에서 모양과 방향이 어떻게 달라지는지 구분해 말한다.",
+        "밀어도 모양과 크기가 변하지 않는다는 점을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "ㄱ 모양 조각을 오른쪽으로 밀었을 때와 위로 뒤집었을 때의 결과를 각각 말하고, 무엇이 달라지는지 쓰세요.",
+      "misconceptions": [
+        "뒤집기를 하면 모양의 크기까지 달라진다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (가) 성취기준 해설",
+        "code": "[4수03-04]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-04.representation": {
+      "evidence": [
+        "모양 조각을 밀거나 뒤집은 결과를 모눈종이에 옮겨 그린다.",
+        "그린 결과에 이동한 방향과 칸 수를 표시해 나타낸다."
+      ],
+      "assessmentPrompt": "모눈종이에 그린 도형을 오른쪽으로 3칸 민 모양과 아래로 뒤집은 모양을 각각 그리세요.",
+      "misconceptions": [
+        "뒤집은 모양을 그릴 때 기준이 되는 선을 정하지 않아 원래 도형과 겹치게 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-04]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-05.application": {
+      "evidence": [
+        "약도나 자리표에서 목적지까지 가는 길을 방향과 칸 수로 설명한다.",
+        "안내한 대로 따라가 보고 도착한 자리가 맞는지 확인한다."
+      ],
+      "assessmentPrompt": "모눈으로 그린 놀이터 지도에서 미끄럼틀까지 가는 길을 방향과 칸 수로 안내하고, 따라가 확인하세요.",
+      "misconceptions": [
+        "오른쪽과 왼쪽을 보는 사람에 따라 다르게 말해 안내가 서로 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-05]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-05.concept": {
+      "evidence": [
+        "점의 위치를 방향과 칸 수로 나타낼 수 있다는 점을 말한다.",
+        "같은 자리에 이르는 이동 방법이 여러 가지임을 예로 들어 설명한다."
+      ],
+      "assessmentPrompt": "모눈종이에서 점 ㄱ이 점 ㄴ으로 가는 방법을 방향과 칸 수를 써서 두 가지로 쓰세요.",
+      "misconceptions": [
+        "이동을 말할 때 방향만 말하고 칸 수를 빠뜨려 어디로 갔는지 알 수 없게 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (가) 성취기준 해설",
+        "code": "[4수03-05]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-05.representation": {
+      "evidence": [
+        "출발점과 도착점을 모눈 위에 표시하고 이동을 화살표로 그린다.",
+        "그린 화살표를 “오른쪽으로 4칸”처럼 말로 옮겨 설명한다."
+      ],
+      "assessmentPrompt": "모눈종이에 점을 찍고 오른쪽으로 4칸, 위로 2칸 옮긴 자리를 화살표로 그린 뒤 도착한 점을 표시하세요.",
+      "misconceptions": [
+        "화살표를 칸 수에 맞추지 않고 대충 그어 몇 칸 옮겼는지 알 수 없게 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-05]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-06.application": {
+      "evidence": [
+        "접시나 시계처럼 원 모양인 물건의 지름을 재어 크기를 비교한다.",
+        "지름과 반지름의 관계를 이용해 필요한 길이를 구해 말한다."
+      ],
+      "assessmentPrompt": "반지름이 4cm인 원 모양 접시의 지름을 구하고, 그렇게 구한 까닭을 설명하세요.",
+      "misconceptions": [
+        "지름을 반지름의 두 배가 아니라 반지름과 같은 길이로 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-06]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-06.concept": {
+      "evidence": [
+        "원의 중심, 반지름, 지름을 그림에서 찾아 이름을 붙여 말한다.",
+        "한 원에서 반지름의 길이가 모두 같음을 재어 보고 설명한다."
+      ],
+      "assessmentPrompt": "원 안에 반지름을 두 개 긋고 길이를 잰 뒤, 두 길이가 같은 까닭을 설명하세요.",
+      "misconceptions": [
+        "원 위의 두 점을 이은 선은 모두 지름이라고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-06]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-06.representation": {
+      "evidence": [
+        "원의 중심과 반지름, 지름을 그림에 표시해 나타낸다.",
+        "표시한 그림을 보고 각 부분의 이름을 짝지어 설명한다."
+      ],
+      "assessmentPrompt": "원을 하나 그리고 중심, 반지름, 지름을 각각 표시한 뒤 세 부분이 서로 어떤 관계인지 쓰세요.",
+      "misconceptions": [
+        "중심을 지나지 않게 그은 선분에 지름이라고 표시한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-06]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-07.application": {
+      "evidence": [
+        "정한 반지름에 맞추어 컴퍼스로 원을 흔들리지 않게 그린다.",
+        "그린 원의 반지름을 재어 처음 정한 길이와 맞는지 확인한다."
+      ],
+      "assessmentPrompt": "반지름이 2cm인 원과 4cm인 원을 컴퍼스로 각각 그리고, 자로 재어 크기가 맞는지 확인하세요.",
+      "misconceptions": [
+        "컴퍼스의 침이 움직여 원이 어긋나게 그려져도 다시 그리지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-07]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-07.concept": {
+      "evidence": [
+        "컴퍼스를 벌린 길이가 그리려는 원의 반지름이 됨을 말한다.",
+        "원의 크기를 정하려면 무엇을 먼저 정해야 하는지 설명한다."
+      ],
+      "assessmentPrompt": "반지름이 3cm인 원을 그리려면 컴퍼스를 얼마만큼 벌려야 하는지 쓰고, 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "컴퍼스를 지름만큼 벌려 놓고 원하는 크기의 원을 그렸다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (가) 성취기준 해설",
+        "code": "[4수03-07]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-07.representation": {
+      "evidence": [
+        "중심을 옮겨 가며 크기가 다른 원을 여러 개 그려 무늬를 만든다.",
+        "만든 무늬에서 각 원의 중심과 반지름이 어떻게 달라졌는지 설명한다."
+      ],
+      "assessmentPrompt": "중심을 옮겨 가며 크기가 다른 원 세 개로 무늬를 그리고, 각 원의 중심과 반지름을 표시하세요.",
+      "misconceptions": [
+        "무늬를 그릴 때 중심을 표시하지 않아 어느 원이 어느 중심에서 나왔는지 알 수 없다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-07]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-08.application": {
+      "evidence": [
+        "주어진 조건에 맞는 삼각형을 찾거나 만들어 문제를 해결한다.",
+        "만든 삼각형이 조건에 맞는지 변과 각을 재어 확인해 말한다."
+      ],
+      "assessmentPrompt": "길이가 5cm, 5cm, 8cm인 막대로 삼각형을 만들고, 어떤 삼각형인지 이름과 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "변 세 개의 길이만 주어지면 삼각형이 언제나 만들어진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-08]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-08.concept": {
+      "evidence": [
+        "변의 길이를 재어 이등변삼각형과 정삼각형을 구분해 이름을 붙인다.",
+        "정삼각형이 이등변삼각형이기도 한 까닭을 변의 길이를 들어 설명한다."
+      ],
+      "assessmentPrompt": "세 삼각형의 변의 길이를 재어 이등변삼각형과 정삼각형을 고르고, 그렇게 나눈 기준을 쓰세요.",
+      "misconceptions": [
+        "정삼각형은 이등변삼각형이 아니라고 여겨 두 무리를 아주 갈라 놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-08]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-08.representation": {
+      "evidence": [
+        "자와 각도기를 써서 조건에 맞는 삼각형을 그려 나타낸다.",
+        "그린 삼각형에서 길이가 같은 변과 크기가 같은 각을 찾아 표시한다."
+      ],
+      "assessmentPrompt": "한 변이 6cm인 정삼각형을 그리고, 길이가 같은 변과 크기가 같은 각을 각각 표시하세요.",
+      "misconceptions": [
+        "삼각형을 그린 뒤 같음을 나타내는 표시를 아무 변에나 붙여 성질이 드러나지 않게 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-08]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-09.application": {
+      "evidence": [
+        "생활 속 물건이나 무늬에서 세 가지 삼각형을 찾아 이름을 붙인다.",
+        "붙인 이름이 맞는지 각의 크기를 재어 확인해 말한다."
+      ],
+      "assessmentPrompt": "교실이나 학교에서 직각삼각형과 둔각삼각형처럼 보이는 곳을 하나씩 찾고, 각을 확인한 방법을 쓰세요.",
+      "misconceptions": [
+        "삼각형이 기울어져 놓이면 직각삼각형인 줄 알아채지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-09]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-09.concept": {
+      "evidence": [
+        "가장 큰 각의 크기를 살펴 세 가지 삼각형으로 나누고 이름을 정한다.",
+        "예각삼각형은 세 각이 모두 예각이어야 한다는 점을 설명한다."
+      ],
+      "assessmentPrompt": "세 삼각형을 보고 직각삼각형, 예각삼각형, 둔각삼각형으로 나누고, 어느 각을 보고 나누었는지 쓰세요.",
+      "misconceptions": [
+        "예각이 두 개만 있어도 예각삼각형이라고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-09]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-09.representation": {
+      "evidence": [
+        "점판이나 모눈종이에 조건에 맞는 삼각형을 그려 나타낸다.",
+        "그린 삼각형에 직각이나 둔각을 표시해 종류를 나타낸다."
+      ],
+      "assessmentPrompt": "점판에 직각삼각형 하나와 둔각삼각형 하나를 그리고, 각 삼각형에서 기준이 되는 각을 표시하세요.",
+      "misconceptions": [
+        "직각 표시를 각의 크기와 상관없이 아무 꼭짓점에나 그려 넣는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-09]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-10.application": {
+      "evidence": [
+        "생활 속 물건에서 조건에 맞는 사각형을 찾아 이름을 붙인다.",
+        "붙인 이름이 맞는지 변의 길이와 각을 재어 확인한다."
+      ],
+      "assessmentPrompt": "주변에서 평행사변형과 마름모처럼 보이는 물건을 하나씩 찾고, 변의 길이를 재어 확인한 내용을 쓰세요.",
+      "misconceptions": [
+        "기울여 놓은 정사각형을 마름모로만 보고 정사각형은 아니라고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-10]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-10.concept": {
+      "evidence": [
+        "평행한 변이 몇 쌍인지 살펴 사다리꼴과 평행사변형을 구분한다.",
+        "마름모와 정사각형을 변의 길이와 각의 크기로 나누어 말한다."
+      ],
+      "assessmentPrompt": "네 개의 사각형을 보고 사다리꼴과 평행사변형을 각각 고르고, 어느 변을 보고 나누었는지 쓰세요.",
+      "misconceptions": [
+        "평행한 변이 한 쌍만 있어도 평행사변형이라고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-10]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-10.representation": {
+      "evidence": [
+        "모눈종이의 칸을 세어 조건에 맞는 사각형을 그린다.",
+        "그린 사각형에서 평행한 변과 길이가 같은 변을 찾아 표시한다."
+      ],
+      "assessmentPrompt": "모눈종이에 평행사변형을 하나 그리고, 평행한 변과 길이가 같은 변을 각각 표시하세요.",
+      "misconceptions": [
+        "모눈의 칸을 세지 않고 눈대중으로 그려 마주 보는 변의 길이가 서로 달라진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 20,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-10]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-11.application": {
+      "evidence": [
+        "도형판이나 모양 조각으로 조건에 맞는 다각형을 만든다.",
+        "만든 도형의 변과 꼭짓점을 세어 이름을 정하고 확인한다."
+      ],
+      "assessmentPrompt": "도형판에 고무줄을 걸어 육각형을 만들고, 변과 꼭짓점의 수를 세어 이름이 맞는지 확인하세요.",
+      "misconceptions": [
+        "변의 수와 꼭짓점의 수를 다르게 세어 도형의 이름을 잘못 붙인다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-11]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-11.concept": {
+      "evidence": [
+        "선분으로만 둘러싸인 도형을 골라 다각형이라고 부름을 말한다.",
+        "정다각형이 되려면 변과 각이 어떠해야 하는지 구분해 설명한다."
+      ],
+      "assessmentPrompt": "여러 도형 가운데 다각형을 모두 고르고, 다각형이 아닌 도형을 그렇게 판단한 까닭을 쓰세요.",
+      "misconceptions": [
+        "굽은 선이 섞인 도형도 변의 수만 세어 다각형이라고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (가) 성취기준 해설",
+        "code": "[4수03-11]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-11.representation": {
+      "evidence": [
+        "정다각형을 그리고 길이가 같은 변과 크기가 같은 각을 찾아 표시한다.",
+        "그린 도형의 변의 수를 세어 이름을 붙여 나타낸다."
+      ],
+      "assessmentPrompt": "변의 길이가 모두 3cm인 정오각형을 그리고, 변의 수를 세어 도형의 이름을 쓰세요.",
+      "misconceptions": [
+        "변의 길이만 같게 그리고 각의 크기는 살피지 않아 정다각형이 아닌 도형을 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-11]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-12.application": {
+      "evidence": [
+        "모양 조각을 골라 주어진 모양을 빈틈없이 채워 완성한다.",
+        "쓴 조각의 수와 종류를 세어 채운 방법을 설명한다."
+      ],
+      "assessmentPrompt": "삼각형과 사다리꼴 조각으로 육각형 모양을 빈틈없이 채우고, 쓴 조각의 수를 종류별로 세어 쓰세요.",
+      "misconceptions": [
+        "조각을 돌리거나 뒤집어 보지 않아 채울 수 있는 자리를 찾지 못한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-12]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-12.concept": {
+      "evidence": [
+        "빈틈없이 채우려면 조각의 변끼리 맞닿아야 한다는 점을 말한다.",
+        "어떤 조각이 어느 자리에 들어갈지 고르고 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "삼각형 조각만으로 사각형을 빈틈없이 채울 수 있는지 판단하고, 그렇게 생각한 까닭을 쓰세요.",
+      "misconceptions": [
+        "조각을 겹쳐 놓고도 빈틈없이 채웠다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (가) 성취기준 해설",
+        "code": "[4수03-12]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-12.representation": {
+      "evidence": [
+        "만든 모양을 종이에 옮겨 그려 조각의 경계를 나타낸다.",
+        "그린 그림에서 어떤 조각을 어디에 놓았는지 짚어 설명한다."
+      ],
+      "assessmentPrompt": "모양 조각으로 만든 무늬를 종이에 옮겨 그리고, 조각마다 다른 색으로 칠해 놓은 자리를 나타내세요.",
+      "misconceptions": [
+        "옮겨 그릴 때 조각의 크기를 다르게 그려 실제로는 채워지지 않는 그림이 된다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-12]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-13.application": {
+      "evidence": [
+        "시계를 보고 초 단위까지 시각을 읽어 소리 내어 말한다.",
+        "읽은 시각을 하루 일과와 이어 언제인지 설명한다."
+      ],
+      "assessmentPrompt": "시계 그림을 보고 시각을 “몇 시 몇 분 몇 초”로 읽고, 그때 무엇을 할 시간인지 함께 쓰세요.",
+      "misconceptions": [
+        "긴바늘과 초바늘을 바꾸어 보아 분과 초를 뒤바꿔 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-13]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-13.concept": {
+      "evidence": [
+        "1분이 60초임을 말하고 초바늘이 한 바퀴 도는 것과 이어 설명한다.",
+        "시각과 시간이 서로 다른 뜻임을 예를 들어 구분한다."
+      ],
+      "assessmentPrompt": "시계에서 초바늘이 한 바퀴 돌면 몇 분이 지나는지 쓰고, 그렇게 답한 까닭을 설명하세요.",
+      "misconceptions": [
+        "1분을 100초로 여겨 초와 분을 십진법처럼 바꾼다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-13]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-13.representation": {
+      "evidence": [
+        "주어진 시각에 맞게 시계 그림에 세 바늘을 그린다.",
+        "그린 시계와 숫자로 쓴 시각을 짝지어 같은 시각임을 설명한다."
+      ],
+      "assessmentPrompt": "3시 25분 40초를 시계 그림에 바늘로 나타내고, 같은 시각을 숫자로도 쓰세요.",
+      "misconceptions": [
+        "초바늘을 눈금에 맞추지 않고 아무 곳에나 그려 몇 초인지 알 수 없게 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-13]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-14.application": {
+      "evidence": [
+        "출발 시각과 걸린 시간을 이용해 도착 시각을 구해 답한다.",
+        "구한 시각이 알맞은지 상황에 비추어 확인하고 말한다."
+      ],
+      "assessmentPrompt": "2시 40분 30초에 출발해 25분 45초가 걸렸을 때 도착 시각을 구하고, 계산 과정을 쓰세요.",
+      "misconceptions": [
+        "분과 초를 같은 자리에 놓고 더해 받아올림을 하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-14]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-14.concept": {
+      "evidence": [
+        "시간을 더할 때 60초가 되면 1분으로 올려야 한다는 점을 말한다.",
+        "시각을 구할 때와 걸린 시간을 구할 때를 구분해 무엇을 구할지 정한다."
+      ],
+      "assessmentPrompt": "45초와 30초를 더하면 왜 1분 15초가 되는지 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "60초를 100초처럼 여겨 45초와 30초의 합을 75초로 그대로 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-14]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-14.representation": {
+      "evidence": [
+        "시간의 덧셈과 뺄셈을 시간 띠나 세로셈으로 나타낸다.",
+        "나타낸 것에서 받아올림이 일어난 자리를 짚어 설명한다."
+      ],
+      "assessmentPrompt": "1시간 20분 50초와 35분 25초를 더하는 과정을 세로셈으로 쓰고, 받아올림이 일어난 자리를 표시하세요.",
+      "misconceptions": [
+        "세로셈에서 시, 분, 초를 자리에 맞추어 쓰지 않고 나란히 붙여 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-14]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-15.application": {
+      "evidence": [
+        "자를 써서 물건의 길이를 mm 단위까지 재어 적는다.",
+        "재기 전에 어림한 값과 실제로 잰 값을 견주어 말한다."
+      ],
+      "assessmentPrompt": "필통 속 물건 세 가지의 길이를 먼저 어림하고 자로 잰 뒤, 어림한 값과 잰 값을 비교해 쓰세요.",
+      "misconceptions": [
+        "자의 0이 아닌 곳에 물건의 끝을 맞추어 놓고 눈금을 그대로 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-15]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-15.concept": {
+      "evidence": [
+        "1mm와 1km가 각각 어느 정도 길이인지 예를 들어 말한다.",
+        "재려는 대상에 알맞은 길이 단위를 골라 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "지우개의 두께와 학교에서 집까지의 거리를 잴 때 알맞은 단위를 각각 고르고, 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "먼 거리를 잴 때도 cm만 쓰려고 해 수가 지나치게 커진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-15]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-15.representation": {
+      "evidence": [
+        "잰 길이를 표에 정리하고 단위를 함께 적어 나타낸다.",
+        "눈금에 딱 맞지 않는 길이를 “약”을 붙여 적어 나타낸다."
+      ],
+      "assessmentPrompt": "책상의 긴 쪽 길이를 재어 표에 쓰고, 눈금에 딱 맞지 않으면 “약”을 붙여 나타내세요.",
+      "misconceptions": [
+        "단위를 적지 않고 수만 써서 얼마만큼인지 알 수 없게 한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-15]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-16.application": {
+      "evidence": [
+        "잰 길이를 상황에 맞는 단위로 바꾸어 나타낸다.",
+        "바꾼 값이 맞는지 단위 사이의 관계로 되짚어 확인한다."
+      ],
+      "assessmentPrompt": "학교 둘레를 걸은 거리 2km 350m를 m 단위로 바꾸어 쓰고, 어떻게 바꾸었는지 설명하세요.",
+      "misconceptions": [
+        "2km 350m를 2350m가 아니라 2035m처럼 자리를 잘못 맞추어 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-16]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-16.concept": {
+      "evidence": [
+        "1cm가 10mm임을 자의 눈금을 세어 가며 설명한다.",
+        "1km가 1000m라는 관계를 말하고 두 단위를 구분한다."
+      ],
+      "assessmentPrompt": "자의 눈금을 세어 1cm가 몇 mm인지 쓰고, 그렇게 답한 까닭을 친구에게 설명하세요.",
+      "misconceptions": [
+        "1cm를 100mm로 여겨 단위 사이의 관계를 잘못 기억한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-16]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-16.representation": {
+      "evidence": [
+        "같은 길이를 두 가지 방법으로 나란히 적어 나타낸다.",
+        "두 표현이 같은 길이임을 단위 사이의 관계로 이어 설명한다."
+      ],
+      "assessmentPrompt": "8cm 4mm를 “몇 mm”로도 나타내고, 두 표현이 같은 길이인 까닭을 쓰세요.",
+      "misconceptions": [
+        "8cm 4mm를 84mm로 써서 cm와 mm의 관계를 잘못 적용한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-16]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-17.application": {
+      "evidence": [
+        "눈금이 있는 그릇으로 물의 양을 재어 단위와 함께 적는다.",
+        "어림한 양과 눈금으로 잰 양이 얼마나 차이 나는지 견주어 말한다."
+      ],
+      "assessmentPrompt": "컵에 담긴 물의 양을 먼저 어림하고 눈금 그릇으로 잰 뒤, 어림한 값과 잰 값을 비교해 쓰세요.",
+      "misconceptions": [
+        "눈금 그릇을 기울인 채로 눈금을 읽어 실제보다 많거나 적게 잰다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-17]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-17.concept": {
+      "evidence": [
+        "1L와 1mL가 각각 어느 정도 양인지 예를 들어 말한다.",
+        "담을 그릇에 알맞은 들이 단위를 골라 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "약 숟가락에 담긴 양과 우유갑에 담긴 양을 나타낼 때 알맞은 단위를 각각 고르고, 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "들이와 무게를 구별하지 않고 물의 양을 g으로 나타낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-17]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-17.representation": {
+      "evidence": [
+        "잰 들이를 표에 정리하고 그릇 그림의 눈금으로도 나타낸다.",
+        "가장 많이 담기는 그릇을 표에서 찾아 표시하고 설명한다."
+      ],
+      "assessmentPrompt": "서로 다른 그릇 세 개의 들이를 재어 표에 정리하고, 가장 많이 담기는 그릇을 찾아 표시하세요.",
+      "misconceptions": [
+        "그릇이 커 보인다는 이유만으로 재어 보지 않고 들이가 가장 많다고 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-17]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-18.application": {
+      "evidence": [
+        "생활에서 본 들이 표시를 읽고 필요한 단위로 바꾸어 적는다.",
+        "바꾼 값에 0이 몇 개 붙는지 세어 알맞게 옮겼는지 확인한다."
+      ],
+      "assessmentPrompt": "음료수병에 적힌 1L 500mL를 mL 단위로 바꾸어 쓰고, 어떻게 바꾸었는지 설명하세요.",
+      "misconceptions": [
+        "1L 500mL를 1500mL가 아니라 150mL로 써서 0의 개수를 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-18]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-18.concept": {
+      "evidence": [
+        "1L가 1000mL임을 말하고 두 단위의 관계를 설명한다.",
+        "같은 들이를 두 가지 방법으로 적을 수 있음을 구분해 말한다."
+      ],
+      "assessmentPrompt": "1L가 몇 mL인지 쓰고, 1L짜리 그릇으로 그 관계를 어떻게 확인할 수 있는지 설명하세요.",
+      "misconceptions": [
+        "1L를 100mL로 여겨 단위를 바꿀 때 자리를 하나 적게 잡는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-18]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-18.representation": {
+      "evidence": [
+        "같은 들이를 두 가지 방법으로 나란히 적어 나타낸다.",
+        "두 표현이 같은 양임을 그릇 그림과 이어 설명한다."
+      ],
+      "assessmentPrompt": "2700mL를 “몇 L 몇 mL”로 나타내고, 두 표현이 같은 양인 까닭을 쓰세요.",
+      "misconceptions": [
+        "2700mL를 소수점을 옮기듯 27L 00mL처럼 바꾸어 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-18]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-19.application": {
+      "evidence": [
+        "두 그릇의 물을 합치거나 덜어 내는 양을 계산해 답을 구한다.",
+        "구한 값이 알맞은지 어림하거나 실제로 부어 보고 확인한다."
+      ],
+      "assessmentPrompt": "1L 400mL의 물에서 700mL를 덜어 냈을 때 남은 양을 구하고, 계산 과정을 함께 쓰세요.",
+      "misconceptions": [
+        "받아내림이 필요한데도 400mL에서 700mL를 그냥 빼 300mL라고 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-19]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-19.concept": {
+      "evidence": [
+        "들이를 더할 때 L끼리, mL끼리 더해야 한다는 점을 말한다.",
+        "1000mL가 되면 1L로 올려야 하는 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "600mL와 700mL를 더하면 왜 1L 300mL로 나타낼 수 있는지 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "1L 200mL에 300mL를 더할 때 1과 200과 300을 모두 더해 501이라고 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-19]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-19.representation": {
+      "evidence": [
+        "들이의 덧셈과 뺄셈을 L와 mL 자리에 맞춘 세로셈으로 쓴다.",
+        "세로셈에서 받아올림한 자리를 짚어 가며 설명한다."
+      ],
+      "assessmentPrompt": "1L 800mL와 900mL를 더하는 과정을 L와 mL 자리에 맞추어 세로셈으로 쓰세요.",
+      "misconceptions": [
+        "세로셈에서 L와 mL를 한 자리에 몰아 써서 자리가 어긋난다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-19]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-20.application": {
+      "evidence": [
+        "저울을 써서 물건의 무게를 단위에 맞게 재어 적는다.",
+        "재기 전에 어림한 무게와 실제로 잰 무게를 견주어 말한다."
+      ],
+      "assessmentPrompt": "필통과 책의 무게를 먼저 어림하고 저울로 잰 뒤, 어림한 값과 잰 값을 비교해 쓰세요.",
+      "misconceptions": [
+        "저울의 바늘이 0에 맞지 않은 채로 물건을 올려놓고 눈금을 그대로 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-20]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-20.concept": {
+      "evidence": [
+        "1g과 1kg이 각각 어느 정도 무게인지 예를 들어 말한다.",
+        "재려는 물건에 알맞은 무게 단위를 골라 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "클립 한 개와 책가방의 무게를 나타낼 때 알맞은 단위를 각각 고르고, 그 까닭을 쓰세요.",
+      "misconceptions": [
+        "크기가 큰 물건이 언제나 더 무겁다고 여겨 재어 보지 않고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 22,
+        "section": "(3) 도형과 측정 (가) 성취기준 해설",
+        "code": "[4수03-20]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-20.representation": {
+      "evidence": [
+        "잰 무게를 단위와 함께 표에 정리해 나타낸다.",
+        "눈금에 딱 맞지 않는 무게를 “약”을 붙여 적어 나타낸다."
+      ],
+      "assessmentPrompt": "물건 세 가지의 무게를 재어 표에 정리하고, 무거운 것부터 차례로 번호를 매겨 쓰세요.",
+      "misconceptions": [
+        "표에 단위를 적지 않아 g인지 kg인지 알 수 없게 정리한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-20]"
+      }
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-21.application": {
+      "evidence": [
+        "포장지에 적힌 무게를 읽고 필요한 단위로 바꾸어 적는다.",
+        "바꾼 값을 저울 눈금과 견주어 알맞게 옮겼는지 확인한다."
+      ],
+      "assessmentPrompt": "쌀 봉지에 적힌 3kg 200g을 g 단위로 바꾸어 쓰고, 어떻게 바꾸었는지 설명하세요.",
+      "misconceptions": [
+        "3kg 200g을 3200g이 아니라 320g으로 써서 0의 개수를 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-21]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-21.concept": {
+      "evidence": [
+        "1kg이 1000g임을 말하고 두 단위의 관계를 설명한다.",
+        "같은 무게를 두 가지 방법으로 적을 수 있음을 구분해 말한다."
+      ],
+      "assessmentPrompt": "1kg이 몇 g인지 쓰고, 저울 눈금을 보며 그 관계를 확인하는 방법을 설명하세요.",
+      "misconceptions": [
+        "1kg을 100g으로 여겨 단위를 바꿀 때 자리를 잘못 잡는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-21]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-21.representation": {
+      "evidence": [
+        "같은 무게를 두 가지 방법으로 나란히 적어 나타낸다.",
+        "두 표현이 같은 무게임을 저울 그림과 이어 설명한다."
+      ],
+      "assessmentPrompt": "1750g을 “몇 kg 몇 g”으로 나타내고, 두 표현이 같은 무게인 까닭을 쓰세요.",
+      "misconceptions": [
+        "1750g을 1kg 750g이 아니라 17kg 50g처럼 자리를 잘못 나누어 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-21]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-22.application": {
+      "evidence": [
+        "트럭이나 다리에 적힌 무게 표시를 읽고 무엇을 뜻하는지 말한다.",
+        "t과 kg을 서로 바꾸어 상황에 맞게 판단한다."
+      ],
+      "assessmentPrompt": "다리에 “3t까지”라고 적혀 있을 때 무게가 2500kg인 차가 지날 수 있는지 판단하고 까닭을 쓰세요.",
+      "misconceptions": [
+        "3t과 2500kg을 단위를 맞추지 않고 3과 2500만 견주어 비교한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-22]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-22.concept": {
+      "evidence": [
+        "1t이 1000kg임을 말하고 어떤 것을 잴 때 쓰는지 예를 든다.",
+        "g, kg, t을 무거운 정도에 따라 차례로 늘어놓아 구분한다."
+      ],
+      "assessmentPrompt": "1t이 몇 kg인지 쓰고, t 단위를 쓰면 좋은 물건을 하나 들어 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "1t을 100kg으로 여기거나 kg보다 가벼운 단위로 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-22]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-22.representation": {
+      "evidence": [
+        "같은 무게를 t 단위와 kg 단위로 각각 적어 나타낸다.",
+        "두 표현이 같은 무게임을 단위 사이의 관계로 이어 설명한다."
+      ],
+      "assessmentPrompt": "5000kg을 t 단위로 나타내고, 두 표현이 같은 무게인 까닭을 쓰세요.",
+      "misconceptions": [
+        "5000kg을 50t으로 써서 1000배 관계를 잘못 적용한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-22]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-23.application": {
+      "evidence": [
+        "장바구니나 상자의 무게를 합치거나 덜어 내어 계산한다.",
+        "구한 값이 알맞은지 어림한 무게와 견주어 확인한다."
+      ],
+      "assessmentPrompt": "2kg 300g인 가방에서 800g짜리 책을 빼냈을 때 남은 무게를 구하고, 계산 과정을 함께 쓰세요.",
+      "misconceptions": [
+        "받아내림이 필요한데도 300g에서 800g을 그냥 빼 500g이라고 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-23]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-23.concept": {
+      "evidence": [
+        "무게를 더할 때 kg끼리, g끼리 더해야 한다는 점을 말한다.",
+        "1000g이 되면 1kg으로 올려야 하는 까닭을 설명한다."
+      ],
+      "assessmentPrompt": "700g과 500g을 더하면 왜 1kg 200g으로 나타낼 수 있는지 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "1kg 300g에 400g을 더할 때 1과 300과 400을 모두 더해 701이라고 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-23]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-23.representation": {
+      "evidence": [
+        "무게의 덧셈과 뺄셈을 kg와 g 자리에 맞춘 세로셈으로 쓴다.",
+        "세로셈에서 받아올림하거나 받아내림한 자리를 표시해 나타낸다."
+      ],
+      "assessmentPrompt": "3kg 600g과 1kg 700g을 더하는 과정을 kg와 g 자리에 맞추어 세로셈으로 쓰세요.",
+      "misconceptions": [
+        "세로셈에서 kg와 g의 자리를 맞추지 않고 왼쪽 끝만 맞추어 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-23]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-24.application": {
+      "evidence": [
+        "각도기를 써서 여러 각의 크기를 재어 도 단위로 적는다.",
+        "재기 전에 어림한 각도와 실제로 잰 각도를 견주어 말한다."
+      ],
+      "assessmentPrompt": "삼각자의 두 각을 먼저 어림하고 각도기로 잰 뒤, 어림한 값과 잰 값을 비교해 쓰세요.",
+      "misconceptions": [
+        "각도기의 안쪽 눈금과 바깥쪽 눈금을 바꾸어 읽어 60도를 120도로 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-24]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-24.concept": {
+      "evidence": [
+        "각의 크기를 재는 단위가 1도임을 말하고 기호로도 적는다.",
+        "각도기의 중심과 밑금을 어디에 맞추어야 하는지 설명한다."
+      ],
+      "assessmentPrompt": "각도기로 각을 잴 때 중심과 밑금을 어디에 맞추어야 하는지 쓰고, 그렇게 하는 까닭을 설명하세요.",
+      "misconceptions": [
+        "각의 변이 짧으면 각도도 작다고 여겨 변의 길이로 각의 크기를 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-24]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-24.representation": {
+      "evidence": [
+        "주어진 크기의 각을 각도기를 써서 그려 나타낸다.",
+        "그린 각에 각도를 적어 크기를 알 수 있게 나타낸다."
+      ],
+      "assessmentPrompt": "각도기를 써서 45도인 각과 130도인 각을 각각 그리고, 각도를 적어 표시하세요.",
+      "misconceptions": [
+        "각을 그릴 때 밑금을 긋지 않고 점만 찍어 두 변이 만나지 않게 그린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-24]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-25.application": {
+      "evidence": [
+        "두 각의 크기를 알 때 나머지 한 각의 크기를 구해 답한다.",
+        "구한 값이 맞는지 각도기로 재어 확인하고 말한다."
+      ],
+      "assessmentPrompt": "두 각이 55도와 70도인 삼각형에서 나머지 한 각의 크기를 구하고, 어떻게 구했는지 쓰세요.",
+      "misconceptions": [
+        "나머지 각을 구할 때 180도가 아닌 360도에서 빼 값을 크게 구한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 23,
+        "section": "(3) 도형과 측정 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수03-25]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-25.concept": {
+      "evidence": [
+        "삼각형 세 각의 크기를 합하면 180도가 됨을 말한다.",
+        "사각형의 네 각의 합을 삼각형 둘로 나누어 설명한다."
+      ],
+      "assessmentPrompt": "사각형의 네 각의 크기의 합이 360도인 까닭을 삼각형을 이용해 설명하세요.",
+      "misconceptions": [
+        "삼각형이 크면 세 각의 크기의 합도 커진다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-25]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.geometry-measurement.g3-4.s4-03-25.representation": {
+      "evidence": [
+        "종이 삼각형의 세 각을 오려 한 점에 모아 붙여 나타낸다.",
+        "붙인 모양이 반듯한 선이 되는 것을 보고 추론 과정을 설명한다."
+      ],
+      "assessmentPrompt": "종이 삼각형의 세 각을 오려 한 점에 모아 붙이고, 그 결과로 알 수 있는 점을 쓰세요.",
+      "misconceptions": [
+        "각을 오려 붙일 때 꼭짓점을 맞추지 않아 빈틈이 생겨도 그대로 결론을 내린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 21,
+        "section": "(3) 도형과 측정 성취기준",
+        "code": "[4수03-25]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-01.application": {
+      "evidence": [
+        "뉴스나 광고에서 찾은 큰 수를 자릿값에 맞게 읽고 어떤 상황에 쓰였는지 말한다.",
+        "생활에서 모은 큰 수 자료를 놓고 큰 수가 필요한 까닭을 한 가지 이상 제시한다."
+      ],
+      "assessmentPrompt": "우리 지역 도서관이 가진 책 128450권을 소리 내어 읽고, 이렇게 큰 수가 필요한 까닭을 친구에게 설명하세요.",
+      "misconceptions": [
+        "128450처럼 자리가 많은 수를 네 자리씩 끊지 않고 세 자리씩 끊어 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-01.concept": {
+      "evidence": [
+        "35082에서 각 자리 숫자가 나타내는 값을 만, 천, 백, 십, 일로 구분해 말한다.",
+        "1000이 10개 모이면 10000이 된다는 점을 수 모형이나 그림을 들어 설명한다."
+      ],
+      "assessmentPrompt": "숫자 카드로 만든 40726을 소리 내어 읽고, 밑줄 친 7이 나타내는 값이 얼마인지 까닭과 함께 쓰세요.",
+      "misconceptions": [
+        "40726을 “사만 칠백이십육”처럼 0이 있는 자리를 빠뜨린 채 읽는다.",
+        "자리를 살피지 않고 숫자 7이 언제나 7을 나타낸다고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-01.representation": {
+      "evidence": [
+        "62305를 자릿값 표에 나누어 쓰고 60000+2000+300+5와 같은 식으로 나타낸다.",
+        "수 모형으로 만든 수와 식으로 쓴 수가 어떻게 이어지는지 짚어 설명한다."
+      ],
+      "assessmentPrompt": "94608을 자릿값 표에 나누어 쓰고 각 자리의 값을 더하는 식으로도 나타낸 다음, 두 방법이 같은 수를 나타내는 까닭을 설명하세요.",
+      "misconceptions": [
+        "94608을 9000+400+60+8처럼 자릿값을 한 자리씩 밀려 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-01]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-02.application": {
+      "evidence": [
+        "학급이 모은 병뚜껑 수처럼 다섯 자리 수로 된 자료를 큰 것부터 늘어놓는다.",
+        "늘어놓은 차례가 왜 그렇게 되는지 자릿값을 근거로 들어 친구에게 말한다."
+      ],
+      "assessmentPrompt": "세 마을의 인구 25400명, 25040명, 24950명을 큰 수부터 차례로 쓰고, 그렇게 정한 까닭을 설명하세요.",
+      "misconceptions": [
+        "25400과 25040처럼 앞 두 자리가 같은 수를 끝자리만 보고 크기를 정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-02.concept": {
+      "evidence": [
+        "47500과 47050 가운데 큰 수를 고르고 어느 자리에서 크기가 갈리는지 말한다.",
+        "1000씩 뛰어 센 수 배열에서 다음에 올 수를 찾고 그 규칙을 설명한다."
+      ],
+      "assessmentPrompt": "36900부터 1000씩 뛰어 센 수를 다섯 개 쓰고, 마지막에 쓴 수가 왜 그 수인지 자릿값을 들어 설명하세요.",
+      "misconceptions": [
+        "자릿수가 다른 두 수를 비교할 때 앞자리 숫자만 보고 8900이 12000보다 크다고 답한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-02.representation": {
+      "evidence": [
+        "수직선 위에 30000과 40000 사이의 수를 표시하고 그 자리에 찍은 까닭을 말한다.",
+        "두 수의 크기를 비교한 결과를 부등호가 들어간 식으로 나타낸다."
+      ],
+      "assessmentPrompt": "수직선에 32000과 38000이 놓일 자리를 표시하고, 두 수의 크기를 부등호를 써서 나타낸 뒤 그렇게 표시한 까닭을 쓰세요.",
+      "misconceptions": [
+        "수직선에서 눈금 한 칸이 얼마인지 정하지 않고 아무 곳에나 수를 표시한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-02]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-03.application": {
+      "evidence": [
+        "물건값을 합하거나 거스름돈을 구하는 상황에서 덧셈식이나 뺄셈식을 세워 계산한다.",
+        "구한 답이 상황에 맞는지 어림한 값과 견주어 확인하고 말한다."
+      ],
+      "assessmentPrompt": "학용품 값 375원과 468원을 함께 낼 때 1000원으로 살 수 있는지 식을 세워 구하고, 답이 알맞은지 어림으로 확인하세요.",
+      "misconceptions": [
+        "더해야 할 상황과 빼야 할 상황을 가리지 않고 나온 두 수를 무조건 더한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-03]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-03.concept": {
+      "evidence": [
+        "받아올림이 있는 덧셈에서 올려 준 1이 어느 자리의 값인지 구분해 설명한다.",
+        "486+759처럼 합이 네 자리 수가 되는 까닭을 자릿값을 들어 말한다."
+      ],
+      "assessmentPrompt": "486+759를 세로셈으로 풀고, 백의 자리에서 천의 자리로 올려 준 1이 얼마를 뜻하는지 설명하세요.",
+      "misconceptions": [
+        "받아올림한 1을 다음 자리에 더하지 않고 그대로 두어 답이 작아진다.",
+        "뺄셈에서 받아내림을 하지 않고 늘 큰 숫자에서 작은 숫자를 뺀다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (가) 성취기준 해설",
+        "code": "[4수01-03]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-03.representation": {
+      "evidence": [
+        "607-289의 계산 과정을 수 모형이나 묶음 그림으로 나타낸다.",
+        "그림에서 받아내림이 일어나는 부분을 짚어 세로셈과 이어 설명한다."
+      ],
+      "assessmentPrompt": "607-289를 세로셈과 수 모형 그림으로 각각 나타내고, 두 방법에서 받아내림이 어디에 나타나는지 짚어 설명하세요.",
+      "misconceptions": [
+        "0이 있는 자리를 건너뛰고 백의 자리에서만 빌려 와 십의 자리 계산을 빠뜨린다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-03]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-04.application": {
+      "evidence": [
+        "한 묶음의 개수와 묶음 수가 주어진 상황에서 곱셈식을 세워 계산한다.",
+        "계산으로 얻은 값이 알맞은지 어림한 값과 견주어 확인한다."
+      ],
+      "assessmentPrompt": "한 상자에 125개씩 든 사탕 24상자의 개수를 곱셈식으로 구하고, 답이 3000개쯤 되는지 어림으로 확인하세요.",
+      "misconceptions": [
+        "“몇 배”가 되는 상황을 덧셈으로만 보고 125+24처럼 식을 세운다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-04]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-04.concept": {
+      "evidence": [
+        "23×4를 20×4와 3×4로 나누어 계산할 수 있는 까닭을 자기 말로 설명한다.",
+        "세로셈의 각 줄이 어떤 수끼리의 곱인지 구분해 짚어 말한다."
+      ],
+      "assessmentPrompt": "34×26을 세로셈으로 풀고, 두 번째 줄에 쓴 수가 무엇을 곱한 결과인지 설명하세요.",
+      "misconceptions": [
+        "34×26의 두 번째 줄을 한 자리 밀어 쓰지 않아 답이 크게 작아진다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (가) 성취기준 해설",
+        "code": "[4수01-04]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-04.representation": {
+      "evidence": [
+        "43×12를 네 칸으로 나눈 직사각형 그림이나 수 배열로 나타낸다.",
+        "그림의 각 칸이 세로셈의 어느 줄과 이어지는지 짝지어 설명한다."
+      ],
+      "assessmentPrompt": "43×12를 칸을 나눈 직사각형 그림으로 나타내고, 각 칸의 곱이 세로셈의 어느 줄과 같은지 이어서 설명하세요.",
+      "misconceptions": [
+        "칸을 나눈 그림에서 40과 3, 10과 2로 가르지 않고 숫자 그대로 4와 3으로 나눈다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-04]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-05.application": {
+      "evidence": [
+        "나누어 담거나 똑같이 나누어 가지는 상황을 나눗셈식으로 세워 답을 구한다.",
+        "구한 몫이 상황에 맞는지 곱셈식으로 되돌려 확인하고 말한다."
+      ],
+      "assessmentPrompt": "색종이 45장을 5명이 똑같이 나누어 가지는 상황을 나눗셈식으로 풀고, 곱셈식을 세워 답이 맞는지 확인하세요.",
+      "misconceptions": [
+        "몫을 구한 뒤 곱셈으로 되돌려 보지 않아 자리를 잘못 쓴 답을 그대로 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-05]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-05.concept": {
+      "evidence": [
+        "24÷6이 똑같이 나누는 상황과 몇 묶음인지 세는 상황에 모두 쓰임을 말한다.",
+        "24÷6=4를 6×4=24와 짝지어 두 식이 같은 상황을 나타냄을 설명한다."
+      ],
+      "assessmentPrompt": "사탕 32개를 8명에게 똑같이 나누는 상황을 나눗셈식으로 쓰고 관계있는 곱셈식도 함께 쓴 뒤, 두 식이 왜 같은 상황인지 설명하세요.",
+      "misconceptions": [
+        "32÷8과 8÷32를 같은 뜻으로 여겨 나누는 수와 나누어지는 수를 바꿔 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-05]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-05.representation": {
+      "evidence": [
+        "한 가지 상황을 곱셈식과 나눗셈식 두 가지로 각각 나타낸다.",
+        "묶음 그림이나 구체물에서 나눗셈식의 각 수가 무엇을 가리키는지 짚는다."
+      ],
+      "assessmentPrompt": "구슬 36개를 4개씩 묶는 상황을 그림으로 그린 뒤 곱셈식과 나눗셈식으로 각각 나타내고, 두 식의 4가 무엇을 뜻하는지 쓰세요.",
+      "misconceptions": [
+        "그림에 나타난 묶음 수와 한 묶음의 개수를 서로 바꾸어 식에 옮겨 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-05]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-06.application": {
+      "evidence": [
+        "남는 것이 생기는 나누기 상황에서 몫과 나머지가 무엇을 뜻하는지 판단한다.",
+        "필요한 봉지 수처럼 답을 상황에 맞게 정하고 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "빵 53개를 한 봉지에 6개씩 담을 때 봉지 수와 남는 빵 수를 구하고, 빵을 모두 담으려면 봉지가 몇 개 필요한지 까닭과 함께 쓰세요.",
+      "misconceptions": [
+        "남는 빵을 담을 봉지를 세지 않고 몫만 그대로 답으로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-06]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-06.concept": {
+      "evidence": [
+        "17÷5의 몫 3과 나머지 2가 각각 무엇을 뜻하는지 구분해 말한다.",
+        "나머지가 나누는 수보다 작아야 하는 까닭을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "17÷5를 계산해 몫과 나머지를 각각 쓴 뒤, 나머지가 5보다 작아야 하는 까닭을 설명하세요.",
+      "misconceptions": [
+        "나머지를 나누는 수보다 크게 두어 17÷5의 몫을 2, 나머지를 7이라고 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (가) 성취기준 해설",
+        "code": "[4수01-06]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-06.representation": {
+      "evidence": [
+        "68÷5의 계산을 세로셈으로 나타내고 단계마다 뺀 수를 밝혀 적는다.",
+        "나눗셈 결과를 5×13+3=68과 같은 확인식으로 나타낸다."
+      ],
+      "assessmentPrompt": "68÷5를 세로셈으로 계산하고, 몫과 나머지를 이용한 확인식을 세워 계산이 맞는지 보이세요.",
+      "misconceptions": [
+        "확인식에 나머지를 더하지 않고 나누는 수와 몫만 곱해 놓고도 맞다고 여긴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-06]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-07.application": {
+      "evidence": [
+        "여럿이 나누어 담는 상황에서 두 자리 수로 나누는 식을 세워 계산한다.",
+        "정한 몫이 알맞은지 곱셈으로 되돌려 남는 수까지 확인한다."
+      ],
+      "assessmentPrompt": "사과 296개를 한 상자에 24개씩 담을 때 상자 수와 남는 사과 수를 구하고, 곱셈을 이용해 답을 확인하세요.",
+      "misconceptions": [
+        "296÷24에서 몫을 크게 잡아 뺄 수 없는 수가 나와도 고치지 않고 그대로 둔다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-07]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-07.concept": {
+      "evidence": [
+        "몫을 어림할 때 나누는 수를 몇십으로 어림해 잡는 까닭을 말한다.",
+        "84÷21의 몫이 한 자리 수가 되는 까닭을 자릿값을 들어 구분해 설명한다."
+      ],
+      "assessmentPrompt": "84÷21의 몫을 먼저 어림해 정한 다음, 왜 그 수부터 시험해 보았는지 설명하세요.",
+      "misconceptions": [
+        "나누는 수를 몇십으로 어림할 때 21을 30으로 올려 잡아 몫을 너무 작게 정한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (가) 성취기준 해설",
+        "code": "[4수01-07]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-07.representation": {
+      "evidence": [
+        "375÷25의 계산 과정을 세로셈으로 단계마다 나누어 쓴다.",
+        "세로셈의 각 줄이 25씩 몇 묶음을 덜어 낸 것인지 그림이나 말로 설명한다."
+      ],
+      "assessmentPrompt": "375÷25를 세로셈으로 풀고, 첫 줄에서 뺀 수가 25씩 몇 묶음인지 설명하세요.",
+      "misconceptions": [
+        "몫의 십의 자리 수를 쓰지 않고 일의 자리부터 써서 자리가 밀린 답을 얻는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-07]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-08.application": {
+      "evidence": [
+        "살 물건의 값을 몇백으로 어림해 정해진 돈 안에 드는지 판단한다.",
+        "실제로 계산한 값과 어림한 값을 견주어 답이 타당한지 확인한다."
+      ],
+      "assessmentPrompt": "1980원, 3120원, 4870원짜리 물건을 살 때 10000원으로 살 수 있는지 어림으로 먼저 판단하고, 그렇게 판단한 까닭을 쓰세요.",
+      "misconceptions": [
+        "어림할 때 모든 수를 한쪽으로만 내려 잡아 실제 값보다 훨씬 적게 어림한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-08]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-08.concept": {
+      "evidence": [
+        "어림셈이 정확한 답이 아니라 대강의 값을 구하는 것임을 구분해 말한다.",
+        "어림이 필요한 상황과 정확히 계산해야 하는 상황을 나누어 고른다."
+      ],
+      "assessmentPrompt": "물건값을 미리 어림해 보아야 하는 상황과 정확히 계산해야 하는 상황을 각각 하나씩 들고, 그렇게 나눈 까닭을 쓰세요.",
+      "misconceptions": [
+        "어림한 값도 정확한 답과 똑같아야 한다고 여겨 어림값을 틀린 답으로 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-08]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-08.representation": {
+      "evidence": [
+        "어림한 값과 실제로 계산한 값을 표에 나란히 정리해 나타낸다.",
+        "표에 적은 두 값의 차이를 보고 어림 방법이 알맞았는지 설명한다."
+      ],
+      "assessmentPrompt": "397+612를 어림한 값과 실제로 계산한 값을 표에 정리하고, 두 값이 얼마나 차이 나는지 보고 어림 방법이 알맞았는지 쓰세요.",
+      "misconceptions": [
+        "어림한 값을 계산 결과 옆에 그대로 답으로 적어 두 값을 구분하지 않는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-08]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-09.application": {
+      "evidence": [
+        "색 테이프나 피자를 똑같이 나누는 상황에서 부분의 크기를 분수로 나타낸다.",
+        "1보다 작은 양을 나타낼 때 분수가 편리한 까닭을 예를 들어 말한다."
+      ],
+      "assessmentPrompt": "색 테이프 한 장을 똑같이 8칸으로 나누고 그중 5칸을 색칠한 뒤, 색칠한 부분을 분수로 쓰고 그렇게 쓴 까닭을 설명하세요.",
+      "misconceptions": [
+        "색칠한 칸 수를 분모에, 전체 칸 수를 분자에 서로 바꾸어 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-09]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-09.concept": {
+      "evidence": [
+        "똑같이 나눈 조각만 분수로 나타낼 수 있다는 점을 그림을 보고 구분한다.",
+        "3/4에서 분모 4와 분자 3이 각각 무엇을 가리키는지 설명한다."
+      ],
+      "assessmentPrompt": "똑같이 나눈 그림과 그렇지 않은 그림을 각각 보고 분수로 나타낼 수 있는 것을 고른 뒤, 그렇게 고른 까닭을 쓰세요.",
+      "misconceptions": [
+        "크기가 다르게 나뉜 조각도 조각 수만 세어 분수로 나타낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (가) 성취기준 해설",
+        "code": "[4수01-09]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-09.representation": {
+      "evidence": [
+        "2/5를 띠 그림과 수직선 가운데 두 가지 방법으로 나타낸다.",
+        "서로 다른 그림이 같은 분수를 나타내는 까닭을 짚어 설명한다."
+      ],
+      "assessmentPrompt": "2/5를 띠 그림과 수직선으로 각각 나타내고, 두 그림이 같은 크기를 나타내는 까닭을 쓰세요.",
+      "misconceptions": [
+        "수직선에서 0과 1 사이를 5칸으로 나누지 않고 눈금 두 개만 찍어 2/5를 표시한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-09]"
+      }
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-10.application": {
+      "evidence": [
+        "남은 우유의 양처럼 1보다 큰 양을 대분수와 가분수로 바꾸어 나타낸다.",
+        "상황에 따라 어느 표현이 알맞은지 골라 그 까닭을 말한다."
+      ],
+      "assessmentPrompt": "우유가 한 병 반 남아 있는 상황을 대분수와 가분수로 각각 쓰고, 어느 쪽이 남은 양을 알기 쉬운지 까닭과 함께 쓰세요.",
+      "misconceptions": [
+        "대분수를 가분수로 바꿀 때 자연수 부분에 분모를 곱하지 않고 분자에 그대로 더한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-10]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-10.concept": {
+      "evidence": [
+        "분모와 분자의 크기를 견주어 진분수와 가분수를 구분해 말한다.",
+        "7/3과 2와 1/3이 같은 수임을 띠 그림이나 말로 설명한다."
+      ],
+      "assessmentPrompt": "5/4, 3/7, 1과 2/5를 진분수, 가분수, 대분수로 나누어 쓰고 그렇게 나눈 기준을 설명하세요.",
+      "misconceptions": [
+        "가분수를 분수가 아니라고 여기거나 1보다 큰 분수는 없다고 생각한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-10]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-10.representation": {
+      "evidence": [
+        "단위분수 1/6이 여섯 번 모이면 1이 되는 것을 띠 그림에 나타낸다.",
+        "띠 그림에서 진분수, 가분수, 대분수가 놓이는 자리를 찾아 설명한다."
+      ],
+      "assessmentPrompt": "1/6짜리 칸이 있는 띠 그림을 그려 4/6, 8/6, 1과 2/6를 각각 표시하고, 세 수의 관계를 설명하세요.",
+      "misconceptions": [
+        "띠를 두 개 이어 그려야 하는 8/6을 띠 한 개 안에 억지로 표시한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-10]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-11.application": {
+      "evidence": [
+        "두 사람이 먹은 양을 분수로 나타낸 뒤 누가 더 많이 먹었는지 판단한다.",
+        "판단한 까닭을 분모와 분자를 짚어 가며 친구에게 말한다."
+      ],
+      "assessmentPrompt": "같은 크기의 케이크를 언니는 3/8, 동생은 5/8 먹었을 때 누가 더 많이 먹었는지 쓰고 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "전체의 크기가 다른 경우와 같은 경우를 가리지 않고 분자만 비교한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-11]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-11.concept": {
+      "evidence": [
+        "분모가 같은 분수는 분자가 클수록 큰 수임을 까닭과 함께 말한다.",
+        "단위분수는 분모가 클수록 작아진다는 점을 그림을 들어 설명한다."
+      ],
+      "assessmentPrompt": "1/4과 1/7 가운데 어느 쪽이 큰지 고르고, 그림을 그려 그렇게 판단한 까닭을 설명하세요.",
+      "misconceptions": [
+        "분모가 큰 1/7이 1/4보다 크다고 여겨 분모의 크기를 그대로 분수의 크기로 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-11]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-11.representation": {
+      "evidence": [
+        "크기를 비교한 결과를 수직선 위의 자리로 나타내 보인다.",
+        "수직선에서 두 분수가 놓인 자리를 짚어 비교 결과를 설명한다."
+      ],
+      "assessmentPrompt": "0과 1 사이를 5칸으로 나눈 수직선에 2/5와 4/5를 표시하고, 두 수의 크기를 부등호로 나타내세요.",
+      "misconceptions": [
+        "수직선의 칸 수를 분모와 다르게 나누어 분수가 놓일 자리를 잘못 잡는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-11]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-12.application": {
+      "evidence": [
+        "길이나 양을 잰 결과를 소수 한 자리 수로 읽고 알맞게 적는다.",
+        "생활에서 소수가 쓰인 자리를 찾아 어떤 뜻인지 말한다."
+      ],
+      "assessmentPrompt": "자로 잰 연필의 길이가 12cm 5mm일 때 이를 12.5cm로 쓸 수 있는 까닭을 설명하세요.",
+      "misconceptions": [
+        "12cm 5mm를 12.5cm가 아니라 12.05cm로 쓴다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-12]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-12.concept": {
+      "evidence": [
+        "0.7과 7/10이 같은 크기임을 그림과 말로 이어 설명한다.",
+        "소수점 오른쪽 첫째 자리가 무엇을 나타내는지 구분해 말한다."
+      ],
+      "assessmentPrompt": "3/10을 소수로 바꾸어 쓰고, 두 수가 같은 크기인 까닭을 그림을 그려 설명하세요.",
+      "misconceptions": [
+        "0.7을 7/100으로 여기거나 0.7과 7을 같은 크기로 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-12]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-12.representation": {
+      "evidence": [
+        "10칸으로 나눈 띠에 0.6만큼을 색칠해 나타낸다.",
+        "색칠한 부분을 분수와 소수로 각각 쓰고 두 표현을 이어 설명한다."
+      ],
+      "assessmentPrompt": "10칸으로 나눈 띠에 0.6만큼을 색칠하고, 색칠한 부분을 분수와 소수로 각각 쓴 뒤 두 표현을 이어 설명하세요.",
+      "misconceptions": [
+        "10칸 그림에서 여섯 칸을 색칠하고도 0.06이라고 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 17,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-12]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-13.application": {
+      "evidence": [
+        "달리기 기록이나 몸무게처럼 소수 두 자리 수가 쓰인 자료를 읽는다.",
+        "읽은 값이 어느 정도 크기인지 상황과 이어 말한다."
+      ],
+      "assessmentPrompt": "달리기 기록 9.86초를 소리 내어 읽고, 이 기록이 9초와 10초 가운데 어느 쪽에 가까운지 까닭과 함께 쓰세요.",
+      "misconceptions": [
+        "9.86초를 “구 점 팔십육 초”처럼 소수 부분을 자연수 읽듯이 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-13]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-13.concept": {
+      "evidence": [
+        "0.35에서 3과 5가 각각 어느 자리의 값인지 구분해 말한다.",
+        "0.1이 10개 모이면 1이 되는 관계를 자릿값을 들어 설명한다."
+      ],
+      "assessmentPrompt": "1.246에서 소수 둘째 자리 숫자가 무엇이고 얼마를 나타내는지 쓰고, 그렇게 판단한 까닭을 설명하세요.",
+      "misconceptions": [
+        "소수점 아래 자리를 오른쪽부터 세어 0.35의 3을 소수 둘째 자리로 본다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-13]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-13.representation": {
+      "evidence": [
+        "100칸으로 나눈 모눈에 0.27만큼을 색칠해 나타낸다.",
+        "모눈 그림과 자릿값 표를 이어 같은 수임을 짚어 설명한다."
+      ],
+      "assessmentPrompt": "100칸 모눈에 0.27만큼을 색칠하고 같은 수를 자릿값 표에도 나누어 쓴 뒤, 두 표현을 이어 설명하세요.",
+      "misconceptions": [
+        "100칸 모눈에서 한 칸을 0.1로 여겨 0.27을 두 칸 조금 넘게 색칠한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-13]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-14.application": {
+      "evidence": [
+        "여러 사람의 기록이나 길이를 소수로 견주어 차례를 정한다.",
+        "정한 차례의 까닭을 자릿값을 짚어 가며 말한다."
+      ],
+      "assessmentPrompt": "멀리뛰기 기록 2.35m, 2.4m, 2.09m를 긴 것부터 차례로 쓰고, 그렇게 정한 까닭을 설명하세요.",
+      "misconceptions": [
+        "2.4를 2.04처럼 여겨 2.35보다 작다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-14]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-14.concept": {
+      "evidence": [
+        "0.5와 0.45 가운데 큰 수를 고르고 어느 자리에서 갈리는지 말한다.",
+        "소수점 아래 자리 수가 많다고 늘 큰 수가 아님을 예를 들어 설명한다."
+      ],
+      "assessmentPrompt": "0.5와 0.45 가운데 어느 수가 큰지 고르고, 자릿값을 들어 그 까닭을 설명하세요.",
+      "misconceptions": [
+        "소수점 아래 숫자 개수가 많은 0.45가 0.5보다 크다고 판단한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-14]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-14.representation": {
+      "evidence": [
+        "비교할 두 소수를 자릿값 표에 소수점을 맞추어 나란히 쓴다.",
+        "수직선 위에 두 소수를 표시해 크기 차이를 눈으로 확인한다."
+      ],
+      "assessmentPrompt": "0.7과 0.68을 자릿값 표에 맞추어 쓰고 수직선에도 표시한 뒤, 두 수의 크기를 부등호로 나타내세요.",
+      "misconceptions": [
+        "자릿값 표에 쓸 때 소수점을 맞추지 않고 왼쪽 끝을 맞추어 늘어놓는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-14]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-15.application": {
+      "evidence": [
+        "남은 양이나 쓴 양을 구하는 상황에서 분수의 덧셈과 뺄셈으로 계산한다.",
+        "구한 값이 상황에 맞는지 그림이나 어림으로 확인한다."
+      ],
+      "assessmentPrompt": "주스가 5/6L 있었는데 2/6L를 마셨을 때 남은 양을 식으로 구하고, 답이 알맞은지 그림으로 확인하세요.",
+      "misconceptions": [
+        "대분수가 있는 뺄셈에서 자연수 부분만 빼고 분수 부분은 그대로 옮겨 적는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-15]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-15.concept": {
+      "evidence": [
+        "분모가 같은 분수를 더할 때 분모를 그대로 두는 까닭을 말한다.",
+        "단위분수가 몇 개 모였는지로 계산 원리를 짚어 설명한다."
+      ],
+      "assessmentPrompt": "2/7+3/7을 계산하고, 분모 7이 그대로인 까닭을 1/7이 몇 개인지로 설명하세요.",
+      "misconceptions": [
+        "분모끼리도 더해 2/7+3/7을 5/14로 계산한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-15]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-15.representation": {
+      "evidence": [
+        "분수의 덧셈 과정을 띠 그림에서 칸을 이어 색칠해 나타낸다.",
+        "그림에서 색칠한 칸 수와 식의 분자를 짝지어 설명한다."
+      ],
+      "assessmentPrompt": "1/5+3/5를 다섯 칸으로 나눈 띠 그림에 나타내고, 색칠한 칸 수가 식의 어느 수와 같은지 설명하세요.",
+      "misconceptions": [
+        "띠 그림에서 두 분수를 서로 다른 칸 수로 나누어 그려 더한 결과를 잘못 읽는다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-15]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-16.application": {
+      "evidence": [
+        "물건의 무게나 길이를 더하고 빼는 상황을 소수로 계산해 답을 구한다.",
+        "구한 값이 알맞은지 어림한 값과 견주어 확인한다."
+      ],
+      "assessmentPrompt": "가방 무게 2.35kg과 책 무게 1.8kg을 합한 값을 구하고, 합이 4kg보다 가벼운지 어림으로 확인하세요.",
+      "misconceptions": [
+        "1.8을 1.08로 여겨 자릿수를 잘못 맞춘 채 계산한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 19,
+        "section": "(1) 수와 연산 (나) 성취기준 적용 시 고려 사항",
+        "code": "[4수01-16]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-16.concept": {
+      "evidence": [
+        "소수의 덧셈에서 소수점을 맞추어 계산해야 하는 까닭을 말한다.",
+        "같은 자리끼리 더한다는 점을 자연수 계산과 이어 설명한다."
+      ],
+      "assessmentPrompt": "1.4+0.35를 세로셈으로 쓸 때 소수점을 맞추어야 하는 까닭을 설명하세요.",
+      "misconceptions": [
+        "1.4+0.35를 오른쪽 끝에 맞추어 써서 4와 5를 같은 자리로 놓고 더한다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-16]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    },
+    "kr.mt.math.number-operations.g3-4.s4-01-16.representation": {
+      "evidence": [
+        "소수의 뺄셈 과정을 100칸 모눈이나 수직선에 나타낸다.",
+        "그림에서 덜어 낸 부분이 식의 어느 수인지 짚어 설명한다."
+      ],
+      "assessmentPrompt": "0.72-0.4를 100칸 모눈에 나타내고, 덜어 낸 칸 수가 식의 어느 수와 같은지 설명하세요.",
+      "misconceptions": [
+        "0.4를 모눈에서 네 칸만 색칠해 0.04와 같게 나타낸다."
+      ],
+      "sourceLocator": {
+        "sourceId": "kr-ncic-math-pdf-2022",
+        "printedPage": 18,
+        "section": "(1) 수와 연산 성취기준",
+        "code": "[4수01-16]"
+      },
+      "note": "해설 없음 — 성취기준 문장, 적용 시 고려 사항, 내용 체계표를 근거로 작성했다."
+    }
+  }
+}

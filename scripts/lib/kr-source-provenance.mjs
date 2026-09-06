@@ -3,7 +3,9 @@
 // published build keeps only direct, reviewable source records.
 
 export const STALE_KR_SOURCE_IDS = new Set([
+  'kr-moe-2022-33-annex15-pdf',
   'kr-ncic',
+  'kr-ncic-2022-elem-integrated-attachment',
   'kr-ncic-2022-notice-543',
   'kr-ncic-2022-notices',
   'kr-ncic-2026-amendment-notice-1864',
@@ -14,6 +16,10 @@ export const STALE_KR_SOURCE_IDS = new Set([
 
 export const KR_SOURCE_ALIAS_REPLACEMENTS = new Map([
   ['kr-ncic-2026-amendment-notice-1864', 'kr-ncic-2026-1-annex15-pdf'],
+  // 2026-1 일부개정으로 통합교과 인용본을 단일 판(별책15 2026-1)으로 통일했다.
+  // 2022-33 별책15와 2022.12 인벤토리 행은 더 이상 인용하지 않는다.
+  ['kr-moe-2022-33-annex15-pdf', 'kr-ncic-2026-1-annex15-pdf'],
+  ['kr-ncic-2022-elem-integrated-attachment', 'kr-ncic-2026-elem-integrated-attachment'],
 ]);
 
 export const OFFICIAL_PDF_SOURCE_SNAPSHOTS = {
@@ -89,30 +95,24 @@ export const OFFICIAL_PDF_SOURCE_SNAPSHOTS = {
     fileSizeBytes: 1412105,
     pdfPages: 92,
   },
+  // Re-pinned 2026-09-05: NCIC replaced the 초등학교(2022.12) 실과 attachment
+  // 10003781 with 10004244. Same 39 elementary codes and same page placement;
+  // [6실04-06] differs only in its sentence ending in the reissued print.
   'kr-ncic-practical-arts-pdf-2022': {
     sourceType: 'official-pdf',
     publisher: '교육부',
     via: 'NCIC 국가교육과정정보센터',
-    url: 'https://ncic.re.kr/inv/org/download.do?year=2022&seq=10003781&orgType=ogi4',
+    url: 'https://ncic.re.kr/inv/org/download.do?year=2022&seq=10004244&orgType=ogi4',
     subjectCode: '3396',
     attachmentName: '[별책10] 실과(기술·가정)/정보과 교육과정.pdf',
-    attachmentNo: '10003781',
-    sha256: '842077c76b311f23d57e6e749a8e4ffbb3d59d37628c1646531301022cc36bfd',
-    fileSizeBytes: 2956125,
+    attachmentNo: '10004244',
+    sha256: '8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38',
+    fileSizeBytes: 2806751,
     pdfPages: 222,
   },
-  'kr-moe-2022-33-annex15-pdf': {
-    sourceType: 'official-pdf',
-    publisher: '교육부',
-    via: 'NCIC 국가교육과정정보센터',
-    url: 'https://ncic.re.kr/inv/org/download.do?year=2022&seq=10003571&orgType=ogi4',
-    subjectCode: '3363',
-    attachmentName: '[별책15] 바른 생활, 슬기로운 생활, 즐거운 생활 교육과정.pdf',
-    attachmentNo: '10003571',
-    sha256: '5fe191f258d11cc77741c57cfb16324b26d5db14649809cc694dcbcd4662adee',
-    fileSizeBytes: 1152492,
-    pdfPages: 54,
-  },
+  // Sole governing source for 통합교과 since the 2026-09-05 re-pin. The 2022-33
+  // [별책15] (attachment 10003571) is no longer cited: its 즐거운 생활 codes were
+  // reassigned by this amendment. See docs/source-version-diff-2026-09.md.
   'kr-ncic-2026-1-annex15-pdf': {
     sourceType: 'official-pdf',
     publisher: '교육부·국가교육위원회',
@@ -124,6 +124,19 @@ export const OFFICIAL_PDF_SOURCE_SNAPSHOTS = {
     sha256: '39954a4b5605b0ee691bd1a13e8207568ecb9079c97cdd6bf4ef490a7b7a41c6',
     fileSizeBytes: 1449216,
     pdfPages: 90,
+  },
+  // Cross-check only: one document carrying all 620 elementary codes.
+  'kr-ncic-2026-1-annex2-pdf': {
+    sourceType: 'official-pdf',
+    publisher: '교육부·국가교육위원회',
+    via: 'NCIC 국가교육과정정보센터',
+    url: 'https://ncic.re.kr/inv/org/download.do?year=2026&seq=10004180&orgType=ogi4',
+    subjectCode: '1100',
+    attachmentName: '[별책2] 초등학교 교육과정.pdf',
+    attachmentNo: '10004180',
+    sha256: 'f943dab812a4b1fdb48af16fd724b5391d0db64bda83ed4e4b3b2a95faf3d4f9',
+    fileSizeBytes: 6402622,
+    pdfPages: 563,
   },
   'kr-ncic-2022-art-pdf': {
     sourceType: 'official-pdf',
@@ -137,16 +150,19 @@ export const OFFICIAL_PDF_SOURCE_SNAPSHOTS = {
     fileSizeBytes: 1983114,
     pdfPages: 76,
   },
+  // Re-pinned 2026-09-05 to the current NCIC attachment (국가교육위원회 고시 제2024-3호
+  // 일부개정). [4음02-05]·[6음02-05] and two elementary content-system cells moved from
+  // 문화유산 to 국가유산 wording. PDF page placement is byte-identical to the 2022-33 print.
   'kr-ncic-2022-music-pdf': {
     sourceType: 'official-pdf',
-    publisher: '교육부',
+    publisher: '교육부·국가교육위원회',
     via: 'NCIC 국가교육과정정보센터',
-    url: 'https://ncic.re.kr/inv/org/download.do?year=2022&seq=10003561&orgType=ogi4',
+    url: 'https://ncic.re.kr/inv/org/download.do?year=2024&seq=10003999&orgType=ogi4',
     subjectCode: '2801',
-    attachmentName: '[별책12] 음악과 교육과정.pdf',
-    attachmentNo: '10003561',
-    sha256: 'db2d03b4e2accfd442ca1297b84e43061feb1422659914e486e27f7b555f7bd6',
-    fileSizeBytes: 2337694,
+    attachmentName: '(2022개정) 초·중등학교 교육과정 [별책12] 음악과_ 국가교육위원회 고시 제2024-3호(2024.08.16.).pdf',
+    attachmentNo: '10003999',
+    sha256: '54af8340687ace3599f5242dcc6d4d95382af24144be186fa6c4b246417d0487',
+    fileSizeBytes: 1943652,
     pdfPages: 96,
   },
   'kr-ncic-2022-physical-education-pdf': {
@@ -199,21 +215,13 @@ export const OFFICIAL_INVENTORY_GATES = {
     codeInventorySha256: '3efc7c6600abd077ba4569993f7a02fed5fff9c8b347ddb0ffcf34ed68fd3953',
     sourceGroups: [{ sourceId: 'kr-ncic-practical-arts-pdf-2022', standardCount: 39 }],
   },
+  // Single-edition gate: 바 16 + 슬 16 + 건 9 + 즐 16 from attachment 10004214.
+  // The digest is what catches the ghost/missing 즐거운 생활 codes that a bare
+  // count check ({48 + 9} and {16 + 16 + 9 + 16} are both 57) cannot see.
   'kr-2022-elem-integrated': {
     standardCount: 57,
-    codeInventorySha256: '35f39b5827cf847bff7dd44750464a3d3111c0c26cd654ff1325ef20c7956370',
-    sourceGroups: [
-      {
-        sourceId: 'kr-moe-2022-33-annex15-pdf',
-        standardCount: 48,
-        matches: (standard) => !standard.code.startsWith('[2건'),
-      },
-      {
-        sourceId: 'kr-ncic-2026-1-annex15-pdf',
-        standardCount: 9,
-        matches: (standard) => standard.code.startsWith('[2건'),
-      },
-    ],
+    codeInventorySha256: '9fa9b32be2fe82e156466a5ed69e404cf5ed9b6a3d02834051864b51e651e516',
+    sourceGroups: [{ sourceId: 'kr-ncic-2026-1-annex15-pdf', standardCount: 57 }],
   },
   'kr-2022-elem-art': {
     standardCount: 26,

@@ -1,24 +1,27 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/DECK6/korean-elementary-learning-map/main/schema/kr-dependencies.schema.json",
-  "title": "Korean Elementary Learning Map — full-depth dependencies",
+  "title": "Korean Elementary Learning Map — official prerequisite relations",
+  "description": "Official layer of the K-12 relation contract v1. Every edge must be backed by an official document locator with a printed page.",
   "type": "object",
-  "required": ["version", "edgeCount", "graphPolicy", "dependencies"],
+  "required": ["version", "layer", "edgeCount", "graphPolicy", "dependencies"],
   "properties": {
     "$schema": { "type": "string" },
     "version": { "type": "string" },
     "taxonomyVersion": { "type": "string" },
     "locale": { "const": "ko-KR" },
     "country": { "const": "KR" },
-    "edgeCount": { "type": "integer", "minimum": 1 },
+    "layer": { "const": "official" },
+    "edgeCount": { "type": "integer", "minimum": 0 },
     "graphPolicy": {
       "type": "object",
-      "required": ["relation", "acyclic", "edgeSelection", "crossSubjectEdges"],
+      "required": ["relation", "acyclic", "edgeSelection", "crossSubjectEdges", "layers"],
       "properties": {
         "relation": { "const": "prerequisite" },
         "acyclic": { "const": true },
-        "edgeSelection": { "const": "workstream-reviewed-only" },
-        "crossSubjectEdges": { "const": "none" }
+        "edgeSelection": { "const": "official-source-only" },
+        "crossSubjectEdges": { "const": "none" },
+        "layers": { "$ref": "#/$defs/layerPolicy" }
       },
       "additionalProperties": false
     },
@@ -26,18 +29,86 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["topicId", "prerequisiteId", "strength", "reason", "basis", "source"],
+        "required": [
+          "id",
+          "layer",
+          "topicId",
+          "prerequisiteId",
+          "relationKind",
+          "basisKind",
+          "scope",
+          "strength",
+          "reviewStatus",
+          "reason",
+          "basis",
+          "source",
+          "sourceRefs",
+          "sourceLocator"
+        ],
         "properties": {
+          "id": { "type": "string", "pattern": "^kr\\.dep\\.[0-9a-f]{20}$" },
+          "layer": { "const": "official" },
           "topicId": { "type": "string", "pattern": "^kr\\.mt\\." },
           "prerequisiteId": { "type": "string", "pattern": "^kr\\.mt\\." },
+          "relationKind": { "const": "required-prerequisite" },
+          "basisKind": { "const": "official-source" },
+          "scope": { "$ref": "#/$defs/scope" },
           "strength": { "enum": ["hard", "soft"] },
+          "reviewStatus": {
+            "enum": ["internal-reviewed", "subject-expert-reviewed", "classroom-reviewed"]
+          },
           "reason": { "type": "string", "minLength": 8 },
           "basis": { "type": "string", "minLength": 1 },
-          "source": { "type": "string", "minLength": 1 }
+          "source": { "type": "string", "minLength": 1 },
+          "sourceRefs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          },
+          "sourceLocator": {
+            "type": "object",
+            "required": ["sourceId", "printedPage"],
+            "properties": {
+              "sourceId": { "type": "string", "minLength": 1 },
+              "printedPage": { "type": "integer", "minimum": 1 },
+              "pdfPage": { "type": "integer", "minimum": 1 },
+              "section": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          }
         },
         "additionalProperties": false
       }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "$defs": {
+    "scope": {
+      "enum": ["same-standard", "same-domain", "same-subject", "cross-school-level"]
+    },
+    "layerPolicy": {
+      "type": "object",
+      "required": ["official", "pedagogical-candidate"],
+      "properties": {
+        "official": { "$ref": "#/$defs/layerPolicyEntry" },
+        "pedagogical-candidate": { "$ref": "#/$defs/layerPolicyEntry" }
+      },
+      "additionalProperties": false
+    },
+    "layerPolicyEntry": {
+      "type": "object",
+      "required": ["file", "relationKind", "basisKind", "reviewStatus", "edgeCount", "derivesOntologyViews"],
+      "properties": {
+        "file": { "type": "string", "minLength": 1 },
+        "relationKind": { "type": "string", "minLength": 1 },
+        "basisKind": { "type": "string", "minLength": 1 },
+        "reviewStatus": { "type": "string", "minLength": 1 },
+        "edgeCount": { "type": "integer", "minimum": 0 },
+        "derivesOntologyViews": { "type": "boolean" },
+        "note": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
 }

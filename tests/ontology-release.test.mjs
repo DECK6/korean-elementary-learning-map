@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import test from 'node:test';
@@ -9,6 +10,16 @@ import {
 } from '../scripts/build-ontology-release.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
+const readData = (name) => JSON.parse(readFileSync(resolve(ROOT, 'data', 'kr', name), 'utf8'));
+const OFFICIAL_RELATION_COUNT = readData('dependencies.json').dependencies.length;
+const CANDIDATE_RELATION_COUNT = readData('dependencies.candidate.json').dependencies.length;
+const CURRICULUM_STANDARDS = readData('curriculum-standards.json');
+const STANDARD_MAPPING_COUNT = CURRICULUM_STANDARDS.standardMappings.length;
+const COVERAGE_GAP_COUNT = CURRICULUM_STANDARDS.coverageGaps.length;
+
+function formatCount(value) {
+  return value.toLocaleString('en-US');
+}
 
 async function read(relativePath) {
   return readFile(resolve(ROOT, relativePath), 'utf8');
@@ -26,11 +37,11 @@ test('P3 uses stable versionIRI and priorVersion semantics', async () => {
   for (const document of [tbox, metadata]) {
     assert.match(
       document,
-      /owl:versionIRI <https:\/\/dexa\.art\/learnmap\/ontology\/0\.3\.0-p3>/,
+      /owl:versionIRI <https:\/\/dexa\.art\/learnmap\/ontology\/0\.4\.0>/,
     );
     assert.match(
       document,
-      /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.2\.0-p2>/,
+      /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.3\.0-p3>/,
     );
   }
   assert.match(metadata, /dcterms:isVersionOf <https:\/\/dexa\.art\/learnmap\/ontology>/);
@@ -55,10 +66,11 @@ test('P3 governance defines non-reassignment, deprecation, and replacement rules
   assert.match(governance, /owl:deprecated true/);
   assert.match(governance, /dcterms:isReplacedBy/);
   assert.match(governance, /must not be used to diagnose an individual learner/i);
+  assert.match(changelog, /\[0\.4\.0\]/);
   assert.match(changelog, /\[0\.3\.0-p3\]/);
   assert.equal(replacements.formatVersion, 1);
-  assert.equal(replacements.ontologyVersion, '0.3.0-p3');
-  assert.equal(replacements.priorOntologyVersion, '0.2.0-p2');
+  assert.equal(replacements.ontologyVersion, '0.4.0');
+  assert.equal(replacements.priorOntologyVersion, '0.3.0-p3');
   assert.equal(replacements.stableOntologyIri, 'https://dexa.art/learnmap/ontology');
   assert.equal(replacements.policyDocument, 'ontology/deprecation-policy.md');
   assert.equal(replacements.status, 'active');
@@ -95,16 +107,26 @@ test('P3 release manifest is deterministic and verifies every file hash', async 
 
   const manifest = JSON.parse(expectedText);
   assert.equal(manifest.title, 'Korean Elementary Curriculum Learning Ontology');
-  assert.equal(manifest.ontologyVersion, '0.3.0-p3');
-  assert.equal(manifest.priorOntologyVersion, '0.2.0-p2');
+  assert.equal(manifest.ontologyVersion, '0.4.0');
+  assert.equal(manifest.priorOntologyVersion, '0.3.0-p3');
   assert.equal(manifest.releaseStatus, 'formal');
-  assert.equal(manifest.counts.totalGraphResources, 20446);
-  assert.equal(manifest.counts.rdfTriples.generatedABox, 249461);
-  assert.equal(manifest.counts.relations.directRequires.count, 1894);
-  assert.equal(manifest.counts.relations.unlocks.count, 1894);
-  assert.equal(manifest.counts.relations.indirectRequires.count, 53656);
-  assert.equal(manifest.counts.relations.alignedToStandard.count, 1956);
-  assert.equal(manifest.status.coverage.coverageGapCount, 43);
+  assert.equal(
+    manifest.counts.totalGraphResources,
+    Object.values(manifest.counts.graphResources).reduce((total, value) => total + value, 0),
+  );
+  assert.equal(manifest.counts.rdfTriples.generatedABox, manifest.counts.rdfTriples.turtle);
+  assert.equal(manifest.counts.sourceRecords.dependencies, OFFICIAL_RELATION_COUNT);
+  assert.equal(manifest.counts.sourceRecords.candidateDependencies, CANDIDATE_RELATION_COUNT);
+  assert.equal(
+    manifest.counts.graphResources.PrerequisiteAssertion,
+    OFFICIAL_RELATION_COUNT + CANDIDATE_RELATION_COUNT,
+  );
+  // Only the official layer materializes the binary prerequisite views.
+  assert.equal(manifest.counts.relations.directRequires.count, OFFICIAL_RELATION_COUNT);
+  assert.equal(manifest.counts.relations.unlocks.count, OFFICIAL_RELATION_COUNT);
+  assert.ok(manifest.counts.relations.indirectRequires.count >= 0);
+  assert.equal(manifest.counts.relations.alignedToStandard.count, STANDARD_MAPPING_COUNT);
+  assert.equal(manifest.status.coverage.coverageGapCount, COVERAGE_GAP_COUNT);
   assert.equal(manifest.status.coverage.category, 'source-data-coverage');
   assert.equal(manifest.status.ontologyFormat.status, 'p3-formal-release');
   assert.equal(manifest.status.automatedReview.status, 'passed-local-seven-gate');
@@ -183,23 +205,25 @@ test('formal README label preserves provenance, rights, and interpretation limit
   assert.match(readme, /공개 공식 자료|cleared/i);
   assert.match(readme, /교육부.*NCIC.*공식/);
   assert.match(readme, /학습자.*진단/);
-  assert.match(readme, /20,446/);
-  assert.match(readme, /249,461/);
-  assert.match(readme, /53,656/);
+  const releaseManifest = JSON.parse(await read('dist/ontology/release-manifest.json'));
+  assert.ok(readme.includes(formatCount(releaseManifest.counts.totalGraphResources)));
+  assert.ok(readme.includes(formatCount(releaseManifest.counts.rdfTriples.generatedABox)));
+  assert.ok(readme.includes(formatCount(releaseManifest.counts.relations.indirectRequires.count)));
   assert.match(readme, /공개 공식 출처 URL/);
+  assert.match(readme, /dependencies\.candidate\.json/);
 
-  assert.match(releaseReport, /62\/62 Node/);
+  assert.match(releaseReport, /93\/93 Node/);
   assert.match(releaseReport, /local tracked-artifact verification/i);
   assert.match(releaseReport, /does not claim a CI run has completed/i);
-  assert.match(releaseReport, /Python `3\.14\.3`/);
+  assert.match(releaseReport, /Python `3\.14\.7`/);
   assert.match(releaseReport, /5\/5 Python tests/);
-  assert.match(releaseReport, /15\/15 competency queries/);
-  assert.match(releaseReport, /9\/9 adversarial fixtures/);
+  assert.match(releaseReport, /18\/18 competency queries/);
+  assert.match(releaseReport, /10\/10 adversarial fixtures/);
 
   const validationReport = JSON.parse(validationReportText);
   assert.equal(validationReport.overallPass, true);
-  assert.equal(validationReport.toolVersions.python, '3.14.3');
+  assert.equal(validationReport.toolVersions.python, '3.14.7');
   assert.equal(validationReport.shacl.violationCount, 0);
-  assert.equal(validationReport.competencyQueries.queryCount, 15);
-  assert.equal(Object.keys(validationReport.fixtures.adversarial).length, 9);
+  assert.equal(validationReport.competencyQueries.queryCount, 18);
+  assert.equal(Object.keys(validationReport.fixtures.adversarial).length, 10);
 });

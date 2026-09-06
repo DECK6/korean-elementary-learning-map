@@ -4,7 +4,27 @@ import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, isAbsolute, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  CONTENT_KINDS,
+  OVERLAY_SCHEMA_FILE,
+  analyzeOverlay,
+  contentOverlayDirectory,
+  indexOverlayEntries,
+  readContentOverlays,
+} from './lib/kr-content-overlay.mjs';
 import { contentQualityErrors } from './lib/kr-content-quality.mjs';
+import {
+  STANDARD_SUMMARY_KIND,
+  STANDARD_SUMMARY_LENGTH,
+  standardSummary,
+} from './lib/kr-standard-summaries.mjs';
+import {
+  COVERAGE_GAP_SEVERITIES,
+  COVERAGE_GAP_STATUSES,
+  FACET_KEYS,
+  RELATION_ENUMS,
+  relationId,
+} from './lib/relation-vocabulary.mjs';
 import {
   OFFICIAL_INVENTORY_GATES,
   OFFICIAL_PDF_SOURCE_SNAPSHOTS,
@@ -21,6 +41,19 @@ const MIN_TOPICS = 1500;
 const TYPES = new Set(['CONCEPTUAL', 'PROCEDURAL', 'REPRESENTATIONAL', 'LANGUAGE', 'META']);
 const REL = new Set(['introduces', 'supports', 'extends', 'assesses']);
 const STR = new Set(['hard', 'soft']);
+const FACETS = new Set(FACET_KEYS);
+const SCOPES = new Set(RELATION_ENUMS.scope);
+const OFFICIAL_REVIEW_STATUSES = new Set([
+  'internal-reviewed',
+  'subject-expert-reviewed',
+  'classroom-reviewed',
+]);
+const CANDIDATE_BASIS_KINDS = new Set([
+  'official-code-order',
+  'decomposition-order',
+  'repository-authored',
+  'expert-authored',
+]);
 const VER = new Set(['official-source-checked', 'public-doc-derived', 'needs-official-code-check']);
 const KR_CODE = /^\[[246][국수과사영도실바슬즐건미음체][0-9]{2}-[0-9]{2}\]$/;
 
@@ -116,6 +149,7 @@ function listKrJsonFiles(directory = KR_DATA, prefix = '') {
 const standardsFile = load('curriculum-standards.json');
 const topicsFile = load('topics.json');
 const depsFile = load('dependencies.json');
+const candidateDepsFile = load('dependencies.candidate.json');
 const clustersFile = load('clusters.json');
 const manifest = load('manifest.json');
 
@@ -124,6 +158,7 @@ for (const [dataName, schemaName, data] of [
   ['curriculum-standards.json', 'kr-curriculum-standards.schema.json', standardsFile],
   ['topics.json', 'kr-topics.schema.json', topicsFile],
   ['dependencies.json', 'kr-dependencies.schema.json', depsFile],
+  ['dependencies.candidate.json', 'kr-dependencies-candidate.schema.json', candidateDepsFile],
   ['clusters.json', 'kr-clusters.schema.json', clustersFile],
 ]) {
   const schema = JSON.parse(readFileSync(resolve(KR_SCHEMA, schemaName), 'utf8'));
@@ -145,15 +180,55 @@ check(standardsFile.sourceCount === standardsFile.sources?.length, 'sourceCount 
 check(standardsFile.curriculumCount === standardsFile.curricula?.length, 'curriculumCount mismatch');
 check(topicsFile.topicCount === topicsFile.topics?.length, 'topicCount mismatch');
 check(depsFile.edgeCount === depsFile.dependencies?.length, 'edgeCount mismatch');
+check(
+  candidateDepsFile.edgeCount === candidateDepsFile.dependencies?.length,
+  'candidate edgeCount mismatch',
+);
 check(clustersFile.clusterCount === clustersFile.clusters?.length, 'clusterCount mismatch');
 check(topicsFile.topicCount >= MIN_TOPICS, `KR topic target missed: ${topicsFile.topicCount} < ${MIN_TOPICS}`);
 check(depsFile.graphPolicy?.relation === 'prerequisite', 'dependency graph relation must be prerequisite');
 check(depsFile.graphPolicy?.acyclic === true, 'dependency graph policy must require acyclic=true');
-check(depsFile.graphPolicy?.edgeSelection === 'workstream-reviewed-only', 'dependency graph must use workstream-reviewed-only edges');
+check(
+  depsFile.graphPolicy?.edgeSelection === 'official-source-only',
+  'official dependency graph must use official-source-only edges',
+);
 check(depsFile.graphPolicy?.crossSubjectEdges === 'none', 'dependency graph must declare crossSubjectEdges=none');
+check(depsFile.layer === 'official', 'dependencies.json must declare layer=official');
+check(
+  candidateDepsFile.layer === 'pedagogical-candidate',
+  'dependencies.candidate.json must declare layer=pedagogical-candidate',
+);
+check(
+  candidateDepsFile.graphPolicy?.edgeSelection === 'pedagogical-candidate-only',
+  'candidate dependency graph must use pedagogical-candidate-only edges',
+);
+check(
+  candidateDepsFile.graphPolicy?.crossSubjectEdges === 'none',
+  'candidate dependency graph must declare crossSubjectEdges=none',
+);
+check(
+  depsFile.graphPolicy?.layers?.official?.edgeCount === depsFile.edgeCount,
+  'official layer policy edgeCount mismatch',
+);
+check(
+  depsFile.graphPolicy?.layers?.['pedagogical-candidate']?.edgeCount === candidateDepsFile.edgeCount,
+  'candidate layer policy edgeCount mismatch',
+);
 check(manifest.counts?.sources === standardsFile.sourceCount, 'manifest source count mismatch');
 check(manifest.counts?.topics === topicsFile.topicCount, 'manifest topic count mismatch');
 check(manifest.counts?.dependencies === depsFile.edgeCount, 'manifest dependency count mismatch');
+check(
+  manifest.counts?.candidateDependencies === candidateDepsFile.edgeCount,
+  'manifest candidate dependency count mismatch',
+);
+check(
+  manifest.relationLayers?.official?.edgeCount === depsFile.edgeCount,
+  'manifest official relation layer count mismatch',
+);
+check(
+  manifest.relationLayers?.['pedagogical-candidate']?.edgeCount === candidateDepsFile.edgeCount,
+  'manifest candidate relation layer count mismatch',
+);
 check(manifest.counts?.clusters === clustersFile.clusterCount, 'manifest cluster count mismatch');
 check(manifest.counts?.curricula === standardsFile.curriculumCount, 'manifest curriculum count mismatch');
 check(manifest.counts?.standards === standardsFile.standardCount, 'manifest standard count mismatch');
@@ -226,6 +301,25 @@ for (const curriculum of standardsFile.curricula || []) {
     check(VER.has(standard.verificationStatus), `bad standard verification ${standard.key}`);
     check(isNonEmptyString(standard.sourceBasis), `missing sourceBasis ${standard.key}`);
     check(isNonEmptyString(standard.summary), `missing summary ${standard.key}`);
+    // Summaries are release data: an authored, non-quoting paraphrase of the official sentence.
+    // The paraphrase table is the single source, so a hand edit to a workstream cannot drift.
+    check(
+      standard.summaryKind === STANDARD_SUMMARY_KIND,
+      `standard summaryKind must be ${STANDARD_SUMMARY_KIND} ${standard.key}`,
+    );
+    const summaryLength = (standard.summary ?? '').trim().length;
+    check(
+      summaryLength >= STANDARD_SUMMARY_LENGTH.min && summaryLength <= STANDARD_SUMMARY_LENGTH.max,
+      `standard summary length ${summaryLength} outside ${STANDARD_SUMMARY_LENGTH.min}-${STANDARD_SUMMARY_LENGTH.max} ${standard.key}`,
+    );
+    check(
+      standard.summary === standardSummary(standard.code, standard.summary),
+      `standard summary does not match the authored paraphrase table ${standard.key}`,
+    );
+    check(
+      !/재수록하지 않|표준 본문|성취기준 \[/.test(standard.summary ?? ''),
+      `standard summary is a placeholder rather than a paraphrase ${standard.key}`,
+    );
     check(Array.isArray(standard.sourceRefs) && standard.sourceRefs.length > 0, `missing sourceRefs ${standard.key}`);
     for (const ref of standard.sourceRefs || []) check(sourceIds.has(ref), `unknown sourceRef ${ref}`);
     if (standard.verificationStatus === 'official-source-checked') {
@@ -316,6 +410,16 @@ for (const topic of topicsFile.topics || []) {
   check(Number.isInteger(topic.ageRangeEnd), `topic missing integer ageRangeEnd ${topic.id}`);
   check(topic.ageRangeStart <= topic.ageRangeEnd, `topic age range reversed ${topic.id}: ${topic.ageRangeStart}-${topic.ageRangeEnd}`);
   check(VER.has(topic.verificationStatus), `bad or missing topic verificationStatus ${topic.id}`);
+  check(topic.decompositionKind === 'subject-facet', `topic decompositionKind must be subject-facet ${topic.id}`);
+  check(FACETS.has(topic.facetKey), `topic facetKey outside the common eight ${topic.id}: ${topic.facetKey}`);
+  check(topic.standardKey === topic.standards?.[0], `topic standardKey must equal standards[0] ${topic.id}`);
+  check(isNonEmptyString(topic.sourceStandardCode), `topic missing sourceStandardCode ${topic.id}`);
+  check(
+    !('titleEnglish' in topic) ||
+      (isNonEmptyString(topic.titleEnglish) && !/micro-topic \d+/i.test(topic.titleEnglish)),
+    `topic titleEnglish placeholder or null must be omitted ${topic.id}`,
+  );
+  check(CONTENT_KINDS.includes(topic.contentKind), `topic missing or unknown contentKind ${topic.id}: ${topic.contentKind}`);
   check(isMeaningfulString(topic.generationBasis), `topic missing generationBasis ${topic.id}`);
   check(Array.isArray(topic.sourceRefs) && topic.sourceRefs.length > 0, `topic missing sourceRefs ${topic.id}`);
   for (const ref of topic.sourceRefs || []) check(sourceIds.has(ref), `topic ${topic.id} unknown sourceRef ${ref}`);
@@ -336,6 +440,57 @@ for (const topic of topicsFile.topics || []) {
 
 check(standardsFile.microTopicCount === topicIds.size, `microTopicCount ${standardsFile.microTopicCount} != ${topicIds.size}`);
 for (const error of contentQualityErrors(topicsFile.topics || [])) errors.push(`content quality: ${error}`);
+
+// 주제 콘텐츠 오버레이(P3-2): 스키마·출처 참조·dangling·원문 복사·중복과 함께
+// "오버레이가 빌드 산출물에 반영되었는지"까지 본다.
+const contentOverlays = readContentOverlays(contentOverlayDirectory(KR_DATA));
+const validateOverlaySchema = ajv.compile(
+  JSON.parse(readFileSync(resolve(KR_SCHEMA, OVERLAY_SCHEMA_FILE), 'utf8')),
+);
+for (const overlay of contentOverlays) {
+  const label = `content/${overlay.file}`;
+  if (!validateOverlaySchema(overlay.document)) {
+    for (const error of validateOverlaySchema.errors || []) {
+      errors.push(`JSON Schema ${label}${error.instancePath || '/'} ${error.message}`);
+    }
+  }
+  check(
+    Boolean(overlay.subject) && Boolean(overlay.gradeBand),
+    `${label}: overlay file must be named <subject>-<gradeBand>.json`,
+  );
+  for (const ref of overlay.document.sourceRefs || []) check(sourceIds.has(ref), `${label}: unknown sourceRef ${ref}`);
+  for (const [topicId, entry] of Object.entries(overlay.document.entries || {})) {
+    const sourceId = entry.sourceLocator?.sourceId;
+    check(!sourceId || sourceIds.has(sourceId), `${label}/${topicId}: unknown sourceLocator.sourceId ${sourceId}`);
+  }
+  errors.push(...analyzeOverlay({ label, overlay, topicsById, standardsByKey }).errors);
+}
+const { entries: contentOverlayEntries, errors: contentOverlayIndexErrors } = indexOverlayEntries(contentOverlays);
+for (const message of contentOverlayIndexErrors) errors.push(`content: ${message}`);
+// The built topics must already carry the overlay: run `npm run build` after authoring.
+for (const [topicId, hit] of contentOverlayEntries) {
+  const topic = topicsById.get(topicId);
+  if (!topic) continue;
+  const merged =
+    topic.contentKind === 'source-grounded-draft' &&
+    JSON.stringify(topic.evidence) === JSON.stringify(hit.entry.evidence) &&
+    topic.assessmentPrompt === hit.entry.assessmentPrompt;
+  check(merged, `topic ${topicId}: content overlay ${hit.file} is not merged into the build output`);
+}
+let sourceGroundedTopics = 0;
+for (const topic of topicsById.values()) {
+  if (topic.contentKind !== 'source-grounded-draft') continue;
+  sourceGroundedTopics += 1;
+  check(contentOverlayEntries.has(topic.id), `topic ${topic.id}: source-grounded-draft without a content overlay entry`);
+}
+check(
+  manifest.counts?.contentOverlayFiles === contentOverlays.length,
+  `manifest content overlay file count mismatch: ${manifest.counts?.contentOverlayFiles} != ${contentOverlays.length}`,
+);
+check(
+  manifest.counts?.sourceGroundedTopics === sourceGroundedTopics,
+  `manifest source-grounded topic count mismatch: ${manifest.counts?.sourceGroundedTopics} != ${sourceGroundedTopics}`,
+);
 
 const mappingPairs = new Set();
 for (const mapping of standardsFile.standardMappings || []) {
@@ -361,81 +516,145 @@ for (const standardKey of standardKeys) {
   );
 }
 
-const dependencyPairs = new Set();
-for (const dep of depsFile.dependencies || []) {
-  check(topicIds.has(dep.topicId), `dependency unknown topic ${dep.topicId}`);
-  check(topicIds.has(dep.prerequisiteId), `dependency unknown prerequisite ${dep.prerequisiteId}`);
-  check(dep.topicId !== dep.prerequisiteId, `self dependency ${dep.topicId}`);
-  check(STR.has(dep.strength), `bad dependency strength ${dep.topicId}->${dep.prerequisiteId}`);
-  check(isNonEmptyString(dep.reason), `dependency missing reason ${dep.topicId}->${dep.prerequisiteId}`);
-  const topicSubject = topicsById.get(dep.topicId)?.subjectKorean;
-  const prerequisiteSubject = topicsById.get(dep.prerequisiteId)?.subjectKorean;
-  check(
-    topicSubject === prerequisiteSubject,
-    `synthetic cross-subject dependency forbidden ${dep.topicId} (${topicSubject}) -> ${dep.prerequisiteId} (${prerequisiteSubject})`,
-  );
-  const pair = `${dep.topicId}->${dep.prerequisiteId}`;
-  if (dependencyPairs.has(pair)) errors.push(`duplicate dependency ${pair}`);
-  dependencyPairs.add(pair);
-}
+const relationLayers = [
+  { name: 'official', file: 'dependencies.json', edges: depsFile.dependencies || [] },
+  {
+    name: 'pedagogical-candidate',
+    file: 'dependencies.candidate.json',
+    edges: candidateDepsFile.dependencies || [],
+  },
+];
 
-const reciprocalPairs = [];
-for (const pair of dependencyPairs) {
-  const [topicId, prerequisiteId] = pair.split('->');
-  const reverse = `${prerequisiteId}->${topicId}`;
-  if (dependencyPairs.has(reverse) && pair.localeCompare(reverse) < 0) reciprocalPairs.push([topicId, prerequisiteId]);
-}
-check(
-  reciprocalPairs.length === 0,
-  `dependency graph has ${reciprocalPairs.length} reciprocal dependency pair(s)${reciprocalPairs[0] ? `; example ${reciprocalPairs[0].join(' <-> ')}` : ''}`,
-);
-
-const adjacency = new Map([...topicIds].map((id) => [id, []]));
-for (const dep of depsFile.dependencies || []) {
-  if (adjacency.has(dep.topicId) && adjacency.has(dep.prerequisiteId) && dep.topicId !== dep.prerequisiteId) {
-    adjacency.get(dep.topicId).push(dep.prerequisiteId);
-  }
-}
-
-let nextIndex = 0;
-const indices = new Map();
-const lowLinks = new Map();
-const stack = [];
-const onStack = new Set();
-const cyclicSccs = [];
-
-function visitScc(topicId) {
-  indices.set(topicId, nextIndex);
-  lowLinks.set(topicId, nextIndex);
-  nextIndex += 1;
-  stack.push(topicId);
-  onStack.add(topicId);
-
-  for (const prerequisiteId of adjacency.get(topicId) || []) {
-    if (!indices.has(prerequisiteId)) {
-      visitScc(prerequisiteId);
-      lowLinks.set(topicId, Math.min(lowLinks.get(topicId), lowLinks.get(prerequisiteId)));
-    } else if (onStack.has(prerequisiteId)) {
-      lowLinks.set(topicId, Math.min(lowLinks.get(topicId), indices.get(prerequisiteId)));
+function checkAcyclic(label, edges) {
+  const adjacency = new Map([...topicIds].map((id) => [id, []]));
+  for (const edge of edges) {
+    if (adjacency.has(edge.topicId) && adjacency.has(edge.prerequisiteId) && edge.topicId !== edge.prerequisiteId) {
+      adjacency.get(edge.topicId).push(edge.prerequisiteId);
     }
   }
 
-  if (lowLinks.get(topicId) !== indices.get(topicId)) return;
-  const component = [];
-  let member;
-  do {
-    member = stack.pop();
-    onStack.delete(member);
-    component.push(member);
-  } while (member !== topicId);
-  if (component.length > 1) cyclicSccs.push(component.sort());
+  let nextIndex = 0;
+  const indices = new Map();
+  const lowLinks = new Map();
+  const stack = [];
+  const onStack = new Set();
+  const cyclicSccs = [];
+
+  function visitScc(topicId) {
+    indices.set(topicId, nextIndex);
+    lowLinks.set(topicId, nextIndex);
+    nextIndex += 1;
+    stack.push(topicId);
+    onStack.add(topicId);
+
+    for (const prerequisiteId of adjacency.get(topicId) || []) {
+      if (!indices.has(prerequisiteId)) {
+        visitScc(prerequisiteId);
+        lowLinks.set(topicId, Math.min(lowLinks.get(topicId), lowLinks.get(prerequisiteId)));
+      } else if (onStack.has(prerequisiteId)) {
+        lowLinks.set(topicId, Math.min(lowLinks.get(topicId), indices.get(prerequisiteId)));
+      }
+    }
+
+    if (lowLinks.get(topicId) !== indices.get(topicId)) return;
+    const component = [];
+    let member;
+    do {
+      member = stack.pop();
+      onStack.delete(member);
+      component.push(member);
+    } while (member !== topicId);
+    if (component.length > 1) cyclicSccs.push(component.sort());
+  }
+
+  for (const topicId of topicIds) if (!indices.has(topicId)) visitScc(topicId);
+  check(
+    cyclicSccs.length === 0,
+    `${label} graph must be a DAG; found ${cyclicSccs.length} cyclic prerequisite SCC(s)${cyclicSccs[0] ? `; example ${cyclicSccs[0].join(' -> ')}` : ''}`,
+  );
 }
 
-for (const topicId of topicIds) if (!indices.has(topicId)) visitScc(topicId);
-check(
-  cyclicSccs.length === 0,
-  `dependency graph must be a DAG; found ${cyclicSccs.length} cyclic prerequisite SCC(s)${cyclicSccs[0] ? `; example ${cyclicSccs[0].join(' -> ')}` : ''}`,
-);
+const relationIds = new Set();
+const unionPairs = new Set();
+for (const layer of relationLayers) {
+  const layerPairs = new Set();
+  for (const dep of layer.edges) {
+    const label = `${layer.file} ${dep.topicId}->${dep.prerequisiteId}`;
+    check(topicIds.has(dep.topicId), `dependency unknown topic ${dep.topicId} (${layer.file})`);
+    check(topicIds.has(dep.prerequisiteId), `dependency unknown prerequisite ${dep.prerequisiteId} (${layer.file})`);
+    check(dep.topicId !== dep.prerequisiteId, `self dependency ${dep.topicId} (${layer.file})`);
+    check(STR.has(dep.strength), `bad dependency strength ${label}`);
+    check(isNonEmptyString(dep.reason), `dependency missing reason ${label}`);
+    check(dep.layer === layer.name, `dependency layer must match its file ${label}: ${dep.layer}`);
+    check(SCOPES.has(dep.scope), `dependency scope outside vocabulary ${label}: ${dep.scope}`);
+    check(
+      dep.id === relationId(dep.topicId, dep.prerequisiteId),
+      `dependency id is not the contract hash ${label}`,
+    );
+    check(Array.isArray(dep.sourceRefs) && dep.sourceRefs.length > 0, `dependency missing sourceRefs ${label}`);
+    for (const ref of dep.sourceRefs || []) check(sourceIds.has(ref), `dependency unknown sourceRef ${ref} (${label})`);
+    if (relationIds.has(dep.id)) errors.push(`duplicate relation id ${dep.id}`);
+    relationIds.add(dep.id);
+
+    if (layer.name === 'official') {
+      check(dep.relationKind === 'required-prerequisite', `official relationKind must be required-prerequisite ${label}`);
+      check(dep.basisKind === 'official-source', `official basisKind must be official-source ${label}`);
+      check(OFFICIAL_REVIEW_STATUSES.has(dep.reviewStatus), `official reviewStatus too weak ${label}`);
+      check(
+        Number.isInteger(dep.sourceLocator?.printedPage),
+        `official relation must carry sourceLocator.printedPage ${label}`,
+      );
+      check(
+        sourceIds.has(dep.sourceLocator?.sourceId),
+        `official relation locator points at an unknown source ${label}`,
+      );
+    } else {
+      check(dep.relationKind === 'recommended-before', `candidate relationKind must be recommended-before ${label}`);
+      check(CANDIDATE_BASIS_KINDS.has(dep.basisKind), `candidate basisKind not allowed ${label}: ${dep.basisKind}`);
+      check(dep.basisKind !== 'official-source', `candidate layer must not claim official-source ${label}`);
+      check(dep.reviewStatus === 'candidate', `candidate reviewStatus must be candidate ${label}`);
+    }
+
+    const topicSubject = topicsById.get(dep.topicId)?.subjectKorean;
+    const prerequisiteSubject = topicsById.get(dep.prerequisiteId)?.subjectKorean;
+    check(
+      topicSubject === prerequisiteSubject,
+      `synthetic cross-subject dependency forbidden ${dep.topicId} (${topicSubject}) -> ${dep.prerequisiteId} (${prerequisiteSubject})`,
+    );
+
+    const pair = `${dep.topicId}->${dep.prerequisiteId}`;
+    if (layerPairs.has(pair)) errors.push(`duplicate dependency ${pair} (${layer.file})`);
+    layerPairs.add(pair);
+    if (unionPairs.has(pair)) errors.push(`relation ${pair} appears in both layers`);
+    unionPairs.add(pair);
+  }
+
+  const reciprocalPairs = [];
+  for (const pair of layerPairs) {
+    const [topicId, prerequisiteId] = pair.split('->');
+    const reverse = `${prerequisiteId}->${topicId}`;
+    if (layerPairs.has(reverse) && pair.localeCompare(reverse) < 0) reciprocalPairs.push([topicId, prerequisiteId]);
+  }
+  check(
+    reciprocalPairs.length === 0,
+    `${layer.file} has ${reciprocalPairs.length} reciprocal dependency pair(s)${reciprocalPairs[0] ? `; example ${reciprocalPairs[0].join(' <-> ')}` : ''}`,
+  );
+
+  checkAcyclic(layer.file, layer.edges);
+}
+
+checkAcyclic('official + candidate union', relationLayers.flatMap((layer) => layer.edges));
+
+for (const gap of standardsFile.coverageGaps || []) {
+  check(
+    COVERAGE_GAP_SEVERITIES.includes(gap.severity),
+    `coverage gap severity outside vocabulary ${gap.id || gap.description}: ${gap.severity}`,
+  );
+  check(
+    COVERAGE_GAP_STATUSES.includes(gap.status),
+    `coverage gap status outside vocabulary ${gap.id || gap.description}: ${gap.status}`,
+  );
+}
 
 check(clustersFile.coveragePolicy?.membership === 'at-least-one', 'cluster coverage policy must be at-least-one');
 check(clustersFile.coveragePolicy?.minimumMembership === 1, 'cluster coverage policy minimumMembership must be 1');
@@ -477,7 +696,13 @@ for (const [name, meta] of Object.entries(manifest.files || {})) {
 check(manifest.coverageNotes?.social?.standards === 49, 'manifest Korea-first social coverage note mismatch');
 check(manifest.coverageNotes?.englishEfl?.standards === 40, 'manifest Korean EFL coverage note mismatch');
 check(manifest.coverageNotes?.artsAndPhysicalEducation?.standards === 101, 'manifest arts/PE coverage note mismatch');
-check(manifest.coverageNotes?.amendedAnnex15?.standards === 9, 'manifest amended Annex 15 coverage note mismatch');
+check(manifest.coverageNotes?.amendedAnnex15?.standards === 57, 'manifest amended Annex 15 coverage note mismatch');
+check(manifest.coverageNotes?.amendedAnnex15?.healthStandards === 9, 'manifest 건강한 생활 coverage note mismatch');
+check(manifest.coverageNotes?.amendedAnnex15?.joyfulStandards === 16, 'manifest 즐거운 생활 coverage note mismatch');
+check(
+  Array.isArray(manifest.sourcePosture?.effectiveFrom) && manifest.sourcePosture.effectiveFrom.length > 0,
+  'manifest must record the cited-edition enforcement dates',
+);
 check(
   manifest.sourcePosture?.workLevelReuseStatus?.startsWith('CLEARED'),
   'manifest must record the cleared public-government-document reuse posture',
@@ -490,5 +715,7 @@ if (errors.length) {
 }
 
 console.log(
-  `✓ KR full-depth data valid - ${standardsFile.curricula.length} curricula, ${standardKeys.size} standards, ${topicIds.size} topics, ${depsFile.dependencies.length} dependencies, ${clustersFile.clusters.length} clusters. Checksums OK.`,
+  `✓ KR full-depth data valid - ${standardsFile.curricula.length} curricula, ${standardKeys.size} standards, ${topicIds.size} topics, ` +
+    `${depsFile.dependencies.length} official + ${candidateDepsFile.dependencies.length} candidate relations, ` +
+    `${clustersFile.clusters.length} clusters. Checksums OK.`,
 );

@@ -3,6 +3,7 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { contentQualityErrors, repairWorkstreamContent } from './lib/kr-content-quality.mjs';
+import { STANDARD_SUMMARY_KIND, standardSummary } from './lib/kr-standard-summaries.mjs';
 import {
   KR_SOURCE_ALIAS_REPLACEMENTS,
   normalizeKrSourceRecord,
@@ -39,6 +40,12 @@ for (const file of files) {
   const path = resolve(WORKSTREAM_DIR, file);
   const artifact = JSON.parse(readFileSync(path, 'utf8'));
   const repairedContent = repairWorkstreamContent(artifact);
+  // Standard summaries are release data: one authored paraphrase table governs every workstream,
+  // including the hand-maintained ones that no generator rewrites.
+  for (const standard of repairedContent.standards || []) {
+    standard.summary = standardSummary(standard.code, standard.summary);
+    standard.summaryKind = STANDARD_SUMMARY_KIND;
+  }
   repairedContent.sources = (repairedContent.sources || [])
     .map((source) => normalizeKrSourceRecord(source, file))
     .filter((source) => !STALE_KR_SOURCE_IDS.has(source.id))

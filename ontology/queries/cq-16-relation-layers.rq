@@ -1,0 +1,11 @@
+PREFIX lm: <https://dexa.art/learnmap/ontology#>
+
+SELECT ?layer ?relationKind ?basisKind (COUNT(?assertion) AS ?assertionCount)
+WHERE {
+  ?assertion a lm:PrerequisiteAssertion ;
+    lm:assertionLayer ?layer ;
+    lm:relationKind ?relationKind ;
+    lm:basisKind ?basisKind .
+}
+GROUP BY ?layer ?relationKind ?basisKind
+ORDER BY ?layer ?relationKind ?basisKind

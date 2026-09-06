@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/DECK6/korean-elementary-learning-map/main/schema/kr-content-overlay.schema.json",
+  "title": "Korean Elementary Learning Map — 주제 콘텐츠 오버레이",
+  "description": "data/kr/content/<subject>-<gradeBand>.json. 기계적 템플릿 evidence·assessmentPrompt를 출처 기반 초안으로 교체하는 빌드 입력이다. 중등 저장소의 content-overlay.schema.json과 같은 형식이며, 초등은 assessmentPrompt가 문자열 하나다.",
+  "type": "object",
+  "required": [
+    "contentKind",
+    "subjectKorean",
+    "authoredAt",
+    "sourceRefs",
+    "entries"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "contentKind": {
+      "const": "source-grounded-draft"
+    },
+    "subjectKorean": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authoredAt": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "sourceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/sourceRef"
+      }
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entries": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^kr\\.mt\\."
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "sourceRef": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 240,
+      "pattern": "^[a-z0-9][a-z0-9._:-]*$"
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "evidence",
+        "assessmentPrompt",
+        "sourceLocator"
+      ],
+      "properties": {
+        "evidence": {
+          "description": "초등 주제는 관찰 가능한 성취 증거를 두 개 이상 갖는다(kr-topics.schema.json과 동일한 하한).",
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 25
+          }
+        },
+        "assessmentPrompt": {
+          "type": "string",
+          "minLength": 40
+        },
+        "misconceptions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 15
+          }
+        },
+        "sourceLocator": {
+          "$ref": "#/$defs/sourceLocator"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "sourceLocator": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "section"
+      ],
+      "properties": {
+        "sourceId": {
+          "$ref": "#/$defs/sourceRef"
+        },
+        "attachmentNo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "pdfPage": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "printedPage": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1
+        },
+        "code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

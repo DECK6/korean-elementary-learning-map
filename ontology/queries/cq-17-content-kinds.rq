@@ -1,0 +1,8 @@
+PREFIX core: <https://dexa.art/learnmap/ontology/k12-core#>
+
+SELECT ?contentKind (COUNT(?topic) AS ?topicCount)
+WHERE {
+  ?topic core:contentKind ?contentKind .
+}
+GROUP BY ?contentKind
+ORDER BY ?contentKind

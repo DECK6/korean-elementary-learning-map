@@ -5,14 +5,17 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const INSTANCE_NAMESPACE = 'https://dexa.art/learnmap/#/';
 const VOCABULARY_NAMESPACE = 'https://dexa.art/learnmap/vocab/#/';
+const FACET_NAMESPACE = 'https://dexa.art/learnmap/vocab/facet/';
 const ONTOLOGY_NAMESPACE = 'https://dexa.art/learnmap/ontology#';
+const CORE_NAMESPACE = 'https://dexa.art/learnmap/ontology/k12-core#';
 const ALIGNMENT_CONFIDENCE_DEFAULT = '0.5';
 const ALIGNMENT_CONFIDENCE_DEFAULT_POLICY = 'alignment-confidence-default-v1';
-export const ONTOLOGY_VERSION = '0.3.0-p3';
-export const PRIOR_ONTOLOGY_VERSION = '0.2.0-p2';
+export const ONTOLOGY_VERSION = '0.4.0';
+export const PRIOR_ONTOLOGY_VERSION = '0.3.0-p3';
 
 const STATIC_ONTOLOGY_FILES = [
   'ontology/learning-map.ttl',
+  'ontology/k12-core.ttl',
   'ontology/context.jsonld',
   'ontology/shapes.ttl',
   'ontology/metadata.ttl',
@@ -111,18 +114,29 @@ export async function loadStaticOntologyArtifacts({ rootDir }) {
 
 async function loadCanonicalData(rootDir) {
   const dataDir = resolve(rootDir, 'data', 'kr');
-  const [topics, dependencies, standards, clusters, manifest] = await Promise.all([
+  const [topics, dependencies, candidateDependencies, standards, clusters, manifest] = await Promise.all([
     readJson(resolve(dataDir, 'topics.json')),
     readJson(resolve(dataDir, 'dependencies.json')),
+    readJson(resolve(dataDir, 'dependencies.candidate.json')),
     readJson(resolve(dataDir, 'curriculum-standards.json')),
     readJson(resolve(dataDir, 'clusters.json')),
     readJson(resolve(dataDir, 'manifest.json')),
   ]);
-  return { topics, dependencies, standards, clusters, manifest };
+  return { topics, dependencies, candidateDependencies, standards, clusters, manifest };
 }
 
 function conceptIri(scheme, term) {
   return `${VOCABULARY_NAMESPACE}${scheme}/${term}`;
+}
+
+// Shared K-12 facet scheme (contract section 4); it lives outside the repo-local
+// `vocab/#/` hash namespace so both repositories can point at the same concepts.
+function facetConceptIri(term) {
+  return `${FACET_NAMESPACE}${term}`;
+}
+// K-12 core concepts are addressed directly so the same query text runs against both repositories.
+function coreConceptIri(localName) {
+  return `${CORE_NAMESPACE}${localName}`;
 }
 
 function iri(id) {
@@ -257,9 +271,7 @@ function normalizeRequirementLevel(strength) {
 }
 
 function normalizeGapSeverity(gap) {
-  if (gap.severity) return gap.severity;
-  if (gap.status && /review|needs/i.test(gap.status)) return 'review-needed';
-  return 'unspecified';
+  return gap.severity ?? 'unspecified';
 }
 
 function normalizeGapCategory(gap) {
@@ -606,8 +618,30 @@ function createTopicResources(data, nodes, verificationNodes, locatorNodes) {
     setEnIfPresent(topicNode, 'lm:titleEnglish', topic.titleEnglish);
     setKoIfPresent(topicNode, 'lm:generationBasis', topic.generationBasis);
     setIfPresent(topicNode, 'lm:sourceStandardCode', topic.sourceStandardCode);
+    setIfPresent(topicNode, 'lm:standardKey', topic.standardKey);
+    topicNode['lm:decompositionKind'] = iri(
+      conceptIri('DecompositionKind', topic.decompositionKind),
+    );
+    topicNode['lm:facetKey'] = iri(facetConceptIri(topic.facetKey));
+    // K-12 core projection: the same facet and content-kind concepts the secondary map emits.
+    topicNode['core:facetKey'] = iri(coreConceptIri(`facet-${topic.facetKey}`));
+    topicNode['core:contentKind'] = iri(coreConceptIri(`content-${topic.contentKind}`));
+    if (topic.misconceptions?.length) {
+      topicNode['core:misconception'] = [...topic.misconceptions].sort().map((text) => ko(text));
+    }
     setIfPresent(topicNode, 'lm:workstream', topic.workstreamFile);
     addSourceReferences(topicNode, topic.sourceRefs ?? []);
+
+    if (topic.contentSourceLocator) {
+      const contentLocator = createSourceLocator({
+        owner: { type: 'LearningTopicContent', id: topic.id },
+        locator: topic.contentSourceLocator,
+        sourceRefs: topic.sourceRefs ?? [],
+      });
+      contentLocator['core:locatorKind'] = iri(coreConceptIri('locator-printed-page'));
+      pushNode(locatorNodes, contentLocator);
+      topicNode['core:contentSourceLocator'] = iri(contentLocator['@id']);
+    }
 
     if (topic.sourceLocator) {
       const locator = createSourceLocator({
@@ -672,10 +706,12 @@ function createCoverageGaps(data, nodes, locatorNodes) {
       'lm:gapDescription': ko(gap.description),
       'lm:gapCategory': iri(conceptIri('CoverageGapCategory', normalizeGapCategory(gap))),
       'lm:gapSeverity': iri(conceptIri('GapSeverity', normalizeGapSeverity(gap))),
-      'lm:sourceGapSeverityPresent': Boolean(gap.severity),
+      'lm:sourceGapSeverityPresent': Boolean(gap.severitySource),
     });
     setKoIfPresent(node, 'lm:note', gap.note);
-    setIfPresent(node, 'lm:status', gap.status);
+    setIfPresent(node, 'lm:gapStatus', gap.status);
+    setIfPresent(node, 'lm:sourceGapSeverity', gap.severitySource);
+    setIfPresent(node, 'lm:sourceGapStatus', gap.statusSource);
     setIfPresent(node, 'lm:workstream', gap.workstreamFile);
     if (gap.subject && gap.subjectKorean) node['lm:hasSubject'] = iri(subjectIri(gap));
     addSourceReferences(node, gap.sourceRefs ?? []);
@@ -691,19 +727,26 @@ function createCoverageGaps(data, nodes, locatorNodes) {
   }
 }
 
-function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes) {
+function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes, locatorNodes) {
   const release = data.topics.taxonomyVersion;
 
   const dependencyIdentity = (edge) => ({
     release,
+    layer: edge.layer,
     dependentTopic: edge.topicId,
     prerequisiteTopic: edge.prerequisiteId,
     strength: edge.strength,
     basis: edge.basis,
     source: edge.source,
   });
+  // Both layers become qualified PrerequisiteAssertions; only the official layer
+  // materializes directRequires (and therefore unlocks / indirectRequires).
+  const relationEdges = [
+    ...data.dependencies.dependencies,
+    ...data.candidateDependencies.dependencies,
+  ];
   for (const { record: edge, duplicateOrdinal } of sortedWithDuplicateOrdinals(
-    data.dependencies.dependencies,
+    relationEdges,
     dependencyIdentity,
   )) {
     const id = stableRecordId('pa', {
@@ -714,32 +757,51 @@ function buildQualifiedAssertionGraph(data, topicNodes, nodes, verificationNodes
     const dependentIri = mintInstanceIri('topic', edge.topicId);
     const prerequisiteIri = mintInstanceIri('topic', edge.prerequisiteId);
     const normalizedStrength = normalizeRequirementLevel(edge.strength);
+    const isOfficial = edge.layer === 'official';
     const node = pushNode(nodes, {
       '@id': assertionIri,
       '@type': 'lm:PrerequisiteAssertion',
       'lm:identifier': id,
+      'lm:relationIdentifier': edge.id,
       'lm:dependentTopic': iri(dependentIri),
       'lm:prerequisiteTopic': iri(prerequisiteIri),
       'lm:prerequisiteStrength': iri(
         conceptIri('DependencyRequirementLevel', normalizedStrength),
       ),
+      'lm:assertionLayer': iri(conceptIri('RelationLayer', edge.layer)),
+      'core:layerConcept': iri(coreConceptIri(`layer-${edge.layer}`)),
+      'lm:relationKind': iri(conceptIri('RelationKind', edge.relationKind)),
+      'lm:basisKind': iri(conceptIri('BasisKind', edge.basisKind)),
+      'lm:scope': iri(conceptIri('RelationScope', edge.scope)),
+      'lm:reviewStatus': iri(conceptIri('ReviewStatus', edge.reviewStatus)),
       'lm:legacyPrerequisiteStrength': edge.strength,
       'lm:prerequisiteReason': ko(edge.reason),
       'lm:assertionBasis': edge.basis,
       'lm:assertionSource': edge.source,
     });
+    addSourceReferences(node, edge.sourceRefs ?? []);
+    if (edge.sourceLocator) {
+      const locator = createSourceLocator({
+        owner: { type: 'PrerequisiteAssertion', id },
+        locator: edge.sourceLocator,
+        sourceRefs: edge.sourceRefs ?? [],
+      });
+      pushNode(locatorNodes, locator);
+      node['lm:hasSourceLocator'] = iri(locator['@id']);
+    }
     const verification = createVerificationRecord({
       owner: { type: 'PrerequisiteAssertion', id },
-      status: 'workstream-reviewed',
+      status: isOfficial ? 'official-source-checked' : 'workstream-reviewed',
       basis: edge.basis,
       note: edge.reason,
+      sourceRefs: isOfficial ? edge.sourceRefs ?? [] : [],
     });
     pushNode(verificationNodes, verification);
     node['lm:hasVerificationRecord'] = iri(verification['@id']);
 
     const topicNode = topicNodes.get(edge.topicId);
     addUniqueIri(topicNode, 'lm:hasPrerequisiteAssertion', assertionIri);
-    addUniqueIri(topicNode, 'lm:directRequires', prerequisiteIri);
+    if (isOfficial) addUniqueIri(topicNode, 'lm:directRequires', prerequisiteIri);
   }
 
   const alignmentIdentity = (mapping) => ({
@@ -918,7 +980,7 @@ function buildFullGraph(data) {
   const topicNodes = createTopicResources(data, resourceNodes, verificationNodes, locatorNodes);
   createClusters(data, resourceNodes);
   createCoverageGaps(data, resourceNodes, locatorNodes);
-  buildQualifiedAssertionGraph(data, topicNodes, resourceNodes, verificationNodes);
+  buildQualifiedAssertionGraph(data, topicNodes, resourceNodes, verificationNodes, locatorNodes);
   createDatasetRelease(data, resourceNodes, verificationNodes);
 
   return sortedGraph([
@@ -1018,6 +1080,7 @@ function serializeNodeToTurtle(node) {
 function serializeGraphToTurtle(graph) {
   const prefixes = [
     '@prefix lm: <https://dexa.art/learnmap/ontology#> .',
+    '@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .',
     '@prefix dcterms: <http://purl.org/dc/terms/> .',
     '@prefix prov: <http://www.w3.org/ns/prov#> .',
     '@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .',
@@ -1033,6 +1096,7 @@ export async function buildOntologyArtifacts({ rootDir }) {
     '@context': {
       lm: ONTOLOGY_NAMESPACE,
       lmv: VOCABULARY_NAMESPACE,
+      core: CORE_NAMESPACE,
       dcterms: 'http://purl.org/dc/terms/',
       prov: 'http://www.w3.org/ns/prov#',
       xsd: 'http://www.w3.org/2001/XMLSchema#',
@@ -1050,6 +1114,7 @@ export async function buildOntologyArtifacts({ rootDir }) {
       ),
       topics: data.topics.topics.length,
       dependencies: data.dependencies.dependencies.length,
+      candidateDependencies: data.candidateDependencies.dependencies.length,
       clusters: data.clusters.clusters.length,
       standardMappings: data.standards.standardMappings.length,
       coverageGaps: data.standards.coverageGaps.length,

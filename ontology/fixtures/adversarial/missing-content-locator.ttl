@@ -1,0 +1,8 @@
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
+
+# A source-grounded draft that never names the passage it was written from. The core content shape
+# must reject it, otherwise authored evidence could claim source grounding with no locator.
+<urn:fixture:topic-f-unsourced-draft>
+  core:facetKey core:facet-inquiry ;
+  core:contentKind core:content-source-grounded-draft ;
+  core:misconception "학습자는 근거 없이 결론을 단정한다."@ko .

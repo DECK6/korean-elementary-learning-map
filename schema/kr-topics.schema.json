@@ -3,60 +3,296 @@
   "$id": "https://raw.githubusercontent.com/DECK6/korean-elementary-learning-map/main/schema/kr-topics.schema.json",
   "title": "Korean Elementary Learning Map — full-depth topics",
   "type": "object",
-  "required": ["version", "topicCount", "topics"],
+  "required": [
+    "version",
+    "topicCount",
+    "topics"
+  ],
   "properties": {
-    "$schema": { "type": "string" },
-    "version": { "type": "string" },
-    "taxonomyVersion": { "type": "string" },
-    "locale": { "const": "ko-KR" },
-    "country": { "const": "KR" },
-    "topicCount": { "type": "integer", "minimum": 1500 },
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "taxonomyVersion": {
+      "type": "string"
+    },
+    "locale": {
+      "const": "ko-KR"
+    },
+    "country": {
+      "const": "KR"
+    },
+    "topicCount": {
+      "type": "integer",
+      "minimum": 1500
+    },
     "topics": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "type", "subject", "subjectKorean", "name", "description", "ageRangeStart", "ageRangeEnd", "evidence", "assessmentPrompt", "standards", "sourceRefs", "verificationStatus", "generationBasis", "sourceTextIncluded"],
+        "required": [
+          "id",
+          "type",
+          "subject",
+          "subjectKorean",
+          "name",
+          "description",
+          "ageRangeStart",
+          "ageRangeEnd",
+          "evidence",
+          "assessmentPrompt",
+          "contentKind",
+          "standards",
+          "sourceRefs",
+          "verificationStatus",
+          "generationBasis",
+          "sourceTextIncluded",
+          "decompositionKind",
+          "facetKey",
+          "standardKey",
+          "sourceStandardCode"
+        ],
         "properties": {
-          "id": { "type": "string", "pattern": "^kr\\.mt\\." },
-          "type": { "enum": ["CONCEPTUAL", "PROCEDURAL", "REPRESENTATIONAL", "LANGUAGE", "META"] },
-          "subject": { "type": "string" },
-          "subjectKorean": { "type": "string" },
-          "domain": { "type": ["string", "null"] },
-          "domainKorean": { "type": ["string", "null"] },
-          "gradeBand": { "type": ["string", "null"] },
-          "name": { "type": "string", "minLength": 1 },
-          "title": { "type": ["string", "null"] },
-          "titleKorean": { "type": ["string", "null"] },
-          "titleEnglish": { "type": ["string", "null"] },
-          "summary": { "type": ["string", "null"] },
-          "description": { "type": "string", "minLength": 8 },
-          "ageRangeStart": { "type": "integer", "minimum": 0 },
-          "ageRangeEnd": { "type": "integer", "minimum": 0 },
-          "centrality": { "type": ["number", "null"] },
+          "id": {
+            "type": "string",
+            "pattern": "^kr\\.mt\\."
+          },
+          "type": {
+            "enum": [
+              "CONCEPTUAL",
+              "PROCEDURAL",
+              "REPRESENTATIONAL",
+              "LANGUAGE",
+              "META"
+            ]
+          },
+          "subject": {
+            "type": "string"
+          },
+          "subjectKorean": {
+            "type": "string"
+          },
+          "domain": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "domainKorean": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "gradeBand": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "titleKorean": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "titleEnglish": {
+            "type": "string",
+            "minLength": 1,
+            "not": {
+              "pattern": "micro-topic [0-9]+"
+            }
+          },
+          "summary": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 8
+          },
+          "ageRangeStart": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "ageRangeEnd": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "centrality": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
           "evidence": {
             "type": "array",
             "minItems": 2,
-            "items": { "type": "string", "minLength": 8 }
+            "items": {
+              "type": "string",
+              "minLength": 8
+            }
           },
           "provenanceEvidence": {
             "type": "array",
             "minItems": 1,
             "items": {
               "oneOf": [
-                { "type": "string", "minLength": 8 },
-                { "type": "object", "minProperties": 1 }
+                {
+                  "type": "string",
+                  "minLength": 8
+                },
+                {
+                  "type": "object",
+                  "minProperties": 1
+                }
               ]
             }
           },
-          "assessmentPrompt": { "type": "string", "minLength": 8 },
-          "standards": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
-          "sourceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
-          "verificationStatus": {
-            "enum": ["official-source-checked", "public-doc-derived", "needs-official-code-check"]
+          "assessmentPrompt": {
+            "type": "string",
+            "minLength": 8
           },
-          "generationBasis": { "type": "string", "minLength": 8 },
-          "sourceTextIncluded": { "const": false },
-          "workstreamFile": { "type": "string" }
+          "contentKind": {
+            "enum": [
+              "mechanical-derivative",
+              "source-grounded-draft"
+            ]
+          },
+          "misconceptions": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 15
+            }
+          },
+          "contentSourceLocator": {
+            "type": "object",
+            "required": [
+              "sourceId",
+              "section"
+            ],
+            "properties": {
+              "sourceId": {
+                "type": "string",
+                "minLength": 3
+              },
+              "attachmentNo": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sha256": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "pdfPage": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "printedPage": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "section": {
+                "type": "string",
+                "minLength": 1
+              },
+              "code": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "standards": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "sourceRefs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "verificationStatus": {
+            "enum": [
+              "official-source-checked",
+              "public-doc-derived",
+              "needs-official-code-check"
+            ]
+          },
+          "generationBasis": {
+            "type": "string",
+            "minLength": 8
+          },
+          "sourceTextIncluded": {
+            "const": false
+          },
+          "workstreamFile": {
+            "type": "string"
+          },
+          "decompositionKind": {
+            "enum": [
+              "standard-core",
+              "subject-facet"
+            ]
+          },
+          "facetKey": {
+            "enum": [
+              "concept",
+              "procedure",
+              "representation",
+              "application",
+              "inquiry",
+              "communication",
+              "reflection",
+              "core"
+            ]
+          },
+          "standardKey": {
+            "description": "Derived field: always equal to standards[0]. standards[] stays the authoritative alignment list; standardKey exists only so consumers can key a topic by its primary standard without array access. scripts/validate-kr.mjs enforces the equality.",
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceStandardCode": {
+            "type": "string",
+            "pattern": "^\\[[246][가-힣]{1,2}[0-9]{2}-[0-9]{2}\\]$"
+          }
         },
         "additionalProperties": true
       }

@@ -22,9 +22,9 @@
     "overall": "public-doc-derived",
     "officialCodeInventory": "official-source-checked",
     "exactFullText": "not-included",
-    "latestAmendmentCheck": "2026-01 NCIC branch checked; no 실과/정보 subject file exposed in elementary branch during this pass"
+    "latestAmendmentCheck": "2026-01 NCIC branch and 2026-1 notice text checked: 실과 is not an amendment target. Elementary attachment re-pinned 10003781 → 10004244."
   },
-  "sourcePosture": "Governing frame is the official NCIC 2022.12 elementary 실과(기술·가정)/정보 PDF. 2026.01 amendment notice was checked and recorded as a follow-up gap for integration.",
+  "sourcePosture": "Governing frame is the official NCIC 초등학교(2022.12) 실과(기술·가정)/정보 PDF, re-pinned to the current attachment 10004244 on 2026-09-05. 국가교육위원회 고시 제2026-1호 does not amend 실과.",
   "counts": {
     "sources": 2,
     "standards": 39,
@@ -32,7 +32,7 @@
     "standardMappings": 78,
     "dependencySuggestions": 79,
     "clusters": 5,
-    "coverageGaps": 4
+    "coverageGaps": 5
   },
   "sources": [
     {
@@ -53,27 +53,27 @@
     },
     {
       "id": "kr-ncic-practical-arts-pdf-2022",
-      "name": "[별책10] 실과(기술가정)정보과 교육과정.pdf",
-      "url": "https://ncic.re.kr/inv/org/download.do?year=2022&seq=10003781&orgType=ogi4",
-      "accessDate": "2026-07-09",
-      "attachmentNo": "10003781",
+      "name": "교육부 고시 제2022-33호 [별책 10] 실과(기술·가정)/정보과 교육과정 (NCIC 재게시본 10004244)",
+      "url": "https://ncic.re.kr/inv/org/download.do?year=2022&seq=10004244&orgType=ogi4",
+      "accessDate": "2026-09-05",
+      "attachmentNo": "10004244",
       "ncicPath": "2022 개정 시기 > 초등학교(2022.12) > 실과(기술 · 가정)/정보",
       "pdfMetadata": {
         "pages": 222,
-        "author": "moe",
-        "creator": "Hwp 2018 10.0.0.12438",
-        "producer": "Hancom PDF 1.3.0.542",
-        "fileSizeBytes": 2956125
+        "producer": "Hancom PDF 1.3.0.550",
+        "creationDate": "2026-08-20",
+        "fileSizeBytes": 2806751
       },
-      "usage": "Governing source for verified elementary 실과 achievement-standard codes, domain order, and content structure.",
+      "usage": "Governing source for verified elementary 실과 achievement-standard codes, domain order, and content structure. Re-pinned 2026-09-05 after NCIC replaced attachment 10003781 with 10004244 on the 초등학교(2022.12) 실과 row.",
       "attachmentName": "[별책10] 실과(기술·가정)/정보과 교육과정.pdf",
-      "fileSizeBytes": 2956125,
+      "fileSizeBytes": 2806751,
       "pdfPages": 222,
       "subjectCode": "3396",
       "sourceType": "official-pdf",
       "publisher": "교육부",
       "via": "NCIC 국가교육과정정보센터",
-      "sha256": "842077c76b311f23d57e6e749a8e4ffbb3d59d37628c1646531301022cc36bfd"
+      "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+      "replacesAttachmentNo": "10003781"
     }
   ],
   "standards": [
@@ -101,10 +101,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 519-535 and section (1) achievement-standard commentary",
-          "note": "Official PDF lists [6실01-01] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 18 (printed page 12) achievement-standard list and section (1) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실01-01] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 18,
+          "printedPage": 12
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실01-02]",
@@ -130,10 +135,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 519-535 and section (1) achievement-standard commentary",
-          "note": "Official PDF lists [6실01-02] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 18 (printed page 12) achievement-standard list and section (1) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실01-02] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 18,
+          "printedPage": 12
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실01-03]",
@@ -159,10 +169,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 519-535 and section (1) achievement-standard commentary",
-          "note": "Official PDF lists [6실01-03] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 18 (printed page 12) achievement-standard list and section (1) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실01-03] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 18,
+          "printedPage": 12
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실01-04]",
@@ -188,10 +203,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 519-535 and section (1) achievement-standard commentary",
-          "note": "Official PDF lists [6실01-04] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 18 (printed page 12) achievement-standard list and section (1) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실01-04] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 18,
+          "printedPage": 12
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실01-05]",
@@ -217,10 +237,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 519-535 and section (1) achievement-standard commentary",
-          "note": "Official PDF lists [6실01-05] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 18 (printed page 12) achievement-standard list and section (1) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실01-05] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 18,
+          "printedPage": 12
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실01-06]",
@@ -246,10 +271,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 519-535 and section (1) achievement-standard commentary",
-          "note": "Official PDF lists [6실01-06] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 18 (printed page 12) achievement-standard list and section (1) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실01-06] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 18,
+          "printedPage": 12
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실01-07]",
@@ -275,10 +305,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 519-535 and section (1) achievement-standard commentary",
-          "note": "Official PDF lists [6실01-07] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 18 (printed page 12) achievement-standard list and section (1) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실01-07] under 인간 발달과 주도적 삶; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 18,
+          "printedPage": 12
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-01]",
@@ -304,10 +339,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-01] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-01] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-02]",
@@ -333,10 +373,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-02] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-02] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-03]",
@@ -362,10 +407,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-03] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-03] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-04]",
@@ -391,10 +441,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-04] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-04] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-05]",
@@ -406,7 +461,7 @@
       "domainKorean": "생활환경과 지속가능한 선택",
       "domainSlug": "life-environment-sustainable-choice",
       "titleKorean": "간식과 식사 마련",
-      "summary": "음식 조리 과정을 체험하며 자기 간식이나 식사를 스스로 마련하는 식생활을 실천한다.",
+      "summary": "조리 과정을 직접 겪으며 간식과 끼니를 스스로 차리는 식생활 실천하기",
       "focus": [
         "조리 과정",
         "식생활 자립",
@@ -420,10 +475,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-05] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-05] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-06]",
@@ -449,10 +509,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-06] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-06] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-07]",
@@ -464,7 +529,7 @@
       "domainKorean": "생활환경과 지속가능한 선택",
       "domainSlug": "life-environment-sustainable-choice",
       "titleKorean": "의생활 용품 구성 과정",
-      "summary": "옷과 생활용품이 만들어지는 과정을 탐색하고 구성 방식을 설명한다.",
+      "summary": "옷차림에 쓰이는 물건이 만들어지는 흐름을 살펴 짜임 설명하기",
       "focus": [
         "의생활 용품",
         "구성 요소",
@@ -478,10 +543,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-07] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-07] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-08]",
@@ -493,7 +563,7 @@
       "domainKorean": "생활환경과 지속가능한 선택",
       "domainSlug": "life-environment-sustainable-choice",
       "titleKorean": "간단한 생활용품 만들기",
-      "summary": "도구와 재료로 간단한 생활용품을 만들며 직접 만들어 쓰는 즐거움과 창의적 태도를 기른다.",
+      "summary": "여러 연장과 재료로 쓸모 있는 물건을 만들며 창의적 태도 갖기",
       "focus": [
         "바느질 도구",
         "재료 활용",
@@ -507,10 +577,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-08] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-08] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-09]",
@@ -536,10 +611,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-09] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-09] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-10]",
@@ -551,7 +631,7 @@
       "domainKorean": "생활환경과 지속가능한 선택",
       "domainSlug": "life-environment-sustainable-choice",
       "titleKorean": "생활공간 정리와 위생 관리",
-      "summary": "생활공간을 쾌적하고 위생적으로 관리하는 방법을 익혀 정리·청소·쓰레기 처리를 실천한다.",
+      "summary": "머무는 공간을 깨끗이 지키는 일의 값을 알고 정리와 청소 익혀 실천하기",
       "focus": [
         "정리정돈",
         "청소 방법",
@@ -565,10 +645,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-10] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-10] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실02-11]",
@@ -594,10 +679,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 576-600 and section (2) achievement-standard commentary",
-          "note": "Official PDF lists [6실02-11] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 19 (printed page 13) achievement-standard list and section (2) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실02-11] under 생활환경과 지속가능한 선택; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 19,
+          "printedPage": 13
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실03-01]",
@@ -623,10 +713,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 656-668 and section (3) achievement-standard commentary",
-          "note": "Official PDF lists [6실03-01] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 21 (printed page 15) achievement-standard list and section (3) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실03-01] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 21,
+          "printedPage": 15
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실03-02]",
@@ -638,7 +733,7 @@
       "domainKorean": "기술적 문제해결과 혁신",
       "domainSlug": "technological-problem-solving-innovation",
       "titleKorean": "발명사고와 기술적 문제 해결",
-      "summary": "발명사고기법과 기술적 문제 해결 과정을 적용하여 생활 속 문제를 해결하는 창의적 제품을 구상하고 만든다.",
+      "summary": "발명 사고 기법과 문제 해결 절차로 새로운 제품을 구상해 만들어 보기",
       "focus": [
         "문제 확인",
         "아이디어 구상",
@@ -652,10 +747,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 656-668 and section (3) achievement-standard commentary",
-          "note": "Official PDF lists [6실03-02] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 21 (printed page 15) achievement-standard list and section (3) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실03-02] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 21,
+          "printedPage": 15
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실03-03]",
@@ -681,10 +781,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 656-668 and section (3) achievement-standard commentary",
-          "note": "Official PDF lists [6실03-03] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 21 (printed page 15) achievement-standard list and section (3) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실03-03] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 21,
+          "printedPage": 15
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실03-04]",
@@ -696,7 +801,7 @@
       "domainKorean": "기술적 문제해결과 혁신",
       "domainSlug": "technological-problem-solving-innovation",
       "titleKorean": "수송 의미와 발달",
-      "summary": "수송의 의미와 수송 수단의 발달 과정을 바탕으로 생활 속 다양한 수송 수단을 탐색한다.",
+      "summary": "실어 나르는 일의 뜻과 탈것의 발달을 바탕으로 여러 수송 수단 살펴보기",
       "focus": [
         "수송 개념",
         "수송 발달",
@@ -710,10 +815,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 656-668 and section (3) achievement-standard commentary",
-          "note": "Official PDF lists [6실03-04] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 21 (printed page 15) achievement-standard list and section (3) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실03-04] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 21,
+          "printedPage": 15
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실03-05]",
@@ -725,7 +835,7 @@
       "domainKorean": "기술적 문제해결과 혁신",
       "domainSlug": "technological-problem-solving-innovation",
       "titleKorean": "친환경 수송 시제품",
-      "summary": "수송 수단의 구성 요소를 이해하고 친환경 에너지를 적용한 시제품을 만들며 수송기술의 가치를 인식한다.",
+      "summary": "탈것을 이루는 요소를 알고 친환경 에너지 시제품으로 수송기술 값 알기",
       "focus": [
         "구동·조향·제동",
         "친환경 에너지",
@@ -739,10 +849,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 656-668 and section (3) achievement-standard commentary",
-          "note": "Official PDF lists [6실03-05] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 21 (printed page 15) achievement-standard list and section (3) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실03-05] under 기술적 문제해결과 혁신; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 21,
+          "printedPage": 15
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-01]",
@@ -754,7 +869,7 @@
       "domainKorean": "지속가능한 기술과 융합",
       "domainSlug": "sustainable-technology-convergence",
       "titleKorean": "친환경 건설 구조물",
-      "summary": "친환경 건설 구조물을 이해하고 생활 속 구조물 탐색과 간단한 체험을 통해 건설기술의 가치를 인식한다.",
+      "summary": "환경을 살리는 구조물을 알아보고 간단히 지어 보며 건설기술 가치 느끼기",
       "focus": [
         "건설 구조물",
         "친환경 구조",
@@ -768,10 +883,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-01] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-01] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-02]",
@@ -783,7 +903,7 @@
       "domainKorean": "지속가능한 기술과 융합",
       "domainSlug": "sustainable-technology-convergence",
       "titleKorean": "디지털 기기와 콘텐츠 저작",
-      "summary": "디지털 기술의 중요성을 이해하고 디지털 기기와 콘텐츠 저작 도구로 발표 자료를 만든다.",
+      "summary": "디지털 기술의 쓸모를 알고 저작 도구로 발표 자료 만들며 활용 능력 기르기",
       "focus": [
         "디지털 기술",
         "저작 도구",
@@ -797,10 +917,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-02] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-02] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-03]",
@@ -812,7 +937,7 @@
       "domainKorean": "지속가능한 기술과 융합",
       "domainSlug": "sustainable-technology-convergence",
       "titleKorean": "사이버 공유와 정보기기 활용",
-      "summary": "제작한 발표 자료를 사이버 공간에 공유하고 개인정보·저작권을 고려한 건전한 정보기기 활용을 실천한다.",
+      "summary": "만든 자료를 온라인에 나누고 바람직한 정보기기 사용 습관 지키기",
       "focus": [
         "사이버 공유",
         "개인정보 보호",
@@ -826,10 +951,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-03] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-03] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-04]",
@@ -841,7 +971,7 @@
       "domainKorean": "지속가능한 기술과 융합",
       "domainSlug": "sustainable-technology-convergence",
       "titleKorean": "로봇 개념과 구조",
-      "summary": "로봇의 개념과 구조를 이해하고 생활 속 로봇 기능을 체험하며 로봇의 중요성을 인식한다.",
+      "summary": "로봇이 무엇이고 어떻게 이루어지는지 알고 그 기능 체험하기",
       "focus": [
         "로봇 개념",
         "센서·구동 구조",
@@ -855,10 +985,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-04] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-04] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-05]",
@@ -870,7 +1005,7 @@
       "domainKorean": "지속가능한 기술과 융합",
       "domainSlug": "sustainable-technology-convergence",
       "titleKorean": "로봇 종류와 작동 원리",
-      "summary": "로봇의 종류와 활용 사례를 통해 작동 원리를 이해하고 로봇에 대한 흥미를 기른다.",
+      "summary": "여러 갈래 로봇의 쓰임새로 움직이는 원리를 이해하고 흥미 갖기",
       "focus": [
         "로봇 유형",
         "활용 사례",
@@ -884,10 +1019,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-05] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-05] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-06]",
@@ -913,10 +1053,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-06] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-06] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-07]",
@@ -928,7 +1073,7 @@
       "domainKorean": "지속가능한 기술과 융합",
       "domainSlug": "sustainable-technology-convergence",
       "titleKorean": "동식물 자원과 생명기술",
-      "summary": "동식물 자원을 활용 목적에 따라 분류하고 관련 생명기술을 탐색한다.",
+      "summary": "주변 동물과 식물 자원을 쓰임에 따라 나누고 생명기술 알아보기",
       "focus": [
         "동식물 자원",
         "활용 목적 분류",
@@ -942,10 +1087,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-07] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-07] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-08]",
@@ -971,10 +1121,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-08] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-08] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-09]",
@@ -986,7 +1141,7 @@
       "domainKorean": "지속가능한 기술과 융합",
       "domainSlug": "sustainable-technology-convergence",
       "titleKorean": "지속가능한 친환경 농업",
-      "summary": "친환경 농업 사례를 통해 지속가능한 농업의 순환성과 미래가치를 인식한다.",
+      "summary": "환경을 지키는 농사 사례에서 순환 원리와 농업의 앞날 가치 짚어 보기",
       "focus": [
         "친환경 농업",
         "스마트팜·로컬푸드",
@@ -1000,10 +1155,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-09] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-09] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-10]",
@@ -1029,10 +1189,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-10] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-10] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실04-11]",
@@ -1058,10 +1223,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 706-730 and section (4) achievement-standard commentary",
-          "note": "Official PDF lists [6실04-11] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 22 (printed page 16) achievement-standard list and section (4) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실04-11] under 지속가능한 기술과 융합; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 22,
+          "printedPage": 16
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실05-01]",
@@ -1073,7 +1243,7 @@
       "domainKorean": "디지털 사회와 인공지능",
       "domainSlug": "digital-society-ai",
       "titleKorean": "컴퓨터 활용 문제 해결과 알고리즘",
-      "summary": "컴퓨터를 활용한 생활 속 문제해결 사례를 탐색하고 알고리즘을 다양한 방법으로 표현한다.",
+      "summary": "컴퓨터로 문제를 푼 사례를 찾아보고 해결 절차를 여러 방식으로 나타내기",
       "focus": [
         "컴퓨터 활용 사례",
         "문제 상태와 목표 상태",
@@ -1087,10 +1257,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 794-803 and section (5) achievement-standard commentary",
-          "note": "Official PDF lists [6실05-01] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 24 (printed page 18) achievement-standard list and section (5) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실05-01] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 24,
+          "printedPage": 18
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실05-02]",
@@ -1102,7 +1277,7 @@
       "domainKorean": "디지털 사회와 인공지능",
       "domainSlug": "digital-society-ai",
       "titleKorean": "명령 체험과 기초 프로그래밍",
-      "summary": "컴퓨터에게 명령하는 방법을 체험하고 주어진 문제를 해결하는 프로그램을 작성한다.",
+      "summary": "기계에 지시를 내리는 방식을 겪어 보고 문제 푸는 프로그램 만들기",
       "focus": [
         "명령 절차",
         "기초 프로그래밍",
@@ -1116,10 +1291,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 794-803 and section (5) achievement-standard commentary",
-          "note": "Official PDF lists [6실05-02] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 24 (printed page 18) achievement-standard list and section (5) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실05-02] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 24,
+          "printedPage": 18
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실05-03]",
@@ -1131,7 +1311,7 @@
       "domainKorean": "디지털 사회와 인공지능",
       "domainSlug": "digital-society-ai",
       "titleKorean": "협력 프로그래밍과 공유",
-      "summary": "실생활 문제 해결 프로그램을 협력하여 작성하고 산출물을 타인과 공유한다.",
+      "summary": "생활 문제를 푸는 프로그램을 함께 만들고 결과물 나누기",
       "focus": [
         "협력 개발",
         "프로그램 산출물",
@@ -1145,10 +1325,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 794-803 and section (5) achievement-standard commentary",
-          "note": "Official PDF lists [6실05-03] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 24 (printed page 18) achievement-standard list and section (5) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실05-03] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 24,
+          "printedPage": 18
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실05-04]",
@@ -1160,7 +1345,7 @@
       "domainKorean": "디지털 사회와 인공지능",
       "domainSlug": "digital-society-ai",
       "titleKorean": "디지털·아날로그 데이터와 AI 데이터",
-      "summary": "디지털 데이터와 아날로그 데이터의 특징을 비교하고 인공지능에 활용 가능한 데이터 유형을 탐색한다.",
+      "summary": "디지털 자료와 아날로그 자료의 성질을 견주고 인공지능용 자료 형태 찾기",
       "focus": [
         "데이터 특징",
         "숫자·글자·소리·이미지",
@@ -1174,10 +1359,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 794-803 and section (5) achievement-standard commentary",
-          "note": "Official PDF lists [6실05-04] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 24 (printed page 18) achievement-standard list and section (5) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실05-04] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 24,
+          "printedPage": 18
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     },
     {
       "key": "kr-2022-elem-practical-arts:[6실05-05]",
@@ -1189,7 +1379,7 @@
       "domainKorean": "디지털 사회와 인공지능",
       "domainSlug": "digital-society-ai",
       "titleKorean": "인공지능 과정과 사회 영향",
-      "summary": "인공지능이 만들어지는 과정을 체험하고 인공지능이 사회와 직업에 미치는 영향을 탐색한다.",
+      "summary": "인공지능을 빚어내는 절차를 겪어 보고 사회에 주는 영향 살피기",
       "focus": [
         "기계학습 체험",
         "AI 생성 과정",
@@ -1203,10 +1393,15 @@
       "evidence": [
         {
           "sourceId": "kr-ncic-practical-arts-pdf-2022",
-          "locator": "PDF text extraction lines around 794-803 and section (5) achievement-standard commentary",
-          "note": "Official PDF lists [6실05-05] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text."
+          "locator": "PDF page 24 (printed page 18) achievement-standard list and section (5) commentary in NCIC attachment 10004244",
+          "note": "Official PDF lists [6실05-05] under 디지털 사회와 인공지능; artifact stores paraphrased summary rather than verbatim standard text.",
+          "attachmentNo": "10004244",
+          "sha256": "8eaa773fc8767d6fc081ba6324e40188e9635443c4d242ba1b53047b73d9ef38",
+          "pdfPage": 24,
+          "printedPage": 18
         }
-      ]
+      ],
+      "summaryKind": "source-grounded-paraphrase"
     }
   ],
   "microTopics": [
@@ -1874,7 +2069,7 @@
       "id": "kr.mt.practical.life-environment-sustainable-choice.5-6.0205.concept",
       "name": "간식과 식사 마련 개념 탐색",
       "title": "간식과 식사 마련 개념 탐색",
-      "description": "생활환경과 지속가능한 선택 영역에서 조리 과정, 식생활 자립, 위생적 준비를 중심으로 음식 조리 과정을 체험하며 자기 간식이나 식사를 스스로 마련하는 식생활을 실천한다.",
+      "description": "생활환경과 지속가능한 선택 영역에서 조리 과정, 식생활 자립, 위생적 준비를 중심으로 조리 과정을 직접 겪으며 간식과 끼니를 스스로 차리는 식생활 실천하기",
       "evidence": [
         "간식과 식사 마련 개념 탐색 수행 뒤 미리 정한 기준으로 잘된 점과 보완할 점을 각각 한 가지 이상 말한다.",
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
@@ -1994,7 +2189,7 @@
       "id": "kr.mt.practical.life-environment-sustainable-choice.5-6.0207.concept",
       "name": "의생활 용품 구성 과정 개념 탐색",
       "title": "의생활 용품 구성 과정 개념 탐색",
-      "description": "생활환경과 지속가능한 선택 영역에서 의생활 용품, 구성 요소, 제작 과정을 중심으로 옷과 생활용품이 만들어지는 과정을 탐색하고 구성 방식을 설명한다.",
+      "description": "생활환경과 지속가능한 선택 영역에서 의생활 용품, 구성 요소, 제작 과정을 중심으로 옷차림에 쓰이는 물건이 만들어지는 흐름을 살펴 짜임 설명하기",
       "evidence": [
         "의생활 용품 구성 과정 개념 탐색을 수행하는 순서와 주의할 점을 말한 뒤 과제를 끝까지 실행한다.",
         "수행 과정과 결과를 기록하고, 의생활 용품 구성 과정 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
@@ -2054,7 +2249,7 @@
       "id": "kr.mt.practical.life-environment-sustainable-choice.5-6.0208.concept",
       "name": "간단한 생활용품 만들기 개념 탐색",
       "title": "간단한 생활용품 만들기 개념 탐색",
-      "description": "생활환경과 지속가능한 선택 영역에서 바느질 도구, 재료 활용, 창의 제작을 중심으로 도구와 재료로 간단한 생활용품을 만들며 직접 만들어 쓰는 즐거움과 창의적 태도를 기른다.",
+      "description": "생활환경과 지속가능한 선택 영역에서 바느질 도구, 재료 활용, 창의 제작을 중심으로 여러 연장과 재료로 쓸모 있는 물건을 만들며 창의적 태도 갖기",
       "evidence": [
         "간단한 생활용품 만들기 개념 탐색을 말·글·표·그림·소리·움직임 중 알맞은 방식으로 표현한다.",
         "자신의 표현물에서 생활환경과 지속가능한 선택 내용과 근거가 드러나는 부분을 찾아 설명한다."
@@ -2174,7 +2369,7 @@
       "id": "kr.mt.practical.life-environment-sustainable-choice.5-6.0210.concept",
       "name": "생활공간 정리와 위생 관리 개념 탐색",
       "title": "생활공간 정리와 위생 관리 개념 탐색",
-      "description": "생활환경과 지속가능한 선택 영역에서 정리정돈, 청소 방법, 쓰레기 처리를 중심으로 생활공간을 쾌적하고 위생적으로 관리하는 방법을 익혀 정리·청소·쓰레기 처리를 실천한다.",
+      "description": "생활환경과 지속가능한 선택 영역에서 정리정돈, 청소 방법, 쓰레기 처리를 중심으로 머무는 공간을 깨끗이 지키는 일의 값을 알고 정리와 청소 익혀 실천하기",
       "evidence": [
         "생활공간 정리와 위생 관리 개념 탐색을 이루는 핵심 요소 두 가지 이상을 찾아 자신의 말로 설명한다.",
         "생활환경과 지속가능한 선택 사례에서 생활공간 정리와 위생 관리 개념 탐색이 드러나는 장면을 선택하고 판단 근거를 제시한다."
@@ -2354,7 +2549,7 @@
       "id": "kr.mt.practical.technological-problem-solving-innovation.5-6.0302.concept",
       "name": "발명사고와 기술적 문제 해결 개념 탐색",
       "title": "발명사고와 기술적 문제 해결 개념 탐색",
-      "description": "기술적 문제해결과 혁신 영역에서 문제 확인, 아이디어 구상, 메이커 활동을 중심으로 발명사고기법과 기술적 문제 해결 과정을 적용하여 생활 속 문제를 해결하는 창의적 제품을 구상하고 만든다.",
+      "description": "기술적 문제해결과 혁신 영역에서 문제 확인, 아이디어 구상, 메이커 활동을 중심으로 발명 사고 기법과 문제 해결 절차로 새로운 제품을 구상해 만들어 보기",
       "evidence": [
         "발명사고와 기술적 문제 해결 개념 탐색 수행 뒤 미리 정한 기준으로 잘된 점과 보완할 점을 각각 한 가지 이상 말한다.",
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
@@ -2474,7 +2669,7 @@
       "id": "kr.mt.practical.technological-problem-solving-innovation.5-6.0304.concept",
       "name": "수송 의미와 발달 개념 탐색",
       "title": "수송 의미와 발달 개념 탐색",
-      "description": "기술적 문제해결과 혁신 영역에서 수송 개념, 수송 발달, 생활 속 사례를 중심으로 수송의 의미와 수송 수단의 발달 과정을 바탕으로 생활 속 다양한 수송 수단을 탐색한다.",
+      "description": "기술적 문제해결과 혁신 영역에서 수송 개념, 수송 발달, 생활 속 사례를 중심으로 실어 나르는 일의 뜻과 탈것의 발달을 바탕으로 여러 수송 수단 살펴보기",
       "evidence": [
         "수송 의미와 발달 개념 탐색을 수행하는 순서와 주의할 점을 말한 뒤 과제를 끝까지 실행한다.",
         "수행 과정과 결과를 기록하고, 수송 의미와 발달 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
@@ -2534,7 +2729,7 @@
       "id": "kr.mt.practical.technological-problem-solving-innovation.5-6.0305.concept",
       "name": "친환경 수송 시제품 개념 탐색",
       "title": "친환경 수송 시제품 개념 탐색",
-      "description": "기술적 문제해결과 혁신 영역에서 구동·조향·제동, 친환경 에너지, 시제품 제작을 중심으로 수송 수단의 구성 요소를 이해하고 친환경 에너지를 적용한 시제품을 만들며 수송기술의 가치를 인식한다.",
+      "description": "기술적 문제해결과 혁신 영역에서 구동·조향·제동, 친환경 에너지, 시제품 제작을 중심으로 탈것을 이루는 요소를 알고 친환경 에너지 시제품으로 수송기술 값 알기",
       "evidence": [
         "친환경 수송 시제품 개념 탐색을 말·글·표·그림·소리·움직임 중 알맞은 방식으로 표현한다.",
         "자신의 표현물에서 기술적 문제해결과 혁신 내용과 근거가 드러나는 부분을 찾아 설명한다."
@@ -2594,7 +2789,7 @@
       "id": "kr.mt.practical.sustainable-technology-convergence.5-6.0401.concept",
       "name": "친환경 건설 구조물 개념 탐색",
       "title": "친환경 건설 구조물 개념 탐색",
-      "description": "지속가능한 기술과 융합 영역에서 건설 구조물, 친환경 구조, 구조물 체험을 중심으로 친환경 건설 구조물을 이해하고 생활 속 구조물 탐색과 간단한 체험을 통해 건설기술의 가치를 인식한다.",
+      "description": "지속가능한 기술과 융합 영역에서 건설 구조물, 친환경 구조, 구조물 체험을 중심으로 환경을 살리는 구조물을 알아보고 간단히 지어 보며 건설기술 가치 느끼기",
       "evidence": [
         "친환경 건설 구조물 개념 탐색 수행 뒤 미리 정한 기준으로 잘된 점과 보완할 점을 각각 한 가지 이상 말한다.",
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
@@ -2654,7 +2849,7 @@
       "id": "kr.mt.practical.sustainable-technology-convergence.5-6.0402.concept",
       "name": "디지털 기기와 콘텐츠 저작 개념 탐색",
       "title": "디지털 기기와 콘텐츠 저작 개념 탐색",
-      "description": "지속가능한 기술과 융합 영역에서 디지털 기술, 저작 도구, 발표 자료 제작을 중심으로 디지털 기술의 중요성을 이해하고 디지털 기기와 콘텐츠 저작 도구로 발표 자료를 만든다.",
+      "description": "지속가능한 기술과 융합 영역에서 디지털 기술, 저작 도구, 발표 자료 제작을 중심으로 디지털 기술의 쓸모를 알고 저작 도구로 발표 자료 만들며 활용 능력 기르기",
       "evidence": [
         "디지털 기기와 콘텐츠 저작 개념 탐색을 이루는 핵심 요소 두 가지 이상을 찾아 자신의 말로 설명한다.",
         "지속가능한 기술과 융합 사례에서 디지털 기기와 콘텐츠 저작 개념 탐색이 드러나는 장면을 선택하고 판단 근거를 제시한다."
@@ -2714,7 +2909,7 @@
       "id": "kr.mt.practical.sustainable-technology-convergence.5-6.0403.concept",
       "name": "사이버 공유와 정보기기 활용 개념 탐색",
       "title": "사이버 공유와 정보기기 활용 개념 탐색",
-      "description": "지속가능한 기술과 융합 영역에서 사이버 공유, 개인정보 보호, 저작권 존중을 중심으로 제작한 발표 자료를 사이버 공간에 공유하고 개인정보·저작권을 고려한 건전한 정보기기 활용을 실천한다.",
+      "description": "지속가능한 기술과 융합 영역에서 사이버 공유, 개인정보 보호, 저작권 존중을 중심으로 만든 자료를 온라인에 나누고 바람직한 정보기기 사용 습관 지키기",
       "evidence": [
         "사이버 공유와 정보기기 활용 개념 탐색을 수행하는 순서와 주의할 점을 말한 뒤 과제를 끝까지 실행한다.",
         "수행 과정과 결과를 기록하고, 사이버 공유와 정보기기 활용 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
@@ -2774,7 +2969,7 @@
       "id": "kr.mt.practical.sustainable-technology-convergence.5-6.0404.concept",
       "name": "로봇 개념과 구조 개념 탐색",
       "title": "로봇 개념과 구조 개념 탐색",
-      "description": "지속가능한 기술과 융합 영역에서 로봇 개념, 센서·구동 구조, 생활 속 기능을 중심으로 로봇의 개념과 구조를 이해하고 생활 속 로봇 기능을 체험하며 로봇의 중요성을 인식한다.",
+      "description": "지속가능한 기술과 융합 영역에서 로봇 개념, 센서·구동 구조, 생활 속 기능을 중심으로 로봇이 무엇이고 어떻게 이루어지는지 알고 그 기능 체험하기",
       "evidence": [
         "로봇 개념과 구조 개념 탐색을 말·글·표·그림·소리·움직임 중 알맞은 방식으로 표현한다.",
         "자신의 표현물에서 지속가능한 기술과 융합 내용과 근거가 드러나는 부분을 찾아 설명한다."
@@ -2834,7 +3029,7 @@
       "id": "kr.mt.practical.sustainable-technology-convergence.5-6.0405.concept",
       "name": "로봇 종류와 작동 원리 개념 탐색",
       "title": "로봇 종류와 작동 원리 개념 탐색",
-      "description": "지속가능한 기술과 융합 영역에서 로봇 유형, 활용 사례, 작동 원리를 중심으로 로봇의 종류와 활용 사례를 통해 작동 원리를 이해하고 로봇에 대한 흥미를 기른다.",
+      "description": "지속가능한 기술과 융합 영역에서 로봇 유형, 활용 사례, 작동 원리를 중심으로 여러 갈래 로봇의 쓰임새로 움직이는 원리를 이해하고 흥미 갖기",
       "evidence": [
         "로봇 종류와 작동 원리 개념 탐색 수행 뒤 미리 정한 기준으로 잘된 점과 보완할 점을 각각 한 가지 이상 말한다.",
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
@@ -2954,7 +3149,7 @@
       "id": "kr.mt.practical.sustainable-technology-convergence.5-6.0407.concept",
       "name": "동식물 자원과 생명기술 개념 탐색",
       "title": "동식물 자원과 생명기술 개념 탐색",
-      "description": "지속가능한 기술과 융합 영역에서 동식물 자원, 활용 목적 분류, 생명기술을 중심으로 동식물 자원을 활용 목적에 따라 분류하고 관련 생명기술을 탐색한다.",
+      "description": "지속가능한 기술과 융합 영역에서 동식물 자원, 활용 목적 분류, 생명기술을 중심으로 주변 동물과 식물 자원을 쓰임에 따라 나누고 생명기술 알아보기",
       "evidence": [
         "동식물 자원과 생명기술 개념 탐색을 수행하는 순서와 주의할 점을 말한 뒤 과제를 끝까지 실행한다.",
         "수행 과정과 결과를 기록하고, 동식물 자원과 생명기술 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
@@ -3074,7 +3269,7 @@
       "id": "kr.mt.practical.sustainable-technology-convergence.5-6.0409.concept",
       "name": "지속가능한 친환경 농업 개념 탐색",
       "title": "지속가능한 친환경 농업 개념 탐색",
-      "description": "지속가능한 기술과 융합 영역에서 친환경 농업, 스마트팜·로컬푸드, 농업 순환성을 중심으로 친환경 농업 사례를 통해 지속가능한 농업의 순환성과 미래가치를 인식한다.",
+      "description": "지속가능한 기술과 융합 영역에서 친환경 농업, 스마트팜·로컬푸드, 농업 순환성을 중심으로 환경을 지키는 농사 사례에서 순환 원리와 농업의 앞날 가치 짚어 보기",
       "evidence": [
         "지속가능한 친환경 농업 개념 탐색 수행 뒤 미리 정한 기준으로 잘된 점과 보완할 점을 각각 한 가지 이상 말한다.",
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
@@ -3254,7 +3449,7 @@
       "id": "kr.mt.practical.digital-society-ai.5-6.0501.concept",
       "name": "컴퓨터 활용 문제 해결과 알고리즘 개념 탐색",
       "title": "컴퓨터 활용 문제 해결과 알고리즘 개념 탐색",
-      "description": "디지털 사회와 인공지능 영역에서 컴퓨터 활용 사례, 문제 상태와 목표 상태, 자연어·순서도·의사코드를 중심으로 컴퓨터를 활용한 생활 속 문제해결 사례를 탐색하고 알고리즘을 다양한 방법으로 표현한다.",
+      "description": "디지털 사회와 인공지능 영역에서 컴퓨터 활용 사례, 문제 상태와 목표 상태, 자연어·순서도·의사코드를 중심으로 컴퓨터로 문제를 푼 사례를 찾아보고 해결 절차를 여러 방식으로 나타내기",
       "evidence": [
         "컴퓨터 활용 문제 해결과 알고리즘 개념 탐색을 말·글·표·그림·소리·움직임 중 알맞은 방식으로 표현한다.",
         "자신의 표현물에서 디지털 사회와 인공지능 내용과 근거가 드러나는 부분을 찾아 설명한다."
@@ -3314,7 +3509,7 @@
       "id": "kr.mt.practical.digital-society-ai.5-6.0502.concept",
       "name": "명령 체험과 기초 프로그래밍 개념 탐색",
       "title": "명령 체험과 기초 프로그래밍 개념 탐색",
-      "description": "디지털 사회와 인공지능 영역에서 명령 절차, 기초 프로그래밍, 실행과 수정을 중심으로 컴퓨터에게 명령하는 방법을 체험하고 주어진 문제를 해결하는 프로그램을 작성한다.",
+      "description": "디지털 사회와 인공지능 영역에서 명령 절차, 기초 프로그래밍, 실행과 수정을 중심으로 기계에 지시를 내리는 방식을 겪어 보고 문제 푸는 프로그램 만들기",
       "evidence": [
         "명령 체험과 기초 프로그래밍 개념 탐색 수행 뒤 미리 정한 기준으로 잘된 점과 보완할 점을 각각 한 가지 이상 말한다.",
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
@@ -3374,7 +3569,7 @@
       "id": "kr.mt.practical.digital-society-ai.5-6.0503.concept",
       "name": "협력 프로그래밍과 공유 개념 탐색",
       "title": "협력 프로그래밍과 공유 개념 탐색",
-      "description": "디지털 사회와 인공지능 영역에서 협력 개발, 프로그램 산출물, 공유와 피드백을 중심으로 실생활 문제 해결 프로그램을 협력하여 작성하고 산출물을 타인과 공유한다.",
+      "description": "디지털 사회와 인공지능 영역에서 협력 개발, 프로그램 산출물, 공유와 피드백을 중심으로 생활 문제를 푸는 프로그램을 함께 만들고 결과물 나누기",
       "evidence": [
         "협력 프로그래밍과 공유 개념 탐색을 이루는 핵심 요소 두 가지 이상을 찾아 자신의 말로 설명한다.",
         "디지털 사회와 인공지능 사례에서 협력 프로그래밍과 공유 개념 탐색이 드러나는 장면을 선택하고 판단 근거를 제시한다."
@@ -3434,7 +3629,7 @@
       "id": "kr.mt.practical.digital-society-ai.5-6.0504.concept",
       "name": "디지털·아날로그 데이터와 AI 데이터 개념 탐색",
       "title": "디지털·아날로그 데이터와 AI 데이터 개념 탐색",
-      "description": "디지털 사회와 인공지능 영역에서 데이터 특징, 숫자·글자·소리·이미지, AI 데이터를 중심으로 디지털 데이터와 아날로그 데이터의 특징을 비교하고 인공지능에 활용 가능한 데이터 유형을 탐색한다.",
+      "description": "디지털 사회와 인공지능 영역에서 데이터 특징, 숫자·글자·소리·이미지, AI 데이터를 중심으로 디지털 자료와 아날로그 자료의 성질을 견주고 인공지능용 자료 형태 찾기",
       "evidence": [
         "디지털·아날로그 데이터와 AI 데이터 개념 탐색을 수행하는 순서와 주의할 점을 말한 뒤 과제를 끝까지 실행한다.",
         "수행 과정과 결과를 기록하고, 디지털·아날로그 데이터와 AI 데이터 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
@@ -3494,7 +3689,7 @@
       "id": "kr.mt.practical.digital-society-ai.5-6.0505.concept",
       "name": "인공지능 과정과 사회 영향 개념 탐색",
       "title": "인공지능 과정과 사회 영향 개념 탐색",
-      "description": "디지털 사회와 인공지능 영역에서 기계학습 체험, AI 생성 과정, 사회·직업 영향을 중심으로 인공지능이 만들어지는 과정을 체험하고 인공지능이 사회와 직업에 미치는 영향을 탐색한다.",
+      "description": "디지털 사회와 인공지능 영역에서 기계학습 체험, AI 생성 과정, 사회·직업 영향을 중심으로 인공지능을 빚어내는 절차를 겪어 보고 사회에 주는 영향 살피기",
       "evidence": [
         "인공지능 과정과 사회 영향 개념 탐색을 말·글·표·그림·소리·움직임 중 알맞은 방식으로 표현한다.",
         "자신의 표현물에서 디지털 사회와 인공지능 내용과 근거가 드러나는 부분을 찾아 설명한다."
@@ -4718,12 +4913,13 @@
   "coverageGaps": [
     {
       "id": "gap-2026-amendment-subject-delta",
-      "status": "needs-follow-up",
-      "severity": "medium",
-      "description": "NCIC 2026.01 elementary amendment branch was checked, but the exposed elementary subject list contained 총론 and integrated-life subjects only; no 실과/정보 subject attachment was exposed during this pass.",
-      "impact": "Artifact is grounded in the 2022.12 official 실과/정보 PDF. Integration should re-check whether a later amendment affects 실과 before promoting to final canonical seed.",
+      "status": "resolved",
+      "severity": "low",
+      "description": "Resolved 2026-09-05. 국가교육위원회 고시 제2026-1호 lists its amendment targets as 별책 1·2·3·4·15 only, and the NCIC 초등학교(2026.01) branch exposes just 총론 and the 통합교과 row. 실과(기술·가정)/정보 is therefore outside the 2026-1 amendment scope.",
+      "impact": "No 2026 amendment applies to elementary 실과. The separate attachment replacement found during the same pass is tracked as gap.kr.practical-arts.attachment-replacement-10004244.",
       "sourceRefs": [
-        "kr-ncic-2026-1-annex15-pdf"
+        "kr-ncic-2026-1-annex15-pdf",
+        "kr-ncic-practical-arts-pdf-2022"
       ]
     },
     {
@@ -4752,6 +4948,16 @@
       "severity": "medium",
       "description": "Each micro-topic has an assessmentPrompt, but detailed rubrics and level descriptors were not authored in this subject-worker pass.",
       "impact": "An assessment integration pass can add rubrics while preserving IDs and standard mappings.",
+      "sourceRefs": [
+        "kr-ncic-practical-arts-pdf-2022"
+      ]
+    },
+    {
+      "id": "gap.kr.practical-arts.attachment-replacement-10004244",
+      "status": "resolved",
+      "severity": "low",
+      "description": "Resolved 2026-09-05. The NCIC 초등학교(2022.12) 실과(기술·가정)/정보 row now serves attachment 10004244 (sha256 8eaa773f…) instead of the previously cited 10003781 (sha256 842077c7…). The artifact was re-pinned to 10004244.",
+      "impact": "All 39 elementary codes, their domains, and their page placement are unchanged between the two prints. [6실04-06] differs only in its sentence ending (…한다. → …하다.) in the reissue; this artifact stores a repository-authored paraphrase, so no summary change was required. Attachment numbers are not stable identifiers on NCIC and should be re-checked periodically.",
       "sourceRefs": [
         "kr-ncic-practical-arts-pdf-2022"
       ]

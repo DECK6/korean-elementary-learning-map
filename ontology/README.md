@@ -1,12 +1,12 @@
 # Korean Elementary Curriculum Learning Ontology — P3
 
-This directory is the governed source contract for the formal **Korean Elementary Curriculum Learning Ontology** `0.3.0-p3` release. It publishes a static OWL/Turtle vocabulary, a local JSON-LD context, executable SHACL shapes, release metadata, competency-question SPARQL files, positive and adversarial fixtures, lifecycle policy, and a deterministic ABox export of the canonical Korean JSON dataset.
+This directory is the governed source contract for the formal **Korean Elementary Curriculum Learning Ontology** `0.4.0` release. It publishes a static OWL/Turtle vocabulary, a local JSON-LD context, executable SHACL shapes, release metadata, competency-question SPARQL files, positive and adversarial fixtures, lifecycle policy, and a deterministic ABox export of the canonical Korean JSON dataset.
 
 P3's formal status means the seven repository gates passed. External curriculum and classroom review remains ongoing. The ontology runs locally; it does **not** publish a public SPARQL endpoint, claim MOE/NCIC official status or rights clearance, diagnose learners, or turn prerequisite suggestions into universal learning-order facts.
 
 ## P3 scope
 
-The canonical source snapshot remains unchanged: 11 curricula, 620 achievement standards, 1,956 topics, 1,894 reviewed prerequisite records, 1,956 standard-topic alignments, 153 clusters, and 43 explicitly retained coverage gaps. The exporter maps that snapshot to 20,446 instance resources while preserving source identifiers, qualifiers, provenance limits, and rights status.
+The canonical source snapshot is 11 curricula, 620 achievement standards, 1,956 topics, 2,275 reviewed prerequisite records (400 official + 1,875 pedagogical-candidate), 1,956 standard-topic alignments, 152 clusters, and 46 explicitly retained coverage gaps. The exporter maps that snapshot to 21,752 instance resources while preserving source identifiers, qualifiers, provenance limits, and rights status.
 
 P3 incorporates the P2 standards gate and adds:
 
@@ -29,6 +29,7 @@ P3 incorporates the P2 standards gate and adds:
 | File | Purpose |
 | --- | --- |
 | [`learning-map.ttl`](learning-map.ttl) | Static OWL/Turtle TBox and controlled concepts |
+| [`k12-core.ttl`](k12-core.ttl) | K-12 core TBox shared byte-for-byte with `korean-secondary-learning-map`; imported by `learning-map.ttl` and loaded from this local copy |
 | [`context.jsonld`](context.jsonld) | Local JSON-LD 1.1 context with IRI coercion |
 | [`shapes.ttl`](shapes.ttl) | SHACL shapes executed by the pinned standards validator, including advanced SPARQL constraints |
 | [`metadata.ttl`](metadata.ttl) | Version, format, provenance, and rights metadata |
@@ -73,7 +74,7 @@ npm run validate:ontology:p2
 npm run test:ontology:p2
 ```
 
-`validate:ontology:p2` parses `ontology/learning-map.ttl`, `ontology/shapes.ttl`, `ontology/metadata.ttl`, `dist/ontology/learning-map.ttl`, and `dist/ontology/learning-map.jsonld` with rdflib. It compares the generated Turtle and JSON-LD graphs for RDF isomorphism, runs full-data SHACL with advanced SPARQL constraints, runs a bounded OWL-RL check on the TBox plus the canonical positive fixture, checks graph invariants, executes all local competency queries, runs adversarial SHACL fixtures, and writes `dist/ontology/validation-report.json`. GitHub Actions installs the same exact pins under `$RUNNER_TEMP` rather than relying on a profile-local environment.
+`validate:ontology:p2` parses `ontology/learning-map.ttl`, `ontology/k12-core.ttl`, `ontology/shapes.ttl`, `ontology/metadata.ttl`, `dist/ontology/learning-map.ttl`, and `dist/ontology/learning-map.jsonld` with rdflib. It compares the generated Turtle and JSON-LD graphs for RDF isomorphism, runs full-data SHACL with advanced SPARQL constraints, runs a bounded OWL-RL check on the TBox plus the canonical positive fixture, checks graph invariants, executes all local competency queries, runs adversarial SHACL fixtures, and writes `dist/ontology/validation-report.json`. GitHub Actions installs the same exact pins under `$RUNNER_TEMP` rather than relying on a profile-local environment.
 
 ## Semantic guardrails
 
@@ -91,8 +92,8 @@ These remain separate release dimensions:
 
 | Dimension | P3 value | Meaning |
 | --- | --- | --- |
-| source-data coverage | 43 retained `CoverageGap` records | Known omissions, calibration work, reconciliation, or expert-review needs in the canonical dataset |
-| ontology format | `0.3.0-p3` formal repository release | Governed TBox, context, shapes, metadata, deterministic ABox, derived relations, reference, manifests, CI, SHACL, bounded OWL-RL, queries, and fixtures exist |
+| source-data coverage | 46 retained `CoverageGap` records | Known omissions, calibration work, reconciliation, or expert-review needs in the canonical dataset |
+| ontology format | `0.4.0` formal repository release | Governed TBox, context, shapes, metadata, deterministic ABox, derived relations, reference, manifests, CI, SHACL, bounded OWL-RL, queries, and fixtures exist |
 | automated review | seven gates passed | Six canonical Node gates and one pinned Python standards gate passed |
 | external domain review | ongoing | Formal repository status is not external curriculum, subject, pedagogy, or classroom approval |
 | source rights | `cleared` | Cited Korean curriculum documents are state-published public materials openly available from their original sources |

@@ -20,6 +20,18 @@ P3 (`0.3.0-p3`) has no deprecated or tombstoned terms.
 
 Generated exports may emit only the replacement term for new data after the deprecation release, but validators must keep accepting the deprecated term for at least one minor release unless a breaking release explicitly removes compatibility.
 
+## Dataset (ABox) instance changes
+
+This policy governs ontology and vocabulary IRIs. Dataset instance IRIs (standards, topics, clusters) follow the governing curriculum notice: when a notice deletes a code, reassigns a code to a different achievement standard, or restructures a subject's areas, the dataset must follow the notice rather than freeze a superseded reading.
+
+Such changes are not recorded in `ontology/term-status.json` or `ontology/replacements.json` — both registries accept only terms defined in `ontology/controlled-vocabulary.json`. Record them instead in all of:
+
+1. `ontology/CHANGELOG.md` under **Compatibility**, naming the affected codes and whether each is a deletion, a semantic reassignment, or an IRI move.
+2. The repository `CHANGELOG.md` and `PROVENANCE.md` edition history.
+3. A coverage gap in the affected workstream, with `status: resolved` and the superseded and current attachment numbers.
+
+A semantic reassignment is the most dangerous case, because the identifier survives while its meaning does not. Never carry a reassigned code's prior summary, topics, or evidence forward.
+
 ## Review requirements
 
 Every deprecation or replacement requires maintainer review and all seven formal gates. A term that changes curriculum interpretation also requires external domain review before the external-review status can move beyond `ongoing`.

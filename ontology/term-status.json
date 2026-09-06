@@ -1,6 +1,6 @@
 {
   "formatVersion": 1,
-  "ontologyVersion": "0.3.0-p3",
+  "ontologyVersion": "0.4.0",
   "defaultStatus": "active",
   "deprecatedTerms": []
 }

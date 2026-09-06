@@ -1,4 +1,5 @@
 @prefix lm: <https://dexa.art/learnmap/ontology#> .
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,13 +13,15 @@
   dcterms:description "P3 formal, governed semantic contract for the independently built Korean elementary curriculum learning map."@en ;
   dcterms:created "2026-07-10"^^xsd:date ;
   dcterms:source <https://dexa.art/learnmap/ontology/controlled-vocabulary.json> ;
-  owl:versionIRI <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
-  owl:priorVersion <https://dexa.art/learnmap/ontology/0.2.0-p2> ;
-  owl:versionInfo "0.3.0-p3" ;
+  owl:imports <https://dexa.art/learnmap/ontology/k12-core> ;
+  owl:versionIRI <https://dexa.art/learnmap/ontology/0.4.0> ;
+  owl:priorVersion <https://dexa.art/learnmap/ontology/0.3.0-p3> ;
+  owl:versionInfo "0.4.0" ;
   rdfs:seeAlso
     <https://dexa.art/learnmap/ontology/context.jsonld>,
     <https://dexa.art/learnmap/ontology/metadata.ttl>,
-    <https://dexa.art/learnmap/ontology/shapes.ttl> .
+    <https://dexa.art/learnmap/ontology/shapes.ttl>,
+    <https://dexa.art/learnmap/ontology/k12-core.ttl> .
 
 ## Classes
 
@@ -508,6 +511,80 @@ lm:gapDescription a owl:DatatypeProperty ;
   rdfs:domain lm:CoverageGap ;
   rdfs:range rdf:langString .
 
+## K-12 relation contract v1 qualifiers (ontology 0.4.0)
+
+lm:relationIdentifier a owl:DatatypeProperty ;
+  rdfs:label "relation identifier"@en ;
+  rdfs:comment "Deterministic kr.dep.* identifier of the source relation record."@en ;
+  rdfs:domain lm:PrerequisiteAssertion ;
+  rdfs:range xsd:string .
+
+lm:assertionLayer a owl:ObjectProperty ;
+  rdfs:label "assertion layer"@en ;
+  rdfs:comment "Release layer of a prerequisite assertion. Only the official layer materializes directRequires, unlocks, and indirectRequires."@en ;
+  rdfs:domain lm:PrerequisiteAssertion ;
+  rdfs:range skos:Concept .
+
+lm:relationKind a owl:ObjectProperty ;
+  rdfs:label "relation kind"@en ;
+  rdfs:comment "Normalized reading of the relation: a required prerequisite or a recommended order."@en ;
+  rdfs:domain lm:PrerequisiteAssertion ;
+  rdfs:range skos:Concept .
+
+lm:basisKind a owl:ObjectProperty ;
+  rdfs:label "basis kind"@en ;
+  rdfs:comment "Kind of evidence behind the relation; official-source is reserved for the official layer."@en ;
+  rdfs:domain lm:PrerequisiteAssertion ;
+  rdfs:range skos:Concept .
+
+lm:scope a owl:ObjectProperty ;
+  rdfs:label "relation scope"@en ;
+  rdfs:comment "Mechanically computed distance between the two endpoints: standard, domain, subject, or school level."@en ;
+  rdfs:domain lm:PrerequisiteAssertion ;
+  rdfs:range skos:Concept .
+
+lm:reviewStatus a owl:ObjectProperty ;
+  rdfs:label "review status"@en ;
+  rdfs:comment "Human review reached for the relation record."@en ;
+  rdfs:domain lm:PrerequisiteAssertion ;
+  rdfs:range skos:Concept .
+
+lm:decompositionKind a owl:ObjectProperty ;
+  rdfs:label "decomposition kind"@en ;
+  rdfs:comment "Whether a topic represents a whole achievement standard or one subject facet of it."@en ;
+  rdfs:domain lm:LearningTopic ;
+  rdfs:range skos:Concept .
+
+lm:facetKey a owl:ObjectProperty ;
+  rdfs:label "facet key"@en ;
+  rdfs:comment "Shared K-12 facet of the topic, drawn from the common eight-concept facet scheme."@en ;
+  rdfs:domain lm:LearningTopic ;
+  rdfs:range skos:Concept .
+
+lm:standardKey a owl:DatatypeProperty ;
+  rdfs:label "standard key"@en ;
+  rdfs:comment "Primary achievement-standard key of the topic (curriculumId:code). Derived from the first alignment of the topic; lm:hasStandardTopicAlignment stays authoritative."@en ;
+  rdfs:domain lm:LearningTopic ;
+  rdfs:range xsd:string .
+
+lm:gapStatus a owl:DatatypeProperty ;
+  rdfs:label "gap status"@en ;
+  rdfs:comment "Normalized coverage-gap status: open, needs-review, resolved, intentional, or out-of-scope."@en ;
+  rdfs:domain lm:CoverageGap ;
+  rdfs:range xsd:string .
+
+lm:sourceGapSeverity a owl:DatatypeProperty ;
+  rdfs:label "source gap severity"@en ;
+  rdfs:comment "Severity string exactly as written by the workstream artifact, before normalization."@en ;
+  rdfs:domain lm:CoverageGap ;
+  rdfs:range xsd:string .
+
+lm:sourceGapStatus a owl:DatatypeProperty ;
+  rdfs:label "source gap status"@en ;
+  rdfs:comment "Status string exactly as written by the workstream artifact, before normalization."@en ;
+  rdfs:domain lm:CoverageGap ;
+  rdfs:range xsd:string .
+
 ## SKOS concept schemes and concepts
 
 <https://dexa.art/learnmap/vocab/#/LearningTopicType> a skos:ConceptScheme ;
@@ -614,3 +691,159 @@ lm:gapDescription a owl:DatatypeProperty ;
   skos:definition "Reuse or redistribution is blocked pending work-level terms or permission evidence."@en .
 <https://dexa.art/learnmap/vocab/#/RightsStatus/cleared> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RightsStatus> ; skos:prefLabel "cleared"@en .
 <https://dexa.art/learnmap/vocab/#/RightsStatus/unknown> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RightsStatus> ; skos:prefLabel "unknown"@en .
+
+## K-12 relation and facet concept schemes (ontology 0.4.0)
+
+<https://dexa.art/learnmap/vocab/#/RelationLayer> a skos:ConceptScheme ;
+  skos:prefLabel "Relation layer"@en ;
+  skos:definition "Release layer of a prerequisite assertion under the K-12 relation contract v1."@en ;
+  skos:hasTopConcept
+    <https://dexa.art/learnmap/vocab/#/RelationLayer/official>,
+    <https://dexa.art/learnmap/vocab/#/RelationLayer/pedagogical-candidate> .
+
+<https://dexa.art/learnmap/vocab/#/RelationLayer/official> a skos:Concept ;
+  skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationLayer> ;
+  skos:prefLabel "official"@en ;
+  skos:definition "Backed directly by an official curriculum document with a printed page locator."@en .
+<https://dexa.art/learnmap/vocab/#/RelationLayer/pedagogical-candidate> a skos:Concept ;
+  skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationLayer> ;
+  skos:prefLabel "pedagogical-candidate"@en ;
+  skos:definition "Code order, decomposition order, or repository reasoning; a recommended order only."@en .
+
+<https://dexa.art/learnmap/vocab/#/RelationKind> a skos:ConceptScheme ;
+  skos:prefLabel "Relation kind"@en ;
+  skos:hasTopConcept
+    <https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite>,
+    <https://dexa.art/learnmap/vocab/#/RelationKind/recommended-before> .
+
+<https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationKind> ; skos:prefLabel "required-prerequisite"@en .
+<https://dexa.art/learnmap/vocab/#/RelationKind/recommended-before> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationKind> ; skos:prefLabel "recommended-before"@en .
+
+<https://dexa.art/learnmap/vocab/#/BasisKind> a skos:ConceptScheme ;
+  skos:prefLabel "Basis kind"@en ;
+  skos:hasTopConcept
+    <https://dexa.art/learnmap/vocab/#/BasisKind/official-source>,
+    <https://dexa.art/learnmap/vocab/#/BasisKind/official-code-order>,
+    <https://dexa.art/learnmap/vocab/#/BasisKind/decomposition-order>,
+    <https://dexa.art/learnmap/vocab/#/BasisKind/repository-authored>,
+    <https://dexa.art/learnmap/vocab/#/BasisKind/expert-authored> .
+
+<https://dexa.art/learnmap/vocab/#/BasisKind/official-source> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/BasisKind> ; skos:prefLabel "official-source"@en ; skos:definition "An official document sentence or content-system progression states the order."@en .
+<https://dexa.art/learnmap/vocab/#/BasisKind/official-code-order> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/BasisKind> ; skos:prefLabel "official-code-order"@en ; skos:definition "Derived from official code or unit ordering, which is document arrangement rather than a prerequisite claim."@en .
+<https://dexa.art/learnmap/vocab/#/BasisKind/decomposition-order> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/BasisKind> ; skos:prefLabel "decomposition-order"@en ; skos:definition "Derived from the repository facet decomposition inside one achievement standard."@en .
+<https://dexa.art/learnmap/vocab/#/BasisKind/repository-authored> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/BasisKind> ; skos:prefLabel "repository-authored"@en ; skos:definition "Pedagogical reasoning authored in this repository without a document sentence."@en .
+<https://dexa.art/learnmap/vocab/#/BasisKind/expert-authored> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/BasisKind> ; skos:prefLabel "expert-authored"@en ; skos:definition "Authored by an external subject expert whose review is recorded."@en .
+
+<https://dexa.art/learnmap/vocab/#/RelationScope> a skos:ConceptScheme ;
+  skos:prefLabel "Relation scope"@en ;
+  skos:hasTopConcept
+    <https://dexa.art/learnmap/vocab/#/RelationScope/same-standard>,
+    <https://dexa.art/learnmap/vocab/#/RelationScope/same-domain>,
+    <https://dexa.art/learnmap/vocab/#/RelationScope/same-subject>,
+    <https://dexa.art/learnmap/vocab/#/RelationScope/cross-school-level> .
+
+<https://dexa.art/learnmap/vocab/#/RelationScope/same-standard> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationScope> ; skos:prefLabel "same-standard"@en .
+<https://dexa.art/learnmap/vocab/#/RelationScope/same-domain> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationScope> ; skos:prefLabel "same-domain"@en .
+<https://dexa.art/learnmap/vocab/#/RelationScope/same-subject> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationScope> ; skos:prefLabel "same-subject"@en .
+<https://dexa.art/learnmap/vocab/#/RelationScope/cross-school-level> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/RelationScope> ; skos:prefLabel "cross-school-level"@en .
+
+<https://dexa.art/learnmap/vocab/#/ReviewStatus> a skos:ConceptScheme ;
+  skos:prefLabel "Review status"@en ;
+  skos:hasTopConcept
+    <https://dexa.art/learnmap/vocab/#/ReviewStatus/candidate>,
+    <https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed>,
+    <https://dexa.art/learnmap/vocab/#/ReviewStatus/subject-expert-reviewed>,
+    <https://dexa.art/learnmap/vocab/#/ReviewStatus/classroom-reviewed> .
+
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/candidate> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/ReviewStatus> ; skos:prefLabel "candidate"@en .
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/ReviewStatus> ; skos:prefLabel "internal-reviewed"@en .
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/subject-expert-reviewed> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/ReviewStatus> ; skos:prefLabel "subject-expert-reviewed"@en .
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/classroom-reviewed> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/ReviewStatus> ; skos:prefLabel "classroom-reviewed"@en .
+
+<https://dexa.art/learnmap/vocab/#/DecompositionKind> a skos:ConceptScheme ;
+  skos:prefLabel "Decomposition kind"@en ;
+  skos:hasTopConcept
+    <https://dexa.art/learnmap/vocab/#/DecompositionKind/standard-core>,
+    <https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet> .
+
+<https://dexa.art/learnmap/vocab/#/DecompositionKind/standard-core> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/DecompositionKind> ; skos:prefLabel "standard-core"@en .
+<https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/#/DecompositionKind> ; skos:prefLabel "subject-facet"@en .
+
+## Shared K-12 facet scheme (contract v1 section 4)
+
+<https://dexa.art/learnmap/vocab/facet/> a skos:ConceptScheme ;
+  skos:prefLabel "K-12 learning facet"@en ;
+  skos:definition "Eight facets shared by the Korean elementary and secondary learning maps; every topic carries exactly one."@en ;
+  skos:hasTopConcept
+    <https://dexa.art/learnmap/vocab/facet/concept>,
+    <https://dexa.art/learnmap/vocab/facet/procedure>,
+    <https://dexa.art/learnmap/vocab/facet/representation>,
+    <https://dexa.art/learnmap/vocab/facet/application>,
+    <https://dexa.art/learnmap/vocab/facet/inquiry>,
+    <https://dexa.art/learnmap/vocab/facet/communication>,
+    <https://dexa.art/learnmap/vocab/facet/reflection>,
+    <https://dexa.art/learnmap/vocab/facet/core> .
+
+<https://dexa.art/learnmap/vocab/facet/concept> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "concept"@en ; skos:definition "Distinguishing concepts, conditions, and examples."@en .
+<https://dexa.art/learnmap/vocab/facet/procedure> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "procedure"@en ; skos:definition "Carrying out a procedure, skill, or making task."@en .
+<https://dexa.art/learnmap/vocab/facet/representation> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "representation"@en ; skos:definition "Representing, modelling, or converting between forms."@en .
+<https://dexa.art/learnmap/vocab/facet/application> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "application"@en ; skos:definition "Applying learning to problems and life situations."@en .
+<https://dexa.art/learnmap/vocab/facet/inquiry> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "inquiry"@en ; skos:definition "Investigating, gathering data, and reasoning from evidence."@en .
+<https://dexa.art/learnmap/vocab/facet/communication> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "communication"@en ; skos:definition "Expressing and interacting through language."@en .
+<https://dexa.art/learnmap/vocab/facet/reflection> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "reflection"@en ; skos:definition "Reflecting on, valuing, and transferring learning."@en .
+<https://dexa.art/learnmap/vocab/facet/core> a skos:Concept ; skos:inScheme <https://dexa.art/learnmap/vocab/facet/> ; skos:prefLabel "core"@en ; skos:definition "The whole achievement standard rather than one facet of it."@en .
+
+## K-12 core alignment (ontology 0.4.0)
+## The core module is imported, never re-minted: existing lm: IRIs stay authoritative and are
+## bridged to https://dexa.art/learnmap/ontology/k12-core# by equivalence and exact-match axioms.
+## Loaded from the local copy at ontology/k12-core.ttl; no network access is required.
+
+lm:AchievementStandard owl:equivalentClass core:AchievementStandard .
+lm:LearningTopic owl:equivalentClass core:LearningTopic .
+lm:LearningCluster owl:equivalentClass core:LearningCluster .
+lm:EvidenceCriterion owl:equivalentClass core:EvidenceCriterion .
+lm:AssessmentPrompt owl:equivalentClass core:AssessmentPrompt .
+lm:SourceDocument owl:equivalentClass core:SourceDocument .
+lm:SourceLocator owl:equivalentClass core:SourceLocator .
+lm:VerificationRecord owl:equivalentClass core:VerificationRecord .
+lm:CoverageGap owl:equivalentClass core:CoverageGap .
+lm:StandardTopicAlignment owl:equivalentClass core:StandardTopicAlignment .
+lm:PrerequisiteAssertion rdfs:subClassOf core:LearningRelation .
+
+lm:assertionLayer owl:equivalentProperty core:layerConcept .
+lm:relationKind owl:equivalentProperty core:relationKindConcept .
+lm:basisKind owl:equivalentProperty core:basisKindConcept .
+lm:scope owl:equivalentProperty core:scopeConcept .
+lm:reviewStatus owl:equivalentProperty core:reviewStatusConcept .
+lm:facetKey owl:equivalentProperty core:facetKey .
+lm:locatorValue rdfs:subPropertyOf core:sourceSection .
+lm:sourceHash rdfs:subPropertyOf core:fileSha256 .
+lm:attachmentNo rdfs:subPropertyOf core:attachmentNumber .
+lm:standardCode rdfs:subPropertyOf core:standardCode .
+
+<https://dexa.art/learnmap/vocab/facet/concept> skos:exactMatch core:facet-concept .
+<https://dexa.art/learnmap/vocab/facet/procedure> skos:exactMatch core:facet-procedure .
+<https://dexa.art/learnmap/vocab/facet/representation> skos:exactMatch core:facet-representation .
+<https://dexa.art/learnmap/vocab/facet/application> skos:exactMatch core:facet-application .
+<https://dexa.art/learnmap/vocab/facet/inquiry> skos:exactMatch core:facet-inquiry .
+<https://dexa.art/learnmap/vocab/facet/communication> skos:exactMatch core:facet-communication .
+<https://dexa.art/learnmap/vocab/facet/reflection> skos:exactMatch core:facet-reflection .
+<https://dexa.art/learnmap/vocab/facet/core> skos:exactMatch core:facet-core .
+
+<https://dexa.art/learnmap/vocab/#/RelationLayer/official> skos:exactMatch core:layer-official .
+<https://dexa.art/learnmap/vocab/#/RelationLayer/pedagogical-candidate> skos:exactMatch core:layer-pedagogical-candidate .
+<https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite> skos:exactMatch core:relation-required-prerequisite .
+<https://dexa.art/learnmap/vocab/#/RelationKind/recommended-before> skos:exactMatch core:relation-recommended-before .
+<https://dexa.art/learnmap/vocab/#/BasisKind/official-source> skos:exactMatch core:basis-official-source .
+<https://dexa.art/learnmap/vocab/#/BasisKind/official-code-order> skos:exactMatch core:basis-official-code-order .
+<https://dexa.art/learnmap/vocab/#/BasisKind/decomposition-order> skos:exactMatch core:basis-decomposition-order .
+<https://dexa.art/learnmap/vocab/#/BasisKind/repository-authored> skos:exactMatch core:basis-repository-authored .
+<https://dexa.art/learnmap/vocab/#/BasisKind/expert-authored> skos:exactMatch core:basis-expert-authored .
+<https://dexa.art/learnmap/vocab/#/RelationScope/same-standard> skos:exactMatch core:scope-same-standard .
+<https://dexa.art/learnmap/vocab/#/RelationScope/same-domain> skos:exactMatch core:scope-same-domain .
+<https://dexa.art/learnmap/vocab/#/RelationScope/same-subject> skos:exactMatch core:scope-same-subject .
+<https://dexa.art/learnmap/vocab/#/RelationScope/cross-school-level> skos:exactMatch core:scope-cross-school-level .
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/candidate> skos:exactMatch core:review-candidate .
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed> skos:exactMatch core:review-internal-reviewed .
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/subject-expert-reviewed> skos:exactMatch core:review-subject-expert-reviewed .
+<https://dexa.art/learnmap/vocab/#/ReviewStatus/classroom-reviewed> skos:exactMatch core:review-classroom-reviewed .

@@ -1,6 +1,9 @@
 // Reviewed snapshots of elementary achievement-standard inventories from the
 // official NCIC attachments. Summaries are short repository-authored focus
-// phrases, not copies of the governing standard text.
+// phrases, not copies of the governing standard text. Where an authored
+// paraphrase exists in kr-standard-summaries.mjs it wins, so a single table
+// governs every standard summary the release publishes.
+import { standardSummary } from './kr-standard-summaries.mjs';
 
 const social = [
   ['[4사01-01]', 25, '1', '우리가 사는 곳', '주변 장소 경험과 장소감을 표현하고 서로 존중하기'],
@@ -92,7 +95,7 @@ const music = [
   ['[4음02-02]', 16, '2', '감상', '다양한 음악에서 음악적 특징 발견하기'],
   ['[4음02-03]', 16, '2', '감상', '음악의 분위기와 쓰임 이야기하기'],
   ['[4음02-04]', 16, '2', '감상', '생활 속 음악을 호기심과 느낌으로 즐기기'],
-  ['[4음02-05]', 16, '2', '감상', '우리 지역의 음악 문화유산과 국악 즐기기'],
+  ['[4음02-05]', 16, '2', '감상', '우리 지역의 음악 국가유산과 국악 즐기기'],
   ['[4음03-01]', 18, '3', '창작', '느낌과 상상을 즉흥적인 소리로 표현하기'],
   ['[4음03-02]', 18, '3', '창작', '악곡 일부를 바꾸고 간단한 악보로 나타내기'],
   ['[4음03-03]', 18, '3', '창작', '기초 음악 요소로 소리나 음악 표현하기'],
@@ -105,7 +108,7 @@ const music = [
   ['[6음02-02]', 20, '2', '감상', '다양한 문화권 음악의 특징과 구성 인식하기'],
   ['[6음02-03]', 20, '2', '감상', '음악의 배경과 활용 설명하기'],
   ['[6음02-04]', 20, '2', '감상', '생활 속 음악의 아름다움을 느끼고 공감하기'],
-  ['[6음02-05]', 20, '2', '감상', '우리나라 음악 문화유산과 국악의 가치 인식하기'],
+  ['[6음02-05]', 20, '2', '감상', '우리나라 음악 국가유산과 국악의 가치 인식하기'],
   ['[6음03-01]', 22, '3', '창작', '느낌과 아이디어를 여러 매체·방법으로 표현하기'],
   ['[6음03-02]', 22, '3', '창작', '기초 기보와 조건에 따라 악곡 일부 바꾸기'],
   ['[6음03-03]', 22, '3', '창작', '음악 요소를 활용해 간단한 음악 만들기'],
@@ -170,7 +173,7 @@ function rows(values) {
     pdfPage,
     unitNumber,
     unitName,
-    focus,
+    focus: standardSummary(code, focus),
   }));
 }
 
@@ -205,19 +208,21 @@ export const OFFICIAL_SUBJECT_SPECS = {
     sha256: 'b47363c9a1060b00777c6de555d972b509b64b886d7beca89460a552a33c77b2',
     standards: rows(art),
   },
+  // Re-pinned 2026-09-05 to the current NCIC 음악과 attachment (2024-3호 일부개정).
+  // Codes and PDF page placement are unchanged from the 2022-33 print.
   music: {
     curriculumId: 'kr-2022-elem-music',
     subject: 'Music',
     subjectKorean: '음악',
     sourceId: 'kr-ncic-2022-music-pdf',
     subjectCode: '2801',
-    attachmentNo: '10003561',
-    title: '교육부 고시 제2022-33호 [별책 12] 음악과 교육과정',
-    fileName: '[별책12] 음악과 교육과정.pdf',
-    url: 'https://ncic.re.kr/inv/org/download.do?year=2022&seq=10003561&orgType=ogi4',
-    bytes: 2337694,
+    attachmentNo: '10003999',
+    title: '국가교육위원회 고시 제2024-3호 일부개정 [별책 12] 음악과 교육과정',
+    fileName: '(2022개정) 초·중등학교 교육과정 [별책12] 음악과_ 국가교육위원회 고시 제2024-3호(2024.08.16.).pdf',
+    url: 'https://ncic.re.kr/inv/org/download.do?year=2024&seq=10003999&orgType=ogi4',
+    bytes: 1943652,
     pages: 96,
-    sha256: 'db2d03b4e2accfd442ca1297b84e43061feb1422659914e486e27f7b555f7bd6',
+    sha256: '54af8340687ace3599f5242dcc6d4d95382af24144be186fa6c4b246417d0487',
     standards: rows(music),
   },
   physicalEducation: {

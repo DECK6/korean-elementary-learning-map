@@ -131,6 +131,23 @@ function textOfEvidence(item) {
   return typeof item === 'string' ? item : JSON.stringify(item);
 }
 
+// A statement that ends in a Korean present-tense action verb (…한다 / …ㄴ다 / …는다) describes
+// an observable learner behaviour even when the verb is not in the curated stem list.
+// Excludes cognitive-state verbs (안다, 이해한다, 인식한다 ...) that are not directly observable.
+const NON_OBSERVABLE_ENDING = /(?:안다|이해한다|인식한다|느낀다|생각한다|여긴다|믿는다|알게\s*된다|이해하게\s*된다)\s*[.。]?\s*$/;
+
+// Korean present-tense action verbs end in `-ㄴ다` (vowel stems: 한다, 든다, 준다, 그린다 ...) or `-는다`
+// (consonant stems: 넣는다, 긋는다 ...). Adjectives and dictionary forms (어렵다, 크다, 많다) do not,
+// so checking the jongseong of the syllable before the final 다 separates observable actions from states.
+function endsWithPresentActionVerb(text) {
+  const match = /([가-힣])다\s*[.。]?\s*$/.exec(text.trim());
+  if (!match) return false;
+  const code = match[1].charCodeAt(0) - 0xac00;
+  const jongseong = code % 28;
+  return jongseong === 4 || match[1] === '는';
+}
+
+// Strict classifier used by the mechanical repair step so that template repair output stays stable.
 export function isLearnerObservableEvidence(item) {
   return (
     typeof item === 'string' &&
@@ -138,6 +155,14 @@ export function isLearnerObservableEvidence(item) {
     OBSERVABLE_SIGNAL.test(item) &&
     !PROVENANCE_SIGNAL.test(item)
   );
+}
+
+// Broader classifier for human/agent-authored overlay evidence: accepts any present-tense action
+// verb ending in addition to the curated stems, but still rejects cognitive-state endings.
+export function isAuthoredObservableEvidence(item) {
+  if (typeof item !== 'string' || item.trim().length < 8 || PROVENANCE_SIGNAL.test(item)) return false;
+  if (OBSERVABLE_SIGNAL.test(item)) return true;
+  return endsWithPresentActionVerb(item) && !NON_OBSERVABLE_ENDING.test(item);
 }
 
 function typeLabel(type) {
@@ -372,7 +397,8 @@ export function computeContentQualityMetrics(topics) {
     englishFacetLabels += [...koreanText.matchAll(/\b(?:concept|practice|reflection)\b/gi)].length;
     undefinedPlaceholders += [...koreanText.matchAll(/\bundefined\b/gi)].length;
     if (!Array.isArray(topic.evidence) || topic.evidence.length < 2) evidenceBelowTwo += 1;
-    nonObservableEvidence += (topic.evidence || []).filter((item) => !isLearnerObservableEvidence(item)).length;
+    const observable = topic.contentKind === 'source-grounded-draft' ? isAuthoredObservableEvidence : isLearnerObservableEvidence;
+    nonObservableEvidence += (topic.evidence || []).filter((item) => !observable(item)).length;
   }
 
   const semanticGroups = duplicateGroups(

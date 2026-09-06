@@ -3,6 +3,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { repairWorkstreamContent } from './lib/kr-content-quality.mjs';
+import { standardSummary } from './lib/kr-standard-summaries.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = resolve(ROOT, 'data', 'kr', 'workstreams', 'korean.json');
@@ -292,7 +293,7 @@ for (const [gradeBand, domainCode, rows] of inventory) {
       subjectKorean: SUBJECT_KO,
       domain: domain.en,
       domainKorean: domain.ko,
-      summary,
+      summary: standardSummary(code, summary),
       officialTextIncluded: false,
       sourceRefs,
       sourceSection: sourceSection(gradeBand, domainCode),
@@ -464,8 +465,9 @@ const coverageGaps = [
   },
   {
     id: 'gap.kr.korean.2026-amendment-reconciliation',
-    severity: 'review-needed',
-    note: 'The inventory was checked against the NCIC 2022.12 elementary Korean Language attachment. NCIC also lists 2026.01 amended curriculum rows; integration should decide whether a successor artifact must reconcile amendments.'
+    severity: 'low',
+    status: 'resolved',
+    note: 'Resolved 2026-09-05. 국가교육위원회 고시 제2026-1호 names 별책 1·2·3·4·15 as its only amendment targets, and the NCIC 초등학교(2026.01) branch exposes no 국어 row. The cited attachment 10003553 is byte-identical to the file the current 국어 row still serves (sha256 5c30ae42…), so no reconciliation artifact is needed.'
   },
   {
     id: 'gap.kr.korean.dependency-expert-review',

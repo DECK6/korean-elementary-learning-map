@@ -2,6 +2,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { repairWorkstreamContent } from './lib/kr-content-quality.mjs';
+import { standardSummary } from './lib/kr-standard-summaries.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const OUT = resolve(ROOT, 'data', 'kr', 'workstreams', 'english-efl.json');
@@ -125,7 +126,7 @@ const standards = [
     officialArea,
     officialAreaKorean,
     domainTags,
-    summary,
+    summary: standardSummary(code, summary),
     sourceTextIncluded: false,
     sourceRefs,
     verificationStatus: 'official-source-checked',

@@ -11,6 +11,13 @@
   lm:hasPrerequisiteAssertion <urn:fixture:pa-e-d-cycle> .
 
 <urn:fixture:pa-d-e-cycle> a lm:PrerequisiteAssertion ;
+  lm:relationIdentifier "kr.dep.982b20c952b363674a86" ;
+  lm:assertionLayer <https://dexa.art/learnmap/vocab/#/RelationLayer/official> ;
+  lm:relationKind <https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite> ;
+  lm:basisKind <https://dexa.art/learnmap/vocab/#/BasisKind/official-source> ;
+  lm:scope <https://dexa.art/learnmap/vocab/#/RelationScope/same-domain> ;
+  lm:reviewStatus <https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed> ;
+  lm:hasSourceLocator <urn:fixture:locator> ;
   lm:identifier "fixture-pa-d-e-cycle" ;
   lm:dependentTopic <urn:fixture:topic-d> ;
   lm:prerequisiteTopic <urn:fixture:topic-e> ;
@@ -22,6 +29,13 @@
   lm:hasVerificationRecord <urn:fixture:vr-assertion> .
 
 <urn:fixture:pa-e-d-cycle> a lm:PrerequisiteAssertion ;
+  lm:relationIdentifier "kr.dep.b55fea712563442ec912" ;
+  lm:assertionLayer <https://dexa.art/learnmap/vocab/#/RelationLayer/official> ;
+  lm:relationKind <https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite> ;
+  lm:basisKind <https://dexa.art/learnmap/vocab/#/BasisKind/official-source> ;
+  lm:scope <https://dexa.art/learnmap/vocab/#/RelationScope/same-domain> ;
+  lm:reviewStatus <https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed> ;
+  lm:hasSourceLocator <urn:fixture:locator> ;
   lm:identifier "fixture-pa-e-d-cycle" ;
   lm:dependentTopic <urn:fixture:topic-e> ;
   lm:prerequisiteTopic <urn:fixture:topic-d> ;

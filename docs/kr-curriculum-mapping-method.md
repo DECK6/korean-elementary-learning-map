@@ -19,7 +19,7 @@ Each standard anchor should include:
 - `verificationStatus`: `official-source-checked`, `public-doc-derived`, or `needs-official-code-check`.
 - `sourceBasis`: one-sentence explanation of how the anchor was derived.
 
-Use `official-source-checked` only when the code belongs to the reviewed official attachment inventory, the record cites that direct PDF, and item-level locator evidence identifies the code. Use `needs-official-code-check` when the subject/domain shape is reliable but exact code verification is pending. Neither status grants reuse rights.
+Use `official-source-checked` only when the code belongs to the reviewed official attachment inventory, the record cites that direct PDF, and item-level locator evidence identifies the code. Verify the **code set digest**, not just the code count: `OFFICIAL_INVENTORY_GATES[<curriculumId>].codeInventorySha256` is what catches a code that was deleted or reassigned by an amendment while the total stayed the same. Use `needs-official-code-check` when the subject/domain shape is reliable but exact code verification is pending. Neither status grants reuse rights.
 
 ## Subject-specific Rules
 
@@ -96,12 +96,14 @@ Model practical arts as Korean elementary life-and-technology learning:
 
 ### 통합교과
 
-Model grades 1–2 integrated subjects as first-school-life anchors:
+Pin the whole subject to one edition: 국가교육위원회 고시 제2026-1호 일부개정 [별책 15] (NCIC attachment 10004214). Never mix editions — the amendment reassigned twelve 즐거운 생활 codes to different achievement standards, so a hybrid inventory produces codes whose meaning silently contradicts the notice.
 
-- 바른 생활: habits, routines, safe participation.
-- 슬기로운 생활: inquiry into self, school, community, seasons.
-- 즐거운 생활: expression, play, cooperation, arts-integrated experience.
-- 건강한 생활: use only the nine current `[2건..]` codes and locations in the accessible 2026 amended Annex 15; do not backfill invented health codes into the base document.
+- 바른 생활 (16 codes): habits, routines, safe participation, organized by the four life questions.
+- 슬기로운 생활 (16 codes): inquiry into self, school, community, seasons, organized by the same four life questions.
+- 건강한 생활 (9 codes, `[2건..]`): 건강한 몸 / 활기찬 움직임 / 창의적 표현. Use only these nine codes; do not backfill invented health codes.
+- 즐거운 생활 (16 codes): 체험 / 표현 / 감상, music- and art-based. `[2즐04-*]` no longer exists. The four life questions do **not** apply to this subject after the amendment.
+
+Every integrated standard carries a structured `sourceLocator` (attachment, SHA-256, PDF page, printed page, code) and an `effectiveFrom` of `2028-03-01`, the notice's elementary enforcement date. `[별책 2] 초등학교 교육과정` (attachment 10004180) is cited as an independent cross-check of the code set.
 
 ## Mapping Rules
 

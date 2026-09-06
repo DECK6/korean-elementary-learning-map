@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import test from 'node:test';
@@ -15,9 +16,12 @@ const ROOT = resolve(import.meta.dirname, '..');
 const execFileAsync = promisify(execFile);
 const INSTANCE_NAMESPACE = 'https://dexa.art/learnmap/#/';
 const VOCABULARY_NAMESPACE = 'https://dexa.art/learnmap/vocab/#/';
+const FACET_NAMESPACE = 'https://dexa.art/learnmap/vocab/facet/';
 const ONTOLOGY_NAMESPACE = 'https://dexa.art/learnmap/ontology#';
+const CORE_NAMESPACE = 'https://dexa.art/learnmap/ontology/k12-core#';
 const STATIC_FILES = [
   'ontology/learning-map.ttl',
+  'ontology/k12-core.ttl',
   'ontology/context.jsonld',
   'ontology/shapes.ttl',
   'ontology/metadata.ttl',
@@ -27,32 +31,56 @@ const GENERATED_FILES = [
   'dist/ontology/learning-map.ttl',
   'dist/ontology/manifest.json',
 ];
-const EXPECTED_SOURCE_COUNTS = {
-  curricula: 11,
-  standards: 620,
-  topics: 1956,
-  dependencies: 1894,
-  clusters: 153,
-  standardMappings: 1956,
-  coverageGaps: 43,
+const readData = (name) => JSON.parse(readFileSync(resolve(ROOT, 'data', 'kr', name), 'utf8'));
+const DATA = {
+  standards: readData('curriculum-standards.json'),
+  topics: readData('topics.json'),
+  dependencies: readData('dependencies.json'),
+  candidateDependencies: readData('dependencies.candidate.json'),
+  clusters: readData('clusters.json'),
 };
+const OFFICIAL_RELATION_COUNT = DATA.dependencies.dependencies.length;
+// Every source-grounded draft topic adds one content source locator.
+const CONTENT_SOURCE_LOCATOR_COUNT = DATA.topics.topics.filter((topic) => topic.contentSourceLocator).length;
+const CANDIDATE_RELATION_COUNT = DATA.candidateDependencies.dependencies.length;
+const ASSERTION_COUNT = OFFICIAL_RELATION_COUNT + CANDIDATE_RELATION_COUNT;
+// Source locators and verification records that do not belong to a prerequisite
+// assertion; every official relation adds exactly one of each, every candidate
+// relation adds exactly one verification record.
+const BASE_SOURCE_LOCATORS = 1424;
+const BASE_VERIFICATION_RECORDS = 4560;
+const EXPECTED_SOURCE_COUNTS = {
+  curricula: DATA.standards.curricula.length,
+  standards: DATA.standards.standardCount,
+  topics: DATA.topics.topics.length,
+  dependencies: OFFICIAL_RELATION_COUNT,
+  candidateDependencies: CANDIDATE_RELATION_COUNT,
+  clusters: DATA.clusters.clusters.length,
+  standardMappings: DATA.standards.standardMappings.length,
+  coverageGaps: DATA.standards.coverageGaps.length,
+};
+// Resource counts the exporter must emit one-for-one from the dataset files.
+const EVIDENCE_CRITERION_COUNT = DATA.topics.topics.reduce(
+  (count, topic) => count + (topic.evidence?.length ?? 0),
+  0,
+);
 const EXPECTED_GRAPH_COUNTS = {
-  AchievementStandard: 620,
-  AssessmentPrompt: 1956,
-  CoverageGap: 43,
-  Curriculum: 11,
+  AchievementStandard: DATA.standards.standardCount,
+  AssessmentPrompt: DATA.topics.topics.length,
+  CoverageGap: DATA.standards.coverageGaps.length,
+  Curriculum: DATA.standards.curricula.length,
   DatasetRelease: 1,
-  EvidenceCriterion: 4056,
+  EvidenceCriterion: EVIDENCE_CRITERION_COUNT,
   GradeBand: 5,
-  LearningCluster: 153,
+  LearningCluster: DATA.clusters.clusters.length,
   LearningDomain: 79,
-  LearningTopic: 1956,
-  PrerequisiteAssertion: 1894,
-  SourceDocument: 17,
-  SourceLocator: 1232,
-  StandardTopicAlignment: 1956,
+  LearningTopic: DATA.topics.topics.length,
+  PrerequisiteAssertion: ASSERTION_COUNT,
+  SourceDocument: DATA.standards.sources.length,
+  SourceLocator: BASE_SOURCE_LOCATORS + OFFICIAL_RELATION_COUNT + CONTENT_SOURCE_LOCATOR_COUNT,
+  StandardTopicAlignment: DATA.standards.standardMappings.length,
   Subject: 12,
-  VerificationRecord: 6455,
+  VerificationRecord: BASE_VERIFICATION_RECORDS + ASSERTION_COUNT,
 };
 
 async function readProjectFile(relativePath) {
@@ -95,30 +123,42 @@ test('P1 static ontology files are loaded byte-identically by the builder', asyn
 });
 
 test('P1 static TBox covers the P0 registry and preserves semantic guardrails', async () => {
-  const [tbox, registryText] = await Promise.all([
+  const [tbox, coreTbox, registryText] = await Promise.all([
     readProjectFile('ontology/learning-map.ttl'),
+    readProjectFile('ontology/k12-core.ttl'),
     readProjectFile('ontology/controlled-vocabulary.json'),
   ]);
   const registry = JSON.parse(registryText);
+  const isCoreTerm = (entry) => entry.namespace === CORE_NAMESPACE;
 
   for (const prefix of ['lm', 'dcterms', 'owl', 'rdf', 'rdfs', 'skos', 'xsd']) {
     assert.match(tbox, new RegExp(`@prefix ${prefix}:`), `missing ${prefix} prefix`);
   }
-  assert.match(tbox, /owl:versionIRI <https:\/\/dexa\.art\/learnmap\/ontology\/0\.3\.0-p3>/);
-  assert.match(tbox, /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.2\.0-p2>/);
+  assert.match(tbox, /owl:versionIRI <https:\/\/dexa\.art\/learnmap\/ontology\/0\.4\.0>/);
+  assert.match(tbox, /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.3\.0-p3>/);
 
   for (const section of ['classes', 'objectProperties', 'datatypeProperties']) {
-    for (const { term } of registry[section]) {
-      assert.match(tbox, new RegExp(`\\blm:${term}\\b`), `${section}.${term}`);
+    for (const entry of registry[section]) {
+      const [source, prefix] = isCoreTerm(entry) ? [coreTbox, 'core'] : [tbox, 'lm'];
+      assert.match(source, new RegExp(`\\b${prefix}:${entry.term}\\b`), `${section}.${entry.term}`);
     }
   }
   for (const scheme of registry.conceptSchemes) {
-    const schemeIri = `https://dexa.art/learnmap/vocab/#/${scheme.term}`;
-    assert.ok(tbox.includes(`<${schemeIri}>`), scheme.term);
+    const inCore = scheme.namespace === CORE_NAMESPACE;
+    const source = inCore ? coreTbox : tbox;
+    const schemeIri = inCore
+      ? `${CORE_NAMESPACE}${scheme.term}Scheme`
+      : (scheme.namespace ?? `https://dexa.art/learnmap/vocab/#/${scheme.term}`);
+    const conceptPrefix = inCore
+      ? `${CORE_NAMESPACE}${scheme.conceptPrefix}`
+      : (scheme.namespace ?? `${schemeIri}/`);
+    const term = (iri) => (inCore ? `core:${iri.slice(CORE_NAMESPACE.length)}` : `<${iri}>`);
+    assert.ok(source.includes(term(schemeIri)), scheme.term);
     for (const concept of scheme.concepts) {
-      assert.ok(tbox.includes(`<${schemeIri}/${concept.term}>`), `${scheme.term}/${concept.term}`);
+      assert.ok(source.includes(term(`${conceptPrefix}${concept.term}`)), `${scheme.term}/${concept.term}`);
     }
   }
+  assert.match(tbox, /owl:imports <https:\/\/dexa\.art\/learnmap\/ontology\/k12-core>/);
 
   assert.match(tbox, /lm:directRequires[\s\S]*?owl:inverseOf lm:unlocks/);
   assert.doesNotMatch(tbox, /lm:directRequires\s+a\s+owl:TransitiveProperty/);
@@ -142,9 +182,11 @@ test('P1 JSON-LD context is local, complete, and IRI-coerces graph relations', a
   assert.equal(context.lmv, 'https://dexa.art/learnmap/vocab/#/');
   assert.equal(context['@import'], undefined);
 
+  assert.equal(context.core, CORE_NAMESPACE);
   for (const { term } of registry.classes) assert.equal(context[term], `lm:${term}`);
-  for (const { term } of [...registry.objectProperties, ...registry.datatypeProperties]) {
-    assert.ok(context[term], `context missing ${term}`);
+  for (const entry of [...registry.objectProperties, ...registry.datatypeProperties]) {
+    const key = entry.namespace === CORE_NAMESPACE ? `core:${entry.term}` : entry.term;
+    assert.ok(context[key], `context missing ${key}`);
   }
   for (const term of [
     'directRequires',
@@ -179,7 +221,10 @@ test('P1 SHACL contract validates qualified assertions and controlled concept IR
   assert.match(shapes, /sh:path lm:alignmentStandard ; sh:minCount 1 ; sh:maxCount 1/);
   assert.match(shapes, /sh:path lm:alignmentKind[\s\S]*?sh:nodeKind sh:IRI/);
   assert.match(shapes, /sh:path lm:confidence[\s\S]*?sh:minInclusive 0 ; sh:maxInclusive 1/);
-  assert.match(shapes, /hasPrerequisiteAssertion \$this ; lm:directRequires \?prerequisite/);
+  assert.match(shapes, /sh:path lm:assertionLayer[\s\S]*?RelationLayer\/official/);
+  assert.match(shapes, /sh:path lm:basisKind[\s\S]*?BasisKind\/official-source/);
+  assert.match(shapes, /sh:path lm:facetKey[\s\S]*?learnmap\/vocab\/facet\/concept/);
+  assert.match(shapes, /only official-layer assertions may also carry a directRequires edge/);
   assert.match(shapes, /hasStandardTopicAlignment \$this ; lm:alignedToStandard \?standard/);
 });
 
@@ -190,8 +235,8 @@ test('P1 metadata keeps format, provenance, version, and rights cleared independ
   }
   assert.match(metadata, /lm:rightsStatus <https:\/\/dexa\.art\/learnmap\/vocab\/#\/RightsStatus\/cleared>/);
   assert.match(metadata, /dcterms:rights "CLEARED/);
-  assert.match(metadata, /dcterms:hasVersion "0\.3\.0-p3"/);
-  assert.match(metadata, /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.2\.0-p2>/);
+  assert.match(metadata, /dcterms:hasVersion "0\.4\.0"/);
+  assert.match(metadata, /owl:priorVersion <https:\/\/dexa\.art\/learnmap\/ontology\/0\.3\.0-p3>/);
   assert.match(metadata, /dcterms:format "text\/turtle", "application\/ld\+json"/);
   assert.match(metadata, /prov:wasDerivedFrom/);
   assert.match(metadata, /lm:officialTextIncluded false/);
@@ -252,7 +297,7 @@ test('P1 ABox preserves qualified prerequisite and standard-alignment assertions
   assert.deepEqual(artifacts.counts.sourceRecords, EXPECTED_SOURCE_COUNTS);
 
   const prerequisiteAssertions = byType('PrerequisiteAssertion');
-  assert.equal(prerequisiteAssertions.length, 1894);
+  assert.equal(prerequisiteAssertions.length, ASSERTION_COUNT);
   assert.ok(
     prerequisiteAssertions.every(
       (node) =>
@@ -264,18 +309,48 @@ test('P1 ABox preserves qualified prerequisite and standard-alignment assertions
         ) &&
         node['lm:prerequisiteReason']?.['@language'] === 'ko' &&
         node['lm:assertionBasis'] &&
-        node['lm:assertionSource'],
+        node['lm:assertionSource'] &&
+        /^kr\.dep\.[0-9a-f]{20}$/.test(node['lm:relationIdentifier']) &&
+        node['lm:assertionLayer']?.['@id'] &&
+        node['lm:relationKind']?.['@id'] &&
+        node['lm:basisKind']?.['@id'] &&
+        node['lm:scope']?.['@id'] &&
+        node['lm:reviewStatus']?.['@id'],
     ),
+  );
+
+  // Only the official layer materializes the binary prerequisite view.
+  const officialAssertions = prerequisiteAssertions.filter((node) =>
+    node['lm:assertionLayer']['@id'].endsWith('/RelationLayer/official'),
+  );
+  assert.equal(officialAssertions.length, OFFICIAL_RELATION_COUNT);
+  assert.ok(
+    officialAssertions.every(
+      (node) =>
+        node['lm:basisKind']['@id'].endsWith('/BasisKind/official-source') &&
+        node['lm:relationKind']['@id'].endsWith('/RelationKind/required-prerequisite') &&
+        node['lm:hasSourceLocator']?.['@id'],
+    ),
+  );
+  assert.ok(
+    prerequisiteAssertions
+      .filter((node) => node['lm:assertionLayer']['@id'].endsWith('/RelationLayer/pedagogical-candidate'))
+      .every(
+        (node) =>
+          !node['lm:basisKind']['@id'].endsWith('/BasisKind/official-source') &&
+          node['lm:relationKind']['@id'].endsWith('/RelationKind/recommended-before') &&
+          node['lm:reviewStatus']['@id'].endsWith('/ReviewStatus/candidate'),
+      ),
   );
 
   const directPrerequisiteCount = byType('LearningTopic').reduce(
     (count, node) => count + (node['lm:directRequires']?.length ?? 0),
     0,
   );
-  assert.equal(directPrerequisiteCount, 1894);
+  assert.equal(directPrerequisiteCount, OFFICIAL_RELATION_COUNT);
 
   const alignments = byType('StandardTopicAlignment');
-  assert.equal(alignments.length, 1956);
+  assert.equal(alignments.length, EXPECTED_GRAPH_COUNTS.StandardTopicAlignment);
   assert.ok(
     alignments.every(
       (node) =>
@@ -294,7 +369,7 @@ test('P1 ABox preserves qualified prerequisite and standard-alignment assertions
     (count, node) => count + (node['lm:alignedToStandard']?.length ?? 0),
     0,
   );
-  assert.equal(directAlignmentCount, 1956);
+  assert.equal(directAlignmentCount, EXPECTED_GRAPH_COUNTS.StandardTopicAlignment);
 });
 
 test('P1 ABox exports the complete source profile with rights and provenance intact', async () => {
@@ -305,14 +380,14 @@ test('P1 ABox exports the complete source profile with rights and provenance int
 
   assert.deepEqual(artifacts.counts.graphResources, EXPECTED_GRAPH_COUNTS);
   assert.equal(byType('DatasetRelease').length, 1);
-  assert.equal(byType('Curriculum').length, 11);
-  assert.equal(byType('AchievementStandard').length, 620);
-  assert.equal(byType('LearningTopic').length, 1956);
-  assert.equal(byType('LearningCluster').length, 153);
-  assert.equal(byType('EvidenceCriterion').length, 4056);
-  assert.equal(byType('AssessmentPrompt').length, 1956);
-  assert.equal(byType('SourceDocument').length, 17);
-  assert.equal(byType('CoverageGap').length, 43);
+  assert.equal(byType('Curriculum').length, EXPECTED_GRAPH_COUNTS.Curriculum);
+  assert.equal(byType('AchievementStandard').length, EXPECTED_GRAPH_COUNTS.AchievementStandard);
+  assert.equal(byType('LearningTopic').length, EXPECTED_GRAPH_COUNTS.LearningTopic);
+  assert.equal(byType('LearningCluster').length, EXPECTED_GRAPH_COUNTS.LearningCluster);
+  assert.equal(byType('EvidenceCriterion').length, EXPECTED_GRAPH_COUNTS.EvidenceCriterion);
+  assert.equal(byType('AssessmentPrompt').length, EXPECTED_GRAPH_COUNTS.AssessmentPrompt);
+  assert.equal(byType('SourceDocument').length, EXPECTED_GRAPH_COUNTS.SourceDocument);
+  assert.equal(byType('CoverageGap').length, EXPECTED_GRAPH_COUNTS.CoverageGap);
 
   const ids = graph.map((node) => node['@id']);
   assert.equal(new Set(ids).size, ids.length, 'all generated resource IRIs must be unique');
@@ -323,9 +398,9 @@ test('P1 ABox exports the complete source profile with rights and provenance int
   const release = byType('DatasetRelease')[0];
   assert.equal(release['lm:officialTextIncluded'], false);
   assert.ok(release['lm:rightsStatus']['@id'].endsWith('/RightsStatus/cleared'));
-  assert.equal(release['lm:reportsCoverageGap'].length, 43);
-  assert.equal(release['lm:containsTopic'].length, 1956);
-  assert.equal(release['lm:hasCluster'].length, 153);
+  assert.equal(release['lm:reportsCoverageGap'].length, EXPECTED_GRAPH_COUNTS.CoverageGap);
+  assert.equal(release['lm:containsTopic'].length, EXPECTED_GRAPH_COUNTS.LearningTopic);
+  assert.equal(release['lm:hasCluster'].length, EXPECTED_GRAPH_COUNTS.LearningCluster);
 
   assert.ok(
     byType('SourceDocument').every(
@@ -363,6 +438,10 @@ test('P1 ABox exports the complete source profile with rights and provenance int
         node['lm:gapCategory']?.['@id'] &&
         node['lm:gapSeverity']?.['@id'] &&
         node['lm:gapDescription']?.['@language'] === 'ko' &&
+        ['high', 'medium', 'low', 'intentional'].some((term) =>
+          node['lm:gapSeverity']['@id'].endsWith(`/GapSeverity/${term}`),
+        ) &&
+        ['open', 'needs-review', 'resolved', 'intentional', 'out-of-scope'].includes(node['lm:gapStatus']) &&
         typeof node['lm:sourceGapSeverityPresent'] === 'boolean',
     ),
   );
@@ -383,14 +462,14 @@ test('P1 generated JSON-LD, Turtle, and manifest are byte-identical across build
     assert.match(ttl, new RegExp(`@prefix ${prefix}:`), `generated Turtle missing ${prefix}`);
   }
   assert.doesNotMatch(ttl, /\bundefined\b|\[object Object\]/);
-  assert.match(ttl, /<https:\/\/dexa\.art\/learnmap\/#\/release\/kr-full-depth-v0\.4>/);
+  assert.match(ttl, /<https:\/\/dexa\.art\/learnmap\/#\/release\/kr-full-depth-v0\.5>/);
 
   const manifest = JSON.parse(first.files['dist/ontology/manifest.json']);
   assert.equal(manifest.formatVersion, 3);
   assert.equal(manifest.phase, 'P3');
-  assert.equal(manifest.ontologyVersion, '0.3.0-p3');
-  assert.equal(manifest.priorOntologyVersion, '0.2.0-p2');
-  assert.equal(manifest.datasetRelease, 'kr-full-depth-v0.4');
+  assert.equal(manifest.ontologyVersion, '0.4.0');
+  assert.equal(manifest.priorOntologyVersion, '0.3.0-p3');
+  assert.equal(manifest.datasetRelease, 'kr-full-depth-v0.5');
   assert.equal(manifest.generator, 'scripts/build-ontology.mjs');
   assert.deepEqual(manifest.sourceRecords, EXPECTED_SOURCE_COUNTS);
   assert.deepEqual(manifest.graphResources, EXPECTED_GRAPH_COUNTS);
@@ -428,6 +507,8 @@ test('P1 ABox has unique resources, no dangling instance IRIs, and no forbidden 
         assert.ok(
           id.startsWith(INSTANCE_NAMESPACE) ||
             id.startsWith(VOCABULARY_NAMESPACE) ||
+            id.startsWith(FACET_NAMESPACE) ||
+            id.startsWith(CORE_NAMESPACE) ||
             id.startsWith(ONTOLOGY_NAMESPACE),
           id,
         );
@@ -452,10 +533,12 @@ test('P1 qualified assertions exactly agree with simple navigation relations', a
     ),
   );
   const qualifiedRequires = new Set(
-    byType(graph, 'PrerequisiteAssertion').map(
-      (assertion) =>
-        `${assertion['lm:dependentTopic']['@id']} -> ${assertion['lm:prerequisiteTopic']['@id']}`,
-    ),
+    byType(graph, 'PrerequisiteAssertion')
+      .filter((assertion) => assertion['lm:assertionLayer']['@id'].endsWith('/RelationLayer/official'))
+      .map(
+        (assertion) =>
+          `${assertion['lm:dependentTopic']['@id']} -> ${assertion['lm:prerequisiteTopic']['@id']}`,
+      ),
   );
   assert.deepEqual(directRequires, qualifiedRequires);
 

@@ -16,30 +16,69 @@ EXPECTED_TOOLS = {
     "owlrl": "7.1.4",
 }
 
+
+
+def _relation_layer_counts():
+    official = json.loads((ROOT / "data" / "kr" / "dependencies.json").read_text(encoding="utf-8"))
+    candidate = json.loads(
+        (ROOT / "data" / "kr" / "dependencies.candidate.json").read_text(encoding="utf-8")
+    )
+    return len(official["dependencies"]), len(candidate["dependencies"])
+
+
+def _dataset_counts():
+    standards = json.loads(
+        (ROOT / "data" / "kr" / "curriculum-standards.json").read_text(encoding="utf-8")
+    )
+    topics = json.loads((ROOT / "data" / "kr" / "topics.json").read_text(encoding="utf-8"))
+    clusters = json.loads((ROOT / "data" / "kr" / "clusters.json").read_text(encoding="utf-8"))
+    return {
+        "curricula": len(standards["curricula"]),
+        "standards": standards["standardCount"],
+        "sources": len(standards["sources"]),
+        "standardMappings": len(standards["standardMappings"]),
+        "coverageGaps": len(standards["coverageGaps"]),
+        "topics": len(topics["topics"]),
+        "clusters": len(clusters["clusters"]),
+        "evidenceCriteria": sum(len(topic.get("evidence") or []) for topic in topics["topics"]),
+        "contentSourceLocators": sum(1 for topic in topics["topics"] if topic.get("contentSourceLocator")),
+    }
+
+
+OFFICIAL_RELATION_COUNT, CANDIDATE_RELATION_COUNT = _relation_layer_counts()
+ASSERTION_COUNT = OFFICIAL_RELATION_COUNT + CANDIDATE_RELATION_COUNT
+DATASET_COUNTS = _dataset_counts()
+# Source locators and verification records that do not belong to a prerequisite
+# assertion; every official relation adds one of each, every candidate relation
+# adds one verification record, and every source-grounded draft adds one
+# content source locator.
+BASE_SOURCE_LOCATORS = 1424
+BASE_VERIFICATION_RECORDS = 4560
+
 EXPECTED_GRAPH_RESOURCES = {
-    "AchievementStandard": 620,
-    "AssessmentPrompt": 1956,
-    "CoverageGap": 43,
-    "Curriculum": 11,
+    "AchievementStandard": DATASET_COUNTS["standards"],
+    "AssessmentPrompt": DATASET_COUNTS["topics"],
+    "CoverageGap": DATASET_COUNTS["coverageGaps"],
+    "Curriculum": DATASET_COUNTS["curricula"],
     "DatasetRelease": 1,
-    "EvidenceCriterion": 4056,
+    "EvidenceCriterion": DATASET_COUNTS["evidenceCriteria"],
     "GradeBand": 5,
-    "LearningCluster": 153,
+    "LearningCluster": DATASET_COUNTS["clusters"],
     "LearningDomain": 79,
-    "LearningTopic": 1956,
-    "PrerequisiteAssertion": 1894,
-    "SourceDocument": 17,
-    "SourceLocator": 1232,
-    "StandardTopicAlignment": 1956,
+    "LearningTopic": DATASET_COUNTS["topics"],
+    "PrerequisiteAssertion": ASSERTION_COUNT,
+    "SourceDocument": DATASET_COUNTS["sources"],
+    "SourceLocator": BASE_SOURCE_LOCATORS + OFFICIAL_RELATION_COUNT + DATASET_COUNTS["contentSourceLocators"],
+    "StandardTopicAlignment": DATASET_COUNTS["standardMappings"],
     "Subject": 12,
-    "VerificationRecord": 6455,
+    "VerificationRecord": BASE_VERIFICATION_RECORDS + ASSERTION_COUNT,
 }
 
 EXPECTED_RELATIONS = {
-    "alignedToStandard": 1956,
-    "directRequires": 1894,
-    "indirectRequires": 53656,
-    "unlocks": 1894,
+    "alignedToStandard": DATASET_COUNTS["standardMappings"],
+    # Only the official layer materializes directRequires / unlocks.
+    "directRequires": OFFICIAL_RELATION_COUNT,
+    "unlocks": OFFICIAL_RELATION_COUNT,
 }
 
 EXPECTED_ADVERSARIAL = {
@@ -50,6 +89,7 @@ EXPECTED_ADVERSARIAL = {
     "missing-inverse.ttl",
     "missing-qualifier.ttl",
     "missing-required-cardinality.ttl",
+    "missing-content-locator.ttl",
     "qualifier-edge-mismatch.ttl",
     "source-status-incoherence.ttl",
 }
@@ -113,7 +153,10 @@ class OntologyP2ReportTest(unittest.TestCase):
 
     def test_counts_and_materialized_relations(self):
         self.assertEqual(self.report["counts"]["graphResources"], EXPECTED_GRAPH_RESOURCES)
-        self.assertEqual(self.report["counts"]["totalGraphResources"], 20446)
+        self.assertEqual(
+            self.report["counts"]["totalGraphResources"],
+            sum(EXPECTED_GRAPH_RESOURCES.values()),
+        )
         for relation, count in EXPECTED_RELATIONS.items():
             self.assertEqual(self.report["counts"]["relations"][relation]["count"], count)
             self.assertEqual(self.report["integrity"]["relations"]["counts"][relation], count)
@@ -127,12 +170,31 @@ class OntologyP2ReportTest(unittest.TestCase):
     def test_competency_queries_have_expected_results(self):
         queries = self.report["competencyQueries"]
         self.assertTrue(queries["pass"])
-        self.assertEqual(queries["queryCount"], 15)
-        self.assertEqual(queries["results"]["cq-05-indirect-prerequisites.rq"]["rowCount"], 53656)
-        self.assertEqual(queries["results"]["cq-11-coverage-gaps.rq"]["rowCount"], 19)
-        self.assertEqual(queries["results"]["cq-12-rights-hold.rq"]["rowCount"], 18)
-        self.assertEqual(queries["results"]["cq-14-alignment-round-trip.rq"]["rowCount"], 1956)
-        self.assertEqual(queries["results"]["cq-15-prerequisite-round-trip.rq"]["rowCount"], 1894)
+        self.assertEqual(queries["queryCount"], 18)
+        self.assertEqual(
+            queries["results"]["cq-04-direct-prerequisites.rq"]["rowCount"],
+            OFFICIAL_RELATION_COUNT,
+        )
+        self.assertEqual(
+            queries["results"]["cq-06-unlocks.rq"]["rowCount"], OFFICIAL_RELATION_COUNT
+        )
+        # Every source document plus the dataset release itself must carry a rights status.
+        self.assertEqual(
+            queries["results"]["cq-12-rights-hold.rq"]["rowCount"],
+            DATASET_COUNTS["sources"] + 1,
+        )
+        self.assertEqual(
+            queries["results"]["cq-14-alignment-round-trip.rq"]["rowCount"],
+            DATASET_COUNTS["standardMappings"],
+        )
+        self.assertEqual(
+            queries["results"]["cq-15-prerequisite-round-trip.rq"]["rowCount"], ASSERTION_COUNT
+        )
+        self.assertEqual(queries["results"]["cq-16-relation-layers.rq"]["rowCount"], 4)
+        # Two content kinds; every topic carries exactly one.
+        self.assertEqual(queries["results"]["cq-17-content-kinds.rq"]["rowCount"], 2)
+        # The core-vocabulary query text is shared with the secondary repository.
+        self.assertGreater(queries["results"]["cq-18-k12-core-vocabulary.rq"]["rowCount"], 0)
 
     def test_fixtures_and_round_trips(self):
         fixtures = self.report["fixtures"]

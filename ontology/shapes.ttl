@@ -1,4 +1,5 @@
 @prefix lm: <https://dexa.art/learnmap/ontology#> .
+@prefix core: <https://dexa.art/learnmap/ontology/k12-core#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -194,6 +195,34 @@ lm:LearningTopicShape a sh:NodeShape ;
   sh:property [ sh:path lm:hasAssessmentPrompt ; sh:minCount 1 ; sh:class lm:AssessmentPrompt ] ;
   sh:property [ sh:path lm:hasStandardTopicAlignment ; sh:minCount 1 ; sh:class lm:StandardTopicAlignment ] ;
   sh:property [ sh:path lm:officialTextIncluded ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ; sh:hasValue false ] ;
+  sh:property [
+    sh:path lm:decompositionKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/DecompositionKind/standard-core>
+      <https://dexa.art/learnmap/vocab/#/DecompositionKind/subject-facet>
+    )
+  ] ;
+  sh:property [
+    sh:path lm:facetKey ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/facet/concept>
+      <https://dexa.art/learnmap/vocab/facet/procedure>
+      <https://dexa.art/learnmap/vocab/facet/representation>
+      <https://dexa.art/learnmap/vocab/facet/application>
+      <https://dexa.art/learnmap/vocab/facet/inquiry>
+      <https://dexa.art/learnmap/vocab/facet/communication>
+      <https://dexa.art/learnmap/vocab/facet/reflection>
+      <https://dexa.art/learnmap/vocab/facet/core>
+    )
+  ] ;
+  sh:property [ sh:path lm:standardKey ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:sourceStandardCode ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] .
 
 lm:LearningClusterShape a sh:NodeShape ;
@@ -234,7 +263,81 @@ lm:PrerequisiteAssertionShape a sh:NodeShape ;
   sh:property [ sh:path lm:legacyPrerequisiteStrength ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:in ( "hard" "soft" ) ] ;
   sh:property [ sh:path lm:assertionBasis ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
   sh:property [ sh:path lm:assertionSource ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path lm:relationIdentifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:pattern "^kr[.]dep[.][0-9a-f]{20}$" ] ;
+  sh:property [
+    sh:path lm:assertionLayer ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/RelationLayer/official>
+      <https://dexa.art/learnmap/vocab/#/RelationLayer/pedagogical-candidate>
+    )
+  ] ;
+  sh:property [
+    sh:path lm:relationKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite>
+      <https://dexa.art/learnmap/vocab/#/RelationKind/recommended-before>
+    )
+  ] ;
+  sh:property [
+    sh:path lm:basisKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/BasisKind/official-source>
+      <https://dexa.art/learnmap/vocab/#/BasisKind/official-code-order>
+      <https://dexa.art/learnmap/vocab/#/BasisKind/decomposition-order>
+      <https://dexa.art/learnmap/vocab/#/BasisKind/repository-authored>
+      <https://dexa.art/learnmap/vocab/#/BasisKind/expert-authored>
+    )
+  ] ;
+  sh:property [
+    sh:path lm:scope ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/RelationScope/same-standard>
+      <https://dexa.art/learnmap/vocab/#/RelationScope/same-domain>
+      <https://dexa.art/learnmap/vocab/#/RelationScope/same-subject>
+      <https://dexa.art/learnmap/vocab/#/RelationScope/cross-school-level>
+    )
+  ] ;
+  sh:property [
+    sh:path lm:reviewStatus ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/ReviewStatus/candidate>
+      <https://dexa.art/learnmap/vocab/#/ReviewStatus/internal-reviewed>
+      <https://dexa.art/learnmap/vocab/#/ReviewStatus/subject-expert-reviewed>
+      <https://dexa.art/learnmap/vocab/#/ReviewStatus/classroom-reviewed>
+    )
+  ] ;
   sh:property [ sh:path lm:hasVerificationRecord ; sh:minCount 1 ; sh:maxCount 1 ; sh:class lm:VerificationRecord ] ;
+  sh:sparql [
+    sh:message "official-source basis, required-prerequisite kind, a source locator, and an internal-or-better review status belong to the official layer only."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      SELECT $this WHERE {
+        $this lm:assertionLayer ?layer ; lm:basisKind ?basis ; lm:relationKind ?kind ; lm:reviewStatus ?review .
+        BIND(?layer = <https://dexa.art/learnmap/vocab/#/RelationLayer/official> AS ?official)
+        FILTER (
+          (?basis = <https://dexa.art/learnmap/vocab/#/BasisKind/official-source>) != ?official ||
+          (?kind = <https://dexa.art/learnmap/vocab/#/RelationKind/required-prerequisite>) != ?official ||
+          (?review = <https://dexa.art/learnmap/vocab/#/ReviewStatus/candidate>) = ?official ||
+          (?official && NOT EXISTS { $this lm:hasSourceLocator ?locator })
+        )
+      }
+    """
+  ] ;
   sh:sparql [
     sh:message "Legacy hard/soft strength must agree with normalized required/recommended strength."@en ;
     sh:select """
@@ -247,14 +350,17 @@ lm:PrerequisiteAssertionShape a sh:NodeShape ;
     """
   ] ;
   sh:sparql [
-    sh:message "A prerequisite assertion must be linked from its dependent topic, and its binary directRequires edge must agree with the authoritative assertion."@en ;
+    sh:message "A prerequisite assertion must be linked from its dependent topic; only official-layer assertions may also carry a directRequires edge."@en ;
     sh:select """
       PREFIX lm: <https://dexa.art/learnmap/ontology#>
       SELECT $this WHERE {
-        $this lm:dependentTopic ?dependent ; lm:prerequisiteTopic ?prerequisite .
-        FILTER NOT EXISTS {
-          ?dependent lm:hasPrerequisiteAssertion $this ; lm:directRequires ?prerequisite .
-        }
+        $this lm:dependentTopic ?dependent ; lm:prerequisiteTopic ?prerequisite ; lm:assertionLayer ?layer .
+        BIND(?layer = <https://dexa.art/learnmap/vocab/#/RelationLayer/official> AS ?official)
+        FILTER (
+          NOT EXISTS { ?dependent lm:hasPrerequisiteAssertion $this } ||
+          (?official && NOT EXISTS { ?dependent lm:directRequires ?prerequisite }) ||
+          (!?official && EXISTS { ?dependent lm:directRequires ?prerequisite })
+        )
       }
     """
   ] .
@@ -382,4 +488,108 @@ lm:CoverageGapShape a sh:NodeShape ;
   sh:property [ sh:path lm:gapCategory ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
   sh:property [ sh:path lm:gapSeverity ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
   sh:property [ sh:path lm:sourceGapSeverityPresent ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
+  sh:property [
+    sh:path lm:gapSeverity ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/vocab/#/GapSeverity/high>
+      <https://dexa.art/learnmap/vocab/#/GapSeverity/medium>
+      <https://dexa.art/learnmap/vocab/#/GapSeverity/low>
+      <https://dexa.art/learnmap/vocab/#/GapSeverity/intentional>
+    )
+  ] ;
+  sh:property [
+    sh:path lm:gapStatus ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+    sh:in ( "open" "needs-review" "resolved" "intentional" "out-of-scope" )
+  ] ;
   sh:property [ sh:path lm:gapDescription ; sh:minCount 1 ; sh:uniqueLang true ] .
+
+## K-12 core content shapes (ontology 0.4.0)
+## contentKind, misconceptions, and the content source locator are core-namespace terms shared with
+## the secondary map. A source-grounded draft must name the passage it was written from.
+
+core:TopicContentShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:contentKind ;
+  sh:property [
+    sh:path core:contentKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#content-mechanical-derivative>
+      <https://dexa.art/learnmap/ontology/k12-core#content-source-grounded-draft>
+    )
+  ] ;
+  sh:property [ sh:path core:misconception ; sh:datatype rdf:langString ] ;
+  sh:property [ sh:path core:contentSourceLocator ; sh:maxCount 1 ; sh:class lm:SourceLocator ] ;
+  sh:or (
+    [ sh:property [
+        sh:path core:contentKind ;
+        sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#content-mechanical-derivative> ] ]
+    [ sh:property [ sh:path core:contentSourceLocator ; sh:minCount 1 ; sh:class lm:SourceLocator ] ]
+  ) ;
+  sh:message "A source-grounded draft topic must carry exactly one contentSourceLocator."@en .
+
+core:FacetProjectionShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:facetKey ;
+  sh:property [
+    sh:path core:facetKey ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#facet-concept>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-procedure>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-representation>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-application>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-inquiry>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-communication>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-reflection>
+      <https://dexa.art/learnmap/ontology/k12-core#facet-core>
+    )
+  ] .
+
+core:LayerProjectionShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:layerConcept ;
+  sh:property [
+    sh:path core:layerConcept ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#layer-official>
+      <https://dexa.art/learnmap/ontology/k12-core#layer-pedagogical-candidate>
+    )
+  ] .
+
+## Source locator kind. STAS record locators are vocabulary-only in this release: the 2026-09-05
+## source assessment allows recording where a STAS record was read, never its text.
+core:SourceLocatorKindShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:locatorKind ;
+  sh:property [
+    sh:path core:locatorKind ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#locator-printed-page>
+      <https://dexa.art/learnmap/ontology/k12-core#locator-stas-record>
+    )
+  ] ;
+  sh:or (
+    [ sh:property [
+        sh:path core:locatorKind ;
+        sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#locator-printed-page> ] ;
+      sh:property [ sh:path lm:locatorValue ; sh:minCount 1 ] ]
+    [ sh:property [
+        sh:path core:locatorKind ;
+        sh:hasValue <https://dexa.art/learnmap/ontology/k12-core#locator-stas-record> ] ;
+      sh:property [ sh:path core:stasEndpoint ; sh:minCount 1 ; sh:maxCount 1 ] ;
+      sh:property [ sh:path core:stasRecordId ; sh:minCount 1 ; sh:maxCount 1 ] ;
+      sh:property [ sh:path core:collectedAt ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+      sh:property [ sh:path core:fileSha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[a-f0-9]{64}$" ] ]
+  ) ;
+  sh:message "A STAS record locator must carry endpoint, acvmtStdSeq, collection date, and response hash."@en .
