@@ -5,7 +5,7 @@
 - Ontology version: `0.4.0`
 - Prior ontology version: `0.3.0-p3`
 - Stable ontology IRI: `https://dexa.art/learnmap/ontology`
-- Terms: 16 classes, 34 object properties, 63 datatype properties, 16 concept schemes, 63 concepts
+- Terms: 16 classes, 36 object properties, 63 datatype properties, 17 concept schemes, 66 concepts
 - Lifecycle default: `active`; explicitly deprecated terms: 0
 - Deprecation policy: `ontology/deprecation-policy.md`
 - Replacement registry: `ontology/replacements.json`; active replacement entries: 0
@@ -68,6 +68,8 @@ Definitions describe this repository model. They do not assert an official MOE/N
 | `reviewStatus` | Human review reached for the relation record. | PrerequisiteAssertion -> ReviewStatus concept | PrerequisiteAssertion | skos:Concept | PrerequisiteAssertion exactly 1 | active | — |
 | `decompositionKind` | Whether a topic represents a whole achievement standard or one subject facet of it. | LearningTopic -> DecompositionKind concept | LearningTopic | skos:Concept | LearningTopic exactly 1 | active | — |
 | `facetKey` | Shared K-12 facet of the topic, drawn from the common eight-concept facet scheme. | LearningTopic -> Facet concept | LearningTopic | skos:Concept | LearningTopic exactly 1 | active | — |
+| `topicRole` | Whether a topic anchors its achievement standard, carries one facet of it, or is an auxiliary facet a tutor may skip. | LearningTopic -> TopicRole concept | LearningTopic | skos:Concept | LearningTopic exactly 1; exactly one anchor per achievement standard | active | — |
+| `collapseInto` | The sibling topic of the same achievement standard a tutor shows instead of this one; asserted only on auxiliary topics. | LearningTopic -> LearningTopic | LearningTopic | LearningTopic | LearningTopic 0..1, exactly 1 for an auxiliary topic | active | — |
 | `contentKind` | Whether a topic's evidence, prompt, and misconceptions are a mechanical derivative of the standard record or an authored source-grounded draft. | LearningTopic -> ContentKind concept | LearningTopic | skos:Concept | LearningTopic exactly 1 | active | — |
 | `contentSourceLocator` | The source passage an authored source-grounded draft was written from; required whenever contentKind is source-grounded-draft. | LearningTopic -> SourceLocator | LearningTopic | SourceLocator | LearningTopic 0..1, exactly 1 for a source-grounded draft | active | — |
 | `locatorKind` | Selects which locator fields apply: a printed page in a published document, or a record read from the STAS achievement-standard service. | SourceLocator -> SourceLocatorKind concept | SourceLocator | skos:Concept | SourceLocator exactly 1 where asserted | active | — |
@@ -298,6 +300,16 @@ Eight facets shared by the Korean elementary and secondary learning maps; every 
 | `communication` | Expressing and interacting through language. | active | — |
 | `reflection` | Reflecting on, valuing, and transferring learning. | active | — |
 | `core` | The whole achievement standard rather than one facet of it. | active | — |
+
+### TopicRole
+
+How a topic stands in relation to the achievement standard it decomposes. Status: `active`.
+
+| Concept | Definition | Status | Replacement |
+| --- | --- | --- | --- |
+| `anchor` | Stands for the whole achievement standard; exactly one per standard, and the endpoint official relations expand to. | active | — |
+| `facet` | Carries one facet of the achievement standard alongside the anchor. | active | — |
+| `auxiliary` | A facet an authored collapse rule judged artificial; a tutor shows the sibling named by collapseInto instead. | active | — |
 
 ### ContentKind
 

@@ -28,17 +28,17 @@ Verification was run with Node `20.11.1`-compatible tooling and the local `.venv
 
 | Gate | Command(s) | Result |
 | ---: | --- | --- |
-| G1 | `npm run build` | PASS — 11 curricula, 620 standards, 1,956 topics, 416 official + 1,875 candidate relations, 152 clusters |
-| G2 | `npm test` | PASS — 96/96 Node regression, relation-layer contract, ontology-governance, artifact, and CI-contract tests |
+| G1 | `npm run build` | PASS — 11 curricula, 620 standards, 1,956 topics, 416 official + 1,877 candidate relations, 152 clusters |
+| G2 | `npm test` | PASS — 111/111 Node regression, relation-layer contract, ontology-governance, artifact, and CI-contract tests |
 | G3 | `npm run validate` | PASS — schema, official inventory, source locator, DAG, reference, and data-manifest checks |
 | G4 | `npm run check:content` | PASS — all reported final/workstream defect metrics were zero |
 | G5 | `npm run validate:ontology` | PASS — complete controlled vocabulary and P3 release metadata |
 | G6 | `npm run check:ontology:artifacts` and `npm run check:ontology:release` | PASS — tracked generated files were byte-current and all release-file SHA-256 values matched |
-| G7 | local `.venv-ontology`: `scripts/validate-ontology.py` and `python -m unittest discover tests -p 'test_ontology_p2.py'` | PASS — Python `3.14.7`; rdflib `7.1.4`, pyshacl `0.30.1`, owlrl `7.1.4`; 5/5 Python tests; 0 full-data SHACL violations; bounded OWL-RL pass; 18/18 competency queries; 10/10 adversarial fixtures rejected as expected |
+| G7 | local `.venv-ontology`: `scripts/validate-ontology.py` and `python -m unittest discover tests -p 'test_ontology_p2.py'` | PASS — Python `3.14.7`; rdflib `7.1.4`, pyshacl `0.30.1`, owlrl `7.1.4`; 5/5 Python tests; 0 full-data SHACL violations; bounded OWL-RL pass; 19/19 competency queries; 10/10 adversarial fixtures rejected as expected |
 
 ## Exact graph evidence
 
-The deterministic graph contains 23,660 instance resources and 267,757 locally verified triples in each isomorphic JSON-LD and Turtle serialization. Snapshot counts are 11 curricula, 620 standards, 1,956 topics, 2,291 prerequisite assertions (416 official, 1,875 pedagogical-candidate), 1,956 standard-topic alignments, 152 clusters, and 46 retained coverage gaps. Only the official layer materializes binary prerequisite views: 416 `directRequires`, 416 `unlocks`, 97 `indirectRequires`, and 1,956 `alignedToStandard` pairs. The bounded OWL-RL check expanded 1,160 input triples to a 3,398-triple closure with no explicit contradiction or unsatisfiable named class.
+The deterministic graph contains 23,664 instance resources and 269,801 locally verified triples in each isomorphic JSON-LD and Turtle serialization. Snapshot counts are 11 curricula, 620 standards, 1,956 topics, 2,293 prerequisite assertions (416 official, 1,877 pedagogical-candidate), 1,956 standard-topic alignments, 152 clusters, and 46 retained coverage gaps. Only the official layer materializes binary prerequisite views: 416 `directRequires`, 416 `unlocks`, 97 `indirectRequires`, and 1,956 `alignedToStandard` pairs. The bounded OWL-RL check expanded 1,160 input triples to a 3,398-triple closure with no explicit contradiction or unsatisfiable named class.
 
 ## What 0.4.0 adds over 0.3.0-p3
 
@@ -53,7 +53,7 @@ The exact byte sizes and SHA-256 values for every ontology source, query, fixtur
 
 ## Provenance and limits
 
-The learning-graph approach was inspired by `withmarbleapp/os-taxonomy` / Marble Skill Taxonomy. The Korean curriculum records, subject model, 620-standard mapping, 1,956 topics, 416 official and 1,875 candidate edges, ontology conversion, generators, validators, and audit evidence were built independently. The release is not a Marble translation or official derivative.
+The learning-graph approach was inspired by `withmarbleapp/os-taxonomy` / Marble Skill Taxonomy. The Korean curriculum records, subject model, 620-standard mapping, 1,956 topics, 416 official and 1,877 candidate edges, ontology conversion, generators, validators, and audit evidence were built independently. The release is not a Marble translation or official derivative.
 
 Coverage, format validation, review, and rights are separate axes. Passing the formal gates does not by itself determine the official-source rights status, imply official endorsement, convert suggested prerequisite relations into universal learning laws, or authorize learner diagnosis.
 

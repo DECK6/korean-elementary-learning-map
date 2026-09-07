@@ -14,6 +14,10 @@ export const FACET_KEYS = [
   'core',
 ];
 
+// Topic roles (contract section 8). Every achievement standard has exactly one anchor; the topics a
+// facet-collapse rule marks are auxiliary, and everything else is a plain facet.
+export const TOPIC_ROLES = ['anchor', 'facet', 'auxiliary'];
+
 export const RELATION_ENUMS = {
   layer: ['official', 'pedagogical-candidate'],
   relationKind: ['required-prerequisite', 'recommended-before'],
@@ -28,6 +32,20 @@ export const RELATION_ENUMS = {
   reviewStatus: ['candidate', 'internal-reviewed', 'subject-expert-reviewed', 'classroom-reviewed'],
   decompositionKind: ['standard-core', 'subject-facet'],
   facetKey: FACET_KEYS,
+  topicRole: TOPIC_ROLES,
+};
+
+// Elementary topic `type` must agree with the facet the id suffix already declares (contract
+// section 9). application and inquiry have no type of their own; both are carried out procedurally.
+export const TYPES_BY_FACET_KEY = {
+  concept: ['CONCEPTUAL'],
+  procedure: ['PROCEDURAL'],
+  representation: ['REPRESENTATIONAL'],
+  communication: ['LANGUAGE'],
+  reflection: ['META'],
+  application: ['PROCEDURAL'],
+  inquiry: ['PROCEDURAL'],
+  core: ['CONCEPTUAL', 'PROCEDURAL', 'REPRESENTATIONAL', 'LANGUAGE', 'META'],
 };
 
 export const COVERAGE_GAP_SEVERITIES = ['high', 'medium', 'low', 'intentional'];
@@ -96,6 +114,19 @@ export function deriveFacetKey(topic) {
   const bySuffix = SUFFIX_FACET_KEYS.get(suffix);
   if (bySuffix) return bySuffix;
   return TYPE_FACET_KEYS.get(type) ?? 'concept';
+}
+
+/**
+ * Anchor selection (contract section 8): the `concept` facet stands for the whole standard, and a
+ * standard without one — elementary English has only communication, procedure, and reflection —
+ * gives the role to the first topic in id order. Topics that already carry `topicRole` win, so the
+ * builder decides once and every consumer reads the same answer.
+ */
+export function anchorTopicOf(topics) {
+  const sorted = [...topics].sort((left, right) => left.id.localeCompare(right.id));
+  const declared = sorted.find((topic) => topic.topicRole === 'anchor');
+  if (declared) return declared;
+  return sorted.find((topic) => (topic.facetKey ?? deriveFacetKey(topic)) === 'concept') ?? sorted[0] ?? null;
 }
 
 export function standardKeyOf(topic) {

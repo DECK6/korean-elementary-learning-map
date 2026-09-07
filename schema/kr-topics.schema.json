@@ -51,6 +51,7 @@
           "sourceTextIncluded",
           "decompositionKind",
           "facetKey",
+          "topicRole",
           "standardKey",
           "sourceStandardCode"
         ],
@@ -282,6 +283,29 @@
               "communication",
               "reflection",
               "core"
+            ]
+          },
+          "topicRole": {
+            "description": "Contract section 8. Exactly one topic per achievement standard is the anchor; a topic a facet-collapse rule names is auxiliary and carries collapseInto and collapseReason; every other topic is a plain facet.",
+            "enum": [
+              "anchor",
+              "facet",
+              "auxiliary"
+            ]
+          },
+          "collapseInto": {
+            "description": "Sibling topic of the same achievement standard a tutor shows instead of this one. Present only when topicRole is auxiliary.",
+            "type": "string",
+            "pattern": "^kr\\.mt\\."
+          },
+          "collapseReason": {
+            "description": "Why the facet split was judged artificial. Present only when topicRole is auxiliary.",
+            "enum": [
+              "attitude-standard",
+              "metacognitive-standard",
+              "unit-relation-standard",
+              "overlapping-facets",
+              "process-standard"
             ]
           },
           "standardKey": {

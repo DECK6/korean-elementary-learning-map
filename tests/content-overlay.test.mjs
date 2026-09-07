@@ -5,6 +5,7 @@ import { resolve } from 'node:path';
 import test from 'node:test';
 import {
   CONTENT_KINDS,
+  OVERLAY_MIN_LENGTHS,
   OVERLAY_SCHEMA_FILE,
   SUBJECT_SLUGS,
   analyzeOverlay,
@@ -128,9 +129,22 @@ test('content checks reject strings below the authoring minimum length', () => {
   entry.assessmentPrompt = '너무 짧은 평가 프롬프트를 적는다.';
   entry.misconceptions = ['짧은 오답'];
   const errors = analyze(overlay).errors;
-  assert.ok(matched(errors, 'evidence shorter than 25 characters'));
+  assert.ok(matched(errors, 'evidence shorter than 20 characters'));
   assert.ok(matched(errors, 'assessmentPrompt shorter than 40 characters'));
   assert.ok(matched(errors, 'misconceptions shorter than 15 characters'));
+});
+
+// Contract section 9 lowered the evidence floor from 25 to 20 because Korean observable-behaviour
+// sentences often end naturally in that band; prompt 40 and misconception 15 are unchanged.
+test('content checks accept evidence between the new floor of 20 and the old floor of 25', () => {
+  assert.equal(OVERLAY_MIN_LENGTHS.evidence, 20);
+  const overlay = clone(overlays[0]);
+  const entry = onlyEntry(overlay);
+  entry.evidence = ['규칙을 찾아 다음에 올 수를 말한다.', '빠진 자리에 알맞은 수를 적어 넣는다.'];
+  for (const item of entry.evidence) {
+    assert.ok(item.length >= 20 && item.length < 25, `${item} (${item.length})`);
+  }
+  assert.ok(!matched(analyze(overlay).errors, 'evidence shorter than'));
 });
 
 test('content checks reject provenance sentences in place of learner-observable evidence', () => {

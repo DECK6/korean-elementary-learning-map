@@ -23,7 +23,7 @@ The integrated KR files meet the topic-depth target and publish only reviewed de
 
 - `data/kr/curriculum-standards.json`: 11 curricula, 620 achievement-standard anchors, 1956 standard-to-topic mappings, 16 normalized sources, and 46 documented coverage gaps.
 - `data/kr/topics.json`: 1956 KR micro-topics. Every topic has `evidence[]`, `assessmentPrompt`, Korean subject metadata, grade-band context, and standard references.
-- `data/kr/dependencies.json`: 416 official-source dependency edges; `data/kr/dependencies.candidate.json` carries the 1875 pedagogical-candidate edges. Each layer is a DAG, their union is a DAG, there are zero reciprocal pairs and no target-padding or deterministic integration-builder edges, and the `crossSubjectEdges: "none"` policy is explicit.
+- `data/kr/dependencies.json`: 416 official-source dependency edges; `data/kr/dependencies.candidate.json` carries the 1877 pedagogical-candidate edges. Each layer is a DAG, their union is a DAG, there are zero reciprocal pairs and no target-padding or deterministic integration-builder edges, and the `crossSubjectEdges: "none"` policy is explicit.
 - `data/kr/clusters.json`: 152 clusters. Each cluster includes `summary` and `parentSummary` for parent-facing explanations.
 - `data/kr/manifest.json`: SHA-256 and byte counts for every KR JSON data file except the manifest itself, including generated full files, seed files, and workstream artifacts.
 
@@ -90,6 +90,6 @@ npm run check:links
 Current green result:
 
 ```text
-✓ KR full-depth data valid - 11 curricula, 620 standards, 1956 topics, 416 official + 1875 candidate relations, 152 clusters. Checksums OK.
+✓ KR full-depth data valid - 11 curricula, 620 standards, 1956 topics, 416 official + 1877 candidate relations, 152 clusters. Checksums OK.
 ✓ KR content quality gates passed.
 ```

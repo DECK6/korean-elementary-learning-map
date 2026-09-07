@@ -26,7 +26,7 @@
         "relationKind": "recommended-before",
         "basisKind": "official-code-order | decomposition-order | repository-authored",
         "reviewStatus": "candidate",
-        "edgeCount": 1875,
+        "edgeCount": 1877,
         "derivesOntologyViews": false,
         "note": "Product surfaces these as recommended order only; they are not prerequisite claims."
       }

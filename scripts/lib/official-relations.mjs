@@ -1,8 +1,8 @@
 // Expands subject official-relation specs (code pairs) into topic-level edges.
-// Contract section 3: each achievement standard is represented by its
-// `facetKey: concept` topic; when a standard has none, the first topic in id
-// order stands in for the whole standard.
-import { computeScope, deriveFacetKey, relationId, standardCodeOf } from './relation-vocabulary.mjs';
+// Contract sections 3 and 8: each achievement standard is represented by its anchor topic — the
+// `facetKey: concept` topic, or the first topic in id order when a standard has none (elementary
+// English). The anchor is the same topic the builder stamps with `topicRole: anchor`.
+import { anchorTopicOf, computeScope, relationId, standardCodeOf } from './relation-vocabulary.mjs';
 
 function noticeLabel(sourceName = '') {
   const issuer = sourceName.match(/(교육부|국가교육위원회)/)?.[1];
@@ -23,7 +23,8 @@ export function officialBasisText({ sourceName, sourceId, printedPage, domainLab
   return `${prefix} ${section} p.${printedPage}`;
 }
 
-function representativeTopicByCode(topics) {
+/** Maps every achievement-standard code to the anchor topic that stands for the whole standard. */
+export function anchorTopicsByCode(topics) {
   const byCode = new Map();
   for (const topic of topics) {
     const code = standardCodeOf(topic);
@@ -31,13 +32,9 @@ function representativeTopicByCode(topics) {
     if (!byCode.has(code)) byCode.set(code, []);
     byCode.get(code).push(topic);
   }
-  const representatives = new Map();
-  for (const [code, members] of byCode) {
-    const sorted = [...members].sort((left, right) => left.id.localeCompare(right.id));
-    const concept = sorted.find((topic) => (topic.facetKey ?? deriveFacetKey(topic)) === 'concept');
-    representatives.set(code, concept ?? sorted[0]);
-  }
-  return representatives;
+  const anchors = new Map();
+  for (const [code, members] of byCode) anchors.set(code, anchorTopicOf(members));
+  return anchors;
 }
 
 /**
@@ -48,7 +45,7 @@ function representativeTopicByCode(topics) {
  * @returns {{ relations: object[], expansions: object[] }}
  */
 export function expandOfficialRelations({ specs = [], topics = [], sourcesById = new Map() }) {
-  const representatives = representativeTopicByCode(topics);
+  const representatives = anchorTopicsByCode(topics);
   const relations = [];
   const expansions = [];
   const seen = new Set();

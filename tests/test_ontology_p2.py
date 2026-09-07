@@ -170,7 +170,7 @@ class OntologyP2ReportTest(unittest.TestCase):
     def test_competency_queries_have_expected_results(self):
         queries = self.report["competencyQueries"]
         self.assertTrue(queries["pass"])
-        self.assertEqual(queries["queryCount"], 18)
+        self.assertEqual(queries["queryCount"], 19)
         self.assertEqual(
             queries["results"]["cq-04-direct-prerequisites.rq"]["rowCount"],
             OFFICIAL_RELATION_COUNT,
@@ -183,6 +183,8 @@ class OntologyP2ReportTest(unittest.TestCase):
             queries["results"]["cq-12-rights-hold.rq"]["rowCount"],
             DATASET_COUNTS["sources"] + 1,
         )
+        # Contract section 8: one anchor per standard, and every auxiliary topic names a sibling.
+        self.assertEqual(queries["results"]["cq-19-topic-roles.rq"]["rowCount"], 3)
         self.assertEqual(
             queries["results"]["cq-14-alignment-round-trip.rq"]["rowCount"],
             DATASET_COUNTS["standardMappings"],

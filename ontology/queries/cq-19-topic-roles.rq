@@ -1,0 +1,9 @@
+PREFIX core: <https://dexa.art/learnmap/ontology/k12-core#>
+
+SELECT ?role (COUNT(?topic) AS ?topicCount) (COUNT(?collapseTarget) AS ?collapseCount)
+WHERE {
+  ?topic core:topicRole ?role .
+  OPTIONAL { ?topic core:collapseInto ?collapseTarget . }
+}
+GROUP BY ?role
+ORDER BY ?role

@@ -12,13 +12,16 @@
     "standards": 620,
     "topics": 1956,
     "dependencies": 416,
-    "candidateDependencies": 1875,
+    "candidateDependencies": 1877,
     "clusters": 152,
     "standardMappings": 1956,
     "coverageGaps": 46,
     "workstreams": 9,
     "contentOverlayFiles": 22,
-    "sourceGroundedTopics": 1956
+    "sourceGroundedTopics": 1956,
+    "anchorTopics": 620,
+    "auxiliaryTopics": 24,
+    "assessesAlignments": 1240
   },
   "targets": {
     "topicsAtLeast": 1500
@@ -43,7 +46,7 @@
         "relationKind": "recommended-before",
         "basisKind": "official-code-order | decomposition-order | repository-authored",
         "reviewStatus": "candidate",
-        "edgeCount": 1875,
+        "edgeCount": 1877,
         "derivesOntologyViews": false,
         "note": "Product surfaces these as recommended order only; they are not prerequisite claims."
       }
@@ -54,15 +57,16 @@
       "file": "dependencies.json",
       "edgeCount": 416,
       "bytes": 378619,
-      "sha256": "351a436dfcfd9a1d5b144f422b425e7232d2bdb7f90b06af0a2b1e793ea8819e"
+      "sha256": "22816075ac69df624730cb4a26c71a5edf1314c43c5ff83c5f6fc7fb57551011"
     },
     "pedagogical-candidate": {
       "file": "dependencies.candidate.json",
-      "edgeCount": 1875,
-      "bytes": 1354292,
-      "sha256": "0a320dfae76e276ba1ba1b7b3c55f150248f26c62ddaf259de23011ef88c61d2",
+      "edgeCount": 1877,
+      "bytes": 1357003,
+      "sha256": "6a722ec302d824e8b79c19969003a0a63dbde2a99c374209259932c11443667c",
       "supersededByOfficial": 2,
-      "droppedForOfficialOrdering": 1
+      "droppedForOfficialOrdering": 1,
+      "authoredFromSpecs": 2
     }
   },
   "coverageNotes": {
@@ -198,28 +202,28 @@
       "sha256": "4188fa6101a5977f6f60bf0a7ebcc9caea3b617474bb55057cce6a52875fa33a"
     },
     "curriculum-standards.json": {
-      "bytes": 1973580,
-      "sha256": "263ca788c03fd2094538371b54bdc2e0f63e045235f3adbc46bc3c3ba43862b8"
+      "bytes": 1972372,
+      "sha256": "457f909eaf977f2faa33ecea235f1ae7e3ab1e31a0d523f473948a4e91cb589b"
     },
     "curriculum-standards.seed.json": {
       "bytes": 1085753,
       "sha256": "c82f717d4f86b62e1f248f772591786be83e0d0dd8d2c18f5c733890c418db55"
     },
     "dependencies.candidate.json": {
-      "bytes": 1354292,
-      "sha256": "0a320dfae76e276ba1ba1b7b3c55f150248f26c62ddaf259de23011ef88c61d2"
+      "bytes": 1357003,
+      "sha256": "6a722ec302d824e8b79c19969003a0a63dbde2a99c374209259932c11443667c"
     },
     "dependencies.json": {
       "bytes": 378619,
-      "sha256": "351a436dfcfd9a1d5b144f422b425e7232d2bdb7f90b06af0a2b1e793ea8819e"
+      "sha256": "22816075ac69df624730cb4a26c71a5edf1314c43c5ff83c5f6fc7fb57551011"
     },
     "dependencies.seed.json": {
       "bytes": 127512,
       "sha256": "8a25e60bae09954d457f932dd152afc5e7541a261a280ceb4bbf13d3bbe85884"
     },
     "topics.json": {
-      "bytes": 6123005,
-      "sha256": "91849c2a6cfed14f7474510c2fd9b4527e86c6124d295cacb92a05669f177cc7"
+      "bytes": 6181369,
+      "sha256": "6f420070a04aa4f54f9304dd389a185848d8091931f5653667dacbdae84377d6"
     },
     "topics.seed.json": {
       "bytes": 365755,
@@ -250,8 +254,8 @@
       "sha256": "45df1e49cccfcfa12fbf40ba742675568a03bf9412f5fb34fee2319889b18c69"
     },
     "workstreams/practical-arts.json": {
-      "bytes": 275670,
-      "sha256": "9387cec4b861ec1ed2061d02e3c4afdb60869e924a904f2efa78c885295e1c78"
+      "bytes": 275664,
+      "sha256": "ea95f707e38e6f2d5ba0d7b09265fe09c42c29a29291cc5c5f0529016578c6a4"
     },
     "workstreams/science.json": {
       "bytes": 1272146,

@@ -21,9 +21,16 @@ import {
   normalizeKrSourceRefs,
   STALE_KR_SOURCE_IDS,
 } from './lib/kr-source-provenance.mjs';
-import { officialRelationSpecs } from './lib/official-relation-specs/index.mjs';
-import { expandOfficialRelations } from './lib/official-relations.mjs';
+import { candidateRelationSpecs } from './lib/candidate-relation-specs/index.mjs';
 import {
+  assertCollapseRulesWellFormed,
+  facetCollapseRuleFor,
+  FACET_COLLAPSE_RULES,
+} from './lib/facet-collapse-rules.mjs';
+import { officialRelationSpecs } from './lib/official-relation-specs/index.mjs';
+import { anchorTopicsByCode, expandOfficialRelations } from './lib/official-relations.mjs';
+import {
+  anchorTopicOf,
   classifyLegacyBasis,
   computeScope,
   deriveFacetKey,
@@ -321,6 +328,73 @@ for (const topic of topicById.values()) {
   }
 }
 
+// Topic roles and facet collapse (contract section 8). Every standard gets exactly one anchor; the
+// facets an authored rule names become auxiliary and point at the sibling a tutor shows instead.
+// No topic is dropped, so ids, overlays, clusters, and relations all keep their referents.
+assertCollapseRulesWellFormed();
+const topicsByStandardKey = new Map();
+for (const topic of topicById.values()) {
+  const key = topic.standardKey;
+  if (!topicsByStandardKey.has(key)) topicsByStandardKey.set(key, []);
+  topicsByStandardKey.get(key).push(topic);
+}
+const appliedCollapseCodes = new Set();
+let auxiliaryTopicCount = 0;
+for (const [standardKey, members] of topicsByStandardKey) {
+  const anchor = anchorTopicOf(members);
+  const rule = facetCollapseRuleFor(standardCodeOf(anchor));
+  const byFacetKey = new Map(members.map((topic) => [topic.facetKey, topic]));
+  const auxiliaryFacetKeys = new Set(rule?.auxiliaryFacetKeys ?? []);
+  if (rule) {
+    appliedCollapseCodes.add(rule.code);
+    if (auxiliaryFacetKeys.has(anchor.facetKey)) {
+      throw new Error(`facet collapse rule ${rule.code}: the anchor facet ${anchor.facetKey} cannot be auxiliary`);
+    }
+    for (const facetKey of auxiliaryFacetKeys) {
+      if (!byFacetKey.has(facetKey)) {
+        throw new Error(`facet collapse rule ${rule.code}: ${standardKey} has no ${facetKey} topic`);
+      }
+    }
+  }
+  const collapseTarget = rule?.collapseIntoFacetKey ? byFacetKey.get(rule.collapseIntoFacetKey) : anchor;
+  if (rule?.collapseIntoFacetKey && !collapseTarget) {
+    throw new Error(`facet collapse rule ${rule.code}: ${standardKey} has no ${rule.collapseIntoFacetKey} topic`);
+  }
+  for (const topic of members) {
+    delete topic.collapseInto;
+    delete topic.collapseReason;
+    if (topic.id === anchor.id) {
+      topic.topicRole = 'anchor';
+    } else if (auxiliaryFacetKeys.has(topic.facetKey)) {
+      topic.topicRole = 'auxiliary';
+      topic.collapseInto = collapseTarget.id;
+      topic.collapseReason = rule.reason;
+      auxiliaryTopicCount += 1;
+    } else {
+      topic.topicRole = 'facet';
+    }
+  }
+}
+for (const rule of FACET_COLLAPSE_RULES) {
+  if (!appliedCollapseCodes.has(rule.code)) {
+    throw new Error(`facet collapse rule ${rule.code} matches no achievement standard`);
+  }
+}
+
+// Contract section 9: the anchor topic represents and assesses its own achievement standard.
+// Every other alignment keeps the relationship the workstream recorded.
+let anchorAlignmentsRaised = 0;
+for (const mapping of mappingByPair.values()) {
+  const topic = topicById.get(mapping.microTopicId);
+  if (topic?.topicRole !== 'anchor' || topic.standardKey !== mapping.standardKey) continue;
+  if (mapping.relationship === 'assesses') continue;
+  mapping.relationship = 'assesses';
+  anchorAlignmentsRaised += 1;
+}
+const assessesAlignmentCount = [...mappingByPair.values()].filter(
+  (mapping) => mapping.relationship === 'assesses',
+).length;
+
 // 주제 콘텐츠 오버레이(P3-2). data/kr/content 디렉터리가 없으면 기계적 템플릿을 그대로 둔다.
 const contentOverlays = readContentOverlays(contentOverlayDirectory(KR_DATA));
 const { entries: contentOverlayEntries, errors: contentOverlayErrors } = indexOverlayEntries(contentOverlays);
@@ -425,6 +499,56 @@ const candidateDependencies = [];
 const candidateKeys = new Set();
 let officialPromotions = 0;
 let candidateConflicts = 0;
+
+// Authored candidate edges (contract section 9). A review document decided these code pairs; no
+// workstream suggests them, and the official layer cannot hold them because the source sentence
+// states the link in both directions. Expanded through the same anchor topics as the official layer.
+const anchorsByCode = anchorTopicsByCode(topics);
+let candidateSpecEdges = 0;
+for (const spec of candidateRelationSpecs) {
+  const source = sourcesById.get(spec.sourceId);
+  if (!source) throw new Error(`candidate relation spec ${spec.subject}: unknown sourceId ${spec.sourceId}`);
+  for (const [fromCode, toCode, printedPage, note] of spec.recommendedBefore || []) {
+    const prerequisiteTopic = anchorsByCode.get(fromCode);
+    const dependentTopic = anchorsByCode.get(toCode);
+    if (!prerequisiteTopic || !dependentTopic) {
+      throw new Error(
+        `candidate relation spec ${spec.subject}: no topic for ${!prerequisiteTopic ? fromCode : toCode}`,
+      );
+    }
+    if (!Number.isInteger(printedPage)) {
+      throw new Error(`candidate relation spec ${spec.subject}: printedPage must be an integer for ${fromCode}->${toCode}`);
+    }
+    const key = `${dependentTopic.id}->${prerequisiteTopic.id}`;
+    if (officialPairs.has(key) || candidateKeys.has(key)) {
+      throw new Error(`candidate relation spec ${spec.subject}: ${fromCode}->${toCode} is already claimed by another edge`);
+    }
+    candidateKeys.add(key);
+    addUnionEdge(dependentTopic.id, prerequisiteTopic.id);
+    candidateDependencies.push({
+      id: relationId(dependentTopic.id, prerequisiteTopic.id),
+      layer: 'pedagogical-candidate',
+      topicId: dependentTopic.id,
+      prerequisiteId: prerequisiteTopic.id,
+      relationKind: 'recommended-before',
+      basisKind: 'repository-authored',
+      scope: computeScope(dependentTopic, prerequisiteTopic),
+      strength: 'soft',
+      reviewStatus: 'candidate',
+      reason: `${fromCode} → ${toCode}: 공식 문장이 양방향 연계를 서술해 선후를 확정할 수 없으므로 권장 순서로만 남긴다. ${note}`,
+      basis: `${source.name} 성취기준 적용 시 고려 사항 p.${printedPage} (연계 서술, 방향 미판정)`,
+      source: `candidate-relation-spec:${spec.specFile || `${spec.subject}.mjs`}`,
+      sourceRefs: [
+        ...new Set([
+          spec.sourceId,
+          ...(dependentTopic.sourceRefs || []),
+          ...(prerequisiteTopic.sourceRefs || []),
+        ]),
+      ].sort(),
+    });
+    candidateSpecEdges += 1;
+  }
+}
 for (const { file, data } of workstreams) {
   for (const dep of data.dependencySuggestions || []) {
     const topic = topicById.get(dep.topicId);
@@ -632,6 +756,9 @@ writeJson(resolve(KR_DATA, 'manifest.json'), {
     workstreams: workstreams.length,
     contentOverlayFiles: contentOverlays.length,
     sourceGroundedTopics: sourceGroundedTopicCount,
+    anchorTopics: topicsByStandardKey.size,
+    auxiliaryTopics: auxiliaryTopicCount,
+    assessesAlignments: assessesAlignmentCount,
   },
   targets: {
     topicsAtLeast: MIN_TOPICS,
@@ -651,6 +778,7 @@ writeJson(resolve(KR_DATA, 'manifest.json'), {
       sha256: files['dependencies.candidate.json'].sha256,
       supersededByOfficial: officialPromotions,
       droppedForOfficialOrdering: candidateConflicts,
+      authoredFromSpecs: candidateSpecEdges,
     },
   },
   coverageNotes: {
@@ -692,5 +820,8 @@ writeJson(resolve(KR_DATA, 'manifest.json'), {
 
 console.log(
   `Built KR full-depth data: ${curricula.length} curricula, ${standardByKey.size} standards, ${topics.length} topics, ` +
-    `${officialDependencies.length} official + ${candidateDependencies.length} candidate relations, ${clusters.length} clusters.`,
+    `${officialDependencies.length} official + ${candidateDependencies.length} candidate relations, ${clusters.length} clusters. ` +
+    `Roles: ${topicsByStandardKey.size} anchor / ${auxiliaryTopicCount} auxiliary, ` +
+    `${assessesAlignmentCount} assesses alignments (${anchorAlignmentsRaised} raised for anchors), ` +
+    `${candidateSpecEdges} authored candidate edges.`,
 );

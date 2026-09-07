@@ -6,7 +6,9 @@ import { isAuthoredObservableEvidence } from './kr-content-quality.mjs';
 // 파일 형식은 중등 저장소(scripts/lib/content-overlay.mjs)와 같고, 초등은 assessmentPrompt가
 // 문자열 하나라는 점만 다르다.
 export const CONTENT_KINDS = ['mechanical-derivative', 'source-grounded-draft'];
-export const OVERLAY_MIN_LENGTHS = { evidence: 25, assessmentPrompt: 40, misconception: 15 };
+// Contract section 9: evidence 20 (was 25 — Korean observable-behaviour sentences often end
+// naturally at 20-24 characters), prompt 40 and misconception 15 unchanged.
+export const OVERLAY_MIN_LENGTHS = { evidence: 20, assessmentPrompt: 40, misconception: 15 };
 export const OVERLAY_SCHEMA_FILE = 'kr-content-overlay.schema.json';
 export const GRADE_BANDS = ['1-2', '3-4', '5-6'];
 
@@ -252,6 +254,67 @@ export function computeContentProvenanceMetrics(topics, summaryByStandardKey = n
   }
   metrics.templateRatio = shapeTotal ? Number(((shapeTotal - shapes.size) / shapeTotal).toFixed(4)) : 0;
   return { metrics, errors };
+}
+
+/** Sibling overlays this similar are reported as facet-collapse candidates (contract section 8). */
+export const FACET_OVERLAP_JACCARD_THRESHOLD = 0.6;
+
+// Whitespace tokens of the merged evidence and prompt, with punctuation dropped so a comma cannot
+// hide a repeated phrase.
+function overlapTokens(topic) {
+  const text = `${(topic.evidence ?? []).filter((item) => typeof item === 'string').join(' ')} ${
+    typeof topic.assessmentPrompt === 'string' ? topic.assessmentPrompt : ''
+  }`;
+  return new Set(
+    text
+      .replace(/[^0-9A-Za-z가-힣\s]/g, ' ')
+      .split(/\s+/)
+      .filter(Boolean),
+  );
+}
+
+function jaccard(left, right) {
+  if (left.size === 0 || right.size === 0) return 0;
+  let intersection = 0;
+  for (const token of left) if (right.has(token)) intersection += 1;
+  return intersection / (left.size + right.size - intersection);
+}
+
+/**
+ * Statistical companion to scripts/lib/facet-collapse-rules.mjs: two topics of one achievement
+ * standard whose authored evidence and prompt overlap this much are probably one topic. The result
+ * is a warning list, never an error — a rule stays a human decision.
+ * @returns {{ candidates: object[], maximum: number }}
+ */
+export function facetOverlapCandidates(topics, threshold = FACET_OVERLAP_JACCARD_THRESHOLD) {
+  const byStandardKey = new Map();
+  for (const topic of topics) {
+    if (topic.contentKind !== 'source-grounded-draft') continue;
+    if (!byStandardKey.has(topic.standardKey)) byStandardKey.set(topic.standardKey, []);
+    byStandardKey.get(topic.standardKey).push(topic);
+  }
+  const candidates = [];
+  let maximum = 0;
+  for (const members of byStandardKey.values()) {
+    const sorted = [...members].sort((left, right) => left.id.localeCompare(right.id));
+    const tokens = sorted.map((topic) => overlapTokens(topic));
+    for (let left = 0; left < sorted.length; left += 1) {
+      for (let right = left + 1; right < sorted.length; right += 1) {
+        const similarity = jaccard(tokens[left], tokens[right]);
+        if (similarity > maximum) maximum = similarity;
+        if (similarity < threshold) continue;
+        candidates.push({
+          standardCode: sorted[left].sourceStandardCode,
+          standardKey: sorted[left].standardKey,
+          topicIds: [sorted[left].id, sorted[right].id],
+          facetKeys: [sorted[left].facetKey, sorted[right].facetKey],
+          similarity: Number(similarity.toFixed(4)),
+        });
+      }
+    }
+  }
+  candidates.sort((left, right) => right.similarity - left.similarity || left.topicIds[0].localeCompare(right.topicIds[0]));
+  return { candidates, maximum: Number(maximum.toFixed(4)) };
 }
 
 export function summaryByStandardKey(standardsFile) {

@@ -59,7 +59,7 @@
   "cq-07-requirement-levels.rq": {
     "groups": [
       {
-        "count": 1081,
+        "count": 1083,
         "countVariable": "assertionCount",
         "match": {
           "legacyStrength": "soft",
@@ -77,7 +77,7 @@
     ],
     "rowCount": 2,
     "sum": {
-      "assertionCount": 2291
+      "assertionCount": 2293
     }
   },
   "cq-08-cluster-membership.rq": {
@@ -105,7 +105,7 @@
       "verification",
       "status"
     ],
-    "rowCount": 6851
+    "rowCount": 6853
   },
   "cq-11-coverage-gaps.rq": {
     "rowCount": 12,
@@ -134,28 +134,28 @@
         }
       },
       {
-        "count": 302,
+        "count": 293,
         "countVariable": "topicCount",
         "match": {
           "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/meta"
         }
       },
       {
-        "count": 339,
+        "count": 329,
         "countVariable": "topicCount",
         "match": {
           "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/representational"
         }
       },
       {
-        "count": 551,
+        "count": 580,
         "countVariable": "topicCount",
         "match": {
           "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/conceptual"
         }
       },
       {
-        "count": 622,
+        "count": 612,
         "countVariable": "topicCount",
         "match": {
           "topicType": "https://dexa.art/learnmap/vocab/#/LearningTopicType/procedural"
@@ -199,12 +199,12 @@
       "basis",
       "source"
     ],
-    "rowCount": 2291
+    "rowCount": 2293
   },
   "cq-16-relation-layers.rq": {
     "groups": [
       {
-        "count": 1106,
+        "count": 1108,
         "countVariable": "assertionCount",
         "match": {
           "basisKind": "https://dexa.art/learnmap/vocab/#/BasisKind/repository-authored",
@@ -242,7 +242,7 @@
     ],
     "rowCount": 4,
     "sum": {
-      "assertionCount": 2291
+      "assertionCount": 2293
     }
   },
   "cq-17-content-kinds.rq": {
@@ -331,7 +331,7 @@
         }
       },
       {
-        "count": 1875,
+        "count": 1877,
         "countVariable": "subjectCount",
         "match": {
           "vocabulary": "layer",
@@ -346,7 +346,41 @@
     ],
     "rowCount": 9,
     "sum": {
-      "subjectCount": 4247
+      "subjectCount": 4249
+    }
+  },
+  "cq-19-topic-roles.rq": {
+    "groups": [
+      {
+        "count": 620,
+        "countVariable": "topicCount",
+        "match": {
+          "role": "https://dexa.art/learnmap/ontology/k12-core#topic-role-anchor"
+        }
+      },
+      {
+        "count": 24,
+        "countVariable": "topicCount",
+        "match": {
+          "role": "https://dexa.art/learnmap/ontology/k12-core#topic-role-auxiliary"
+        }
+      },
+      {
+        "count": 1312,
+        "countVariable": "topicCount",
+        "match": {
+          "role": "https://dexa.art/learnmap/ontology/k12-core#topic-role-facet"
+        }
+      }
+    ],
+    "nonNull": [
+      "role",
+      "topicCount"
+    ],
+    "rowCount": 3,
+    "sum": {
+      "topicCount": 1956,
+      "collapseCount": 24
     }
   }
 }

@@ -2,16 +2,16 @@
   "datasetRelease": "kr-full-depth-v0.5",
   "files": [
     {
-      "bytes": 31505743,
+      "bytes": 31737929,
       "mediaType": "application/ld+json",
       "path": "dist/ontology/learning-map.jsonld",
-      "sha256": "eaf5f9c7dbac01faa6cd092cedf8113a362c3f35c40f9edcc22e4a4b04ea8b7c"
+      "sha256": "5458940edd44a77b2afaf54df67c27eb832b7ed29a1e4569345d539c4eebd244"
     },
     {
-      "bytes": 22720814,
+      "bytes": 22889534,
       "mediaType": "text/turtle",
       "path": "dist/ontology/learning-map.ttl",
-      "sha256": "a206dbf48f6bc65f539d00466c3b0fcc601fb9a9ed210f17237a30f02a3caea0"
+      "sha256": "458e5723708810de3013edf3b8ff9dc0f03f2f975b6e192e55f44e8edd88255c"
     }
   ],
   "formatVersion": 3,
@@ -27,12 +27,12 @@
     "LearningCluster": 152,
     "LearningDomain": 79,
     "LearningTopic": 1956,
-    "PrerequisiteAssertion": 2291,
+    "PrerequisiteAssertion": 2293,
     "SourceDocument": 16,
     "SourceLocator": 3796,
     "StandardTopicAlignment": 1956,
     "Subject": 12,
-    "VerificationRecord": 6851
+    "VerificationRecord": 6853
   },
   "ontologyVersion": "0.4.0",
   "phase": "P3",
@@ -56,7 +56,7 @@
     }
   },
   "sourceRecords": {
-    "candidateDependencies": 1875,
+    "candidateDependencies": 1877,
     "clusters": 152,
     "coverageGaps": 46,
     "curricula": 11,

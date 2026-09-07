@@ -212,18 +212,18 @@ test('formal README label preserves provenance, rights, and interpretation limit
   assert.match(readme, /공개 공식 출처 URL/);
   assert.match(readme, /dependencies\.candidate\.json/);
 
-  assert.match(releaseReport, /96\/96 Node/);
+  assert.match(releaseReport, /111\/111 Node/);
   assert.match(releaseReport, /local tracked-artifact verification/i);
   assert.match(releaseReport, /does not claim a CI run has completed/i);
   assert.match(releaseReport, /Python `3\.14\.7`/);
   assert.match(releaseReport, /5\/5 Python tests/);
-  assert.match(releaseReport, /18\/18 competency queries/);
+  assert.match(releaseReport, /19\/19 competency queries/);
   assert.match(releaseReport, /10\/10 adversarial fixtures/);
 
   const validationReport = JSON.parse(validationReportText);
   assert.equal(validationReport.overallPass, true);
   assert.equal(validationReport.toolVersions.python, '3.14.7');
   assert.equal(validationReport.shacl.violationCount, 0);
-  assert.equal(validationReport.competencyQueries.queryCount, 18);
+  assert.equal(validationReport.competencyQueries.queryCount, 19);
   assert.equal(Object.keys(validationReport.fixtures.adversarial).length, 10);
 });

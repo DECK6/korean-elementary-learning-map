@@ -219,6 +219,7 @@ CARDINALITY_PROFILE: dict[str, dict[URIRef, tuple[int, int | None]]] = {
         LM.decompositionKind: (1, 1),
         LM.facetKey: (1, 1),
         CORE.facetKey: (1, 1),
+        CORE.topicRole: (1, 1),
         CORE.contentKind: (1, 1),
         LM.standardKey: (1, 1),
         LM.sourceStandardCode: (1, 1),
@@ -313,6 +314,7 @@ OBJECT_PROPERTY_PROFILE: dict[URIRef, tuple[set[str], str]] = {
     LM.containsTopic: ({"DatasetRelease"}, "LearningTopic"),
     LM.hasCluster: ({"DatasetRelease"}, "LearningCluster"),
     LM.hasClusterMember: ({"LearningCluster"}, "LearningTopic"),
+    CORE.collapseInto: ({"LearningTopic"}, "LearningTopic"),
     LM.alignedToStandard: ({"LearningTopic"}, "AchievementStandard"),
     LM.hasStandardTopicAlignment: ({"LearningTopic"}, "StandardTopicAlignment"),
     LM.alignmentTopic: ({"StandardTopicAlignment"}, "LearningTopic"),
@@ -369,7 +371,13 @@ CONTROLLED_CONCEPT_PROPERTIES = {
 FACET_NAMESPACE = "https://dexa.art/learnmap/vocab/facet/"
 FACET_CONCEPT_PROPERTIES = {LM.facetKey}
 # Core-namespace projections shared with the secondary map.
-CORE_CONCEPT_PROPERTIES = {CORE.facetKey, CORE.contentKind, CORE.layerConcept, CORE.locatorKind}
+CORE_CONCEPT_PROPERTIES = {
+    CORE.facetKey,
+    CORE.topicRole,
+    CORE.contentKind,
+    CORE.layerConcept,
+    CORE.locatorKind,
+}
 
 
 def sha256_bytes(data: bytes) -> str:

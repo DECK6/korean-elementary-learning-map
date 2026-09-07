@@ -68,13 +68,13 @@
       ],
       "properties": {
         "evidence": {
-          "description": "초등 주제는 관찰 가능한 성취 증거를 두 개 이상 갖는다(kr-topics.schema.json과 동일한 하한).",
+          "description": "초등 주제는 관찰 가능한 성취 증거를 두 개 이상 갖는다(kr-topics.schema.json과 동일한 하한). 한국어 관찰 행동 문장이 20~24자에서 자연스럽게 끝나는 경우가 많아 계약 9절에서 하한을 25자에서 20자로 낮췄다.",
           "type": "array",
           "minItems": 2,
           "uniqueItems": true,
           "items": {
             "type": "string",
-            "minLength": 25
+            "minLength": 20
           }
         },
         "assessmentPrompt": {

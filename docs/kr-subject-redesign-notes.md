@@ -38,7 +38,7 @@ The integrated subjects for grades 1–2 are structurally important. They bridge
 
 ## Full-Depth Integration Status
 
-The full-depth integration now merges all subject workstreams into repository-level KR files. Current coverage is 11 curricula, 620 achievement-standard anchors, 1956 micro-topics, 416 official plus 1875 candidate dependencies, and 152 clusters. Every curriculum is bound to an exact reviewed code-inventory digest and a direct official PDF source. See `docs/kr-full-depth-integration-report.md` for exact subject counts and remaining gaps.
+The full-depth integration now merges all subject workstreams into repository-level KR files. Current coverage is 11 curricula, 620 achievement-standard anchors, 1956 micro-topics, 416 official plus 1877 candidate dependencies, and 152 clusters. Every curriculum is bound to an exact reviewed code-inventory digest and a direct official PDF source. See `docs/kr-full-depth-integration-report.md` for exact subject counts and remaining gaps.
 
 ## Remaining Review
 

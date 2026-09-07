@@ -1475,7 +1475,7 @@
         "수행 과정과 결과를 기록하고, 건강한 발달과 자기 관리 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "건강한 발달과 자기 관리와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Human Development & Self-Directed Life",
@@ -1535,7 +1535,7 @@
         "자신의 표현물에서 인간 발달과 주도적 삶 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "가족 요구와 배려 돌봄과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Human Development & Self-Directed Life",
@@ -1595,7 +1595,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "균형 잡힌 식사와 식습관과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Human Development & Self-Directed Life",
@@ -1715,7 +1715,7 @@
         "수행 과정과 결과를 기록하고, 가정일의 가치와 종류 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "가정일의 가치와 종류와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Human Development & Self-Directed Life",
@@ -1775,7 +1775,7 @@
         "자신의 표현물에서 인간 발달과 주도적 삶 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "진로 발달과 주도적 탐색과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Human Development & Self-Directed Life",
@@ -1835,7 +1835,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "생활자원 제한성과 사용 가치와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -1955,7 +1955,7 @@
         "수행 과정과 결과를 기록하고, 재활용과 환경 고려 관리 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "재활용과 환경 고려 관리와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -2015,7 +2015,7 @@
         "자신의 표현물에서 생활환경과 지속가능한 선택 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "식재료 생산과 선택과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -2075,7 +2075,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "간식과 식사 마련과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -2195,7 +2195,7 @@
         "수행 과정과 결과를 기록하고, 의생활 용품 구성 과정 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "의생활 용품 구성 과정과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -2255,7 +2255,7 @@
         "자신의 표현물에서 생활환경과 지속가능한 선택 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "간단한 생활용품 만들기와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -2315,7 +2315,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "의생활 문제 해결 태도와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -2435,7 +2435,7 @@
         "수행 과정과 결과를 기록하고, 생태 지향 의식주 생활 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "생태 지향 의식주 생활과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Life Environment & Sustainable Choice",
@@ -2495,7 +2495,7 @@
         "자신의 표현물에서 기술적 문제해결과 혁신 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "발명 의미와 기술 가치와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Technological Problem Solving & Innovation",
@@ -2555,7 +2555,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "발명사고와 기술적 문제 해결과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Technological Problem Solving & Innovation",
@@ -2675,7 +2675,7 @@
         "수행 과정과 결과를 기록하고, 수송 의미와 발달 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "수송 의미와 발달과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Technological Problem Solving & Innovation",
@@ -2735,7 +2735,7 @@
         "자신의 표현물에서 기술적 문제해결과 혁신 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "친환경 수송 시제품과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Technological Problem Solving & Innovation",
@@ -2795,7 +2795,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "친환경 건설 구조물과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -2915,7 +2915,7 @@
         "수행 과정과 결과를 기록하고, 사이버 공유와 정보기기 활용 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "사이버 공유와 정보기기 활용과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -2975,7 +2975,7 @@
         "자신의 표현물에서 지속가능한 기술과 융합 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "로봇 개념과 구조와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -3035,7 +3035,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "로봇 종류와 작동 원리와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -3155,7 +3155,7 @@
         "수행 과정과 결과를 기록하고, 동식물 자원과 생명기술 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "동식물 자원과 생명기술과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -3215,7 +3215,7 @@
         "자신의 표현물에서 지속가능한 기술과 융합 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "동식물 기르기와 생태 존중과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -3275,7 +3275,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "지속가능한 친환경 농업과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -3395,7 +3395,7 @@
         "수행 과정과 결과를 기록하고, 농업·농촌 가치와 진로 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "농업·농촌 가치와 진로와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Sustainable Technology & Convergence",
@@ -3455,7 +3455,7 @@
         "자신의 표현물에서 디지털 사회와 인공지능 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "컴퓨터 활용 문제 해결과 알고리즘과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Digital Society & Artificial Intelligence",
@@ -3515,7 +3515,7 @@
         "자신의 기록이나 결과물을 근거로 다음 연습에서 실행할 개선 방법을 선택해 제시한다."
       ],
       "assessmentPrompt": "명령 체험과 기초 프로그래밍과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "META",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Digital Society & Artificial Intelligence",
@@ -3635,7 +3635,7 @@
         "수행 과정과 결과를 기록하고, 디지털·아날로그 데이터와 AI 데이터 개념 탐색의 다음 시도에서 바꿀 점을 한 가지 제시한다."
       ],
       "assessmentPrompt": "디지털·아날로그 데이터와 AI 데이터와 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "PROCEDURAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Digital Society & Artificial Intelligence",
@@ -3695,7 +3695,7 @@
         "자신의 표현물에서 디지털 사회와 인공지능 내용과 근거가 드러나는 부분을 찾아 설명한다."
       ],
       "assessmentPrompt": "인공지능 과정과 사회 영향과 관련된 핵심 개념을 생활 사례 하나와 연결하여 설명하고, 판단 근거를 두 가지 제시한다.",
-      "type": "REPRESENTATIONAL",
+      "type": "CONCEPTUAL",
       "subject": "Practical Arts / Informatics",
       "subjectKorean": "실과(기술·가정)/정보",
       "domain": "Digital Society & Artificial Intelligence",

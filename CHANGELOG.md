@@ -95,6 +95,23 @@
 - `package.json` version `0.5.0`, license `MIT`. 11개 교육과정 레코드의 `license` 문구를 MIT·공개 공식 자료(cleared) 기준으로 바꿨습니다.
 - `schema/kr-dependencies-candidate.schema.json`과 `schema/kr-content-overlay.schema.json`을 추가하고 official 프로필·주제·성취기준 스키마를 갱신했습니다(총 6종).
 
+### 주제 역할·facet 축약 (계약 8절, 2026-09-07 추가)
+
+- 주제에 `topicRole`(`anchor` | `facet` | `auxiliary`)을 추가했습니다. 성취기준마다 anchor가 정확히 1개이며, `facetKey: concept` 주제를 우선하고 없으면 정렬상 첫 주제를 씁니다. **anchor 620개 = 성취기준 620개**이고, facet 분포는 `concept` 580 · `communication` 40(초등 영어 EFL은 concept facet이 없어 `communication`이 anchor입니다).
+- 축약 규칙 파일 `scripts/lib/facet-collapse-rules.mjs`를 신설했습니다. 집필 보고(R3-B1·R3-B2·R5-B2)가 지목한 성취기준만 코드별 `{ code, auxiliaryFacetKeys, reason, note }`로 명시하며 추측으로 넣지 않습니다 — **22개 규칙, `auxiliary` 주제 24개**. 사유 분포는 `attitude-standard` 10(국어 태도형 성취기준의 성찰 주제), `overlapping-facets` 7, `unit-relation-standard` 6(측정 단위 관계 계열), `process-standard` 1(`[6수04-03]` 탐구 전 과정).
+- `auxiliary` 주제는 `collapseInto`(같은 성취기준의 non-auxiliary 형제 주제)와 `collapseReason`을 갖습니다. 주제는 하나도 삭제하지 않았으므로 **주제 ID 1,956개는 전부 불변**입니다.
+- `npm run check:content`가 같은 성취기준 두 주제 오버레이(evidence+prompt)의 토큰 자카드 유사도 ≥ 0.6을 축약 후보로 **경고**합니다(빌드 실패 아님). 현재 후보 0건이며 형제 간 최대 유사도는 0.3158입니다. official 층의 `auxiliary` 끝점 수(0)도 함께 보고합니다.
+- `scripts/lib/official-relations.mjs`의 전개 규칙을 "concept 없으면 첫 주제"에서 "anchor 주제"로 바꿨습니다. 두 규칙이 같은 주제를 고르므로 **official 관계 416건의 ID 집합은 불변**입니다(`dependencies.json` 본문 무변).
+- `scripts/validate-kr.mjs`가 성취기준당 anchor 유일성, anchor가 규칙이 고르는 주제와 같은지, `collapseInto`가 같은 성취기준의 non-auxiliary 형제를 가리키는지, non-auxiliary 주제가 두 필드를 갖지 않는지를 검사합니다.
+- 온톨로지: `ontology/k12-core.ttl`에 `core:topicRole`·`core:collapseInto`와 `core:TopicRoleScheme`(anchor·facet·auxiliary) 3종을 추가했습니다(중등 저장소 사본과 동일, 새 sync 해시 `dba64373…`). ABox가 주제마다 `core:topicRole`을, `auxiliary` 주제에 `core:collapseInto`를 배출하고, SHACL `core:TopicRoleShape`가 anchor 유일성과 `collapseInto` 대상 조건을 검사합니다. 역량 질문 `cq-19-topic-roles.rq`를 추가했습니다(19/19 통과).
+
+### 소규모 정합 (계약 9절, 2026-09-07 추가)
+
+- **오버레이 `evidence` 최소 길이 25자 → 20자**. 한국어 관찰 행동 문장이 20~24자에서 자연스럽게 끝난다는 집필 보고에 따랐습니다. `assessmentPrompt` 40자·`misconceptions` 15자는 그대로입니다(스키마·`kr-content-overlay.mjs`·README·테스트 동시 반영).
+- **실과 `type` 정합 29건**. 실과(기술·가정)/정보 `.concept` 주제의 `type`이 CONCEPTUAL/PROCEDURAL/REPRESENTATIONAL/META로 순환 배정돼 있던 것을 `facetKey`에 맞춰 CONCEPTUAL로 고쳤습니다(`scripts/lib/kr-content-quality.mjs`의 workstream 수리 경로). 주제 ID·title은 불변이고, 검증기에 `type`↔`facetKey` 대응 검사를 추가했습니다.
+- **anchor 주제의 `alignmentKind`를 `assesses`로**. 성취기준을 대표하는 anchor 주제 620건의 `StandardTopicAlignment.alignmentKind`가 `assesses`가 됩니다(전체 `assesses` 1,240건). 나머지 주제는 workstream 값을 유지합니다.
+- **통합교과 즐거운 생활 방향 미판정 5건 종결**. 순환형 2건(`[2바01-01]` ↔ `[2즐02-01]`, `[2바02-04]` ↔ `[2즐02-06]`)은 바 → 즐 방향만 후보 층에 넣었고(`basisKind: repository-authored`, 근거에 "공식 문장이 양방향 연계를 서술" 명시), 나머지 3건(X1·X4·X5)은 후보 층에도 넣지 않고 검토 문서 10.7절에서 종결했습니다. 빌더가 workstream `dependencySuggestions` 외에 `scripts/lib/candidate-relation-specs/<subject>.mjs`도 입력으로 받습니다. 후보 층 1,875 → **1,877**건.
+
 ## [0.4.1] — 2026-07-17
 
 ### 라이선스·권리

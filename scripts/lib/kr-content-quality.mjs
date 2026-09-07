@@ -318,6 +318,10 @@ function repairPracticalArtsTopics(topics, standardByKey) {
     const standard = standardByKey.get(topic.standards?.[0]);
     if (!standard) continue;
     const title = standard.titleKorean;
+    // Contract section 9: the type must agree with the facet the id suffix declares. The generator
+    // cycled all five types over the `.concept` topics, mislabelling 29 of them; ids and titles stay.
+    if (topic.id.endsWith('.concept')) topic.type = 'CONCEPTUAL';
+    else if (topic.id.endsWith('.practice')) topic.type = 'PROCEDURAL';
     if (topic.id.endsWith('.concept')) {
       const focus = Array.isArray(standard.focus) ? standard.focus.join(', ') : standard.focus;
       topic.description = `${standard.domainKorean} 영역에서 ${attachJosa(focus, '을/를')} 중심으로 ${standard.summary}`;

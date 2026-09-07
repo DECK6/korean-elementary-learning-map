@@ -623,8 +623,13 @@ function createTopicResources(data, nodes, verificationNodes, locatorNodes) {
       conceptIri('DecompositionKind', topic.decompositionKind),
     );
     topicNode['lm:facetKey'] = iri(facetConceptIri(topic.facetKey));
-    // K-12 core projection: the same facet and content-kind concepts the secondary map emits.
+    // K-12 core projection: the same facet, role, and content-kind concepts the secondary map emits.
     topicNode['core:facetKey'] = iri(coreConceptIri(`facet-${topic.facetKey}`));
+    topicNode['core:topicRole'] = iri(coreConceptIri(`topic-role-${topic.topicRole}`));
+    // Contract section 8: only an auxiliary topic names the sibling a tutor shows instead.
+    if (topic.collapseInto) {
+      topicNode['core:collapseInto'] = iri(mintInstanceIri('topic', topic.collapseInto));
+    }
     topicNode['core:contentKind'] = iri(coreConceptIri(`content-${topic.contentKind}`));
     if (topic.misconceptions?.length) {
       topicNode['core:misconception'] = [...topic.misconceptions].sort().map((text) => ko(text));

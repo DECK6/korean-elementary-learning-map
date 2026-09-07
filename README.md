@@ -3,7 +3,7 @@
 **Korean Elementary Curriculum Learning Ontology**는 대한민국 **2022 개정 초등 교육과정**을 대상으로 독립 구축한 한국어 학습 그래프 데이터·모델·검증 파이프라인의 공식 저장소 릴리스 명칭입니다. 성취기준 코드, 세부 학습 주제, 모델 상대적인 선수 추천, 영역별 클러스터를 연결해 수업·학습 설계와 탐색에 활용할 수 있도록 합니다.
 
 > [!IMPORTANT]
-> 이 프로젝트는 [`withmarbleapp/os-taxonomy`](https://github.com/withmarbleapp/os-taxonomy)의 **Marble Skill Taxonomy**가 보여 준 학습 그래프 접근에서 영감을 받았습니다. 한국 교육과정 레코드, 교과 모델, 620개 성취기준 매핑, 1,956개 주제, 416개 official 간선과 1,875개 pedagogical-candidate 간선, 온톨로지 변환, 생성기, 검증기와 감사 기록은 독립적으로 구축했습니다. Marble의 번역본이나 공식 파생 프로젝트가 아니며, 교육부·국가교육위원회·국가교육과정정보센터(NCIC)의 공식 온톨로지·간행물·승인 제품도 아닙니다. 이 모델은 개별 학습자를 진단하지 않습니다.
+> 이 프로젝트는 [`withmarbleapp/os-taxonomy`](https://github.com/withmarbleapp/os-taxonomy)의 **Marble Skill Taxonomy**가 보여 준 학습 그래프 접근에서 영감을 받았습니다. 한국 교육과정 레코드, 교과 모델, 620개 성취기준 매핑, 1,956개 주제, 416개 official 간선과 1,877개 pedagogical-candidate 간선, 온톨로지 변환, 생성기, 검증기와 감사 기록은 독립적으로 구축했습니다. Marble의 번역본이나 공식 파생 프로젝트가 아니며, 교육부·국가교육위원회·국가교육과정정보센터(NCIC)의 공식 온톨로지·간행물·승인 제품도 아닙니다. 이 모델은 개별 학습자를 진단하지 않습니다.
 
 저장소: https://github.com/DECK6/korean-elementary-learning-map
 
@@ -19,7 +19,7 @@
 | 성취기준 앵커 | **620** |
 | 세부 학습 주제 | **1,956** |
 | 선수 관계 — official 층 | **416** |
-| 선수 관계 — pedagogical-candidate 층 | **1,875** |
+| 선수 관계 — pedagogical-candidate 층 | **1,877** |
 | 클러스터 | **152** |
 
 대상 교과·영역은 국어, 수학, 과학, 사회, 영어(EFL), 도덕, 실과(기술·가정)/정보, 통합교과, 미술, 음악, 체육입니다. 각 층은 DAG이고 두 층의 합집합도 DAG이며, 현재 정책상 교과 간 합성 연결을 만들지 않습니다.
@@ -31,15 +31,34 @@
 | 층 | 파일 | 건수 | relationKind | basisKind | reviewStatus | 제품 사용 |
 | --- | --- | ---: | --- | --- | --- | --- |
 | `official` | [`data/kr/dependencies.json`](data/kr/dependencies.json) | **416** | `required-prerequisite` | `official-source` | `internal-reviewed` | "먼저 알아야 한다" |
-| `pedagogical-candidate` | [`data/kr/dependencies.candidate.json`](data/kr/dependencies.candidate.json) | **1,875** | `recommended-before` | `official-code-order` 179 / `decomposition-order` 590 / `repository-authored` 1,106 | `candidate` | "권장 순서"로만 |
+| `pedagogical-candidate` | [`data/kr/dependencies.candidate.json`](data/kr/dependencies.candidate.json) | **1,877** | `recommended-before` | `official-code-order` 179 / `decomposition-order` 590 / `repository-authored` 1,108 | `candidate` | "권장 순서"로만 |
 
-- official 층은 내용 체계표의 학년(군) 진행(C계층)과 성취기준 해설의 명시 지목(D계층)만 담고, 모든 간선이 `sourceLocator.printedPage`(인쇄 쪽수)를 갖습니다. 과목별 근거는 [`scripts/lib/official-relation-specs/`](scripts/lib/official-relation-specs/)에 코드 쌍으로 기록하고, 빌더가 각 성취기준의 `facetKey: concept` 주제(없으면 정렬상 첫 주제)로 전개합니다.
+- official 층은 내용 체계표의 학년(군) 진행(C계층)과 성취기준 해설의 명시 지목(D계층)만 담고, 모든 간선이 `sourceLocator.printedPage`(인쇄 쪽수)를 갖습니다. 과목별 근거는 [`scripts/lib/official-relation-specs/`](scripts/lib/official-relation-specs/)에 코드 쌍으로 기록하고, 빌더가 각 성취기준의 **anchor 주제**(`topicRole: anchor`)로 전개합니다.
 - 온톨로지 파생 관계 `directRequires`·`unlocks`·`indirectRequires`는 **official 층에서만** 물질화합니다. 후보 층은 `PrerequisiteAssertion`으로만 내보내며 이진 관계를 만들지 않습니다.
 - official로 승격된 쌍은 후보 층에서 제거하고, official 순서와 모순되는 후보 간선도 제거합니다(합집합 DAG 보장). 그 수는 `data/kr/manifest.json`의 `relationLayers`에 기록합니다.
+- 검토 문서가 방향을 확정하지 못해 official에 올릴 수 없는 코드 쌍은 [`scripts/lib/candidate-relation-specs/`](scripts/lib/candidate-relation-specs/)에 기록하고 빌더가 후보 층으로만 전개합니다(현재 통합교과 2건, `basisKind: repository-authored`). 그 수는 manifest의 `relationLayers['pedagogical-candidate'].authoredFromSpecs`에 있습니다.
 
 ### 주제 공통 필드
 
 모든 주제는 `decompositionKind: subject-facet`, 공통 facet 8종(`concept`, `procedure`, `representation`, `application`, `inquiry`, `communication`, `reflection`, `core`) 중 하나인 `facetKey`, `standardKey`, `sourceStandardCode`, 그리고 아래 `contentKind`를 100% 보유합니다. facet SKOS scheme은 초등·중등이 공유하는 `https://dexa.art/learnmap/vocab/facet/`입니다.
+
+주제 `type`(`CONCEPTUAL`·`PROCEDURAL`·`REPRESENTATIONAL`·`LANGUAGE`·`META`)은 `facetKey`와 일치해야 합니다 — `concept`→CONCEPTUAL, `procedure`→PROCEDURAL, `representation`→REPRESENTATIONAL, `communication`→LANGUAGE, `reflection`→META, `application`·`inquiry`→PROCEDURAL. `scripts/validate-kr.mjs`가 이 대응을 강제합니다.
+
+### 주제 역할(topicRole)과 facet 축약
+
+한 성취기준을 facet 여러 개로 나누는 것이 인위적인 경우(태도형 성취기준, 단위 관계 성취기준, 다단계 과정 성취기준 등)가 있습니다. **주제를 삭제하지 않고 역할만 표시**해, 주제 ID·오버레이·클러스터·관계의 참조를 모두 보존합니다.
+
+| 필드 | 값 | 규칙 |
+| --- | --- | --- |
+| `topicRole` | `anchor` \| `facet` \| `auxiliary` | 성취기준마다 `anchor` 정확히 1개(`facetKey: concept` 우선, 없으면 정렬상 첫 주제 — 영어 EFL은 `communication`). 축약 규칙에 걸린 주제는 `auxiliary`, 나머지는 `facet` |
+| `collapseInto` | 주제 ID | `auxiliary`일 때만. 튜터가 이 주제 대신 제시할 같은 성취기준의 non-auxiliary 형제 주제 |
+| `collapseReason` | `attitude-standard` \| `metacognitive-standard` \| `unit-relation-standard` \| `overlapping-facets` \| `process-standard` | `auxiliary`일 때만 |
+
+- 축약 규칙은 [`scripts/lib/facet-collapse-rules.mjs`](scripts/lib/facet-collapse-rules.mjs)에 성취기준 코드별로 `{ code, auxiliaryFacetKeys, reason, note }`로 **명시**합니다. 집필 보고·검토 문서가 지목한 성취기준만 넣으며 추측으로 넣지 않습니다. 현재 22개 규칙 · `auxiliary` 주제 24개(태도형 10 · 겹침 7 · 단위 관계 6 · 과정형 1).
+- `npm run check:content`는 같은 성취기준의 두 주제 오버레이(evidence+prompt) 토큰 자카드 유사도가 **0.6 이상**이면 축약 후보로 **경고**합니다(빌드 실패 아님). 규칙 파일에 없는 후보만 경고로 남깁니다.
+- `official` 층과 후보 사양 전개는 항상 anchor 주제를 끝점으로 쓰므로 official 층의 `auxiliary` 끝점은 0이어야 하고, `check:content`가 이를 보고합니다.
+- 온톨로지는 `core:topicRole`(SKOS 개념 3종)·`core:collapseInto`를 배출하고, SHACL이 성취기준당 anchor 유일성과 `collapseInto`의 대상 조건을 검사합니다. 역량 질문은 `cq-19-topic-roles.rq`입니다.
+- 성취기준을 대표하는 anchor 주제의 `StandardTopicAlignment.alignmentKind`는 `assesses`입니다(현재 1,240건 중 anchor 620건). 나머지 주제는 workstream이 기록한 값을 유지합니다.
 
 ### 주제 콘텐츠 오버레이
 
@@ -48,7 +67,7 @@
 - 경로: `data/kr/content/<subject>-<gradeBand>.json`. 예: `data/kr/content/math-1-2.json`.
 - `subject`는 교과 키 11종(`korean`, `math`, `science`, `social`, `english-efl`, `moral`, `practical-arts`, `integrated`, `art`, `music`, `pe`), `gradeBand`는 `1-2`·`3-4`·`5-6`입니다. 엔트리의 주제가 그 교과·학년군에 속하지 않으면 검증에서 실패합니다.
 - 파일 형식은 [`schema/kr-content-overlay.schema.json`](schema/kr-content-overlay.schema.json). `entries` 키는 실제 주제 ID여야 하고(dangling 금지), 한 주제는 한 파일에서만 작성합니다.
-- 최소 길이: `evidence` 25자, `assessmentPrompt` 40자, `misconceptions` 15자. `evidence`는 두 개 이상이어야 하고 학습자가 보여 주는 관찰 가능한 행동이어야 합니다(출처 설명은 `provenanceEvidence`에 둡니다). 성취기준 `summary`와 16자 이상 연속으로 겹치는 문장, 그리고 파일 안의 완전 중복 문장은 금지합니다.
+- 최소 길이: `evidence` 20자, `assessmentPrompt` 40자, `misconceptions` 15자. `evidence`는 두 개 이상이어야 하고 학습자가 보여 주는 관찰 가능한 행동이어야 합니다(출처 설명은 `provenanceEvidence`에 둡니다). 성취기준 `summary`와 16자 이상 연속으로 겹치는 문장, 그리고 파일 안의 완전 중복 문장은 금지합니다.
 - 빈 오버레이(엔트리 0건) 파일은 두지 않습니다. `data/kr/content/`가 없으면 오버레이 0건으로 동작합니다.
 
 ```json
@@ -103,7 +122,7 @@ P3 릴리스는 다음을 제공합니다.
 - 직접 선수 추천 `directRequires`, 다단계 파생 관계 `indirectRequires`, 파생 역관계 `unlocks`를 구분합니다. 직접 관계는 모든 학습자에게 적용되는 보편 법칙이나 전이 속성이 아닙니다.
 - `hard`/`soft`는 원값을 보존하면서 모델 내부의 `required`/`recommended` 추천 강도로 정규화합니다.
 - 선수 관계와 성취기준-주제 정렬은 각각 `PrerequisiteAssertion`, `StandardTopicAlignment`로 강도·이유·근거·출처·정렬 역할·신뢰도 같은 한정자를 보존합니다. 선수 단정은 추가로 `lm:assertionLayer`·`lm:relationKind`·`lm:basisKind`·`lm:scope`·`lm:reviewStatus` 한정자를 갖습니다.
-- 11개 교육과정, 620개 성취기준, 1,956개 주제, 2,291개 선수 주장(official 416 + 후보 1,875), 1,956개 성취기준 정렬, 152개 클러스터, 46개 커버리지 갭을 포함해 총 23,660개 인스턴스 리소스와 검증된 267,757개 RDF 트리플을 내보냅니다.
+- 11개 교육과정, 620개 성취기준, 1,956개 주제, 2,293개 선수 주장(official 416 + 후보 1,877), 1,956개 성취기준 정렬, 152개 클러스터, 46개 커버리지 갭을 포함해 총 23,664개 인스턴스 리소스와 검증된 269,801개 RDF 트리플을 내보냅니다.
 - `directRequires` 416개는 official 층에서만 나오고, `unlocks` 416개는 그 정확한 역관계로, `indirectRequires` 97개는 길이 2 이상의 비직접 경로로만 물질화합니다.
 - OWL/Turtle TBox, 로컬 JSON-LD 컨텍스트, SHACL Advanced 제약, SPARQL 역량 질문 18개, 양성 fixture와 적대 fixture 10개를 제공합니다.
 - 중등 저장소와 공유하는 K-12 코어 TBox [`ontology/k12-core.ttl`](ontology/k12-core.ttl)(`https://dexa.art/learnmap/ontology/k12-core`, versionIRI `…/1.0.0`)를 `owl:imports`로 선언하고 로컬 사본에서 읽습니다. 기존 `lm:` IRI는 재발급하지 않고 `owl:equivalentClass`·`owl:equivalentProperty`·`skos:exactMatch`로 코어에 연결하며, 두 저장소의 사본이 같은지는 `tests/k12-core-sync.test.mjs`가 헤더의 기준 해시로 검사합니다.
@@ -122,7 +141,7 @@ P3 릴리스는 다음을 제공합니다.
 | --- | --- |
 | [`ontology/learning-map.ttl`](ontology/learning-map.ttl) | 정적 OWL/Turtle TBox와 통제 개념 |
 | [`ontology/context.jsonld`](ontology/context.jsonld), [`ontology/shapes.ttl`](ontology/shapes.ttl), [`ontology/metadata.ttl`](ontology/metadata.ttl) | JSON-LD 컨텍스트, 실행 SHACL, 버전·검토·권리 메타데이터 |
-| [`dist/ontology/learning-map.jsonld`](dist/ontology/learning-map.jsonld), [`dist/ontology/learning-map.ttl`](dist/ontology/learning-map.ttl) | 23,660개 인스턴스 리소스의 결정적 ABox |
+| [`dist/ontology/learning-map.jsonld`](dist/ontology/learning-map.jsonld), [`dist/ontology/learning-map.ttl`](dist/ontology/learning-map.ttl) | 23,664개 인스턴스 리소스의 결정적 ABox |
 | [`docs/ontology-reference.md`](docs/ontology-reference.md) | 클래스·속성·개념·수명주기 자동 생성 참조문서 |
 | [`docs/ontology-release-report.md`](docs/ontology-release-report.md) | 일곱 게이트의 명령·도구·개수·한계 증거 |
 | [`dist/ontology/release-manifest.json`](dist/ontology/release-manifest.json) | 전체 릴리스 파일의 결정적 바이트 수와 SHA-256 |
@@ -136,7 +155,7 @@ P3 릴리스는 다음을 제공합니다.
 | [`data/kr/curriculum-standards.json`](data/kr/curriculum-standards.json) | 11개 교육과정, 620개 성취기준 코드 앵커, 출처·매핑·검증 상태 |
 | [`data/kr/topics.json`](data/kr/topics.json) | 1,956개 세부 학습 주제와 관찰 가능한 증거·평가 질문 |
 | [`data/kr/dependencies.json`](data/kr/dependencies.json) | official 층 416개 선수 관계, 공식 출처 로케이터와 인쇄 쪽수 |
-| [`data/kr/dependencies.candidate.json`](data/kr/dependencies.candidate.json) | pedagogical-candidate 층 1,875개 권장 순서와 근거 |
+| [`data/kr/dependencies.candidate.json`](data/kr/dependencies.candidate.json) | pedagogical-candidate 층 1,877개 권장 순서와 근거 |
 | [`data/kr/clusters.json`](data/kr/clusters.json) | 152개 학습 클러스터와 학부모용 요약 |
 | [`data/kr/manifest.json`](data/kr/manifest.json) | 개수, 정책, 파일별 바이트 수와 SHA-256 |
 | [`data/kr/workstreams/`](data/kr/workstreams/) | 교과별 생성·통합 입력 산출물 |

@@ -16,7 +16,7 @@
   "competencyQueries": {
     "errors": [],
     "pass": true,
-    "queryCount": 18,
+    "queryCount": 19,
     "results": {
       "cq-01-curriculum-standards.rq": {
         "pass": true,
@@ -25,7 +25,7 @@
       },
       "cq-02-alignment-roles.rq": {
         "pass": true,
-        "resultSha256": "e07c703199d78cb550664c118fdad37cfd9077f19589f6f483193911d4275160",
+        "resultSha256": "34655a49fee81accf5a2433b316d2410db0261fecbfbd5749d78bd1fbd11a38b",
         "rowCount": 1956
       },
       "cq-03-evidence-prompts.rq": {
@@ -50,7 +50,7 @@
       },
       "cq-07-requirement-levels.rq": {
         "pass": true,
-        "resultSha256": "c8dc460ab956a2adc930325daf35684213c1d34c5f6feab60b02c63b459480f6",
+        "resultSha256": "c50feb58c73087f7188cf272a3cd22f004cd9be14451c672a1ac70cdf88853aa",
         "rowCount": 2
       },
       "cq-08-cluster-membership.rq": {
@@ -65,8 +65,8 @@
       },
       "cq-10-verification-limits.rq": {
         "pass": true,
-        "resultSha256": "3093c7d2810e1f78ca4922e36f9143f5589a2200979f6fb4aad922a04769bebe",
-        "rowCount": 6851
+        "resultSha256": "d30917a2d13bc997ae88de81c50f9d87fa2650cdc11d463ec4f3dd814ecb4d84",
+        "rowCount": 6853
       },
       "cq-11-coverage-gaps.rq": {
         "pass": true,
@@ -80,22 +80,22 @@
       },
       "cq-13-topic-types.rq": {
         "pass": true,
-        "resultSha256": "360ef3288ecab028a4046d3fb31529731fdb95b499d7e6adb80c1fc4b354c885",
+        "resultSha256": "5dfdc5fff2ba508bef42e80f40ba82f32e6e4c471eddb90565877c53a3d214fb",
         "rowCount": 5
       },
       "cq-14-alignment-round-trip.rq": {
         "pass": true,
-        "resultSha256": "3c2faf5f1f6a34e07e38ea9233a2018455d2225e179c969455a20aacf466c4e3",
+        "resultSha256": "5523a7399687de9c3f4e8474343eb87bd2dca8b37c1c8beb0d797392b294e825",
         "rowCount": 1956
       },
       "cq-15-prerequisite-round-trip.rq": {
         "pass": true,
-        "resultSha256": "e0671af544a98e7ab824b688c1ba32732bd1aef9bf5b1a3011c1ad4b6bc67acd",
-        "rowCount": 2291
+        "resultSha256": "c87f30b489ae4867d6a7d8144e033de6998aac87de7f938ccaf075ea5b6aae8e",
+        "rowCount": 2293
       },
       "cq-16-relation-layers.rq": {
         "pass": true,
-        "resultSha256": "36200ec77817c619204481a07166c32a5a1c36e1cabbece845624b5ec9cca9bb",
+        "resultSha256": "d7fd8fbb84b7fc106bd5083840d5f2d1ed77892e470046acea7eeaf80180eeda",
         "rowCount": 4
       },
       "cq-17-content-kinds.rq": {
@@ -105,8 +105,13 @@
       },
       "cq-18-k12-core-vocabulary.rq": {
         "pass": true,
-        "resultSha256": "d145e37b817092745b8df479d3769eba0a36599a3bc6316069ddc472b7c68f78",
+        "resultSha256": "24606270fbbf25aca62b3ea0e7bb29b8eb505f24432e1ff541bf771e807ee209",
         "rowCount": 9
+      },
+      "cq-19-topic-roles.rq": {
+        "pass": true,
+        "resultSha256": "1ba3edd5d7d438aba8f73b054cf043954ecb3f8b4251cc7c545351db7a37ee6f",
+        "rowCount": 3
       }
     }
   },
@@ -123,12 +128,12 @@
       "LearningCluster": 152,
       "LearningDomain": 79,
       "LearningTopic": 1956,
-      "PrerequisiteAssertion": 2291,
+      "PrerequisiteAssertion": 2293,
       "SourceDocument": 16,
       "SourceLocator": 3796,
       "StandardTopicAlignment": 1956,
       "Subject": 12,
-      "VerificationRecord": 6851
+      "VerificationRecord": 6853
     },
     "relations": {
       "alignedToStandard": {
@@ -149,7 +154,7 @@
       }
     },
     "sourceRecords": {
-      "candidateDependencies": 1875,
+      "candidateDependencies": 1877,
       "clusters": 152,
       "coverageGaps": 46,
       "curricula": 11,
@@ -158,7 +163,7 @@
       "standards": 620,
       "topics": 1956
     },
-    "totalGraphResources": 23660
+    "totalGraphResources": 23664
   },
   "fixtures": {
     "adversarial": {
@@ -284,27 +289,27 @@
   "graphs": {
     "generatedEquivalence": {
       "isomorphic": true,
-      "jsonldCanonicalHash": "15533215753262010466041997253404268730349865717274413430998378342428639208115731408",
-      "jsonldTripleCount": 267757,
+      "jsonldCanonicalHash": "15654206982936645738383633827495792942223575162423155420271657202198286522796395409",
+      "jsonldTripleCount": 269801,
       "pass": true,
-      "turtleCanonicalHash": "15533215753262010466041997253404268730349865717274413430998378342428639208115731408",
-      "turtleTripleCount": 267757
+      "turtleCanonicalHash": "15654206982936645738383633827495792942223575162423155420271657202198286522796395409",
+      "turtleTripleCount": 269801
     },
     "parsedTripleCounts": {
-      "dist/ontology/learning-map.jsonld": 267757,
-      "dist/ontology/learning-map.ttl": 267757,
-      "ontology/k12-core.ttl": 412,
+      "dist/ontology/learning-map.jsonld": 269801,
+      "dist/ontology/learning-map.ttl": 269801,
+      "ontology/k12-core.ttl": 449,
       "ontology/learning-map.ttl": 916,
       "ontology/metadata.ttl": 58,
-      "ontology/shapes.ttl": 827
+      "ontology/shapes.ttl": 851
     }
   },
   "inputHashes": {
-    "data/kr/curriculum-standards.json": "263ca788c03fd2094538371b54bdc2e0f63e045235f3adbc46bc3c3ba43862b8",
-    "data/kr/dependencies.candidate.json": "0a320dfae76e276ba1ba1b7b3c55f150248f26c62ddaf259de23011ef88c61d2",
-    "data/kr/dependencies.json": "351a436dfcfd9a1d5b144f422b425e7232d2bdb7f90b06af0a2b1e793ea8819e",
-    "dist/ontology/learning-map.jsonld": "eaf5f9c7dbac01faa6cd092cedf8113a362c3f35c40f9edcc22e4a4b04ea8b7c",
-    "dist/ontology/learning-map.ttl": "a206dbf48f6bc65f539d00466c3b0fcc601fb9a9ed210f17237a30f02a3caea0",
+    "data/kr/curriculum-standards.json": "457f909eaf977f2faa33ecea235f1ae7e3ab1e31a0d523f473948a4e91cb589b",
+    "data/kr/dependencies.candidate.json": "6a722ec302d824e8b79c19969003a0a63dbde2a99c374209259932c11443667c",
+    "data/kr/dependencies.json": "22816075ac69df624730cb4a26c71a5edf1314c43c5ff83c5f6fc7fb57551011",
+    "dist/ontology/learning-map.jsonld": "5458940edd44a77b2afaf54df67c27eb832b7ed29a1e4569345d539c4eebd244",
+    "dist/ontology/learning-map.ttl": "458e5723708810de3013edf3b8ff9dc0f03f2f975b6e192e55f44e8edd88255c",
     "ontology/fixtures/adversarial/direct-cycle.ttl": "110388381bec880b782f7036f28ea51ea6e3c01e9ce5a5040bdf25f7a88a19e1",
     "ontology/fixtures/adversarial/direct-self-loop.ttl": "c08c4f106b808b38c374e6f1c05fa54f0332ce76df4f6d3c5d5179eefcd1e394",
     "ontology/fixtures/adversarial/duplicate-prerequisite-assertion.ttl": "9ba1fc44507297ab34a3c9398ae9f817ba6578a17989af0d26164e08f732b977",
@@ -317,7 +322,7 @@
     "ontology/fixtures/adversarial/qualifier-edge-mismatch.ttl": "a0f7e945daaa69c327b33640d1d7034310d77a41ff1f7dffc845f5556acb1144",
     "ontology/fixtures/adversarial/source-status-incoherence.ttl": "c7d1c22edbe06953f0cd72a1ff364af2f5e29d3860ba9563178f9c59b351c870",
     "ontology/fixtures/canonical-positive.ttl": "1b2e7483207e21b18b72bfeeaa4d3254eb477e93ee54209e07ecc355e10cf22b",
-    "ontology/k12-core.ttl": "f015b4b8209669ed040a519c36da260d27eb3d641997e592b007a6a582cf0a97",
+    "ontology/k12-core.ttl": "31f9c331384e83c737c5a2f19016db2ac8c217f89d312d7e96c1f94527f543d7",
     "ontology/learning-map.ttl": "c9ef8b36df1e0d87ef92cde08aecd3e30fdbcf71163bc1f7d481c7a6b76e912e",
     "ontology/metadata.ttl": "ef6a46aceb6d4a961859f1955df2dbb03b90e3bc4855e4b28da99c845b100b29",
     "ontology/queries/cq-01-curriculum-standards.rq": "63513e20e84ccc2c2dcde7d0cb96cb834abaedfdd70a1e55eee06dd10089314a",
@@ -338,8 +343,9 @@
     "ontology/queries/cq-16-relation-layers.rq": "f6832c5a820924627c565465b1171f2d036adf51ec43de5cc01fb448b9ec841e",
     "ontology/queries/cq-17-content-kinds.rq": "aefd84f70543a34249da94058f079c9669742f07061e490febbc6a77ff982975",
     "ontology/queries/cq-18-k12-core-vocabulary.rq": "b8519c05e7c006f09abe80126b6b4b3f094282b718121e5ed380f91d17462cff",
-    "ontology/queries/expected.json": "59e4abc1bd552e9030e45ff08a67acaef8fb32d2b8f83a3151a472d978ae830a",
-    "ontology/shapes.ttl": "e0807eb239b364ad958206f2f8ef2c269781ddeae5ee131f036fc236cd4d9cec"
+    "ontology/queries/cq-19-topic-roles.rq": "cb86bec3afdf0b1813bad914ec58af377c588e2d14881190c84bf9dd44626946",
+    "ontology/queries/expected.json": "6fd2f3c9bf729e1bcc0c11c1fb5c567a40658a6cb42f4452b8aec52e504eda58",
+    "ontology/shapes.ttl": "19406af3b4055e0baa0ffdd0e4646708c0d002defb6562907b44f1247257fe89"
   },
   "integrity": {
     "gradeBands": {
@@ -362,7 +368,7 @@
       "forbiddenKeyCount": 0,
       "forbiddenUrlLiteralCount": 0,
       "pass": true,
-      "resourceCount": 23660
+      "resourceCount": 23664
     },
     "profile": {
       "errorCount": 0,
@@ -377,7 +383,7 @@
       "duplicatePrerequisitePairs": 0,
       "errors": [],
       "pass": true,
-      "prerequisiteAssertionCount": 2291,
+      "prerequisiteAssertionCount": 2293,
       "prerequisiteQualifierRoundTrip": true,
       "standardTopicAlignmentCount": 1956
     },
@@ -415,11 +421,11 @@
   },
   "overallPass": true,
   "reasoner": {
-    "closureTripleCount": 4685,
+    "closureTripleCount": 4785,
     "errors": [],
     "explicitContradictionCount": 0,
-    "inferredTripleCount": 3045,
-    "inputTripleCount": 1640,
+    "inferredTripleCount": 3108,
+    "inputTripleCount": 1677,
     "pass": true,
     "profile": "OWL-RL bounded TBox plus canonical-positive fixture",
     "unsatisfiableNamedClassCount": 0

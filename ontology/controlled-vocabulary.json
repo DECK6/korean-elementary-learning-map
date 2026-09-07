@@ -400,6 +400,28 @@
       "assertionPolicy": "asserted"
     },
     {
+      "term": "topicRole",
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "definition": "Whether a topic anchors its achievement standard, carries one facet of it, or is an auxiliary facet a tutor may skip.",
+      "direction": "LearningTopic -> TopicRole concept",
+      "domain": ["LearningTopic"],
+      "range": ["skos:Concept"],
+      "cardinality": "LearningTopic exactly 1; exactly one anchor per achievement standard",
+      "assertionPolicy": "asserted",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"]
+    },
+    {
+      "term": "collapseInto",
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "definition": "The sibling topic of the same achievement standard a tutor shows instead of this one; asserted only on auxiliary topics.",
+      "direction": "LearningTopic -> LearningTopic",
+      "domain": ["LearningTopic"],
+      "range": ["LearningTopic"],
+      "cardinality": "LearningTopic 0..1, exactly 1 for an auxiliary topic",
+      "assertionPolicy": "asserted",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"]
+    },
+    {
       "term": "contentKind",
       "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
       "definition": "Whether a topic's evidence, prompt, and misconceptions are a mechanical derivative of the standard record or an authored source-grounded draft.",
@@ -1269,6 +1291,28 @@
         "LANGUAGE": "communication",
         "META": "reflection"
       }
+    },
+    {
+      "term": "TopicRole",
+      "definition": "How a topic stands in relation to the achievement standard it decomposes.",
+      "modeling": "skos:Concept",
+      "concepts": [
+        {
+          "term": "anchor",
+          "definition": "Stands for the whole achievement standard; exactly one per standard, and the endpoint official relations expand to."
+        },
+        {
+          "term": "facet",
+          "definition": "Carries one facet of the achievement standard alongside the anchor."
+        },
+        {
+          "term": "auxiliary",
+          "definition": "A facet an authored collapse rule judged artificial; a tutor shows the sibling named by collapseInto instead."
+        }
+      ],
+      "namespace": "https://dexa.art/learnmap/ontology/k12-core#",
+      "sharedAcross": ["korean-elementary-learning-map", "korean-secondary-learning-map"],
+      "conceptPrefix": "topic-role-"
     },
     {
       "term": "ContentKind",

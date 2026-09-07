@@ -126,6 +126,8 @@
     "decompositionKind": { "@id": "lm:decompositionKind", "@type": "@id" },
     "facetKey": { "@id": "lm:facetKey", "@type": "@id" },
     "core:facetKey": { "@id": "core:facetKey", "@type": "@id" },
+    "core:topicRole": { "@id": "core:topicRole", "@type": "@id" },
+    "core:collapseInto": { "@id": "core:collapseInto", "@type": "@id" },
     "core:contentKind": { "@id": "core:contentKind", "@type": "@id" },
     "core:contentSourceLocator": { "@id": "core:contentSourceLocator", "@type": "@id" },
     "core:layerConcept": { "@id": "core:layerConcept", "@type": "@id" },

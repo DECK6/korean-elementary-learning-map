@@ -13,6 +13,7 @@ import {
   readContentOverlays,
 } from './lib/kr-content-overlay.mjs';
 import { contentQualityErrors } from './lib/kr-content-quality.mjs';
+import { COLLAPSE_REASONS } from './lib/facet-collapse-rules.mjs';
 import {
   STANDARD_SUMMARY_KIND,
   STANDARD_SUMMARY_LENGTH,
@@ -23,6 +24,9 @@ import {
   COVERAGE_GAP_STATUSES,
   FACET_KEYS,
   RELATION_ENUMS,
+  TOPIC_ROLES,
+  TYPES_BY_FACET_KEY,
+  anchorTopicOf,
   relationId,
 } from './lib/relation-vocabulary.mjs';
 import {
@@ -42,6 +46,8 @@ const TYPES = new Set(['CONCEPTUAL', 'PROCEDURAL', 'REPRESENTATIONAL', 'LANGUAGE
 const REL = new Set(['introduces', 'supports', 'extends', 'assesses']);
 const STR = new Set(['hard', 'soft']);
 const FACETS = new Set(FACET_KEYS);
+const TOPIC_ROLE_SET = new Set(TOPIC_ROLES);
+const COLLAPSE_REASON_SET = new Set(COLLAPSE_REASONS);
 const SCOPES = new Set(RELATION_ENUMS.scope);
 const OFFICIAL_REVIEW_STATUSES = new Set([
   'internal-reviewed',
@@ -412,6 +418,23 @@ for (const topic of topicsFile.topics || []) {
   check(VER.has(topic.verificationStatus), `bad or missing topic verificationStatus ${topic.id}`);
   check(topic.decompositionKind === 'subject-facet', `topic decompositionKind must be subject-facet ${topic.id}`);
   check(FACETS.has(topic.facetKey), `topic facetKey outside the common eight ${topic.id}: ${topic.facetKey}`);
+  // Contract section 9: the type must agree with the facet the id suffix already declares.
+  check(
+    (TYPES_BY_FACET_KEY[topic.facetKey] ?? []).includes(topic.type),
+    `topic type does not match its facetKey ${topic.id}: ${topic.type} for ${topic.facetKey}`,
+  );
+  // Contract section 8: roles, and the two fields only an auxiliary topic may carry.
+  check(TOPIC_ROLE_SET.has(topic.topicRole), `topic topicRole outside the vocabulary ${topic.id}: ${topic.topicRole}`);
+  if (topic.topicRole === 'auxiliary') {
+    check(isNonEmptyString(topic.collapseInto), `auxiliary topic missing collapseInto ${topic.id}`);
+    check(
+      COLLAPSE_REASON_SET.has(topic.collapseReason),
+      `auxiliary topic collapseReason outside the vocabulary ${topic.id}: ${topic.collapseReason}`,
+    );
+  } else {
+    check(!('collapseInto' in topic), `non-auxiliary topic must not carry collapseInto ${topic.id}`);
+    check(!('collapseReason' in topic), `non-auxiliary topic must not carry collapseReason ${topic.id}`);
+  }
   check(topic.standardKey === topic.standards?.[0], `topic standardKey must equal standards[0] ${topic.id}`);
   check(isNonEmptyString(topic.sourceStandardCode), `topic missing sourceStandardCode ${topic.id}`);
   check(
@@ -447,6 +470,56 @@ for (const topic of topicsFile.topics || []) {
   if (previous) errors.push(`topic ${topic.id} repeats facetKey ${topic.facetKey} of ${previous} within ${topic.standardKey}`);
   else facetKeysByStandard.set(key, topic.id);
 }
+
+// Contract section 8: exactly one anchor per achievement standard, chosen by the shared rule, and
+// every auxiliary topic points at a non-auxiliary sibling of the same standard.
+const topicsByStandardKey = new Map();
+for (const topic of topicsFile.topics || []) {
+  if (!topicsByStandardKey.has(topic.standardKey)) topicsByStandardKey.set(topic.standardKey, []);
+  topicsByStandardKey.get(topic.standardKey).push(topic);
+}
+let anchorTopicCount = 0;
+let auxiliaryTopicCount = 0;
+for (const [standardKey, members] of topicsByStandardKey) {
+  const anchors = members.filter((topic) => topic.topicRole === 'anchor');
+  anchorTopicCount += anchors.length;
+  check(
+    anchors.length === 1,
+    `standard ${standardKey} must have exactly one anchor topic; found ${anchors.length}` +
+      `${anchors.length > 1 ? ` (${anchors.map((topic) => topic.id).join(', ')})` : ''}`,
+  );
+  // Reject a hand edit that moves the anchor off the topic the shared rule picks, which would make
+  // the official expansion and the topic records disagree.
+  const expectedAnchor = anchorTopicOf(members.map(({ topicRole, ...rest }) => rest));
+  if (anchors.length === 1 && expectedAnchor) {
+    check(
+      anchors[0].id === expectedAnchor.id,
+      `standard ${standardKey} anchor ${anchors[0].id} is not the concept-first anchor ${expectedAnchor.id}`,
+    );
+  }
+  const byId = new Map(members.map((topic) => [topic.id, topic]));
+  for (const topic of members) {
+    if (topic.topicRole !== 'auxiliary') continue;
+    auxiliaryTopicCount += 1;
+    const target = byId.get(topic.collapseInto);
+    check(Boolean(target), `auxiliary topic ${topic.id} collapses into ${topic.collapseInto}, which is not a sibling`);
+    if (target) {
+      check(
+        target.topicRole !== 'auxiliary',
+        `auxiliary topic ${topic.id} collapses into another auxiliary topic ${target.id}`,
+      );
+      check(target.id !== topic.id, `auxiliary topic ${topic.id} collapses into itself`);
+    }
+  }
+}
+check(
+  manifest.counts?.anchorTopics === anchorTopicCount,
+  `manifest anchor topic count mismatch: ${manifest.counts?.anchorTopics} != ${anchorTopicCount}`,
+);
+check(
+  manifest.counts?.auxiliaryTopics === auxiliaryTopicCount,
+  `manifest auxiliary topic count mismatch: ${manifest.counts?.auxiliaryTopics} != ${auxiliaryTopicCount}`,
+);
 
 check(standardsFile.microTopicCount === topicIds.size, `microTopicCount ${standardsFile.microTopicCount} != ${topicIds.size}`);
 for (const error of contentQualityErrors(topicsFile.topics || [])) errors.push(`content quality: ${error}`);
@@ -503,6 +576,7 @@ check(
 );
 
 const mappingPairs = new Set();
+let assessesAlignmentCount = 0;
 for (const mapping of standardsFile.standardMappings || []) {
   check(standardKeys.has(mapping.standardKey), `mapping unknown standard ${mapping.standardKey}`);
   check(topicIds.has(mapping.microTopicId), `mapping unknown topic ${mapping.microTopicId}`);
@@ -510,9 +584,21 @@ for (const mapping of standardsFile.standardMappings || []) {
   const pair = `${mapping.standardKey}->${mapping.microTopicId}`;
   const mappedTopic = (topicsFile.topics || []).find((topic) => topic.id === mapping.microTopicId);
   check(mappedTopic?.standards?.includes(mapping.standardKey), `mapping is not declared by topic ${pair}`);
+  // Contract section 9: the anchor topic represents and therefore assesses its own standard.
+  if (mappedTopic?.topicRole === 'anchor' && mappedTopic.standardKey === mapping.standardKey) {
+    check(
+      mapping.relationship === 'assesses',
+      `anchor topic alignment must be assesses ${pair}: ${mapping.relationship}`,
+    );
+  }
+  if (mapping.relationship === 'assesses') assessesAlignmentCount += 1;
   if (mappingPairs.has(pair)) errors.push(`duplicate mapping ${pair}`);
   mappingPairs.add(pair);
 }
+check(
+  manifest.counts?.assessesAlignments === assessesAlignmentCount,
+  `manifest assesses alignment count mismatch: ${manifest.counts?.assessesAlignments} != ${assessesAlignmentCount}`,
+);
 check(standardsFile.mappingCount === mappingPairs.size, `mappingCount ${standardsFile.mappingCount} != ${mappingPairs.size}`);
 for (const topic of topicsFile.topics || []) {
   for (const standardKey of topic.standards || []) {

@@ -552,6 +552,59 @@ core:FacetProjectionShape a sh:NodeShape ;
     )
   ] .
 
+## Topic roles (contract section 8). Exactly one anchor per achievement standard; an auxiliary topic
+## points at a non-auxiliary sibling of the same standard, and no other role may point anywhere.
+
+core:TopicRoleShape a sh:NodeShape ;
+  sh:targetSubjectsOf core:topicRole ;
+  sh:property [
+    sh:path core:topicRole ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:in (
+      <https://dexa.art/learnmap/ontology/k12-core#topic-role-anchor>
+      <https://dexa.art/learnmap/ontology/k12-core#topic-role-facet>
+      <https://dexa.art/learnmap/ontology/k12-core#topic-role-auxiliary>
+    )
+  ] ;
+  sh:property [ sh:path core:collapseInto ; sh:maxCount 1 ; sh:class lm:LearningTopic ] ;
+  sh:sparql [
+    sh:message "Only an auxiliary topic may carry collapseInto, and it must name a non-auxiliary sibling of the same achievement standard."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      PREFIX core: <https://dexa.art/learnmap/ontology/k12-core#>
+      SELECT $this WHERE {
+        {
+          $this core:collapseInto ?sibling .
+          FILTER NOT EXISTS { $this core:topicRole core:topic-role-auxiliary }
+        } UNION {
+          $this core:topicRole core:topic-role-auxiliary .
+          FILTER NOT EXISTS { $this core:collapseInto ?any }
+        } UNION {
+          $this core:collapseInto ?sibling ; lm:standardKey ?standardKey .
+          OPTIONAL { ?sibling lm:standardKey ?siblingKey . }
+          FILTER (!BOUND(?siblingKey) || ?siblingKey != ?standardKey || ?sibling = $this)
+        } UNION {
+          $this core:collapseInto ?sibling .
+          ?sibling core:topicRole core:topic-role-auxiliary .
+        }
+      }
+    """
+  ] ;
+  sh:sparql [
+    sh:message "An achievement standard must have exactly one anchor topic."@en ;
+    sh:select """
+      PREFIX lm: <https://dexa.art/learnmap/ontology#>
+      PREFIX core: <https://dexa.art/learnmap/ontology/k12-core#>
+      SELECT $this WHERE {
+        $this core:topicRole core:topic-role-anchor ; lm:standardKey ?standardKey .
+        ?other core:topicRole core:topic-role-anchor ; lm:standardKey ?standardKey .
+        FILTER (?other != $this)
+      }
+    """
+  ] .
+
 core:LayerProjectionShape a sh:NodeShape ;
   sh:targetSubjectsOf core:layerConcept ;
   sh:property [

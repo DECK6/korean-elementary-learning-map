@@ -1,7 +1,6 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { cpSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
-import { tmpdir } from 'node:os';
+import { cpSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import test from 'node:test';
@@ -20,10 +19,36 @@ function runValidator(dataDir) {
   });
 }
 
+// Fixtures made by the test currently running; krTest removes them once the body returns.
+let ownedFixtures = null;
+
 function fixture() {
-  const dataDir = mkdtempSync(join(tmpdir(), 'korean-elementary-learning-map-validator-test-'));
+  // Keep full dataset copies on the project volume, preserving failed fixtures
+  // for inspection without consuming the macOS system temporary volume.
+  const fixtureRoot = join(ROOT, '.test-fixtures');
+  mkdirSync(fixtureRoot, { recursive: true });
+  const dataDir = mkdtempSync(join(fixtureRoot, 'validator-'));
   cpSync(KR_DATA, dataDir, { recursive: true });
+  ownedFixtures?.push(dataDir);
   return dataDir;
+}
+
+/**
+ * node:test hooks carry no pass/fail signal, so the fixture janitor wraps the body instead: a body
+ * that returns without throwing had every assertion pass, and its ~20 MB dataset copies can go. A
+ * failing test keeps its copies under .test-fixtures/ for inspection.
+ */
+function krTest(name, body) {
+  test(name, async (context) => {
+    const owned = [];
+    ownedFixtures = owned;
+    try {
+      await body(context);
+    } finally {
+      ownedFixtures = null;
+    }
+    for (const dataDir of owned) rmSync(dataDir, { recursive: true, force: true });
+  });
 }
 
 function readJson(dataDir, name) {
@@ -53,12 +78,12 @@ function assertRejected(result, ...patterns) {
   for (const pattern of patterns) assert.match(output, pattern);
 }
 
-test('KR validation accepts the canonical generated data', () => {
+krTest('KR validation accepts the canonical generated data', () => {
   const baseline = runValidator(KR_DATA);
   assert.equal(baseline.status, 0, baseline.stderr || baseline.stdout);
 });
 
-test('KR workstream source records contain no stale source aliases', () => {
+krTest('KR workstream source records contain no stale source aliases', () => {
   const workstreamDir = resolve(KR_DATA, 'workstreams');
   for (const file of readdirSync(workstreamDir).filter((name) => name.endsWith('.json'))) {
     const contents = readFileSync(resolve(workstreamDir, file), 'utf8');
@@ -69,7 +94,7 @@ test('KR workstream source records contain no stale source aliases', () => {
   }
 });
 
-test('KR workstream learner fields contain no known direct-josa regressions', () => {
+krTest('KR workstream learner fields contain no known direct-josa regressions', () => {
   const workstreamDir = resolve(KR_DATA, 'workstreams');
   const patterns = [
     /(?:의사소통|성찰|호응|표현|문식성|제작|실천|존중|선택|해결|활용)와\b/,
@@ -97,7 +122,7 @@ test('KR workstream learner fields contain no known direct-josa regressions', ()
   }
 });
 
-test('KR dependency validation accepts the canonical DAG and rejects a reciprocal cycle', () => {
+krTest('KR dependency validation accepts the canonical DAG and rejects a reciprocal cycle', () => {
   const dataDir = fixture();
   const dependencyFile = readJson(dataDir, 'dependencies.candidate.json');
   const original = dependencyFile.dependencies.find(
@@ -121,7 +146,7 @@ test('KR dependency validation accepts the canonical DAG and rejects a reciproca
   assertRejected(mutated, /reciprocal dependency pair/, /cyclic prerequisite SCC/);
 });
 
-test('KR validation executes Draft 2020-12 schemas and rejects sourceUrl aliases for required url fields', () => {
+krTest('KR validation executes Draft 2020-12 schemas and rejects sourceUrl aliases for required url fields', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   const source = standardsFile.sources.find((candidate) => candidate.id === 'kr-moe-2022-33-annex5-pdf');
@@ -132,7 +157,7 @@ test('KR validation executes Draft 2020-12 schemas and rejects sourceUrl aliases
   assertRejected(runValidator(dataDir), /JSON Schema curriculum-standards\.json.*required property.*url/, /source .* missing url/);
 });
 
-test('KR validation rejects source records without the normalized sourceType field', () => {
+krTest('KR validation rejects source records without the normalized sourceType field', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   delete standardsFile.sources[0].sourceType;
@@ -145,7 +170,7 @@ test('KR validation rejects source records without the normalized sourceType fie
   );
 });
 
-test('KR validation rejects an incomplete standard-to-topic mapping', () => {
+krTest('KR validation rejects an incomplete standard-to-topic mapping', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   const removed = standardsFile.standardMappings.shift();
@@ -158,7 +183,7 @@ test('KR validation rejects an incomplete standard-to-topic mapping', () => {
   );
 });
 
-test('KR validation rejects reversed topic age ranges', () => {
+krTest('KR validation rejects reversed topic age ranges', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   topicsFile.topics[0].ageRangeStart = 12;
@@ -168,7 +193,7 @@ test('KR validation rejects reversed topic age ranges', () => {
   assertRejected(runValidator(dataDir), /topic age range reversed/);
 });
 
-test('KR validation enforces cluster coverage for every topic', () => {
+krTest('KR validation enforces cluster coverage for every topic', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   const clustersFile = readJson(dataDir, 'clusters.json');
@@ -182,7 +207,7 @@ test('KR validation enforces cluster coverage for every topic', () => {
   assertRejected(runValidator(dataDir), new RegExp(`topic missing cluster membership ${topicId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
 });
 
-test('KR validation rejects placeholder-quality topic fields', () => {
+krTest('KR validation rejects placeholder-quality topic fields', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   const topic = topicsFile.topics.find((candidate) => candidate.subjectKorean === '실과(기술·가정)/정보');
@@ -201,7 +226,7 @@ test('KR validation rejects placeholder-quality topic fields', () => {
   );
 });
 
-test('KR validation rejects literal undefined placeholders in learner-facing fields', () => {
+krTest('KR validation rejects literal undefined placeholders in learner-facing fields', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   const topic = topicsFile.topics.find((candidate) => candidate.subjectKorean === '국어');
@@ -211,7 +236,7 @@ test('KR validation rejects literal undefined placeholders in learner-facing fie
   assertRejected(runValidator(dataDir), /content quality: Korean-facing fields contain .* undefined placeholder/);
 });
 
-test('KR validation rejects unsupported official-source-checked status inflation', () => {
+krTest('KR validation rejects unsupported official-source-checked status inflation', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   const standard = standardsFile.curricula.flatMap((curriculum) => curriculum.standards)[0];
@@ -233,7 +258,7 @@ test('KR validation rejects unsupported official-source-checked status inflation
   assertRejected(runValidator(dataDir), /official-source-checked standard missing verification evidence/);
 });
 
-test('KR validation rejects official topic status inflation without source provenance', () => {
+krTest('KR validation rejects official topic status inflation without source provenance', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   const topic = topicsFile.topics.find((candidate) => candidate.verificationStatus === 'public-doc-derived');
@@ -254,7 +279,7 @@ test('KR validation rejects official topic status inflation without source prove
   assertRejected(runValidator(dataDir), /official-source-checked topic missing verification evidence/);
 });
 
-test('KR official-inventory gates reject direct-source and status drift', () => {
+krTest('KR official-inventory gates reject direct-source and status drift', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   const social = standardsFile.curricula.find((curriculum) => curriculum.id === 'kr-2022-elem-social-studies');
@@ -270,7 +295,7 @@ test('KR official-inventory gates reject direct-source and status drift', () => 
   );
 });
 
-test('KR official-inventory gates reject code-inventory, source-fingerprint, and item-locator drift', () => {
+krTest('KR official-inventory gates reject code-inventory, source-fingerprint, and item-locator drift', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   const social = standardsFile.curricula.find((curriculum) => curriculum.id === 'kr-2022-elem-social-studies');
@@ -291,7 +316,7 @@ test('KR official-inventory gates reject code-inventory, source-fingerprint, and
   );
 });
 
-test('KR validation rejects official grade-band drift even when checksums are refreshed', () => {
+krTest('KR validation rejects official grade-band drift even when checksums are refreshed', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   const social = standardsFile.curricula.find((curriculum) => curriculum.id === 'kr-2022-elem-social-studies');
@@ -301,7 +326,7 @@ test('KR validation rejects official grade-band drift even when checksums are re
   assertRejected(runValidator(dataDir), /standard gradeBand mismatch kr-2022-elem-social-studies:\[4사01-01\]/);
 });
 
-test('KR validation rejects code-only evidence in place of a structured official locator', () => {
+krTest('KR validation rejects code-only evidence in place of a structured official locator', () => {
   const dataDir = fixture();
   const standardsFile = readJson(dataDir, 'curriculum-standards.json');
   const social = standardsFile.curricula.find((curriculum) => curriculum.id === 'kr-2022-elem-social-studies');
@@ -313,7 +338,7 @@ test('KR validation rejects code-only evidence in place of a structured official
   assertRejected(runValidator(dataDir), /official inventory structured source locator missing/);
 });
 
-test('KR validation rejects manifest omissions even when remaining checksums are valid', () => {
+krTest('KR validation rejects manifest omissions even when remaining checksums are valid', () => {
   const dataDir = fixture();
   const manifest = readJson(dataDir, 'manifest.json');
   delete manifest.files['workstreams/social.json'];
@@ -322,7 +347,7 @@ test('KR validation rejects manifest omissions even when remaining checksums are
   assertRejected(runValidator(dataDir), /manifest missing file entry workstreams\/social\.json/);
 });
 
-test('KR validation rejects stale aliases and dead NCIC notice URLs', () => {
+krTest('KR validation rejects stale aliases and dead NCIC notice URLs', () => {
   const aliasDir = fixture();
   const aliasStandards = readJson(aliasDir, 'curriculum-standards.json');
   aliasStandards.sources.push({
@@ -344,7 +369,7 @@ test('KR validation rejects stale aliases and dead NCIC notice URLs', () => {
   assertRejected(runValidator(noticeDir), /dead NCIC notice URL remains/);
 });
 
-test('KR validation rejects malformed source URLs and missing repository-local sources', () => {
+krTest('KR validation rejects malformed source URLs and missing repository-local sources', () => {
   const malformedDir = fixture();
   const malformedStandards = readJson(malformedDir, 'curriculum-standards.json');
   const malformedSource = malformedStandards.sources.find((source) => /^https?:\/\//i.test(source.url));
@@ -360,7 +385,7 @@ test('KR validation rejects malformed source URLs and missing repository-local s
   assertRejected(runValidator(missingDir), new RegExp(`local source path missing ${missingSource.id}`));
 });
 
-test('KR validation enforces the explicit no-cross-subject-edge policy', () => {
+krTest('KR validation enforces the explicit no-cross-subject-edge policy', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   const dependencyFile = readJson(dataDir, 'dependencies.candidate.json');
@@ -371,6 +396,90 @@ test('KR validation enforces the explicit no-cross-subject-edge policy', () => {
   writeJson(dataDir, 'dependencies.candidate.json', dependencyFile);
 
   assertRejected(runValidator(dataDir), /synthetic cross-subject dependency forbidden/);
+});
+
+// Contract section 8: topic roles.
+krTest('KR validation rejects a second anchor topic inside one achievement standard', () => {
+  const dataDir = fixture();
+  const topicsFile = readJson(dataDir, 'topics.json');
+  const anchor = topicsFile.topics.find((topic) => topic.topicRole === 'anchor');
+  const sibling = topicsFile.topics.find(
+    (topic) => topic.standardKey === anchor.standardKey && topic.topicRole === 'facet',
+  );
+  assert.ok(sibling, 'expected a plain facet sibling of an anchor topic');
+  sibling.topicRole = 'anchor';
+  writeJson(dataDir, 'topics.json', topicsFile);
+
+  assertRejected(runValidator(dataDir), /must have exactly one anchor topic; found 2/);
+});
+
+krTest('KR validation rejects an anchor that is not the concept-first anchor', () => {
+  const dataDir = fixture();
+  const topicsFile = readJson(dataDir, 'topics.json');
+  const anchor = topicsFile.topics.find((topic) => topic.topicRole === 'anchor');
+  const sibling = topicsFile.topics.find(
+    (topic) => topic.standardKey === anchor.standardKey && topic.topicRole === 'facet',
+  );
+  assert.ok(sibling, 'expected a plain facet sibling of an anchor topic');
+  anchor.topicRole = 'facet';
+  sibling.topicRole = 'anchor';
+  writeJson(dataDir, 'topics.json', topicsFile);
+
+  assertRejected(runValidator(dataDir), /is not the concept-first anchor/);
+});
+
+krTest('KR validation rejects an auxiliary topic that collapses into another auxiliary topic', () => {
+  const dataDir = fixture();
+  const topicsFile = readJson(dataDir, 'topics.json');
+  const auxiliary = topicsFile.topics.filter((topic) => topic.topicRole === 'auxiliary');
+  const pair = auxiliary.find((topic) =>
+    auxiliary.some((other) => other.id !== topic.id && other.standardKey === topic.standardKey),
+  );
+  assert.ok(pair, 'expected a standard with two auxiliary topics');
+  const other = auxiliary.find((topic) => topic.id !== pair.id && topic.standardKey === pair.standardKey);
+  pair.collapseInto = other.id;
+  writeJson(dataDir, 'topics.json', topicsFile);
+
+  assertRejected(runValidator(dataDir), /collapses into another auxiliary topic/);
+});
+
+krTest('KR validation rejects collapseInto on a topic that is not auxiliary', () => {
+  const dataDir = fixture();
+  const topicsFile = readJson(dataDir, 'topics.json');
+  const auxiliary = topicsFile.topics.find((topic) => topic.topicRole === 'auxiliary');
+  const anchor = topicsFile.topics.find(
+    (topic) => topic.standardKey === auxiliary.standardKey && topic.topicRole === 'anchor',
+  );
+  anchor.collapseInto = auxiliary.id;
+  writeJson(dataDir, 'topics.json', topicsFile);
+
+  assertRejected(runValidator(dataDir), /non-auxiliary topic must not carry collapseInto/);
+});
+
+// Contract section 9: the type must agree with the facet, and the anchor assesses its standard.
+krTest('KR validation rejects a topic type that contradicts its facetKey', () => {
+  const dataDir = fixture();
+  const topicsFile = readJson(dataDir, 'topics.json');
+  const topic = topicsFile.topics.find((candidate) => candidate.facetKey === 'concept');
+  topic.type = 'META';
+  writeJson(dataDir, 'topics.json', topicsFile);
+
+  assertRejected(runValidator(dataDir), /topic type does not match its facetKey .*META for concept/);
+});
+
+krTest('KR validation rejects an anchor alignment that does not assess its own standard', () => {
+  const dataDir = fixture();
+  const topicsFile = readJson(dataDir, 'topics.json');
+  const standardsFile = readJson(dataDir, 'curriculum-standards.json');
+  const anchor = topicsFile.topics.find((topic) => topic.topicRole === 'anchor');
+  const mapping = standardsFile.standardMappings.find(
+    (candidate) => candidate.microTopicId === anchor.id && candidate.standardKey === anchor.standardKey,
+  );
+  assert.ok(mapping, 'expected the anchor topic to be mapped to its own standard');
+  mapping.relationship = 'supports';
+  writeJson(dataDir, 'curriculum-standards.json', standardsFile);
+
+  assertRejected(runValidator(dataDir), /anchor topic alignment must be assesses/);
 });
 
 test('Korean josa resolver deterministically handles final consonants and legacy placeholders', () => {
@@ -409,7 +518,7 @@ test('no built standard focus carries a PDF line-wrap split', () => {
   assert.deepEqual(wrapped.map((standard) => `${standard.code} ${standard.focus}`), []);
 });
 
-test('KR validation rejects unresolved and known-malformed Korean particles', () => {
+krTest('KR validation rejects unresolved and known-malformed Korean particles', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   topicsFile.topics[0].description += ' 조사을/를 조건와 연결한다.';
@@ -422,7 +531,7 @@ test('KR validation rejects unresolved and known-malformed Korean particles', ()
   );
 });
 
-test('KR validation rejects English facet labels in Korean-facing topic fields', () => {
+krTest('KR validation rejects English facet labels in Korean-facing topic fields', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   topicsFile.topics[0].name += ' practice';
@@ -431,7 +540,7 @@ test('KR validation rejects English facet labels in Korean-facing topic fields',
   assertRejected(runValidator(dataDir), /content quality: Korean-facing fields contain .* English facet label/);
 });
 
-test('KR validation rejects exact semantic duplicate topic records', () => {
+krTest('KR validation rejects exact semantic duplicate topic records', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   const [first, second] = topicsFile.topics.filter((topic) => topic.subjectKorean === '미술').slice(0, 2);
@@ -444,7 +553,7 @@ test('KR validation rejects exact semantic duplicate topic records', () => {
   assertRejected(runValidator(dataDir), /content quality: topics contain .* exact semantic duplicate group/);
 });
 
-test('KR validation requires two learner-observable evidence criteria and keeps provenance separate', () => {
+krTest('KR validation requires two learner-observable evidence criteria and keeps provenance separate', () => {
   const tooShortDir = fixture();
   const tooShortTopics = readJson(tooShortDir, 'topics.json');
   tooShortTopics.topics[0].evidence = ['학습자가 핵심 내용을 설명한다.'];
@@ -468,7 +577,7 @@ test('KR validation requires two learner-observable evidence criteria and keeps 
   assertRejected(runValidator(provenanceDir), /content quality: topic evidence contains .* non-observable or provenance-only item/);
 });
 
-test('KR validation rejects exact duplicate assessment prompts within one standard', () => {
+krTest('KR validation rejects exact duplicate assessment prompts within one standard', () => {
   const dataDir = fixture();
   const topicsFile = readJson(dataDir, 'topics.json');
   const first = topicsFile.topics[0];

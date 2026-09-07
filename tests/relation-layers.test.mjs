@@ -9,7 +9,14 @@ import {
   officialRelationSpecs,
 } from '../scripts/lib/official-relation-specs/index.mjs';
 import { expandOfficialRelations, officialBasisText } from '../scripts/lib/official-relations.mjs';
+import { facetOverlapCandidates } from '../scripts/lib/kr-content-overlay.mjs';
 import {
+  assertCollapseRulesWellFormed,
+  FACET_COLLAPSE_RULES,
+  facetCollapseRuleFor,
+} from '../scripts/lib/facet-collapse-rules.mjs';
+import {
+  anchorTopicOf,
   classifyLegacyBasis,
   computeScope,
   deriveFacetKey,
@@ -18,6 +25,7 @@ import {
   normalizeCoverageGapStatus,
   RELATION_ENUMS,
   relationId,
+  TYPES_BY_FACET_KEY,
 } from '../scripts/lib/relation-vocabulary.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -316,4 +324,142 @@ test('an injected spec expands code pairs onto concept topics with a printed-pag
       }),
     /no topic for \[9수99-99\]/,
   );
+});
+
+// Contract section 8: topic roles, facet collapse rules, and the statistical companion check.
+test('every achievement standard has one anchor, chosen concept-first', () => {
+  const byStandardKey = new Map();
+  for (const topic of TOPICS.topics) {
+    if (!byStandardKey.has(topic.standardKey)) byStandardKey.set(topic.standardKey, []);
+    byStandardKey.get(topic.standardKey).push(topic);
+  }
+  let anchors = 0;
+  for (const [standardKey, members] of byStandardKey) {
+    const declared = members.filter((topic) => topic.topicRole === 'anchor');
+    assert.equal(declared.length, 1, standardKey);
+    anchors += 1;
+    // anchorTopicOf must agree with the stamped role even when the role is stripped.
+    const stripped = members.map(({ topicRole, ...rest }) => rest);
+    assert.equal(anchorTopicOf(stripped).id, declared[0].id, standardKey);
+  }
+  assert.equal(anchors, MANIFEST.counts.anchorTopics);
+  // Elementary English has no concept facet, so its anchors fall back to communication.
+  const anchorFacets = new Set(
+    TOPICS.topics.filter((topic) => topic.topicRole === 'anchor').map((topic) => topic.facetKey),
+  );
+  assert.deepEqual([...anchorFacets].sort(), ['communication', 'concept']);
+  for (const topic of TOPICS.topics) {
+    if (topic.subjectKorean !== '영어' || topic.topicRole !== 'anchor') continue;
+    assert.equal(topic.facetKey, 'communication', topic.id);
+  }
+});
+
+test('auxiliary topics follow an authored collapse rule and point at a non-auxiliary sibling', () => {
+  assertCollapseRulesWellFormed();
+  const byId = new Map(TOPICS.topics.map((topic) => [topic.id, topic]));
+  const auxiliary = TOPICS.topics.filter((topic) => topic.topicRole === 'auxiliary');
+  assert.equal(auxiliary.length, MANIFEST.counts.auxiliaryTopics);
+  for (const topic of auxiliary) {
+    const rule = facetCollapseRuleFor(topic.sourceStandardCode);
+    assert.ok(rule, `${topic.id} has no collapse rule`);
+    assert.ok(rule.auxiliaryFacetKeys.includes(topic.facetKey), topic.id);
+    assert.equal(topic.collapseReason, rule.reason, topic.id);
+    const target = byId.get(topic.collapseInto);
+    assert.ok(target, `${topic.id} collapses into an unknown topic`);
+    assert.equal(target.standardKey, topic.standardKey, topic.id);
+    assert.notEqual(target.topicRole, 'auxiliary', topic.id);
+  }
+  // Every rule matches a real standard, and no rule may take the anchor away.
+  for (const rule of FACET_COLLAPSE_RULES) {
+    const members = TOPICS.topics.filter((topic) => topic.sourceStandardCode === rule.code);
+    assert.ok(members.length > 0, rule.code);
+    const anchor = members.find((topic) => topic.topicRole === 'anchor');
+    assert.ok(anchor, rule.code);
+    assert.ok(!rule.auxiliaryFacetKeys.includes(anchor.facetKey), rule.code);
+  }
+  assert.throws(
+    () => assertCollapseRulesWellFormed([{ ...FACET_COLLAPSE_RULES[0], reason: 'made-up' }]),
+    /unknown reason/,
+  );
+  assert.throws(
+    () => assertCollapseRulesWellFormed([FACET_COLLAPSE_RULES[0], FACET_COLLAPSE_RULES[0]]),
+    /duplicate code/,
+  );
+});
+
+test('the facet-overlap warning finds the pair a collapse rule would describe', () => {
+  // The gate threshold reports nothing on the released overlays; a synthetic clone must trip it.
+  assert.deepEqual(facetOverlapCandidates(TOPICS.topics).candidates, []);
+  const [first] = TOPICS.topics.filter((topic) => topic.contentKind === 'source-grounded-draft');
+  const second = TOPICS.topics.find(
+    (topic) => topic.id !== first.id && topic.standardKey === first.standardKey,
+  );
+  const cloned = [
+    first,
+    { ...second, evidence: [...first.evidence], assessmentPrompt: first.assessmentPrompt },
+  ];
+  const { candidates } = facetOverlapCandidates(cloned);
+  assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].similarity, 1);
+  assert.deepEqual(candidates[0].topicIds.sort(), [first.id, second.id].sort());
+});
+
+test('the official layer never expands to an auxiliary topic', () => {
+  const auxiliaryEndpoints = OFFICIAL.dependencies.filter((edge) =>
+    [edge.topicId, edge.prerequisiteId].some((id) => TOPIC_BY_ID.get(id)?.topicRole === 'auxiliary'),
+  );
+  assert.deepEqual(auxiliaryEndpoints, []);
+  for (const edge of OFFICIAL.dependencies) {
+    assert.equal(TOPIC_BY_ID.get(edge.topicId).topicRole, 'anchor', edge.id);
+    assert.equal(TOPIC_BY_ID.get(edge.prerequisiteId).topicRole, 'anchor', edge.id);
+  }
+});
+
+// Contract section 9: authored candidate edges and the type/facet agreement.
+test('the authored candidate spec contributes the 바 → 즐 edges and nothing else', () => {
+  const authored = CANDIDATE.dependencies.filter((edge) => edge.source.startsWith('candidate-relation-spec:'));
+  assert.equal(authored.length, MANIFEST.relationLayers['pedagogical-candidate'].authoredFromSpecs);
+  assert.equal(authored.length, 2);
+  const pairs = authored.map((edge) => [
+    TOPIC_BY_ID.get(edge.prerequisiteId).sourceStandardCode,
+    TOPIC_BY_ID.get(edge.topicId).sourceStandardCode,
+  ]);
+  assert.deepEqual(pairs.sort(), [
+    ['[2바01-01]', '[2즐02-01]'],
+    ['[2바02-04]', '[2즐02-06]'],
+  ]);
+  for (const edge of authored) {
+    assert.equal(edge.layer, 'pedagogical-candidate');
+    assert.equal(edge.relationKind, 'recommended-before');
+    assert.equal(edge.basisKind, 'repository-authored');
+    assert.equal(edge.reviewStatus, 'candidate');
+    assert.match(edge.reason, /공식 문장이 양방향 연계를 서술/);
+    assert.equal(TOPIC_BY_ID.get(edge.topicId).topicRole, 'anchor');
+    assert.equal(TOPIC_BY_ID.get(edge.prerequisiteId).topicRole, 'anchor');
+  }
+});
+
+test('every topic type agrees with the facet its id suffix declares', () => {
+  for (const topic of TOPICS.topics) {
+    assert.ok(
+      (TYPES_BY_FACET_KEY[topic.facetKey] ?? []).includes(topic.type),
+      `${topic.id}: ${topic.type} for ${topic.facetKey}`,
+    );
+  }
+  const practicalArts = TOPICS.topics.filter(
+    (topic) => topic.subjectKorean === '실과(기술·가정)/정보' && topic.facetKey === 'concept',
+  );
+  assert.equal(practicalArts.length, 39);
+  for (const topic of practicalArts) assert.equal(topic.type, 'CONCEPTUAL', topic.id);
+});
+
+test('the anchor topic assesses its own achievement standard', () => {
+  let assesses = 0;
+  for (const mapping of STANDARDS.standardMappings) {
+    const topic = TOPIC_BY_ID.get(mapping.microTopicId);
+    if (mapping.relationship === 'assesses') assesses += 1;
+    if (topic.topicRole !== 'anchor' || topic.standardKey !== mapping.standardKey) continue;
+    assert.equal(mapping.relationship, 'assesses', mapping.microTopicId);
+  }
+  assert.equal(assesses, MANIFEST.counts.assessesAlignments);
 });

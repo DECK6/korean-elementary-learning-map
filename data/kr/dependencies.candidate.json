@@ -5,7 +5,7 @@
   "locale": "ko-KR",
   "country": "KR",
   "layer": "pedagogical-candidate",
-  "edgeCount": 1875,
+  "edgeCount": 1877,
   "graphPolicy": {
     "relation": "recommended-order",
     "acyclic": true,
@@ -26,7 +26,7 @@
         "relationKind": "recommended-before",
         "basisKind": "official-code-order | decomposition-order | repository-authored",
         "reviewStatus": "candidate",
-        "edgeCount": 1875,
+        "edgeCount": 1877,
         "derivesOntologyViews": false,
         "note": "Product surfaces these as recommended order only; they are not prerequisite claims."
       }
@@ -4426,6 +4426,25 @@
       ]
     },
     {
+      "id": "kr.dep.fab88f4924c1974cf19e",
+      "layer": "pedagogical-candidate",
+      "topicId": "kr.mt.integrated.joyful-life.expression.2jeul0201.01",
+      "prerequisiteId": "kr.mt.integrated.right-life.who.2ba0101.01",
+      "relationKind": "recommended-before",
+      "basisKind": "repository-authored",
+      "scope": "same-subject",
+      "strength": "soft",
+      "reviewStatus": "candidate",
+      "reason": "[2바01-01] → [2즐02-01]: 공식 문장이 양방향 연계를 서술해 선후를 확정할 수 없으므로 권장 순서로만 남긴다. 검토 10.4 X2: 바른 생활 습관을 “바탕으로” 음악 활동에 참여하고 다시 “학습 습관과 공동체적 태도를 기르도록” 한다는 한 문장이 바 → 즐 → 바 순환을 만든다. 수업 준비 순서로는 바른 생활 습관이 먼저 서므로 그 방향만 권장 순서로 남긴다.",
+      "basis": "국가교육위원회 고시 제2026-1호 일부개정 [별책 15] 바른 생활, 슬기로운 생활, 건강한 생활, 즐거운 생활 교육과정 성취기준 적용 시 고려 사항 p.67 (연계 서술, 방향 미판정)",
+      "source": "candidate-relation-spec:integrated.mjs",
+      "sourceRefs": [
+        "kr-ncic-2026-1-annex15-pdf",
+        "kr-ncic-2026-1-annex2-pdf",
+        "kr-ncic-2026-elem-integrated-attachment"
+      ]
+    },
+    {
       "id": "kr.dep.963b2dd870be05e4ee5f",
       "layer": "pedagogical-candidate",
       "topicId": "kr.mt.integrated.joyful-life.expression.2jeul0201.02",
@@ -4704,6 +4723,25 @@
       "reason": "즐거운 생활 표현 영역 안의 순차 학습 제안이다.",
       "basis": "workstream-authored",
       "source": "workstream:integrated.json",
+      "sourceRefs": [
+        "kr-ncic-2026-1-annex15-pdf",
+        "kr-ncic-2026-1-annex2-pdf",
+        "kr-ncic-2026-elem-integrated-attachment"
+      ]
+    },
+    {
+      "id": "kr.dep.0f6dde2eb54130b3af13",
+      "layer": "pedagogical-candidate",
+      "topicId": "kr.mt.integrated.joyful-life.expression.2jeul0206.01",
+      "prerequisiteId": "kr.mt.integrated.right-life.where.2ba0204.01",
+      "relationKind": "recommended-before",
+      "basisKind": "repository-authored",
+      "scope": "same-subject",
+      "strength": "soft",
+      "reviewStatus": "candidate",
+      "reason": "[2바02-04] → [2즐02-06]: 공식 문장이 양방향 연계를 서술해 선후를 확정할 수 없으므로 권장 순서로만 남긴다. 검토 10.4 X3: 새로운 대상에 대한 “호기심을 가지고” 관찰하여 다시 “탐구적이고 도전적인 태도를 기르도록” 한다는 한 문장이 바 → 즐 → 바 순환을 만든다. 진입 조건인 호기심 쪽을 앞에 두는 방향만 권장 순서로 남긴다.",
+      "basis": "국가교육위원회 고시 제2026-1호 일부개정 [별책 15] 바른 생활, 슬기로운 생활, 건강한 생활, 즐거운 생활 교육과정 성취기준 적용 시 고려 사항 p.72 (연계 서술, 방향 미판정)",
+      "source": "candidate-relation-spec:integrated.mjs",
       "sourceRefs": [
         "kr-ncic-2026-1-annex15-pdf",
         "kr-ncic-2026-1-annex2-pdf",
