@@ -7,3 +7,5 @@ __pycache__/
 *.pyc
 .test-fixtures/
 .fixture-storage-probe-*/
+dist/hosting/
+dist/hosting-check/

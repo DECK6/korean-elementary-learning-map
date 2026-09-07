@@ -258,3 +258,7 @@ KR 별칭(`build:kr`, `test:kr`, `validate:kr`, `check:kr:content`, `check:kr:li
 교육부·국가교육위원회 고시와 별책, NCIC가 배포하는 공식 교육과정 문서는 국가가 공표한 공개 자료로, 누구나 원 출처(교육부·NCIC)에서 이용할 수 있습니다. 따라서 이 저장소는 해당 공식 출처의 권리 상태를 **공개 공식 자료(cleared)**로 기록합니다. 저장소의 **MIT 라이선스**는 저장소가 직접 저작한 산출물(빌드 스크립트, 검증기, 데이터셋, 온톨로지 변환 등)에 적용되며, 인용한 공식 문서 자체는 원 출처의 공공저작물 이용 조건을 따릅니다. 사용 시 원 출처 표시를 유지하세요. 이는 법률 자문이 아닙니다.
 
 업스트림 표시 문구와 한국 공식 자료별 출처 의무는 [`NOTICE.md`](NOTICE.md)와 [`PROVENANCE.md`](PROVENANCE.md)에 있습니다.
+
+## IRI 호스팅
+
+온톨로지 용어(`https://dexa.art/learnmap/ontology#…`), K-12 코어, 통제 어휘(`/learnmap/vocab/`), 버전 IRI, 데이터 매니페스트는 dexa.art의 정적 문서로 해석된다. `npm run build:hosting`이 `dist/hosting/`에 배포 트리와 매니페스트를 만들고, `npm run check:hosting`이 결정성과 IRI 커버리지(온톨로지·스키마·ABox의 모든 `dexa.art/learnmap` IRI가 문서에 대응)를 검사한다. 사이트 저장소(`adxdeck-blog-main`)의 `scripts/sync-learnmap-ontology.mjs`가 이 트리를 복사하며, `npm run check:hosting:deploy`는 그 체크아웃과, `npm run check:hosting:live`는 dexa.art 실제 응답과 바이트 단위로 비교한다. 현재 릴리스 ABox는 `/learnmap/ontology/<version>/`에만 두고, 학부모용 배움 지도가 참조하는 `0.3.0-p3` 파일은 기존 경로에 고정한다.

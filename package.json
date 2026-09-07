@@ -33,9 +33,13 @@
     "check:kr:content": "npm run check:content",
     "check:links": "node scripts/check-kr-source-links.mjs",
     "check:kr:links": "npm run check:links",
-    "verify:formal:node": "npm run build && npm test && npm run validate && npm run check:content && npm run validate:ontology && npm run check:ontology:artifacts && npm run check:ontology:release",
+    "verify:formal:node": "npm run build && npm test && npm run validate && npm run check:content && npm run validate:ontology && npm run check:ontology:artifacts && npm run check:ontology:release && npm run build:hosting && npm run check:hosting",
     "verify:formal:python": "npm run validate:ontology:p2 && npm run test:ontology:p2",
-    "verify:formal": "npm run verify:formal:node && npm run verify:formal:python && npm run check:ontology:release"
+    "verify:formal": "npm run verify:formal:node && npm run verify:formal:python && npm run check:ontology:release",
+    "build:hosting": "node scripts/build-hosting.mjs",
+    "check:hosting": "node scripts/check-hosting.mjs",
+    "check:hosting:deploy": "node scripts/check-hosting.mjs --deploy",
+    "check:hosting:live": "node scripts/check-hosting.mjs --deploy --live"
   },
   "devDependencies": {
     "ajv": "^8.20.0"
